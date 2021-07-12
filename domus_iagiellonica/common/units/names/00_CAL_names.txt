@@ -1,0 +1,246 @@
+﻿CAL = {
+	fleet_names_template = FLEET_NAME_CAL
+	submarine = {
+		prefix = "CRS"
+		generic = { "Submarine" }
+		unique = {
+			#WIKI: Post S-boat, in order by hull designation, up to nuclear powered (excluding doubles)
+			"Barracuda" "Bass" "Bonita" "Argonaut" "Narwhal" "Nautilus" "Dolphin" "Cachalot" "Cuttlefish" "Porpoise" "Pike" "Shark" "Tarpon" "Perch" "Pickerel" "Permit" "Plunger" "Pollack" "Pompano" "Salmon" "Seal" 
+			"Skipjack" "Snapper" "Stingray" "Sturgeon" "Sargo" "Saury" "Spearfish" "Sculpin" "Sailfish" "Swordfish" "Seadragon" "Sealion" "Searaven" "Seawolf" 
+			"Tambor" "Tautog" "Thresher" "Triton" "Trout" "Tuna" "Mackerel" "Marlin" "Gar" "Grampus" "Grayback" "Grayling" "Grenadier" "Gudgeon" 
+			"Gato" "Greenling" "Grouper" "Growler" "Grunion" "Guardfish" "Albacore" "Amberjack" "Barb" "Blackfish" "Bluefish" "Bonefish" "Cod" "Cero" "Corvina" "Darter" "Drum" "Flying Fish" "Finback" "Haddock" "Halibut" 
+			"Herring" "Kingfish" "Shad" "Silversides" "Trigger" "Wahoo" "Whale" "Angler" "Bashaw" "Bluegill" "Bream" "Cavalla" "Cobia" "Croaker" "Dace" "Dorado" "Flasher" "Flier" "Flounder" "Gabilan" "Gunnel" "Gurnard" 
+			"Haddo" "Hake" "Harder" "Hoe" "Jack" "Lapon" "Mingo" "Muskallunge" "Paddle" "Pargo" "Peto" "Pogy" "Pompon" "Puffer" "Rasher" "Raton" "Ray" "Redfin" "Robalo" "Rock" "Runner" "Sawfish" "Scamp" "Scorpion" "Snook" 
+			"Steelhead" "Sunfish" "Tunny" "Tinosa" "Tullibee" 
+			"Balao" "Billfish" "Bowfin" "Cabrilla" "Capelin" "Cisco" "Crevalle" "Devilfish" "Dragonet" "Escolar" "Hackleback" "Lancetfish" "Ling" "Lionfish" "Manta" "Moray" "Roncador" "Sabalo" "Sablefish" "Seahorse" 
+			"Skate" "Tang" "Tilefish" "Apogon" "Aspro" "Batfish" "Archerfish" "Burrfish" "Barbel" "Barbero" "Baya" "Becuna" "Bergall" "Besugo" "Blackfin" "Caiman" "Blenny" "Blower" "Blueback" "Boarfish" "Charr" "Chub" 
+			"Brill" "Bugara" "Bullhead" "Bumper" "Cabezon" "Dentuda" "Capitaine" "Carbonero" "Carp" "Catfish" "Entemedor" "Chivo" "Chopper" "Clamagore" "Cobbler" "Cochino" "Corporal" "Cubera" "Cusk" "Diodon" "Dogfish" 
+			"Greenfish" "Halfbeak" "Dugong" "Eel" "Espada" "Jawfish" "Ono" "Garlopa" "Garrupa" "Goldring" "Golet" "Guavina" "Guitarro" "Hammerhead" "Hardhead" "Hawkbill" "Icefish" "Jallao" "Kete" "Kraken" "Lagarto" 
+			"Lamprey" "Lizardfish" "Loggerhead" "Macabi" "Mapiro" "Menhaden" "Mero" "Needlefish" "Nerka" "Sand Lance" "Picuda" "Pampanito" "Parche" "Bang" "Pilotfish" "Pintado" "Pipefish" "Piranha" "Plaice" "Pomfret" 
+			"Sterlet" "Queenfish" "Razorback" "Redfish" "Ronquil" "Scabbardfish" "Segundo" "Sea Cat" "Sea Devil" "Sea Dog" "Sea Fox" "Atule" "Spikefish" "Sea Owl" "Sea Poacher" "Sea Robin" "Sennet" "Piper" "Threadfin" 
+			"Spadefish" "Trepang" "Spot" "Springer" "Stickleback" "Tiru" 
+			"Tench" "Thornback" "Tigrone" "Tirante" "Trutta" "Toro" "Torsk" "Quillback" "Trumpetfish" "Tusk" "Turbot" "Ulua" "Unicorn" "Vendace" "Walrus" "Whitefish" "Whiting" "Wolffish" "Corsair" "Conger" "Cutlass" 
+			"Diablo" "Medregal" "Requin" "Irex" "Sea Leopard" "Odax" "Sirago" "Pomodon" "Remora" "Sarda" "Spinax" "Volador" "Comber" "Sea Panther" "Tiburon" "Kinn" "Springeren"
+		}
+	}	
+	destroyer = {
+		prefix = "CRS"
+		generic = {
+			"Destroyer"
+		}
+		unique = {
+			# From wiki, Farragut class and beyond by flag number.  
+			"Farragut" "Dewey" "Hull" "Macdonough" "Worden" "Dale" "Monaghan" "Aylwin" "Porter" "Selfridge" "McDougal" "Winslow" "Phelps" "Clark" "Moffett" "Balch" 
+			"Mahan" "Cummings" "Drayton" "Lamson" "Flusser" "Reid" "Case" "Conyngham" "Cassin" "Shaw" "Tucker" "Downes" "Cushing" "Perkins" "Smith" "Preston" 
+			"Gridley" "Somers" "Craven" "Warrington" "Dunlap" "Fanning" "Bagley" "Blue" "Helm" "Mugford" "Talbot" "Henley" "Patterson" "Jarvis" "Sampson" "Davis" "Jouett" 
+			"Benham" "Ellet" "Lang" "McCall" "Maury" "Mayrant" "Trippe" "Rhind" "Rowan" "Stack" "Sterett" "Wilson" "Sims" "Hughes" "Anderson" "Hammann" "Mustin" "Russell" "O Brien" "Walke" "Morris" "Roe" "Wainwright" "Buck" 
+			"Benson" "Mayo" "Gleaves" "Niblack" "Madison" "Lansdale" "Jones" "Hughes" "Livermore" "Eberle" "Plunkett" "Kearny" "Gwin" "Meredith" "Grayson" "Monssen" "Woolsey" "Ludlow" "Edison" 
+			"Ericsson" "Wilkes" "Nicholson" "Swanson" "Ingraham" "Fletcher" "Radford" "Jenkins" "O'Bannon" "Chevalier" "Bristol" "Ellyson" "Hambleton" "Rodman" "Emmons" "Macomb" "Laffey" "Woodworth" "Forrest" 
+			"Fitch" "Corry" "Hobson" "Saufley" "Waller" "Strong" "Taylor" "De Haven" "Bache" "Beale" "Guest" "Bennett" "Fullam" "Hudson" "Hutchins" "Pringle" "Stanly" "Stevens" "Halford" "Leutze" "Ward" "Buchanan" 
+			"Duncan" "Lansdowne" "Lardner" "McCalla" "Mervine" "Quick" "Farenholt" "Bailey" "Carmick" "Doyle" "Endicott" "McCook" "Frankford" "Philip" "Renshaw" "Ringgold" "Schroeder" "Sigsbee" 
+			"Conway" "Cony" "Converse" "Eaton" "Foote" "Spence" "Terry" "Thatcher" "Anthony" "Wadsworth" "Walker" "Brownson" "Daly" "Isherwood" "Kimberly" "Luce" 
+			"Read" "Ammen" "Bush" "Trathen" "Hazelwood" "Heermann" "Hoel" "McCord" "Miller" "Owen" "The Sullivans" "Potter" "Tingey" "Twining" "Yarnall" "Boyd" "Bradford" "Brown" 
+			"Cowell" "Capps" "Taylor" "Evans" "Henley" "Franks" "Haggard" "Hailey" "Johnston" "Laws" "Longshaw" "Morrison" "Prichett" "Robinson" "Ross" "Rowe" "Smalley" "Stoddard" "Watts" "Wren" 
+			"Aulick" "Ausburne" "Claxton" "Dyson" "Harrison" "Rodgers" "McKee" "Murray" "Sproston" "Wickes" "Porter" "Young" "Charrette" "Conner" "Hall" "Halligan" "Haraden" "Newcomb" "Bell" "Burns" 
+			"Izard" "Hamilton" "Twiggs" "Howorth" "Killen" "Hart" "Metcalf" "Shields" "Wiley" "Bancroft" "Barton" "Boyle" "Champlin" "Meade" "Murphy" "Parker" "Caldwell" "Coghlan" "Frazier" "Gansevoort" "Gillespie" 
+			"Hobby" "Kalk" "Kendrick" "Laub" "MacKenzie" "McLanahan" "Nields" "Ordronaux" "Davison" "Glennon" "Jeffers" "Maddox" "Nelson" "Baldwin" "Harding" "Satterlee" "Thompson" "Welles" "Abbot" "Braine" "Erben" 
+			"Cowie" "Knight" "Doran" "Earle" "Butler" "Gherardi" "Herndon" "Shubrick" "Beatty" "Tillman" "Hale" "Sigourney" "Stembel" "Stevenson" "Stockton" "Thorn" "Turner" "Grant" "Caperton" "Cogswell" 
+			"Ingersoll" "Knapp" "Bearss" "Hood" "Van Valkenburgh" "Badger" "Colahan" "Dashiell" "Bullard" "Kidd" "Bennion" "Edwards" "Leary" "Bryant" "Black" "Chauncey" 
+			"Bronson" "Cotten" "Dortch" "Gatling" "Healy" "Hickox" "Hunt" "Hancock" "Marshall" "McDermut" "McGowan" "McNair" "Melvin" "Hopewell" "Porterfield" "Stockham" "Wedderburn" "Picking" 
+			"Powell" "Uhlmann" "Remey" "Wadleigh" "Scott" "Mertz" "Sumner" "Moale" "Ingraham" "Cooper" "English" "Sperry" "Ault" "Waldron" "Haynsworth" 
+			"Weeks" "Hank" "Lind" "Borie" "Compton" "Gainard" "Soley" "Dickson" "Purvis" "Gearing" "Greene" "Gyatt" "Bailey" "Rush" "Wood" "Wiltsie" 
+			"Chandler" "Hamner" "Epperson" "Mansfield" "Swenson" "Collett" "Hyman" "Abele" "Purdy" "Smith" "Fraser" "Shannon" "Bauer" "Adams" "Tolman" 
+			"Drexler" "Knox" "Southerland" "Brush" "Taussig" "Moore" "Hubbard" "Wiley" "Shea" "Ditter" "Cunningham" "Pierce" "Evans" "Bole" 
+			"Putnam" "Lofberg" "Thomason" "Lawe" "Thomas" "Keppler" "Owens" "Lowry" "Lindsey" "Hadley" "Keith" "Owens" "Zellars" "Massey" "Fox" "Stormes" 
+			"Robert K Huntington" "Gurke" "McKean" "Henderson" "Richard B Anderson" "James E Kyes" "Hollister" "Eversole" "Shelton" "Seaman" "Callaghan" "Cassin Young" "Irwin" "Colhoun" "Gregory" "Little" "Rooks" 
+			"Higbee" "Benner" "Buckley" "New" "Holder" "Rich" "McCard" "Roberts" "Basilone" "Carpenter" "Agerholm" "Owens" "Timmerman" "Fox" "Larson" "Goodrich" 
+			"Hanson" "Thomas" "Cecil" "MacKenzie" "Sarsfield" "Small" "Power" "Fiske" "Bausell" "Ozbourn" "Wilson" "Witek" "Kraus" "Kennedy" 
+			"Rupertus" "Mason" "Roan" "Berry" "Norris" "McCaffery" "Harwood" "Vogelgesang" "Steinaker" "Ellison" "Ware" "Cone" "Stribling" "Isbell" "Fechteler" 
+			"Damato" "Royal" "Hawkins" "Tucker" "Rogers" "Vesole" "Leary" "Dyess" "Bordelon" "Furse" "Perry" "Parks" "Craig" "Orleck" "Brinkley Bass" "Stickell" "O'Hare"
+			"Mitscher" "McCain" "Lee" "Wilkinson" "Sherman" "Paul Jones" "Barry" "Decatur" "Ingram" "Manley" "Du Pont" "Bigelow" "Blandy" "Mullinnix" "Edson"
+			"Morton" "Parsons" "Edwards" "Joy" "Adams" "King" "Lawrence" "Biddle" "Barney" "Wilson" "McCormick" "Towers" 
+			}
+		}
+	light_cruiser = {
+		prefix = "CRS"
+		generic = { "Light Cruiser" }
+		unique = {
+			# From Wiki (Built/Served/Fought) 
+			"Sacramento" "Monterey" "Yreka" "Davis" "Torrance" "San Mateo" "Mountain View" "San Jose" "Daly City" 
+			"Richmond" "Fresno" "Long Beach" "Bakersfield" "Santa Ana" "Riverside" "Stockton" "Fremont" "Irvine" "San Bernardino" "Modesto" "Stanislaus" "Pasadena" "Fontana" "San Joaquin" "Kern" "Alameda" 
+			"Oceanside" "Ontario" "Glendale" "Oxnard" "Santa Clarita" "Corona" "Salinas" "Sunnyvale" "Fullerton" "Orange" "Concord" 
+			"Visalia" "Pomona" "Palmdale" "Lancaster" 
+			# CLAA Names
+			"Rancho Cucamonga" "Elk Grove" "San Diego" "Hayward" "Oakland" "Chula Vista" "Moreno Valley" "Garden Grove" "Foster City" "Escondido" "Thousand Oaks" 
+			"Simi Valley" "Sonora" "Roseville" "Santa Clara" "Victorville" "Richmond" "El Monte" "Berkeley" "Downey" "Costa Mesa" 
+			# From Wiki  (Unfinished/Cancelled/Converted before completion)
+			"Inglewood" "Ventura" "West Covina" "Norwalk" "Carlsbad" "Fairfield" "Murrieta" "Burbank" "Antioch" "Temecula" 
+			# Older Cruiser Names
+			"Santa Maria" "El Cajon" "Rialto" "Compton" "Clovis" "Jurupa Valley" "South Gate" "Vista" "Mission Viejo" "Vacaville" "Carson" "San Francisco" "Hesperia" "Yosemite" "Redding" "Santa Monica" 
+			"Westminster" "Santa Barbara" "Chico" "Whittier" "Newport Beach" "San Leandro"
+			}
+	}
+	heavy_cruiser = {
+		prefix = "CRS"
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"San Francisco" "Chico" "Burbank" "Mountain View" "Sunnyvale" "South San Francisco" "Daly City" "Hayward" "Irvine" "Berkeley" "Davis" "Los Angeles" "Fremont" "San Jose" "Santa Clara" 
+			"Carlsbad" "Brentwood" "Oakley" "Compton" "Fairfield" "Ontario" 
+			"Rancho Cucamonga" "Elk Grove" "San Diego" "Hayward" "Oakland" "Chula Vista" "Moreno Valley" "Garden Grove" "Foster City" "Escondido" "Thousand Oaks" 
+			"Simi Valley" "Sonora" "Roseville" "Santa Clara" "Victorville" "Richmond" "El Monte" "Berkeley" "Downey" "Costa Mesa" 
+			# From Wiki  (Unfinished/Cancelled/Converted before completion)
+			"Inglewood" "Ventura" "West Covina" "Norwalk" "Carlsbad" "Fairfield" "Murrieta" "Burbank" "Antioch" "Temecula" 
+			# Older Cruiser Names
+			"Santa Maria" "El Cajon" "Rialto" "Compton" "Clovis" "Jurupa Valley" "South Gate" "Vista" "Mission Viejo" "Vacaville" "Carson" "San Francisco" "Hesperia" "Yosemite" "Redding" "Santa Monica" 
+			"Westminster" "Santa Barbara" "Chico" "Whittier" "Newport Beach" "San Leandro"
+			}
+	}
+	battle_cruiser = {
+		prefix = "CRS"
+		generic = { "Battle Cruiser" }
+		unique = {
+			#wiki: Historic list of Alaska Class
+			"California" "Norcal" "Socal" "San Andreas" "Jefferson" "Republic" 
+			#Additional US Territories/Districts during WW2 era
+			"Alta California" "Baja California" "Aztlan" "Californios" "Bear Flag" "Yerba Buena Island" "Farallones" "Alcatraz Island" "Treasure Island"
+			}
+	}
+	battleship = {
+		prefix = "CRS"
+		generic = { "Battleship" }
+		unique = {
+			"Alameda" "Amador" "Butte" "Calaveras" "Colusa" "Contra Costa" "Del Norte" "El Dorado"   
+			"Fresno" "Glenn" "Humboldt" "Imperial" "Inyo" "Kern" "Kings" "Lake" "Lassen" "Los Angeles" "Madera" "Marin" "Mendocino" "Merced" "Modoc" 
+			# From Wiki (never completed)
+			"Monterey" "Napa" "Nevada" "Orange" "Placer" "Riverside" "Sacramento" "San Benito" "San Bernardino" "San Diego" "San Francisco" "San Joaquin" "San Luis Obispo" "San Mateo"
+			# Older/Other state names
+			"Santa Barbara" "Santa Clarita" "Santa Cruz" "Shasta" "Sierra" 
+		}
+	}	
+	carrier = {
+		prefix = "CRS"
+		generic = { "Carrier" }
+		unique = {
+			"Enterprise" "Columbia" "Intrepid" "Kobayashi Maru" 
+			"Yorktown" "Defiant" "Stargazer" 
+			"Discovery" "Bonaventure" "Constitution" "Excelsior" "Reliant" "Ambassador" "Galaxy" "Sovereign" "Yamato" "Voyager" "Equinox" "Akira" "Prometheus" "Hood" "Centaur" 
+			"Botany Bay" "Warp Delta" "Saratoga" "Horizon" "Jenolan" "Bozeman" "Emmette" "Lantree" "Challenger" "Kelvin" 
+			# Cold War and Beyond  (WW2 era Gen/Adm names excluded)
+			"Phoenix" "Antares" "Melbourne" "Titan" "Aventine" "Valiant" "Franklin" "Thunderchild" "Everly"
+			}
+	}
+
+	air_wing_names_template = AIR_WING_NAME_CAL_FALLBACK
+
+	#Air wings can only be named through archetype
+	fighter_equipment = {
+		prefix = ""
+		generic = { "Fighter Group" }
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+
+	scout_plane_equipment = {
+		prefix = ""
+		generic = { "Photo Reconnaissance Group" }
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_fighter_equipment = {
+		prefix = ""
+		generic = { "Fighter Group" "Combat Evaluation Group"}
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+
+	heavy_fighter_equipment = {
+		prefix = ""
+		generic = { "Heavy Pursuit Group" }
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+
+	CAS_equipment = {
+		prefix = ""
+		generic = { "Light Bombardment Group" }
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+
+	cv_fighter_equipment = {
+		prefix = ""
+		generic = { "VF" "VMF" }
+		generic_pattern = AIR_WING_NAME_CAL_CARRIER
+		unique = {
+		}	
+	}
+
+	cv_CAS_equipment = {
+		prefix = ""
+		generic = { "VB" "VMB" "VS" "VMS" "VMSB" "VSB" }
+		generic_pattern = AIR_WING_NAME_CAL_CARRIER
+		unique = {
+		}	
+	}
+	cv_nav_bomber_equipment = {
+		prefix = ""
+		generic = { "VT" "VMTB" }
+		generic_pattern = AIR_WING_NAME_CAL_CARRIER
+		unique = {
+		}	
+	}
+
+	tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Medium Bombardment Group" }
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Medium Bombardment Group" "Fast Strike Group"}
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+
+	nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Patrol Bomber Squadron" "VP" }
+		generic_pattern = AIR_WING_NAME_CAL_CARRIER
+		unique = {
+		}	
+	}
+
+	strat_bomber_equipment = {
+		prefix = ""
+		generic = { "Heavy Bombardment Group" }
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_strat_bomber_equipment = {
+		prefix = ""
+		generic = { "Heavy Bombardment Group" }
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+
+	transport_plane_equipment = {
+		prefix = ""
+		generic = { "Troop Carrier Group" }
+		generic_pattern = AIR_WING_NAME_CAL_GENERIC
+		unique = {
+		}	
+	}
+}

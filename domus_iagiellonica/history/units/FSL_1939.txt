@@ -1,0 +1,285 @@
+﻿start_equipment_factor = 0.1
+##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	division_names_group = FSL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+division_template = {
+	name = "National Guard Division"  # Standard formation for NG divisions through late 1940
+
+	division_names_group = FSL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+division_template = {
+	name = "Cavalry Division"  	# 1st Cavalry Division only
+
+	division_names_group = FSL_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
+		engineer = { x = 0 y = 1 }   # US Eng Bn
+	}
+}
+division_template = {
+	name = "Mechanized Cavalry"  	# 7th Cavalry (Mech.) Brigade, precursor to 1st Armored Div.
+
+	division_names_group = FSL_CAV_01		# Brigade level irregular unit, so no default names
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }      
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "Marine Brigade" 		# 1st, 2nd Marine Brigades, precursors to 1st, 2nd USMC Divisions
+
+	division_names_group = FSL_MAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 2
+}
+division_template = {
+	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
+
+	division_names_group = FSL_GAR_01		# Brigade level irregular unit, so no default names
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 0
+}
+
+
+###### OOB ######
+units = {
+
+	
+			
+
+
+	
+	# III Army Corps (CO: Ford) #
+	division= {			
+		division_name = { # 6th 'Sightseeing Sixth' Div.
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9450
+		division_template = "Infantry Division"		# forming, Oct-39
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}			
+	division= {			
+		division_name = { # 32nd 'Red Arrow' Division
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 9450
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = { # 33rd 'Golden Cross' Division
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 9450
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+
+	# I Army Corps (CO: Embick) #
+			
+	# VIII Army Corps (CO: Brees) #
+	division= {			
+		division_name = { # 2nd 'Indianhead' Division
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}			
+	division= {			
+		division_name = { # 36th 'Texas' Division
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = { # 45th 'Thunderbird' Division
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12782
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = { # 1st Cavalry 'The 1st Team' Division
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12782
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.3
+	}			
+					
+	### 4th Army (CO: DeWitt)  -- note: Armies only paper organizations in 1939 ###
+	# VII Army Corps (CO: Bishop) #
+	division= {			
+		division_name = { # 34th 'Red Bull' Division
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12586
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		division_name = { # 35th 'Santa Fe' Division
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12586
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}								
+}					
+			
+			
+air_wings = {
+	
+	
+	371 = { 															# Louisiana
+		### 3rd FSLAF Wing (CO: Martin) ###
+		CAS_equipment_2 = { owner = "FSL" amount = 63 }					# 3rd Attack Group -- A-20s
+	}
+}
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FSL"
+		}
+		requested_factories = 6
+		progress = 0.1
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FSL" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "FSL" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_1
+			creator = "FSL" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+}
+#####################

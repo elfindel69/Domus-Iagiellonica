@@ -1,0 +1,6 @@
+ALA_economic_reform_decisions = {
+	icon = generic_economy
+	visible = { 
+		has_completed_focus = ALA_New_economic
+	}
+}

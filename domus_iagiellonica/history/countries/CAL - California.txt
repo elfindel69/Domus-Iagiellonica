@@ -1,0 +1,412 @@
+﻿capital = 378
+
+oob = "CAL_1936"
+add_ideas = CAL_hollywood_studio_bosses
+
+set_research_slots = 4
+set_stability = 0.75
+set_war_support = 0
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	superior_firepower = 1
+	base_strike = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+1939.1.1 = {
+
+	add_political_power = 1199
+	oob = "CAL_1939"
+
+	set_technology = {
+		fighter1 = 1
+		cv_fighter1 = 1
+		heavy_fighter1 = 1
+		tactical_bomber1 = 1
+		CAS2 = 1
+		strategic_bomber1 = 1
+		basic_light_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		marines = 1
+
+		#doctrines
+		#Air
+		air_superiority = 1
+		infrastructure_destruction = 1
+		naval_strike_tactics = 1
+
+		sup_delay = 1
+		submarine_operations_bs = 1
+		carrier_primacy = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining2 = 1
+		fuel_refining3 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			improved_submarine = 1
+			basic_destroyer = 1
+			basic_heavy_cruiser = 1
+			basic_battlecruiser = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			improved_ship_hull_light = 1
+			basic_ship_hull_heavy = 1
+			improved_ship_hull_heavy = 1
+			improved_sonar = 1
+			improved_ship_torpedo_launcher = 1
+			improved_cruiser_armor_scheme = 1
+			improved_heavy_battery = 1
+			dp_secondary_battery = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Martin M166"
+		type = tac_bomber_equipment_0
+		upgrades = {
+			plane_tac_bomb_upgrade = 2
+			plane_range_upgrade = 1
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 3
+		}
+	}
+}
+
+
+
+
+set_convoys = 250
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 77
+	communism = 13
+	fascism = 8
+	neutrality = 2
+}
+
+create_country_leader = {
+	name = "Frank Merriam"
+	desc = "POLITICS_FRANK_MERRIAM_DESC"
+	picture = "Portrait_California_Frank_Merriam.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Norton II"
+	desc = "POLITICS_NORTON_II_DESC"
+	picture = "Portrait_California_Emperor_Norton.dds"
+	expire = "1965.1.1"
+	ideology = paternalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Thomas Williams"
+	desc = "riker_desc"
+	picture = "Portrait_California_Thomas_Williams.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		riker
+	}
+}
+
+create_country_leader = {
+	name = "Upton Sinclair"
+	desc = "POLITICS_UPTON_SINCLAIR_DESC"
+	picture = "Portrait_California_Upton_Sinclair.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1938.11.3"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 46
+		communism = 39
+		fascism = 13
+		neutrality = 2
+	}
+
+	create_country_leader = {
+		name = "Ronald Reagan"
+		desc = "POLITICS_RONALD_REAGAN_DESC"
+		picture = "Portrait_California_Ronald_Reagan.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			wall_tearer
+		}
+	}
+	set_party_name = { 
+		ideology = democratic
+		long_name = CAL_republican_party 
+		name = CAL_republican_party 
+	}
+}
+
+create_field_marshal = {
+	name = "Thomas Williams"
+	picture = "Portrait_California_Thomas_Williams.dds"
+	traits = {  expert_delegator inspirational_leader }
+	skill = 5
+	
+	attack_skill = 7 
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Nicolas Ortiz"
+	picture = "Portrait_California_Nicolas_Ortiz.dds"
+	traits = {  trait_cautious media_personality }
+	skill = 5
+
+	attack_skill = 3
+	defense_skill = 7
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Jackson Harper"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_1.dds"
+	traits = {  career_officer brilliant_strategist }
+	skill = 4
+
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Trey Welsh"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_3.dds"
+	traits = {  politically_connected old_guard }
+	skill = 4
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Connor Wemyss"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_5.dds"
+	traits = {  infantry_officer war_hero }
+	skill = 4
+
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Matt Thompson"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_4.dds"
+	traits = {  trait_reckless }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mike Jones"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {   }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dylan Bryant"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {   }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Castor Schmidt"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_2.dds"
+	traits = {  aggressive_assaulter offensive_doctrine }
+	skill = 5
+
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Brent Stewart"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_navy_1.dds"
+	traits = { aviation_enthusiast blockade_runner }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 6
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Alan Valencia"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = { ironside fleet_protector }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Brent Stewart"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_navy_2.dds"
+	traits = { superior_tactician }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Grant Mejia"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+	traits = { gunnery_expert superior_tactician spotter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}

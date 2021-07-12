@@ -1,0 +1,1114 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+CAL_INF_01 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Infantry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst 'One Bear' Division" }
+		2 = { "%dnd 'Grizzly' Division" }
+		3 = { "%drd 'Ide's Guides' Division" }
+		5 = { "%dth 'Revolt' Division" }
+		6 = { "%dth 'Sixpack' Division" }
+		4 = { "%dth 'Perfect Square' Division" }
+		7 = { "%dth 'Lucky Sevens' Division" }
+		8 = { "%dth Infantry Division" }
+		9 = { "%dth 'Horseshoe' Division" }
+		30 = { "%dth Infantry Division" }
+		41 = { "%dst Infantry Division" }
+		44 = { "%dth Infantry Division" }
+		45 = { "%dth 'Hustlers' Division" }
+		27 = { "%dth 'Into the Fire' Division" }
+		32 = { "%dnd 'Santiago' Division" }
+		37 = { "%dth Infantry Division" }
+		31 = { "%dst Infantry Division" }
+		36 = { "%dth Infantry Division" }
+		35 = { "%dth 'Howlers' Division" }
+		26 = { "%dth Infantry Division" }
+		38 = { "%dth 'Hear Us Roar' Division" }
+		29 = { "%dth 'Weedeaters' Division" }
+		34 = { "%dth Infantry Division" }
+		28 = { "%dth Infantry Division" }
+		43 = { "%drd 'Land Grant' Division" }
+		33 = { "%drd Infantry Division" }
+		40 = { "%dth Infantry Division" }
+		24 = { "%dth Infantry Division" }
+		25 = { "%dth 'Five by Five' Division" }
+		77 = { "%dth Infantry Division" }
+		90 = { "%dth Infantry Division" }
+		85 = { "%dth Infantry Division" }
+		93 = { "%drd Infantry Division" }
+		23 = { "%drd Infantry Division" }
+		76 = { "%dth 'Devil's Dogs' Division" }
+		79 = { "%dth 'Flying Falcons' Division" }
+		81 = { "%dst Infantry Division" }
+		80 = { "%dth Infantry Division" }
+		88 = { "%dth 'Heartache' Division" }
+		89 = { "%dth Infantry Division" }
+		95 = { "%dth Infantry Division" }
+		78 = { "%dth Infantry Division" }
+		83 = { "%drd 'Pacific Pacifists' Division" }
+		91 = { "%dst Infantry Division" }
+		96 = { "%dth Infantry Division" }
+		94 = { "%dth 'California Grizzlies' Division" }
+		98 = { "%dth 'High Time' Division" }
+		102 = { "%dnd Infantry Division" }
+		104 = { "%dth Infantry Division" }
+		84 = { "%dth Infantry Division" }
+		92 = { "%dnd Infantry Division" }
+		99 = { "%dth 'Off By One' Division" }
+		100 = { "%dth 'Centennial' Division" }
+		103 = { "%drd Infantry Division" }
+		86 = { "%dth Infantry Division" }
+		87 = { "%dth Infantry Division" }
+		97 = { "%dth Infantry Division" }
+		106 = { "%dth Infantry Division" }
+		66 = { "%dth Infantry Division" }
+		75 = { "%dth Infantry Division" }
+		69 = { "%dth 'Funny Business' Division" }
+		63 = { "%drd 'Los Angeles Angels' Division" }
+		70 = { "%dth Infantry Division" }
+		42 = { "%dnd Infantry Division" }
+		71 = { "%dst Infantry Division" }
+		65 = { "%dth Infantry Division" }
+		61 = { "%dst Infantry Division" }			# start of unorganized WW2 divisions here
+		62 = { "%dnd Infantry Division" }
+		67 = { "%dth Infantry Division" }
+		68 = { "%dth Infantry Division" }
+		72 = { "%dnd Infantry Division" }
+		73 = { "%drd 'Gig 'em' Division" }
+		74 = { "%dth Infantry Division" }
+		105 = { "%dth Infantry Division" }
+		107 = { "%dth Infantry Division" }
+		11 = { "%dth 'El' Division" }		# start of Normandy phantom divisions here
+		14 = { "%dth 'The Sacrament' Division" }
+		15 = { "%dth Infantry Division" }
+		16 = { "%dth 'Sweet Sixteen' Division" }
+		17 = { "%dth 'Large Marge' Division" }
+		19 = { "%dth 'Sal's Gals' Division" }
+		21 = { "%dth 'Nineteen' Division" }
+		22 = { "%dth 'Swift' Division" }
+		50 = { "%dth 'Wayward Winds' Division" }
+		55 = { "%dth 'Fightin' Fifty Fifth' Division" }
+		59 = { "%dth 'Burns' Buggers' Division" }
+		108 = { "%dth Infantry Division" }
+		109 = { "%dth Infantry Division" }
+		112 = { "%dth Infantry Division" }
+		119 = { "%dth Infantry Division" }
+		125 = { "%dth Infantry Division" }
+		130 = { "%dth Infantry Division" }
+		141 = { "%dst Infantry Division" }
+		157 = { "%dth Infantry Division" }
+		39 = { "%dth Infantry Division" }			# start of postwar divisions here
+		47 = { "%dth 'Pio no Pico' Division" }
+		46 = { "%dth Infantry Division" }
+		48 = { "%dth Infantry Division" }
+		51 = { "%dst Infantry Division" }
+		49 = { "%dth '49ers' Division" }
+		52 = { "%dnd 'Rogue Watchers' Division" }
+		110 = { "%dth Infantry Division" }		# old HOI3 names (not verifed as historical)
+		115 = { "%dth Infantry Division" }
+		116 = { "%dth Infantry Division" }
+		128 = { "%dth Infantry Division" }
+		131 = { "%dth Infantry Division" }
+		164 = { "%dth Infantry Division" }
+		165 = { "%dth Infantry Division" }
+		166 = { "%dth Infantry Division" }
+		167 = { "%dth Infantry Division" }
+		168 = { "%dth Infantry Division" }
+		169 = { "%dth Infantry Division" }
+		170 = { "%dth Infantry Division" }
+		171 = { "%dst Infantry Division" }
+		172 = { "%dnd Infantry Division" }
+		173 = { "%drd Infantry Division" }
+		187 = { "%dth Infantry Division" }
+		188 = { "%dth Infantry Division" }
+		189 = { "%dth Infantry Division" }
+		190 = { "%dth Infantry Division" }
+		191 = { "%dst Infantry Division" }
+		192 = { "%dnd Infantry Division" }
+		193 = { "%drd Infantry Division" }
+		194 = { "%dth Infantry Division" }
+		195 = { "%dth Infantry Division" }
+		196 = { "%dth Infantry Division" }
+		197 = { "%dth Infantry Division" }
+		198 = { "%dth Infantry Division" }
+		199 = { "%dth Infantry Division" }
+		200 = { "%dth Infantry Division" }
+		201 = { "%dst Infantry Division" }
+		203 = { "%drd Infantry Division" }
+		204 = { "%dth Infantry Division" }
+		205 = { "%dth Infantry Division" }
+		158 = { "%dth Infantry Division" }
+		159 = { "%dth Infantry Division" }
+		160 = { "%dth Infantry Division" }
+		161 = { "%dst Infantry Division" }
+		162 = { "%dnd Infantry Division" }
+		163 = { "%drd Infantry Division" }
+		174 = { "%dth Infantry Division" }
+		175 = { "%dth Infantry Division" }
+		176 = { "%dth Infantry Division" }
+		177 = { "%dth Infantry Division" }
+		178 = { "%dth Infantry Division" }
+		179 = { "%dth Infantry Division" }
+		180 = { "%dth Infantry Division" }
+		181 = { "%dst Infantry Division" }
+		182 = { "%dnd Infantry Division" }
+		183 = { "%drd Infantry Division" }
+		184 = { "%dth Infantry Division" }
+		185 = { "%dth Infantry Division" }
+		186 = { "%dth Infantry Division" }
+		219 = { "%dth Infantry Division" }
+		220 = { "%dth Infantry Division" }
+		221 = { "%dst Infantry Division" }
+		222 = { "%dnd Infantry Division" }
+		223 = { "%drd Infantry Division" }
+		224 = { "%dth Infantry Division" }
+		225 = { "%dth Infantry Division" }
+		226 = { "%dth Infantry Division" }
+		227 = { "%dth Infantry Division" }
+		228 = { "%dth Infantry Division" }
+		229 = { "%dth Infantry Division" }
+		230 = { "%dth Infantry Division" }
+		231 = { "%dst Infantry Division" }
+		232 = { "%dnd Infantry Division" }
+		233 = { "%drd Infantry Division" }
+		234 = { "%dth Infantry Division" }
+		235 = { "%dth Infantry Division" }
+		236 = { "%dth Infantry Division" }
+		237 = { "%dth Infantry Division" }
+		238 = { "%dth Infantry Division" }
+		239 = { "%dth Infantry Division" }
+		240 = { "%dth Infantry Division" }
+		241 = { "%dst Infantry Division" }
+		244 = { "%dth Infantry Division" }
+		245 = { "%dth Infantry Division" }
+		246 = { "%dth Infantry Division" }
+		247 = { "%dth Infantry Division" }
+		248 = { "%dth Infantry Division" }
+		249 = { "%dth Infantry Division" }
+		250 = { "%dth Infantry Division" }
+		251 = { "%dst Infantry Division" }
+		252 = { "%dnd Infantry Division" }
+		253 = { "%drd Infantry Division" }
+		254 = { "%dth Infantry Division" }
+		255 = { "%dth Infantry Division" }
+		256 = { "%dth Infantry Division" }
+		257 = { "%dth Infantry Division" }
+		258 = { "%dth Infantry Division" }
+		259 = { "%dth Infantry Division" }
+		260 = { "%dth Infantry Division" }
+		261 = { "%dst Infantry Division" }
+		262 = { "%dnd Infantry Division" }
+		263 = { "%drd Infantry Division" }
+		264 = { "%dth Infantry Division" }
+		265 = { "%dth Infantry Division" }
+		266 = { "%dth Infantry Division" }
+		267 = { "%dth Infantry Division" }
+		268 = { "%dth Infantry Division" }
+		269 = { "%dth Infantry Division" }
+		270 = { "%dth Infantry Division" }
+		319 = { "%dth Infantry Division" }
+		320 = { "%dth Infantry Division" }
+		321 = { "%dst Infantry Division" }
+		322 = { "%dnd Infantry Division" }
+		323 = { "%drd Infantry Division" }
+		324 = { "%dth Infantry Division" }
+		325 = { "%dth Infantry Division" }
+		326 = { "%dth Infantry Division" }
+		327 = { "%dth Infantry Division" }
+		328 = { "%dth Infantry Division" }
+		329 = { "%dth Infantry Division" }
+		330 = { "%dth Infantry Division" }
+		331 = { "%dst Infantry Division" }
+		332 = { "%dnd Infantry Division" }
+		333 = { "%drd Infantry Division" }
+		334 = { "%dth Infantry Division" }
+		335 = { "%dth Infantry Division" }
+		336 = { "%dth Infantry Division" }
+		337 = { "%dth Infantry Division" }
+		338 = { "%dth Infantry Division" }
+		339 = { "%dth Infantry Division" }
+		340 = { "%dth Infantry Division" }
+		341 = { "%dst Infantry Division" }
+		344 = { "%dth Infantry Division" }
+		345 = { "%dth Infantry Division" }
+		346 = { "%dth Infantry Division" }
+		347 = { "%dth Infantry Division" }
+		348 = { "%dth Infantry Division" }
+		349 = { "%dth Infantry Division" }
+		350 = { "%dth Infantry Division" }
+		351 = { "%dst Infantry Division" }
+		352 = { "%dnd Infantry Division" }
+		353 = { "%drd Infantry Division" }
+		354 = { "%dth Infantry Division" }
+		355 = { "%dth Infantry Division" }
+		356 = { "%dth Infantry Division" }
+		357 = { "%dth Infantry Division" }
+		358 = { "%dth Infantry Division" }
+		359 = { "%dth Infantry Division" }
+		360 = { "%dth Infantry Division" }
+		361 = { "%dst Infantry Division" }
+		362 = { "%dnd Infantry Division" }
+		363 = { "%drd Infantry Division" }
+		364 = { "%dth Infantry Division" }
+		365 = { "%dth Infantry Division" }
+		366 = { "%dth Infantry Division" }
+		367 = { "%dth Infantry Division" }
+		368 = { "%dth Infantry Division" }
+		369 = { "%dth Infantry Division" }
+		370 = { "%dth Infantry Division" }
+	}
+}
+
+CAL_CAV_01 = 
+{
+	name = "Cavalry Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Cavalry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Cavalry Division" }
+		2 = { "%dnd Cavalry Division" }
+		3 = { "%drd Cavalry Division" }
+		15 = { "%dth Cavalry Division" }
+		21 = { "%dst Cavalry Division" }
+		24 = { "%dth Cavalry Division" }
+		61 = { "%dst Cavalry Division" }
+		62 = { "%dnd Cavalry Division" }
+		63 = { "%drd Cavalry Division" }
+		64 = { "%dth Cavalry Division" }
+		65 = { "%dth Cavalry Division" }
+		66 = { "%dth Cavalry Division" }
+		22 = { "%dnd Cavalry Division" }
+		23 = { "%drd Cavalry Division" }
+		56 = { "%dth Cavalry Division" }
+		25 = { "%dth Cavalry Division" }
+		26 = { "%dth Cavalry Division" }
+		27 = { "%dth Cavalry Division" }
+		28 = { "%dth Cavalry Division" }
+		29 = { "%dth Cavalry Division" }
+		30 = { "%dth Cavalry Division" }
+	}
+}
+
+CAL_MOT_01 = 
+{
+	name = "Motorized Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Motorized Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		4 = { "%dth Motorized Division" }					# historical motorized divisions listed first
+		6 = { "%dth Motorized Division" }
+		7 = { "%dth Motorized Division" }
+		8 = { "%dth Motorized Division" }
+		90 = { "%dth Motorized Division" }
+		5 = { "%dth Motorized Division" }
+		1 = { "%dst Motorized Division" }			# other regular infantry divisions next
+		2 = { "%dnd Motorized Division" }
+		3 = { "%drd Motorized Division" }
+		9 = { "%dth Motorized Division" }
+		30 = { "%dth Motorized Division" }
+		41 = { "%dst Motorized Division" }
+		44 = { "%dth Motorized Division" }
+		45 = { "%dth Motorized Division" }
+		27 = { "%dth Motorized Division" }
+		32 = { "%dnd Motorized Division" }
+		37 = { "%dth Motorized Division" }
+		31 = { "%dst Motorized Division" }
+		36 = { "%dth Motorized Division" }
+		35 = { "%dth Motorized Division" }
+		26 = { "%dth Motorized Division" }
+		38 = { "%dth Motorized Division" }
+		29 = { "%dth Motorized Division" }
+		34 = { "%dth Motorized Division" }
+		28 = { "%dth Motorized Division" }
+		43 = { "%drd Motorized Division" }
+		33 = { "%drd Motorized Division" }
+		40 = { "%dth Motorized Division" }
+		24 = { "%dth Motorized Division" }
+		25 = { "%dth Motorized Division" }
+		77 = { "%dth Motorized Division" }
+		85 = { "%dth Motorized Division" }
+		93 = { "%drd Motorized Division" }
+		23 = { "%drd Motorized Division" }
+		76 = { "%dth Motorized Division" }
+		79 = { "%dth Motorized Division" }
+		81 = { "%dst Motorized Division" }
+		80 = { "%dth Motorized Division" }
+		88 = { "%dth Motorized Division" }
+		89 = { "%dth Motorized Division" }
+		95 = { "%dth Motorized Division" }
+		78 = { "%dth Motorized Division" }
+		83 = { "%drd Motorized Division" }
+		91 = { "%dst Motorized Division" }
+		96 = { "%dth Motorized Division" }
+		94 = { "%dth Motorized Division" }
+		98 = { "%dth Motorized Division" }
+		102 = { "%dnd Motorized Division" }
+		104 = { "%dth Motorized Division" }
+		84 = { "%dth Motorized Division" }
+		92 = { "%dnd Motorized Division" }
+		99 = { "%dth Motorized Division" }
+		100 = { "%dth Motorized Division" }
+		103 = { "%drd Motorized Division" }
+		86 = { "%dth Motorized Division" }
+		87 = { "%dth Motorized Division" }
+		97 = { "%dth Motorized Division" }
+		106 = { "%dth Motorized Division" }
+		66 = { "%dth Motorized Division" }
+		75 = { "%dth Motorized Division" }
+		69 = { "%dth Motorized Division" }
+		63 = { "%drd Motorized Division" }
+		70 = { "%dth Motorized Division" }
+		42 = { "%dnd Motorized Division" }
+		71 = { "%dst Motorized Division" }
+		65 = { "%dth Motorized Division" }
+		108 = { "%dth Motorized Division" }
+		39 = { "%dth Motorized Division" }			# start of postwar divisions here
+		47 = { "%dth Motorized Division" }
+		46 = { "%dth Motorized Division" }
+		48 = { "%dth Motorized Division" }
+		51 = { "%dst Motorized Division" }
+		49 = { "%dth Motorized Division" }
+		52 = { "%dnd Motorized Division" }
+	}
+}
+
+CAL_MEC_01 = 
+{
+	name = "Mechanized Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Mechanized Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		4 = { "%dth Mechanized Division" }					# historical motorized divisions listed first
+		6 = { "%dth Mechanized Division" }
+		7 = { "%dth Mechanized Division" }
+		8 = { "%dth Mechanized Division" }
+		90 = { "%dth Mechanized Division" }
+		5 = { "%dth Mechanized Division" }
+		1 = { "%dst Mechanized Division" }			# other regular infantry divisions next
+		2 = { "%dnd Mechanized Division" }
+		3 = { "%drd Mechanized Division" }
+		9 = { "%dth Mechanized Division" }
+		30 = { "%dth Mechanized Division" }
+		41 = { "%dst Mechanized Division" }
+		44 = { "%dth Mechanized Division" }
+		45 = { "%dth Mechanized Division" }
+		27 = { "%dth Mechanized Division" }
+		32 = { "%dnd Mechanized Division" }
+		37 = { "%dth Mechanized Division" }
+		31 = { "%dst Mechanized Division" }
+		36 = { "%dth Mechanized Division" }
+		35 = { "%dth Mechanized Division" }
+		26 = { "%dth Mechanized Division" }
+		38 = { "%dth Mechanized Division" }
+		29 = { "%dth Mechanized Division" }
+		34 = { "%dth Mechanized Division" }
+		28 = { "%dth Mechanized Division" }
+		43 = { "%drd Mechanized Division" }
+		33 = { "%drd Mechanized Division" }
+		40 = { "%dth Mechanized Division" }
+		24 = { "%dth Mechanized Division" }
+		25 = { "%dth Mechanized Division" }
+		77 = { "%dth Mechanized Division" }
+		85 = { "%dth Mechanized Division" }
+		93 = { "%drd Mechanized Division" }
+		23 = { "%drd Mechanized Division" }
+		76 = { "%dth Mechanized Division" }
+		79 = { "%dth Mechanized Division" }
+		81 = { "%dst Mechanized Division" }
+		80 = { "%dth Mechanized Division" }
+		88 = { "%dth Mechanized Division" }
+		89 = { "%dth Mechanized Division" }
+		95 = { "%dth Mechanized Division" }
+		78 = { "%dth Mechanized Division" }
+		83 = { "%drd Mechanized Division" }
+		91 = { "%dst Mechanized Division" }
+		96 = { "%dth Mechanized Division" }
+		94 = { "%dth Mechanized Division" }
+		98 = { "%dth Mechanized Division" }
+		102 = { "%dnd Mechanized Division" }
+		104 = { "%dth Mechanized Division" }
+		84 = { "%dth Mechanized Division" }
+		92 = { "%dnd Mechanized Division" }
+		99 = { "%dth Mechanized Division" }
+		100 = { "%dth Mechanized Division" }
+		103 = { "%drd Mechanized Division" }
+		86 = { "%dth Mechanized Division" }
+		87 = { "%dth Mechanized Division" }
+		97 = { "%dth Mechanized Division" }
+		106 = { "%dth Mechanized Division" }
+		66 = { "%dth Mechanized Division" }
+		75 = { "%dth Mechanized Division" }
+		69 = { "%dth Mechanized Division" }
+		63 = { "%drd Mechanized Division" }
+		70 = { "%dth Mechanized Division" }
+		42 = { "%dnd Mechanized Division" }
+		71 = { "%dst Mechanized Division" }
+		65 = { "%dth Mechanized Division" }
+		108 = { "%dth Mechanized Division" }
+		39 = { "%dth Mechanized Division" }			# start of postwar divisions here
+		47 = { "%dth Mechanized Division" }
+		46 = { "%dth Mechanized Division" }
+		48 = { "%dth Mechanized Division" }
+		51 = { "%dst Mechanized Division" }
+		49 = { "%dth Mechanized Division" }
+		52 = { "%dnd Mechanized Division" }
+	}
+}
+
+CAL_ARM_01 = 
+{
+	name = "Armored Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Armored Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Armored 'Old Ironsides' Div." }
+		2 = { "%dnd Armored 'Hell on Wheels' Div." }
+		3 = { "%drd Armored 'Spearhead' Div." }
+		4 = { "%dth Armored 'Breakthrough' Div." }
+		5 = { "%dth Armored 'Victory' Div." }
+		6 = { "%dth Armored 'Super Sixth' Div." }
+		7 = { "%dth Armored 'Lucky Seventh' Div." }
+		8 = { "%dth Armored 'Thundering Herd' Div." }
+		9 = { "%dth Armored 'Phantom' Div." }
+		10 = { "%dth Armored 'Tiger' Div." }
+		11 = { "%dth Armored 'Thunderbolt' Div." }
+		12 = { "%dth Armored 'Hellcat' Div." }
+		13 = { "%dth Armored 'Blackcat' Div." }
+		14 = { "%dth Armored 'Liberator' Div." }
+		15 = { "%dth Armored Division" }
+		16 = { "%dth Armored Division" }
+		20 = { "%dth Armored Division" }
+		21 = { "%dst Armored Division" }
+		22 = { "%dnd Armored Division" }
+		18 = { "%dth Armored Division" }
+		19 = { "%dth Armored Division" }
+		25 = { "%dth Armored Division" }
+		39 = { "%dth Armored Division" }
+		27 = { "%dth Armored 'Empire' Div." }
+		30 = { "%dth Armored 'Dixie' Div." }
+		40 = { "%dth Armored 'Grizzly' Div." }
+		48 = { "%dth Armored 'Hurricane' Div." }
+		49 = { "%dth Armored 'Lone Star' Div." }
+		50 = { "%drd Armored 'Jersey Blues' Div." }
+		51 = { "%dst Armored 'Cavaliers' Div." }
+		52 = { "%dnd Armored Division" }
+		53 = { "%drd Armored 'Jaguar' Div." }
+		54 = { "%dth Armored 'Roadrunners' Div." }
+		55 = { "%dth Armored 'Old Virginia' Div." }
+		56 = { "%dth Armored 'Crusaders' Div." }
+		57 = { "%dth Armored Division" }
+		58 = { "%dth Armored 'Patriot' Div." }
+		59 = { "%dth Armored 'Rough Riders' Div." }
+		60 = { "%dth Armored Division" }
+		61 = { "%dst Armored 'Stampede' Div." }
+		62 = { "%dnd Armored Division" }
+		63 = { "%drd Armored 'Charge!' Div." }
+		64 = { "%dth Armored 'Broncos' Div." }
+		65 = { "%dth Armored 'Lynx' Div." }
+		66 = { "%dth Armored 'Cheetah' Div." }
+		67 = { "%dth Armored 'Forward!' Div." }
+		68 = { "%dth Armored Division" }
+		69 = { "%dth Armored 'Leopard' Div." }
+		70 = { "%dth Armored Division" }
+		71 = { "%dst Armored 'Lancers' Div." }
+		72 = { "%dnd Armored Division" }
+		73 = { "%drd Armored Division" }
+		74 = { "%dth Armored 'Brandy Station' Div." }
+	}
+}
+
+CAL_PAR_01 = 
+{
+	name = "Airborne Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Airborne Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		82 = { "%dnd Airborne Division" }
+		101 = { "%dst Airborne Division" }
+		11 = { "%dth Airborne Division" }
+		13 = { "%dth Airborne Division" }
+		17 = { "%dth Airborne Division" }
+		18 = { "%dth Airborne Division" }
+		21 = { "%dst Airborne Division" }
+		135 = { "%dth Airborne Division" }
+		108 = { "%dth Airborne Division" }
+		15 = { "%dth Airborne Division" }
+		6 = { "%dth Airborne Division" }
+		9 = { "%dth Airborne Division" }
+		80 = { "%dth Airborne Division" }
+		84 = { "%dth Airborne Division" }
+		100 = { "%dth Airborne Division" }
+		202 = { "%dnd Airborne Division" }
+		271 = { "%dst Airborne Division" }
+		272 = { "%dnd Airborne Division" }
+		273 = { "%dth Airborne Division" }
+		274 = { "%dth Airborne Division" }
+		275 = { "%dth Airborne Division" }
+		276 = { "%dth Airborne Division" }
+		277 = { "%dth Airborne Division" }
+		278 = { "%dth Airborne Division" }
+	}
+}
+
+CAL_MAR_01 = 
+{
+	name = "Marine Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Marine Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Marine Division" }
+		2 = { "%dnd Marine Division" }
+		3 = { "%drd Marine Division" }
+		4 = { "%dth Marine Division" }
+		5 = { "%dth Marine Division" }
+		6 = { "%dth Marine Division" }
+		7 = { "%dth Marine Division" }
+		8 = { "%dth Marine Division" }
+		9 = { "%dth Marine Division" }
+		10 = { "%dth Marine Division" }
+		11 = { "%dth Marine Division" }
+		12 = { "%dth Marine Division" }
+		13 = { "%dth Marine Division" }
+		14 = { "%dth Marine Division" }
+		15 = { "%dth Marine Division" }
+		16 = { "%dth Marine Division" }
+		17 = { "%dth Marine Division" }
+		18 = { "%dth Marine Division" }
+		19 = { "%dth Marine Division" }
+		20 = { "%dth Marine Division" }
+		21 = { "%dst Marine Division" }
+		22 = { "%dnd Marine Division" }
+		23 = { "%drd Marine Division" }
+		24 = { "%dth Marine Division" }
+		25 = { "%dth Marine Division" }
+		26 = { "%dth Marine Division" }
+		27 = { "%dth Marine Division" }
+		28 = { "%dth Marine Division" }
+		29 = { "%dth Marine Division" }
+		30 = { "%dth Marine Division" }
+		31 = { "%dst Marine Division" }
+		32 = { "%dnd Marine Division" }
+		33 = { "%drd Marine Division" }
+		34 = { "%dth Marine Division" }
+		35 = { "%dth Marine Division" }
+		36 = { "%dth Marine Division" }
+		37 = { "%dth Marine Division" }
+		38 = { "%dth Marine Division" }
+		39 = { "%dth Marine Division" }
+		40 = { "%dth Marine Division" }
+		41 = { "%dst Marine Division" }
+		42 = { "%dnd Marine Division" }
+		43 = { "%drd Marine Division" }
+		44 = { "%dth Marine Division" }
+		45 = { "%dth Marine Division" }
+		46 = { "%dth Marine Division" }
+		47 = { "%dth Marine Division" }
+		48 = { "%dth Marine Division" }
+		49 = { "%dth Marine Division" }
+	}
+}
+
+CAL_MNT_01 = 
+{
+	name = "Mountain Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Mountain Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		10 = { "%dth Mountain Division" }
+		14 = { "%dth Mountain Division" }
+		22 = { "%dnd Mountain Division" }
+		50 = { "%dth Mountain Division" }
+		55 = { "%dth Mountain Division" }
+		12 = { "%dth Mountain Division" }
+		15 = { "%dth Mountain Division" }
+		16 = { "%dth Mountain Division" }
+		19 = { "%dth Mountain Division" }
+		20 = { "%dth Mountain Division" }
+		48 = { "%dth Mountain Division" }
+		49 = { "%dth Mountain Division" }
+		51 = { "%dst Mountain Division" }
+		52 = { "%dnd Mountain Division" }
+		53 = { "%drd Mountain Division" }
+		54 = { "%dth Mountain Division" }
+		56 = { "%dth Mountain Division" }
+		57 = { "%dth Mountain Division" }
+		58 = { "%dth Mountain Division" }
+		59 = { "%dth Mountain Division" }
+		204 = { "%dth Mountain Division" }
+		279 = { "%dth Mountain Division" }
+		280 = { "%dth Mountain Division" }
+		281 = { "%dst Mountain Division" }
+		282 = { "%dnd Mountain Division" }
+		283 = { "%drd Mountain Division" }
+		284 = { "%dth Mountain Division" }
+		285 = { "%dth Mountain Division" }
+		286 = { "%dth Mountain Division" }
+		287 = { "%dth Mountain Division" }
+		288 = { "%dth Mountain Division" }
+	}
+}
+
+CAL_GAR_01 = 
+{
+	name = "Garrison Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Republican Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Republican Guard Division" }
+		2 = { "%dnd Republican Guard Division" }
+		3 = { "%drd Republican Guard Division" }
+		5 = { "%dth Republican Guard Division" }
+		6 = { "%dth Republican Guard Division" }
+		4 = { "%dth Republican Guard Division" }
+		7 = { "%dth Republican Guard Division" }
+		8 = { "%dth Republican Guard Division" }
+		9 = { "%dth Republican Guard Division" }
+		30 = { "%dth Republican Guard Division" }
+		41 = { "%dst Republican Guard Division" }
+		44 = { "%dth Republican Guard Division" }
+		45 = { "%dth Republican Guard Division" }
+		27 = { "%dth Republican Guard Division" }
+		32 = { "%dnd Republican Guard Division" }
+		37 = { "%dth Republican Guard Division" }
+		31 = { "%dst Republican Guard Division" }
+		36 = { "%dth Republican Guard Division" }
+		35 = { "%dth Republican Guard Division" }
+		26 = { "%dth Republican Guard Division" }
+		38 = { "%dth Republican Guard Division" }
+		29 = { "%dth Republican Guard Division" }
+		34 = { "%dth Republican Guard Division" }
+		28 = { "%dth Republican Guard Division" }
+		43 = { "%drd Republican Guard Division" }
+		33 = { "%drd Republican Guard Division" }
+		40 = { "%dth Republican Guard Division" }
+		24 = { "%dth Republican Guard Division" }
+		25 = { "%dth Republican Guard Division" }
+		77 = { "%dth Republican Guard Division" }
+		90 = { "%dth Republican Guard Division" }
+		85 = { "%dth Republican Guard Division" }
+		93 = { "%drd Republican Guard Division" }
+		23 = { "%drd Republican Guard Division" }
+		76 = { "%dth Republican Guard Division" }
+		79 = { "%dth Republican Guard Division" }
+		81 = { "%dst Republican Guard Division" }
+		80 = { "%dth Republican Guard Division" }
+		88 = { "%dth Republican Guard Division" }
+		89 = { "%dth Republican Guard Division" }
+		95 = { "%dth Republican Guard Division" }
+		78 = { "%dth Republican Guard Division" }
+		83 = { "%drd Republican Guard Division" }
+		91 = { "%dst Republican Guard Division" }
+		96 = { "%dth Republican Guard Division" }
+		94 = { "%dth Republican Guard Division" }
+		98 = { "%dth Republican Guard Division" }
+		102 = { "%dnd Republican Guard Division" }
+		104 = { "%dth Republican Guard Division" }
+		84 = { "%dth Republican Guard Division" }
+		92 = { "%dnd Republican Guard Division" }
+		99 = { "%dth Republican Guard Division" }
+		100 = { "%dth Republican Guard Division" }
+		103 = { "%drd Republican Guard Division" }
+		86 = { "%dth Republican Guard Division" }
+		87 = { "%dth Republican Guard Division" }
+		97 = { "%dth Republican Guard Division" }
+		106 = { "%dth Republican Guard Division" }
+		66 = { "%dth Republican Guard Division" }
+		75 = { "%dth Republican Guard Division" }
+		69 = { "%dth Republican Guard Division" }
+		63 = { "%drd Republican Guard Division" }
+		70 = { "%dth Republican Guard Division" }
+		42 = { "%dnd Republican Guard Division" }
+		71 = { "%dst Republican Guard Division" }
+		65 = { "%dth Republican Guard Division" }
+		61 = { "%dst Republican Guard Division" }			# start of unorganized WW2 divisions here
+		62 = { "%dnd Republican Guard Division" }
+		67 = { "%dth Republican Guard Division" }
+		68 = { "%dth Republican Guard Division" }
+		72 = { "%dnd Republican Guard Division" }
+		73 = { "%drd Republican Guard Division" }
+		74 = { "%dth Republican Guard Division" }
+		105 = { "%dth Republican Guard Division" }
+		107 = { "%dth Republican Guard Division" }
+		11 = { "%dth Republican Guard Division" }		# start of Normandy phantom divisions here
+		14 = { "%dth Republican Guard Division" }
+		15 = { "%dth Republican Guard Division" }
+		16 = { "%dth Republican Guard Division" }
+		17 = { "%dth Republican Guard Division" }
+		19 = { "%dth Republican Guard Division" }
+		21 = { "%dth Republican Guard Division" }
+		22 = { "%dth Republican Guard Division" }
+		50 = { "%dth Republican Guard Division" }
+		55 = { "%dth Republican Guard Division" }
+		59 = { "%dth Republican Guard Division" }
+		108 = { "%dth Republican Guard Division" }
+		109 = { "%dth Republican Guard Division" }
+		112 = { "%dth Republican Guard Division" }
+		119 = { "%dth Republican Guard Division" }
+		125 = { "%dth Republican Guard Division" }
+		130 = { "%dth Republican Guard Division" }
+		141 = { "%dst Republican Guard Division" }
+		157 = { "%dth Republican Guard Division" }
+		39 = { "%dth Republican Guard Division" }			# start of postwar divisions here
+		47 = { "%dth Republican Guard Division" }
+		46 = { "%dth Republican Guard Division" }
+		48 = { "%dth Republican Guard Division" }
+		51 = { "%dst Republican Guard Division" }
+		49 = { "%dth Republican Guard Division" }
+		52 = { "%dnd Republican Guard Division" }
+		110 = { "%dth Republican Guard Division" }		# old HOI3 names (not verifed as historical)
+		115 = { "%dth Republican Guard Division" }
+		116 = { "%dth Republican Guard Division" }
+		128 = { "%dth Republican Guard Division" }
+		131 = { "%dth Republican Guard Division" }
+		164 = { "%dth Republican Guard Division" }
+		165 = { "%dth Republican Guard Division" }
+		166 = { "%dth Republican Guard Division" }
+		167 = { "%dth Republican Guard Division" }
+		168 = { "%dth Republican Guard Division" }
+		169 = { "%dth Republican Guard Division" }
+		170 = { "%dth Republican Guard Division" }
+		171 = { "%dst Republican Guard Division" }
+		172 = { "%dnd Republican Guard Division" }
+		173 = { "%drd Republican Guard Division" }
+		187 = { "%dth Republican Guard Division" }
+		188 = { "%dth Republican Guard Division" }
+		189 = { "%dth Republican Guard Division" }
+		190 = { "%dth Republican Guard Division" }
+		191 = { "%dst Republican Guard Division" }
+		192 = { "%dnd Republican Guard Division" }
+		193 = { "%drd Republican Guard Division" }
+		194 = { "%dth Republican Guard Division" }
+		195 = { "%dth Republican Guard Division" }
+		196 = { "%dth Republican Guard Division" }
+		197 = { "%dth Republican Guard Division" }
+		198 = { "%dth Republican Guard Division" }
+		199 = { "%dth Republican Guard Division" }
+		200 = { "%dth Republican Guard Division" }
+		201 = { "%dst Republican Guard Division" }
+		203 = { "%drd Republican Guard Division" }
+		204 = { "%dth Republican Guard Division" }
+		205 = { "%dth Republican Guard Division" }
+		158 = { "%dth Republican Guard Division" }
+		159 = { "%dth Republican Guard Division" }
+		160 = { "%dth Republican Guard Division" }
+		161 = { "%dst Republican Guard Division" }
+		162 = { "%dnd Republican Guard Division" }
+		163 = { "%drd Republican Guard Division" }
+		174 = { "%dth Republican Guard Division" }
+		175 = { "%dth Republican Guard Division" }
+		176 = { "%dth Republican Guard Division" }
+		177 = { "%dth Republican Guard Division" }
+		178 = { "%dth Republican Guard Division" }
+		179 = { "%dth Republican Guard Division" }
+		180 = { "%dth Republican Guard Division" }
+		181 = { "%dst Republican Guard Division" }
+		182 = { "%dnd Republican Guard Division" }
+		183 = { "%drd Republican Guard Division" }
+		184 = { "%dth Republican Guard Division" }
+		185 = { "%dth Republican Guard Division" }
+		186 = { "%dth Republican Guard Division" }
+		219 = { "%dth Republican Guard Division" }
+		220 = { "%dth Republican Guard Division" }
+		221 = { "%dst Republican Guard Division" }
+		222 = { "%dnd Republican Guard Division" }
+		223 = { "%drd Republican Guard Division" }
+		224 = { "%dth Republican Guard Division" }
+		225 = { "%dth Republican Guard Division" }
+		226 = { "%dth Republican Guard Division" }
+		227 = { "%dth Republican Guard Division" }
+		228 = { "%dth Republican Guard Division" }
+		229 = { "%dth Republican Guard Division" }
+		230 = { "%dth Republican Guard Division" }
+		231 = { "%dst Republican Guard Division" }
+		232 = { "%dnd Republican Guard Division" }
+		233 = { "%drd Republican Guard Division" }
+		234 = { "%dth Republican Guard Division" }
+		235 = { "%dth Republican Guard Division" }
+		236 = { "%dth Republican Guard Division" }
+		237 = { "%dth Republican Guard Division" }
+		238 = { "%dth Republican Guard Division" }
+		239 = { "%dth Republican Guard Division" }
+		240 = { "%dth Republican Guard Division" }
+		241 = { "%dst Republican Guard Division" }
+		244 = { "%dth Republican Guard Division" }
+		245 = { "%dth Republican Guard Division" }
+		246 = { "%dth Republican Guard Division" }
+		247 = { "%dth Republican Guard Division" }
+		248 = { "%dth Republican Guard Division" }
+		249 = { "%dth Republican Guard Division" }
+		250 = { "%dth Republican Guard Division" }
+		251 = { "%dst Republican Guard Division" }
+		252 = { "%dnd Republican Guard Division" }
+		253 = { "%drd Republican Guard Division" }
+		254 = { "%dth Republican Guard Division" }
+		255 = { "%dth Republican Guard Division" }
+		256 = { "%dth Republican Guard Division" }
+		257 = { "%dth Republican Guard Division" }
+		258 = { "%dth Republican Guard Division" }
+		259 = { "%dth Republican Guard Division" }
+		260 = { "%dth Republican Guard Division" }
+		261 = { "%dst Republican Guard Division" }
+		262 = { "%dnd Republican Guard Division" }
+		263 = { "%drd Republican Guard Division" }
+		264 = { "%dth Republican Guard Division" }
+		265 = { "%dth Republican Guard Division" }
+		266 = { "%dth Republican Guard Division" }
+		267 = { "%dth Republican Guard Division" }
+		268 = { "%dth Republican Guard Division" }
+		269 = { "%dth Republican Guard Division" }
+		270 = { "%dth Republican Guard Division" }
+		319 = { "%dth Republican Guard Division" }
+		320 = { "%dth Republican Guard Division" }
+		321 = { "%dst Republican Guard Division" }
+		322 = { "%dnd Republican Guard Division" }
+		323 = { "%drd Republican Guard Division" }
+		324 = { "%dth Republican Guard Division" }
+		325 = { "%dth Republican Guard Division" }
+		326 = { "%dth Republican Guard Division" }
+		327 = { "%dth Republican Guard Division" }
+		328 = { "%dth Republican Guard Division" }
+		329 = { "%dth Republican Guard Division" }
+		330 = { "%dth Republican Guard Division" }
+		331 = { "%dst Republican Guard Division" }
+		332 = { "%dnd Republican Guard Division" }
+		333 = { "%drd Republican Guard Division" }
+		334 = { "%dth Republican Guard Division" }
+		335 = { "%dth Republican Guard Division" }
+		336 = { "%dth Republican Guard Division" }
+		337 = { "%dth Republican Guard Division" }
+		338 = { "%dth Republican Guard Division" }
+		339 = { "%dth Republican Guard Division" }
+		340 = { "%dth Republican Guard Division" }
+		341 = { "%dst Republican Guard Division" }
+		344 = { "%dth Republican Guard Division" }
+		345 = { "%dth Republican Guard Division" }
+		346 = { "%dth Republican Guard Division" }
+		347 = { "%dth Republican Guard Division" }
+		348 = { "%dth Republican Guard Division" }
+		349 = { "%dth Republican Guard Division" }
+		350 = { "%dth Republican Guard Division" }
+		351 = { "%dst Republican Guard Division" }
+		352 = { "%dnd Republican Guard Division" }
+		353 = { "%drd Republican Guard Division" }
+		354 = { "%dth Republican Guard Division" }
+		355 = { "%dth Republican Guard Division" }
+		356 = { "%dth Republican Guard Division" }
+		357 = { "%dth Republican Guard Division" }
+		358 = { "%dth Republican Guard Division" }
+		359 = { "%dth Republican Guard Division" }
+		360 = { "%dth Republican Guard Division" }
+		361 = { "%dst Republican Guard Division" }
+		362 = { "%dnd Republican Guard Division" }
+		363 = { "%drd Republican Guard Division" }
+		364 = { "%dth Republican Guard Division" }
+		365 = { "%dth Republican Guard Division" }
+		366 = { "%dth Republican Guard Division" }
+		367 = { "%dth Republican Guard Division" }
+		368 = { "%dth Republican Guard Division" }
+		369 = { "%dth Republican Guard Division" }
+		370 = { "%dth Republican Guard Division" }
+	}
+}
+
+CAL_RANGERS_01 = 
+{
+	name = "Ranger Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Ranger Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		10 = { "%dth Veteran Ranger Division" }
+		14 = { "%dth Ranger Division" }
+		22 = { "%dnd Veteran Ranger Division" }
+		50 = { "%dth Ranger Division" }
+		55 = { "%dth Ranger Division" }
+		12 = { "%dth 'Shady Sands' Division" }
+		15 = { "%dth 'The Hub' Division" }
+		16 = { "%dth 'Rocky Mountains' Division" }
+		19 = { "%dth 'El Capitan' Division" }
+		20 = { "%dth 'Sierra Nevada' Division" }
+		48 = { "%dth 'Sacramento' Division" }
+		49 = { "%dth 'Granite' Division" }
+		51 = { "%dst Ranger Division" }
+		52 = { "%dnd 'Catskills' Division" }
+		53 = { "%drd Ranger Division" }
+		54 = { "%dth 'Wasatch Rangers' Division" }
+		56 = { "%dth 'Monterey' Division" }
+		57 = { "%dth Ranger Division" }
+		58 = { "%dth 'Yosemite' Division" }
+		59 = { "%dth Ranger Division" }
+		204 = { "%dth 'Mountain Lions' Division" }
+		279 = { "%dth Ranger Division" }
+		280 = { "%dth Ranger Division" }
+		281 = { "%dst Veteran Ranger Division" }
+		282 = { "%dnd Ranger Division" }
+		283 = { "%drd Ranger Division" }
+		284 = { "%dth Ranger Division" }
+		285 = { "%dth Ranger Division" }
+		286 = { "%dth Veteran Ranger Division" }
+		287 = { "%dth Ranger Division" }
+		288 = { "%dth Ranger Division" }
+	}
+}

@@ -1,0 +1,363 @@
+california_democratic = {
+	name = "Democratic - California Democrats"
+	desc = "The California Democrats will stay in power, and begin to intervene in the affairs of the world by joining the Allies."
+
+	enable = {
+		original_tag = CAL
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = CAL_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = CAL_AI_DEMOCRATIC 
+			has_game_rule = {
+				rule = CAL_ai_behavior
+				option = CAL_DEMOCRATIC
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = USA
+			has_government = fascism
+			has_government = communism
+		}
+	}
+
+	ai_national_focuses = {
+		CAL_the_road_to_change
+		CAL_prepare_for_the_election
+		CAL_the_merrick_plan
+		CAL_the_democrat_party
+		CAL_an_active_role_abroad
+	}
+	ideas = {
+		CAL_democratic_guy = 10
+		CAL_merrick = 10
+		CAL_propaganda_expert_dem = 10
+	}
+}
+
+california_democratic = {
+	name = "Democratic - Republic Party"
+	desc = "The Republic Party will win the elections and attempt to stabilize the country, relying only on its democratic neighbors for support."
+
+	enable = {
+		original_tag = CAL
+		OR = {
+			has_country_flag = CAL_AI_DEMOCRATIC_REP
+			has_game_rule = {
+				rule = CAL_ai_behavior
+				option = CAL_DEMOCRATIC_REP
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = USA
+			has_government = fascism
+			has_government = communism
+		}
+	}
+
+	ai_national_focuses = {
+		CAL_the_road_to_change
+		CAL_prepare_for_the_election
+		CAL_the_merrick_plan
+		CAL_the_republic_party
+		CAL_a_local_bloc
+	}
+	ideas = {
+		CAL_democratic_guy = 10
+		CAL_merrick = 10
+	}
+}
+
+california_socialist = {
+	name = "Socialist"
+	desc = "The socialists, rallying behind Upton Sinclair's 'End Poverty In California' campaign, will take control and create their own communist faction in the Americas."
+
+	enable = {
+		original_tag = CAL
+		OR = {
+			has_country_flag = CAL_AI_SOCIALIST 
+			has_game_rule = {
+				rule = CAL_ai_behavior
+				option = CAL_SOCIALIST
+			}
+			AND = {
+				is_historical_focus_on = yes
+				has_government = communism
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		CAL_the_road_to_change
+		CAL_prepare_for_the_election
+		CAL_the_path_to_socialism
+		CAL_epic
+		CAL_bring_forth_our_revolution
+		CAL_american_socialism_united
+	}
+	ideas = {
+		CAL_communist_guy = 10
+	}
+}
+
+california_communist = {
+	name = "Stalinist"
+	desc = "The communists in California will garner support before overthrowing the government and joining the Comintern."
+
+	enable = {
+		original_tag = CAL
+		OR = {
+			has_country_flag = CAL_AI_COMMUNIST 
+			has_game_rule = {
+				rule = CAL_ai_behavior
+				option = CAL_COMMUNIST
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		CAL_the_road_to_change
+		CAL_prepare_for_the_election
+		CAL_the_path_to_socialism
+		CAL_stay_true_to_socialism
+		CAL_bring_forth_our_revolution
+		CAL_go_with_moscow
+	}
+	ideas = {
+		CAL_communist_guy = 10
+	}
+}
+
+california_fascist = {
+	name = "Military Dictatorship"
+	desc = "The military will attempt to overthrow the government in a coup, possibly triggering a civil war, before becoming an American Axis power."
+
+	enable = {
+		original_tag = CAL
+		OR = {
+			has_country_flag = CAL_AI_FASCISM 
+			has_game_rule = {
+				rule = CAL_ai_behavior
+				option = CAL_FASCISM
+			}
+			AND = {
+				is_historical_focus_on = yes
+				has_government = fascism
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		CAL_the_road_to_change
+		CAL_for_the_greater_good
+		CAL_the_patterns_of_force
+		CAL_form_the_brownshirts
+		
+		CAL_building_a_respectable_army
+		CAL_military_research_projects
+		CAL_army_doctrine_research
+		
+		CAL_naval_research_projects
+		CAL_fleet_presence
+		CAL_cruiser_development
+		
+		CAL_mobilize
+		CAL_restabilize_the_nation
+		CAL_triumph_of_our_will
+		CAL_supremacy_of_strength
+		CAL_one_people_one_nation
+		CAL_remove_ideological_contamination
+		CAL_the_autocracy
+		
+		CAL_nationalize_the_film_industry
+		CAL_support_the_spanish_nationalists
+		CAL_approach_germany
+		CAL_our_place_in_the_axis
+	}
+	
+	ideas = {
+		CAL_fascist_guy = 10
+		CAL_crusader = 10
+		CAL_propaganda_expert_fasc = 10
+	}
+}
+
+california_falangist = {
+	name = "Falangism"
+	desc = "The military will attempt to overthrow the government in a coup before adopting the tenets of falangism and reaching out to the fascist nations of Latin America."
+
+	enable = {
+		original_tag = CAL
+		OR = {
+			has_country_flag = CAL_AI_FALANGISM 
+			has_game_rule = {
+				rule = CAL_ai_behavior
+				option = CAL_FALANGISM
+			}
+			AND = {
+				is_historical_focus_on = yes
+				has_government = fascism
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		CAL_the_road_to_change
+		CAL_for_the_greater_good
+		CAL_the_patterns_of_force
+		CAL_form_the_brownshirts
+		
+		CAL_building_a_respectable_army
+		CAL_military_research_projects
+		CAL_army_doctrine_research
+		
+		CAL_naval_research_projects
+		CAL_fleet_presence
+		CAL_cruiser_development
+		
+		CAL_mobilize
+		CAL_restabilize_the_nation
+		CAL_adopt_tenets_of_integralism
+		CAL_revolution_of_the_self
+		CAL_anaue
+		CAL_remove_ideological_contamination
+		
+		CAL_arms_focus
+		CAL_rural_roads_initiative
+		CAL_north_shore_dockyards
+		CAL_valley_highways
+		CAL_southern_factories
+		CAL_develop_bay_shipyards
+		CAL_scenic_routes
+		CAL_la_falange_californiana
+		CAL_centers_of_higher_learning
+		CAL_industry_focus
+		CAL_anti_air_emplacements
+		CAL_industrial_efficiency_board
+		CAL_advanced_excavation_techniques
+		
+		CAL_nationalize_the_film_industry
+		CAL_support_the_spanish_nationalists
+		CAL_approach_neighbors
+		CAL_the_latin_pact
+		CAL_the_california_purchase
+		
+		CAL_border_defense_project
+		CAL_domestic_engineering_contracts
+		CAL_expanded_metalworking_complexes
+		CAL_pioneering_detection_methods
+		CAL_diversified_metalworking_complexes
+		
+		CAL_synthetic_oil_developments
+		CAL_refinery_construction
+		CAL_synthetic_rubber_developments
+		CAL_computing_machines
+		
+		CAL_submarine_warfare
+		CAL_destroyer_development
+		CAL_capital_ship_initiative
+		CAL_superheavy_battleship_developments
+		
+		CAL_establish_our_empire
+	}
+	
+	ideas = {
+		CAL_fascist_guy = 10
+		CAL_revanchist = 10
+		CAL_propaganda_expert_fasc = 10
+	}
+}
+
+california_norton = {
+	name = "Emperor Norton"
+	desc = "Emperor Norton will mysteriously return to usher California into a new golden age, culminating in finally dissolving the U.S. Congress."
+
+	enable = {
+		original_tag = CAL
+		OR = {
+			has_country_flag = CAL_AI_EMPEROR_NORTON 
+			has_game_rule = {
+				rule = CAL_ai_behavior
+				option = CAL_EMPEROR_NORTON
+			}
+			AND = {
+				is_historical_focus_on = yes
+				has_government = neutrality
+			}
+		}
+	}
+	ai_national_focuses = {
+		CAL_the_road_to_change
+		CAL_for_the_greater_good
+		CAL_return_of_the_emperor
+		CAL_remove_communists
+		CAL_remove_fascists
+		CAL_discredit_democracy
+		
+		CAL_building_a_respectable_army
+		CAL_military_research_projects
+		CAL_army_doctrine_research
+		
+		CAL_naval_research_projects
+		CAL_fleet_presence
+		CAL_cruiser_development
+		
+		CAL_rewrite_the_constitution
+		CAL_an_invitation_to_rule
+		CAL_establish_the_imperial_guards
+		CAL_guarantee_human_rights
+		
+		CAL_aviation_research_projects
+		CAL_develop_bombers
+		CAL_ground_air_support
+		CAL_air_doctrine_research
+		CAL_battlefield_support_doctrines
+		
+		CAL_emperor_nortons_decrees
+		
+		CAL_industrial_vitality
+		
+		CAL_arms_focus
+		CAL_rural_roads_initiative
+		CAL_north_shore_dockyards
+		CAL_valley_highways
+		CAL_southern_factories
+		CAL_develop_bay_shipyards
+		CAL_scenic_routes
+		CAL_centers_of_higher_learning
+		CAL_industry_focus
+		CAL_anti_air_emplacements
+		CAL_industrial_efficiency_board
+		CAL_advanced_excavation_techniques
+		
+		CAL_the_california_purchase
+		CAL_border_defense_project
+		CAL_domestic_engineering_contracts
+		CAL_expanded_metalworking_complexes
+		CAL_pioneering_detection_methods
+		CAL_diversified_metalworking_complexes
+		
+		CAL_synthetic_oil_developments
+		CAL_refinery_construction
+		CAL_synthetic_rubber_developments
+		CAL_computing_machines
+		
+		CAL_submarine_warfare
+		CAL_destroyer_development
+		CAL_capital_ship_initiative
+		CAL_superheavy_battleship_developments
+		
+		CAL_establish_our_empire
+	}
+	ideas = {
+		CAL_monarchist_guy = 10
+	}
+}

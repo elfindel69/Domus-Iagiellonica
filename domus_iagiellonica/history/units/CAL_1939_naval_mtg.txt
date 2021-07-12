@@ -1,0 +1,281 @@
+﻿
+units= {
+
+	####### NAVAL UNITS #######
+	##### PACIFIC FLEET #####
+	fleet = {
+		name = "Battle Force"			
+		naval_base = 1562 # San Diego
+		task_force = {				
+			name = "Battleships, Battle Force"
+			location = 1562 # San Diego
+			### Battleship Division 1 ###			
+			ship = { name = "CALS Nevada" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAL version_name = "Pennsylvania Class" } } }				
+			ship = { name = "CALS Arizona" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAL version_name = "Pennsylvania Class" } } }				
+			ship = { name = "CALS Pennsylvania" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAL version_name = "Pennsylvania Class" } } }				
+			### Battleship Division 2 ###			
+			ship = { name = "CALS Oklahoma" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAL version_name = "Pennsylvania Class" } } }				
+			ship = { name = "CALS Tennessee" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAL version_name = "Pennsylvania Class" } } }				
+			ship = { name = "CALS California" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAL version_name = "Pennsylvania Class" } } }				
+			}				
+						
+		task_force = {					
+			name = "Cruisers, Battle Force"
+			location = 9814 # Los Angeles
+			# Cruiser Division 2 #			
+			ship = { name = "CALS Omaha" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAL version_name = "Omaha Class" } } }				
+			ship = { name = "CALS Milwaukee" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAL version_name = "Omaha Class" } } }				
+			ship = { name = "CALS Cincinnati" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAL version_name = "Omaha Class" } } }				
+			# Cruiser Division 6 #		
+			ship = { name = "CALS New Orleans" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAL version_name = "New Orleans Class" } } }				
+			ship = { name = "CALS Astoria" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAL version_name = "New Orleans Class" } } }				
+			ship = { name = "CALS Minneapolis" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAL version_name = "New Orleans Class" } } }				
+			ship = { name = "CALS Indianapolis" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAL version_name = "Portland Class" } } }				
+		}					
+							
+		### Destroyer Flotilla 1 ###				
+						
+		### Destroyer Flotilla 2 ###				
+		task_force = {					
+			name = "Destroyer Flotilla 2"				
+			location = 9814 # Los Angeles
+			ship = { name = "CALS Detroit" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAL version_name = "Omaha Class" } } }				
+			### Destroyer Squadron 7 ###
+			# 24th Destroyer Division			
+			ship = { name = "CALS Zane" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Wasmuth" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Trever" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Perry" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			# 28th Destroyer Division				
+			ship = { name = "CALS Chandler" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Southard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Hovey" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Long" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			### Destroyer Squadron 8 ###
+			ship = { name = "CALS Dallas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			# 9th Destroyer Division				
+			ship = { name = "CALS Reuben James" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Goff" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Barry" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Hopkins" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			}					
+	}
+	
+	### SCOUTING FLEET ###
+	fleet = {
+		name = "Scouting Force"			
+		naval_base = 9814 # Los Angeles
+		task_force = {				
+			name = "Scouting Force"				
+			location = 9814 # Los Angeles
+			### Battleship Division 4 ###			
+			ship = { name = "CALS Arkansas" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAL version_name = "New York Class" } } }				
+			ship = { name = "CALS New York" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAL version_name = "New York Class" } } }				
+			ship = { name = "CALS Texas" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAL version_name = "New York Class" } } }				
+			### Cruisers ###				
+		# Cruiser Division 7 #
+			ship = { name = "CALS Tuscaloosa" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAL version_name = "New Orleans Class" } } }				
+			ship = { name = "CALS San Francisco" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAL version_name = "New Orleans Class" } } }				
+			ship = { name = "CALS Portland" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAL version_name = "Portland Class" } } }				
+			### Destroyer Squadron 10 ###
+			ship = { name = "CALS Decatur" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			# 22nd Destroyer Division				
+			ship = { name = "CALS Badger" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Jacob Jones" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Leary" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Schenck" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			# 23rd Destroyer Division				
+			ship = { name = "CALS Babbitt" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Hamilton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+			ship = { name = "CALS Roper" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+		}					
+	}
+	
+	### SUBMARINE FORCE ###
+	fleet = {
+		name = "Submarine Base Force"			
+		naval_base = 1562 # San Diego
+		task_force = {				
+			name = "Submarine Base Force"			
+			location = 1562 # San Diego
+			ship = { name = "CALS Richmond" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAL version_name = "Omaha Class" } } }				
+			ship = { name = "CALS Litchfield" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAL version_name = "Clemson Class" } } }		
+		}
+		task_force = {					
+			name = "6th Submarine Squadron"			
+			location = 1562 # San Diego
+			# 12th Submarine Division				
+			ship = { name = "CALS Barracuda" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Barracuda Class" } } }
+			ship = { name = "CALS Bass" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Barracuda Class" } } }
+			ship = { name = "CALS Bonita" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Barracuda Class" } } }
+			ship = { name = "CALS Narwhal" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Barracuda Class" } } }
+			ship = { name = "CALS Dolphin" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Barracuda Class" } } }
+			# 13th Submarine Division				
+			ship = { name = "CALS Nautilus" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Barracuda Class" } } }
+			ship = { name = "CALS Cachalot" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Barracuda Class" } } }
+			ship = { name = "CALS Cuttlefish" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Barracuda Class" } } }
+			ship = { name = "CALS Porpoise" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Porpoise Class" } } }
+			ship = { name = "CALS Pike" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Porpoise Class" } } }
+			ship = { name = "CALS Shark" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAL version_name = "Porpoise Class" } } }
+		}					
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Under Construction Notes ###
+	# CV: Wasp class variant (x1) ("USS Wasp")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_1
+			creator = "USA"
+			version_name = "Wasp Class"
+		}
+		name = "USS Wasp" 
+		requested_factories = 3
+		progress = 0.40
+		amount = 1
+	}
+	# CL: Brooklyn class (x1) ("USS Helena")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "USA"
+			version_name = "Brooklyn Class"
+		}
+		name = "USS Helena" 
+		requested_factories = 2
+		progress = 0.95
+		amount = 1
+	}
+	# DD: Benham class (x4) ("USS Trippe" "USS Rhind" "USS Rowan" "USS Stack")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "USA"
+			version_name = "Sims Class"
+		}
+		name = "USS Trippe" 
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "USA"
+			version_name = "Sims Class"
+		}
+		name = "USS Rhind" 
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "USA"
+			version_name = "Sims Class"
+		}
+		name = "USS Rowan" 
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "USA"
+			version_name = "Sims Class"
+		}
+		name = "USS Stack" 
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+	# DD: Sims class (x3) ("USS Hughes" "USS Mustin" "USS Russell")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "USA"
+			version_name = "Sims Class"
+		}
+		name = "USS Hughes" 
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "USA"
+			version_name = "Sims Class"
+		}
+		name = "USS Mustin" 
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "USA"
+			version_name = "Sims Class"
+		}
+		name = "USS Russell" 
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+	# SS: Salmon class variant (x4) ("USS Seadragon" "USS Sealion" "USS Searaven" "USS Seawolf")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "USA"
+			version_name = "Salmon Class"
+		}
+		name = "USS Seadragon" 
+		requested_factories = 1
+		progress = 0.85
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "USA"
+			version_name = "Salmon Class"
+		}
+		name = "USS Sealion" 
+		requested_factories = 1
+		progress = 0.70
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "USA"
+			version_name = "Salmon Class"
+		}
+		name = "USS Searaven" 
+		requested_factories = 1
+		progress = 0.85
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "USA"
+			version_name = "Salmon Class"
+		}
+		name = "USS Seawolf" 
+		requested_factories = 1
+		progress = 0.55
+		amount = 1
+	}
+}
+
+#####################

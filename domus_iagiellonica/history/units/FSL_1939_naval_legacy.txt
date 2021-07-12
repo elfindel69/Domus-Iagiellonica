@@ -1,0 +1,121 @@
+﻿
+units= {
+
+	####### NAVAL UNITS #######
+
+	fleet = {
+		name = "Battle Force"			
+		naval_base = 1500 # San Diego
+		task_force = {				
+			name = "Battleships, Battle Force"
+			location = 1500 # San Diego
+			### Battleship Division 1 ###			
+			ship = { name = "FSLS Saint Paul" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
+			ship = { name = "FSLS Saint James" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
+			ship = { name = "FSLS Saint Louis" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
+		}
+
+		task_force = {					
+			name = "Cruisers, Battle Force"
+			location = 1500 # Los Angeles
+			# Cruiser Division 2 #			
+			ship = { name = "FSLS Omaha" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
+			ship = { name = "FSLS Milwaukee" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
+			ship = { name = "FSLS Cincinnati" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
+		}
+
+		task_force = {					
+			name = "Destroyer Flotilla 1"				
+			location = 1500 # Los Angeles				
+			# 1st Destroyer Division				
+			ship = { name = "FSLS Dewey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+			ship = { name = "FSLS Hull" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+			ship = { name = "FSLS MacDonough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+			ship = { name = "FSLS Worden" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		}	
+
+		task_force = {					
+			name = "4th Submarine Squadron"			
+			location = 4180 # Pearl Harbor, HI
+			ship = { name = "FSLS Argonaut" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+			# 7th Submarine Division				
+			ship = { name = "FSLS S-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "FSLS S-18" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "FSLS S-23" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		}
+	}
+}	
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Under Construction Notes ###
+	# CV: Wasp class variant (x1) ("FSLS Wasp")
+	
+	# CL: Brooklyn class (x1) ("FSLS Helena")
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_2
+			creator = "FSL"
+		}
+		requested_factories = 3
+		progress = 0.95
+		amount = 1
+	}
+	# DD: Sims class (x9) ("FSLS Trippe" "FSLS Rhind" "FSLS Stack" "FSLS O'Brien" "FSLS Walke" "FSLS Morris" "FSLS Roe" "FSLS Wainwright" "FSLS Buck")
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "FSL"
+		}
+		requested_factories = 2
+		progress = 0.80
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "FSL"
+		}
+		requested_factories = 2
+		progress = 0.70
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "FSL"
+		}
+		requested_factories = 2
+		progress = 0.60
+		amount = 2
+	}
+	
+	# SS: Salmon class variant (x3) ("FSLS Sealion" "FSLS Searaven" "FSLS Seawolf")
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "FSL"
+			version_name = "Salmon Class"
+		}
+		requested_factories = 2
+		progress = 0.70
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "FSL"
+			version_name = "Salmon Class"
+		}
+		requested_factories = 1
+		progress = 0.60
+		amount = 1
+	}
+}
+
+#####################

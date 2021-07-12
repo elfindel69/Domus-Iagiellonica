@@ -1,0 +1,72 @@
+#
+# List of options showing in the Game Rules screen
+#
+# format is:
+# rule_token = {
+#	name = "TEXT_KEY_FOR_NAME"
+#	required_dlc = "Name of the Required DLC"
+#	desc = "TEXT_KEY_FOR_LONG_DESC"
+#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
+#	icon = gfx_option_token							# Optional icon
+#	option = {										# Unless other specified, the first option is the default option
+#		name = option_token
+#		text = "TEXT_KEY_FOR_OPTION_NAME"
+#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
+#													# If not specified, this is set to yes for default options and no for all other options.
+#	}
+#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
+#		name = option_token
+#		text = "TEXT_KEY_FOR_OPTION_NAME"
+#		...
+#	}
+# }
+
+CAL_ai_behavior = {
+	name = "CAL_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = CAL_DEMOCRATIC
+		text = "RULE_OPTION_CAL_DEMOCRATIC"
+		desc = "RULE_OPTION_CAL_DEMOCRATIC_DESC"
+	}
+	option = {
+		name = CAL_DEMOCRATIC_REP
+		text = "RULE_OPTION_CAL_DEMOCRATIC_REP"
+		desc = "RULE_OPTION_CAL_DEMOCRATIC_REP_DESC"
+	}
+	option = {
+		name = CAL_SOCIALIST
+		text = "RULE_OPTION_CAL_SOCIALIST"
+		desc = "RULE_OPTION_CAL_SOCIALIST_DESC"
+	}
+	option = {
+		name = CAL_COMMUNIST
+		text = "RULE_OPTION_CAL_COMMUNIST"
+		desc = "RULE_OPTION_CAL_COMMUNIST_DESC"
+	}
+	option = {
+		name = CAL_FASCISM
+		text = "RULE_OPTION_CAL_FASCIST"
+		desc = "RULE_OPTION_CAL_FASCIST_DESC"
+	}
+	option = {
+		name = CAL_FALANGISM
+		text = "RULE_OPTION_CAL_FALANGISM"
+		desc = "RULE_OPTION_CAL_FALANGISM_DESC"
+	}
+	option = {
+		name = CAL_EMPEROR_NORTON
+		text = "RULE_OPTION_CAL_EMPEROR_NORTON"
+		desc = "RULE_OPTION_CAL_EMPEROR_NORTON_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}

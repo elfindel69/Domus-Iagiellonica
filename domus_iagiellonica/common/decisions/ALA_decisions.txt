@@ -1,0 +1,67 @@
+ALA_economic_reform_decisions = {
+	ALA_Sozdanie_Gos_Com_Po_Lovu_Ribi = {
+		cost = 50
+		complete_effect {
+			add_ideas = ALA_reformed_economy
+			remove_ideas = ALA_no_reformed_economy
+		}
+		ai_will_do = { factor = 75 }
+		fire_only_once = yes
+	}
+	ALA_Sozdanie_Gos_Com_Po_Lovu_Ribi_2 = {
+		cost = 50
+		available = {
+		has_idea = ALA_reformed_economy
+		}
+		complete_effect = {
+			swap_ideas = {
+			add_idea = ALA_reformed_economy_2
+			remove_idea = ALA_reformed_economy
+		}
+	}
+	ai_will_do = { factor = 75 }
+	fire_only_once = yes
+}
+ALA_Sozdanie_Gos_Com_Po_Lovu_Ribi_3 = {
+		cost = 50
+		available = {
+		has_idea = ALA_reformed_economy_2
+		}
+		complete_effect = {
+			swap_ideas = {
+			add_idea = ALA_reformed_economy_3
+			remove_idea = ALA_reformed_economy_2
+		}
+	}
+	ai_will_do = { factor = 75 }
+	fire_only_once = yes
+}
+ALA_Sozdanie_Gos_Com_Po_Lovu_Ribi_4 = {
+		cost = 50
+		available = {
+		has_idea = ALA_reformed_economy_3
+		}
+		complete_effect = {
+			swap_ideas = {
+			add_idea = ALA_reformed_economy_4
+			remove_idea = ALA_reformed_economy_3
+		}
+	}
+	ai_will_do = { factor = 75 }
+	fire_only_once = yes
+}
+ALA_Sozdanie_Gos_Com_Po_Lovu_Ribi_5 = {
+		cost = 50
+		available = {
+		has_idea = ALA_reformed_economy_4
+		}
+		complete_effect = {
+			swap_ideas = {
+			add_idea = ALA_reformed_economy_5
+			remove_idea = ALA_reformed_economy_4
+		}
+	}
+	ai_will_do = { factor = 75 }
+	fire_only_once = yes
+}
+}

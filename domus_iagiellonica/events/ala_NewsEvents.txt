@@ -1,0 +1,30 @@
+news_event = {
+	id = news.401
+	title = news.401.t
+	desc = news.401.d
+	picture = GFX_news_event_017
+	
+	major = yes
+	
+	is_triggered_only = yes
+}
+news_event = {
+	id = news.402
+	title = news.402.t
+	desc = news.402.d
+	picture = 
+	
+	major = yes
+	
+	is_triggered_only = yes
+}
+news_event = {
+	id = news.403
+	title = news.403.t
+	desc = news.403.d
+	picture = 
+	
+	major = yes
+	
+	is_triggered_only = yes
+}

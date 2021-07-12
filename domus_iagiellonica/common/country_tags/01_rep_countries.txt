@@ -1,0 +1,4 @@
+FSL = "countries/Louisiana.txt"
+CAL = "countries/California.txt"
+ALA = "countries/Alaska.txt"
+RUS = "countries/Russia.txt"
