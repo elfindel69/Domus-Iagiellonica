@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = UKR_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		x = 0
 		y = 0
 		cost = 10
 
@@ -742,7 +742,7 @@ focus_tree = {
 		prerequisite = { focus = UKR_flexible_navy focus = UKR_large_navy }
 		x = 0
 		y = 1
-		relative_position_id = flexible_navy
+		relative_position_id = UKR_flexible_navy
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1079,10 +1079,11 @@ focus_tree = {
 	focus = {
 		id = UKR_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = production_effort }
+		prerequisite = { focus = UKR_production_effort }
 		x = 0
 		y = 1
-		relative_position_id = production_effort
+		relative_position_id = UKR_production_effort
+
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1433,7 +1434,7 @@ focus_tree = {
 	focus = {
 		id = UKR_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 19
+		x = 21
 		y = 0
 		cost = 10
 
@@ -1456,7 +1457,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = UKR_political_effort
 		cost = 10
@@ -1591,7 +1592,7 @@ focus_tree = {
 				has_government = monarchist
 			}
 		}
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = UKR_political_effort
 		cost = 10
@@ -1995,7 +1996,7 @@ focus_tree = {
 				has_government = monarchist
 			}
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = UKR_political_effort
 		cost = 10
@@ -2071,7 +2072,7 @@ focus_tree = {
 	focus = {
 		id = UKR_poland_friend
 		icon = GFX_focus_generic_polish_deal
-		x = 26
+		x = 28
 		y = 0
 		cost = 10
 		ai_will_do = {
