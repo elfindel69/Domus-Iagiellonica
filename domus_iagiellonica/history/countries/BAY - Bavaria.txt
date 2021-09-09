@@ -130,9 +130,6 @@ set_popularities = {
 	communism = 30
 }
 
-add_ideas = {
-}
-
 create_country_leader = {
 	name = "Franz Neff"
 	desc = "POLITICS_ALFRED_KLAHR_DESC"

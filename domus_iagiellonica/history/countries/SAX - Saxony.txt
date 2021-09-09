@@ -130,9 +130,6 @@ set_popularities = {
 	monarchist = 40
 }
 
-add_ideas = {
-}
-
 create_country_leader = {
 	name = "Lennard Hopfner"
 	desc = "POLITICS_ALFRED_KLAHR_DESC"

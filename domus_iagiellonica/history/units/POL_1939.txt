@@ -772,8 +772,6 @@ units = {
 
 	}
 
-}
-
 	##### Armia Litewska #####
 	division = { # "I. Dywizja Litewska"
 		division_name = {
@@ -816,6 +814,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
+}
 
 ##### Wojska Lotnicze i Obrony Powietrzne (CO: Zajec) #####
 air_wings = {

@@ -1,6 +1,6 @@
 ﻿capital = 229 #Baku
 
-oob = "AZR_1936"
+# oob = "AZR_1936"
 
 set_research_slots = 3
 
@@ -60,7 +60,10 @@ if = {
 	}
 }
 
-set_popularities = {	democratic = 30	communism = 40	neutrality = 27
+set_popularities = {
+	democratic = 30
+	communism = 40
+	neutrality = 27
 	monarchist = 3
 }
 
@@ -106,7 +109,6 @@ create_country_leader = {
 			unpopular_monarch
 		}
 	}
-}
 
 create_country_leader = {
 	name = "Gara Garabeyov"

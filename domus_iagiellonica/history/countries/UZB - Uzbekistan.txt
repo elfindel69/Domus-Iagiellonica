@@ -77,7 +77,6 @@ create_country_leader = {
 			nationalist_symbol
 		}
 	}
-}
 
 #create_country_leader = {
 #	

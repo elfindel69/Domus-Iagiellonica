@@ -89,7 +89,11 @@ spriteTypes = {
 		name = "GFX_focus_cal_la_falange_californiana"
 		texturefile = "gfx/interface/goals/focus_cal_la_falange_californiana.dds"
 	}
-
+	SpriteType = { 
+		name = "GFX_focus_cal_la_falange_louisianaise"
+		texturefile = "gfx/interface/goals/focus_cal_la_falange_californiana.dds"
+	}
+	
 	SpriteType = { 
 		name = "GFX_focus_cal_return_of_the_emperor"
 		texturefile = "gfx/interface/goals/focus_cal_return_of_the_emperor.dds"

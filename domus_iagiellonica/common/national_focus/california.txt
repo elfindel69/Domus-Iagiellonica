@@ -210,7 +210,7 @@ focus_tree = {
 				expire = "1965.1.1"
 				ideology = stalinism
 				traits = {
-					
+					#
 				}
 			}
 		}
@@ -594,6 +594,7 @@ focus_tree = {
 		relative_position_id = CAL_the_spirit_of_revolution
 		x = 0
 		y = 2
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -1236,7 +1237,7 @@ focus_tree = {
 			has_government= fascism
 		}
 		available = {
-			has_stability< 0.2
+			has_stability < 0.2
 		}
 		completion_reward = {
 			custom_effect_tooltip = CAL_army_coup_tt
@@ -1283,10 +1284,10 @@ focus_tree = {
 			}
 		}
 	}
-	
+ 
 	focus = {
 		id = CAL_adopt_tenets_of_fascism_ideology
-		icon = GFX_focus_cal_fascism_ideology
+		icon = GFX_focus_cal_californian_fascism
 		prerequisite = { focus = CAL_restabilize_the_nation }
 		mutually_exclusive = { focus = CAL_californian_fascism }
 		mutually_exclusive = { focus = CAL_triumph_of_our_will }
@@ -1300,7 +1301,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = CAL_fascism_ideology
+			add_ideas = CAL_californian_fascism
 			set_cosmetic_tag = CAL_fascism_ideology
 			hidden_effect = {
 				if = {
@@ -1695,7 +1696,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAL_control_the_pacific_shore
+		id = CAL_control_mexican_shores
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = CAL_the_autocracy }
 		relative_position_id = CAL_the_autocracy
@@ -1715,10 +1716,10 @@ focus_tree = {
 			is_puppet = no
 		}
 		completion_reward = {
-			add_state_claim = 385
-			add_state_claim = 386
-			add_state_claim = 473
-			add_state_claim = 740
+			add_state_claim = 482
+			add_state_claim = 479
+			add_state_claim = 481
+			add_state_claim = 483
 		}
 	}
 	
@@ -1743,19 +1744,19 @@ focus_tree = {
 			is_puppet = no
 		}
 		completion_reward = {
-			add_state_claim = 377
-			add_state_claim = 379
-			add_state_claim = 380
-			add_state_claim = 387
+			add_state_claim = 376
+			add_state_claim = 381
+			add_state_claim = 382
+			add_state_claim = 388
 		}
 	}
 	
 	focus = {
 		id = CAL_secure_mexico
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = CAL_control_the_pacific_shore }
+		prerequisite = { focus = CAL_control_mexican_shores }
 		prerequisite = { focus = CAL_move_inland }
-		relative_position_id = CAL_control_the_pacific_shore
+		relative_position_id = CAL_control_mexican_shores
 		x = 1
 		y = 1
 		cost = 10
@@ -2299,7 +2300,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			neutrality > 0.25
+			monarchist > 0.25
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -2324,14 +2325,14 @@ focus_tree = {
 			factor = 1
 		}
 		bypass = {
-			has_government= neutrality
+			has_government= monarchist
 		}
 		available = {
-			neutrality > 0.5
+			monarchist > 0.5
 		}
 		completion_reward = {
 			set_politics= {
-				ruling_party = neutrality
+				ruling_party = monarchist
 				elections_allowed = no 
 			}
 		}
@@ -2403,7 +2404,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_government= neutrality
+			has_government= monarchist
 		}
 		completion_reward = {
 			unlock_decision_category_tooltip= CAL_emperor_nortons_decrees
@@ -2426,7 +2427,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_popularity = {
-				ideology = neutrality
+				ideology = monarchist
 				popularity = 0.1
 			}
 		}
@@ -2723,7 +2724,6 @@ focus_tree = {
 				limit = {
 					has_completed_focus = CAL_delegate_control
 				}
-				CAL_cascadia_puppet = yes
 				else = {
 					add_state_claim = 385
 					add_state_claim = 386
@@ -3130,7 +3130,7 @@ focus_tree = {
 								is_core_of = ARG
 								is_core_of = BOL
 								is_core_of = PAR
-								is_core_of = URU
+								is_core_of = URG
 								is_core_of = CHL
 							}
 						}
@@ -3180,7 +3180,7 @@ focus_tree = {
 							OR = {
 								is_core_of = BRA
 								is_core_of = CAY
-								is_core_of = GUY
+								is_core_of = GYA
 								is_core_of = SUR
 							}
 						}
@@ -3358,18 +3358,18 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
 		available = {
-			controls_state = 810
-			controls_state = 811
+			controls_state = 379
+			controls_state = 377
 		}
 		completion_reward = {
-			810 = {
+			379 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			811 = {
+			377 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -3395,18 +3395,10 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
 		available = {
-			controls_state = 807
-			controls_state = 808
+			controls_state = 378
 		}
 		completion_reward = {
-			807 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			808 = {
+			378 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -3433,17 +3425,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			controls_state = 378
-			controls_state = 809
 		}
 		completion_reward = {
 			378 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			809 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -3561,11 +3545,11 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
 		available = {
-			controls_state = 810
-			controls_state = 811
+			controls_state = 385
+			controls_state = 386
 		}
 		completion_reward = {
-			810 = {
+			385 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -3573,7 +3557,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			811 = {
+			386 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -3600,10 +3584,10 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
 		available = {
-			controls_state = 809
+			controls_state = 378
 		}
 		completion_reward = {
-			809 = {
+			378 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -3627,11 +3611,11 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
 		available = {
-			controls_state = 807
+			controls_state = 385
 		}
 		bypass = {
 			NOT = {
-				807 = {
+				385 = {
 					free_building_slots = {
 						building = dockyard
 						size > 2
@@ -3641,7 +3625,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			807 = {
+			385 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard

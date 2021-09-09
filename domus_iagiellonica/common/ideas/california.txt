@@ -6,7 +6,7 @@ ideas = {
 				original_tag = CAL
 			}
 			allowed_civil_war = {
-				controls_state = 808
+				controls_state = 378
 			}
 			removal_cost = -1
 			modifier = {
@@ -21,7 +21,7 @@ ideas = {
 				original_tag = CAL
 			}
 			allowed_civil_war = {
-				controls_state = 808
+				controls_state = 378
 			}
 			removal_cost = -1
 			modifier = {
@@ -35,7 +35,7 @@ ideas = {
 				original_tag = CAL
 			}
 			allowed_civil_war = {
-				controls_state = 808
+				controls_state = 378
 			}
 			removal_cost = -1
 			modifier = {
@@ -217,7 +217,7 @@ ideas = {
 				original_tag = CAL
 			}
 			allowed_civil_war = {
-				controls_state = 808
+				controls_state = 378
 			}
 			removal_cost = -1
 			modifier = {
@@ -451,7 +451,6 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				dont_lose_dig_in_on_attack = 1
 				army_defence_factor = 0.1
 			}
 		}
@@ -650,7 +649,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				neutrality_drift = 0.05
+				monarchist_drift = 0.05
 			}
 		}
 	}
@@ -1183,7 +1182,7 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				owns_state = 811
+				owns_state = 377
 			}
 
 			
@@ -1220,8 +1219,6 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			
-			traits = { }
 			
 			equipment_bonus = {
 				light_tank_destroyer_equipment = {
@@ -1426,10 +1423,6 @@ ideas = {
 			available = {
 			}
 			
-			research_bonus = {
-				infantry_equipment = 0.15
-			}
-			
 			traits = { infantry_equipment_manufacturer }
 
 			equipment_bonus = {
@@ -1455,10 +1448,6 @@ ideas = {
 			
 
 			available = {
-			}
-			
-			research_bonus = {
-				infantry_equipment = 0.15
 			}
 			
 			traits = { artillery_manufacturer  }

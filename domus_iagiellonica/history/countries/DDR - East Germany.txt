@@ -148,8 +148,6 @@ set_popularities = {
 	monarchist = 3
 }
 
-add_ideas = {
-}
 
 create_country_leader = {
 	name = "Jake Richter"

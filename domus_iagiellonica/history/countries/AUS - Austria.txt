@@ -95,7 +95,6 @@ create_country_leader = {
 			constitutional_monarch
 		}
 	}
-}
 
 
 create_corps_commander = {

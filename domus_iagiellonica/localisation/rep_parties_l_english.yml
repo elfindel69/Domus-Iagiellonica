@@ -188,7 +188,7 @@
  RUS_fascism_party:0 "RFP"
  RUS_neutrality_party:0 "RMP"
  RUS_neutrality_party_long:0 "Russian Monarchist Party"
- RUS_monarchist_party:0 "Dom Romanovykh"11
+ RUS_monarchist_party:0 "Dom Romanovykh"
  
  FSL_communism_party:0 "SPL"
  FSL_communism_party_long:0 "Socialist Party of Louisiana"
@@ -207,8 +207,13 @@
  CAL_communism_party_long:0 "Socialist Party of California"
  CAL_democratic_party:1 "California Democrats"
  CAL_neutrality_party:0 "Nortonists (N)"
- CAL_monarchisist_party:0 "Nortonists"
- 
+ CAL_monarchist_party:0 "Nortonists"
+ CAL_republican_party:0 "Republicans"
+ CAL_republican_party_long:0 "Republican Party of California"
+ CAL_military_council:0 "Military Council" 
+ CAL_communism_party_epic:0 "EPIC" 
+ CAL_communism_party_epic_long:0 "End Poverty in California"
+
  ALA_fascism_party:0 "FA"
  ALA_fascism_party_long:0 "Fascists of Alaska"
  ALA_communism_party:0 "ASP"

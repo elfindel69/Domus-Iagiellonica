@@ -32,7 +32,7 @@ CAL_add_socialist_to_faction = {
 				tag = JAM
 				tag = PUE
 				tag = GDL
-				tag = GUY
+				tag = GYA
 				tag = CRC
 				tag = SUR
 				tag = TRI
@@ -43,7 +43,7 @@ CAL_add_socialist_to_faction = {
 				tag = HON
 				tag = NIC
 				tag = ELS
-				tag = CON
+				tag = COS
 				tag = PAN
 				tag = COL
 				tag = VEN
@@ -51,16 +51,15 @@ CAL_add_socialist_to_faction = {
 				tag = ECU
 				tag = BOL
 				tag = PAR
-				tag = URU
+				tag = URG
 				tag = ARG
 				tag = CHL
 				tag = BRA
 			}
-			AND = {
-				exists = yes
-				is_in_faction = no
-				has_government = communism
-			}
+			exists = yes
+			is_in_faction = no
+			has_government = communism
+		
 		}
 		country_event = {
 			id = california.2
@@ -80,11 +79,9 @@ CAL_add_dem_to_faction = {
 				tag = MEX
 				tag = HAW
 			}
-			AND = {
-				exists = yes
-				is_in_faction = no
-				has_government = democratic
-			}
+			exists = yes
+			is_in_faction = no
+			has_government = democratic
 		}
 		country_event = {
 			id = california.2
@@ -105,7 +102,7 @@ CAL_add_fascist_to_faction = {
 				tag = JAM
 				tag = PUE
 				tag = GDL
-				tag = GUY
+				tag = GYA
 				tag = CRC
 				tag = SUR
 				tag = TRI
@@ -116,7 +113,7 @@ CAL_add_fascist_to_faction = {
 				tag = HON
 				tag = NIC
 				tag = ELS
-				tag = CON
+				tag = COS
 				tag = PAN
 				tag = COL
 				tag = VEN
@@ -124,16 +121,14 @@ CAL_add_fascist_to_faction = {
 				tag = ECU
 				tag = BOL
 				tag = PAR
-				tag = URU
+				tag = URG
 				tag = ARG
 				tag = CHL
 				tag = BRA
 			}
-			AND = {
-				exists = yes
-				is_in_faction = no
-				has_government = fascism
-			}
+			exists = yes
+			is_in_faction = no
+			has_government = fascism
 		}
 		country_event = {
 			id = california.2
@@ -158,7 +153,7 @@ CAL_add_neutrals_to_faction = {
 				tag = JAM
 				tag = PUE
 				tag = GDL
-				tag = GUY
+				tag = GYA
 				tag = CRC
 				tag = SUR
 				tag = TRI
@@ -169,7 +164,7 @@ CAL_add_neutrals_to_faction = {
 				tag = HON
 				tag = NIC
 				tag = ELS
-				tag = CON
+				tag = COS
 				tag = PAN
 				tag = COL
 				tag = VEN
@@ -177,16 +172,14 @@ CAL_add_neutrals_to_faction = {
 				tag = ECU
 				tag = BOL
 				tag = PAR
-				tag = URU
+				tag = URG
 				tag = ARG
 				tag = CHL
 				tag = BRA
 			}
-			AND = {
-				exists = yes
-				is_in_faction = no
-				has_government = neutrality
-			}
+			exists = yes
+			is_in_faction = no
+			has_government = neutrality
 		}
 		country_event = {
 			id = california.2
@@ -211,7 +204,7 @@ CAL_wargoal_fascists = {
 				tag = JAM
 				tag = PUE
 				tag = GDL
-				tag = GUY
+				tag = GYA
 				tag = CRC
 				tag = SUR
 				tag = TRI
@@ -222,7 +215,7 @@ CAL_wargoal_fascists = {
 				tag = HON
 				tag = NIC
 				tag = ELS
-				tag = CON
+				tag = COS
 				tag = PAN
 				tag = COL
 				tag = VEN
@@ -230,15 +223,13 @@ CAL_wargoal_fascists = {
 				tag = ECU
 				tag = BOL
 				tag = PAR
-				tag = URU
+				tag = URG
 				tag = ARG
 				tag = CHL
 				tag = BRA
 			}
-			AND = {
-				exists = yes
-				has_government = fascism
-			}
+			exists = yes
+			has_government = fascism
 		}
 		ROOT = {
 			create_wargoal= { 
@@ -265,7 +256,7 @@ CAL_wargoal_neutrals = {
 				tag = JAM
 				tag = PUE
 				tag = GDL
-				tag = GUY
+				tag = GYA
 				tag = CRC
 				tag = SUR
 				tag = TRI
@@ -276,7 +267,7 @@ CAL_wargoal_neutrals = {
 				tag = HON
 				tag = NIC
 				tag = ELS
-				tag = CON
+				tag = COS
 				tag = PAN
 				tag = COL
 				tag = VEN
@@ -284,15 +275,14 @@ CAL_wargoal_neutrals = {
 				tag = ECU
 				tag = BOL
 				tag = PAR
-				tag = URU
+				tag = URG
 				tag = ARG
 				tag = CHL
 				tag = BRA
 			}
-			AND = {
-				exists = yes
-				has_government = neutrality
-			}
+		
+			exists = yes
+			has_government = neutrality
 		}
 		ROOT = {
 			create_wargoal= { 
@@ -319,7 +309,7 @@ CAL_wargoal_communists = {
 				tag = JAM
 				tag = PUE
 				tag = GDL
-				tag = GUY
+				tag = GYA
 				tag = CRC
 				tag = SUR
 				tag = TRI
@@ -330,7 +320,7 @@ CAL_wargoal_communists = {
 				tag = HON
 				tag = NIC
 				tag = ELS
-				tag = CON
+				tag = COS
 				tag = PAN
 				tag = COL
 				tag = VEN
@@ -338,15 +328,13 @@ CAL_wargoal_communists = {
 				tag = ECU
 				tag = BOL
 				tag = PAR
-				tag = URU
+				tag = URG
 				tag = ARG
 				tag = CHL
 				tag = BRA
 			}
-			AND = {
-				exists = yes
-				has_government = communism
-			}
+			exists = yes
+			has_government = communism
 		}
 		ROOT = {
 			create_wargoal= { 
@@ -373,7 +361,7 @@ CAL_wargoal_democrats = {
 				tag = JAM
 				tag = PUE
 				tag = GDL
-				tag = GUY
+				tag = GYA
 				tag = CRC
 				tag = SUR
 				tag = TRI
@@ -384,7 +372,7 @@ CAL_wargoal_democrats = {
 				tag = HON
 				tag = NIC
 				tag = ELS
-				tag = CON
+				tag = COS
 				tag = PAN
 				tag = COL
 				tag = VEN
@@ -392,15 +380,13 @@ CAL_wargoal_democrats = {
 				tag = ECU
 				tag = BOL
 				tag = PAR
-				tag = URU
+				tag = URG
 				tag = ARG
 				tag = CHL
 				tag = BRA
 			}
-			AND = {
-				exists = yes
-				has_government = democratic
-			}
+			exists = yes
+			has_government = democratic
 		}
 		ROOT = {
 			create_wargoal= { 
@@ -423,7 +409,7 @@ CAL_fascist_friends = {
 				tag = JAM
 				tag = PUE
 				tag = GDL
-				tag = GUY
+				tag = GYA
 				tag = CRC
 				tag = SUR
 				tag = TRI
@@ -434,7 +420,7 @@ CAL_fascist_friends = {
 				tag = HON
 				tag = NIC
 				tag = ELS
-				tag = CON
+				tag = COS
 				tag = PAN
 				tag = COL
 				tag = VEN
@@ -442,16 +428,15 @@ CAL_fascist_friends = {
 				tag = ECU
 				tag = BOL
 				tag = PAR
-				tag = URU
+				tag = URG
 				tag = ARG
 				tag = CHL
 				tag = BRA
 			}
-			AND = {
-				exists = yes
-				is_in_faction = no
-				has_government = fascism
-			}
+			
+			exists = yes
+			is_in_faction = no
+			has_government = fascism
 		}
 		add_opinion_modifier = { target = CAL modifier = CAL_californian_diplomacy }
 	}

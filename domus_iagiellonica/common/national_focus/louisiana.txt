@@ -1,0 +1,4831 @@
+focus_tree = {
+	id = louisiana_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FSL
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 750 y = 1320 }
+
+	focus = {
+		id = FSL_open_political_sphere
+		icon = GFX_focus_generic_treaty
+		x = 20
+
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#Focus for The Path To Socialism
+	focus = {
+		id = FSL_the_path_to_socialism
+		icon = GFX_focus_por_workers_of_iberia
+		relative_position_id = FSL_open_political_sphere
+		x = -10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_open_political_sphere }
+		mutually_exclusive = { 
+			focus = FSL_the_merrick_plan 
+			focus = FSL_for_the_greater_good
+		}
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			has_government= communism
+			communism > .3
+		}
+		completion_reward = {
+			add_ideas= FSL_the_path_to_socialism
+		}
+	}
+
+	focus = {
+		id = FSL_expand_union_protection
+		icon = GFX_focus_usa_union_representation_act
+		relative_position_id = FSL_the_path_to_socialism
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_the_path_to_socialism }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_all_are_equal
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = FSL_the_path_to_socialism
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_the_path_to_socialism }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_experiment_with_collectivization
+		icon = GFX_focus_generic_self_management
+		relative_position_id = FSL_all_are_equal
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_expand_union_protection }
+		prerequisite = { focus = FSL_all_are_equal }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			NOT = {
+				any_owned_state = {
+					is_core_of = ROOT
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_bring_forth_our_revolution
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = {
+			focus = FSL_expand_union_protection
+			focus = FSL_all_are_equal 
+		}
+		relative_position_id = FSL_expand_union_protection
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FSL_no_upcoming_elections_tt
+				NOT = {
+					OR = {
+						AND = {
+							date > 1938.9.1
+							date < 1938.11.8
+						}
+						AND = {
+							date > 1942.9.1
+							date < 1942.11.8
+						}
+						AND = {
+							date > 1946.9.1
+							date < 1946.11.8
+						}
+					}
+				}
+			}
+		}
+		bypass = {
+			has_government = communism
+		}
+		completion_reward = {
+			set_temp_variable = { FSL_democratic_support = party_popularity@democratic }
+			multiply_temp_variable = { FSL_democratic_support = -0.25 }
+			add_stability = FSL_democratic_support
+			custom_effect_tooltip = FRA_force_the_issue_tt
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_the_internal_revolution
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FSL_bring_forth_our_revolution }
+		mutually_exclusive = { focus = FSL_the_external_revolution }
+		relative_position_id = FSL_bring_forth_our_revolution
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL FOCUS_FILTER_STABILITY }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = FSL_cultivate_a_new_society
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		prerequisite = { focus = FSL_the_internal_revolution }
+		relative_position_id = FSL_the_internal_revolution
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = FSL_the_external_revolution
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FSL_bring_forth_our_revolution }
+		mutually_exclusive = { focus = FSL_the_internal_revolution }
+		relative_position_id = FSL_bring_forth_our_revolution
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = FSL_the_spirit_of_revolution
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		prerequisite = { focus = FSL_the_external_revolution }
+		relative_position_id = FSL_the_external_revolution
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_the_spirit_of_revolution
+		}
+	}
+
+	#Focus for Support The Spanish Republicans
+	focus = {
+		id = FSL_support_the_spanish_republicans
+		icon = GFX_focus_intervention_spain_republic
+		relative_position_id = FSL_cultivate_a_new_society
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FSL_cultivate_a_new_society
+			focus = FSL_the_spirit_of_revolution
+		}
+		search_filters = { FOCUS_FILTER_SPA_CIVIL_WAR } 
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+				has_global_flag = scw_over
+				if = { 
+					limit = { NOT = { has_global_flag = spanish_civil_war } }
+					NOT = { country_exists = SPR }
+					else = {
+						NOT = { country_exists = SPD }
+					}
+				}
+			}
+		}
+		available = {
+			SPR_scw_in_progress = yes
+			if = {
+				limit = {
+					NOT = { has_global_flag = spanish_civil_war }
+				}
+				custom_trigger_tooltip = {
+				    tooltip = POR_spr_tooltip_country_exist_tt
+				    country_exists = SPR
+			    }
+			    custom_trigger_tooltip = {
+				    tooltip = POR_spr_tooltip_at_peace_tt
+					NOT = { has_war_with = SPR }
+			    }
+			}	
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_global_flag = spanish_civil_war }
+				}
+				custom_effect_tooltip = POR_spanish_republic_tt
+			} 	
+			SPD = {
+				add_opinion_modifier = {
+				    target = FSL
+				    modifier = POR_helped_in_civil_war
+				}
+				add_manpower = 10000
+			}			
+			add_ideas = FSL_volunteers_in_spain_com
+			add_manpower = -10000
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+				}
+				send_equipment = {
+				    equipment = infantry_equipment
+				    amount = 2000
+				    target = SPD
+				}
+			}
+			custom_effect_tooltip = POR_support_the_spanish_republic_effect_tooltip_tt
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	
+	focus = {
+		id = FSL_peoples_militias
+		icon = GFX_focus_generic_manpower
+		prerequisite = {
+			focus = FSL_cultivate_a_new_society
+			focus = FSL_the_spirit_of_revolution
+		}
+		relative_position_id = FSL_cultivate_a_new_society
+		x = -2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_peoples_militias
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = FSL_to_kill_an_eagle
+		icon = GFX_focus_cal_to_kill_an_eagle
+		prerequisite = { focus = FSL_peoples_militias }
+		relative_position_id = FSL_peoples_militias
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_to_kill_an_eagle
+		}
+	}
+	
+	focus = {
+		id = FSL_go_with_moscow
+		icon = GFX_focus_fra_loyalty_stalin
+		prerequisite = {
+			focus = FSL_cultivate_a_new_society
+			focus = FSL_the_spirit_of_revolution
+		}
+		mutually_exclusive = { focus = FSL_american_socialism_united }
+		relative_position_id = FSL_cultivate_a_new_society
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_war_with = SOV }
+			SOV = { has_government = communism }
+			OR = {
+				is_subject = no
+				is_subject_of = SOV
+			}
+		}
+		bypass = {
+			is_in_faction_with = SOV
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					SOV = {
+						is_faction_leader = yes
+						has_government = communism
+					}
+				}
+				SOV = {
+					country_event = generic.2
+				}
+			}
+			else_if = {
+				limit = {
+					SOV = {
+						is_faction_leader = no
+						is_in_faction = yes
+					}
+				}
+				random_other_country = {
+					limit = {
+						is_faction_leader = yes
+						is_in_faction_with = SOV
+					}
+					country_event = generic.2
+				}
+			}
+		}
+	}
+
+	#Focus for American Socialism, United
+	focus = {
+		id = FSL_american_socialism_united
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = {
+			focus = FSL_cultivate_a_new_society
+			focus = FSL_the_spirit_of_revolution
+		}
+		mutually_exclusive = { focus = FSL_go_with_moscow }
+		relative_position_id = FSL_the_spirit_of_revolution
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FSL_any_american_communism_tt
+				FSL_any_american_communism = yes # custom trigger check for any communist american nation
+			}
+			has_government = communism
+			is_in_faction = no
+		}
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = "American Socialist Union"
+			FSL_add_socialist_to_faction = yes # custom effect to add checked nations to fac
+		}
+	}
+	
+	focus = {
+		id = FSL_volunteer_corps
+		icon = GFX_focus_generic_little_entente
+		prerequisite = {
+			focus = FSL_go_with_moscow
+			focus = FSL_american_socialism_united
+		}
+		relative_position_id = FSL_go_with_moscow
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_volunteer_corps
+		}
+	}
+	
+	focus = {
+		id = FSL_strike_against_america
+		icon = GFX_focus_spa_the_war_of_vengeance
+		prerequisite = { focus = FSL_volunteer_corps }
+		relative_position_id = FSL_volunteer_corps
+		x = 0
+		y = 1
+		available = {
+			any_neighbor_country = {
+				tag = USA
+			}
+		}
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = USA
+				type = annex_everything
+			}
+		}
+	}
+
+	###Democratic###
+
+	focus = {
+		id = FSL_the_merrick_plan
+		icon = GFX_goal_generic_propaganda
+		relative_position_id = FSL_open_political_sphere
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_open_political_sphere }
+		mutually_exclusive = { 
+			focus = FSL_the_path_to_socialism 
+			focus = FSL_for_the_greater_good
+		}
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= democratic
+		}
+		completion_reward = {
+			add_popularity= { 
+				ideology = communism
+				popularity = -0.02 
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = FSL_merrick
+		}
+	}
+	
+	focus = {
+		id = FSL_the_democrat_party
+		icon = GFX_focus_cal_democrat_party
+		prerequisite = { focus = FSL_the_merrick_plan }
+		mutually_exclusive = { focus = FSL_the_republic_party }
+		relative_position_id = FSL_the_merrick_plan
+		x = -3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 120
+			custom_effect_tooltip = FSL_democrat_support_tt
+		}
+	}
+	
+	focus = {
+		id = FSL_labor_reform
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = FSL_the_democrat_party }
+		relative_position_id = FSL_the_democrat_party
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_labor_reform
+		}
+	}
+	
+	focus = {
+		id = FSL_education_funding
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = FSL_labor_reform }
+		relative_position_id = FSL_labor_reform
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_education_funding
+				bonus = 0.75
+				uses = 3
+				category = electronics
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_army_of_intervention
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = FSL_education_funding }
+		relative_position_id = FSL_education_funding
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_army_of_intervention
+		}
+	}
+	
+	focus = {
+		id = FSL_expedite_production
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = FSL_education_funding }
+		relative_position_id = FSL_education_funding
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_expedite_production
+		}
+	}
+	
+	#Focus for Hollywood Alliance
+	focus = {
+		id = FSL_hollywood_alliance
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = FSL_army_of_intervention
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_army_of_intervention }
+		prerequisite = { focus = FSL_expedite_production }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+				remove_idea = FSL_hollywood_studio_bosses
+				add_idea = FSL_hollywood_alliance
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = FSL_propaganda_expert_dem
+		}
+	}
+	
+	focus = {
+		id = FSL_the_republic_party
+		icon = GFX_focus_cal_republic_party
+		prerequisite = { focus = FSL_the_merrick_plan }
+		mutually_exclusive = { focus = FSL_the_democrat_party }
+		relative_position_id = FSL_the_merrick_plan
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 120
+			custom_effect_tooltip = FSL_republic_support_tt
+		}
+	}
+	
+	focus = {
+		id = FSL_ban_fascism
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {
+			focus = FSL_the_democrat_party
+			focus = FSL_the_republic_party
+		}
+		mutually_exclusive = { focus = FSL_ban_communism }
+		relative_position_id = FSL_the_democrat_party
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_temp_variable = { FSL_fascism_support = party_popularity@fascism }
+			multiply_temp_variable = { FSL_fascism_support = -1 }
+			add_popularity = {
+				ideology = fascism
+				popularity = FSL_fascism_support
+			}
+			multiply_temp_variable = { FSL_fascism_support = 0.5 }
+			add_stability = FSL_fascism_support
+			set_temp_variable = { FSL_communism_support = party_popularity@communism }
+			multiply_temp_variable = { FSL_communism_support = 0.2 }
+			custom_effect_tooltip = FSL_ban_fascism_tt
+			hidden_effect = {
+				add_popularity = {
+					ideology = democratic
+					popularity = FSL_communism_support
+				}
+				multiply_temp_variable = { FSL_communism_support = -1 }
+				add_popularity = {
+					ideology = communism
+					popularity = FSL_communism_support
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_ban_communism
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {
+			focus = FSL_the_democrat_party
+			focus = FSL_the_republic_party
+		}
+		mutually_exclusive = { focus = FSL_ban_fascism }
+		relative_position_id = FSL_the_republic_party
+		x = -2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_temp_variable = { FSL_communism_support = party_popularity@communism }
+			multiply_temp_variable = { FSL_communism_support = -1 }
+			add_popularity = {
+				ideology = communism
+				popularity = FSL_communism_support
+			}
+			multiply_temp_variable = { FSL_communism_support = 0.5 }
+			add_stability = FSL_communism_support
+			set_temp_variable = { FSL_fascism_support = party_popularity@fascism }
+			multiply_temp_variable = { FSL_fascism_support = 0.2 }
+			custom_effect_tooltip = FSL_ban_communism_tt
+			hidden_effect = {
+				add_popularity = {
+					ideology = democratic
+					popularity = FSL_fascism_support
+				}
+				multiply_temp_variable = { FSL_fascism_support = -1 }
+				add_popularity = {
+					ideology = fascism
+					popularity = FSL_fascism_support
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_free_our_markets
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = FSL_the_republic_party }
+		mutually_exclusive = { focus = FSL_economic_protectionism }
+		relative_position_id = FSL_the_republic_party
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_free_our_markets
+				bonus = 0.75
+				uses = 3
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_economic_protectionism
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = FSL_the_republic_party }
+		mutually_exclusive = { focus = FSL_free_our_markets }
+		relative_position_id = FSL_the_republic_party
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_economic_protectionism
+		}
+	}
+	
+	focus = {
+		id = FSL_army_of_security
+		icon = GFX_focus_cal_army_of_security
+		prerequisite = {
+			focus = FSL_free_our_markets
+			focus = FSL_economic_protectionism
+		}
+		relative_position_id = FSL_free_our_markets
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_army_of_security
+		}
+	}
+	
+	focus = {
+		id = FSL_promote_the_duty_to_serve
+		icon = GFX_focus_cal_promote_the_duty_to_serve
+		prerequisite = {
+			focus = FSL_free_our_markets
+			focus = FSL_economic_protectionism
+		}
+		relative_position_id = FSL_economic_protectionism
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_promote_the_duty_to_serve
+		}
+	}
+	
+	focus = {
+		id = FSL_patriotic_construction_initiative
+		icon = GFX_focus_cal_patriotic_construction_initiative
+		prerequisite = { focus = FSL_army_of_security }
+		prerequisite = { focus = FSL_promote_the_duty_to_serve }
+		relative_position_id = FSL_army_of_security
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_patriotic_construction_initiative
+		}
+	}
+	
+	focus = {
+		id = FSL_competition_in_construction
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = FSL_army_of_security }
+		prerequisite = { focus = FSL_promote_the_duty_to_serve }
+		relative_position_id = FSL_promote_the_duty_to_serve
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_competition_in_construction
+		}
+	}
+	
+	focus = {
+		id = FSL_eminent_domain
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = FSL_patriotic_construction_initiative }
+		prerequisite = { focus = FSL_competition_in_construction }
+		relative_position_id = FSL_patriotic_construction_initiative
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Focus for An Active Role Abroad
+	focus = {
+		id = FSL_an_active_role_abroad
+		icon = GFX_focus_chi_british_cooperation
+		relative_position_id = FSL_hollywood_alliance
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FSL_hollywood_alliance
+			focus = FSL_eminent_domain
+		}
+		mutually_exclusive = { focus = FSL_a_local_bloc }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			ENG = {
+				has_government = democratic
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
+			is_in_faction= no
+			has_government= democratic
+		}
+		completion_reward = {
+			ENG = { add_to_faction= FSL }
+		}
+	}
+
+	#Focus for A Local Bloc
+	focus = {
+		id = FSL_a_local_bloc
+		icon = GFX_focus_chi_mission_to_the_us
+		relative_position_id = FSL_an_active_role_abroad
+		x = 2
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FSL_hollywood_alliance
+			focus = FSL_eminent_domain
+		}
+		mutually_exclusive = { focus = FSL_an_active_role_abroad }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FSL_any_american_democrats_tt
+				FSL_any_american_democrats = yes # custom trigger check for CAN, USA, MEX dem + HAW exists & dem
+			}
+			is_in_faction = no
+			has_government = democratic
+		}
+		completion_reward = {
+			set_rule= { 
+				can_create_factions = yes 
+			}
+			create_faction= "American Democrats"
+			FSL_add_dem_to_faction = yes # custom effect to add checked nations to fac
+		}
+	}
+
+
+	### Fascist ###
+
+	#Focus for For The Greater Good
+	focus = {
+		id = FSL_for_the_greater_good
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = FSL_open_political_sphere }
+		mutually_exclusive = { 
+			focus = FSL_the_path_to_socialism 
+			focus = FSL_the_merrick_plan
+		}
+		relative_position_id = FSL_open_political_sphere
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_FRA_POLITIFSL_VIOLENCE FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 100
+			add_popularity= { 
+				ideology = democratic
+				popularity = -0.1
+			}
+		}
+	}
+
+	#Focus for The Patterns Of Force
+	focus = {
+		id = FSL_the_patterns_of_force
+		icon = GFX_focus_cal_the_patterns_of_force
+		relative_position_id = FSL_for_the_greater_good
+		x = -4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_for_the_greater_good }
+		mutually_exclusive = { focus = FSL_return_of_the_emperor }
+		search_filters = { FOCUS_FILTER_FRA_POLITIFSL_VIOLENCE FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_army_plot
+			set_party_name = { 
+				ideology = fascism
+				long_name = FSL_military_council 
+				name = FSL_military_council 
+			}
+			custom_effect_tooltip = FSL_army_plot_tt
+		}
+	}
+
+	#Focus for Form The Brownshirts
+	focus = {
+		id = FSL_form_the_brownshirts
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = FSL_the_patterns_of_force
+		x = -2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_the_patterns_of_force }
+		search_filters = { FOCUS_FILTER_FRA_POLITIFSL_VIOLENCE FOCUS_FILTER_POLITIFSL FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			fascism > .15
+		}
+		completion_reward = {
+			add_ideas= FSL_form_the_brownshirts
+			add_stability= -0.05
+			add_manpower= 5000
+		}
+	}
+
+	#Focus for Mobilize!
+	focus = {
+		id = FSL_mobilize
+		icon = GFX_focus_cal_mobilize
+		relative_position_id = FSL_the_patterns_of_force
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_the_patterns_of_force }
+		search_filters = { FOCUS_FILTER_FRA_POLITIFSL_VIOLENCE FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			has_government= fascism
+		}
+		available = {
+			has_stability < 0.2
+		}
+		completion_reward = {
+			custom_effect_tooltip = FSL_army_coup_tt
+			remove_ideas = FSL_army_plot
+			hidden_effect = {
+				country_event = {
+					id = louisiana_coup.0
+				}
+				swap_ideas = {
+					remove_idea = FSL_hollywood_studio_bosses
+					add_idea = FSL_hollywood_studio_bosses_2
+				}
+			}
+		}
+	}
+
+	#Focus for Restabilize The Nation
+	focus = {
+		id = FSL_restabilize_the_nation
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = FSL_mobilize
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_mobilize }
+		search_filters = { FOCUS_FILTER_FRA_POLITIFSL_VIOLENCE FOCUS_FILTER_POLITIFSL FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war= no
+			is_puppet= no
+			NOT = {
+				any_other_country = {
+					original_tag = FSL
+				}
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FSL_restabilize_the_nation
+				days = 365
+			}
+		}
+	}
+ 
+	focus = {
+		id = FSL_adopt_tenets_of_fascism_ideology
+		icon = GFX_focus_cal_lousianian_fascism
+		prerequisite = { focus = FSL_restabilize_the_nation }
+		mutually_exclusive = { focus = FSL_louisianian_fascism }
+		mutually_exclusive = { focus = FSL_triumph_of_our_will }
+		relative_position_id = FSL_restabilize_the_nation
+		x = -4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_louisianian_fascism
+			set_cosmetic_tag = FSL_fascism_ideology
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_leader = {
+							name = "Military Junta"
+							ruling_only = yes
+						}
+					}
+					create_country_leader = {
+						name = "Military Junta"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = "Portrait_California_Military_Junta.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							military_control
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_leader = {
+							name = "Joe Fergusson"
+							ruling_only = yes
+						}
+					}
+					create_country_leader = {
+						name = "Joe Fergusson"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = "Portrait_California_Thomas_Williams_Dictator.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							our_duke
+							riker
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_leader = {
+							name = "Paul de Vance"
+							ruling_only = yes
+						}
+					}
+					create_country_leader = {
+						name = "Paul de Vance"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = "Portrait_California_Nicolas_Ortiz.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							principal
+						}
+					}
+				}
+				BRA = {
+					create_country_leader = {
+						name = "Plínio Salgado"
+						desc = "POLITICS_PLINIO_SALGADO_DESC"
+						picture = "Portrait_Brazil_Plinio_Salgado.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							#
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_revolution_of_the_self
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FSL_adopt_tenets_of_fascism_ideology }
+		relative_position_id = FSL_adopt_tenets_of_fascism_ideology
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = FSL_revolution_of_the_self
+		}
+	}
+	
+	focus = {
+		id = FSL_anaue
+		icon = GFX_focus_cal_anaue
+		prerequisite = { focus = FSL_revolution_of_the_self }
+		relative_position_id = FSL_revolution_of_the_self
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			BRA = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					BRA = {
+						NOT = { has_government = fascism }
+					}
+				}
+				BRA = {
+					add_timed_idea = { idea = fascism_drift_ARG days = 1460 }
+				}
+			}
+			give_guarantee = BRA
+			BRA = { give_guarantee = ROOT }
+		}
+	}
+	
+	focus = {
+		id = FSL_louisianian_fascism
+		icon = GFX_focus_cal_lousianian_fascism
+		prerequisite = { focus = FSL_restabilize_the_nation }
+		mutually_exclusive = { focus = FSL_adopt_tenets_of_fascism_ideology }
+		mutually_exclusive = { focus = FSL_triumph_of_our_will }
+		relative_position_id = FSL_restabilize_the_nation
+		x = -2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_louisianian_fascism
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_leader = {
+							name = "Military Junta"
+							ruling_only = yes
+						}
+					}
+					create_country_leader = {
+						name = "Military Junta"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = "Portrait_California_Military_Junta.dds"
+						expire = "1965.1.1"
+						ideology = gen_nazism
+						traits = {
+							military_control
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_leader = {
+							name = "Joe Fergusson"
+							ruling_only = yes
+						}
+					}
+					create_country_leader = {
+						name = "Joe Fergusson"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = "Portrait_California_Thomas_Williams_Dictator.dds"
+						expire = "1965.1.1"
+						ideology = gen_nazism
+						traits = {
+							our_duke
+							riker
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_leader = {
+							name = "Paul de Vance"
+							ruling_only = yes
+						}
+					}
+					create_country_leader = {
+						name = "Paul de Vance"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = "Portrait_California_Nicolas_Ortiz.dds"
+						expire = "1965.1.1"
+						ideology = gen_nazism
+						traits = {
+							principal
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_harmony_of_many
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = FSL_louisianian_fascism }
+		relative_position_id = FSL_louisianian_fascism
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_harmony_of_many
+		}
+	}
+	
+	focus = {
+		id = FSL_brothers_in_arms
+		icon = GFX_focus_cal_brothers_in_arms
+		prerequisite = { focus = FSL_harmony_of_many }
+		relative_position_id = FSL_harmony_of_many
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_brothers_in_arms
+		}
+	}
+	
+	focus = {
+		id = FSL_triumph_of_our_will
+		icon = GFX_focus_cal_nazism
+		prerequisite = { focus = FSL_restabilize_the_nation }
+		mutually_exclusive = { focus = FSL_adopt_tenets_of_fascism_ideology }
+		mutually_exclusive = { focus = FSL_louisianian_fascism }
+		relative_position_id = FSL_restabilize_the_nation
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_nazism
+			set_cosmetic_tag = FSL_nazism
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_leader = {
+							name = "Military Junta"
+							ruling_only = yes
+						}
+					}
+					create_country_leader = {
+						name = "Military Junta"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = "Portrait_California_Military_Junta.dds"
+						expire = "1965.1.1"
+						ideology = gen_nazism
+						traits = {
+							military_control
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_leader = {
+							name = "Joe Fergusson"
+							ruling_only = yes
+						}
+					}
+					create_country_leader = {
+						name = "Joe Fergusson"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = "Portrait_California_Thomas_Williams_Dictator.dds"
+						expire = "1965.1.1"
+						ideology = gen_nazism
+						traits = {
+							our_duke
+							riker
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_leader = {
+							name = "Paul de Vance"
+							ruling_only = yes
+						}
+					}
+					create_country_leader = {
+						name = "Paul de Vance"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = "Portrait_California_Nicolas_Ortiz.dds"
+						expire = "1965.1.1"
+						ideology = gen_nazism
+						traits = {
+							principal
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_supremacy_of_strength
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = FSL_triumph_of_our_will }
+		relative_position_id = FSL_triumph_of_our_will
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_supremacy_of_strength
+		}
+	}
+	
+	focus = {
+		id = FSL_one_people_one_nation
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = FSL_supremacy_of_strength }
+		relative_position_id = FSL_supremacy_of_strength
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = FSL_one_people_one_nation
+		}
+	}
+	
+	focus = {
+		id = FSL_remove_ideological_contamination
+		icon = GFX_focus_cal_remove_communism
+		prerequisite = { focus = FSL_restabilize_the_nation }
+		relative_position_id = FSL_restabilize_the_nation
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FSL_remove_ideological_contamination
+		}
+	}
+
+	#Focus for The Autocracy
+	focus = {
+		id = FSL_the_autocracy
+		icon = GFX_focus_cal_the_autocracy
+		relative_position_id = FSL_remove_ideological_contamination
+		x = -1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_remove_ideological_contamination }
+		mutually_exclusive = { focus = FSL_la_falange_louisianaise }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = FSL_crusader
+		}
+	}
+	
+	focus = {
+		id = FSL_control_mexican_shores
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = { focus = FSL_the_autocracy }
+		relative_position_id = FSL_the_autocracy
+		x = -5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 480
+			is_puppet = no
+		}
+		completion_reward = {
+			add_state_claim = 482
+			add_state_claim = 479
+			add_state_claim = 481
+			add_state_claim = 483
+			add_state_claim = 484
+		}
+	}
+	
+	focus = {
+		id = FSL_move_inland
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = FSL_the_autocracy }
+		relative_position_id = FSL_the_autocracy
+		x = -3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 480
+			is_puppet = no
+		}
+		completion_reward = {
+			add_state_claim = 387
+			add_state_claim = 380
+			add_state_claim = 377
+			add_state_claim = 379
+		}
+	}
+	
+	focus = {
+		id = FSL_secure_mexico
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = FSL_control_mexican_shores }
+		prerequisite = { focus = FSL_move_inland }
+		relative_position_id = FSL_control_mexican_shores
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			MEX = {
+				exists = yes
+			}
+			is_puppet = no
+		}
+		bypass = {
+			MEX = {
+				OR = {
+					exists = no
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = MEX
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_eliminate_the_great_threat
+		icon = GFX_focus_spa_the_war_of_vengeance
+		prerequisite = { focus = FSL_secure_mexico }
+		relative_position_id = FSL_secure_mexico
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			USA = {
+				exists = yes
+			}
+			is_puppet = no
+		}
+		bypass = {
+			USA = {
+				OR = {
+					exists = no
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = USA
+				type = annex_everything
+			}
+		}
+	}
+	
+	#Focus for La Falange Californiana
+	focus = {
+		id = FSL_la_falange_lousianaise
+		icon = GFX_focus_cal_la_falange_louisianaise
+		relative_position_id = FSL_remove_ideological_contamination
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_remove_ideological_contamination }
+		mutually_exclusive = { focus = FSL_the_autocracy }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_leader = {
+				ruling_only = yes 
+				name = "Paul de Vance"
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = FSL_revanchist
+		}
+	}
+
+	#Focus for Nationalize the Film Industry
+	focus = {
+		id = FSL_nationalize_the_film_industry
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		relative_position_id = FSL_the_autocracy
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FSL_the_autocracy
+			focus = FSL_la_falange_lousianaise
+		}
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			NOT = {
+				has_idea = FSL_hollywood_studio_bosses_2
+			}
+		}
+		completion_reward = {
+			remove_ideas= FSL_hollywood_studio_bosses_2
+		}
+	}
+
+	#Focus for Support The Spanish Nationalists
+	focus = {
+		id = FSL_support_the_spanish_nationalists
+		icon = GFX_focus_intervention_spain_nationalists
+		relative_position_id = FSL_nationalize_the_film_industry
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_nationalize_the_film_industry }
+		search_filters = { FOCUS_FILTER_SPA_CIVIL_WAR } 
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			has_global_flag = scw_over
+		}
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPA
+			NOT = { has_war_with = SPA }
+		}
+		completion_reward = {
+			SPA = {
+				add_opinion_modifier = {
+				    target = FSL
+				    modifier = POR_helped_in_civil_war
+				}
+				add_manpower = 10000
+			}			
+			add_ideas = FSL_volunteers_in_spain_fasc
+			add_manpower = -10000
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+				}
+			}
+			send_equipment = {
+			    equipment = infantry_equipment
+			    amount = 2000
+			    target = SPA
+			}
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	
+	focus = {
+		id = FSL_approach_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = FSL_nationalize_the_film_industry }
+		mutually_exclusive = { focus = FSL_approach_china }
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		relative_position_id = FSL_nationalize_the_film_industry
+		x = -3
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			AND = {
+				JAP = {
+					exists = yes
+					is_puppet = no
+					NOT = { has_war_with = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = FSL_alone_or_peace_faction_tt
+						is_alone_or_in_faction_at_peace_with_FSL = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = { target = FSL modifier = FSL_lousianian_diplomacy }
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_defend_japan
+		icon = GFX_focus_jap_pacific_guardian
+		prerequisite = { focus = FSL_approach_japan }
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		relative_position_id = FSL_approach_japan
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available = {
+			AND = {
+				JAP = {
+					exists = yes
+					is_puppet = no
+					NOT = { has_war_with = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = FSL_alone_or_peace_faction_tt
+						is_alone_or_in_faction_at_peace_with_FSL = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					JAP = {
+						has_war = yes
+					}
+				}
+				every_other_country = {
+					limit = {
+						has_war_with = JAP
+					}
+					ROOT = {
+						add_to_war = { targeted_alliance = JAP enemy = PREV hostility_reason = asked_to_join }
+					}
+				}
+				else = {
+					give_guarantee = JAP
+					JAP = { give_guarantee = ROOT }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_approach_china
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = FSL_nationalize_the_film_industry }
+		mutually_exclusive = { focus = FSL_approach_japan }
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		relative_position_id = FSL_nationalize_the_film_industry
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			AND = {
+				event_target:WTT_current_china_leader = {
+					exists = yes
+					is_puppet = no
+					NOT = { has_war_with = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = FSL_alone_or_peace_faction_tt
+						is_alone_or_in_faction_at_peace_with_FSL = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			event_target:WTT_current_china_leader = {
+				add_opinion_modifier = { target = FSL modifier = FSL_lousianian_diplomacy }
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_defend_china
+		icon = GFX_focus_chi_united_front
+		prerequisite = { focus = FSL_approach_china }
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		relative_position_id = FSL_approach_china
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available = {
+			AND = {
+				event_target:WTT_current_china_leader = {
+					exists = yes
+					is_puppet = no
+					NOT = { has_war_with = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = FSL_alone_or_peace_faction_tt
+						is_alone_or_in_faction_at_peace_with_FSL = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					event_target:WTT_current_china_leader = {
+						has_war = yes
+					}
+				}
+				every_other_country = {
+					limit = {
+						has_war_with = CHI
+					}
+					ROOT = {
+						add_to_war = { targeted_alliance = CHI enemy = PREV hostility_reason = asked_to_join }
+					}
+				}
+				else = {
+					give_guarantee = event_target:WTT_current_china_leader
+					event_target:WTT_current_china_leader = { give_guarantee = ROOT }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_approach_germany
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = FSL_nationalize_the_film_industry }
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		relative_position_id = FSL_nationalize_the_film_industry
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			AND = {
+				GER = {
+					exists = yes
+					is_puppet = no
+					NOT = { has_war_with = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = FSL_alone_or_peace_faction_tt
+						is_alone_or_in_faction_at_peace_with_FSL = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = { target = FSL modifier = FSL_lousianian_diplomacy }
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_approach_neighbors
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = FSL_nationalize_the_film_industry }
+		search_filters = { FOCUS_FILTER_POLITIFSL }
+		relative_position_id = FSL_nationalize_the_film_industry
+		x = 3
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FSL_any_american_fascists_tt
+				FSL_any_american_fascism_friend = yes # custom trigger check for any fascist american nation
+			}
+		}
+		completion_reward = {
+			FSL_fascist_friends = yes
+		}
+	}
+
+	#Focus for Our Place In The Axis
+	focus = {
+		id = FSL_our_place_in_the_axis
+		icon = GFX_goal_tripartite_pact
+		relative_position_id = FSL_approach_germany
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_approach_germany }
+		mutually_exclusive = { focus = FSL_the_latin_pact }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			GER = {
+				has_government = fascism
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
+			is_in_faction = no
+			has_government = fascism
+		}
+		completion_reward = {
+			GER = { add_to_faction = FSL }
+		}
+	}
+
+	#Focus for The Latin Pact
+	focus = {
+		id = FSL_the_latin_pact
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = FSL_approach_neighbors
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_approach_neighbors }
+		mutually_exclusive = { focus = FSL_our_place_in_the_axis }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = FSL_la_falange_louisianaise
+			custom_trigger_tooltip = {
+				tooltip = FSL_any_american_fascists_tt
+				FSL_any_american_fascism = yes # custom trigger check for any fascist american nation
+			}
+			has_government= fascism
+			is_in_faction = no
+		}
+		completion_reward = {
+			set_rule= { 
+				can_create_factions = yes 
+			}
+			create_faction= "Latin Alliance"
+			FSL_add_fascist_to_faction = yes # custom effect to add checked nations to fac
+		}
+	}
+	
+##     #  ######  #     #  #######  #####    ####   #       #######  #######  #     #
+# #    #  #       #     #     #     #    #  #    #  #          #        #      #   #
+#  #   #  #####   #     #     #     #    #  #    #  #          #        #       ###
+#   #  #  #       #     #     #     #####   ######  #          #        #        #
+#    # #  #        #   #      #     #    #  #    #  #          #        #        #
+#     ##  ######    ###       #     #    #  #    #  ######  #######     #        #
+
+	#Focus for Return Of The Emperor
+	focus = {
+		id = FSL_return_of_the_emperor
+		icon = GFX_focus_cal_return_of_the_emperor
+		relative_position_id = FSL_for_the_greater_good
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_for_the_greater_good }
+		mutually_exclusive = { focus = FSL_the_patterns_of_force }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = FSL_monarchist_guy
+		}
+	}
+	
+	focus = {
+		id = FSL_remove_communists
+		icon = GFX_focus_cal_remove_communism
+		prerequisite = { focus = FSL_return_of_the_emperor }
+		relative_position_id = FSL_return_of_the_emperor
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_remove_fascists
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = FSL_return_of_the_emperor }
+		relative_position_id = FSL_return_of_the_emperor
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_discredit_democracy
+		icon = GFX_focus_generic_strike_at_democracy3
+		prerequisite = { focus = FSL_remove_communists }
+		prerequisite = { focus = FSL_remove_fascists }
+		relative_position_id = FSL_remove_communists
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FSL_discredit_democracy
+				days = 365
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_rewrite_the_constitution
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FSL_discredit_democracy }
+		relative_position_id = FSL_discredit_democracy
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			monarchist > 0.25
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FSL_new_constitution
+				days = 365
+			}
+		}
+	}
+
+	#Focus for An Invitation To Rule
+	focus = {
+		id = FSL_an_invitation_to_rule
+		icon = GFX_focus_cal_emperor_norton
+		relative_position_id = FSL_rewrite_the_constitution
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_rewrite_the_constitution }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			has_government= monarchist
+		}
+		available = {
+			monarchist > 0.5
+		}
+		completion_reward = {
+			set_politics= {
+				ruling_party = monarchist
+				elections_allowed = no 
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_establish_the_imperial_guards
+		icon = GFX_focus_cal_imperial_guards
+		prerequisite = { focus = FSL_an_invitation_to_rule }
+		relative_position_id = FSL_an_invitation_to_rule
+		x = -2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 5000
+			custom_effect_tooltip = FSL_imperial_guards_tt
+			hidden_effect = {
+				division_template = {
+					name = "Imperial Guard Division"
+					division_names_group = FSL_GAR_01
+					priority = 2
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+					}
+					support = {
+						military_police = { x = 0 y = 0 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1st Imperial Guard Division\" division_template = \"Imperial Guard Division\" start_experience_factor = 1.0" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"1st Imperial Guard Division\" division_template = \"Imperial Guard Division\" start_experience_factor = 1.0" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"1st Imperial Guard Division\" division_template = \"Imperial Guard Division\" start_experience_factor = 1.0" 
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Emperor Norton's Decrees
+	focus = {
+		id = FSL_emperor_nortons_decrees
+		icon = GFX_focus_generic_monarchy_2
+		relative_position_id = FSL_an_invitation_to_rule
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_an_invitation_to_rule }
+		search_filters = { FOCUS_FILTER_POLITIFSL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= monarchist
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip= FSL_emperor_nortons_decrees
+		}
+	}
+	
+	focus = {
+		id = FSL_guarantee_human_rights
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = FSL_an_invitation_to_rule }
+		relative_position_id = FSL_an_invitation_to_rule
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITIFSL FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = monarchist
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_establish_our_empire
+		icon = GFX_focus_cal_establish_our_empire
+		prerequisite = {
+			focus = FSL_la_falange_lousianaise
+			focus = FSL_emperor_nortons_decrees
+		}
+		relative_position_id = FSL_emperor_nortons_decrees
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 480
+		}
+		completion_reward = {
+			set_cosmetic_tag = FSL_empire
+			add_country_leader_trait = emperor_of_california
+		}
+	}
+
+	#Focus for Reclaim Alta California
+	focus = {
+		id = FSL_reclaim_alta_california
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		relative_position_id = FSL_establish_our_empire
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_establish_our_empire }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			controls_state = 377
+			controls_state = 379
+			controls_state = 380
+		}
+		completion_reward = {
+			add_state_core = 377
+			add_state_core = 379
+			add_state_core = 380
+		}
+	}
+
+	#Focus for Redeem Aztlan Ourselves
+	focus = {
+		id = FSL_redeem_aztlan_ourselves
+		icon = GFX_focus_mex_redeem_aztlan
+		relative_position_id = FSL_establish_our_empire
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FSL_establish_our_empire }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state = 377
+		}
+		completion_reward = {
+			add_state_core = 374
+			add_state_core = 375
+			add_state_core = 376
+			add_state_core = 382
+			add_state_core = 482
+			add_state_core = 483
+			if = {
+				limit = {
+					483 = {
+						OWNER = {
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				transfer_state = 483
+			}
+			if = {
+				limit = {
+					482 = {
+						OWNER = {
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				transfer_state = 482
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_centralize_control
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = FSL_reclaim_alta_california }
+		prerequisite = { focus = FSL_redeem_aztlan_ourselves }
+		mutually_exclusive = { focus = FSL_delegate_control }
+		relative_position_id = FSL_reclaim_alta_california
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = FSL_centralize_control_tt
+		}
+	}
+	
+	focus = {
+		id = FSL_delegate_control
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = FSL_reclaim_alta_california }
+		prerequisite = { focus = FSL_redeem_aztlan_ourselves }
+		mutually_exclusive = { focus = FSL_centralize_control }
+		relative_position_id = FSL_redeem_aztlan_ourselves
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			custom_effect_tooltip = FSL_delegate_control_tt
+			hidden_effect = {
+				CAN = {
+					add_state_core = 385
+					add_state_core = 386
+					add_state_core = 387
+					add_state_core = 473
+					add_state_core = 740
+					add_state_core = 739
+					add_state_core = 471
+					add_state_core = 463
+				}
+				CAL = {
+					add_state_core = 385
+					add_state_core = 386
+					add_state_core = 387
+					add_state_core = 377
+					add_state_core = 378
+					add_state_core = 379
+					add_state_core = 380				
+				}
+				CUB = {
+					add_state_core = 366
+					add_state_core = 690
+					add_state_core = 693
+					add_state_core = 689
+					add_state_core = 318
+					add_state_core = 319
+					add_state_core = 686
+					add_state_core = 694
+					add_state_core = 308
+					add_state_core = 692
+				}
+				MEX = {
+					add_state_core = 311
+					add_state_core = 313
+					add_state_core = 312
+					add_state_core = 314
+					add_state_core = 317
+					add_state_core = 316
+				}
+				COL = {
+					add_state_core = 304
+					add_state_core = 685
+					add_state_core = 305
+					add_state_core = 649
+					add_state_core = 489
+					add_state_core = 695
+					add_state_core = 307
+					add_state_core = 488
+					add_state_core = 691
+				}
+				PRU = {
+					add_state_core = 506
+				}
+				ARG = {
+					add_state_core = 302
+					add_state_core = 487
+					add_state_core = 688
+					add_state_core = 301
+					add_state_core = 300
+					add_state_core = 279
+					add_state_core = 507
+				}
+				BRA = {
+					add_state_core = 687
+					add_state_core = 309
+					add_state_core = 310
+				}
+				USA = {
+					add_state_core = 696
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_march_to_the_arctic
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_centralize_control
+		x = -4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				OR = {
+					owns_state = 385
+					owns_state = 386
+					owns_state = 387
+					owns_state = 473
+					owns_state = 740
+					owns_state = 739
+					owns_state = 471
+					owns_state = 463
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				else = {
+					add_state_claim = 385
+					add_state_claim = 386
+					add_state_claim = 387
+					add_state_claim = 473
+					add_state_claim = 740
+					add_state_claim = 739
+					add_state_claim = 471
+					add_state_claim = 463
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_redeem_california
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_centralize_control
+		x = -3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				OR = {
+					owns_state = 385
+					owns_state = 386
+					owns_state = 387
+					owns_state = 377
+					owns_state = 378
+					owns_state = 379
+					owns_state = 380
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				FSL_california_puppet = yes
+				else = {
+					add_state_claim = 385
+					add_state_claim = 386
+					add_state_claim = 387
+					add_state_claim = 377
+					add_state_claim = 378
+					add_state_claim = 379
+					add_state_claim = 380
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_take_canada
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_centralize_control
+		x = -2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				country_exists = CAN
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				create_wargoal = {
+					target = CAN
+					type = puppet_wargoal_focus
+				}
+				else = {
+					every_state = {
+						limit = {
+							is_core_of = CAN
+						}
+						add_claim_by = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_take_cuba
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_centralize_control
+		x = -1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				country_exists = CUB
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				create_wargoal = {
+					target = CUB
+					type = puppet_wargoal_focus
+				}
+				else = {
+					add_state_claim = 315
+					add_state_claim = 366
+					add_state_claim = 690
+					add_state_claim = 693
+					add_state_claim = 689
+					add_state_claim = 318
+					add_state_claim = 319
+					add_state_claim = 686
+					add_state_claim = 694
+					add_state_claim = 308
+					add_state_claim = 692
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_from_sea_to_shining_sea
+		icon = GFX_focus_cal_to_kill_an_eagle
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_centralize_control
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				country_exists = USA
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				create_wargoal = {
+					target = USA
+					type = puppet_wargoal_focus
+				}
+				else = {
+					every_state = {
+						limit = {
+							is_core_of = USA
+						}
+						add_claim_by = ROOT
+					}
+					add_state_claim = 696
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_southward_bound
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_centralize_control
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				country_exists = MEX
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				create_wargoal = {
+					target = MEX
+					type = puppet_wargoal_focus
+				}
+				else = {
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = MEX
+								is_core_of = BLZ
+								is_core_of = GUA
+								is_core_of = HON
+								is_core_of = NIC
+								is_core_of = ELS
+								is_core_of = COS
+							}
+						}
+						add_claim_by = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_integrate_gran_colombia
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_delegate_control
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				country_exists = COL
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				create_wargoal = {
+					target = COL
+					type = puppet_wargoal_focus
+				}
+				else = {
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = COL
+								is_core_of = ECU
+								is_core_of = VEN
+								is_core_of = CRC
+								is_core_of = TRI
+							}
+						}
+						add_claim_by = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_take_peru
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_delegate_control
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				country_exists = PRU
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				create_wargoal = {
+					target = PRU
+					type = puppet_wargoal_focus
+				}
+				else = {
+					every_state = {
+						limit = {
+							is_core_of = PRU
+						}
+						add_claim_by = ROOT
+					}
+					add_state_claim = 506
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_integrate_the_rio_de_la_plata
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_delegate_control
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				country_exists = ARG
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				create_wargoal = {
+					target = ARG
+					type = puppet_wargoal_focus
+				}
+				else = {
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = ARG
+								is_core_of = BOL
+								is_core_of = PAR
+								is_core_of = URG
+								is_core_of = CHL
+							}
+						}
+						add_claim_by = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_take_brazil
+		icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_delegate_control
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				country_exists = BRA
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				create_wargoal = {
+					target = BRA
+					type = puppet_wargoal_focus
+				}
+				else = {
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = BRA
+								is_core_of = CAY
+								is_core_of = GYA
+								is_core_of = SUR
+							}
+						}
+						add_claim_by = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FSL_entry_into_asia
+		icon = GFX_goal_poland_goal
+		prerequisite = {
+			focus = FSL_centralize_control
+			focus = FSL_delegate_control
+		}
+		relative_position_id = FSL_delegate_control
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				country_exists = PHI
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = FSL_delegate_control
+				}
+				create_wargoal = {
+					target = PHI
+					type = puppet_wargoal_focus
+				}
+				else = {
+					every_state = {
+						limit = {
+							is_core_of = PHI
+						}
+						add_claim_by = ROOT
+					}
+				}
+			}
+		}
+	}
+
+### End of focus tree maker focuses. Everything past this was made the old fashioned way, fingers on keys type shit.
+
+#######  ##	    #  ####    #     #   ######  #######  ######   #     #
+   #     # #    #  #   #   #     #  #           #     #     #   #   #
+   #     #  #   #  #    #  #     #   ###        #     #     #    ###
+   #     #   #  #  #    #  #     #     ###      #     ######      #
+   # 	 #    # #  #   #    #   #         #     #     #     #     #
+#######  #	   ##  ####      ###    ######      #     #     #     #
+
+	focus = {
+		id = FSL_industrial_vitality
+		icon = GFX_goal_generic_construct_civilian
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_open_political_sphere
+		x = 35
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = industrial_vitality
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = industrial_vitality
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = industrial_vitality
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_infrastructure_focus
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = FSL_industrial_vitality }
+		mutually_exclusive = { focus = FSL_arms_focus }
+		mutually_exclusive = { focus = FSL_civilian_focus }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_industrial_vitality
+		x = -4
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = industrial_vitality
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = industrial_vitality
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = industrial_vitality
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_rural_roads_initiative
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = FSL_infrastructure_focus
+			focus = FSL_arms_focus
+			focus = FSL_civilian_focus
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_infrastructure_focus
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			controls_state = 379
+			controls_state = 377
+		}
+		completion_reward = {
+			388 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			389 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_scenic_routes
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = FSL_infrastructure_focus
+			focus = FSL_arms_focus
+			focus = FSL_civilian_focus
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_infrastructure_focus
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			controls_state = 371
+		}
+		completion_reward = {
+			371 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_valley_highways
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = FSL_infrastructure_focus
+			focus = FSL_arms_focus
+			focus = FSL_civilian_focus
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_infrastructure_focus
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			controls_state = 371
+		}
+		completion_reward = {
+			371 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_arms_focus
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FSL_industrial_vitality }
+		mutually_exclusive = { focus = FSL_infrastructure_focus }
+		mutually_exclusive = { focus = FSL_civilian_focus }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_industrial_vitality
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				NOT = {
+					any_owned_state = {
+						NOT = {
+							has_state_flag = industrial_vitality
+						}
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = industrial_vitality
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = industrial_vitality
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = industrial_vitality
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_texas_shore_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = {
+			focus = FSL_infrastructure_focus
+			focus = FSL_arms_focus
+			focus = FSL_civilian_focus
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_arms_focus
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			controls_state = 375
+		}
+		completion_reward = {
+			375 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_southern_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {
+			focus = FSL_infrastructure_focus
+			focus = FSL_arms_focus
+			focus = FSL_civilian_focus
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_arms_focus
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			controls_state = 371
+		}
+		completion_reward = {
+			371 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_develop_texas_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = FSL_north_shore_dockyards }
+		prerequisite = { focus = FSL_scenic_routes }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_north_shore_dockyards
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			controls_state = 375
+		}
+		bypass = {
+			NOT = {
+				375 = {
+					free_building_slots = {
+						building = dockyard
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			375 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			show_ideas_tooltip = san_francisco_naval_yard
+		}
+	}
+
+	focus = {
+		id = FSL_anti_air_emplacements
+		icon = GFX_focus_generic_air_defense
+		prerequisite = {
+			focus = FSL_north_shore_dockyards
+			focus = FSL_southern_factories
+		}
+		mutually_exclusive = { focus = FSL_airfield_development }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_north_shore_dockyards
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = { has_completed_focus = FSL_develop_artillery }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = anti_air_emplacements
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = anti_air_emplacements
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = anti_air_emplacements
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = anti_air_emplacements
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_airfield_development
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = {
+			focus = FSL_north_shore_dockyards
+			focus = FSL_southern_factories
+		}
+		mutually_exclusive = { focus = FSL_anti_air_emplacements }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_southern_factories
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = { has_completed_focus = FSL_aviation_research_projects }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = airfield_development
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = airfield_development
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = airfield_development
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = airfield_development
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_border_defense_project
+		icon = GFX_goal_generic_construct_military
+		prerequisite = {
+			focus = FSL_anti_air_emplacements
+			focus = FSL_airfield_development
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_anti_air_emplacements
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			all_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = FSL_border_defense_project_tt
+			add_ideas = FSL_border_defense_project
+			hidden_effect = {
+				every_owned_state = {
+					add_building_construction = {
+						type = bunker
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_civilian_focus
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = FSL_industrial_vitality }
+		mutually_exclusive = { focus = FSL_infrastructure_focus }
+		mutually_exclusive = { focus = FSL_arms_focus }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_industrial_vitality
+		x = 7
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						NOT = {
+							has_state_flag = industrial_vitality
+						}
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = industrial_vitality
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = industrial_vitality
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = industrial_vitality
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = industrial_vitality
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_industry_focus
+		icon = GFX_goal_generic_production
+		prerequisite = {
+			focus = FSL_infrastructure_focus
+			focus = FSL_arms_focus
+			focus = FSL_civilian_focus
+		}
+		mutually_exclusive = { focus = FSL_research_focus }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_civilian_focus
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = FSL_industry_focus
+		}
+	}
+
+	focus = {
+		id = FSL_industrial_efficiency_board
+		icon = GFX_goal_generic_production2
+		prerequisite = {
+			focus = FSL_industry_focus
+			focus = FSL_research_focus
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_industry_focus
+		x = -3
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = FSL_industrial_efficiency_board
+			add_tech_bonus = {
+				name = FSL_industrial_efficiency_board
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_advanced_excavation_techniques
+		icon = GFX_goal_generic_production2
+		prerequisite = {
+			focus = FSL_industry_focus
+			focus = FSL_research_focus
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_industry_focus
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_advanced_excavation_techniques
+				bonus = 1.0
+				uses = 2
+				category = excavation_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_domestic_engineering_contracts
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = FSL_industrial_efficiency_board }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_industrial_efficiency_board
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = FSL_domestic_engineering_contracts
+		}
+	}
+
+	focus = {
+		id = FSL_expanded_metalworking_complexes
+		icon = GFX_focus_generic_steel
+		prerequisite = {
+			focus = FSL_industrial_efficiency_board
+			focus = FSL_advanced_excavation_techniques
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_industrial_efficiency_board
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FSL_expanded_metalworking_complexes_tt
+				OR = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						has_resources_amount = {
+							resource = steel
+							amount < 51
+						}
+						has_resources_amount = {
+							resource = steel
+							amount > 0
+						}
+					}
+					any_owned_state = {
+						is_controlled_by = ROOT
+						has_resources_amount = {
+							resource = aluminium
+							amount < 16
+						}
+						has_resources_amount = {
+							resource = aluminium
+							amount > 0
+						}
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					has_resources_amount = {
+						resource = steel
+						amount < 51
+					}
+					has_resources_amount = {
+						resource = steel
+						amount > 0
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = expanded_metalworking_complexes
+			}
+			random_owned_controlled_state = {
+				limit = {
+					has_resources_amount = {
+						resource = aluminium
+						amount < 16
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 0
+					}
+				}
+				add_resource = {
+					type = aluminium
+					amount = 30
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = expanded_metalworking_complexes
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_diversified_metalworking_complexes
+		icon = GFX_focus_generic_tungsten
+		prerequisite = { focus = FSL_expanded_metalworking_complexes }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_expanded_metalworking_complexes
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			any_owned_state = {
+				NOT = {
+					has_state_flag = expanded_metalworking_complexes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = expanded_metalworking_complexes
+					}
+				}
+				add_resource = {
+					type = chromium
+					amount = 30
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						has_state_flag = expanded_metalworking_complexes
+					}
+				}
+				add_resource = {
+					type = tungsten
+					amount = 30
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_synthetic_oil_developments
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = FSL_advanced_excavation_techniques }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_advanced_excavation_techniques
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		bypass = {
+			has_tech = synth_oil_experiments 
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_synthetic_oil_developments
+				bonus = 3.0
+				uses = 1
+				category = synth_resources
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_refinery_construction
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = FSL_synthetic_oil_developments }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_synthetic_oil_developments
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = refinery_construction
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = refinery_construction
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_synthetic_rubber_developments
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = FSL_refinery_construction }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = FSL_refinery_construction
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			any_owned_state = {
+				OR = {
+					has_state_flag = refinery_construction
+					custom_trigger_tooltip = {
+						tooltip = FSL_synthetic_rubber_developments_tt
+						non_damaged_building_level = {
+							building = synthetic_refinery
+							level > 0
+						}
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						has_state_flag = refinery_construction
+						non_damaged_building_level = {
+							building = synthetic_refinery
+							level > 0
+						}
+					}
+				}
+				add_resource = {
+					type = rubber
+					amount = 30
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						has_state_flag = refinery_construction
+						non_damaged_building_level = {
+							building = synthetic_refinery
+							level > 0
+						}
+					}
+				}
+				add_resource = {
+					type = rubber
+					amount = 30
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_research_focus
+		icon = GFX_focus_research2
+		prerequisite = {
+			focus = FSL_infrastructure_focus
+			focus = FSL_arms_focus
+			focus = FSL_civilian_focus
+		}
+		mutually_exclusive = { focus = FSL_industry_focus }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_civilian_focus
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = FSL_research_focus
+		}
+	}
+
+	focus = {
+		id = FSL_centers_of_higher_learning
+		icon = GFX_focus_research
+		prerequisite = {
+			focus = FSL_research_focus
+			focus = FSL_industry_focus
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_research_focus
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+			hidden_effect = {
+				set_variable = { new_research_slot_date = global.num_days }
+				add_to_variable = { new_research_slot_date = 365 }
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_pioneering_detection_methods
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = FSL_centers_of_higher_learning }
+		prerequisite = { focus = FSL_army_doctrine_research }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_centers_of_higher_learning
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_pioneering_detection_methods
+				bonus = 1.0
+				uses = 1
+				category = radar_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_computing_machines
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = FSL_pioneering_detection_methods }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_pioneering_detection_methods
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_computing_machines
+				bonus = 1.0
+				uses = 1
+				category = computing_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_decryption_breakthroughs
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = FSL_computing_machines }
+		mutually_exclusive = { focus = FSL_preventative_encryption_measures }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_computing_machines
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_decryption_breakthroughs
+				bonus = 1.0
+				uses = 1
+				category = decryption_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_preventative_encryption_measures
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = FSL_computing_machines }
+		mutually_exclusive = { focus = FSL_decryption_breakthroughs }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_computing_machines
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_preventative_encryption_measures
+				bonus = 1.0
+				uses = 1
+				category = encryption_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_advanced_research_institute
+		icon = GFX_focus_research
+		prerequisite = { focus = FSL_centers_of_higher_learning }
+		prerequisite = { focus = FSL_military_research_projects }
+		prerequisite = { focus = FSL_aviation_research_projects }
+		prerequisite = { focus = FSL_naval_research_projects }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_centers_of_higher_learning
+		x = 5
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FSL_research_slot_date_tt
+				check_variable = { new_research_slot_date < global.num_days }
+			}
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = FSL_doctrine_of_destruction
+		icon = GFX_focus_wonderweapons
+		prerequisite = {
+			focus = FSL_decryption_breakthroughs
+			focus = FSL_preventative_encryption_measures
+		}
+		prerequisite = { focus = FSL_advanced_research_institute }
+		mutually_exclusive = { focus = FSL_fire_and_forget }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_decryption_breakthroughs
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			date > 1941.1.1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_doctrine_of_destruction
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_fire_and_forget
+		icon = GFX_focus_rocketry
+		prerequisite = {
+			focus = FSL_decryption_breakthroughs
+			focus = FSL_preventative_encryption_measures
+		}
+		prerequisite = { focus = FSL_advanced_research_institute }
+		mutually_exclusive = { focus = FSL_doctrine_of_destruction }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_preventative_encryption_measures
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			date > 1941.1.1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_fire_and_forget
+				bonus = 1.0
+				uses = 1
+				category = rocketry
+			}
+		}
+	}
+
+ ####   #####   ##   ##  #     #
+#    #  #    #  # # # #   #   #
+#    #  #    #  #  #  #    ###
+######  #####   #  #  #     #
+#    #  #    #  #     #     #
+#    #  #    #  #     #     #    (not the kpop kind)
+
+	focus = {
+		id = FSL_building_a_respectable_army
+		icon = GFX_focus_generic_manpower
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+		relative_position_id = FSL_industrial_vitality
+		x = 15
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = FSL_building_a_respectable_army
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_military_research_projects
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = FSL_building_a_respectable_army }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_building_a_respectable_army
+		x = -4
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 100
+			add_tech_bonus = {
+				name = FSL_military_research_projects
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = infantry_tech
+			}
+			show_ideas_tooltip = norcal_arsenal
+			show_ideas_tooltip = FSL_army_ordnance_department
+		}
+	}
+
+	focus = {
+		id = FSL_develop_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = FSL_military_research_projects }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_military_research_projects
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_develop_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_develop_motorized
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = FSL_military_research_projects }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_military_research_projects
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_develop_motorized
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_army_doctrine_research
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = FSL_military_research_projects }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_military_research_projects
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_army_doctrine_research
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_develop_anti_tank
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = FSL_develop_artillery }
+		mutually_exclusive = { focus = FSL_develop_tanks }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_develop_artillery
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_develop_anti_tank
+				bonus = 1.0
+				uses = 1
+				category = cat_anti_tank
+			}
+			show_ideas_tooltip = FSL_tank_destroyer_board
+		}
+	}
+
+	focus = {
+		id = FSL_develop_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = FSL_develop_motorized }
+		mutually_exclusive = { focus = FSL_develop_anti_tank }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_develop_motorized
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_develop_anti_tank
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_rangers
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = FSL_army_doctrine_research }
+		prerequisite = {
+			focus = FSL_develop_anti_tank
+			focus = FSL_develop_tanks
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_army_doctrine_research
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			has_tech = tech_mountaineers
+		}
+		completion_reward = {
+			add_ideas = FSL_rangers
+			division_template = {
+				name = "Ranger Division"
+				division_names_group = FSL_RANGERS_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+		
+					infantry = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_aviation_research_projects
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = FSL_building_a_respectable_army }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_building_a_respectable_army
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 100
+			add_tech_bonus = {
+				name = FSL_aviation_research_projects
+				bonus = 1.0
+				uses = 2
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_develop_fighters
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = FSL_aviation_research_projects }
+		mutually_exclusive = { focus = FSL_develop_bombers }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_aviation_research_projects
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_develop_fighters
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_develop_bombers
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = FSL_aviation_research_projects }
+		mutually_exclusive = { focus = FSL_develop_fighters }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_aviation_research_projects
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_develop_bombers
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+				category = cat_strategic_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_ground_air_support
+		icon = GFX_goal_generic_CAS
+		prerequisite = {
+			focus = FSL_develop_fighters
+			focus = FSL_develop_bombers
+		}
+		mutually_exclusive = { focus = FSL_naval_air_support }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_develop_fighters
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_ground_air_support
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_naval_air_support
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = {
+			focus = FSL_develop_fighters
+			focus = FSL_develop_bombers
+		}
+		mutually_exclusive = { focus = FSL_ground_air_support }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_develop_bombers
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_naval_air_support
+				bonus = 1.0
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_air_doctrine_research
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = {
+			focus = FSL_ground_air_support
+			focus = FSL_naval_air_support
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_ground_air_support
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_air_doctrine_research
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_battlefield_support_doctrines
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = FSL_ground_air_support }
+		prerequisite = { focus = FSL_air_doctrine_research }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_ground_air_support
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_battlefield_support_doctrines
+				bonus = 1.0
+				uses = 1
+				category = battlefield_support_tree
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_strategic_destruction_doctrines
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = FSL_naval_air_support }
+		prerequisite = { focus = FSL_air_doctrine_research }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_naval_air_support
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_strategic_destruction_doctrines
+				bonus = 1.0
+				uses = 1
+				category = strategic_destruction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_planes_of_the_future
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = FSL_fire_and_forget }
+		prerequisite = {
+			focus = FSL_battlefield_support_doctrines
+			focus = FSL_strategic_destruction_doctrines
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_battlefield_support_doctrines
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_planes_of_the_future
+				bonus = 1.0
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_naval_research_projects
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = FSL_building_a_respectable_army }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_building_a_respectable_army
+		x = 4
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			navy_experience = 100
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = FSL_naval_research_projects
+					bonus = 1.0
+					uses = 4
+					category = naval_equipment
+				}
+				else = {
+					add_tech_bonus = {
+						name = FSL_naval_research_projects
+						bonus = 1.0
+						uses = 2
+						category = naval_equipment
+					}
+				}
+			}
+			show_ideas_tooltip = san_diego_shipbuilding
+		}
+	}
+
+	focus = {
+		id = FSL_fleet_agility
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = FSL_naval_research_projects }
+		mutually_exclusive = { focus = FSL_fleet_presence }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_naval_research_projects
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_fleet_agility
+				bonus = 1.0
+				uses = 1
+				category = trade_interdiction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_fleet_presence
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = FSL_naval_research_projects }
+		mutually_exclusive = { focus = FSL_fleet_agility }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_naval_research_projects
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_fleet_presence
+				bonus = 1.0
+				uses = 1
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_submarine_warfare
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = {
+			focus = FSL_fleet_agility
+			focus = FSL_fleet_presence
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_fleet_agility
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_submarine_warfare
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_destroyer_development
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = FSL_submarine_warfare }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_submarine_warfare
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_destroyer_development
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_cruiser_development
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = {
+			focus = FSL_fleet_agility
+			focus = FSL_fleet_presence
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_fleet_presence
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_cruiser_development
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_capital_ship_initiative
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = FSL_cruiser_development }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_cruiser_development
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_capital_ship_initiative
+				bonus = 1.0
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FSL_superheavy_battleship_developments
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = FSL_fleet_presence }
+		prerequisite = { focus = FSL_capital_ship_initiative }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		relative_position_id = FSL_capital_ship_initiative
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FSL_superheavy_battleship_developments
+				bonus = 1.0
+				uses = 1
+				category = shbb_tech
+			}
+		}
+	}
+}

@@ -225,7 +225,6 @@ california_falangist = {
 		
 		CAL_mobilize
 		CAL_restabilize_the_nation
-		CAL_adopt_tenets_of_integralism
 		CAL_revolution_of_the_self
 		CAL_anaue
 		CAL_remove_ideological_contamination

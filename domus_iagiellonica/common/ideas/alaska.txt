@@ -167,7 +167,7 @@ ideas = {
 							picture = generic_research_bonus
 			
 							modifier = {
-								research_time_factor = -0.05
+								research_speed_factor = 0.05
 							}
 						}
 						
@@ -389,7 +389,7 @@ ideas = {
 			}
 			army_chief = {
 				ALA_Antonio_makiaveli = {
-			
+				ledger = army
 				picture = frank_jack_fletcher
 			
 				allowed = {
@@ -403,7 +403,7 @@ ideas = {
 				}
 			}
 				ALA_Barns_Dauni = {
-			
+				ledger = army
 				picture = franz_halder
 			
 				allowed = {
@@ -421,7 +421,7 @@ ideas = {
 			navy_chief = {
 		
 			ALA_andrey_yegorav = {
-			
+				ledger = navy
 				allowed = {
 					original_tag = ALA
 				}
@@ -435,7 +435,7 @@ ideas = {
 				}
 			}
 			ALA_nikolai_maksimov = {
-			
+				ledger = navy
 			
 				allowed = {
 					original_tag = ALA
@@ -453,7 +453,7 @@ ideas = {
 		air_chief = {
 		
 			ALA_viktor_pavlenko = {
-			
+				ledger = air
 				picture = emilio_de_bono
 			
 				allowed = {
@@ -470,7 +470,7 @@ ideas = {
 		high_command = {
 
 			ALA_Jhon_lamo = {
-			
+				ledger = army
 				picture = angelo_iachino
 			
 				allowed = {
@@ -484,7 +484,7 @@ ideas = {
 				}
 			}
 			ALA_Max_limo = {
-			
+				ledger = army
 				picture = arthur_harris
 			
 				allowed = {
@@ -498,7 +498,7 @@ ideas = {
 				}
 			}
 			ALA_Jim_Meno = {
-			
+				ledger = army
 				picture = alexander_yegorov
 			
 				allowed = {
@@ -512,7 +512,7 @@ ideas = {
 				}
 			}
 			ALA_Martin_Prince = {
-			
+				ledger = air
 				picture = aleksandr_vasilevsky
 			
 				allowed = {
@@ -526,7 +526,7 @@ ideas = {
 				}
 			}
 			ALA_Benito_lamuzini = {
-			
+				ledger = army
 				picture = bernard_montgomery
 			
 				allowed = {
@@ -540,7 +540,7 @@ ideas = {
 				}
 			}
 			ALA_Gomer_lamo = {
-			
+				ledger = navy
 				picture = carl_spaatz
 			
 				allowed = {
@@ -557,7 +557,7 @@ ideas = {
 		theorist = {	
 			
 			ALA_mihail_tuhachev = {
-		
+				ledger = army
 				picture = carl_spaatz
 			
 				allowed = {

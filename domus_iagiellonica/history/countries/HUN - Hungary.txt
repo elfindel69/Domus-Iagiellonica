@@ -152,7 +152,6 @@ if = {
 			fascist_sympathies
 			anti_communist
 		}
-		id = 500 #Horthy Neutral
 	}
 	else = {
 		create_country_leader = {
@@ -178,6 +177,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = monarchism
 	traits = {
+		
 	}
 }
 		
@@ -219,7 +219,6 @@ create_country_leader = {
 			traits = {
 				anti_communist
 			}
-			id = 503 #Horty fascist
 		}
 	}
 

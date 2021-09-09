@@ -484,7 +484,7 @@ CSA_DD_CONFEDERATE = {
 	can_use = {
 		OR = {
 			tag = CSA
-			AND {
+			AND = {
 				tag = FSL
 				has_government = fascism
 			}
@@ -521,7 +521,7 @@ CSA_CL_CONFEDERATE = {
 	can_use = {
 		OR = {
 			tag = CSA
-			AND {
+			AND = {
 				tag = FSL
 				has_government = fascism
 			}
@@ -555,7 +555,7 @@ CSA_CA_CONFEDERATE = {
 	can_use = {
 		OR = {
 			tag = CSA
-			AND {
+			AND = {
 				tag = FSL
 				has_government = fascism
 			}
@@ -585,7 +585,7 @@ FSL_BB_CONFEDERATE = {
 	can_use = {
 		OR = {
 			tag = CSA
-			AND {
+			AND = {
 				tag = FSL
 				has_government = fascism
 			}
@@ -611,7 +611,7 @@ FSL_BC_CONFEDERATE = {
 	can_use = {
 		OR = {
 			tag = CSA
-			AND {
+			AND = {
 				tag = FSL
 				has_government = fascism
 			}
@@ -637,7 +637,7 @@ FSL_CV_CONFEDERATE = {
 	can_use = {
 		OR = {
 			tag = CSA
-			AND {
+			AND = {
 				tag = FSL
 				has_government = fascism
 			}
@@ -664,7 +664,7 @@ CSA_SS_CONFEDERATE = {
 	can_use = {
 		OR = {
 			tag = CSA
-			AND {
+			AND = {
 				tag = FSL
 				has_government = fascism
 			}

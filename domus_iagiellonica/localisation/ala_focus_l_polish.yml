@@ -1,4 +1,5 @@
 ﻿l_polish:
+ alaska_focus:0 "Cel narodowy Alaski"
  ALA_New_economic:0 "Reformy ekonomiczne"
  ALA_New_economic_desc:0 "Mamy straszną gospodarkę! Ludzie głodują, a my nie jesteśmy w stanie niczego zbudować!"
  ALA_foreign_policy:0 "Polityka zagraniczna"
@@ -77,6 +78,7 @@
  ALA_Trebuet_Kurili_and_attu_desc:0 "Składamy roszczenia do Kuriles i Atta. Nie, potrzebujemy tych wysp!"
  ALA_Trebuet_Kamchatku:0 "Aneksja Kamczatki"
  ALA_Trebuet_Kamchatku_desc:0 "Załączamy Kamczatkę!"
+
  ALA_Comunism_is_Bad:0 ""Коммунизм это плохо""
  ALA_Comunism_is_Bad_desc:0 "Komunizm jest zły!"
  ALA_Russian_federation:0 "Federacja Rosyjska"

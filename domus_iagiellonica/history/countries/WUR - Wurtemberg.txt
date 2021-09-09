@@ -130,9 +130,6 @@ set_popularities = {
 	monarchist = 3
 }
 
-add_ideas = {
-}
-
 create_country_leader = {
 	name = "Gunther Rothman"
 	desc = "POLITICS_ALFRED_KLAHR_DESC"

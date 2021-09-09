@@ -23,9 +23,6 @@ CAL_emperor_nortons_decrees = {
 			}
 		}
 
-		modifier = {
-		}
-
 		complete_effect = {
 			add_popularity = {
 				ideology = neutrality
@@ -57,8 +54,7 @@ CAL_emperor_nortons_decrees = {
 			}
 		}
 
-		modifier = {
-		}
+		
 
 		complete_effect = {
 			add_war_support = 0.05
@@ -77,18 +73,15 @@ CAL_emperor_nortons_decrees = {
 		fire_only_once = yes
 
 		available = {
-			owns_state = 807
-			controls_state = 807
+			owns_state = 378
+			controls_state = 378
 		}
 
 		visible = {
 		}
 
-		modifier = {
-		}
-
 		complete_effect = {
-			set_capital = 807
+			set_capital = 378
 		}
 	}		
 	
@@ -110,9 +103,6 @@ CAL_emperor_nortons_decrees = {
 		visible = {
 		}
 
-		modifier = {
-		}
-
 		complete_effect = {
 			add_stability = 0.05
 		}
@@ -130,18 +120,15 @@ CAL_emperor_nortons_decrees = {
 		fire_only_once = yes
 
 		available = {
-			controls_state = 807
+			controls_state = 378
 		}
 
 		visible = {
 		}
 
-		modifier = {
-		}
-
 		complete_effect = {
 			add_popularity = {
-				ideology = neutrality
+				ideology = monarchist
 				popularity = 0.1
 			}
 			add_stability = 0.05
@@ -163,9 +150,6 @@ CAL_emperor_nortons_decrees = {
 		}
 
 		visible = {
-		}
-
-		modifier = {
 		}
 
 		complete_effect = {
@@ -193,9 +177,6 @@ CAL_emperor_nortons_decrees = {
 		}
 
 		visible = {
-		}
-
-		modifier = {
 		}
 
 		complete_effect = {

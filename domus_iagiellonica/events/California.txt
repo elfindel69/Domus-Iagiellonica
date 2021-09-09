@@ -29,10 +29,8 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				AND = {
-					fascism > .70
-					has_completed_focus = CAL_form_the_brownshirts
-				}
+				fascism > .70
+				has_completed_focus = CAL_form_the_brownshirts
 			}
 			random_list = {
 				100 = {
@@ -42,11 +40,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				AND = {
-					fascism > .70
-					NOT = {
-						has_completed_focus = CAL_form_the_brownshirts
-					}
+				fascism > .70
+				NOT = {
+					has_completed_focus = CAL_form_the_brownshirts
 				}
 			}
 			random_list = {
@@ -60,10 +56,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				AND = {
-					fascism > .50
-					fascism < .70
-				}
+				
+				fascism > .50
+				fascism < .70
+
 			}
 			random_list = {
 				70 = {
@@ -76,10 +72,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				AND = {
-					fascism > .30
-					fascism < .50
-				}
+				fascism > .30
+				fascism < .50
 			}
 			random_list = {
 				50 = {
@@ -150,13 +144,13 @@ country_event = {
 	option = {
 		name = california_coup.2.a
 		hidden_effect = {
-			set_capital = 808
+			set_capital = 385
 			start_civil_war = {
 				ruling_party = fascism
 				ideology = democratic
 				size = 0.5
 				capital = 378
-				states = { 378 807 810 }
+				states = { 378 377 379 }
 			}
 			if = {
 				limit = {

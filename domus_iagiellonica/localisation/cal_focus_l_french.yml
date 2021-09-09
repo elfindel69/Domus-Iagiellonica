@@ -1,4 +1,6 @@
 ﻿l_focus: 
+ california_focus:0 "Priorités nationales californiennes"
+
  CAL_the_road_to_change:0 "La route du changement"
  CAL_the_road_to_change_desc:0 "Peu importe ce qui se passera dans le futur, le changement en fera certainement partie. Nous devons orienter notre pays sur la bonne voie."
  CAL_prepare_for_the_election:0 "Pour les gens"
@@ -13,6 +15,7 @@
  CAL_experiment_with_collectivization_desc:0 "L'idée communiste de collectivisation est radicale, mais non sans mérite. Nous devrions expérimenter cette idée à une échelle limitée."
  CAL_stay_true_to_socialism:0 "Rester fidèle au socialisme"
  CAL_stay_true_to_socialism_desc:0 "Le peuple est hostile au terme « socialisme », mais nous ne rejetterons pas nos idéaux. Ils verront, avec le temps, que le socialisme est vraiment la réponse dont ils ont besoin."
+
  CAL_epic:0 ""EPIC""
  CAL_epic_desc:0 "La seule façon pour le socialisme de s'implanter est de changer de marque et de faire appel aux masses - le peuple californien adoptera le socialisme, mais il ne prendra pas l'étiquette."
  CAL_bring_forth_our_revolution:0 "Apporter notre révolution"
@@ -108,10 +111,12 @@
  CAL_adopt_tenets_of_integralism_desc:0 "L'idéologie de l'intégralisme brésilien est l'une des variantes du fascisme les plus appropriées pour notre pays. Nous devrions l'étudier et l'adapter à la société californienne."
  CAL_revolution_of_the_self:0 "Révolution de soi"
  CAL_revolution_of_the_self_desc:0 "L'un des principes les plus importants de la vie d'un intégraliste est la "Révolution du Soi", à travers laquelle il cesse de penser uniquement pour lui-même, et s'intègre à la place dans la grande famille Intégraliste et devient un avec la patrie."
+
  CAL_anaue:0 "Anauê!"
  CAL_anaue_desc:0 "Nos frères au Brésil, les pionniers de notre idéologie intégraliste adoptée, méritent notre soutien et d'être traités comme notre famille par le sang. Anauê!"
  CAL_californian_fascism:0 "Fascisme californien"
  CAL_californian_fascism_desc:0 "Nazism has been created for Germany, integralism for Brazil, and fascism for Italy. We need to create our own ideology to fit the unique mold of Californian society."
+
  CAL_harmony_of_many:0 "Harmonie de plusieurs"
  CAL_harmony_of_many_desc:0 "L'harmonie de beaucoup fait partie intégrante de la Californie - que nos ancêtres soient espagnols, mexicains, américains ou autochtones, nous sommes tous californiens, et notre marque de fascisme doit refléter cela."
  CAL_brothers_in_arms:0 "Frères d'armes"
@@ -134,6 +139,7 @@
  CAL_secure_mexico_desc:0 "Il semble douteux qu'ils puissent jamais s'opposer sérieusement à nous, mais nous devons encore enlever toute trace de résistance du Mexique et couvrir notre flanc sud."
  CAL_eliminate_the_great_threat:0 "Éliminer la grande menace"
  CAL_eliminate_the_great_threat_desc:0 "À notre est, l'Amérique se dresse comme un géant, nous guettant et attendant que nous fassions un faux pas. Nous devons frapper avant qu'ils ne trouvent notre faiblesse."
+
  CAL_la_falange_californiana:0 "La Falange Californiana"
  CAL_la_falange_californiana_desc:0 "Sous la direction de "El Principal" Nicolas Ortiz, les principes du phalangisme nous rapprocheront de l'harmonie avec nos voisins latino-américains."
  CAL_nationalize_the_film_industry:0 "Nationaliser l'industrie cinématographique"

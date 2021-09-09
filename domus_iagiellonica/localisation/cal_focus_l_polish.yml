@@ -1,4 +1,6 @@
 ﻿l_english: 
+ california_focus:0 "Kalifornijskie cele narodowe"
+
  CAL_the_road_to_change:0 "Droga do zmian"
  CAL_the_road_to_change_desc:0 "Bez względu na to, co wydarzy się w przyszłości, zmiana z pewnością będzie tego częścią. Musimy skierować nasz kraj na właściwą ścieżkę."
  CAL_prepare_for_the_election:0 "Dla ludzi"
@@ -13,6 +15,7 @@
  CAL_experiment_with_collectivization_desc:0 "Komunistyczna idea kolektywizacji jest radykalna, ale nie bez wartości. Powinniśmy eksperymentować z tym pomysłem na ograniczoną skalę."
  CAL_stay_true_to_socialism:0 "Pozostanąć wiernym socjalizmowi"
  CAL_stay_true_to_socialism_desc:0 "Ludzie są przeciwni określeniu „socjalizm”, ale my nie odrzucimy naszych ideałów. Z czasem zobaczą, że socjalizm jest naprawdę potrzebną odpowiedzią."
+
  CAL_epic:0 ""EPIC""
  CAL_epic_desc:0 "Jedynym sposobem, aby socjalizm się zapanował, jest rebranding i apelowanie do mas – Kalifornijczycy przyjmą socjalizm, ale nie przyjmą etykietki."
  CAL_bring_forth_our_revolution:0 "Przynieść naszą rewolucję"
@@ -50,6 +53,7 @@
  CAL_the_merrick_plan_desc:0 "Jesteśmy bastionem wolności na Pacyfiku, ale tylko dlatego, że jesteśmy w lepszej sytuacji niż nasi sąsiedzi, nie oznacza to, że nie możemy iść dalej."
  CAL_the_democrat_party:0 "Wspierać kalifornijskich demokratów"
  CAL_the_democrat_party_desc:0 "The California Democrats are the best party for securing the rights of our people and leading California into the future."
+
  CAL_democrat_support_tt:0 "Kalifornijscy Demokraci wygrają następne wybory prezydenckie.."
  CAL_labor_reform:0 "Reforma pracy"
  CAL_labor_reform_desc:0 "Nasze warunki pracy w fabrykach są fatalne. Pracownicy są przepracowani, a ich pracodawcy bogacą się. Musimy zakończyć ten rażący wyzysk."
@@ -134,6 +138,7 @@
  CAL_secure_mexico_desc:0 "Wydaje się wątpliwe, czy mogliby kiedykolwiek poważnie się nam przeciwstawić, ale nadal musimy usunąć wszelkie ślady oporu z Meksyku i osłaniać naszą południową flankę."
  CAL_eliminate_the_great_threat:0 "Wyeliminować wielkie zagrożenie"
  CAL_eliminate_the_great_threat_desc:0 "Na wschodzie Ameryka stoi jak olbrzym, obserwując i czekając, aż się pomylimy. Musimy uderzyć, zanim odkryją jakąkolwiek naszą słabość."
+
  CAL_la_falange_californiana:0 "La Falange Californiana"
  CAL_la_falange_californiana_desc:0 "Pod przewodnictwem „El Principal” Nicolasa Ortiza, zasady falangizmu zbliżą nas do harmonii z naszymi latynoamerykańskimi sąsiadami."
  CAL_nationalize_the_film_industry:0 "Nacjonalizacja przemysłu filmowego"
@@ -254,6 +259,7 @@
  CAL_domestic_engineering_contracts_desc:0 "Zlecając naszym najlepszym inżynierom planowanie projektów budowlanych naszego rządu, możemy zwiększyć prędkość produkcji i bezpieczeństwo budynków."
  CAL_expanded_metalworking_complexes:0 "Rozszerzone kompleksy obróbki metali"
  CAL_expanded_metalworking_complexes_desc:0 "Expanding our existing metalworking complexes will increase capacity for our existing operations as well as being able to handle more diverse operations when they arise."
+
  CAL_diversified_metalworking_complexes:0 "Dywersyfikacja obróbki metali"
  CAL_diversified_metalworking_complexes_desc:0 "Teraz, gdy rozszerzyliśmy naszą działalność, możemy sobie pozwolić na rozszerzenie jej o wolfram i chrom."
  expanded_metalworking_complexes:0 "Operacje obróbki metali nie zostały jeszcze rozszerzone."
@@ -285,7 +291,7 @@
  CAL_doctrine_of_destruction_desc:0 "Broń tak niszczycielska wydaje się straszna... ale ci, którzy chcieliby nas skrzywdzić, mogą już budować własną. Jeśli już, to powinniśmy przynajmniej wysłać sygnał, że zemścimy się ze straszliwą siłą."
  CAL_fire_and_forget:0 "Strzelaj i zapomnij"
  CAL_fire_and_forget_desc:0 "Rakiety na dużą skalę z łatwością byłyby taką jednorazową i niszczycielską bronią, gdyby nie były tak drogie w produkcji. Powinniśmy skupić się na znalezieniu sposobu na obniżenie kosztów i zwiększenie wykonalności."
- 
+
  CAL_building_a_respectable_army:0 "Budowanie szanowanej armii"
  CAL_building_a_respectable_army_desc:0 "W tym stanie świata posiadanie silnej armii powinno być priorytetem. Nasza armia powinna być szanowana.\n\nLub się bać."
  CAL_military_research_projects:0 "Wojskowe projekty badawcze"

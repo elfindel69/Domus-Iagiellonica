@@ -105,14 +105,14 @@ news_event = {
 	}
 
 	option = {
-		name = nuke_dropped.14.a
+		name = cal_nuke_dropped.2.a
 		trigger = {
 			NOT = { tag = CAL }
 		}
 	}
 	
 	option = {
-		name = nuke_dropped.14.b
+		name = cal_nuke_dropped.2.b
 		trigger = {
 			tag = CAL
 		}

@@ -1,4 +1,8 @@
 ﻿l_english:
+ cal_nuke_dropped.1.t:0 "Atomic Bombing of [From.From.GetName]"
+ cal_nuke_dropped.1.d:0 "For the first and hopefully last time in history, a nuclear bomb has been detonated in [From.From.GetName] as part of international warfare. The unprecedented destruction stands as a testament to the devastating power of this new weapon, which is feared not only for what it can do to its targets, but what implications it has for the one who deploys it and for humanity itself.\n\nThe world holds its breath waiting for what will come next. Will this force [From.From.Owner.GetName] to surrender to avoid further terror, or will it only strengthen their resolve to strike back against those who would resort to such measures?"
+ cal_nuke_dropped.1.a:0 "The Atomic Era has truly begun."
+ cal_nuke_dropped.1.b:0 "We will do whatever is necessary to protect the [Root.GetAdjective] people."
  cal_nuke_dropped_2.t:0 "Atomic Bombing of California"
  cal_nuke_dropped_2.d:0 "The nation of California, was struck by a nuclear bomb today. Despite its best efforts to stay strong, California found itself shattered in the wake of the blast which decimated its infrastructure. The shock of the attack so severely affected the Californian people that the government in power fell seemingly overnight. While [CAL.GetLeader] and his supporters were able to form a new government, only time will tell whether this New California Republic will be able to endure and rebuild."
  cal_nuke_dropped_2.a:0 "It seems the U.S. is all to eager to gobble up its broken neighbor."
@@ -41,6 +45,7 @@
  california.6.t:0 "[From.GetName] rejects invitation"
  california.6.d:0 "The [From.GetAdjective] government has refused our invitation, and has expressed a desire to remain neutral. It is unlikely that we will be able to change their mind."
  california.6.a:0 "How unfortunate, for the both of us."
+ california.6.b:0 "This means war."
  california.7.t:0 "California Purchase goes through"
  california.7.d:0 "The [From.GetAdjective] government has accepted our offer of purchase for Baja California, and the transfer of power has already begun."
  california.7.a:0 "The Californias are united once again!"

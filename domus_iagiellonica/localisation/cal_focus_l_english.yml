@@ -1,4 +1,5 @@
 ﻿l_english: 
+ california_focus:0 "Californian national focus"
  CAL_the_road_to_change:0 "The Road To Change"
  CAL_the_road_to_change_desc:0 "No matter what happens in the future, change is certain to be a part of it. We need to steer our country down the right path."
  CAL_prepare_for_the_election:0 "For the People"
@@ -91,7 +92,8 @@
  CAL_any_american_democrats_tt:0 "At least one other American country is democratic and not in another faction."
  CAL_expand_our_union:0 "Expand Our Union"
  CAL_expand_our_union_desc:0 "We should be willing to accept any neighboring region that wishes to join our union. Whether Mexican, American, or Canadian, all are welcome."
- 
+ CAL_adopt_tenets_of_fascism_ideology:0 "Adopt tenets of fascism"
+ CAL_adopt_tenets_of_fascism_ideology_desc:0 "In order to survive, we must adopt tenets of fascism."
  CAL_for_the_greater_good:0 "For the Greater Good"
  CAL_for_the_greater_good_desc:0 "The bureaucracy and gridlock inherent in democracy have turned our great nation to a den of decadence. the voters are forced to choose between the corrupt and the communist... for the good of our nation we must put an end to this criminal system."
  CAL_the_patterns_of_force:0 "The Patterns of Force"
@@ -126,8 +128,8 @@
  CAL_remove_ideological_contamination_desc:0 "To fully restabilize our nation, we have to remove the contaminants which so deeply permeate our society."
  CAL_the_autocracy:0 "The Autocracy"
  CAL_the_autocracy_desc:0 "With the restructuring of our state will come the restructuring of our society. California will be a shining jewel among the decadence of the world."
- CAL_control_the_pacific_shore:0 "Control the Pacific Shore"
- CAL_control_the_pacific_shore_desc:0 "Cutting off the United States from the Pacific should be a key goal of ours. Doing so will cripple their presence in that ocean, limiting their territory to only a few islands."
+ CAL_control_mexican_shores:0 "Control Mexican Shores"
+ CAL_control_mexican_shores_desc:0 "Controlling Nothern Mexico should be our priority. Doing so will cripple their strenght, making them easier to conquer."
  CAL_move_inland:0 "Move Inland"
  CAL_move_inland_desc:0 "As our nation grows, the need for additional space is made evident. The states to our east are full of sparse, unused land, perfect for building additional factories and installations."
  CAL_secure_mexico:0 "Secure Mexico"

@@ -88,5 +88,4 @@ create_country_leader = {
 			dictator 
 		}
 	}
-}
 

@@ -1,4 +1,5 @@
 ﻿l_french:
+ alaska_focus:0 "priorités nationales de l'Alaska"
  ALA_New_economic:0 "Réformes économiques"
  ALA_New_economic_desc:0 "Nous avons une économie épouvantable ! Les gens meurent de faim et nous ne pouvons rien construire !"
  ALA_foreign_policy:0 "Politique exterieure"
@@ -77,6 +78,7 @@
  ALA_Trebuet_Kurili_and_attu_desc:0 "Nous revendiquons les Kuriles et les Atta. Non, nous avons besoin de ces îles !"
  ALA_Trebuet_Kamchatku:0 "L'annexion du Kamtchatka"
  ALA_Trebuet_Kamchatku_desc:0 "On annexe le Kamtchatka !"
+
  ALA_Comunism_is_Bad:0 ""Коммунизм это плохо""
  ALA_Comunism_is_Bad_desc:0 "Le communisme est mauvais !"
  ALA_Russian_federation:0 "Fédération de Russie"

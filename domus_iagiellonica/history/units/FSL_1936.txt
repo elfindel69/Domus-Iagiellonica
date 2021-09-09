@@ -179,7 +179,7 @@ air_wings = {
 		}
 		# 3rd Attack Group 
 		CAS_equipment_1 = {
-			owner = "FSLA" 
+			owner = "FSL" 
 			amount = 48
 		}
 	}

@@ -3,8 +3,8 @@ add_namespace = POL_FRA_faction
 # France national focus -  requests to join Intermarius
 country_event = {
 	id = POL_FRA_faction.1
-	title = POL_faction.1.t
-	desc = POL_faction.1.d
+	title = POL_FRA_faction.1.t
+	desc = POL_FRA_faction.1.d
 	picture = GFX_news_event_generic_sign_treaty1
 
 	is_triggered_only = yes
@@ -25,7 +25,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			news_event = { hours = 6 id = POL_faction_news.1 }
+			news_event = { hours = 6 id = POL_FRA_faction_news.1 }
 		}
 	}
 	option = {

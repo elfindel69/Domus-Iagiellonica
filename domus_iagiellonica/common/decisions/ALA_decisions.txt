@@ -1,7 +1,7 @@
 ALA_economic_reform_decisions = {
 	ALA_Sozdanie_Gos_Com_Po_Lovu_Ribi = {
 		cost = 50
-		complete_effect {
+		complete_effect = {
 			add_ideas = ALA_reformed_economy
 			remove_ideas = ALA_no_reformed_economy
 		}

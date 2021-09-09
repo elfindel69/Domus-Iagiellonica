@@ -233,17 +233,23 @@ target = EST
 autonomous_state = autonomy_integrated_puppet
 }
 
-set_autonomy = {
-target = LAT
-autonomous_state = autonomy_integrated_puppet
+1936.1.1 = { 
+	set_cosmetic_tag = PLC_UNIFIED
+	set_global_flag = form_commonwealth_flag
+}
+
+1939.1.1 = { 
+	set_cosmetic_tag = PLC_UNIFIED 
+	set_global_flag = form_commonwealth_flag
 }
 
 add_ideas = {
-		POL_Synthetic_Rubber
-		POL_Polish_Cipher_Bureau_Focus0
-		#laws
-		POL_SEPEWE
-	}
+	POL_Synthetic_Rubber
+	POL_Polish_Cipher_Bureau_Focus0
+	#laws
+	POL_SEPEWE
+}
+
 create_country_leader = {
 	name = "Władysław Sikorski"
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"

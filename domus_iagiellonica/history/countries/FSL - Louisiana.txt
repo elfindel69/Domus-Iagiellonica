@@ -1,6 +1,6 @@
 ﻿capital = 371
 
-#OOB = "ALB_1936"
+OOB = "FSL_1936"
 
 # Starting tech
 set_technology = {
@@ -75,6 +75,7 @@ if = {
 }
 
 1939.1.1 = {
+	OOB = "FSL_1939"
 	set_technology = {
 		fighter1 = 1
 		cv_fighter1 = 1

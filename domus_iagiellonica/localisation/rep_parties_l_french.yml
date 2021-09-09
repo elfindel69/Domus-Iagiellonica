@@ -212,8 +212,13 @@
  CAL_communism_party_long:0 "Parti Socialiste de Californie"
  CAL_democratic_party:1 "Démocrates californiens"
  CAL_neutrality_party:0 "Nortoniens (N)"
- CAL_monarchisist_party:0 "Nortoniens"
- 
+ CAL_monarchist_party:0 "Nortoniens"
+ CAL_republican_party:0 "Républicains"
+ CAL_republican_party_long:0 "Parti Républicain de Californie"
+ CAL_military_council:0 "Conseil Militaire" 
+ CAL_communism_party_epic:0 "EPIC"
+ CAL_communism_party_epic_long:0 "End Poverty in California"
+
  ALA_fascism_party:0 "FA"
  ALA_fascism_party_long:0 "Fascistes d'Alaska"
  ALA_communism_party:0 "PSA"

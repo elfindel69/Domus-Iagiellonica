@@ -55,6 +55,8 @@ CAL_add_socialist_to_faction = {
 				tag = ARG
 				tag = CHL
 				tag = BRA
+				tag = ALA
+				tag = FSL
 			}
 			AND = {
 				exists = yes
@@ -79,6 +81,8 @@ CAL_add_dem_to_faction = {
 				tag = USB
 				tag = MEX
 				tag = HAW
+				tag = ALA
+				tag = FSL
 			}
 			AND = {
 				exists = yes
@@ -128,6 +132,8 @@ CAL_add_fascist_to_faction = {
 				tag = ARG
 				tag = CHL
 				tag = BRA
+				tag = ALA
+				tag = FSL
 			}
 			AND = {
 				exists = yes
@@ -181,6 +187,8 @@ CAL_add_neutrals_to_faction = {
 				tag = ARG
 				tag = CHL
 				tag = BRA
+				tag = ALA
+				tag = FSL
 			}
 			AND = {
 				exists = yes
@@ -234,6 +242,8 @@ CAL_wargoal_fascists = {
 				tag = ARG
 				tag = CHL
 				tag = BRA
+				tag = ALA
+				tag = FSL
 			}
 			AND = {
 				exists = yes
@@ -288,6 +298,8 @@ CAL_wargoal_neutrals = {
 				tag = ARG
 				tag = CHL
 				tag = BRA
+				tag = ALA
+				tag = FSL
 			}
 			AND = {
 				exists = yes
@@ -342,6 +354,8 @@ CAL_wargoal_communists = {
 				tag = ARG
 				tag = CHL
 				tag = BRA
+				tag = ALA
+				tag = FSL
 			}
 			AND = {
 				exists = yes
@@ -396,6 +410,8 @@ CAL_wargoal_democrats = {
 				tag = ARG
 				tag = CHL
 				tag = BRA
+				tag = ALA
+				tag = FSL
 			}
 			AND = {
 				exists = yes
@@ -446,6 +462,8 @@ CAL_fascist_friends = {
 				tag = ARG
 				tag = CHL
 				tag = BRA
+				tag = ALA
+				tag = FSL
 			}
 			AND = {
 				exists = yes
