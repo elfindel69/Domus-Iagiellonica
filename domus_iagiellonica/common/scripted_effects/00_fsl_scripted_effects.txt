@@ -442,116 +442,72 @@ FSL_fascist_friends = {
 	}
 }
 
-FSL_louisiana_puppet = {
-	FSL = {
-		add_state_core = 371
-		add_state_core = 372
-		add_state_core = 373
-		add_state_core = 374
-		add_state_core = 383
-		add_state_core = 384
-		add_state_core = 381
-		add_state_core = 388
-		add_state_core = 389
-		add_state_core = 390
-		add_state_core = 391
-		add_state_core = 392
+FSL_california_puppet = {
+	CAL = {
+		add_state_core = 385
+		add_state_core = 386
+		add_state_core = 387
+		add_state_core = 377
+		add_state_core = 378
+		add_state_core = 379
+		add_state_core = 380
 	}
 	if = {
 		limit = {
-			371 = {
+			385 = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		FSL = { transfer_state = 371 }
+		CAL = { transfer_state = 385 }
 	}
 	if = {
 		limit = {
-			372 = {
+			386 = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		FSL = { transfer_state = 372 }
+		CAL = { transfer_state = 386 }
 	}
 	if = {
 		limit = {
-			373 = {
+			387 = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		FSL = { transfer_state = 373 }
+		CAL = { transfer_state = 387 }
 	}
 	if = {
 		limit = {
-			374 = {
+			377 = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		FSL = { transfer_state = 374 }
+		CAL = { transfer_state = 377 }
 	}
 	if = {
 		limit = {
-			383 = {
+			378 = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		FSL = { transfer_state = 383 }
+		CAL = { transfer_state = 378 }
 	}
 	if = {
 		limit = {
-			384 = {
+			379 = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		FSL = { transfer_state = 384 }
+		CAL = { transfer_state = 379 }
 	}
 	if = {
 		limit = {
-			381 = {
+			380 = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		FSL = { transfer_state = 381 }
+		CAL = { transfer_state = 380 }
 	}
-	if = {
-		limit = {
-			388 = {
-				is_owned_or_subject_trigger = yes
-			}
-		}
-		FSL = { transfer_state = 388 }
-	}
-	if = {
-		limit = {
-			389 = {
-				is_owned_or_subject_trigger = yes
-			}
-		}
-		FSL = { transfer_state = 389 }
-	}
-	if = {
-		limit = {
-			390 = {
-				is_owned_or_subject_trigger = yes
-			}
-		}
-		FSL = { transfer_state = 390 }
-	}
-	if = {
-		limit = {
-			391 = {
-				is_owned_or_subject_trigger = yes
-			}
-		}
-		FSL = { transfer_state = 391 }
-	}
-	if = {
-		limit = {
-			392 = {
-				is_owned_or_subject_trigger = yes
-			}
-		}
-		FSL = { transfer_state = 392 }
-	}
-	puppet = FSL
+	
+	puppet = CAL
 }

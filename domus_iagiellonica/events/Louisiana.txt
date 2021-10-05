@@ -293,7 +293,7 @@ country_event = {
 			NOT = { has_country_flag = FSL_kept_junta }
 		}
 	}
-
+	fire_only_once = yes
 	# Riker
 	option = {
 		name = louisiana_coup.4.a

@@ -1016,3 +1016,56 @@ FSL_GAR_01 =
 		370 = { "%dth Infantry Division" }
 	}
 }
+
+FSL_RANGERS_01 = 
+{
+	name = "Ranger Division"
+
+	for_countries = { CAL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CAL_INF_01 }
+
+	fallback_name = "%d Ranger Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		10 = { "%dth Veteran Ranger Division" }
+		14 = { "%dth Ranger Division" }
+		22 = { "%dnd Veteran Ranger Division" }
+		50 = { "%dth Ranger Division" }
+		55 = { "%dth Ranger Division" }
+		12 = { "%dth 'Shady Sands' Division" }
+		15 = { "%dth 'The Hub' Division" }
+		16 = { "%dth 'Rocky Mountains' Division" }
+		19 = { "%dth 'El Capitan' Division" }
+		20 = { "%dth 'Sierra Nevada' Division" }
+		48 = { "%dth 'Sacramento' Division" }
+		49 = { "%dth 'Granite' Division" }
+		51 = { "%dst Ranger Division" }
+		52 = { "%dnd 'Catskills' Division" }
+		53 = { "%drd Ranger Division" }
+		54 = { "%dth 'Wasatch Rangers' Division" }
+		56 = { "%dth 'Monterey' Division" }
+		57 = { "%dth Ranger Division" }
+		58 = { "%dth 'Yosemite' Division" }
+		59 = { "%dth Ranger Division" }
+		204 = { "%dth 'Mountain Lions' Division" }
+		279 = { "%dth Ranger Division" }
+		280 = { "%dth Ranger Division" }
+		281 = { "%dst Veteran Ranger Division" }
+		282 = { "%dnd Ranger Division" }
+		283 = { "%drd Ranger Division" }
+		284 = { "%dth Ranger Division" }
+		285 = { "%dth Ranger Division" }
+		286 = { "%dth Veteran Ranger Division" }
+		287 = { "%dth Ranger Division" }
+		288 = { "%dth Ranger Division" }
+	}
+}

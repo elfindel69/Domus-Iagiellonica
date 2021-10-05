@@ -1541,7 +1541,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = FSL_remove_ideological_contamination }
-		mutually_exclusive = { focus = FSL_la_falange_louisianaise }
+		mutually_exclusive = { focus = FSL_la_falange_louisianaise}
 		search_filters = { FOCUS_FILTER_POLITIFSL } 
 		ai_will_do = {
 			factor = 1
@@ -1676,7 +1676,7 @@ focus_tree = {
 	
 	#Focus for La Falange Californiana
 	focus = {
-		id = FSL_la_falange_lousianaise
+		id = FSL_la_falange_louisianaise
 		icon = GFX_focus_cal_la_falange_louisianaise
 		relative_position_id = FSL_remove_ideological_contamination
 		x = 1
@@ -1712,7 +1712,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = FSL_the_autocracy
-			focus = FSL_la_falange_lousianaise
+			focus = FSL_la_falange_louisianaise
 		}
 		search_filters = { FOCUS_FILTER_POLITIFSL } 
 		ai_will_do = {
@@ -1802,7 +1802,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			JAP = {
-				add_opinion_modifier = { target = FSL modifier = FSL_lousianian_diplomacy }
+				add_opinion_modifier = { target = FSL modifier = FSL_louisianian_diplomacy }
 			}
 		}
 	}
@@ -1880,7 +1880,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			event_target:WTT_current_china_leader = {
-				add_opinion_modifier = { target = FSL modifier = FSL_lousianian_diplomacy }
+				add_opinion_modifier = { target = FSL modifier = FSL_louisianian_diplomacy }
 			}
 		}
 	}
@@ -1957,7 +1957,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			GER = {
-				add_opinion_modifier = { target = FSL modifier = FSL_lousianian_diplomacy }
+				add_opinion_modifier = { target = FSL modifier = FSL_louisianian_diplomacy }
 			}
 		}
 	}
@@ -2243,7 +2243,7 @@ focus_tree = {
 
 	#Focus for Emperor Norton's Decrees
 	focus = {
-		id = FSL_emperor_nortons_decrees
+		id = FSL_emperor_charles_decrees
 		icon = GFX_focus_generic_monarchy_2
 		relative_position_id = FSL_an_invitation_to_rule
 		x = 0
@@ -2259,7 +2259,7 @@ focus_tree = {
 			has_government= monarchist
 		}
 		completion_reward = {
-			unlock_decision_category_tooltip= FSL_emperor_nortons_decrees
+			unlock_decision_category_tooltip= FSL_emperor_charles_decrees
 		}
 	}
 	
@@ -2289,10 +2289,10 @@ focus_tree = {
 		id = FSL_establish_our_empire
 		icon = GFX_focus_cal_establish_our_empire
 		prerequisite = {
-			focus = FSL_la_falange_lousianaise
-			focus = FSL_emperor_nortons_decrees
+			focus = FSL_la_falange_louisianaise
+			focus = FSL_emperor_charles_decrees
 		}
-		relative_position_id = FSL_emperor_nortons_decrees
+		relative_position_id = FSL_emperor_charles_decrees
 		x = 0
 		y = 2
 		cost = 10
@@ -3393,10 +3393,10 @@ focus_tree = {
 	focus = {
 		id = FSL_develop_texas_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = FSL_north_shore_dockyards }
+		prerequisite = { focus = FSL_texas_shore_dockyards }
 		prerequisite = { focus = FSL_scenic_routes }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		relative_position_id = FSL_north_shore_dockyards
+		relative_position_id = FSL_texas_shore_dockyards
 		x = -1
 		y = 2
 		cost = 10
@@ -3433,12 +3433,12 @@ focus_tree = {
 		id = FSL_anti_air_emplacements
 		icon = GFX_focus_generic_air_defense
 		prerequisite = {
-			focus = FSL_north_shore_dockyards
+			focus = FSL_texas_shore_dockyards
 			focus = FSL_southern_factories
 		}
 		mutually_exclusive = { focus = FSL_airfield_development }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		relative_position_id = FSL_north_shore_dockyards
+		relative_position_id = FSL_texas_shore_dockyards
 		x = 0
 		y = 1
 		cost = 10
@@ -3479,7 +3479,7 @@ focus_tree = {
 		id = FSL_airfield_development
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = {
-			focus = FSL_north_shore_dockyards
+			focus = FSL_texas_shore_dockyards
 			focus = FSL_southern_factories
 		}
 		mutually_exclusive = { focus = FSL_anti_air_emplacements }

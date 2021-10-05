@@ -1,6 +1,6 @@
-FSL_emperor_nortons_decrees = {
+FSL_emperor_charles_decrees = {
 
-	norton_declare_absolute_monarchy = {
+	charles_declare_absolute_monarchy = {
 
 		icon = generic_civil_service
 
@@ -31,7 +31,7 @@ FSL_emperor_nortons_decrees = {
 		}
 	}		
 	
-	norton_fire_us_pres = {
+	charles_fire_us_pres = {
 
 		icon = generic_civil_service
 
@@ -61,31 +61,9 @@ FSL_emperor_nortons_decrees = {
 		}
 	}		
 	
-	norton_move_capital_to_sl = {
-
-		icon = generic_civil_service
-
-		allowed = {
-			tag = FSL
-		}
-
-		cost = 50
-		fire_only_once = yes
-
-		available = {
-			owns_state = 371
-			controls_state = 371
-		}
-
-		visible = {
-		}
-
-		complete_effect = {
-			set_capital = 371
-		}
-	}		
+			
 	
-	norton_fire_public_officials = {
+	charles_fire_public_officials = {
 
 		icon = generic_civil_service
 
@@ -108,7 +86,7 @@ FSL_emperor_nortons_decrees = {
 		}
 	}		
 	
-	norton_ban_frisco = {
+	charles_ban_commies = {
 
 		icon = generic_civil_service
 
@@ -135,7 +113,7 @@ FSL_emperor_nortons_decrees = {
 		}
 	}		
 	
-	norton_abolish_dem_rep = {
+	charles_abolish_dem_rep = {
 
 		icon = generic_civil_service
 
@@ -162,25 +140,4 @@ FSL_emperor_nortons_decrees = {
 		}
 	}
 	
-	norton_ban_propaganda = {
-
-		icon = generic_civil_service
-
-		allowed = {
-			tag = FSL
-		}
-
-		cost = 50
-		fire_only_once = yes
-
-		available = {
-		}
-
-		visible = {
-		}
-
-		complete_effect = {
-			remove_ideas= FSL_hollywood_studio_bosses
-		}
-	}
 }
