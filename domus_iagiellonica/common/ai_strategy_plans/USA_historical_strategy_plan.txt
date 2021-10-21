@@ -50,6 +50,8 @@ USA_historical_plan = {
 	}
 
 	ai_national_focuses = {
+		USA_political_sphere
+		USA_land_of_the_free
 		USA_continue_the_new_deal
 		USA_wpa
 		USA_war_department

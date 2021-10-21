@@ -406,7 +406,24 @@
  UKR_brownshirt_militias:0 "milices brunes"
  UKR_brownshirt_militias_desc:0 "Maintenant il est temps de nous faire reconnaître par le peuple comme ses dirigeants légitimes, nous allons organiser des milices afin de servir et protéger la population."
  UKR_the_great_rule:0 "Le grand pouvoir"
- UKR_the_great_rule_desc:0 "Maintenant que le peuple est avec nous, il est temps de prendre le pouvoir !" 
+ UKR_the_great_rule_desc:0 "Maintenant que le peuple est avec nous, il est temps de prendre le pouvoir !"
+
+ USA_political_sphere:0 "Ouvrir la Sphère Politique"
+ USA_political_sphere_desc:0 "Il est temps de choisir une voie politique et de la suivre"
+ USA_land_of_the_free:0 "États-Unis Terre de la liberté"
+ USA_land_of_the_free_desc:0 "Les États-Unis ont toujours été un bastion de liberté et de démocratie et ils le seront toujours"
+ USA_a_new_path:0 "Une Nouvelle Voie"
+ USA_a_new_path_desc:0 "L'Europe est dominée par les monarchies, nous suivrons cette tendance"
+ USA_towards_monarchy:0 "Vers la Monarchie"
+ USA_towards_monarchy_desc:0 "Maintenant que l'idée d'un régime monarchiste est dans l'air, nous allons chercher à la réaliser"
+ USA_a_new_monarch:0 "Un Nouveau Monarque"
+ USA_a_new_monarch:0 "Nous chercherons un monarque pour gouverner notre nouveau royaume"
+ USA_new_constitution:0 "Une Nouvelle Constitution"
+ USA_new_constitution:0 "Notre Constitution actuelle est obsolète et anachronique, nous en rédigerons une nouvelle pour exprimer nos nouveaux idéaux"
+ USA_claim_lousiana:0 "Réclamer la Louisiane"
+ USA_claim_lousiana_desc:0 "Une Louisiane indépendante est une menace pour nous, nous l'intégrerons dans l'Union, coûte que coûte"
+ USA_from_sea_to_sea:0 "De la Mer à la Mer"
+ USA_from_sea_to_sea_desc:0 "Nous annexerons la Californie pour accéder aux côtes du Pacifique"
 
 ######################
 ###  TO BE ERASED  ###

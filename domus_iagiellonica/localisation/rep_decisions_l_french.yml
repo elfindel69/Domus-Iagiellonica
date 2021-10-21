@@ -40,4 +40,7 @@
  discredit_government_monarchist_desc:0 "En pointant du doigt les nombreux échecs de l'actuel gouvernement, nous pourrons pousser les [Root.GetHabitants] à réfléchir aux causes idéologiques de ces échecs."
  hold_the_monarchist_national_referendum:0 "Organiser un référendum national"
  hold_the_monarchist_national_referendum_desc:0 "Nous bénéficions désormais d'un soutien suffisant pour organiser un référendum visant à imposer un changement de gouvernement, sans effusions de sang."
- 
+
+ congress_low_support_trigger_tt:1 "Nécessite le soutien d'au moins §Y[?USA.senate_quorum_low] sénateurs§! (actuellement [?USA.senators_support]) et §Y[?USA.house_quorum_low] représentants§! (actuellement [?USA.representatives_support]).\n"
+ congress_medium_support_trigger_tt:1 "Nécessite le soutien d'au moins §Y[?USA.senate_quorum_medium] sénateurs§! (actuellement [?USA.senators_support]) et §Y[?USA.house_quorum_medium] représentants§! (actuellement [?USA.representatives_support]).\n"
+ congress_high_support_trigger_tt:1 "Nécessite le soutien d'au moins §Y[?USA.senate_quorum_high] sénateurs§! (actuellement [?USA.senators_support]) et §Y[?USA.house_quorum_high] représentants§! (actuellement [?USA.representatives_support]).\n"

@@ -39,3 +39,7 @@
  open_up_political_discourse_monarchist_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
  discredit_government_monarchist:0 "Discredit Government"
  discredit_government_monarchist_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+
+ congress_low_support_trigger_tt:1 "Requires the support of at least §Y[?USA.senate_quorum_low] Senators§! (current: [?USA.senators_support]) and §Y[?USA.house_quorum_low] Representatives§! (current: [?USA.representatives_support])\n"
+ congress_medium_support_trigger_tt:1 "Requires the support of at least §Y[?USA.senate_quorum_medium] Senators§! (current: [?USA.senators_support]) and §Y[?USA.house_quorum_medium] Representatives§! (current: [?USA.representatives_support])\n"
+ congress_high_support_trigger_tt:1 "Requires the support of at least §Y[?USA.senate_quorum_high] Senators§! (current: [?USA.senators_support]) and §Y[?USA.house_quorum_high] Representatives§! (current: [?USA.representatives_support])\n"

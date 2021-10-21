@@ -1,0 +1,333 @@
+add_namespace = USA_claims
+
+country_event = {
+	id = USA_claims.1
+	title = USA_claims.1.title
+	desc = USA_claims.1.desc
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+
+	option = {
+		name = USA_claims.1.a
+		USA = {annex_country = { target = FSL transfer_troops = yes }}
+		hidden_effect = {
+			news_event = { hours = 6 id = USA_claims_news.1 }
+		}
+	}
+	option = {
+		name = USA_claims.1.b
+		USA = {declare_war_on = { target = FSL type = annex_everything }}
+		hidden_effect = {
+			news_event = { hours = 6 id = USA_claims_news.2 }
+		}
+	}
+}
+
+country_event = {
+	id = USA_claims.2
+	title = USA_claims.2.title
+	desc = USA_claims.2.desc
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = USA_claims.2.a
+		USA = {annex_country = { target = CAL transfer_troops = yes }}
+		hidden_effect = {
+			news_event = { hours = 6 id = USA_claims_news.3 }
+		}
+	}
+	option = {
+		name = USA_claims.2.b
+		USA = {declare_war_on = { target = CAL type = annex_everything  }}
+		hidden_effect = {
+			news_event = { hours = 6 id = USA_claims_news.4 }
+		}
+	}
+}
+
+add_namespace = USA_claims_news
+
+news_event = {
+	id = USA_claims_news.1
+	title = USA_claims_news.1.title
+	desc = USA_claims_news.1.desc
+	picture = GFX_news_event_french_parade
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_claims_news.1.a
+		trigger = {
+			tag = FSL
+		}
+	}
+	option = {
+		name = USA_claims_news.1.b
+		trigger = {
+			tag = USA
+		}
+	}
+	option = {
+		name = USA_claims_news.1.c
+		trigger = {
+			is_in_faction_with = FSL
+		}
+	}
+	option = {
+		name = USA_claims_news.1.d
+		trigger = {
+			is_in_faction_with = USA
+		}
+	}
+	option = {
+		name = USA_claims_news.1.e
+		trigger = {
+			NOT = {tag = USA } 
+			NOT = { tag = FSL }
+			OR = {
+				has_government = monarchist
+				has_government = neutrality
+			}
+		}
+	}
+	option = {
+		name = USA_claims_news.1.f
+		trigger = {
+			NOT = {tag = USA } 
+			NOT = { tag = FSL }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = USA_claims_news.1.g
+		trigger = {
+			NOT = {tag = USA } 
+			NOT = { tag = FSL }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = USA_claims_news.1.h
+		trigger = {
+			NOT = {tag = USA } 
+			NOT = { tag = FSL }
+			has_government = communism
+		}
+	}
+}
+
+news_event = {
+	id = USA_claims_news.2
+	title = USA_claims_news.2.title
+	desc = USA_claims_news.2.desc
+	picture = GFX_news_event_french_parade
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_claims_news.2.a
+		trigger = {
+			tag = FSL
+		}
+	}
+	option = {
+		name = USA_claims_news.2.b
+		trigger = {
+			tag = USA
+		}
+	}
+	option = {
+		name = USA_claims_news.2.c
+		trigger = {
+			is_in_faction_with = FSL
+		}
+	}
+	
+	option = {
+		name = USA_claims_news.2.d
+		trigger = {
+			is_in_faction_with = USA
+		}
+	}
+	option = {
+		name = USA_claims_news.2.e
+		trigger = {
+			NOT = {tag = USA } 
+			NOT = { tag = FSL } 
+			OR = {
+				has_government = monarchist
+				has_government = neutrality
+			}
+		}
+	}
+	option = {
+		name = USA_claims_news.2.f
+		trigger = {
+			NOT = {tag = USA } 
+			NOT = {tag = FSL }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = USA_claims_news.2.g
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = FSL }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = USA_claims_news.2.h
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = FSL }
+			has_government = communism
+		}
+	}
+}
+
+news_event = {
+	id = USA_claims_news.3
+	title = USA_claims_news.3.title
+	desc = USA_claims_news.3.desc
+	picture = GFX_news_event_french_parade
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_claims_news.3.a
+		trigger = {
+			tag = FSL
+		}
+	}
+	option = {
+		name = USA_claims_news.3.b
+		trigger = {
+			tag = USA
+		}
+	}
+	option = {
+		name = USA_claims_news.3.c
+		trigger = {
+			is_in_faction_with = CAL
+		}
+	}
+	option = {
+		name = USA_claims_news.3.d
+		trigger = {
+			is_in_faction_with = USA
+		}
+	}
+	option = {
+		name = USA_claims_news.3.e
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = CAL }
+			OR = {
+				has_government = monarchist
+				has_government = neutrality
+			}
+		}
+	}
+	option = {
+		name = USA_claims_news.3.f
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = CAL }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = USA_claims_news.3.g
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = CAL }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = USA_claims_news.3.h
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = CAL }
+			has_government = communism
+		}
+	}
+}
+
+news_event = {
+	id = USA_claims_news.4
+	title = USA_claims_news.4.title
+	desc = USA_claims_news.4.desc
+	picture = GFX_news_event_french_parade
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = USA_claims_news.4.a
+		trigger = {
+			tag = CAL
+		}
+	}
+	option = {
+		name = USA_claims_news.4.b
+		trigger = {
+			tag = USA
+		}
+	}
+	option = {
+		name = USA_claims_news.4.c
+		trigger = {
+			is_in_faction_with = CAL
+		}
+	}
+	option = {
+		name = USA_claims_news.4.d
+		trigger = {
+			is_in_faction_with = USA
+		}
+	}
+	option = {
+		name = USA_claims_news.4.e
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = FSL }
+			OR = {
+				has_government = monarchist
+				has_government = neutrality
+			}
+		}
+	}
+	option = {
+		name = USA_claims_news.4.f
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = CAL }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = USA_claims_news.4.g
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = CAL }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = USA_claims_news.4.h
+		trigger = {
+			NOT = {tag = USA }
+			NOT = {tag = CAL }
+			has_government = communism
+		}
+	}
+}
