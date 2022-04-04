@@ -814,6 +814,44 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
+
+		###Brygady kolonialne
+		division= {	# "Czortkow Grupa KOP"
+		division_name = {
+			is_name_ordered = yes
+			
+		}
+		location = 11015
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Luniniec Grupa KOP"
+		division_name = {
+			is_name_ordered = yes
+			
+		}
+		location = 6020
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Wilejka Grupa KOP"
+		division_name = {
+			is_name_ordered = yes
+			
+		}
+		location = 5079
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
 }
 
 ##### Wojska Lotnicze i Obrony Powietrzne (CO: Zajec) #####

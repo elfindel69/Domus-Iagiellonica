@@ -33,7 +33,7 @@ bookmarks = {
 			}
 			focuses = {
 				FRA_invite_communist_ministers
-				FRA_utilize_the_leagues
+				FRA_revive_the_national_bloc
 				FRA_consolidate_the_throne
 			}
 		}
@@ -41,8 +41,7 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
-				great_depression
+			
 				undisturbed_isolation
 			}
 			focuses = {
@@ -154,10 +153,7 @@ bookmarks = {
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
-			ideas = {
-				trotskyite_plot
-				home_of_revolution
-			}
+			
 			focuses = {
 				SOV_great_purge
 				SOV_claims_on_baltic

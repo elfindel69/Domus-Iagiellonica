@@ -6435,7 +6435,7 @@ focus_tree = {
 					ITA = { 
 						is_puppet = no
 						is_in_faction = no
-						OR {
+						OR = {
 							has_government = neutrality
 							has_government = monarchist
 						}
@@ -6449,7 +6449,7 @@ focus_tree = {
 					HUN = { 
 						is_puppet = no
 						is_in_faction = no
-						OR {
+						OR  = {
 							has_government = neutrality
 							has_government = monarchist
 						}
@@ -6465,7 +6465,7 @@ focus_tree = {
 						exists = yes
 						is_puppet = no
 						is_in_faction = no
-						OR {
+						OR = {
 							has_government = neutrality
 							has_government = monarchist
 						}
@@ -6481,7 +6481,7 @@ focus_tree = {
                         exists = yes
                         is_subject = no
                         is_in_faction = no
-                        OR {
+                        OR  = {
 							has_government = neutrality
 							has_government = monarchist
 						}
@@ -7204,7 +7204,7 @@ focus_tree = {
 						num_of_factories > 30
 					}
 					OR = {
-						OR {
+						OR = {
 							has_government = neutrality
 							has_government = monarchist
 						}

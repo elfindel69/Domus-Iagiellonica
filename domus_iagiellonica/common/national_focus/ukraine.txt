@@ -2290,6 +2290,29 @@ focus_tree = {
 			}			
 		}
 	}
+
+	focus = {
+		id = UKR_long_live_ukraine
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { 
+			focus = UKR_ideological_fanaticism 
+			focus = UKR_why_we_fight
+			focus = UKR_kiev_academy_of_science
+			focus=UKR_a_strong_army
+		 }
+		
+		x = 4
+		y = 4
+		relative_position_id = UKR_kiev_academy_of_science
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = 100000
+			add_stability = 0.2
+		}
+	}
 	
 
 

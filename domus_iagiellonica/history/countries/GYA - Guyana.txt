@@ -81,16 +81,20 @@ create_country_leader = {
 #}
 
 
-}
+
 
 
 1939.1.1 = {
 	set_politics = {
 
-	set_popularities = {		democratic = 75
-		fascism = 1
-				communism = 1
-				neutrality = 23
+	set_popularities = {
+		democratic = 75
+
+		fascism = 1
+		
+		communism = 1
+		
+		neutrality = 23
 	}
 	
 	ruling_party = democratic

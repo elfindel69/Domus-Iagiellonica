@@ -366,7 +366,6 @@ FRA_alternate_plan_4_lar = {
 	}
 	ai_national_focuses = {
 		FRA_revive_the_national_bloc
-		FRA_utilize_the_leagues
 		FRA_national_regeneration
 		FRA_agricultural_protectionism
 		FRA_economic_devolution
@@ -590,7 +589,6 @@ FRA_alternate_plan_fascist_lar = {
 		FRA_devalue_the_franc
 		FRA_revive_the_national_bloc
 		FRA_agricultural_protectionism
-		FRA_utilize_the_leagues
 		FRA_economic_devolution
 		#1937
 		FRA_begin_rearmament

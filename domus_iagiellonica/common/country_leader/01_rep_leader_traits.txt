@@ -52,7 +52,7 @@ leader_traits = {
 		}
 	}
 	
-	duke_of_orleans = {
+	rep_duke_of_orleans = {
 		random = no
 		monarchist_drift = 0.1
 		ai_will_do = {

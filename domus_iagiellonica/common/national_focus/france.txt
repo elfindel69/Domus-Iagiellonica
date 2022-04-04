@@ -788,7 +788,7 @@ focus_tree = {
 	focus = {
 		id = FRA_begin_rearmament
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 16
+		x = 20
 		y = 0
 		offset = {
 			x = 0
@@ -1504,18 +1504,267 @@ focus_tree = {
 	}	
 
 #### END ####
-
 	focus = {
-		id = FRA_form_the_popular_front
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 26
+		id = FRA_the_republican_front
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 39
 		y = 0
 		offset = {
 			x = 0
 			y = 0
 		}
 		prerequisite = {}
-		mutually_exclusive = { focus = FRA_revive_the_national_bloc }
+		mutually_exclusive = {
+			focus = FRA_form_the_popular_front
+			focus = FRA_revive_the_national_bloc
+				focus = FRA_the_council_of_rambouillet }
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			set_temp_variable = { democratic_temp = party_popularity@democratic }
+			multiply_temp_variable = { democratic_temp = 0.25 }
+			add_stability = democratic_temp
+		}
+	}
+
+	focus = {
+		id = FRA_a_new_cabinet
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		relative_position_id =  FRA_the_republican_front
+		prerequisite = {focus = FRA_the_republican_front }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_general_elections
+		icon = GFX_goal_support_democracy
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		relative_position_id =  FRA_a_new_cabinet
+		prerequisite = {focus = FRA_a_new_cabinet }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.20
+			}
+			set_politics = {
+				ruling_party= democratic
+				elections_allowed = yes
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = FRA_his_majestys_government
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		relative_position_id =  FRA_general_elections
+		prerequisite = {focus = FRA_general_elections }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_disjointed_government
+				add_idea = FRA_his_majestys_government
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = FRA_science_for_peace
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		relative_position_id =  FRA_his_majestys_government
+		prerequisite = {focus = FRA_his_majestys_government }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			
+			add_research_slot = 1
+		}
+	}
+
+	
+	focus = {
+		id = FRA_create_SNCF
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		relative_position_id =  FRA_science_for_peace
+		prerequisite = {focus = FRA_science_for_peace }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			random_state  = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_form_the_popular_front
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 48
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = {
+			focus = FRA_the_republican_front
+			 focus = FRA_revive_the_national_bloc
+				focus = FRA_the_council_of_rambouillet }
 		cost = 10
 
 		ai_will_do = {
@@ -1553,7 +1802,7 @@ focus_tree = {
 	focus = {
 		id = FRA_invite_communist_ministers
 		icon = GFX_goal_support_communism
-		x = -3
+		x = 1
 		y = 1
 		offset = {
 			x = 0
@@ -2759,7 +3008,7 @@ focus_tree = {
 	focus = {
 		id = FRA_reform_the_labour_laws
 		icon = GFX_goal_generic_production
-		x = 0
+		x = -3
 		y = 2
 		offset = {
 			x = 0
@@ -2767,6 +3016,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = FRA_form_the_popular_front
+			focus = FRA_the_republican_front
 		}
 		relative_position_id = FRA_form_the_popular_front
 		cost = 10
@@ -3135,7 +3385,7 @@ focus_tree = {
 	focus = {
 		id = FRA_ban_the_leagues
 		icon = GFX_goal_generic_forceful_treaty
-		x = 1
+		x = -5
 		y = 1
 		offset = {
 			x = 0
@@ -3143,6 +3393,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = FRA_form_the_popular_front
+			focus = FRA_the_republican_front
 		}
 		relative_position_id = FRA_form_the_popular_front
 		cost = 10
@@ -3174,17 +3425,15 @@ focus_tree = {
 	focus = {
 		id = FRA_the_blum_viollette_proposal
 		icon = GFX_goal_generic_improve_relations
-		x = 4
-		y = 1
+		x = 11
+
+		y = 0
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = {
-			focus = FRA_reform_the_labour_laws
-			focus = FRA_protect_the_rights_of_man
-		}
-		relative_position_id = FRA_reform_the_labour_laws
+		
+		
 		cost = 10
 
 		ai_will_do = {
@@ -3415,17 +3664,14 @@ focus_tree = {
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_goal_support_democracy
-		x = 10
-		y = 1
+		x = 28
+		y =0
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = {
-			focus = FRA_reform_the_labour_laws
-			focus = FRA_protect_the_rights_of_man
-		}
-		relative_position_id = FRA_reform_the_labour_laws
+		
+
 		cost = 10
 
 		ai_will_do = {
@@ -3436,7 +3682,7 @@ focus_tree = {
 			NOT = {
 				OR = {
 					has_completed_focus = FRA_invite_communist_ministers
-					has_completed_focus = FRA_utilize_the_leagues
+					has_completed_focus = FRA_revive_the_national_bloc 
 				}
 			}
 		}
@@ -3456,8 +3702,8 @@ focus_tree = {
 	focus = {
 		id = FRA_intervention_in_spain
 		icon = GFX_focus_focus_fra_intervention_spain
-		x = 7
-		y = 2
+		x = 4
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -4354,7 +4600,7 @@ focus_tree = {
 	 	available = {
 		}
 	 	prerequisite = { focus = FRA_form_the_popular_front }
-		x = -2
+		x = 1
 		y = 1
 		relative_position_id = FRA_form_the_popular_front
 		cost = 10
@@ -4493,7 +4739,7 @@ focus_tree = {
 	focus = {
 		id = FRA_revive_the_national_bloc
 		icon = GFX_focus_generic_strike_at_democracy2
-		x = 42
+		x = 56
 		y = 0
 		offset = {
 			x = 0
@@ -4507,7 +4753,11 @@ focus_tree = {
 		available = {
 			
 		}
-		mutually_exclusive = { focus = FRA_form_the_popular_front }
+		mutually_exclusive = { 
+			focus = FRA_the_republican_front
+			focus = FRA_form_the_popular_front
+			focus= FRA_the_council_of_rambouillet
+		 }
 		bypass = {
 		}
 		cancel_if_invalid = yes
@@ -4530,14 +4780,18 @@ focus_tree = {
 	focus = {
 		id = FRA_laissez_faire
 		icon = GFX_goal_generic_consumer_goods
-		x = -1
+		x = 4
 		y = 1
 		offset = {
-			x = 0
+			trigger = {
+				has_dlc = "La Resistance"
+			}
+			x = 5
 			y = 0
 		}
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
+			focus = FRA_the_council_of_rambouillet
 		}
 		mutually_exclusive = { focus = FRA_agricultural_protectionism }
 		relative_position_id = FRA_revive_the_national_bloc
@@ -4640,7 +4894,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					not = { has_completed_focus = FRA_utilize_the_leagues }
+					not = { has_completed_focus = FRA_revive_the_national_bloc  }
 				}
 				set_temp_variable = { FRA_fascism = party_popularity@fascism }
 				add_popularity = { ideology = democratic popularity = FRA_fascism } 
@@ -4696,14 +4950,18 @@ focus_tree = {
 	focus = {
 		id = FRA_agricultural_protectionism
 		icon = GFX_goal_generic_defence
-		x = 1
+		x = 6
 		y = 1
 		offset = {
-			x = 0
+			trigger = {
+				has_dlc = "La Resistance"
+			}
+			x = 5
 			y = 0
 		}
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
+			focus = FRA_the_council_of_rambouillet
 
 		}
 		mutually_exclusive = { focus = FRA_laissez_faire }
@@ -4818,14 +5076,19 @@ focus_tree = {
 	focus = {
 		id = FRA_ban_communism
 		icon = GFX_goal_anti_comintern_pact
-		x = -3
+		x = 10
 		y = 1
 		offset = {
-			x = 0
+			trigger = {
+				has_dlc="La Resistance"
+			}
+			x = 5
 			y = 0
+
 		}
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
+			focus = FRA_the_council_of_rambouillet
 		}
 		relative_position_id = FRA_revive_the_national_bloc
 		cost = 10
@@ -4855,63 +5118,23 @@ focus_tree = {
 			remove_ideas = FRA_political_violence
 		}
 	}	
+	
 	focus = {
-		id = FRA_utilize_the_leagues
-		icon = GFX_focus_generic_strike_at_democracy1
-		x = 8
+		id = FRA_national_regeneration
+		icon = GFX_goal_generic_political_pressure
+		allow_branch = { has_dlc = "La Resistance" }
+		x = 0
 		y = 1
 		offset = {
+			
 			x = 0
 			y = 0
 		}
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
 		}
-		relative_position_id = FRA_revive_the_national_bloc
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		allow_branch = { has_dlc = "La Resistance" }
-		available = {
-			NOT = {
-				has_completed_focus = FRA_review_foreign_policy
-			}
-			is_subject = no
-		}
 		
-		bypass = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-				has_government = monarchist
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_rally_the_leagues show_effect_tooltip = yes }
-			unlock_decision_tooltip = { decision = FRA_unleash_la_cagoule show_effect_tooltip = yes }
-		}
-	}
-	focus = {
-		id = FRA_national_regeneration
-		icon = GFX_goal_generic_political_pressure
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_utilize_the_leagues
-		}
-		mutually_exclusive = { focus = FRA_the_council_of_rambouillet }
-		relative_position_id = FRA_utilize_the_leagues
+		relative_position_id = FRA_revive_the_national_bloc
 		cost = 10
 
 		ai_will_do = {
@@ -6175,7 +6398,7 @@ focus_tree = {
 		id = FRA_right_wing_rhetoric
 		icon = GFX_goal_generic_propaganda
 	 	prerequisite = { focus = FRA_revive_the_national_bloc }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = FRA_revive_the_national_bloc
 		cost = 10
@@ -6605,17 +6828,25 @@ focus_tree = {
 	focus = {
 		id = FRA_the_council_of_rambouillet
 		icon = GFX_goal_generic_major_alliance
-		x = 14
-		y = 1
+		x = 68
+		y = 0
+		
+		
 		offset = {
-			x = 0
+			
+			x = 8
 			y = 0
+			trigger = {
+				has_dlc = "La Resistance"
+			}
 		}
-		prerequisite = {
-			focus = FRA_utilize_the_leagues
-		}
-		mutually_exclusive = { focus = FRA_national_regeneration }
-		relative_position_id = FRA_utilize_the_leagues
+		
+		mutually_exclusive = { 
+			focus = FRA_the_republican_front
+			focus = FRA_revive_the_national_bloc
+			 focus = FRA_form_the_popular_front
+	 	}
+
 		cost = 10
 
 		ai_will_do = {
@@ -7134,8 +7365,16 @@ focus_tree = {
 	focus = {
 		id = FRA_naval_rearmament
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 75
+		x = 76
 		y = 0
+		offset = {
+			trigger = {
+				has_dlc = "La Resistance"
+			}
+			x = 8
+			y = 0
+
+		}
 		cost = 10
 
 		available_if_capitulated = yes
@@ -7620,8 +7859,15 @@ focus_tree = {
 	focus = {
 		id = FRA_air_focus
 		icon = GFX_goal_generic_build_airforce
-		x = 85
+		x = 86
 		y = 0
+		offset = {
+			trigger = {
+				has_dlc = "La Resistance"
+			}
+			x = 8
+			y = 0
+		}
 		cost = 10
 
 		available_if_capitulated = yes
