@@ -1,0 +1,157 @@
+﻿
+units= {
+
+	####### NAVAL UNITS #######
+
+	fleet = {
+		name = "Battle Force"			
+		naval_base = 10337 # Saint Louis
+		task_force = {				
+			name = "Battleships, Battle Force"
+			location = 10337 # San Diego
+			### Battleship Division 1 ###			
+			ship = { name = "FSLS Saint Paul" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FSL version_name = "Pennsylvania Class" } } }				
+			ship = { name = "FSLS Saint James" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FSL version_name = "Pennsylvania Class" } } }				
+			ship = { name = "FSLS Saint Louis" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FSL version_name = "Pennsylvania Class" } } }				
+		}
+		task_force = {				
+			name = "Cruisers, Battle Force"
+			location = 10337 # San Diego							
+			### Cruisers Division 1 ###			
+			ship = { name = "FSLS Omaha" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+			ship = { name = "FSLS Milwaukee" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+			ship = { name = "FSLS Cincinnati" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+		}
+		task_force = {				
+			name = "Destroyers, Battle Force"
+			location = 10337 # San Diego
+			### Destroyer Division 1 ###			
+			ship = { name = "FSLS Dewey" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+			ship = { name = "FSLS Hull" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+			ship = { name = "FSLS MacDonough" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+			ship = { name = "FSLS Worden" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		}
+
+			task_force = {				
+			name = "Submarine Base Force"			
+			location =10337 # San Diego
+			ship = { name = "FSLS S-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+			ship = { name = "FSLS S-18" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+			ship = { name = "FSLS S-23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+		}
+	}
+	
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	# CL: Brooklyn class (x1) ("FSLS Helena")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "FSL"
+			version_name = "Brooklyn Class"
+		}
+		name = "FSLS Helena" 
+		requested_factories = 2
+		progress = 0.95
+		amount = 1
+	}
+	# DD: Benham class (x4) ("FSLS Trippe" "FSLS Rhind" "FSLS Rowan" "FSLS Stack")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "FSL"
+			version_name = "Sims Class"
+		}
+		name = "FSLS Trippe" 
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "FSL"
+			version_name = "Sims Class"
+		}
+		name = "FSLS Rhind" 
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "FSL"
+			version_name = "Sims Class"
+		}
+		name = "FSLS Rowan" 
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "FSL"
+			version_name = "Sims Class"
+		}
+		name = "FSLS Stack" 
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+	
+	# SS: Salmon class variant (x4) ("FSLS Seadragon" "FSLS Sealion" "FSLS Searaven" "FSLS Seawolf")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "FSL"
+			version_name = "Salmon Class"
+		}
+		name = "FSLS Seadragon" 
+		requested_factories = 1
+		progress = 0.85
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "FSL"
+			version_name = "Salmon Class"
+		}
+		name = "FSLS Sealion" 
+		requested_factories = 1
+		progress = 0.70
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "FSL"
+			version_name = "Salmon Class"
+		}
+		name = "FSLS Searaven" 
+		requested_factories = 1
+		progress = 0.85
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "FSL"
+			version_name = "Salmon Class"
+		}
+		name = "FSLS Seawolf" 
+		requested_factories = 1
+		progress = 0.55
+		amount = 1
+	}
+}
+
+#####################

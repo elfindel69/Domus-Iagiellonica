@@ -1,0 +1,52 @@
+﻿l_french:
+ #TUTORIAL If you create a character in game\common\history\characters, then you'll need to make sure to add the first and last names here
+ #TUTORIAL For example, if you named your character as: first_name: "Maureen" last_name: "Miller", you need to identify Maureen like this:
+ Maureen:0 "Maureen"
+ Miller:0 "Miller"
+ #TUTORIAL For example, if you named your character as: first_name: "Jean_Francois" last_name: "Roberge", you need to identify Jean Francois like this:
+ Jean_Francois:0 "Jean Francois"
+ Roberge:0 "Roberge"
+
+ Stefan: "Stefan"
+ Jagiellon: "Jagiełło"
+ Kacper: "Kacper"
+ Aleksander: "Aleksander"
+ Pulawski: "Puławski"
+ Jerzy: "Jerzy"
+ Paskiewicz: "Paskiewicz"
+ Michal: "Michal"
+ Fabianski: "Fabiański"
+ Tomasz: "Tomasz"
+ Goral: "Góral"
+ Herzen: "Herzen"
+ Aleksy: "Aleksy"
+ Kujawski: "Kujawski"
+ Jaroslaw: "Jarosław"
+ Frederyk: "Frederyk"
+ Sobolewski: "Sobolewski"
+ Fabian: "Fabian"
+ Dabrowski: "Dąbrowski"
+ Henryk: "Henryk"
+ Smolarczyk: "Smolarczyk"
+ Jan: "Jan"
+ Karol: "Karol"
+ Rybak: "Rybak"
+
+ Johans: "Johans"
+ Dombrovskis: "Dombrovskis"
+ Atals: "Atals"
+ Gailis: "Gailis"
+ Danijs: "Danijs"
+ Blaus: "Blaus"
+ Adis: "Adis"
+ Briedis: "Briedis"
+ Esams: "Esams"
+ Oskar: "Oskar"
+ Levandi: "Levandi"
+ Eduard: "Eduard"
+ Must: "Must"
+ Oliver: "Oliver"
+ Puusepp: "Puusepp"
+
+ 
+ 

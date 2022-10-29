@@ -1,0 +1,9 @@
+INTERESTS = {
+    c:PLC = {
+		add_declared_interest = region_france
+		add_declared_interest = region_england
+		add_declared_interest = region_south_china
+		add_declared_interest = region_south_germany
+		add_declared_interest = region_north_germany
+	}
+}
