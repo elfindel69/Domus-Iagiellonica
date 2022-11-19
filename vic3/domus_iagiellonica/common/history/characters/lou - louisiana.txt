@@ -1,0 +1,144 @@
+﻿CHARACTERS = {
+	c:LOU = {
+		create_character = {
+			
+			first_name = Edward_Douglas
+			last_name = White
+			ruler = yes
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_radical
+			birth_date = 1767.3.15
+			traits = {
+				bigoted
+			}
+			
+		}
+
+		create_character = {
+			first_name = John
+			last_name = Carpenter
+			birth_date = 1782.3.18
+			ig_leader = yes
+			interest_group = ig_landowners
+			traits = {
+				bigoted
+			}
+		}
+
+		create_character = {
+			first_name = Henri
+			last_name = Dumont
+			birth_date = 1777.4.12
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_pacifist
+			traits = {
+				meticulous
+			}
+		}
+
+		create_character = {
+			
+			first_name = Daniel
+			last_name = Lalande
+			birth_date = 1782.1.18
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				arrogant
+			}
+		}
+
+		create_character = {
+			first_name = Charles
+			last_name = Dufour
+			birth_date = 1792.8.29
+			ig_leader = yes
+			interest_group = ig_devout
+			ideology = ideology_abolitionist
+			traits = {
+				cautious
+			}
+		}
+
+		create_character = {
+			first_name = Robert
+			last_name = Forcantier
+			birth_date = 1805.8.13
+			ig_leader = yes
+			interest_group = ig_trade_unions
+			ideology = ideology_moderate
+			traits = {
+				meticulous
+			}
+		}
+
+		
+
+		create_character = {
+			first_name = Ernest
+			last_name = Flandier
+			birth_date = 1794.5.27
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = {
+				meticulous
+			}
+		}
+		
+		create_character = {
+			is_general = yes
+			first_name = Tobias
+			last_name = Smith
+			birth_date = 1784.11.24
+			hq = region_the_midwest
+			traits = {
+				innovative
+			}
+		}
+		
+	
+		create_character = {
+			is_general = yes
+			first_name = Alexandre
+    		last_name = Lancelot
+			commander_rank = commander_rank_3
+			hq = region_dixie
+			age = 42
+			traits = {
+				meticulous
+				surveyor
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Pierre
+    		last_name = Duboeuf
+			commander_rank = commander_rank_3
+			hq = region_great_plains
+			age = 42
+			traits = {
+				meticulous
+				surveyor
+			}
+		}
+		
+	
+		create_character = { # USA, Admiral
+			is_admiral = yes
+			first_name = Elie
+			last_name = Duperrier
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			birth_date = 1776.2.9
+			hq = region_dixie
+			traits = {
+				brave
+				basic_naval_commander
+			}
+		}
+	}
+}

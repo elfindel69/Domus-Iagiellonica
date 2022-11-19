@@ -1,4 +1,4 @@
-﻿l_french:
+﻿l_polish:
  #TUTORIAL If you create a character in game\common\history\characters, then you'll need to make sure to add the first and last names here
  #TUTORIAL For example, if you named your character as: first_name: "Maureen" last_name: "Miller", you need to identify Maureen like this:
  Maureen:0 "Maureen"
@@ -48,5 +48,46 @@
  Oliver: "Oliver"
  Puusepp: "Puusepp"
 
+ Edward_Douglas: "Edward Douglas"
+ White: "White"
+ Carpenter: "Carpenter"
+ Henri: "Henri"
+ Dumont: "Dumont"
+ Daniel: "Daniel"
+ Lalande: "Lalande"
+ Dufour: "Dufour"
+ Forcantier: "Forcantier"
+ Ernest: "Ernest"
+ Flandier: "Flandier"
+ Tobias: "Tobias"
+ Smith: "Smith"
+ Alexandre: "Alexandre"
+ Lancelot: "Lancelot"
+ Elie: "Elie"
+ Duperrier: "Duperrier"
+ Pierre: "Pierre"
+ Duboeuf: "Duboeuf"
+
+ Edward: "Edward"
+ Washington: "Washington"
+ Edmund_P: "Edmund Peter"
+ Gaines: "Gaines"
  
+ Summers: "Summers"
+ Doe: "Doe"
+ Pierce: "Pierce"
+ Jonathan: "Jonathan"
+ Stevenson: "Stevenson"
+ Logan: "Logan"
+ Dafoe: "Dafoe"
+ Herbert: "Herbert"
+ Donnovan: "Donnovan"
+ Jonhson: "Johnson"
+ Elias: "Elias"
+ Sommons: "Sommons"
+
+ Thibault: "Thibault"
+ Perdreau: "Perdreau"
+ Maignan: "Maignan"
+ Dupont: "Dupont"
  

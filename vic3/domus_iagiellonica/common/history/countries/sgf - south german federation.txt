@@ -1,0 +1,22 @@
+﻿COUNTRIES = {
+	c:SGF = {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_conservative = yes
+
+		add_technology_researched = atmospheric_engine
+		add_technology_researched = mechanical_tools
+		add_technology_researched = railways
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}			
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = { 
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}
