@@ -31,12 +31,7 @@
 			type = personal_union
 		}
 	}
-	c:PRU = {
-		create_diplomatic_pact = {
-			country = c:HOH
-			type = puppet
-		}
-	}		
+			
 	c:DEN = {
 		create_diplomatic_pact = {
 			country = c:HOL
@@ -85,10 +80,7 @@
 			country = c:SIL
 			type = puppet
 		}	
-		create_diplomatic_pact = {
-			country = c:HAN
-			type = personal_union
-		}
+		
 		create_diplomatic_pact = {
 			country = c:SAF
 			type = puppet

@@ -35,7 +35,7 @@
 			goods = liquor
 			level = 5
 			direction = export
-			target = c:PRU.market
+			target = c:NGF.market
 		}
 		create_trade_route = {
 			goods = liquor
@@ -994,7 +994,7 @@
 			goods = tools
 			level = 3
 			direction = import
-			target = c:PRU.market
+			target = c:NGF.market
 		}	
 		create_trade_route = {
 			goods = hardwood
@@ -1006,7 +1006,7 @@
 			goods = luxury_furniture
 			level = 2
 			direction = import
-			target = c:PRU.market
+			target = c:NGF.market
 		}
 		create_trade_route = {
 			goods = luxury_furniture
@@ -1024,72 +1024,23 @@
 			goods = wine
 			level = 3
 			direction = import
-			target = c:PRU.market
+			target = c:NGF.market
 		}
 		create_trade_route = {
 			goods = clothes
 			level = 2
 			direction = import
-			target = c:PRU.market
+			target = c:NGF.market
 		}
 		create_trade_route = {
 			goods = furniture
 			level = 6
 			direction = import
-			target = c:PRU.market
+			target = c:NGF.market
 		}
 	}
 	
-	# Hamburg
-	c:HAM = {	
-		create_trade_route = {
-			goods = furniture
-			level = 3
-			direction = export
-			target = c:DEN.market
-		}
-		create_trade_route = {
-			goods = wood
-			level = 4
-			direction = import
-			target = c:SWE.market
-		}
-		create_trade_route = {
-			goods = fabric
-			level = 1
-			direction = import
-			target = c:DEN.market
-		}
-		create_trade_route = {
-			goods = clippers
-			level = 1
-			direction = import
-			target = c:DEN.market
-		}		
-	}
 	
-	# Bremen
-	c:BRE = {		
-		create_trade_route = {
-			goods = paper
-			level = 2
-			direction = export
-			target = c:DEN.market
-		}
-		create_trade_route = {
-			goods = wood
-			level = 3
-			direction = import
-			target = c:SWE.market
-		}
-		create_trade_route = {
-			goods = clippers
-			level = 1
-			direction = import
-			target = c:DEN.market
-		}			
-	}
-
 	# Russia
 	c:RUS = {	
 		create_trade_route = {
@@ -1380,7 +1331,7 @@
 			goods = small_arms
 			level = 1
 			direction = import
-			target = c:PRU.market
+			target = c:NGF.market
 		}	
 		create_trade_route = {
 			goods = grain
@@ -1407,19 +1358,10 @@
 			target = c:FRA.market
 		}			
 	}	
-	
-	# Lübeck
-	c:LUB = {	
-		create_trade_route = {
-			goods = hardwood
-			level = 8
-			direction = import
-			target = c:RUS.market
-		}	
-	}
+
 	
 	# Prussia
-	c:PRU = {	
+	c:NGF = {	
 		create_trade_route = {
 			goods = manowars
 			level = 1
@@ -1470,7 +1412,7 @@
 			goods = sulfur
 			level = 5
 			direction = import
-			target = c:PRU.market
+			target = c:NGF.market
 		}		
 		create_trade_route = {
 			goods = fertilizer
@@ -1748,9 +1690,10 @@
 			goods = iron
 			level = 3
 			direction = import
-			target = c:PRU.market
+			target = c:NGF.market
 		}
 	}
+
 	c:CAL = {
 		create_trade_route = {
 			goods = steel
@@ -1771,6 +1714,7 @@
 			target = c:LOU.market
 		}
 	}
+	
 	c:SGF = {
 		create_trade_route = {
 			goods = sugar
