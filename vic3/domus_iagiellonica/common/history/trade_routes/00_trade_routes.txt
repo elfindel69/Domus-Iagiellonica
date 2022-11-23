@@ -1362,18 +1362,7 @@
 	
 	# Prussia
 	c:NGF = {	
-		create_trade_route = {
-			goods = manowars
-			level = 1
-			direction = import
-			target = c:DEN.market
-		}
-		create_trade_route = {
-			goods = manowars
-			level = 1
-			direction = import
-			target = c:NET.market
-		}	
+		
 		create_trade_route = {
 			goods = iron
 			level = 7
@@ -1393,8 +1382,8 @@
 			target = c:GBR.market
 		}			
 		create_trade_route = {
-			goods = clippers
-			level = 2
+			goods = iron
+			level = 3
 			direction = import
 			target = c:GBR.market
 		}	

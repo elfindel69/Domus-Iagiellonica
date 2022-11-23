@@ -1180,7 +1180,7 @@
 		}
 	}
 	s:STATE_SAXONY = {
-		region_state:SAX = {
+		region_state:NGF = {
 			create_pop = {
 				culture = north_german
 				size = 2080212

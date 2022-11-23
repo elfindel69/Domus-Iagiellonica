@@ -8,7 +8,8 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			ruler = yes
-			birth_date = 1796.7.6
+			age = 60
+			dna = dna_king_jan_jagiello_01
 			traits = {
 				arrogant
 			}
@@ -22,7 +23,7 @@
 			first_name = Jan
 			last_name = Jagiellon
 			heir = yes
-			birth_date = 1818.4.26
+			age = 30
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {

@@ -236,6 +236,7 @@
 			first_name = Karl
 			last_name = von_Reyher
 			hq = region_north_germany
+			commander_rank = commander_rank_3
 			age = 50
 			traits = {
 		#		careful
@@ -249,7 +250,6 @@
 			first_name = Friedrich
 			last_name = von_Glucksburg
 			hq = region_north_germany
-			commander_rank = commander_rank_2
 			age = 35
 			traits = {
 		#		careful
