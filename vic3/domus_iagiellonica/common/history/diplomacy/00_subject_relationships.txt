@@ -52,6 +52,7 @@
 			country = c:LIB
 			type = protectorate
 		}
+		
 	}
 	c:GBR = {
 		create_diplomatic_pact = {
@@ -68,6 +69,11 @@
 		}
 		create_diplomatic_pact = {
 			country = c:SIL
+			type = puppet
+		}	
+
+		create_diplomatic_pact = {
+			country = c:ORG
 			type = puppet
 		}	
 		

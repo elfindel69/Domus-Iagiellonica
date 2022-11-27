@@ -1644,65 +1644,9 @@
 		}
 	}
 
-	c:LOU = {
-		create_trade_route = {
-			goods = wood
-			level = 4
-			direction = import
-			target = c:FRA.market
-		}
-		create_trade_route = {
-			goods = iron
-			level = 6
-			direction = import
-			target = c:GBR.market
-		}
-		create_trade_route = {
-			goods = iron
-			level = 4
-			direction = import
-			target = c:USA.market
-		}
-		create_trade_route = {
-			goods = iron
-			level = 4
-			direction = import
-			target = c:RUS.market
-		}
-		create_trade_route = {
-			goods = grain
-			level = 4
-			direction = import
-			target = c:RUS.market
-		}
-		create_trade_route = {
-			goods = iron
-			level = 3
-			direction = import
-			target = c:NGF.market
-		}
-	}
+	
 
-	c:CAL = {
-		create_trade_route = {
-			goods = steel
-			level = 2
-			direction = import
-			target = c:LOU.market
-		}
-		create_trade_route = {
-			goods = artillery
-			level = 2
-			direction = import
-			target = c:LOU.market
-		}
-		create_trade_route = {
-			goods = hardwood
-			level = 2
-			direction = import
-			target = c:LOU.market
-		}
-	}
+	
 	
 	c:SGF = {
 		create_trade_route = {

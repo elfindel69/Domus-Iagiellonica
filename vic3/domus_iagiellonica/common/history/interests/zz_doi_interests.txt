@@ -7,17 +7,7 @@
 		add_declared_interest = region_north_germany
 	}
 
-    c:LOU = {
-		add_declared_interest = region_france
-		add_declared_interest = region_england
-		add_declared_interest = region_canada
-		add_declared_interest = region_pacific_coast
-		add_declared_interest = region_north_germany
-	}
-
-    c:CAL = {
-		add_declared_interest = region_great_plains
-	}
+   
 
     c:SGF = {
 		add_declared_interest = region_north_germany
