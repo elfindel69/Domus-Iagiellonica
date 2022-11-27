@@ -11,12 +11,12 @@
 	}
 	c:NET = {
 		create_diplomatic_pact = {
-			country = c:LUX
-			type = personal_union
-		}
-		create_diplomatic_pact = {
 			country = c:DEI
 			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:SAF
+			type = puppet
 		}
 	}
 	c:SWE = {
@@ -77,10 +77,7 @@
 			type = puppet
 		}	
 		
-		create_diplomatic_pact = {
-			country = c:SAF
-			type = puppet
-		}
+		
 
 		### OH CANADA ###
 		# Province of Upper Canada

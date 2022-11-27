@@ -2326,27 +2326,14 @@
 		}
 	}
 	s:STATE_WALLONIA={
-		region_state:LUX={
-			create_building={
-				building="building_wheat_farm"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_privately_owned" "pm_simple_farming" "pm_tools_disabled" "pm_no_secondary" }
-			}
+		
+		region_state:FRA={
 			create_building={
 				building="building_livestock_ranch"
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
 			}
-			create_building={
-				building="building_barracks"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_wound_dressing" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_irregular_infantry" }
-			}
-		}
-		region_state:BEL={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -2391,7 +2378,7 @@
 			}
 			create_building={
 				building="building_wheat_farm"
-				level=7
+				level=8
 				reserves=1
 				activate_production_methods={ "pm_privately_owned" "pm_soil_enriching_farming" "pm_tools" "pm_vineyards" }
 			}
@@ -2409,17 +2396,17 @@
 			}
 			create_building={
 				building="building_barracks"
-				level=5
+				level=8
 				reserves=1
 				activate_production_methods={ "pm_mobile_artillery" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_line_infantry" }
 			}
 		}
 	}
 	s:STATE_FLANDERS={
-		region_state:BEL={
+		region_state:NET={
 			create_building={
 				building="building_government_administration"
-				level=3
+				level=6
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
@@ -3051,7 +3038,7 @@
 		
 	}
 	s:STATE_RHINELAND={
-		region_state:NGF={
+		region_state:FRA={
 			create_building={
 				building="building_steel_mills"
 				level=2
@@ -3090,23 +3077,15 @@
 			}
 			create_building={
 				building="building_wheat_farm"
-				level=4
+				level=5
 				reserves=1
 				activate_production_methods={ "pm_soil_enriching_farming" "pm_privately_owned" "pm_tools" "pm_vineyards" }
 			}
 			create_building={
 				building="building_barracks"
-				level=10
+				level=15
 				reserves=1
 				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
-			}
-		}
-		region_state:SGF={
-			create_building={
-				building="building_wheat_farm"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_vineyards" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3114,16 +3093,11 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
 			}
-			create_building={
-				building="building_barracks"
-				level=5
-				reserves=1
-				activate_production_methods={ "pm_mobile_artillery" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_line_infantry" }
-			}
 		}
+		
 	}
 	s:STATE_NORTH_RHINE={
-		region_state:NGF={
+		region_state:FRA={
 			create_building={
 				building="building_iron_mine"
 				level=2

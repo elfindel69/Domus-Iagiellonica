@@ -1526,12 +1526,6 @@
 	# Netherlands
 	c:NET = {
 		create_trade_route = {
-			goods = clothes
-			level = 9
-			direction = import
-			target = c:GBR.market
-		}	
-		create_trade_route = {
 			goods = wood
 			level = 8
 			direction = import

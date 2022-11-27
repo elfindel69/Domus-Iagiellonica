@@ -739,21 +739,11 @@
 		}
 	}
 	s:STATE_WALLONIA = {
-		region_state:LUX = {
+		
+		region_state:FRA = {
 			create_pop = {
 				culture = wallonian
-				size = 103992
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 71996
-			}
-		}
-		region_state:BEL = {
-			create_pop = {
-				culture = wallonian
-				size = 1462000
+				size = 1565992
 			}
 			create_pop = {
 				culture = north_german
@@ -767,10 +757,15 @@
 				culture = dutch
 				size = 16000
 			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 71996
+			}
 		}
 	}
 	s:STATE_FLANDERS = {
-		region_state:BEL = {
+		region_state:NET = {
 			create_pop = {
 				culture = flemish
 				size = 2317000
@@ -983,7 +978,7 @@
 		
 	}
 	s:STATE_RHINELAND = {
-		region_state:NGF = {
+		region_state:FRA = {
 			create_pop = {
 				culture = north_german
 				religion = catholic
@@ -997,8 +992,6 @@
 				culture = north_german
 				size = 323992
 			}
-		}
-		region_state:SGF = {
 			create_pop = {
 				culture = south_german
 				size = 251600
@@ -1013,9 +1006,10 @@
 				size = 303996
 			}
 		}
+		
 	}
 	s:STATE_NORTH_RHINE = {
-		region_state:NGF = {
+		region_state:FRA = {
 			create_pop = {
 				culture = north_german
 				religion = catholic
