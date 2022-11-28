@@ -116,7 +116,7 @@
 		add_declared_interest = region_france
 		add_declared_interest = region_england
 	}
-	c:NGF = {
+	c:PRU = {
 		add_declared_interest = region_baltic
 		add_declared_interest = region_france	
 		add_declared_interest = region_south_germany	

@@ -870,12 +870,6 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_railway"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
-			}
-			create_building={
 				building="building_steel_mills"
 				level=3
 				reserves=1
@@ -886,12 +880,6 @@
 				level=4
 				reserves=1
 				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_coal_mine" }
-			}
-			create_building={
-				building="building_munition_plants"
-				level=5
-				reserves=1
-				activate_production_methods={ "pm_percussion_caps" "pm_privately_owned_industry" }
 			}
 		}
 	}
@@ -950,12 +938,6 @@
 				level=5
 				reserves=1
 				activate_production_methods={ "pm_muskets" "pm_cannons" "pm_merchant_guilds_building_arms_industry" }
-			}
-			create_building={
-				building="building_munition_plants"
-				level=5
-				reserves=1
-				activate_production_methods={ "pm_percussion_caps" "pm_privately_owned_industry" }
 			}
 		}
 	}

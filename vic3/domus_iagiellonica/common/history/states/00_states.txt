@@ -7008,10 +7008,10 @@ STATES = {
 	}
 	s:STATE_KIEV={
 		create_state={
-		  country=c:PLC
-		  owned_provinces={
-			x01E0E0 x022620 x1121A0 x11F253 x18E9E1 x1C7F2D x2472F3 x2C6218 x2D80BA x2E05DE x31F90F x46B48F x4C92CC x54B5C4 x7DA787 x7DF67D x82AE2F x8CE323 x98E808 xA8600B xA9FA61 xCD2CE5 xD5E7D2 xD6537D xD8EA8C xDCE378 xDD790F xE6AF95 xEA1E16 xF061A0 xF0E021 xFF7D57
-		  }
+			country=c:PLC
+			owned_provinces={
+				x01E0E0 x022620 x1121A0 x11F253 x18E9E1 x1C7F2D x2472F3 x2C6218 x2D80BA x2E05DE x31F90F x46B48F x4C92CC x54B5C4 x7DA787 x7DF67D x82AE2F x8CE323 x98E808 xA8600B xA9FA61 xCD2CE5 xD5E7D2 xD6537D xD8EA8C xDCE378 xDD790F xE6AF95 xEA1E16 xF061A0 xF0E021 xFF7D57
+			}
 		}
 		create_state={
 		  country=c:RUS
@@ -7020,7 +7020,7 @@ STATES = {
 		  }
 		}
 		add_homeland=ukrainian
-	  }
+	}
 	s:STATE_MECKLENBURG = {
 		create_state = {
 			country = c:MEC
@@ -7032,7 +7032,7 @@ STATES = {
 		}		
 		
 		add_homeland = north_german
-	}}
+	}
 	s:STATE_MALTA = {
 		create_state = {
 			country = c:GBR

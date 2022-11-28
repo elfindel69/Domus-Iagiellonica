@@ -5,11 +5,4 @@
 		add_declared_interest = region_south_china
 		add_declared_interest = region_south_germany
 	}
-
-   
-
-    c:SGF = {
-		add_declared_interest = region_north_germany
-		add_declared_interest = region_rhine
-	}
 }

@@ -169,13 +169,6 @@
 			direction = import
 			target = c:SPA.market
 		}	
-		
-		create_trade_route = {
-			goods = engines
-			level = 4
-			direction = import
-			target = c:LOU.market
-		}
 		create_trade_route = {
 			goods = engines
 			level = 4
