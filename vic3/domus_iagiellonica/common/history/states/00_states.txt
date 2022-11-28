@@ -6661,7 +6661,8 @@ STATES = {
 		create_state = {
 			country = c:AUS
 			owned_provinces = { xD0BF60 x1120FF }
-		}	
+		}
+	}
 	s:STATE_SLOVENIA = {
 		create_state = {
 			country = c:AUS
