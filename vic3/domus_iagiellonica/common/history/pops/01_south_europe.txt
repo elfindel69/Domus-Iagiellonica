@@ -641,6 +641,7 @@
 				culture = serb
 				size = 17300
 			}
+		}
 	}
 	s:STATE_CROATIA = {
 		region_state:AUS = {
@@ -723,6 +724,7 @@
 				culture = croat
 				size = 3602
 			}
+		}
 	}
 	s:STATE_MONTENEGRO = {
 		region_state:TUR = {
