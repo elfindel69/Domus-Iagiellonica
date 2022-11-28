@@ -35,14 +35,8 @@
 			goods = liquor
 			level = 5
 			direction = export
-			target = c:NGF.market
+			target = c:PRU.market
 		}
-		create_trade_route = {
-			goods = liquor
-			level = 5
-			direction = export
-			target = c:BEL.market
-		}	
 		create_trade_route = {
 			goods = coffee
 			level = 7
@@ -994,7 +988,7 @@
 			goods = tools
 			level = 3
 			direction = import
-			target = c:NGF.market
+			target = c:PRU.market
 		}	
 		create_trade_route = {
 			goods = hardwood
@@ -1006,7 +1000,7 @@
 			goods = luxury_furniture
 			level = 2
 			direction = import
-			target = c:NGF.market
+			target = c:PRU.market
 		}
 		create_trade_route = {
 			goods = luxury_furniture
@@ -1024,19 +1018,19 @@
 			goods = wine
 			level = 3
 			direction = import
-			target = c:NGF.market
+			target = c:PRU.market
 		}
 		create_trade_route = {
 			goods = clothes
 			level = 2
 			direction = import
-			target = c:NGF.market
+			target = c:PRU.market
 		}
 		create_trade_route = {
 			goods = furniture
 			level = 6
 			direction = import
-			target = c:NGF.market
+			target = c:PRU.market
 		}
 	}
 	
@@ -1331,7 +1325,7 @@
 			goods = small_arms
 			level = 1
 			direction = import
-			target = c:NGF.market
+			target = c:PRU.market
 		}	
 		create_trade_route = {
 			goods = grain
@@ -1361,7 +1355,7 @@
 
 	
 	# Prussia
-	c:NGF = {	
+	c:PRU = {	
 		
 		create_trade_route = {
 			goods = iron
@@ -1395,63 +1389,7 @@
 		}				
 	}	
 	
-	# Belgium
-	c:BEL = {
-		create_trade_route = {
-			goods = sulfur
-			level = 5
-			direction = import
-			target = c:NGF.market
-		}		
-		create_trade_route = {
-			goods = fertilizer
-			level = 1
-			direction = export
-			target = c:GBR.market
-		}		
-		create_trade_route = {
-			goods = steel
-			level = 6
-			direction = export
-			target = c:FRA.market
-		}		
-		create_trade_route = {
-			goods = dye
-			level = 3
-			direction = import
-			target = c:GBR.market
-		}
-		create_trade_route = {
-			goods = luxury_clothes
-			level = 2
-			direction = import
-			target = c:GBR.market
-		}
-		create_trade_route = {
-			goods = luxury_furniture
-			level = 2
-			direction = export
-			target = c:GBR.market
-		}			
-		create_trade_route = {
-			goods = sugar
-			level = 4
-			direction = import
-			target = c:SPA.market
-		}	
-		create_trade_route = {
-			goods = engines
-			level = 2
-			direction = import
-			target = c:GBR.market
-		}
-		create_trade_route = {
-			goods = clippers
-			level = 2
-			direction = import
-			target = c:GBR.market
-		}		
-	}
+	
 	
 	# France
 	c:FRA = {
@@ -1473,12 +1411,7 @@
 			direction = export
 			target = c:NET.market
 		}
-		create_trade_route = {
-			goods = explosives
-			level = 5
-			direction = import
-			target = c:BEL.market
-		}
+		
 		create_trade_route = {
 			goods = hardwood
 			level = 8
@@ -1636,31 +1569,5 @@
 			direction = import
 			target = c:GBR.market
 		}
-	}
-
-	
-
-	
-	
-	c:SGF = {
-		create_trade_route = {
-			goods = sugar
-			level = 2
-			direction = import
-			target = c:AUS.market
-		}
-		create_trade_route = {
-			goods = sugar
-			level = 2
-			direction = import
-			target = c:FRA.market
-		}
-		create_trade_route = {
-			goods = iron
-			level = 4
-			direction = import
-			target = c:AUS.market
-		}
-		
 	}
 }

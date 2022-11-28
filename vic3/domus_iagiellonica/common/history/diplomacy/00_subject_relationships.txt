@@ -76,7 +76,10 @@
 			country = c:ORG
 			type = puppet
 		}	
-		
+		create_diplomatic_pact = {
+			country = c:HAN
+			type = personal_union
+		}
 		
 
 		### OH CANADA ###

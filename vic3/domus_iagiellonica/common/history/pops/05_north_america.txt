@@ -1247,7 +1247,7 @@
 		}
 	}
 	s:STATE_ARIZONA = {
-		region_state:CAL = {
+		region_state:MEX = {
 			create_pop = {
 				culture = oodham
 				size = 4000
@@ -1260,12 +1260,27 @@
 				culture = pueblo
 				size = 3000
 			}
+		}
+		region_state:NVJ = {
 			create_pop = {
-				culture = yankee
-				size = 404848
+				culture = navajo
+				size = 24000
+			}
+			create_pop = {
+				culture = paiute
+				size = 4000
 			}
 		}
-		
+		region_state:APC = {
+			create_pop = {
+				culture = apache
+				size = 11000
+			}
+			create_pop = {
+				culture = pueblo
+				size = 2000
+			}
+		}
 	}
 	s:STATE_NEW_MEXICO = {
 		region_state:MEX = {

@@ -1,4 +1,4 @@
-POPULATION = {
+﻿POPULATION = {
 
 	#TUTORIAL Replace TUT with your country's tag
 	c:VEN = {

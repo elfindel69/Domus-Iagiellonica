@@ -4,6 +4,4 @@
 		set_strategy = ai_strategy_maintain_power_balance
 		set_strategy = ai_strategy_progressive_agenda
     }
-
-
 }

@@ -46,9 +46,7 @@
 		add_declared_interest = region_occitania
 		add_declared_interest = region_balkans
 	}	
-	c:BEL = {
-		add_declared_interest = region_iberia
-	}
+	
 	c:EGY = {
 		add_declared_interest = region_north_africa
 		add_declared_interest = region_niger
