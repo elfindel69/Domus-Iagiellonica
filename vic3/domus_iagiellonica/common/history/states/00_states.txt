@@ -6447,18 +6447,27 @@ STATES = {
 		add_homeland = byelorussian
 		add_homeland = russian
 	}
-	s:STATE_CAMPANIA = {
+		s:STATE_CAMPANIA = {
 		create_state = {
 			country = c:SIC
-			owned_provinces = { x73CE17 x214415 x4090A0 xDF1CE3 x890469 x0E8BCC }
+			owned_provinces = { x73CE17 x214415 x4090A0 xDF1CE3  x0E8BCC x704020 }
 		}
 		
 		add_homeland = south_italian
 	}
-	s:STATE_ABRUZZO = {
+	s:STATE_ABRUZZI = {
 		create_state = {
 			country = c:SIC
 			owned_provinces = { xA6F611 x31C0A0 x0AE57A x0D3025 xF34DC0 }
+		}
+		
+		add_homeland = south_italian
+	}
+
+	s:STATE_BASILICATA = {
+		create_state = {
+			country = c:SIC
+			owned_provinces = { x890469 x785460 xE78C7B }
 		}
 		
 		add_homeland = south_italian
@@ -6466,7 +6475,7 @@ STATES = {
 	s:STATE_CALABRIA = {
 		create_state = {
 			country = c:SIC
-			owned_provinces = { xC01020 xC050E0 x785460 xE78C7B }
+			owned_provinces = { xC01020 xC050E0  }
 		}
 		
 		add_homeland = south_italian
@@ -6474,7 +6483,7 @@ STATES = {
 	s:STATE_APULIA = {
 		create_state = {
 			country = c:SIC
-			owned_provinces = { x704020 x2C8F44 xEFC992 x4050DF x74BD9B x836841 x30209F }
+			owned_provinces = { x2C8F44 xEFC992 x4050DF x74BD9B x836841 x30209F }
 		}
 		
 		add_homeland = south_italian
@@ -6518,7 +6527,11 @@ STATES = {
 	s:STATE_DALMATIA = {
 		create_state = {
 			country = c:AUS
-			owned_provinces = { xF9421B xEFA0C0 x11A0E0 x90A0E0 }
+			owned_provinces = { x11A0E0 }
+		}
+		create_state = {
+			country = c:VEN
+			owned_provinces = { x71A0C0 xEFA0C0 xF9421B x90A0E0}
 		}
 		
 		add_homeland = croat
@@ -6563,7 +6576,11 @@ STATES = {
 	s:STATE_ISTRIA = {
 		create_state = {
 			country = c:AUS
-			owned_provinces = { x108021 x3060BF x56C78A xB061C0 x36B2E3 xF0A040 }
+			owned_provinces = { x108021 x3060BF x56C78A }
+		}
+		create_state = {
+			country = c:VEN
+			owned_provinces = { x36B2E3 xF0A040 xB061C0 }
 		}
 		
 		add_homeland = croat
@@ -6572,8 +6589,12 @@ STATES = {
 	}
 	s:STATE_LOMBARDY = {
 		create_state = {
-			country = c:AUS
-			owned_provinces = { x3F1E38 xD04060 x9AC196 x867A90 xA40CE9 x50C060 x70B8A9 x4713EE }
+			country = c:LOM
+			owned_provinces = { x3F1E38 xD04060 xA40CE9 }
+		}
+		create_state = {
+			country = c:VEN
+			owned_provinces = { x50C060 x70B8A9 x4713EE x867A90 x9AC196 }
 		}
 		
 		add_homeland = north_italian
@@ -6631,12 +6652,16 @@ STATES = {
 	s:STATE_SOUTH_TYROL = {
 		create_state = {
 			country = c:AUS
-			owned_provinces = { xD0BF60 x1120FF xD040E0 x039D0F }
+			owned_provinces = {xD040E0 x039D0F }
 		}
 		
 		add_homeland = south_german
-		add_homeland = north_italian
 	}
+	s:STATE_TRENTO = {
+		create_state = {
+			country = c:AUS
+			owned_provinces = { xD0BF60 x1120FF }
+		}	
 	s:STATE_SLOVENIA = {
 		create_state = {
 			country = c:AUS
@@ -6956,7 +6981,15 @@ STATES = {
 	s:STATE_UMBRIA = {
 		create_state = {
 			country = c:PAP
-			owned_provinces = { x30C021 x72531E xD3A384 xE782CC x6E8D07 xD8F07B }
+			owned_provinces = { xE782CC x6E8D07 xD8F07B }
+		}
+		
+		add_homeland = south_italian
+	}
+	s:STATE_MARCHE = {
+		create_state = {
+			country = c:PAP
+			owned_provinces = { x30C021 x72531E xD3A384 }
 		}
 		
 		add_homeland = south_italian
@@ -7094,3 +7127,116 @@ STATES = {
 		add_homeland = irish
 	}
 }
+
+
+
+
+	s:STATE_ISTRIA = {
+		create_state = {
+			country = c:AUS
+			owned_provinces = { x108021 x3060BF x56C78A }
+		}
+		create_state = {
+			country = c:VEN
+			owned_provinces = { x36B2E3 xF0A040 xB061C0 }
+		}
+		
+		add_homeland = croat
+		add_homeland = slovene
+		add_homeland = north_italian
+	}
+	s:STATE_LOMBARDY = {
+		create_state = {
+			country = c:LOM
+			owned_provinces = { x3F1E38 xD04060 xA40CE9 }
+		}
+		create_state = {
+			country = c:VEN
+			owned_provinces = { x50C060 x70B8A9 x4713EE x867A90 x9AC196 }
+		}
+		
+		add_homeland = north_italian
+	}
+		s:STATE_CAMPANIA = {
+		create_state = {
+			country = c:SIC
+			owned_provinces = { x73CE17 x214415 x4090A0 xDF1CE3  x0E8BCC x704020 }
+		}
+		
+		add_homeland = south_italian
+	}
+	s:STATE_ABRUZZI = {
+		create_state = {
+			country = c:SIC
+			owned_provinces = { xA6F611 x31C0A0 x0AE57A x0D3025 xF34DC0 }
+		}
+		
+		add_homeland = south_italian
+	}
+
+	s:STATE_BASILICATA = {
+		create_state = {
+			country = c:SIC
+			owned_provinces = { x890469 x785460 xE78C7B }
+		}
+		
+		add_homeland = south_italian
+	}	
+	s:STATE_CALABRIA = {
+		create_state = {
+			country = c:SIC
+			owned_provinces = { xC01020 xC050E0  }
+		}
+		
+		add_homeland = south_italian
+	}	
+	s:STATE_APULIA = {
+		create_state = {
+			country = c:SIC
+			owned_provinces = { x2C8F44 xEFC992 x4050DF x74BD9B x836841 x30209F }
+		}
+		
+		add_homeland = south_italian
+	}
+	s:STATE_SOUTH_TYROL = {
+		create_state = {
+			country = c:AUS
+			owned_provinces = {xD040E0 x039D0F }
+		}
+		
+		add_homeland = south_german
+	}
+	s:STATE_TRENTO = {
+		create_state = {
+			country = c:AUS
+			owned_provinces = { xD0BF60 x1120FF }
+		}	
+	s:STATE_DALMATIA = {
+		create_state = {
+			country = c:AUS
+			owned_provinces = { x11A0E0 }
+		}
+		create_state = {
+			country = c:VEN
+			owned_provinces = { x71A0C0 xEFA0C0 xF9421B x90A0E0}
+		}
+		
+		add_homeland = croat
+		add_homeland = serb
+	}
+	s:STATE_UMBRIA = {
+		create_state = {
+			country = c:PAP
+			owned_provinces = { xE782CC x6E8D07 xD8F07B }
+		}
+		
+		add_homeland = south_italian
+	}
+	s:STATE_MARCHE = {
+		create_state = {
+			country = c:PAP
+			owned_provinces = { x30C021 x72531E xD3A384 }
+		}
+		
+		add_homeland = south_italian
+	}
