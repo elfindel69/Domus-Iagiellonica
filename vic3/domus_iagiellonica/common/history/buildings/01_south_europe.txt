@@ -1,6 +1,6 @@
 ﻿BUILDINGS={
 	s:STATE_LOMBARDY={
-		region_state:AUS={
+		region_state:VEN={
 			create_building={
 				building="building_government_administration"
 				level=3
@@ -419,7 +419,7 @@
 			}
 		}
 	}
-	s:STATE_ABRUZZO={
+	s:STATE_ABRUZZI={
 		region_state:SIC={
 			create_building={
 				building="building_furniture_manufacturies"
@@ -698,7 +698,7 @@
 		}
 	}
 	s:STATE_VENETIA={
-		region_state:AUS={
+		region_state:VEN={
 			create_building={
 				building="building_government_administration"
 				level=3
@@ -1818,7 +1818,7 @@
 		}
 	}
 	s:STATE_DALMATIA={
-		region_state:AUS={
+		region_state:VEN={
 			create_building={
 				building="building_fishing_wharf"
 				level=3
