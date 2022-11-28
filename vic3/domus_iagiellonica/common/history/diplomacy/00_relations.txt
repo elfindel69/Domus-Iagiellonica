@@ -170,7 +170,6 @@
 		set_relations = { country = c:GBR value = 30 }
 		set_relations = { country = c:PAP value = 30 }
         set_relations = { country = c:RUS value = 20 }
-		set_relations = { country = c:UBD value = 30 }
     }
 
 	c:PRG = {
@@ -237,7 +236,6 @@
         set_relations = { country = c:PLC value = -30 }
 		set_relations = { country = c:NOR value = 30 }
 		set_relations = { country = c:NGF value = 30 }
-		set_relations = { country = c:UBD value = 30 }
 	}
 	c:TUR = {
 		set_relations = { country = c:WAL value = -30 }
@@ -246,12 +244,6 @@
 	}
 	c:VNZ = {
 		set_relations = { country = c:SPA value = -30 }
-	}
-	c:UBD = {
-        set_relations = { country = c:PLC value = 30 }
-		set_relations = { country = c:SWE value = -10 }
-		set_relations = { country = c:NGF value = 30 }
-		set_relations = { country = c:RUS value = -10 }
 	}
 	c:URU = {
 		set_relations = { country = c:SPA value = -30 }

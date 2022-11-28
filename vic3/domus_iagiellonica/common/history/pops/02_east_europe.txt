@@ -99,7 +99,7 @@
 		}
 	}
 	s:STATE_KIEV = {
-		region_state:RUS = {
+		region_state:PLC = {
 			create_pop = {
 				culture = ukrainian
 				size = 3923992
@@ -366,7 +366,7 @@
 		}
 	}
 	s:STATE_MINSK = {
-		region_state:RUS = {
+		region_state:PLC = {
 			create_pop = {
 				culture = polish
 				size = 139932
@@ -439,7 +439,7 @@
 		}
 	}
 	s:STATE_ESTONIA = {
-		region_state:UBD = {
+		region_state:RUS = {
 			create_pop = {
 				culture = estonian
 				size = 573800
@@ -459,7 +459,7 @@
 		}
 	}
 	s:STATE_LATVIA = {
-		region_state:UBD = {
+		region_state:PLC = {
 			create_pop = {
 				culture = latvian
 				size = 1047496

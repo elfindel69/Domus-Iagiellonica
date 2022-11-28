@@ -294,12 +294,5 @@
 			type = puppet
 		}
 	}
-	c:PLC = {
-		
-		create_diplomatic_pact = {
-			country = c:UBD
-			type = dominion
-		}
-	}
 	
 }

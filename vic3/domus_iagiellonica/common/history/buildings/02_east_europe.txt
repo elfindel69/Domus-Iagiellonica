@@ -177,7 +177,7 @@
 		}
 	}
 	s:STATE_KIEV={
-		region_state:RUS={
+		region_state:PLC={
 			create_building={
 				building="building_government_administration"
 				level=10
@@ -523,7 +523,7 @@
 		}
 	}
 	s:STATE_MINSK={
-		region_state:RUS={
+		region_state:PLC={
 			create_building={
 				building="building_government_administration"
 				level=5
@@ -607,13 +607,7 @@
 		}
 	}
 	s:STATE_ESTONIA={
-		region_state:UBD={
-			create_building={
-				building="building_construction_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" }
-			}	
+		region_state:RUS={
 			create_building={
 				building="building_fishing_wharf"
 				level=1
@@ -643,29 +637,11 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
-			}	
-			create_building={
-				building="building_government_administration"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}		
+			}			
 		}
 	}
 	s:STATE_LATVIA={
-		region_state:UBD={
-			create_building={
-				building="building_construction_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" }
-			}	
-			create_building={
-				building="building_government_administration"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
+		region_state:PLC={
 			create_building={
 				building="building_rye_farm"
 				level=3
