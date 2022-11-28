@@ -1,4 +1,4 @@
-﻿POPS = {
+﻿﻿POPS = {
 	s:STATE_SVEALAND = {
 		region_state:SWE = {
 			create_pop = {
@@ -868,11 +868,23 @@
 		region_state:AUS = {
 			create_pop = {
 				culture = south_german
-				size = 174100
+				size = 134126
 			}
 			create_pop = {
 				culture = north_italian
-				size = 5900
+				size = 1200
+			}
+		}
+	}
+	s:STATE_TRENTO = {
+		region_state:AUS = {
+			create_pop = {
+				culture = south_german
+				size = 3251
+			}
+			create_pop = {
+				culture = north_italian
+				size = 4745
 			}
 		}
 	}
