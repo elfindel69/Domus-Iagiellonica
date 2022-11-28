@@ -102,19 +102,37 @@
 		region_state:PLC = {
 			create_pop = {
 				culture = ukrainian
-				size = 3923992
+				size = 1765796
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 381996
+				size = 171898
 			}
 			create_pop = {
 				culture = polish
-				size = 141504
+				size = 70000
 			}
 			create_pop = {
 				culture = russian
-				size = 36400
+				size = 2400
+			}
+		}
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				size = 2158195
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 210097
+			}
+			create_pop = {
+				culture = polish
+				size = 71504
+			}
+			create_pop = {
+				culture = russian
+				size = 34400
 			}
 		}
 	}
@@ -462,15 +480,15 @@
 		region_state:PLC = {
 			create_pop = {
 				culture = latvian
-				size = 1047496
+				size = 733247
 			}
 			create_pop = {
 				culture = north_german
-				size = 71996
+				size = 50397
 			}
 			create_pop = {
 				culture = estonian
-				size = 6000
+				size = 2000
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -483,11 +501,38 @@
 			}
 			create_pop = {
 				culture = polish
-				size = 32000
+				size = 22000
 			}
 			create_pop = {
 				culture = russian
-				size = 21000
+				size = 1000
+			}
+		}
+		region_state:RUS = {
+			create_pop = {
+				culture = latvian
+				size = 314248
+			}
+			create_pop = {
+				culture = north_german
+				size = 21598
+			}
+			create_pop = {
+				culture = estonian
+				size = 4000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 53408
+			}
+			
+			create_pop = {
+				culture = polish
+				size = 10000
+			}
+			create_pop = {
+				culture = russian
+				size = 20000
 			}
 		}
 	}
@@ -541,7 +586,7 @@
 		}
 	}
 	s:STATE_SILESIA = {
-		region_state:PLC = {
+		region_state:AUS = {
 			create_pop = {
 				culture = north_german
 				size = 1319008

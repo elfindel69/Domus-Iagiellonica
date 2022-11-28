@@ -2740,7 +2740,7 @@
 		region_state:NGF={
 			create_building={
 				building="building_fishing_wharf"
-				level=3
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
@@ -2752,17 +2752,44 @@
 			}
 			create_building={
 				building="building_livestock_ranch"
-				level=3
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_privately_owned" "pm_intensive_grazing_ranch" "pm_standard_fences" "pm_unrefrigerated" "pm_slaughterhouses" }
 			}
 			create_building={
 				building="building_logging_camp"
-				level=2
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_privately_owned_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}		
+			
+		}
+		region_state:PLC = {
 			create_building={
+				create_building={
+					building="building_rye_farm"
+					level=1
+					reserves=1
+					activate_production_methods={ "pm_privately_owned" "pm_soil_enriching_farming" "pm_tools" "pm_potatoes" }
+				}
+				create_building={
+					building="building_livestock_ranch"
+					level=2
+					reserves=1
+					activate_production_methods={ "pm_privately_owned" "pm_intensive_grazing_ranch" "pm_standard_fences" "pm_unrefrigerated" "pm_slaughterhouses" }
+				}
+				create_building={
+					building="building_logging_camp"
+					level=1
+					reserves=1
+					activate_production_methods={ "pm_saw_mills" "pm_privately_owned_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+				}	
+				create_building={
+					building="building_fishing_wharf"
+					level=1
+					reserves=1
+					activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
+				}
 				building="building_naval_base"
 				level=5
 				reserves=1
@@ -3170,7 +3197,7 @@
 			}
 			create_building={
 				building="building_government_administration"
-				level=13
+				level=10
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
@@ -3212,7 +3239,21 @@
 			}
 			create_building={
 				building="building_barracks"
-				level=25
+				level=20
+				reserves=1
+				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+			}
+		}
+		region_state:PLC = {
+			create_building={
+				building="building_government_administration"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_vertical_filing_cabinets" }
+			}
+			create_building={
+				building="building_barracks"
+				level=5
 				reserves=1
 				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
