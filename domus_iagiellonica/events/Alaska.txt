@@ -1,0 +1,55 @@
+add_namespace = ala
+
+#New economic course
+country_event = {
+	id = ala.1
+	title = ala.1.t
+	desc = ala.1.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = ala.1.a
+		add_timed_idea = {
+			idea = ALA_new_economic1
+			days = 1461
+		}
+	}
+	option = {
+		name = ala.1.b
+		add_timed_idea = {
+			idea = ALA_new_economic2
+			days = 1461
+		}
+	}
+	option = {
+		name = ala.1.c
+		add_timed_idea = {
+			idea = ALA_new_economic3
+			days = 1461
+		}
+	}
+}
+country_event = {
+	id = ala.2
+	title = ala.2.t
+	desc = ala.2.d
+	picture = report_event_german_italian_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = ala.2.a
+		USA = { puppet = ALA }
+	}
+	option = {
+		name = ala.2.b
+		USA = { 
+		declare_war_on = {
+		target = ALA
+		type = annex_everything 
+		}
+		}
+	}
+}

@@ -1,0 +1,108 @@
+news_event = {
+	id = news.401
+	title = news.401.t
+	desc = news.401.d
+	picture = GFX_news_event_017
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = news.401.a
+		trigger = {
+			tag = ALA
+		}
+	}
+
+	option = { 
+		name = news.401.b
+		trigger = {
+			tag = SOV
+		}
+	}
+
+	option = {
+		name = news.401.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ALA
+					tag = SOV
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = news.402
+	title = news.402.t
+	desc = news.402.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = news.402.a
+		trigger = {
+			tag = ALA
+		}
+	}
+
+	option = { 
+		name = news.402.b
+		trigger = {
+			tag = SOV
+		}
+	}
+
+	option = {
+		name = news.402.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ALA
+					tag = SOV
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = news.403
+	title = news.403.t
+	desc = news.403.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = news.403.a
+		trigger = {
+			tag = ALA
+		}
+	}
+
+	option = { 
+		name = news.403.b
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = news.403.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ALA
+					tag = CAN
+				}
+			}
+		}
+	}
+}
