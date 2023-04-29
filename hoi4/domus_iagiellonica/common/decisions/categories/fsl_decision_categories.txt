@@ -1,9 +1,0 @@
-FSL_emperor_charles_decrees = {
-	picture = GFX_decision_category_generic_political_actions
-	allowed = {
-		tag = FSL
-	}
-	visible = {
-		has_completed_focus = FSL_emperor_charles_decrees
-	}
-}

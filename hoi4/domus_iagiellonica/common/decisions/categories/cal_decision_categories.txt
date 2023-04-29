@@ -1,9 +1,0 @@
-CAL_emperor_nortons_decrees = {
-	picture = GFX_decision_category_generic_political_actions
-	allowed = {
-		tag = CAL
-	}
-	visible = {
-		has_completed_focus = CAL_emperor_nortons_decrees
-	}
-}
