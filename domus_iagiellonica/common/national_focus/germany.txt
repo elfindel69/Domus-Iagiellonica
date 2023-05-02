@@ -2623,12 +2623,33 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
+		mutually_exclusive = { focus = GER_political_sphere }
+		
 		available = {
 			is_puppet = no
 		}
 		x = 25
 		y = 0
+		
 		cost = 10
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_political_sphere
+					OR = {
+						has_completed_focus = GER_long_live_the_kaiserreich
+						has_completed_focus = GER_a_new_constitution
+						has_completed_focus = GER_relegalize_communism
+					}
+				}
+			}
+		}
 		available = {
 			is_puppet = no
 		}
@@ -4396,11 +4417,51 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 35
+		x = 37
 		y = 1
+		offset = {
+			x = -15
+			y = -1
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_political_sphere
+			}
+		}
+		offset = {
+			x = -13
+			y = -1
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_long_live_the_kaiserreich
+			}
+		}
 		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_rhineland
+					OR={
+						has_completed_focus = GER_a_new_constitution
+						has_completed_focus = GER_relegalize_communism
+
+					}	
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -5663,9 +5724,36 @@ focus_tree = {
 	focus = {
 		id = GER_political_sphere
 		icon = GFX_goal_generic_focus_generic_political
+		mutually_exclusive = {
+			focus = GER_rhineland
+		}
 		cost = 1.00
-		x = 55
+		x = 42
 		y = 0
+		offset = {
+			x = -10
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_political_sphere
+			}
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_rhineland
+				}
+			}
+		}
 		ai_will_do = {
 				factor = 75
 			}
@@ -5683,8 +5771,46 @@ focus_tree = {
 		available = {
 			is_puppet = no
 		}
-		x = -8
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR={
+						has_completed_focus = GER_a_new_constitution
+						has_completed_focus = GER_relegalize_communism
+					}	
+				}
+			}
+		}
+		x = 5
 		y = 1
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_political_sphere
+			}
+		}
+		offset = {
+			x = -11
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_long_live_the_kaiserreich
+			}
+		}
 		relative_position_id = GER_political_sphere
 		cost = 10
 		ai_will_do = {
@@ -5700,8 +5826,7 @@ focus_tree = {
 		id = GER_boost_the_economy
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = GER_long_live_the_kaiserreich focus = GER_a_new_constitution }
-		available = {
-		}
+		
 		x = 1
 		y = 1
 		relative_position_id = GER_long_live_the_kaiserreich
@@ -5709,7 +5834,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 9
 		}
-		
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR={
+						has_completed_focus = GER_relegalize_communism
+					}	
+				}
+			}
+		}
 		completion_reward = {
 			add_timed_idea = { idea = GER_boost_the_economy days = 365 }
 			add_ideas = GER_national_revitalization
@@ -6949,7 +7088,11 @@ focus_tree = {
 		prerequisite = { focus = GER_bulwark_against_bolshevism }
 		available = { 
 			is_puppet = no
-			has_government = neutrality
+			OR = {
+				has_government = neutrality
+				has_government = monarchist
+			}
+		
 			NOT = { has_war_with = POL }
 			NOT = { is_in_faction_with = POL }
 		}
@@ -7345,10 +7488,37 @@ focus_tree = {
 		available = {
 			is_puppet = no
 		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR={
+						has_completed_focus = GER_long_live_the_kaiserreich
+						has_completed_focus = GER_relegalize_communism
+					}	
+				}
+			}
+		}
 		cancel_if_invalid = yes
-		x = -6
+		x =8
 		y = 1
 		relative_position_id = GER_political_sphere
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_a_new_constitution
+			}
+		}
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -8623,8 +8793,37 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_long_live_the_kaiserreich focus = GER_a_new_constitution
 		}
-		x = 7
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_rhineland
+					OR={
+						
+						has_completed_focus = GER_long_live_the_kaiserreich
+						has_completed_focus = GER_a_new_constitution
+					}	
+				}
+			}
+		}
+		x = 22
 		y = 1
+		offset = {
+			x = -52
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_relegalize_communism
+			}
+		}
 		relative_position_id = GER_political_sphere
 		ai_will_do = {
 			factor = 50

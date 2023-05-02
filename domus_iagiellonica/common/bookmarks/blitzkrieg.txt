@@ -106,7 +106,7 @@ bookmarks = {
 		}
 		SOV = {
 			history = SOV_BLITZKRIEG_DESC
-			ideology = communism
+			ideology = monarchist
 			ideas = {
 				SOV_anti_soviet_military_thinking_banned_navy
 				SOV_second_five_year_plan_fake_1939_ns
@@ -367,48 +367,7 @@ bookmarks = {
 			}
 		}
 		
-		"ALA"={
-			minor = yes
-			history = "ALA_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				ALA_no_reformed_economy
-			}
-			focuses = {
-				ALA_New_economic
-				ALA_Alaska_Strong
-				ALA_foreign_policy
-			}
-		}
 		
-		"FSL"={
-			minor = yes
-			history = "FSL_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		
-		"CAL"={
-			minor = yes
-			history = "CAL_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				CAL_hollywood_studio_bosses
-				CAL_epic
-				CAL_army_plot
-				CAL_integralism
-			}
-			focuses = {
-				CAL_to_kill_an_eagle
-				CAL_mobilize
-				CAL_establish_our_empire
-			}
-		}
 		
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !

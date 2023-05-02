@@ -1,41 +1,26 @@
 characters={
 	AFG_mohammed_zahir_shah={
-		instance = {
-			allowed={
-				has_government = neutrality
-			}
-			name="Mohammed Zahir Shah"
-			
-			portraits={
-				civilian={
-					large="gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
-				}
-			}
-			country_leader={
-				ideology=despotism
-				expire="1965.1.1.1"
-				id=-1
+		
+		name="Mohammed Zahir Shah"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
 			}
 		}
-		instance = {
-			allowed={
-				has_government = monarchist
-			}
-			name="Mohammed Zahir Shah"
-			
-			portraits={
-				civilian={
-					large="gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
-				}
-			}
-			country_leader={
-				ideology=monarchism
-				expire="1965.1.1.1"
-				id=-1
-			}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
 		}
 	
-		
+	
+		country_leader={
+			ideology=monarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+
 	}
 	AFG_akram_sattari={
 		name="Akram Sattari"

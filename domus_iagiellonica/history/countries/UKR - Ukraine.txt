@@ -77,104 +77,15 @@ set_popularities = {
 	neutrality = 5
 }
 
-create_country_leader = {
-	name = "Kost Levytsky"
-	desc = ""
-	picture = "UKR_Kost_Levytsky_D.tga"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+recruit_character = UKR_kost_levytsky
+recruit_character = UKR_nikita_khrushchev
+recruit_character = UKR_stepan_bandera
+recruit_character = UKR_pavlo_skoropadskyi
+recruit_character = UKR_vitaliy_primakov
+recruit_character = UKR_timofij_ponomarenko
+recruit_character = UKR_bohdan_oleksyuk
 
-create_country_leader = {
-	name = "Nikita Sergeyevich Khrushchev"
-	desc = ""
-	picture = "UKR_Nikita_Chruschov_C.tga"
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Stepan Bandera"
-	desc = ""
-	picture = "URK_Stepan_Bandera_F.tga"
-	expire = "1953.3.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Vitaliy Primakov"
-	desc = ""
-	picture = "UKR_Vitaliy_Primakov_N.tga"
-	expire = "1953.3.1"
-	ideology = paternalism
-	traits = {
-		warrior_code
-	}
-}
-
-create_country_leader = {
-	name = "Hetman Pavlo Skoropadskyi"
-	picture = "gfx/leaders/Monarchs/r56_portrait_UKR_Pavlo_Skoropadskyi.tga"
-	expire = "1981.1.1"
-	ideology = monarchism
-	traits = {
-		dictator generallissimo disdain_for_politicians_1
-	}
-}
-		
-
-create_country_leader = {
-	name = "Pavlo Skoropadskyi"
-	desc = ""
-	picture = "gfx/leaders/UKR/r56_portrait_UKR_Pavlo_Skoropadskyi.dds"
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Vitaliy Primakov"
-	desc = ""
-	picture = "UKR_Vitaliy_Primakov_N.tga"
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-		warrior_code
-	}
-}
-
-create_field_marshal = {
-	name = "Tymofij Ponomarenko"
-	picture = "Portrait_Europe_Generic_land_4.dds"
-	traits = {  offensive_doctrine }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Bohdan Oleksyuk"
-	picture = "Portrait_Europe_Generic_land_3.dds"
-	traits = {  armor_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
 
 #create_country_leader = {
 #	name = ""

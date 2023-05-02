@@ -1,37 +1,24 @@
 characters={
 	BHU_jigme_wangchuck={
-		instance = {
-			allowed={
-				has_government = neutrality
-			}
-			name="Jigme Wangchuck"
-			portraits={
-				civilian={
-					large="GFX_portrait_buthan_jigme_wangchuk"
-				}
-			}
-			country_leader={
-				ideology=despotism
-				expire="1965.1.1.1"
-				id=-1
+		
+		name="Jigme Wangchuck"
+		portraits={
+			civilian={
+				large="GFX_portrait_buthan_jigme_wangchuk"
 			}
 		}
-		instance = {
-			allowed={
-				has_government = monarchist
-			}
-			name="Jigme Wangchuck"
-			portraits={
-				civilian={
-					large="GFX_portrait_buthan_jigme_wangchuk"
-				}
-			}
-			country_leader={
-				ideology= paternalism
-				expire="1965.1.1.1"
-				id=-1
-			}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
 		}
+	
+		country_leader={
+			ideology= paternalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
 		
 	}
 	BHU_tsarong_wangyal={

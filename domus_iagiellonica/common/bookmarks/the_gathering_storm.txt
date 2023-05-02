@@ -169,7 +169,7 @@ bookmarks = {
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = monarchist
 			available = { has_dlc = "No Step Back" }
 			ideas = {
 				trotskyite_plot_nsb
@@ -184,7 +184,7 @@ bookmarks = {
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = monarchist
 			available = { NOT = { has_dlc = "No Step Back" } }
 			ideas = {
 				trotskyite_plot_nsb
@@ -457,48 +457,7 @@ bookmarks = {
 			}
 		}
 		
-		"ALA"={
-			minor = yes
-			history = "ALA_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				ALA_no_reformed_economy
-			}
-			focuses = {
-				ALA_New_economic
-				ALA_Alaska_Strong
-				ALA_foreign_policy
-			}
-		}
-		
-		"FSL"={
-			minor = yes
-			history = "FSL_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		
-		"CAL"={
-			minor = yes
-			history = "CAL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				CAL_hollywood_studio_bosses
-				CAL_epic
-				CAL_army_plot
-				CAL_integralism
-			}
-			focuses = {
-				CAL_to_kill_an_eagle
-				CAL_mobilize
-				CAL_establish_our_empire
-			}
-		}
+	
 		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

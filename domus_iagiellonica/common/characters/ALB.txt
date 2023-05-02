@@ -1,39 +1,27 @@
 characters={
 	ALB_king_zog={
-		instance = {
-			allowed={
-				has_government = neutrality
-			}
-			name="King Zog"
+		
 			
-			portraits={
-				civilian={
-					large="gfx/leaders/ALB/Portrait_Albania_King_Zog.dds"
-				}
-			}
-			country_leader={
-				ideology=despotism
-				expire="1965.1.1.1"
-				id=-1
+		name="King Zog"
+		
+		portraits={
+			civilian={
+				large="gfx/leaders/ALB/Portrait_Albania_King_Zog.dds"
 			}
 		}
-		instance = {
-			allowed={
-				has_government = monarchist
-			}
-			name="King Zog"
-			
-			portraits={
-				civilian={
-					large="gfx/leaders/ALB/Portrait_Albania_King_Zog.dds"
-				}
-			}
-			country_leader={
-				ideology = paternalism
-				expire="1965.1.1.1"
-				id=-1
-			}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
 		}
+	
+	
+		country_leader={
+			ideology = paternalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
 		
 		
 	}

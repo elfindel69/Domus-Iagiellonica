@@ -3,7 +3,7 @@ characters={
 		name="George II"
 		portraits={
 			civilian={
-				large="r56_portrait_GRE_George_II.dds"
+				large="gfx/leaders/GRE/r56_portrait_GRE_George_II.dds"
 			}
 		}
 		country_leader={
