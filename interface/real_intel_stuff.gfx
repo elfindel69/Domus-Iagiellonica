@@ -1,0 +1,28 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_rus"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_rus.dds"
+		noOfFrames = 2
+	}
+
+
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_rus_kgb"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_rus_kgb.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_rus_alternative"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_rus_alternative.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_rus_okhranka"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_rus_okhranka.dds"
+		noOfFrames = 2
+	}
+}

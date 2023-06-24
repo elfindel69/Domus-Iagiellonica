@@ -1,0 +1,137 @@
+technology_sharing_group = {
+
+	id = RUS_socialist_science_pool
+	name = socialist_science_pool_name
+	desc = socialist_science_pool_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = ENG
+        is_in_faction_with = RUS
+        ENG = { has_government = communism }
+        RUS = { has_government = communism }
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = HOL_RUS_research
+	name = HOL_RUS_research_name
+	desc = HOL_RUS_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = RUS
+        is_in_faction_with = HOL
+        RUS = { has_government = communism }
+        HOL = { has_government = communism }
+    }
+
+}	
+
+technology_sharing_group = {
+
+	id = spr_research
+	name = spr_research_name
+	desc = spr_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = RUS
+        RUS = { has_government = communism }
+    }
+}
+
+technology_sharing_group = {
+
+	id = BUL_improved_comintern_research
+	name = comintern_research_name
+	desc = comintern_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.15
+
+    available = {
+        is_in_faction_with = RUS
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = RUS_soviet_academies_of_sciences_joint_program
+	name = RUS_soviet_academies_of_sciences_joint_program_name
+	desc = RUS_soviet_academies_of_sciences_joint_program_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.15
+
+	categories = { industry electronics nuclear rocketry }
+
+	available = {
+		OR = {
+			original_tag = RUS
+			RUS_is_valid_academy_of_sciences_target = yes
+		}
+	}
+}
+
+technology_sharing_group = { #Alternative soviet Academy of Sciences for non commies
+
+	id = RUS_imperial_academies_of_sciences_joint_program
+	name = RUS_imperial_academies_of_sciences_joint_program_name
+	desc = RUS_imperial_academies_of_sciences_joint_program_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.15
+
+	categories = { industry electronics nuclear rocketry }
+
+	available = {
+		OR = {
+			original_tag = RUS
+			RUS_is_valid_academy_of_sciences_target = yes
+		}
+	}
+}
+
+technology_sharing_group = {
+
+	id = RUS_comecon
+	name = RUS_comecon_name
+	desc = RUS_comecon_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.2
+
+	available = {
+		OR = {
+			original_tag = RUS
+			is_subject_of = RUS
+		}
+	}
+}
+
+technology_sharing_group = { #Non-commie version of the COMECON
+
+	id = RUS_common_economic_space
+	name = RUS_common_economic_space_name
+	desc = RUS_common_economic_space_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.2
+
+	available = {
+		OR = {
+			original_tag = RUS
+			is_subject_of = RUS
+		}
+	}
+}

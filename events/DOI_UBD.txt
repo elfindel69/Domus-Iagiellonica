@@ -1,0 +1,97 @@
+﻿###########################
+# Shared Baltic Events
+###########################
+
+add_namespace = UBD_events
+
+# Baltic nation asks Britain for Guarantees
+country_event = {
+	id = UBD_events.1
+	title = UBD_events.1.t
+	desc = UBD_events.1.d
+	picture = GFX_report_event_sanation_left_victory
+	
+	is_triggered_only = yes
+
+	option = { #We will defend the Baltic
+		name = UBD_events.1.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 10
+				FROM = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = { is_in_faction = yes }
+			}
+		}
+		give_guarantee = FROM
+		hidden_effect = {
+			FROM = { country_event = { id = UBD_events.101 days = 5 } }
+		}
+	}
+
+	option = { #Absolutely not
+		name = UBD_events.1.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+				FROM = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+			}
+		}
+		reverse_add_opinion_modifier = {
+			target = FROM
+			modifier = refused_help
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = UBD_events.102 days = 5 } }
+		}
+	}
+}
+#Informed of choice
+country_event = {
+	id = UBD_events.101
+	title = UBD_events.101.t
+	desc = UBD_events.101.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+
+	option = { #Nice!
+		name = UBD_events.101.a
+		effect_tooltip = {
+			FROM = { give_guarantee = ROOT }
+		}
+	}
+}
+
+country_event = {
+	id = UBD_events.102
+	title = UBD_events.102.t
+	desc = UBD_events.102.d
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+
+	option = { #Not Nice!
+		name = UBD_events.102.a
+		effect_tooltip = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = refused_help
+			}
+		}
+	}
+}
+
+

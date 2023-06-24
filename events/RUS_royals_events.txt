@@ -1,0 +1,128 @@
+add_namespace = RUS_royals_events
+
+# The Fate of the Royal Family event
+country_event = {
+	id = RUS_royals_events.1
+	title = RUS_royals_events.1.t
+	desc = RUS_royals_events.1.d
+	picture = GFX_report_event_eng_royal_family
+
+	is_triggered_only = yes
+	
+	# Banish them to France
+	option = {
+		name = RUS_royals_events.1.a
+		ai_chance = {
+			factor = 75
+		}
+		add_timed_idea = { idea = RUS_confiscated_royal_wealth days = 365 }
+		
+		USA = {
+			country_event = { id = RUS_royals_events.2 }
+			effect_tooltip = {
+				add_ideas = RUS_exiled_royal_family
+			}
+		}
+	}
+
+	# Execute them all
+	option = {
+		name = RUS_royals_events.1.b
+		ai_chance = {
+			factor = 25
+		}
+		add_timed_idea = { idea = RUS_confiscated_royal_wealth days = 365 }
+		add_stability = -0.1
+		
+		hidden_effect = { news_event = { id = RUS_royals_news_events.2 days = 1 } }
+	}
+}
+
+# The Fate of the Royal Family event - notification event for exiled Royal Family for France
+country_event = {
+	id = RUS_royals_events.2
+	title = RUS_royals_events.2.t
+	desc = RUS_royals_events.2.d
+	picture = GFX_report_event_eng_royal_family
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = RUS_royals_events.2.a
+		add_ideas = RUS_exiled_royal_family
+		hidden_effect = { news_event = { id = RUS_royals_news_events.1 days = 1 } }
+	}
+}
+
+add_namespace = RUS_royals_news_events
+
+# RUS Fate of the Royal Family - Banished
+news_event = {
+	id = RUS_royals_news_events.1
+	title = RUS_royals_news_events.1.t
+	desc = RUS_royals_news_events.1.desc
+	picture = GFX_news_event_king_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RUS_royals_news_events.1.a
+		trigger = {
+			original_tag = RUS
+		}
+	}
+
+	option = {
+		name = RUS_royals_news_events.1.b
+		trigger = {
+			NOT = { original_tag = RUS }
+			NOT = { has_government = communism }
+		}
+	}
+
+	option = {
+		name = RUS_royals_news_events.1.c
+		trigger = { 
+			NOT = { original_tag = RUS }
+			has_government = communism
+		}
+	}
+}
+
+# RUS Fate of the Royal Family - 'Disappeared'
+news_event = {
+	id = RUS_royals_news_events.2
+	title = RUS_royals_news_events.2.t
+	desc = RUS_royals_news_events.2.desc
+	picture = GFX_news_event_journalists_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RUS_royals_news_events.2.a
+		trigger = {
+			original_tag = RUS
+		}
+	}
+
+	option = {
+		name = RUS_royals_news_events.2.b
+		trigger = {
+			NOT = { original_tag = RUS }
+			NOT = { has_government = communism }
+		}
+	}
+
+	option = {
+		name = RUS_royals_news_events.2.c
+		trigger = { 
+			NOT = { original_tag = RUS }
+			has_government = communism
+		}
+	}
+}

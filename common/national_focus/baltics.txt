@@ -1,0 +1,2698 @@
+focus_tree = {
+	id = baltic_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = UBD
+		}
+	}
+
+	initial_show_position = {
+		x = 0
+	}
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1000 }
+
+	#Economic Focuses
+	focus = {
+		id = UBD_improve_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		cost = 10
+
+		available = {
+			any_owned_state = {
+				is_core_of = ROOT
+				infrastructure < 5
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+				limit = { 
+					is_core_of = ROOT 
+					infrastructure < 5
+					}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			random_owned_state = {
+				limit = { 
+					is_core_of = ROOT 
+					infrastructure < 5
+					}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_construct_factories
+		icon =GFX_focus_generic_industry_3
+		x = 2
+		y = 0
+		cost = 10
+		
+		available = {
+			any_owned_state = {
+				is_core_of = ROOT 
+				free_building_slots = { #less than 24 unlocked slots
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = { 
+					is_core_of = ROOT 
+				}
+				add_extra_state_shared_building_slots = 2d
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+	focus = {
+		id = UBD_construct_military_factories
+		icon =GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = {focus = UBD_improve_infrastructure focus =UBD_construct_factories}
+		relative_position_id = UBD_construct_factories
+		available = {
+			any_owned_state = {
+				is_core_of = ROOT
+				free_building_slots = { #less than 24 unlocked slots
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = { 
+					is_core_of = ROOT 
+					
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+	focus = {
+		id = UBD_natural_resources
+		icon = GFX_goal_generic_oil_refinery
+		x = -2
+		y = 1
+		prerequisite = {focus = UBD_improve_infrastructure focus =UBD_construct_factories}
+		relative_position_id = UBD_construct_factories
+		
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			UBD = {
+				original_tag = UBD
+				owns_state = 190
+				owns_state = 13
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			if = {
+				limit = { original_tag = UBD }
+				190 = {
+					add_resource = {
+						type = steel
+						amount = 16
+					}
+				}
+			}
+			if = {
+				limit = { original_tag = UBD }
+				13 = {
+					add_resource = {
+						type = oil
+						amount = 8
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_domestic_motors
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = UBD_natural_resources focus = UBD_construct_military_factories }
+		x = -2
+		y = 1
+		relative_position_id = UBD_construct_military_factories
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_school_of_aviation
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = UBD_natural_resources focus = UBD_construct_military_factories }
+		x = 0
+		y = 1
+		relative_position_id = UBD_construct_military_factories
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = BALTIC_school_of_aviation_tech_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_equipment
+			}
+		}
+	}
+	
+ 	focus = {
+		id = UBD_original_designs
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = UBD_domestic_motors focus = UBD_school_of_aviation }
+		x = 1
+		y = 1
+		relative_position_id = UBD_domestic_motors
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = BALTIC_original_designs
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = BALTIC_original_designs
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = BALTIC_original_designs
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = UBD_rebuild_forts
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = UBD_original_designs }
+		x = 0
+		y = 1
+		relative_position_id = UBD_original_designs
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {	
+			AND = {
+				original_tag = UBD
+				controls_state = 13
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			
+			if = {
+				limit = { original_tag = UBD }
+				812 = {
+					add_building_construction = { type = bunker province = 3152 level = 2 instant_build = yes }
+					add_building_construction = { type = bunker province = 567 level = 2 instant_build = yes }
+					add_building_construction = { type = bunker province = 496 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 11426 level = 2 instant_build = yes }
+				}
+			}
+		}
+	}
+	focus = {
+		id = UBD_arm_the_nation
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = UBD_rebuild_forts }
+		x = -1
+		y = 1
+		relative_position_id = UBD_rebuild_forts
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		} 
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				prioritize = { 11 12 13 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				prioritize = { 814 808 811 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				prioritize = { 188 810 813 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_unchain_education
+		icon = GFX_focus_research
+		prerequisite = { focus = UBD_rebuild_forts }
+		x = 1
+		y = 1
+		relative_position_id = UBD_rebuild_forts
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			industrial_complex > 15
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Axis investments
+	focus = {
+		id = UBD_axis_investments
+		icon = GFX_focus_chi_mission_to_germany
+		dynamic = yes
+		mutually_exclusive = { focus = UBD_renew_allied_trade }
+		x = 7
+		y = 0
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = fascism
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = BALTIC_axis_investments_idea
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			if = {
+				limit = {
+					GER = {
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						is_faction_leader = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				GER = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					suitable_fascist_major_in_europe = yes 
+				}
+				random_other_country = {
+					limit = { 
+						is_major = yes
+						capital_scope = { is_on_continent = europe }
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						NOT = { has_war_with = ROOT }
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					JAP = {
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				JAP = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			else_if = {
+				limit = {suitable_fascist_major_in_europe = yes }
+				random_other_country = {
+					limit = { 
+						is_major = yes
+						capital_scope = { is_on_continent = europe }
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						NOT = { has_war_with = ROOT }
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_other_country = {
+						is_faction_leader = yes
+						has_government = fascism
+					}
+				}
+				get_best_alliance_match_fascism_effect = yes
+				var:best_leader = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_other_country ={
+						is_major = yes
+						has_government = fascism
+					}
+				}
+				random_other_country = {
+					limit = {
+						is_major = yes 
+						has_government = fascism 
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_german_war_economics
+		icon = GFX_goal_generic_production
+		dynamic = yes
+		prerequisite = { focus = UBD_axis_investments }
+		x = -1
+		y = 1
+		relative_position_id = UBD_axis_investments
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = fascism
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			upgrade_economy_law = yes
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_autobahn
+		icon = GFX_goal_reichsautobahn
+		prerequisite = { focus = BALTIC_german_war_economics }
+		prerequisite = { focus = BALTIC_german_tank_licences }
+		x = 0
+		y = 1
+		relative_position_id = UBD_german_war_economics
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = fascism
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_capital = no
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_eastwall
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = UBD_german_war_economics }
+		prerequisite = { focus = UBD_german_tank_licences }
+		x = -2
+		y = 1
+		relative_position_id = UBD_german_war_economics
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = fascism
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			if = {
+				limit = { tag = UBD }
+				if = {
+					limit = { controls_state = 191 }
+					191 = {
+						add_building_construction = {
+							type = bunker
+							province = 592
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							province = 9221
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = { controls_state = 813 }
+					813 = {
+						add_building_construction = {
+							type = bunker
+							province = 4640
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_balticwall
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = UBD_eastwall }
+		x = 0
+		y = 1
+		relative_position_id = UBD_eastwall
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = fascism
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			if = {
+				limit = { tag = UBD }
+				every_owned_state = {
+					limit = {
+						controller = { tag = ROOT }
+						OR = {
+							state = 811
+							state = 13
+							state = 812
+							state = 813
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			
+		}
+	}
+
+	focus = {
+		id = UBD_german_tank_licences
+		icon = GFX_goal_generic_army_tanks
+		dynamic = yes
+		prerequisite = { focus = UBD_axis_investments }
+		x = 1
+		y = 1
+		relative_position_id = UBD_axis_investments
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = fascism
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			if = {
+				limit = {
+					GER = {
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						is_faction_leader = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				GER = { 
+					give_fascist_tank_licences = yes
+				}
+			}
+			else_if = {
+				limit = {
+					suitable_fascist_major_in_europe = yes
+				}
+				random_other_country = {
+					limit ={
+						is_major = yes
+						capital_scope = { is_on_continent = europe }
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						NOT = { has_war_with = ROOT }
+					}
+					give_fascist_tank_licences = yes
+				}
+			}
+			else_if = { 
+				limit = {
+					JAP = {
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				JAP = {
+					give_fascist_tank_licences = yes
+				}
+			}
+			else = {
+				get_best_alliance_match_fascism_effect = yes
+				var:best_leader = {
+					give_fascist_tank_licences = yes
+				}
+			} 	
+		}
+	}
+
+	focus = {
+		id = UBD_german_baltic_industry
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = UBD_german_tank_licences }
+		prerequisite = { focus = UBD_german_war_economics }
+		x = 0
+		y = 1
+		relative_position_id = UBD_german_tank_licences
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = fascism
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BALTIC_axis_investments_idea
+				add_idea = BALTIC_axis_investments_idea_1
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_request_german_support
+		dynamic = yes
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = UBD_german_baltic_industry }
+		x = 0
+		y = 1
+		relative_position_id = UBD_german_baltic_industry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = fascism
+				is_faction_leader = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					GER = {
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						is_faction_leader = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				GER = { 
+					country_event = {
+						id = BALTIC_events.1
+						days = 10
+					}			
+				}
+			}
+			else_if = {
+				limit = {
+					suitable_fascist_major_in_europe = yes
+				}
+				random_other_country = {
+					limit ={
+						is_major = yes
+						capital_scope = { is_on_continent = europe }
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						NOT = { has_war_with = ROOT }
+					}
+					country_event = {
+						id = UBD_events.1
+						days = 10
+					}			
+				}
+			}
+			else_if = { 
+				limit = {
+					JAP = {
+						exists = yes
+						has_capitulated = no
+						has_government = fascism
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				JAP = {
+					country_event = {
+						id = UBD_events.1
+						days = 10
+					}
+				}
+			}
+			else = {
+				get_best_alliance_match_fascism_effect = yes
+				var:best_leader = {
+					country_event = {
+						id = UBD_events.1
+						days = 10
+					}			
+				}
+			}
+		}
+	}
+
+	#Allied investments
+	focus = {
+		id = UBD_renew_allied_trade
+		icon = GFX_focus_chi_british_cooperation
+		dynamic = yes
+		mutually_exclusive = { focus = UBD_axis_investments }
+		x = 11
+		y = 0
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = democratic
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = BALTIC_allied_investments_idea
+			## Checking for valid Democractic Countries to increase opinion
+			if = { #Checking for UK 
+				limit = {
+					ENG = { 
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						is_faction_leader = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				ENG = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			else_if = { # (Allied) Fallback to France 
+				limit = {
+					FRA = { 
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						is_faction_leader = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				FRA = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			else_if = { # (American) Fallback to USA
+				limit = {
+					USA = { 
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				USA = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			else_if = { # (European) Fallback to another European Democracy
+				limit = { suitable_democratic_major_in_europe = yes	}
+				random_other_country = {
+					limit = { 
+						is_major = yes
+						capital_scope = { is_on_continent = europe }
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						NOT = { has_war_with = ROOT }
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			else_if = { # (International) Fallback to any democratic faction leader. 
+				limit = {
+					any_other_country = {
+						is_faction_leader = yes
+						has_government = fascism
+					}
+				}
+				get_best_alliance_match_democratic_effect = yes
+				var:best_leader = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = BALTIC_investments
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = export_focus
+				}
+				swap_ideas = {
+					remove_idea = export_focus
+					add_idea = free_trade
+				}
+			}
+			if = {
+				limit = {
+					has_idea = limited_exports
+				}
+				swap_ideas = {
+					remove_idea = limited_exports
+					add_idea = free_trade
+				}
+			}
+			if = {
+				limit = {
+					has_idea = closed_economy
+				}
+				swap_ideas = {
+					remove_idea = closed_economy
+					add_idea = free_trade
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_ford_motors
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = UBD_renew_allied_trade }
+		x = -1
+		y = 1
+		relative_position_id = UBD_renew_allied_trade
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = democratic
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 1 }
+			if = {
+				limit = {
+					NOT = {
+						has_tech = motorised_infantry
+					}
+				}
+				add_tech_bonus = {
+					name = BALTIC_ford
+					bonus = 3.0
+					uses = 1
+					category = motorized_equipment
+				}
+			}
+			else = { #separate tech bonus to ensure trucks get the bonus, due to the way ahead of time reduction works
+				add_tech_bonus = {
+					name = BALTIC_ford
+					ahead_reduction = 2
+					bonus = 3.0
+					uses = 1
+					category = motorized_equipment
+				}
+			}
+			show_ideas_tooltip = BALTIC_ford
+		}
+	}
+
+	focus = {
+		id = UBD_crossley_motors
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = UBD_ford_motors focus = UBD_british_aircraft }
+		x = 0
+		y = 1
+		relative_position_id = UBD_ford_motors
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = democratic
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 2 }
+			add_offsite_building = { type = arms_factory level = 3 }
+		}
+	}
+
+	focus = {
+		id = UBD_british_designers
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = UBD_crossley_motors }
+		x = 0
+		y = 1
+		relative_position_id = UBD_crossley_motors
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ENG = {
+				exists = yes
+				has_capitulated = no
+				has_government = democratic
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }
+			show_ideas_tooltip = BALTIC_RAF
+			show_ideas_tooltip = BALTIC_RSAF_enfield
+			show_ideas_tooltip = BALTIC_royal_arsenal
+		}
+	}
+
+	focus = {
+		id = UBD_british_aircraft
+		icon = GFX_goal_generic_air_fighter
+		dynamic = yes
+		prerequisite = { focus = UBD_renew_allied_trade }
+		x = 1
+		y = 1
+		relative_position_id = UBD_renew_allied_trade
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = democratic
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			air_experience = 40
+			## Checking for valid Democractic Countries to get aircraft from
+			if = { #Checking for UK 
+				limit = {
+					ENG = { 
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						is_faction_leader = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				ENG = {
+					give_aircraft_and_licences = yes
+				}
+			}
+			else_if = { # (Allied) Fallback to France 
+				limit = {
+					FRA = { 
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						is_faction_leader = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				FRA = {
+					give_aircraft_and_licences = yes
+				}
+			}
+			else_if = { # (American) Fallback to USA
+				limit = {
+					USA = { 
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				USA = {
+					give_aircraft_and_licences = yes
+				}
+			}
+			else_if = { # (European) Fallback to another European Democracy
+				limit = { suitable_democratic_major_in_europe = yes	}
+				random_other_country = {
+					limit = { 
+						is_major = yes
+						capital_scope = { is_on_continent = europe }
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						NOT = { has_war_with = ROOT }
+					}
+					give_aircraft_and_licences = yes
+				}
+			}
+			else = { # (International) Fallback to any democratic faction leader. 
+				get_best_alliance_match_democratic_effect = yes
+				var:best_leader = {
+					give_aircraft_and_licences = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_allied_shipments
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = UBD_british_aircraft focus = UBD_ford_motors }
+		x = 0
+		y = 1
+		relative_position_id = UBD_british_aircraft
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = democratic
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			if = { #Checking for UK 
+				limit = {
+					ENG = { 
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						is_faction_leader = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				ENG = {
+					baltic_give_allied_equipment = yes
+				}
+			}
+			else_if = { # (Allied) Fallback to France 
+				limit = {
+					FRA = { 
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						is_faction_leader = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				FRA = {
+					baltic_give_allied_equipment = yes
+				}
+			}
+			else_if = { # (American) Fallback to USA
+				limit = {
+					USA = { 
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				USA = {
+					baltic_give_allied_equipment = yes
+				}
+			}
+			else_if = { # (European) Fallback to another European Democracy
+				limit = { suitable_democratic_major_in_europe = yes	}
+				random_other_country = {
+					limit = { 
+						is_major = yes
+						capital_scope = { is_on_continent = europe }
+						exists = yes
+						has_capitulated = no
+						has_government = democratic
+						NOT = { has_war_with = ROOT }
+					}
+					baltic_give_allied_equipment = yes
+				}
+			}
+			else = { # (International) Fallback to any democratic faction leader. 
+				get_best_alliance_match_democratic_effect = yes
+				var:best_leader = {
+					baltic_give_allied_equipment = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_baltic_fleet
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = UBD_allied_shipments }
+		x = 0
+		y = 1
+		relative_position_id = UBD_allied_shipments
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+			any_other_country = {
+				exists = yes
+				has_capitulated = no
+				has_government = democratic
+				is_major = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			navy_experience = 30
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			if = {
+				limit = { tag = UBD }
+				every_owned_state = {
+					limit = {
+						controller = { tag = ROOT }
+						OR = {
+							state = 811
+							state = 13
+							state = 812
+							state = 813
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Political Focuses
+	focus = {
+		id = UBD_open_political_sphere
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 20
+		y = 0
+		cost = 2
+		available = {
+			always = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = UBD_defend_the_monarchy
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = UBD_open_political_sphere }
+		mutually_exclusive =  {focus = UBD_open_the_country}
+		
+		x = -3
+		y = 1
+		relative_position_id = UBD_open_political_sphere
+		cost = 7
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_timed_idea = { 
+				idea = UBD_defend_the_monarchy 
+				days = 1095
+			 }
+		}
+
+	}
+
+	focus = {
+		id = UBD_rule_of_the_king
+		icon = GFX_focus_hun_elect_a_king #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = UBD_defend_the_monarchy }
+		mutually_exclusive = {focus= UBD_a_strong_hand}
+		x = -1
+		y = 1
+		relative_position_id = UBD_defend_the_monarchy
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = UBD_rule_of_the_king
+				days = 720
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_a_nation_and_a_king
+		icon = GFX_goal_generic_defence #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = UBD_rule_of_the_king }
+		x = 0
+		y = 1
+		relative_position_id =  UBD_rule_of_the_king
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = UBD_a_nation_and_a_king
+				days = 720
+			}
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}	
+
+	
+	focus = {
+		id = UBD_a_model_army
+		icon = GFX_goal_generic_military_sphere #GFX_goal_support_democracy
+		prerequisite = { focus = UBD_a_nation_and_a_king}
+		
+		x = 0
+		y = 1
+		relative_position_id =  UBD_a_nation_and_a_king
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+				
+			add_ideas = strong_army_focus
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+	focus = {
+		id = UBD_kings_guard
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = UBD_a_model_army }
+		relative_position_id = UBD_a_model_army
+
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		
+		
+		bypass = {
+			has_capitulated = yes
+		}
+
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			add_ideas = UBD_royal_guard
+			division_template = {
+				name = "King's Guard"
+				priority = 2
+				division_names_group = POL_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+		
+					infantry = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 812 } #Krakow
+				create_unit = {
+					division = "name = \"King's Guard\" division_template = \"King's Guard\" start_experience_factor = 1.0" 
+					owner = UBD
+				}
+				create_unit = {
+					division = "name = \"King's Guard\" division_template = \"King's Guard\" start_experience_factor = 1.0" 
+					owner = UBD
+				}
+			}
+		}
+	}
+	focus = {
+		id = UBD_royal_officer_corps
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = UBD_kings_guard }
+		relative_position_id = UBD_kings_guard
+
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		
+		
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			add_ideas = UBD_royal_officer_corps
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = UBD_talinn_academy_of_science
+		icon = GFX_focus_research
+		prerequisite = { focus = UBD_royal_officer_corps }
+		x = 0
+		y = 1
+		relative_position_id = UBD_royal_officer_corps
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = UBD_a_strong_hand
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = UBD_defend_the_monarchy }
+		mutually_exclusive = {focus= UBD_rule_of_the_king}
+		x = 1
+		y = 1
+		relative_position_id = UBD_defend_the_monarchy
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea =UBD_a_strong_hand
+				days = 720
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_a_new_government
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = UBD_a_strong_hand }
+		
+		x = 0
+		y = 1
+		relative_position_id = UBD_a_strong_hand
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.20
+			}
+		}
+	}
+	focus = {
+		id = UBD_a_new_ruler
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = UBD_a_new_government }
+		
+		x = 0
+		y = 1
+		relative_position_id = UBD_a_new_government
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_a_strong_army
+		icon = GFX_goal_generic_military_sphere #GFX_goal_support_democracy
+		prerequisite = { focus = UBD_a_new_ruler}
+		
+		x = 0
+		y = 1
+		relative_position_id =  UBD_a_new_ruler
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}			
+			add_ideas = strong_army_focus
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+	focus = {
+		id = UBD_open_the_country
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = UBD_open_political_sphere  }
+		mutually_exclusive = { focus = UBD_defend_the_monarchy }
+
+		x = 8
+		y = 1
+		relative_position_id = UBD_open_political_sphere
+		cost = 10
+
+		ai_will_do = {
+			factor = 2.5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = UBD_internationalism_focus
+			#Some sort of Relations boost modifier
+		}
+	}
+
+	focus = {
+		id = UBD_go_left
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = UBD_open_the_country}
+		
+		mutually_exclusive = { focus = UBD_go_right focus = UBD_liberalism}
+
+		x = -4
+		y = 1
+		relative_position_id = UBD_open_the_country
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = UBD_communist_influence
+				days = 720
+			}
+			#Increases Communist Support
+		}
+	}
+
+	focus = {
+		id = UBD_political_commissars
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = UBD_go_left }
+
+		x = 0
+		y = 1
+		relative_position_id = UBD_go_left
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = political_commissars_focus
+			#as per generic focus
+		}
+	}
+	
+	focus = {
+		id = UBD_a_communist_rule
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = UBD_political_commissars }
+
+		x = 0
+		y = 1
+		relative_position_id = UBD_political_commissars
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = POL_communist_government
+				days = 720
+			}
+		}
+	}
+	focus = {
+		id = UBD_workers_state
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = UBD_a_communist_rule }
+		
+		available = {
+			NOT = {has_government = communism}
+			communism > 0.4
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = UBD_a_communist_rule
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_the_fate_of_the_royal_family
+		prerequisite = { focus = UBD_workers_state }
+		available = {
+			has_government = communism
+		}
+		icon = GFX_focus_rom_abdicate
+		x = 0
+		y = 1
+		relative_position_id = UBD_workers_state
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		completion_reward = {
+			add_political_power = 60
+			country_event = { id = UBD_royals_events.1 }
+		}
+	}
+
+	focus = {
+		id = UBD_go_right
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = UBD_open_the_country }
+		mutually_exclusive = { focus = UBD_go_left focus = UBD_liberalism}
+
+		x = 0
+		y = 1
+		relative_position_id = UBD_open_the_country
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = UBD_fascist_influence
+				days = 720
+			}
+			#Increases Fascist Support
+		}
+	}
+
+	focus = {
+		id = UBD_military_youth
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = UBD_go_right }
+
+		x = 0
+		y = 1
+		relative_position_id = UBD_go_right
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = military_youth_focus
+			#As per generic
+		}
+	}
+	
+	focus = {
+		id = UBD_a_new_rule
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = UBD_military_youth }
+
+		x = 0
+		y = 1
+		relative_position_id = UBD_military_youth
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = UBD_fascist_government
+				days = 720
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_handle_the_king
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = UBD_a_new_rule }
+		
+		available = {
+			NOT = {has_government = fascism}
+			fascism > 0.4
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = UBD_a_new_rule
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			# if = {
+			# 	limit = {
+			# 		NOT = {has_idea = POL_jan_v}
+			# 	}
+			# 	add_ideas = POL_jan_v
+			# } 
+		}
+	}
+
+	focus = {
+		id = UBD_approach_german_leadership
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = UBD_handle_the_king }
+		x=0
+		y=1
+		relative_position_id = UBD_handle_the_king
+		cost = 7
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = UBD_approach_germany
+				days = 720
+			}
+			GER = {
+				add_timed_idea = {
+					idea = approach_fascist_leadership
+					days = 720
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_approach_italian_leadership
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = UBD_approach_german_leadership }
+		x=0
+		y=1
+		relative_position_id = UBD_approach_german_leadership
+		cost = 7
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = UBD_approach_italy
+				days = 720
+			}
+			ITA = {
+				add_timed_idea = {
+					idea = approach_fascist_leadership
+					days = 720
+				}
+			}
+		}
+	}
+	focus= {
+		id = UBD_secret_weapons
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = UBD_approach_italian_leadership }
+		x=0
+		y=1
+		relative_position_id = UBD_approach_italian_leadership
+		cost = 7
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = no
+		completion_reward= {
+			add_ideas = secret_weapons_focus
+			add_tech_bonus = {
+				name = UBD_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = UBD_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_for_the_motherland
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = UBD_secret_weapons }
+		x=0
+		y=1
+		relative_position_id = UBD_secret_weapons
+		cost = 7
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_timed_idea = {
+				idea = UBD_for_the_motherland
+				days = 720
+			}
+		}
+	}
+
+	focus = {
+		id = UBD_liberalism
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = UBD_open_the_country }
+		mutually_exclusive = { 
+		focus = UBD_go_left
+		focus = UBD_go_right
+		}
+
+		x = 3
+		y = 1
+		relative_position_id = UBD_open_the_country
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = democratic_influence
+				days = 720
+			}
+			#Increase in Democratic Support
+		}
+	}
+	focus = {
+		id = UBD_constitutional_monarchy
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = UBD_liberalism }
+		
+		available = {
+			NOT = {has_government = democratic}
+			democratic > 0.4
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = UBD_liberalism
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			# if = {
+			# 	limit = {
+			# 		NOT = {has_idea = POL_jan_v}
+			# 	}
+			# 	add_ideas = POL_jan_v
+			# } 
+			
+		}
+	}
+	focus = {
+		id = UBD_intervention_focus
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = UBD_constitutional_monarchy }
+		available = {
+			has_government = democratic
+		}
+		x = -1
+		y = 1
+		relative_position_id = UBD_constitutional_monarchy
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+			add_political_power = 150
+			#As per generic
+		}
+	}
+
+	focus = {
+		id = UBD_volunteer_corps
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = UBD_intervention_focus }
+
+		x = 0
+		y = 1
+		relative_position_id = UBD_intervention_focus
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = volunteer_corps_focus
+			#As Per Generic Tree
+		}
+	}
+	focus = {
+		id = UBD_the_silent_majority
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = UBD_constitutional_monarchy }
+		x = 1
+		y = 1
+		relative_position_id = UBD_constitutional_monarchy
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+        }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_popularity = { 
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = UBD_establishing_diplomatic_relations_with_USA
+		icon = GFX_focus_chi_mission_to_the_us
+		prerequisite = { focus = UBD_the_silent_majority }
+		x = 0
+		y = 1
+		relative_position_id = UBD_the_silent_majority
+		cost = 8
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+        }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = established_embassy
+				}
+		}
+	}
+
+	
+	focus = {
+		id = UBD_national_research_funds
+		icon = GFX_focus_research
+		prerequisite = { 
+			focus = UBD_volunteer_corps
+			focus = UBD_establishing_diplomatic_relations_with_USA
+		}
+		available = {
+			if = {
+				limit = { amount_research_slots > 3 }
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = UBD_volunteer_corps
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+}
