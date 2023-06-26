@@ -1845,34 +1845,10 @@ focus_tree = {
 		}
 	}
 
+	
+
 	focus = {
 		id = RUS_transformation_of_nature
-
-		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = RUS_fourth_five_year_plan }
-		prerequisite = { focus = RUS_national_academies_of_sciences }
-		x = 2
-		y = 0
-		relative_position_id = RUS_no_time_for_peace
-		cost = 10
-
-		allow_branch = {
-			has_government = communism
-		}
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			add_ideas = RUS_transformation_of_nature
-		}
-	}
-
-	focus = {
-		id = RUS_transformation_of_nature_alt
 
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = RUS_fourth_five_year_plan }
@@ -1881,10 +1857,6 @@ focus_tree = {
 		y = 0
 		relative_position_id = RUS_no_time_for_peace
 		cost = 10
-
-		allow_branch = {
-			NOT = { has_government = communism }
-		}
 
 		available = {
 
