@@ -743,8 +743,8 @@ RUS_focus_select_effect_tt:0 "Immediate effect upon focus start:"
 
  RUS_found_the_comecon_subjects_tt:0 "\nEvery [ROOT.GetAdjective] subject:\n"
  RUS_found_the_comecon_program_tt:0 "\n§Y[ROOT.GetFlag][ROOT.GetNameDefCap]§! and §Yevery [ROOT.GetAdjective] subject§! join §Y[GetComeconName]§!\n\n"
- RUS_comecon_communist_name:0 "$RUS_comecon_name$"
- RUS_comecon_alt_name:0 "$RUS_common_economic_space_name$"
+ RUS_comecon_communist_name:0 "$SOV_comecon_name$"
+ RUS_comecon_alt_name:0 "$SOV_common_economic_space_name$"
 
  empty_line:0 "\n"
  double_empty_line:0 "\n\n"

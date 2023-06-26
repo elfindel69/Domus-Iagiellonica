@@ -122,8 +122,8 @@
  RUS_third_five_year_plan_civilian_dynamic_modifier_alt:0 "$RUS_third_five_year_plan_dynamic_modifier_alt$"
  RUS_third_five_year_plan_military_dynamic_modifier_alt:0 "$RUS_third_five_year_plan_dynamic_modifier_alt$"
  RUS_fourth_five_year_plan_dynamic_modifier_alt:0 "$RUS_third_five_year_plan_dynamic_modifier_alt$"
- RUS_second_five_year_plan_fake_1936_ns_desc:0 "$RUS_finish_the_five_year_plan_desc_default$"
- RUS_second_five_year_plan_fake_1939_ns_desc:0 "$RUS_third_five_year_plan_desc_default$"
+ RUS_second_five_year_plan_fake_1936_ns_desc:0 "$SOV_finish_the_five_year_plan_desc_default$"
+ RUS_second_five_year_plan_fake_1939_ns_desc:0 "$SOV_third_five_year_plan_desc_default$"
 
  RUS_ussr_academy_of_sciences_dynamic_modifier:0 "USSR Academy of Sciences"
  RUS_ussr_academy_of_sciences_dynamic_modifier_alt:0 "Imperial Academy of Sciences"
@@ -211,7 +211,7 @@
 
  RUS_planned_economy_dynamic_modifier:0 "Planned Economy"
 
- RUS_grigory_semyonov_man_tt:1 "§Y[RUS.GetName]§! has not completed focus §Y$RUS_approach_semyonov$§!\nThe §Y[GetSovietCivilWarName]§! has not started.\n§Y$RUS_grigory_semyonov$§! also becomes available as a §YGeneral§! when hired as an Advisor."
+ RUS_grigory_semyonov_man_tt:1 "§Y[RUS.GetName]§! has not completed focus §Y$SOV_approach_semyonov$§!\nThe §Y[GetSovietCivilWarName]§! has not started.\n§Y$RUS_grigory_semyonov$§! also becomes available as a §YGeneral§! when hired as an Advisor."
 
  RUS_exiled_flag:0 "Is currently in exile (§Gcharacters cannot be purged while in exile§!)"
  RUS_imprisoned_flag:0 "Is currently in prison (§Rcharacters can be purged while in prison§!)"
