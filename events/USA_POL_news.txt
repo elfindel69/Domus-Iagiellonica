@@ -1,0 +1,48 @@
+add_namespace = USA_POL_news
+
+#USA Seeks Reconciliation With Poland
+news_event = {
+	id = USA_POL_news.1
+	title = USA_POL_news.1.t
+	desc = USA_POL_news.1.d
+	picture = GFX_news_event_polish_army
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				tag = USA
+				tag = POL
+			}
+		}
+	}
+
+	option = {
+		name = USA_POL_news.1.a
+		trigger = {
+			is_in_faction_with = USA
+		}
+	}
+
+	option = {
+		name = USA_POL_news.1.b
+		trigger = {
+			has_war_with = USA
+		}
+	}
+
+	option = {
+		name = USA_POL_news.1.c
+		trigger = {
+			NOT = {
+				OR = {
+					is_in_faction_with = USA
+					has_war_with = USA
+				}
+			}
+		}
+	}
+}

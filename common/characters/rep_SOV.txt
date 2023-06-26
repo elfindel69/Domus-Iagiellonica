@@ -1,0 +1,60 @@
+# Aleksandra Kollontay has an unsed portrait
+# Viktor Baydalakov has an unused portrait
+
+characters = {
+
+	rep_SOV_tsar_michail_II = {
+		name =  "Michail II Romanov"
+		portraits = { 
+			civilian = {
+				large = "GFX_portrait_SOV_vladimir_kirillovich"
+			}
+		}	
+		country_leader={
+			ideology=paternalism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				emperor_and_autocrat_of_all_the_russias
+				imperial_connections
+			}
+		}
+	}
+ 
+	# Kerensky and Rodzaevsky moved to the bottom of the file
+
+	rep_SOV_tsar_vladimir_kirillovich = {
+		name =  SOV_tsar_vladimir_kirillovich
+		portraits = { civilian = {
+			large = "GFX_portrait_SOV_vladimir_kirillovich"
+			}
+		}
+		country_leader={
+			ideology=paternalism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				emperor_and_autocrat_of_all_the_russias
+			}
+		}	
+	}
+
+	rep_SOV_tsar_vsevolod_ivanovich = {
+		name =  SOV_tsar_vsevolod_ivanovich
+		
+		portraits = { 
+			civilian = {
+				large = "GFX_portrait_SOV_vsevolod_ivanovich"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+			
+		}
+	}
+	 
+
+	
+}
