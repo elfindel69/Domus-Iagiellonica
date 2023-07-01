@@ -57,8 +57,8 @@
  RUS_no_time_for_peace_idea:0 "No Time for Peace"
  RUS_no_time_for_peace_idea_desc:1 "$RUS_no_time_for_peace_desc$"
 
- RUS_support_in_china_generic:1 "[SOU.GetAdjective] Support in China"
- RUS_support_in_china_generic_desc:1 "The [SOU.GetAdjective] government is supporting [ROOT.GetNameDef] in our war against the [JAP.GetAdjective], expecting to develop closer ties with us while also influencing our politics."
+ RUS_support_in_china_generic:1 "[RUS.GetAdjective] Support in China"
+ RUS_support_in_china_generic_desc:1 "The [RUS.GetAdjective] government is supporting [ROOT.GetNameDef] in our war against the [JAP.GetAdjective], expecting to develop closer ties with us while also influencing our politics."
  RUS_preparations_for_soviet_japanese_war:0 "Preparations for Soviet-Japanese War"
  RUS_preparations_for_soviet_japanese_war_desc:1 "$RUS_prepare_a_war_with_japan_desc$"
  RUS_soviet_japanese_reckoning:0 "Soviet-Japanese Reckoning"
@@ -93,7 +93,7 @@
  RUS_popular_speeches_poum:0 "Popular Speeches"
  RUS_popular_speeches_poum_desc:0 "With the help of local organizations and influential members of the anti-Stalinist opposition abroad, we are conducting a large information and agitation campaign in our controlled territories to rekindle the flame of revolution among the masses."
  RUS_agents_in_the_stalinist_command_poum:0 "Agents in the Stalinist Command"
- RUS_agents_in_the_stalinist_command_poum_desc:0 "The Soviet Right Opposition managed to infiltrate several agents among the latest batch of military advisers sent to the Spanish Republic by [SOU.GetLeader]. These agents have created a network of informants that allow us to learn about the enemy plans before they are carried out."
+ RUS_agents_in_the_stalinist_command_poum_desc:0 "The Soviet Right Opposition managed to infiltrate several agents among the latest batch of military advisers sent to the Spanish Republic by [RUS.GetLeader]. These agents have created a network of informants that allow us to learn about the enemy plans before they are carried out."
  RUS_polish_deal:0 "Polish Deal"
  RUS_polish_deal_desc:0 "The [RUS.GetAdjective] have made a deal with the Polish government to allow us to station troops in their territory. This will allow us to better defend our borders against the German threat."
  RUS_baltic_deal:0 "Baltic Deal"
@@ -122,8 +122,8 @@
  RUS_third_five_year_plan_civilian_dynamic_modifier_alt:0 "$RUS_third_five_year_plan_dynamic_modifier_alt$"
  RUS_third_five_year_plan_military_dynamic_modifier_alt:0 "$RUS_third_five_year_plan_dynamic_modifier_alt$"
  RUS_fourth_five_year_plan_dynamic_modifier_alt:0 "$RUS_third_five_year_plan_dynamic_modifier_alt$"
- RUS_second_five_year_plan_fake_1936_ns_desc:0 "$RUS_finish_the_five_year_plan_desc_default$"
- RUS_second_five_year_plan_fake_1939_ns_desc:0 "$RUS_third_five_year_plan_desc_default$"
+ RUS_second_five_year_plan_fake_1936_ns_desc:0 "$SOV_finish_the_five_year_plan_desc_default$"
+ RUS_second_five_year_plan_fake_1939_ns_desc:0 "$SOV_third_five_year_plan_desc_default$"
 
  RUS_ussr_academy_of_sciences_dynamic_modifier:0 "USSR Academy of Sciences"
  RUS_ussr_academy_of_sciences_dynamic_modifier_alt:0 "Imperial Academy of Sciences"
@@ -164,7 +164,7 @@
  RUS_common_economic_space_sov_default_desc:0 "$RUS_comecon_sov_default_desc$"
 
  RUS_soviet_german_trade_agreement:0 "Soviet-German Trade Agreement"
- RUS_soviet_german_trade_agreement_desc:1 "As agreed in our trade pact with [SOU.GetNameDef], they are sending us raw materials such as grain, cotton, oil, metal ores and rubber."
+ RUS_soviet_german_trade_agreement_desc:1 "As agreed in our trade pact with [RUS.GetNameDef], they are sending us raw materials such as grain, cotton, oil, metal ores and rubber."
  RUS_soviet_imports:0 "Soviet Imports"
 
  RUS_development_of_eastern_allies_tt:0 "This National Spirit will be removed upon completion of the focus '§YDevelopment Aid for Eastern Allies§!'"
@@ -211,7 +211,7 @@
 
  RUS_planned_economy_dynamic_modifier:0 "Planned Economy"
 
- RUS_grigory_semyonov_man_tt:1 "§Y[RUS.GetName]§! has not completed focus §Y$RUS_approach_semyonov$§!\nThe §Y[GetSovietCivilWarName]§! has not started.\n§Y$RUS_grigory_semyonov$§! also becomes available as a §YGeneral§! when hired as an Advisor."
+ RUS_grigory_semyonov_man_tt:1 "§Y[RUS.GetName]§! has not completed focus §Y$SOV_approach_semyonov$§!\nThe §Y[GetSovietCivilWarName]§! has not started.\n§Y$SOV_grigory_semyonov$§! also becomes available as a §YGeneral§! when hired as an Advisor."
 
  RUS_exiled_flag:0 "Is currently in exile (§Gcharacters cannot be purged while in exile§!)"
  RUS_imprisoned_flag:0 "Is currently in prison (§Rcharacters can be purged while in prison§!)"
