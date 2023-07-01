@@ -211,7 +211,7 @@
 
  RUS_planned_economy_dynamic_modifier:0 "Planned Economy"
 
- RUS_grigory_semyonov_man_tt:1 "§Y[RUS.GetName]§! has not completed focus §Y$SOV_approach_semyonov$§!\nThe §Y[GetSovietCivilWarName]§! has not started.\n§Y$RUS_grigory_semyonov$§! also becomes available as a §YGeneral§! when hired as an Advisor."
+ RUS_grigory_semyonov_man_tt:1 "§Y[RUS.GetName]§! has not completed focus §Y$SOV_approach_semyonov$§!\nThe §Y[GetSovietCivilWarName]§! has not started.\n§Y$SOV_grigory_semyonov$§! also becomes available as a §YGeneral§! when hired as an Advisor."
 
  RUS_exiled_flag:0 "Is currently in exile (§Gcharacters cannot be purged while in exile§!)"
  RUS_imprisoned_flag:0 "Is currently in prison (§Rcharacters can be purged while in prison§!)"
