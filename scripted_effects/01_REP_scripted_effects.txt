@@ -1,8 +1,0 @@
-remove_neutrality_spirits_effect = {
-
-}
-
-remove_monarchist_spirits_effect = {
-
-}
-
