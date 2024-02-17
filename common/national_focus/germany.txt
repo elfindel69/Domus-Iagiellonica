@@ -2556,7 +2556,7 @@ focus_tree = {
 				is_in_faction_with = GER
 			}
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_mol_rib_pact
 		cost = 10
@@ -2609,7 +2609,7 @@ focus_tree = {
 			country_exists = TUR
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_soviet_ally
 		cost = 10
 		ai_will_do = {
@@ -4420,8 +4420,8 @@ focus_tree = {
 		x = 37
 		y = 1
 		offset = {
-			x = -15
-			y = -1
+			x = -13
+			y = 0
 			trigger = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -4432,7 +4432,7 @@ focus_tree = {
 		}
 		offset = {
 			x = -13
-			y = -1
+			y = 0
 			trigger = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -5728,7 +5728,7 @@ focus_tree = {
 			focus = GER_rhineland
 		}
 		cost = 1.00
-		x = 42
+		x = 45
 		y = 0
 		offset = {
 			x = -10
@@ -5780,6 +5780,7 @@ focus_tree = {
 					}
 				}
 				NOT = {
+					has_completed_focus = GER_rhineland
 					OR={
 						has_completed_focus = GER_a_new_constitution
 						has_completed_focus = GER_relegalize_communism
@@ -5801,7 +5802,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -11
+			x = 3
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -7500,7 +7501,8 @@ focus_tree = {
 					OR={
 						has_completed_focus = GER_long_live_the_kaiserreich
 						has_completed_focus = GER_relegalize_communism
-					}	
+					}
+					has_completed_focus = GER_rhineland	
 				}
 			}
 		}
@@ -7509,7 +7511,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_political_sphere
 		offset = {
-			x = -13
+			x = -15
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -8814,7 +8816,7 @@ focus_tree = {
 		x = 22
 		y = 1
 		offset = {
-			x = -52
+			x = -22
 			y = 0
 			trigger = {
 				has_game_rule = {

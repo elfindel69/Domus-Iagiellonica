@@ -2,6 +2,19 @@
 
 oob = "PRU_1936"
 if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "PRU_1936_air_bba"
+	else = {
+		set_air_oob = "PRU_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
+if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "PRU_1936_naval_mtg"
 	else = {
@@ -9,20 +22,12 @@ if = {
 	}
 }
 
-set_research_slots = 3
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	motorised_infantry = 1
+	tech_trucks = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
-	early_fighter = 1
-	cv_early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -46,13 +51,42 @@ if = {
 	}
 }
 
+recruit_character = PRU_Óscar_benavides
+recruit_character = PRU_sebastián_lynch
+recruit_character = PRU_hilarión_lynch
+recruit_character = PRU_santiago_ruíztagle
+recruit_character = PRU_rafael_escardo
+recruit_character = PRU_alberto_lopez_flores
+recruit_character = PRU_oscar_gilardi
+recruit_character = PRU_felipe_tudela
+recruit_character = PRU_eduardo_cantabria_gomez
+recruit_character = PRU_ernesto_scroth
+recruit_character = PRU_luis_ramirez_ortiz
+recruit_character = PRU_oscar_benavides_larrea
+recruit_character = PRU_manuel_odria_amoretti
+recruit_character = PRU_luis_navarrete
+recruit_character = PRU_paul_de_beaudiez
+recruit_character = PRU_alberto_roque_saldias
+recruit_character = PRU_vladimiro_lopez_trigoso
+recruit_character = PRU_eloy_g_ureta
+recruit_character = PRU_fernando_m_quesada_blanco
+recruit_character = PRU_eduardo_montero_rojas
+recruit_character = PRU_romulo_frias
+recruit_character = PRU_oscar_miro_quesada
+recruit_character = PRU_jose_bustamante_y_rivero
+recruit_character = PRU_armando_reveredo_iglesias
+recruit_character = PRU_reynaldo_vinatea
+
+
 set_country_flag = monroe_doctrine
 
 set_convoys = 5
 
+
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -73,9 +107,18 @@ set_convoys = 5
 			set_naval_oob = "PRU_1939_naval_legacy"
 		}
 	}
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "PRU_1939_air_bba"
+		else = {
+			set_air_oob = "PRU_1939_air_legacy"
+			set_technology = {
+				tactical_bomber1 = 1
+			}
+		}
+	}
 
 	set_technology = {
-		tactical_bomber1 = 1
 		interwar_artillery = 1
 		infantry_weapons1 = 1
 		infantry_weapons2 = 1
@@ -120,60 +163,7 @@ set_popularities = {
 	monarchist = 3
 }
 
-create_country_leader = {
-	name = "Óscar Benavides"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "GFX_Portrait_peru_oscar_benavides"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Bernardo Echenique"
-	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Santiago Toro"
-	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_4.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Juan Fernández"
-	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
-	picture = "GFX_Portrait_columbia_alfonso_lopez"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Daniel Correa"
-	desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = monarchism
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Francisco Chukiwanka Ayulo"
@@ -186,72 +176,11 @@ create_country_leader = {
 }
 
 1939.1.1 = {
-	create_country_leader = {
-		name = "Manuel Prado Ugarteche"
-		desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = fascism_ideology
-		traits = {
-			#
-		}
-	}
+	recruit_character = PRU_manuel_prado_ugarteche
+	promote_character = PRU_manuel_prado_ugarteche
+	retire_character = PRU_Óscar_benavides
 }
 
-create_field_marshal = {
-	name = "Nicolás Nores"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5"
-	traits = {  offensive_doctrine }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Daniel Freixa"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = {  trickster urban_assault_specialist }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Emiliano Cadaval"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	traits = {  trickster urban_assault_specialist }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Ignacio Noboa"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	traits = {  trickster urban_assault_specialist }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_navy_leader = {
-	name = "Joaquin Aguinaldo"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-	traits = { old_guard_navy bold}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
 
 ### VARIANTS ###
 # 1936 Start #
@@ -309,3 +238,4 @@ if = {
 		}
 	}
 }
+

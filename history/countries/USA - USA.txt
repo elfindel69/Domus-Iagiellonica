@@ -24,6 +24,7 @@ if = {
 			aa_lmg = 1
 			early_bombs = 1
 			aircraft_construction = 1
+			air_torpedoe_1 = 1
 		}
 	else = {
 		set_air_oob = "USA_1936_air_legacy"
@@ -43,22 +44,23 @@ set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
 add_command_power = 20
-set_variable = { var = senators_support value = 58 }
+set_variable = { var = senators_support value = 48 }
 set_variable = { var = senators_total value = 96 }
-set_variable = { var = representatives_support value = 289 }
+set_variable = { var = representatives_support value = 218 }
 set_variable = { var = representatives_total value = 435 }
-set_variable = { var = senate_quorum_low value = 39 }
-set_variable = { var = senate_quorum_medium value = 49 }
-set_variable = { var = senate_quorum_high value = 58 }
-set_variable = { var = house_quorum_low value = 174 }
-set_variable = { var = house_quorum_medium value = 218 }
-set_variable = { var = house_quorum_high value = 262 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
 USA_recalc_congress_icon_frames = yes
-
+USA = {
+	country_event = { id = usa.50 days = 2 }
+	country_event = { id = usa.51 days = 2 }
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	tech_trucks = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -71,6 +73,7 @@ set_technology = {
 	fuel_refining = 1
 	marines = 1
 	basic_train = 1
+	engine_tech_1 = 1
 }
 
 if = {
@@ -162,6 +165,7 @@ give_guarantee = PAR
 give_guarantee = ARG
 give_guarantee = URG
 
+
 1939.1.1 = {
 
 	add_political_power = 1199
@@ -219,6 +223,7 @@ give_guarantee = URG
 				basic_large_airframe = 1
 				improved_small_airframe = 1
 				aa_hmg = 1
+				air_torpedoe_1 = 1
 			}
 		else = {
 			set_air_oob = "USA_1939_air_legacy"
@@ -303,7 +308,7 @@ give_guarantee = URG
 
 
 
-set_convoys = 500
+set_convoys = 700
 
 
 set_politics = {
@@ -328,6 +333,7 @@ add_ideas = {
 	free_trade
 	home_of_the_free
 }
+
 
 # DIPLOMACY
 set_autonomy = {
@@ -426,6 +432,8 @@ if = {
 		nationalities = { USA }
 	}
 }
+
+
 
 
 ### VARIANTS ###
@@ -571,7 +579,7 @@ if = {
 		name = "A-12" #
 		type = small_plane_cas_airframe_0
 		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
+			fixed_main_weapon_slot = bomb_locks
 			fixed_auxiliary_weapon_slot_1 = light_mg_4x
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
@@ -661,6 +669,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+			fixed_auxiliary_weapon_slot_2 = torpedo_mounting
 			engine_type_slot = engine_2_2x
 			special_type_slot_1 = flying_boat_medium
 			special_type_slot_2 = lmg_defense_turret
@@ -711,7 +720,7 @@ if = {
 		}
 		icon = "GFX_USA_basic_light_tank_medium"
 	}
-	create_equipment_variant = {
+	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
 		name = "M2A2"
 		type = light_tank_chassis_1
 		parent_version = 1
@@ -726,7 +735,7 @@ if = {
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade = 2
-			tank_nsb_engine_upgrade = 5
+			tank_nsb_engine_upgrade = 4
 		}
 		icon = "GFX_USA_basic_light_tank_medium"
 	}

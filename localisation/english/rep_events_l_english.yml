@@ -210,7 +210,7 @@
  UBD_royals_news_events.2.c:0 "They got their due."
 
  UBD_events.1.a:0 "We will defend our [From.GetAdjective] friends."
- UBD_events.1.b:0 "We do not support [From.GetLeader] or [From.GetLeader.GetHerHis] government."
+ UBD_events.1.b:0 "We do not support [From.GetLeader] or [From.GetHerHis] government."
  UBD_events.101.t:0 "[From.GetNameDefCap] Accepts!"
  UBD_events.101.d:0 "[From.GetLeader] has announced [From.GetHerHis] support for continued [Root.GetAdjective] independence and will join any conflicts which threaten the continued existence of [Root.GetNameDef]."
  UBD_events.101.a:0 "We are safe."

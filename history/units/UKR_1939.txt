@@ -19,7 +19,7 @@
 }
 division_template = {
 	name = "Hirska pikhotna dyviziya"			# 21st, 22nd Infantry Divisions
-	division_names_group =UKR_MNT_01
+	division_names_group =UKR_MTN_01
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -68,7 +68,7 @@ division_template = {
 }
 division_template = {
 	name = "Bronʹovana hrupa"				# represents reserve armor assets (FT-17s and some R-35s)
-	division_names_group = UKR_ARM_01
+	division_names_group = UKR_UKR_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
