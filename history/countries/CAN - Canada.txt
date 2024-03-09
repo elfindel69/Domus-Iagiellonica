@@ -40,6 +40,7 @@ set_country_flag = monroe_doctrine
 set_stability = 0.8
 set_war_support = 0.1
 
+recruit_character = CAN_arthur_of_connaught
 recruit_character = CAN_mackenzie_king
 recruit_character = CAN_adrien_arcand
 recruit_character = CAN_tim_buck
@@ -80,6 +81,12 @@ recruit_character = CAN_leo_richer_lafleche
 recruit_character = CAN_r_b_bennett
 recruit_character = CAN_louis_st_laurent
 
+IF = {
+	limit = {
+		has_dlc = "Arms Against Tyranny"
+	}
+	recruit_character = CAN_first_nations_council
+}
 
 # Starting tech
 set_technology = {
@@ -295,17 +302,7 @@ set_popularities = {
 }
 
 
-}
 
-create_country_leader = {
-		name = "Arthur of Connaught"
-		picture = "gfx/leaders/Monarchs/Portrait_Prince_Arthur.tga"
-		expire = "1981.1.1"
-		ideology = paternalism
-	traits = {
-		constitutional_monarch
-	}
-}
 
 
 set_convoys = 100

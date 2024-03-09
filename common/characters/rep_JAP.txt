@@ -1,0 +1,23 @@
+characters={
+	JAP_emperor_hirohito={
+		name=JAP_emperor_hirohito
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ warrior_code emperor_showa imperial_sanction }
+			expire="1989.1.1.1"
+			id=700
+		}
+		country_leader={
+			ideology=monarchism
+			traits={ warrior_code emperor_showa imperial_sanction }
+			expire="1989.1.1.1"
+			id=700
+		}
+	}
+
+}
