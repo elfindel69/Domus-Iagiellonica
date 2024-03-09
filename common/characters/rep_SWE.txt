@@ -1,0 +1,51 @@
+characters={
+	SWE_king_gustaf_v = {
+		name=SWE_king_gustaf_v
+		portraits={
+			civilian={
+				small="GFX_idea_SWE_king_gustaf"
+				large = "GFX_portrait_SWE_king_gustaf_v"
+			}
+
+			army = {
+				large = "GFX_portrait_SWE_king_gustaf_v"
+			}
+
+		}
+		country_leader={
+			ideology=paternalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			cost = 200
+			idea_token = SWE_king_gustaf_v
+			visible = { 
+
+			}
+
+			visible = {
+				is_country_leader = no
+			}
+			available = { 
+				is_country_leader = no
+				NOT = {
+					has_completed_focus = SWE_liquidate_the_monarchy
+				}
+			}
+			allowed  = {
+				original_tag  = SWE
+			}
+			traits  = {
+				SWE_ardent_conservative 
+			}
+		}
+		#country_leader={
+		#	ideology=centrism
+		#	expire="1965.1.1.1"
+		#	id = -1
+		#}
+
+	}
+}

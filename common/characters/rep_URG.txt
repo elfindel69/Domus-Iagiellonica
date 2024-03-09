@@ -1,16 +1,22 @@
-characters={
-	PAR_daniel_alcabu={
-		name="Daniel Alcabú"
+characters = {
+	
+
+	URG_jeremias_romero={
+		name="Jeremías Romero"
 		portraits={
 			civilian={
 				large="gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 			}
 		}
 		country_leader={
-			ideology=monarchism
-			expire="1965.1.1.1"
+			ideology= monarchism
+			expire="1956.1.1.12"
 			id=-1
 		}
 	}
-	
+
+
+		
 }
+
+
