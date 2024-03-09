@@ -1,4 +1,6 @@
-﻿capital = 277
+﻿
+
+capital = 277
 
 oob = "MEX_1936"
 if = {
@@ -75,6 +77,7 @@ if = {
 	}
 }
 
+recruit_character = MEX_empress_maria_i
 recruit_character = MEX_lazaro_cardenas
 recruit_character = MEX_salvador_abascal
 recruit_character = MEX_adolfo_de_la_huerta
@@ -113,6 +116,8 @@ recruit_character = MEX_francisco_mugica
 recruit_character = MEX_jesus_degollado_guizar
 recruit_character = MEX_valentin_campa
 recruit_character = MEX_luis_maria_martinez
+recruit_character = MEX_indigenous_council
+
 set_country_flag = monroe_doctrine
 
 set_convoys = 45
@@ -131,7 +136,6 @@ if = {
 		MEX_cedillo_tension_2
 	}
 }
-
 
 1939.1.1 = {
 	add_political_power = 1198
@@ -264,6 +268,7 @@ if = {
 		}
 	}
 }
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.7.1"
@@ -274,10 +279,8 @@ set_popularities = {
 	democratic = 18
 	fascism = 20
 	communism = 9
-	neutrality = 50
-	monarchist = 3
+	neutrality = 53
 }
-
 
 ### VARIANTS ###
 # 1936 Start #

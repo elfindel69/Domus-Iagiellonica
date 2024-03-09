@@ -44,6 +44,8 @@ recruit_character = VEN_isidoro_ruiz_tuerro
 
 set_country_flag = monroe_doctrine
 
+add_ideas = idea_VEN_blockade_inactive
+
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -112,17 +114,3 @@ set_popularities = {
 	fascism = 80
 	communism = 15
 }
-
-
-
-create_country_leader = {
-	name = "Julio Romero"
-	desc = "POLITICS_AURELIO_MOSQUERA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = paternalism
-	traits = {
-		#
-	}
-}
-

@@ -210,6 +210,7 @@ if = {
 	set_technology = {
 		armored_car1 = 1
 	}
+	JAP_create_john_farnsworth_operative = yes
 }
 
 create_import = {
@@ -438,18 +439,6 @@ set_popularities = {
 
 
 
-create_country_leader = {
-	name = "Hirohito"
-	desc = "POLITICS_Hirohito_DESC"
-	picture = "Portrait_Japan_Hirohito.dds"
-	expire = "1989.1.1"
-	ideology = monarchism
-	traits = {
-		warrior_code
-		emperor_showa
-		imperial_sanction
-	}
-}
 
 
 recruit_character = JAP_tetsu_katayama
