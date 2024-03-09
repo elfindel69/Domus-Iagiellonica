@@ -1,0 +1,69 @@
+characters={
+	NOR_king_haakon_vii={ # King 
+		name=NOR_king_haakon_vii
+		portraits={
+			civilian={
+				large=GFX_portrait_NOR_king_haakon_vii
+			}
+		}
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=paternalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		navy_leader={
+			traits={ navy_media_personality gentlemanly naval_lineage fleet_protector }
+			skill=5
+			attack_skill=2
+			defense_skill=6
+			maneuvering_skill=4
+			coordination_skill=4
+			legacy_id=-1
+			
+			visible = {
+				OR = {
+					has_completed_focus = NOR_the_kingdom_of_norway
+					has_completed_focus = NOR_preparing_the_return_to_norway
+				}
+				NOT = {
+					has_global_flag = NOR_the_norwegian_king_is_dead
+				}
+			}
+		}
+
+	}	
+
+	NOR_prince_olav={ # Prince
+		name=NOR_prince_olav
+		portraits={
+			civilian={
+				large=GFX_portrait_NOR_prince_olav
+			}
+			army={
+				large=GFX_portrait_NOR_prince_olav
+			}
+		}
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=paternalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}	
+}

@@ -193,7 +193,7 @@ create_country_leader = {
 		democratic = 98
 		monarchist = 2
 	}
-
+}
 
 create_country_leader = {
 	name = "Aarón Gálvez"

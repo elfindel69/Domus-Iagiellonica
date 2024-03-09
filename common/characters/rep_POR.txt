@@ -1,0 +1,34 @@
+characters = {
+	POR_mateus_lopes = {
+		name = "Mateus Lopes"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			}
+		}
+		country_leader = {
+			ideology=paternalism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	POR_dona_amelia_de_portugal = {
+		name = "Dona Amélia de Portugal"
+		gender=female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POR/portrait_por_antonio_de_oliveira_salazar.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism
+			traits = {
+				grieving_mother
+				queen_mother
+			}
+			expire = "1981.1.1.1"
+				id = -1
+		}
+	}
+	
+}

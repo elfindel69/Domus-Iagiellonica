@@ -1,0 +1,35 @@
+characters={
+	BRA_otavio_lacerda={
+		name="Otávio Lacerda de Assis"
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_2.dds" # Can become Fascism leader later (via Portugal FT)
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BRA_pedro_iii={
+		name="Dom Pedro III"
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/Portrait_Brazil_Getulio_Vargas.dds" # Can become Fascism leader later (via Portugal FT)
+			}
+		}
+		country_leader={
+			ideology=paternalism
+			traits = {
+				inexperienced_monarch
+				constitutional_monarch
+				traditionalist_connections
+				pedro_fancy_title
+			}
+			expire="1981.1.1.1"
+			id=-1
+		}
+	}
+	
+}

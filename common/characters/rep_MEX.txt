@@ -1,0 +1,34 @@
+characters={
+	MEX_franco_navarro={
+		name="Franco Navarro"
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MEX_empress_maria_i={
+		name="Empress Maria I"
+		gender = female 
+		portraits={
+			civilian={
+				large="gfx/leaders/Monarchs/Portrait_Mexico_Maria.tga"
+			}
+		}
+		country_leader={
+			ideology = paternalism
+			traits = {
+				popular_queen protector_of_the_campesinos refounder_of_mexico
+			}
+			
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}
