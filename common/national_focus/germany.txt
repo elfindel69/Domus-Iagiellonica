@@ -2642,11 +2642,6 @@ focus_tree = {
 				}
 				NOT = {
 					has_completed_focus = GER_political_sphere
-					OR = {
-						has_completed_focus = GER_long_live_the_kaiserreich
-						has_completed_focus = GER_a_new_constitution
-						has_completed_focus = GER_relegalize_communism
-					}
 				}
 			}
 		}
@@ -5786,6 +5781,7 @@ focus_tree = {
 						has_completed_focus = GER_relegalize_communism
 					}	
 				}
+				
 			}
 		}
 		x = 5
@@ -5845,6 +5841,7 @@ focus_tree = {
 				}
 				NOT = {
 					OR={
+						has_completed_focus = GER_rhineland
 						has_completed_focus = GER_relegalize_communism
 					}	
 				}
