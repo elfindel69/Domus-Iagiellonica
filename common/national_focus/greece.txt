@@ -662,7 +662,7 @@ focus_tree = {
 						value = 75
 					}
 				}
-				RUS = {
+				BWR = {
 					add_ai_strategy = {
 						type = protect
 						id = TUR
@@ -1055,7 +1055,7 @@ focus_tree = {
 						}
 					}
 				}
-				RUS = { exists = no }
+				BWR = { exists = no }
 			}
 		}
 
@@ -1321,12 +1321,12 @@ focus_tree = {
 			modifier = {
 				add = 1
 				OR = {
-					NOT = { RUS = { has_government = communism } }
-					RUS = { exists = no }
-					has_war_with = RUS
-					TUR = { is_in_faction_with = RUS }
+					NOT = { BWR = { has_government = communism } }
+					BWR = { exists = no }
+					has_war_with = BWR
+					TUR = { is_in_faction_with = BWR }
 					strength_ratio = { 
-						tag = RUS
+						tag = BWR
 						ratio > 0.35
 					}
 				}
@@ -1353,7 +1353,7 @@ focus_tree = {
 				remove_idea = GRE_political_instability_communist
 				add_idea = GRE_state_of_the_nation_communism
 			}			
-			RUS = {
+			BWR = {
 				add_opinion_modifier = { 
 					target = GRE
 					modifier = GRE_greek_turncoats
@@ -1373,8 +1373,8 @@ focus_tree = {
 		prerequisite = { focus = GRE_depose_the_reactionaries }
 		mutually_exclusive = { focus = GRE_prepare_for_the_great_anti_fascist_war }
 		available = {
-			NOT = { has_war_with = RUS }
-			RUS = { 
+			NOT = { has_war_with = BWR }
+			BWR = { 
 				exists = yes
 				is_puppet = no
 				has_government = communism
@@ -1389,11 +1389,11 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { RUS = { has_government = communism } }
-					RUS = { exists = no }
-					has_war_with = RUS
+					NOT = { BWR = { has_government = communism } }
+					BWR = { exists = no }
+					has_war_with = BWR
 					strength_ratio = { 
-						tag = RUS
+						tag = BWR
 						ratio > 0.35
 					}
 				}
@@ -1411,7 +1411,7 @@ focus_tree = {
 				TUR = { 
 					country_event = { id = bftb_greece.29 days = 1 }
 				}
-				RUS = { 
+				BWR = { 
 					country_event = { id = bftb_greece.29 days = 7 }
 				}
 				add_opinion_modifier = {
@@ -3340,7 +3340,7 @@ focus_tree = {
 				ENG = { exists = no }
 				FRA = { exists = no }
 				GER = { exists = no }
-				RUS = { exists = no }
+				BWR = { exists = no }
 			}
 		}
 
@@ -3422,8 +3422,8 @@ focus_tree = {
 				}
 				if = { 
 					limit = { 
-						country_exists = RUS
-						RUS = { has_opinion = { target = GRE value > 80 } } 
+						country_exists = BWR
+						BWR = { has_opinion = { target = GRE value > 80 } } 
 					}
 					random_owned_controlled_state = {
 						limit = {

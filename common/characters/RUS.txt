@@ -14,7 +14,7 @@ characters = {
 		name =  "Michail II Romanov"
 		portraits = { 
 			civilian = {
-				large = "gfx/leaders/RUS/doi_portrait_m_mikhail_ii.dds"
+				large = "gfx/leaders/BWR/doi_portrait_m_mikhail_ii.dds"
 			}
 		}	
 		country_leader={
@@ -120,7 +120,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_patriarch_meletius
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			visible = {
 				
@@ -203,7 +203,7 @@ characters = {
 			idea_token = RUS_georgy_zhukov
 			ledger = army
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			available = {
 				
@@ -239,7 +239,7 @@ characters = {
 			idea_token = RUS_konstantin_rokossovsky
 			ledger = army
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			
 			traits = {
@@ -275,7 +275,7 @@ characters = {
 			idea_token = RUS_aleksandr_vasilevsky
 			ledger = army
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				army_regrouping_2
@@ -301,7 +301,7 @@ characters = {
 			idea_token = RUS_boris_shaposhnikov
 			ledger = army
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				military_theorist
@@ -386,7 +386,7 @@ characters = {
 			slot = army_chief
 			idea_token = RUS_semyon_timoshenko
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				army_chief_reform_2
@@ -457,7 +457,7 @@ characters = {
 			idea_token = RUS_mikhail_tukhachevsky
 			ledger = army
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				mass_assault_expert
@@ -988,7 +988,7 @@ characters = {
 			idea_token = RUS_sergey_gorshkov
 			ledger = navy
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = { naval_theorist }
 		}
@@ -1019,7 +1019,7 @@ characters = {
 			idea_token = RUS_gordey_levchenko
 			ledger = navy
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				navy_capital_ship_2
@@ -1128,7 +1128,7 @@ characters = {
 			idea_token = RUS_stepan_krasovsky
 			ledger = air
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				air_air_combat_training_2
@@ -1154,7 +1154,7 @@ characters = {
 			idea_token = RUS_vladimir_tributs
 			ledger = navy
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				grand_fleet_proponent
@@ -1175,7 +1175,7 @@ characters = {
 			idea_token = RUS_sergei_khudyakov
 			ledger = air
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				air_close_air_support_2
@@ -1199,7 +1199,7 @@ characters = {
 			slot = air_chief
 			idea_token = RUS_konstantin_vershinin
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				air_chief_ground_support_2
@@ -1226,7 +1226,7 @@ characters = {
 			idea_token = RUS_sergei_rudenko
 			ledger = air
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			
 			traits = {
@@ -1247,7 +1247,7 @@ characters = {
 			slot = navy_chief
 			idea_token = RUS_ivan_yumashev
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				navy_chief_decisive_battle_2
@@ -1271,7 +1271,7 @@ characters = {
 			slot = navy_chief
 			idea_token = RUS_nikolay_kuznetsov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				navy_chief_reform_2
@@ -1295,7 +1295,7 @@ characters = {
 			slot = air_chief
 			idea_token = RUS_yakov_smushkevich
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				air_chief_safety_2
@@ -1319,7 +1319,7 @@ characters = {
 			slot = air_chief
 			idea_token = RUS_pavel_rychagov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				air_chief_all_weather_2
@@ -1345,7 +1345,7 @@ characters = {
 			idea_token = RUS_alexander_golovanov
 			ledger = air
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = { air_warfare_theorist }
 		}		
@@ -1363,7 +1363,7 @@ characters = {
 			slot = navy_chief
 			idea_token = RUS_mikhail_frinovsky
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				navy_chief_commerce_raiding_1
@@ -1389,7 +1389,7 @@ characters = {
 			idea_token = RUS_igor_kurchatov
 			ledger = army
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			research_bonus = {
 				nuclear = 0.150
@@ -1414,7 +1414,7 @@ characters = {
 			idea_token = RUS_sergei_korolev
 			ledger = air
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			research_bonus = {
 				rocketry = 0.150
@@ -1438,7 +1438,7 @@ characters = {
 			idea_token = RUS_pavel_zhigarev
 			ledger = air
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				air_airborne_1
@@ -1462,7 +1462,7 @@ characters = {
 			slot = navy_chief
 			idea_token = RUS_pyotr_smirnov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				navy_chief_naval_aviation_1
@@ -1520,7 +1520,7 @@ characters = {
 			slot = army_chief
 			idea_token = RUS_vasily_blyukher
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				army_chief_maneuver_2
@@ -1812,7 +1812,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_mikhail_kalinin
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			
 			traits = {
@@ -1836,7 +1836,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_nikita_khrushchyov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			
 			available = {
@@ -1872,7 +1872,7 @@ characters = {
 			idea_token = RUS_nikolay_voznesensky
 			name = SOV_nikolay_voznesensky 
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			
 			traits = {
@@ -1896,7 +1896,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_lazar_kaganovich
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			
 			traits = {
@@ -1922,7 +1922,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_vsevolod_merkulov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 				has_dlc = "La Resistance"
 			}
 			available = {
@@ -1967,7 +1967,7 @@ characters = {
 		allowed_civil_war = { 
 			
 			AND = {
-				tag = RUS 
+				tag = BWR 
 				has_government = communism
 			}
 				
@@ -1977,7 +1977,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_lev_trotsky
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			
 			visible = {
@@ -2004,7 +2004,7 @@ characters = {
 		allowed_civil_war = { 
 			
 			AND = {
-				tag = RUS 
+				tag = BWR 
 				has_government = communism
 			}
 				
@@ -2014,7 +2014,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_ivan_smirnov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				head_directorate_of_new_buildings 
@@ -2046,7 +2046,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_ivar_smilga
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				soviet_economist
@@ -2072,7 +2072,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_karl_radek
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				international_revolutionary 
@@ -2098,7 +2098,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_yevgeny_preobrazhensky
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				ecomonist_publicist 
@@ -2122,7 +2122,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_aleksandr_shlyapnikov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				left_trade_unionist
@@ -2149,7 +2149,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_nikolay_bukharin
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			
 			traits = {
@@ -2178,7 +2178,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_aleksey_rykov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				peoples_commissar_for_posts_and_telegraphs 
@@ -2201,7 +2201,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_mikhail_tomsky
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				right_trade_unionist 
@@ -2224,7 +2224,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_grigory_sokolnikov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				peoples_commissar_of_finance 
@@ -2250,7 +2250,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_grigory_zinovyev
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				communist_theorist
@@ -2277,7 +2277,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_lev_kamenev
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				appeasing_technocrat 
@@ -2300,7 +2300,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_martemyan_ryutin
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				anti_stalinist_propagandist 
@@ -2326,7 +2326,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_patriarch_sergy
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				patriarch_of_moscow_and_all_russia 
@@ -2351,7 +2351,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_metropolitan_anastasy
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				orthodox_rabblerouser
@@ -2377,7 +2377,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_metropolitan_nikolay
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				theocratic_diplomat
@@ -2403,7 +2403,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_metropolitan_aleksy
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				driver_of_the_faithful
@@ -2429,7 +2429,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_anastasy_vonsyatsky
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				the_foreign_connection
@@ -2460,7 +2460,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_grigory_semyonov
 			allowed = {
-				original_tag = RUS	
+				original_tag = BWR	
 			}
 			traits = {
 				ataman_transbaikal_host
@@ -2486,7 +2486,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_nikolay_ustryalov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			available = {
 				has_completed_focus = SOV_consolidate_power
@@ -2515,7 +2515,7 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_aleksandr_kazembek
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = {
 				mladorossi_theorist
@@ -2552,7 +2552,7 @@ characters = {
 			idea_token = RUS_aleksandr_prokofyev_seversky
 			ledger = air
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = { victory_through_airpower }
 		}
@@ -2579,7 +2579,7 @@ characters = {
 			slot = air_chief
 			idea_token = RUS_vyacheslav_tkachyov
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = { air_chief_reform_2 }
 		}
@@ -2606,7 +2606,7 @@ characters = {
 			slot = air_chief
 			idea_token = SOV_yan_nagursky
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = { air_chief_all_weather_2 }
 		}
@@ -2634,7 +2634,7 @@ characters = {
 			idea_token = SOV_vasily_yanchenko
 			ledger = air
 			allowed = {
-				original_tag = RUS
+				original_tag = BWR
 			}
 			traits = { air_air_superiority_2 }
 		}
@@ -2686,7 +2686,7 @@ characters = {
 				slot = political_advisor
 				idea_token = konstantin_rodzaevsky
 				allowed = {
-					original_tag = RUS
+					original_tag = BWR
 				}
 				available = {
 					if = {
@@ -2729,7 +2729,7 @@ characters = {
 			expire = "1953.3.1.1"
 			id = -1
 		}
-		allowed_civil_war = { tag = RUS}
+		allowed_civil_war = { tag = BWR}
 
 		advisor = {
 			slot = political_advisor

@@ -7650,7 +7650,7 @@ focus_tree = {
 					add_opinion_modifier = { target = ENG modifier = ENG_maintaining_the_balance_of_power_bad }
 				}
 			}
-			RUS = {
+			BWR = {
 				if = {
 					limit = { NOT = { is_in_faction_with = ENG } }
 					add_opinion_modifier = { target = ENG modifier = ENG_maintaining_the_balance_of_power_bad }
@@ -7896,12 +7896,12 @@ focus_tree = {
 		}
 
 		available = {
-			RUS = {
+			BWR = {
 				ENG_focus_available_embargo_sanction = yes
 			}			
 		} 
 		bypass = {
-			has_war_with = RUS
+			has_war_with = BWR
 		}
 		icon = GFX_goal_generic_trade
 		x = 0
@@ -7912,7 +7912,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			RUS = {
+			BWR = {
 				add_opinion_modifier = { target = ENG modifier = embargo }
 				add_opinion_modifier = { target = ENG modifier = sanctions_relations } 
 			}
@@ -7923,14 +7923,14 @@ focus_tree = {
 		prerequisite = { focus = ENG_embargo_ussr }
 		available = {
 			has_offensive_war = no
-			RUS = {
+			BWR = {
 				ENG_focus_available_war = yes
 			}			
 		} 
 		bypass = {
-			has_war_with = RUS
+			has_war_with = BWR
 		}
-		will_lead_to_war_with = RUS
+		will_lead_to_war_with = BWR
 		icon = GFX_focus_attack_soviet
 		x = 0
 		y = 1
@@ -7939,7 +7939,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = RUS
+				target = BWR
 				expire = 0
 			} 
 		}
@@ -9527,11 +9527,11 @@ focus_tree = {
 		prerequisite = { focus = ENG_reclaim_the_jewel_in_the_crown focus = ENG_noninterference_treaty_with_germany focus = ENG_alliance_with_germany	}	
 		available = {
 			is_subject = no
-			country_exists = RUS
-			NOT = { is_in_faction_with = RUS }
-			RUS = { has_government = communism }
+			country_exists = BWR
+			NOT = { is_in_faction_with = BWR }
+			BWR = { has_government = communism }
 		}
-		will_lead_to_war_with = RUS
+		will_lead_to_war_with = BWR
 		icon = GFX_focus_attack_soviet
 		x = -1
 		y = 1
@@ -9548,7 +9548,7 @@ focus_tree = {
 			ENG_mosley_pacifism_level_down = yes
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = RUS
+				target = BWR
 				expire = 0
 			}
 		}
@@ -10244,7 +10244,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_follow_moscow }
 		available = {
 			is_subject = no
-			NOT = { is_in_faction_with = RUS }
+			NOT = { is_in_faction_with = BWR }
 		}
 		icon = GFX_focus_generic_join_comintern
 		x = -2
@@ -10278,20 +10278,20 @@ focus_tree = {
 			}
 			add_ai_strategy = {
 				type = alliance
-				id = RUS
+				id = BWR
 				value = -200
 			}
 			add_ai_strategy = {
 				type = befriend
-				id = RUS
+				id = BWR
 				value = -200
 			}
 			add_ai_strategy = {
 				type = protect
-				id = RUS
+				id = BWR
 				value = -200
 			}
-			RUS = {
+			BWR = {
 				add_ai_strategy = {
 					type = alliance
 					id = ROOT
@@ -10846,12 +10846,12 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_the_one_true_revolution }
 		available = {
 			is_subject = no
-			country_exists = RUS
-			NOT = { has_war_with = RUS }
-			RUS = { has_government = communism }
+			country_exists = BWR
+			NOT = { has_war_with = BWR }
+			BWR = { has_government = communism }
 		}
 		bypass = {
-			is_in_faction_with = RUS
+			is_in_faction_with = BWR
 		}
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		x = 0
@@ -10864,9 +10864,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					RUS = { NOT = { has_war_with = GER } }
+					BWR = { NOT = { has_war_with = GER } }
 				}
-				RUS = { country_event = { id = mtg_britain.49 hours = 6 } }
+				BWR = { country_event = { id = mtg_britain.49 hours = 6 } }
 			}
 			else = {
 				create_wargoal = {
@@ -10884,14 +10884,14 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_soviet_cooperation }
 		available = {
 			is_subject = no
-			country_exists = RUS
-			NOT = { is_in_faction_with = RUS }
-			RUS = { has_government = communism }
+			country_exists = BWR
+			NOT = { is_in_faction_with = BWR }
+			BWR = { has_government = communism }
 		}
 		bypass = {
-			has_war_with = RUS
+			has_war_with = BWR
 		}
-		will_lead_to_war_with = RUS
+		will_lead_to_war_with = BWR
 		icon = GFX_focus_attack_soviet
 		x = 0
 		y = 1
@@ -10903,7 +10903,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = RUS
+				target = BWR
 				expire = 0
 			}
 			hidden_effect = { news_event = { id = mtg_news.38 days = 1 } }
@@ -10918,13 +10918,13 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_the_british_communist_alternative }
 		available = {
 			is_subject = no
-			country_exists = RUS
-			NOT = { is_in_faction_with = RUS }
-			NOT = { has_war_with = RUS }
-			RUS = { has_government = communism }
+			country_exists = BWR
+			NOT = { is_in_faction_with = BWR }
+			NOT = { has_war_with = BWR }
+			BWR = { has_government = communism }
 		}
 		bypass = {
-			is_in_faction_with = RUS
+			is_in_faction_with = BWR
 			NOT = {
 				focus_progress = {
 					focus = ENG_the_british_communist_alternative
@@ -10943,7 +10943,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}	
 		completion_reward = {
 			add_stability = 0.05
-			RUS = { country_event = { id = mtg_britain.52 hours = 6 } }
+			BWR = { country_event = { id = mtg_britain.52 hours = 6 } }
 		}
 	}
 
@@ -11130,7 +11130,7 @@ focus_tree = {
 		id = ENG_socialist_science_pool
 		prerequisite = { focus = ENG_follow_moscow }
 		available = {
-			is_in_faction_with = RUS
+			is_in_faction_with = BWR
 		}
 		icon = GFX_focus_generic_socialist_science
 		x = 3

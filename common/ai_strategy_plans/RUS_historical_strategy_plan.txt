@@ -1,9 +1,9 @@
 RUS_historical_plan = {
-	name = "RUS historical plan"
+	name = "BWR historical plan"
 	desc = ""
 
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = {

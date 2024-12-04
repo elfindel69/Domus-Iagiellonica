@@ -775,7 +775,7 @@
  RUS_autonomy_wtt_imperial_protectorate_DEF:0 "le Protectorat impérial russe"
  RUS_autonomy_supervised_state:0 "Zone d'occupation $OVERLORDADJ$ en Russie"
  RUS_autonomy_supervised_state_DEF:0 "la Zone d'occupation $OVERLORDADJ$ en Russie"
- RUS:0 "Russie"
+ BWR:0 "Russie"
  RUS_DEF:0 "la Russie"
  RUS_ADJ:0 "russo-"
 

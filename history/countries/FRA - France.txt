@@ -341,7 +341,7 @@ set_convoys = 300
 
 create_faction = "Entente"
 add_to_faction = POL
-add_to_faction = RUS
+add_to_faction = BWR
 add_to_faction = ROM
 
 set_politics = {

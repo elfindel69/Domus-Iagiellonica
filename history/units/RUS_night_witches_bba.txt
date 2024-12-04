@@ -2,7 +2,7 @@
 	
 	219 = {
 		medium_plane_airframe_0 =  {		
-				owner = "RUS" 
+				owner = "BWR" 
 				amount = 40
 				version_name = "DB-3"
 			}

@@ -2,7 +2,7 @@
 	
 	219 = {
 		tac_bomber_equipment_0 =  {		
-				owner = "RUS" 
+				owner = "BWR" 
 				amount = 40
 			}
 			name = "588. Night Bomber Regiment"

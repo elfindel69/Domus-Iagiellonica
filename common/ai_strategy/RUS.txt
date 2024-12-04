@@ -12,7 +12,7 @@
 
 RUS_unit_production = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		always = yes
@@ -194,7 +194,7 @@ RUS_unit_production = {
 
 RUS_anti_armor = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		ai_wants_divisions > 5 #Decreasing the amount of motorized the AI wants
@@ -221,7 +221,7 @@ RUS_anti_armor = {
 
 southern_thrust = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_completed_focus = RUS_the_southern_thrust
@@ -258,7 +258,7 @@ southern_thrust = {
 
 claims_on_poland = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_completed_focus = RUS_claims_on_poland
@@ -279,7 +279,7 @@ claims_on_poland = {
 
 claims_on_finland = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_completed_focus = RUS_secure_leningrad
@@ -308,7 +308,7 @@ claims_on_finland = {
 
 claims_on_sinkiang = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_completed_focus = RUS_spheres_of_influence_in_china
@@ -329,7 +329,7 @@ claims_on_sinkiang = {
 
 japan_ally = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_completed_focus = RUS_reconcile_japan
@@ -353,7 +353,7 @@ japan_ally = {
 
 germany_ally = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = {
@@ -380,7 +380,7 @@ germany_ally = {
 
 germany_enemy = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_completed_focus = RUS_anti_fascist_policies
@@ -403,7 +403,7 @@ germany_enemy = {
 
 spanish_civil_war_RUS = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 		NOT = { has_dlc = "La Resistance" }
 	}
 	enable = {
@@ -428,7 +428,7 @@ spanish_civil_war_RUS = {
 
 spanish_civil_war_RUS_resistance = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 		has_dlc = "La Resistance"
 	}
 	enable = {
@@ -461,7 +461,7 @@ spanish_civil_war_RUS_resistance = {
 
 RUS_template_design_1 = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		date < 1940.1.1
@@ -515,7 +515,7 @@ RUS_template_design_1 = {
 
 RUS_template_design_2 = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		date > 1940.1.1
@@ -572,7 +572,7 @@ RUS_template_design_2 = {
 
 RUS_pp_spending = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_manpower < 100000
@@ -595,7 +595,7 @@ RUS_pp_spending = {
 
 RUS_decision_pp_spending = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = {
@@ -633,7 +633,7 @@ RUS_decision_pp_spending = {
 
 RUS_play_nice_with_ribbentrop_pact = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_global_flag = sov_yes_pact
@@ -642,7 +642,7 @@ RUS_play_nice_with_ribbentrop_pact = {
 	}
 	abort = {
 		OR ={
-			GER = { has_war_with = RUS }
+			GER = { has_war_with = BWR }
 			NOT = { GER = { has_war_with = POL } }
 			date > 1941.1.1
 		}
@@ -658,7 +658,7 @@ RUS_play_nice_with_ribbentrop_pact = {
 RUS_naval_role_ratios_historical = {
 	allowed = {
 		has_dlc = "Man the Guns"
-		original_tag = RUS
+		original_tag = BWR
 	}
 
 	enable = {
@@ -723,7 +723,7 @@ RUS_naval_role_ratios_historical = {
 
 #RUS_dont_upgrade_to_weapons_2_too_early = {
 #	allowed = {
-#		original_tag = RUS
+#		original_tag = BWR
 #	}
 #	enable = {
 #		OR = {
@@ -746,7 +746,7 @@ RUS_naval_role_ratios_historical = {
 
 RUS_home_land_is_safe = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 
 	enable = {
@@ -761,7 +761,7 @@ RUS_home_land_is_safe = {
 
 RUS_the_nkvd_is_all_the_intel_we_need = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 		has_dlc = "La Resistance"
 	}
 	enable = {
@@ -783,11 +783,11 @@ RUS_the_nkvd_is_all_the_intel_we_need = {
 RUS_dont_mess_with_volunteers_for_european_democratic_nations = { # Reverse strategy
 	reversed = yes
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_government = democratic
-		RUS = {
+		BWR = {
 			has_government = communism
 		}
 		NOT = {
@@ -803,14 +803,14 @@ RUS_dont_mess_with_volunteers_for_european_democratic_nations = { # Reverse stra
 
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "RUS"
+		id = "BWR"
 		value = -500
 	}
 }
 
 RUS_dont_send_volunteers_that_early_to_china = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		JAP = { has_war_with = CHI }
@@ -863,7 +863,7 @@ RUS_dont_send_volunteers_that_early_to_china = {
 
 RUS_dont_send_lend_lease_that_early_to_china = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		JAP = { has_war_with = CHI }
@@ -881,7 +881,7 @@ RUS_dont_send_lend_lease_that_early_to_china = {
 
 RUS_have_some_train_production = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 
 	enable = {
@@ -902,9 +902,9 @@ RUS_dont_support_whites = {
 
 	allowed = { has_dlc = "No Step Back" }
 	enable = {
-		RUS = { RUS_is_exiles = yes}
+		BWR = { RUS_is_exiles = yes}
 		NOT = {
-			tag = RUS
+			tag = BWR
 		}
 	}
 
@@ -914,27 +914,27 @@ RUS_dont_support_whites = {
 
 	ai_strategy = {
 		type = alliance
-		id = RUS
+		id = BWR
 		value = -200
 	}
 	ai_strategy = {
 		type = befriend
-		id = RUS
+		id = BWR
 		value = -100
 	}
 	ai_strategy = {
 		type = support
-		id = RUS
+		id = BWR
 		value = -100
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = RUS
+		id = BWR
 		value = -200
 	}
 	ai_strategy = {
 		type = send_lend_lease_desire
-		id = RUS
+		id = BWR
 		value = -200
 	}
 }
@@ -945,7 +945,7 @@ RUS_dont_ally_us_soviet_civil_was = {
 	enable = {
 		has_global_flag = RUS_soviet_civil_war
 		NOT = {
-			original_tag = RUS
+			original_tag = BWR
 		}
 	}
 	abort = {
@@ -963,7 +963,7 @@ RUS_dont_join_wars_during_civil_war = {
 	enable = {
 		has_global_flag = RUS_soviet_civil_war
 		NOT = {
-			original_tag = RUS
+			original_tag = BWR
 		}
 	}
 	abort = {
@@ -972,7 +972,7 @@ RUS_dont_join_wars_during_civil_war = {
 	ai_strategy = {
 		type = dont_join_wars_with
 		id = SOU
-		# target_country = RUS
+		# target_country = BWR
 		value = 200
 	}
 }
@@ -985,28 +985,28 @@ RUS_support_opposition_with_arms = {
 		OR = {
 			AND = {
 				tag = JAP
-				RUS = { has_country_flag = RUS_CSW_transfer_vladivostok_flag }
+				BWR = { has_country_flag = RUS_CSW_transfer_vladivostok_flag }
 			}
 			AND = {
 				tag = JAP
-				RUS = { has_country_flag = RUS_CSW_transfer_sakhalin_flag }
+				BWR = { has_country_flag = RUS_CSW_transfer_sakhalin_flag }
 			}
 			AND = {
 				tag = GER
-				RUS = { has_country_flag = RUS_CSW_baku_oil_flag }
+				BWR = { has_country_flag = RUS_CSW_baku_oil_flag }
 			}
 			AND = {
 				tag = GER
-				RUS = { has_country_flag = RUS_CSW_ukraine_germany_flag }
+				BWR = { has_country_flag = RUS_CSW_ukraine_germany_flag }
 			}
 			AND = {
 				tag = ENG
-				RUS = { has_country_flag = RUS_CSW_belarus_uk_flag }
+				BWR = { has_country_flag = RUS_CSW_belarus_uk_flag }
 			}
 			has_country_flag = RUS_supporting_trotsky_flag
 		}
 		NOT = {
-			tag = RUS
+			tag = BWR
 		}
 	}
 
@@ -1015,19 +1015,19 @@ RUS_support_opposition_with_arms = {
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = RUS
+		id = BWR
 		value = 100
 	}
 	ai_strategy = {
 		type = send_lend_lease_desire
-		id = RUS
+		id = BWR
 		value = 300
 	}
 }
 
 RUS_scorched_earth_german_front_baltics = {
 
-	allowed = { original_tag = RUS }
+	allowed = { original_tag = BWR }
 	enable = {
 		has_war_with = GER
 		NOT = {
@@ -1044,19 +1044,19 @@ RUS_scorched_earth_german_front_baltics = {
 		}
 		count_triggers = {
 			amount = 4 #if 4 baltic states are owned by an enemy, burn the rest of the Baltics
-			814 = { CONTROLLER = { has_war_with = RUS } }
-			11 = { CONTROLLER = { has_war_with = RUS } }
-			189 = { CONTROLLER = { has_war_with = RUS } }
-			815 = { CONTROLLER = { has_war_with = RUS } }
-			190 = { CONTROLLER = { has_war_with = RUS } }
-			809 = { CONTROLLER = { has_war_with = RUS } }
-			810 = { CONTROLLER = { has_war_with = RUS } }
-			808 = { CONTROLLER = { has_war_with = RUS } }
-			811 = { CONTROLLER = { has_war_with = RUS } }
-			13 = { CONTROLLER = { has_war_with = RUS } }
-			812 = { CONTROLLER = { has_war_with = RUS } }
-			813 = { CONTROLLER = { has_war_with = RUS } }
-			191 = { CONTROLLER = { has_war_with = RUS } }
+			814 = { CONTROLLER = { has_war_with = BWR } }
+			11 = { CONTROLLER = { has_war_with = BWR } }
+			189 = { CONTROLLER = { has_war_with = BWR } }
+			815 = { CONTROLLER = { has_war_with = BWR } }
+			190 = { CONTROLLER = { has_war_with = BWR } }
+			809 = { CONTROLLER = { has_war_with = BWR } }
+			810 = { CONTROLLER = { has_war_with = BWR } }
+			808 = { CONTROLLER = { has_war_with = BWR } }
+			811 = { CONTROLLER = { has_war_with = BWR } }
+			13 = { CONTROLLER = { has_war_with = BWR } }
+			812 = { CONTROLLER = { has_war_with = BWR } }
+			813 = { CONTROLLER = { has_war_with = BWR } }
+			191 = { CONTROLLER = { has_war_with = BWR } }
 		}
 	}
 
@@ -1070,7 +1070,7 @@ RUS_scorched_earth_german_front_baltics = {
 
 	ai_strategy = {
 		type = scorched_earth_prio
-		id = RUS
+		id = BWR
 		states = {
 			814
 			11
@@ -1091,7 +1091,7 @@ RUS_scorched_earth_german_front_baltics = {
 
 RUS_scorched_earth_german_front_Poland = {
 
-	allowed = { original_tag = RUS }
+	allowed = { original_tag = BWR }
 	enable = {
 		has_war_with = GER
 		NOT = {
@@ -1108,13 +1108,13 @@ RUS_scorched_earth_german_front_Poland = {
 		}
 		count_triggers = {
 			amount = 2 #if 2 states are owned by an enemy, burn the rest of the area
-			784 = { CONTROLLER = { has_war_with = RUS } }
-			96 = { CONTROLLER = { has_war_with = RUS } }
-			95 = { CONTROLLER = { has_war_with = RUS } }
-			94 = { CONTROLLER = { has_war_with = RUS } }
-			93 = { CONTROLLER = { has_war_with = RUS } }
-			91 = { CONTROLLER = { has_war_with = RUS } }
-			89 = { CONTROLLER = { has_war_with = RUS } }
+			784 = { CONTROLLER = { has_war_with = BWR } }
+			96 = { CONTROLLER = { has_war_with = BWR } }
+			95 = { CONTROLLER = { has_war_with = BWR } }
+			94 = { CONTROLLER = { has_war_with = BWR } }
+			93 = { CONTROLLER = { has_war_with = BWR } }
+			91 = { CONTROLLER = { has_war_with = BWR } }
+			89 = { CONTROLLER = { has_war_with = BWR } }
 
 		}
 	}
@@ -1129,7 +1129,7 @@ RUS_scorched_earth_german_front_Poland = {
 
 	ai_strategy = {
 		type = scorched_earth_prio
-		id = RUS
+		id = BWR
 		states = {
 			784
 			96
@@ -1144,7 +1144,7 @@ RUS_scorched_earth_german_front_Poland = {
 
 RUS_scorched_earth_german_front_north = {
 
-	allowed = { original_tag = RUS }
+	allowed = { original_tag = BWR }
 	enable = {
 		has_war_with = GER
 		NOT = {
@@ -1161,12 +1161,12 @@ RUS_scorched_earth_german_front_north = {
 		}
 		count_triggers = {
 			amount = 2 #if 2 states are owned by an enemy, burn the rest of the area
-			208 = { CONTROLLER = { has_war_with = RUS } }
-			209 = { CONTROLLER = { has_war_with = RUS } }
-			210 = { CONTROLLER = { has_war_with = RUS } }
-			195 = { CONTROLLER = { has_war_with = RUS } }
-			263 = { CONTROLLER = { has_war_with = RUS } }
-			246 = { CONTROLLER = { has_war_with = RUS } }
+			208 = { CONTROLLER = { has_war_with = BWR } }
+			209 = { CONTROLLER = { has_war_with = BWR } }
+			210 = { CONTROLLER = { has_war_with = BWR } }
+			195 = { CONTROLLER = { has_war_with = BWR } }
+			263 = { CONTROLLER = { has_war_with = BWR } }
+			246 = { CONTROLLER = { has_war_with = BWR } }
 
 
 		}
@@ -1182,7 +1182,7 @@ RUS_scorched_earth_german_front_north = {
 
 	ai_strategy = {
 		type = scorched_earth_prio
-		id = RUS
+		id = BWR
 		states = {
 			208
 			209
@@ -1196,7 +1196,7 @@ RUS_scorched_earth_german_front_north = {
 
 RUS_scorched_earth_german_front_center = {
 
-	allowed = { original_tag = RUS }
+	allowed = { original_tag = BWR }
 	enable = {
 		has_war_with = GER
 		NOT = {
@@ -1213,18 +1213,18 @@ RUS_scorched_earth_german_front_center = {
 		}
 		count_triggers = {
 			amount = 4 #if 4 states are owned by an enemy, burn the rest of the area
-			207 = { CONTROLLER = { has_war_with = RUS } }
-			206 = { CONTROLLER = { has_war_with = RUS } }
-			204 = { CONTROLLER = { has_war_with = RUS } }
-			194 = { CONTROLLER = { has_war_with = RUS } }
-			201 = { CONTROLLER = { has_war_with = RUS } }
-			199 = { CONTROLLER = { has_war_with = RUS } }
-			202 = { CONTROLLER = { has_war_with = RUS } }
-			193 = { CONTROLLER = { has_war_with = RUS } }
-			241 = { CONTROLLER = { has_war_with = RUS } }
-			242 = { CONTROLLER = { has_war_with = RUS } }
-			243 = { CONTROLLER = { has_war_with = RUS } }
-			224 = { CONTROLLER = { has_war_with = RUS } }
+			207 = { CONTROLLER = { has_war_with = BWR } }
+			206 = { CONTROLLER = { has_war_with = BWR } }
+			204 = { CONTROLLER = { has_war_with = BWR } }
+			194 = { CONTROLLER = { has_war_with = BWR } }
+			201 = { CONTROLLER = { has_war_with = BWR } }
+			199 = { CONTROLLER = { has_war_with = BWR } }
+			202 = { CONTROLLER = { has_war_with = BWR } }
+			193 = { CONTROLLER = { has_war_with = BWR } }
+			241 = { CONTROLLER = { has_war_with = BWR } }
+			242 = { CONTROLLER = { has_war_with = BWR } }
+			243 = { CONTROLLER = { has_war_with = BWR } }
+			224 = { CONTROLLER = { has_war_with = BWR } }
 		}
 	}
 
@@ -1238,7 +1238,7 @@ RUS_scorched_earth_german_front_center = {
 
 	ai_strategy = {
 		type = scorched_earth_prio
-		id = RUS
+		id = BWR
 		states = {
 			207
 			206
@@ -1258,7 +1258,7 @@ RUS_scorched_earth_german_front_center = {
 
 RUS_scorched_earth_german_front_moscow = {
 
-	allowed = { original_tag = RUS }
+	allowed = { original_tag = BWR }
 	enable = {
 		has_war_with = GER
 		NOT = {
@@ -1275,11 +1275,11 @@ RUS_scorched_earth_german_front_moscow = {
 		}
 		count_triggers = {
 			amount = 1 #if 1 states are owned by an enemy, burn the rest of the area
-			219 = { CONTROLLER = { has_war_with = RUS } }
-			246 = { CONTROLLER = { has_war_with = RUS } }
-			242 = { CONTROLLER = { has_war_with = RUS } }
-			205 = { CONTROLLER = { has_war_with = RUS } }
-			223 = { CONTROLLER = { has_war_with = RUS } }
+			219 = { CONTROLLER = { has_war_with = BWR } }
+			246 = { CONTROLLER = { has_war_with = BWR } }
+			242 = { CONTROLLER = { has_war_with = BWR } }
+			205 = { CONTROLLER = { has_war_with = BWR } }
+			223 = { CONTROLLER = { has_war_with = BWR } }
 
 		}
 	}
@@ -1299,7 +1299,7 @@ RUS_scorched_earth_german_front_moscow = {
 
 	ai_strategy = {
 		type = scorched_earth_prio
-		id = RUS
+		id = BWR
 		states = {
 			219
 			246
@@ -1312,7 +1312,7 @@ RUS_scorched_earth_german_front_moscow = {
 
 RUS_scorched_earth_german_front_stalingrad = {
 
-	allowed = { original_tag = RUS }
+	allowed = { original_tag = BWR }
 	enable = {
 		has_war_with = GER
 		NOT = {
@@ -1329,11 +1329,11 @@ RUS_scorched_earth_german_front_stalingrad = {
 		}
 		count_triggers = {
 			amount = 1 #if 1 states are owned by an enemy, burn the rest of the area
-			217 = { CONTROLLER = { has_war_with = RUS } }
-			265 = { CONTROLLER = { has_war_with = RUS } }
-			245 = { CONTROLLER = { has_war_with = RUS } }
-			238 = { CONTROLLER = { has_war_with = RUS } }
-			829 = { CONTROLLER = { has_war_with = RUS } }
+			217 = { CONTROLLER = { has_war_with = BWR } }
+			265 = { CONTROLLER = { has_war_with = BWR } }
+			245 = { CONTROLLER = { has_war_with = BWR } }
+			238 = { CONTROLLER = { has_war_with = BWR } }
+			829 = { CONTROLLER = { has_war_with = BWR } }
 
 		}
 	}
@@ -1352,7 +1352,7 @@ RUS_scorched_earth_german_front_stalingrad = {
 
 	ai_strategy = {
 		type = scorched_earth_prio
-		id = RUS
+		id = BWR
 		states = {
 			217
 			265
@@ -1364,7 +1364,7 @@ RUS_scorched_earth_german_front_stalingrad = {
 }
 
 RUS_dont_do_so_many_naval_invasions_please = {
-	allowed = { original_tag = RUS }
+	allowed = { original_tag = BWR }
 
 	enable = {
 		always = yes
@@ -1382,7 +1382,7 @@ RUS_dont_do_so_many_naval_invasions_please = {
 ###########################
 #Soviets
 RUS_molotov_active_sov = {
-	allowed = { original_tag = RUS }
+	allowed = { original_tag = BWR }
 
 	enable = {
 		has_idea = RUS_vyacheslav_molotov
@@ -1445,20 +1445,20 @@ RUS_molotov_active_friendly_others = {
 	}
 
 	enable = {
-		RUS = { has_idea = RUS_vyacheslav_molotov }
+		BWR = { has_idea = RUS_vyacheslav_molotov }
 	}
 
 	abort = {
 		OR = {
-			RUS = { NOT = { has_idea = RUS_vyacheslav_molotov } }
+			BWR = { NOT = { has_idea = RUS_vyacheslav_molotov } }
 			has_capitulated = yes
-			is_in_faction_with = RUS
+			is_in_faction_with = BWR
 		}
 	}
 
 	ai_strategy = {
 		type = befriend
-		id = RUS
+		id = BWR
 		value = 25
 	}
 }
@@ -1477,20 +1477,20 @@ RUS_molotov_active_hostile_others = {
 	}
 
 	enable = {
-		RUS = { has_idea = RUS_vyacheslav_molotov }
+		BWR = { has_idea = RUS_vyacheslav_molotov }
 	}
 
 	abort = {
 		OR = {
-			RUS = { NOT = { has_idea = RUS_vyacheslav_molotov } }
+			BWR = { NOT = { has_idea = RUS_vyacheslav_molotov } }
 			has_capitulated = yes
-			is_in_faction_with = RUS
+			is_in_faction_with = BWR
 		}
 	}
 
 	ai_strategy = {
 		type = antagonize
-		id = RUS
+		id = BWR
 		value = 25
 	}
 }
@@ -1501,7 +1501,7 @@ RUS_molotov_active_hostile_others = {
 ############################
 #Soviets
 RUS_litvinov_active_sov = {
-	allowed = { original_tag = RUS }
+	allowed = { original_tag = BWR }
 
 	enable = {
 		has_idea = RUS_maksim_litvinov
@@ -1578,22 +1578,22 @@ RUS_litvinov_active_friendly_others = {
 	}
 
 	enable = {
-		RUS = { has_idea = RUS_maksim_litvinov }
+		BWR = { has_idea = RUS_maksim_litvinov }
 		is_subject = no
 	}
 
 	abort = {
 		OR = {
-			RUS = { NOT = { has_idea = RUS_maksim_litvinov } }
+			BWR = { NOT = { has_idea = RUS_maksim_litvinov } }
 			has_capitulated = yes
-			is_in_faction_with = RUS
+			is_in_faction_with = BWR
 			is_subject = yes
 		}
 	}
 
 	ai_strategy = {
 		type = befriend
-		id = RUS
+		id = BWR
 		value = 25
 	}
 }
@@ -1608,22 +1608,22 @@ RUS_litvinov_active_hostile_others = {
 	}
 
 	enable = {
-		RUS = { has_idea = RUS_maksim_litvinov }
+		BWR = { has_idea = RUS_maksim_litvinov }
 		is_subject = no
 	}
 
 	abort = {
 		OR = {
-			RUS = { NOT = { has_idea = RUS_maksim_litvinov } }
+			BWR = { NOT = { has_idea = RUS_maksim_litvinov } }
 			has_capitulated = yes
-			is_in_faction_with = RUS
+			is_in_faction_with = BWR
 			is_subject = yes
 		}
 	}
 
 	ai_strategy = {
 		type = antagonize
-		id = RUS
+		id = BWR
 		value = 25
 	}
 }
@@ -1635,7 +1635,7 @@ RUS_litvinov_active_hostile_others = {
 #Soviets
 RUS_khakimov_proposal_sov = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 
 	enable = {
@@ -1643,7 +1643,7 @@ RUS_khakimov_proposal_sov = {
 		has_completed_focus = RUS_the_khakimov_proposal
 		SAU = {
 			has_opinion = {
-				target = RUS
+				target = BWR
 				value < 0
 			}
 			is_subject = no
@@ -1659,7 +1659,7 @@ RUS_khakimov_proposal_sov = {
 			SAU = { is_subject = no }
 			SAU = {
 				has_opinion = {
-					target = RUS
+					target = BWR
 					value > 75
 				}
 			}
@@ -1688,7 +1688,7 @@ RUS_khakimov_proposal_sau = {
 	}
 
 	enable = {
-		RUS = {
+		BWR = {
 			has_idea = RUS_maksim_litvinov
 			has_completed_focus = RUS_the_khakimov_proposal
 			is_subject = no
@@ -1698,16 +1698,16 @@ RUS_khakimov_proposal_sau = {
 
 	abort = {
 		OR = {
-			RUS = { NOT = { has_idea = RUS_maksim_litvinov } }
-			is_in_faction_with = RUS
-			RUS = { has_capitulated = yes }
+			BWR = { NOT = { has_idea = RUS_maksim_litvinov } }
+			is_in_faction_with = BWR
+			BWR = { has_capitulated = yes }
 			is_subject = yes
 		}
 	}
 
 	ai_strategy = {
 		type = diplo_action_desire
-		id = RUS
+		id = BWR
 		target = befriend
 		value = 25
 	}
@@ -1715,7 +1715,7 @@ RUS_khakimov_proposal_sau = {
 
 RUS_unit_buffer_for_asian_threat = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = { #Always have a small unit buffer along the railway, just in case asian fronts get dangerous
@@ -1762,7 +1762,7 @@ RUS_unit_buffer_for_asian_threat = {
 
 RUS_coming_to_getcha_iran = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_completed_focus = RUS_preemptive_invasion_of_iran
@@ -1801,7 +1801,7 @@ RUS_coming_to_getcha_iran = {
 RUS_ENG_tagteam_iran = {
 	allowed = {
 		OR = {
-			original_tag = RUS
+			original_tag = BWR
 			original_tag = ENG
 			original_tag = RAJ
 		}
@@ -1839,7 +1839,7 @@ RUS_ENG_tagteam_iran = {
 
 RUS_boost_div_upgrades = { #lets make sure sov upgrades divs when at war
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		has_war = yes
@@ -1862,7 +1862,7 @@ RUS_boost_div_upgrades = { #lets make sure sov upgrades divs when at war
 
 RUS_defend_blitzkrieg  = {#Only perform careful attacks, we want to defend while germany has buffs.
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 
 	enable = {
@@ -1890,7 +1890,7 @@ RUS_defend_blitzkrieg  = {#Only perform careful attacks, we want to defend while
 
 RUS_defend_blitzkrieg_2  = {#Only perform careful attacks, we want to defend for a bit
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 
 	enable = {
@@ -1918,7 +1918,7 @@ RUS_defend_blitzkrieg_2  = {#Only perform careful attacks, we want to defend for
 
 RUS_wants_civ = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		date < 1939.1.1
@@ -1937,7 +1937,7 @@ RUS_wants_civ = {
 ###########################
 RUS_ultimatum_LIT = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		is_historical_focus_on = yes
@@ -1968,7 +1968,7 @@ RUS_ultimatum_LIT = {
 
 RUS_ultimatum_LAT = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		is_historical_focus_on = yes
@@ -1999,7 +1999,7 @@ RUS_ultimatum_LAT = {
 
 RUS_ultimatum_EST = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		is_historical_focus_on = yes
@@ -2030,7 +2030,7 @@ RUS_ultimatum_EST = {
 
 RUS_nothing_bad_could_possibly_happen_now = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		always = no #No longer necessary
@@ -2056,7 +2056,7 @@ RUS_nothing_bad_could_possibly_happen_now = {
 
 RUS_ultimatum_ROM = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		is_historical_focus_on = yes
@@ -2142,7 +2142,7 @@ RUS_ultimatum_ROM = {
 
 RUS_ultimatum_FIN = {
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		is_historical_focus_on = yes
@@ -2210,7 +2210,7 @@ ALLIES_avoid_enemies_for_a_while_ww3 = {
 	}
 	ai_strategy = {
 		type = conquer
-		id = RUS
+		id = BWR
 		value = -200
 	}
 }

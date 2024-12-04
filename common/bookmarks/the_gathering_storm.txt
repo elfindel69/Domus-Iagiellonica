@@ -167,7 +167,7 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}			
 		}
-		"RUS"={
+		"BWR"={
 			history = "RUS_GATHERING_STORM_DESC"
 			ideology = monarchist
 			available = { has_dlc = "No Step Back" }
@@ -181,7 +181,7 @@ bookmarks = {
 				RUS_reconvene_the_zemsky_sobor
 			}	
 		}
-		"RUS"={
+		"BWR"={
 			history = "RUS_GATHERING_STORM_DESC"
 			ideology = monarchist
 			available = { NOT = { has_dlc = "No Step Back" } }

@@ -2813,7 +2813,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = POL_a_left_alliance }
 		available = {
-			country_exists = RUS
+			country_exists = BWR
 		}
 		x = 0
 		y = 1
@@ -2827,8 +2827,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_opinion_modifier = { target = RUS modifier = POL_seek_accommodation_with_USSR }
-			RUS = { add_opinion_modifier = { target = ROOT modifier = POL_seek_accommodation_with_USSR } }
+			add_opinion_modifier = { target = BWR modifier = POL_seek_accommodation_with_USSR }
+			BWR = { add_opinion_modifier = { target = ROOT modifier = POL_seek_accommodation_with_USSR } }
 			#Relation Boost with the USSR
 		}
 	}
@@ -2838,12 +2838,12 @@ focus_tree = {
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = POL_seek_accommodation_with_USSR }
 		available = {
-			country_exists = RUS
+			country_exists = BWR
 			has_government = communism
 			not = {
-				has_war_with = RUS
+				has_war_with = BWR
 			}
-			RUS = {
+			BWR = {
 				is_faction_leader = yes
 			}
 		}
@@ -2859,10 +2859,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_opinion_modifier = { target = RUS modifier = POL_seek_accommodation_with_USSR }
-			RUS = { add_opinion_modifier = { target = ROOT modifier = POL_seek_accommodation_with_USSR } }
+			add_opinion_modifier = { target = BWR modifier = POL_seek_accommodation_with_USSR }
+			BWR = { add_opinion_modifier = { target = ROOT modifier = POL_seek_accommodation_with_USSR } }
 			#Relation Boost with the USSR
-			RUS = {
+			BWR = {
 				country_event = SOV_POL_faction.1
 			}
 			#ask to join Comintern	
@@ -4686,7 +4686,7 @@ focus_tree = {
 				AND = {
 					OR = {
 						has_war_with = GER
-						has_war_with = RUS
+						has_war_with = BWR
 					}
 					is_in_faction = yes
 					surrender_progress > 0.6
@@ -4778,7 +4778,7 @@ focus_tree = {
 				AND = {
 					OR = {
 						has_war_with = GER
-						has_war_with = RUS
+						has_war_with = BWR
 					}
 					is_in_faction = yes
 					surrender_progress > 0.6
@@ -4844,7 +4844,7 @@ focus_tree = {
 				AND = {
 					OR = {
 						has_war_with = GER
-						has_war_with = RUS
+						has_war_with = BWR
 					}
 					is_in_faction = yes
 					surrender_progress > 0.7
@@ -4879,7 +4879,7 @@ focus_tree = {
 				AND = {
 					OR = {
 						has_war_with = GER
-						has_war_with = RUS
+						has_war_with = BWR
 					}
 					is_in_faction = yes
 					surrender_progress > 0.8
@@ -4933,7 +4933,7 @@ focus_tree = {
 				AND = {
 					OR = {
 						has_war_with = GER
-						has_war_with = RUS
+						has_war_with = BWR
 					}
 					is_in_faction = yes
 					surrender_progress > 0.6
@@ -4966,7 +4966,7 @@ focus_tree = {
 				AND = {
 					OR = {
 						has_war_with = GER
-						has_war_with = RUS
+						has_war_with = BWR
 					}
 					is_in_faction = yes
 					surrender_progress > 0.6
@@ -4999,7 +4999,7 @@ focus_tree = {
 				AND = {
 					OR = {
 						has_war_with = GER
-						has_war_with = RUS
+						has_war_with = BWR
 					}
 					is_in_faction = yes
 					surrender_progress > 0.7
@@ -5183,7 +5183,7 @@ focus_tree = {
 				AND = {
 					OR = {
 						has_war_with = GER
-						has_war_with = RUS
+						has_war_with = BWR
 					}
 					is_in_faction = yes
 					surrender_progress > 0.6
@@ -5218,7 +5218,7 @@ focus_tree = {
 				AND = {
 					OR = {
 						has_war_with = GER
-						has_war_with = RUS
+						has_war_with = BWR
 					}
 					is_in_faction = yes
 					surrender_progress > 0.6

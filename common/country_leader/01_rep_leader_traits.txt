@@ -201,7 +201,7 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.05
 		targeted_modifier = {
-			tag = RUS
+			tag = BWR
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}

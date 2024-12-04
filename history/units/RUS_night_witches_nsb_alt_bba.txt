@@ -4,7 +4,7 @@
 	#Historically used U-2 -> In-game using old Tactical Bomber (Ilyushin-DB3)
 	219 = {
 		small_plane_cas_airframe_0 = {		
-			owner = "RUS" 
+			owner = "BWR" 
 			amount = 40
 			version_name = "U-2"
 		}
@@ -20,7 +20,7 @@
 		# 587th Bomber Aviation Regiment / Later 125th Guards Bomber Aviation Regiment
 		#Historically used Pe-2 -> In-game using Strategic Bomber (Pe-8)
 		small_plane_cas_airframe_2 = {		
-			owner = "RUS" 
+			owner = "BWR" 
 			amount = 40
 			version_name = "Pe-2"
 		}
@@ -36,7 +36,7 @@
 		# 586th Fighter Aviation Regiment / 586th Air Defense Fighter Aviation Regiment
 		#Historically used Yak-2 -> In-game using Fighter I-16 
 		small_plane_airframe_1 = {		
-			owner = "RUS" 
+			owner = "BWR" 
 			amount = 40
 			version_name = "Yak-1"
 		}

@@ -1,7 +1,7 @@
 armored_RUS = {
 
 	available_for = {
-		RUS
+		BWR
 	}
 
 	roles = {
@@ -545,7 +545,7 @@ armored_RUS = {
 infantry_RUS = {
 
 	available_for = {
-		RUS
+		BWR
 	}
 
 	roles = {
@@ -759,7 +759,7 @@ infantry_RUS = {
 mountaineers_RUS = {
 
 	available_for = {
-		RUS
+		BWR
 	}
 
 	roles = {
@@ -863,7 +863,7 @@ mountaineers_RUS = {
 marines_RUS = {
 
 	available_for = {
-		RUS
+		BWR
 	}
 
 	roles = {
@@ -961,7 +961,7 @@ marines_RUS = {
 paratroopers_RUS = {
 
 	available_for = {
-		RUS
+		BWR
 	}
 
 	roles = {
@@ -1068,7 +1068,7 @@ paratroopers_RUS = {
 garrison_RUS = {
 
 	available_for = {
-		RUS
+		BWR
 	}
 
 	roles = {
@@ -1166,7 +1166,7 @@ garrison_RUS = {
 anti_armor_RUS = {
 
 	available_for = {
-		RUS
+		BWR
 	}
 
 	roles = {

@@ -1861,12 +1861,12 @@ focus = {
 
 		available = {
 			not = {
-				has_war_with = RUS
+				has_war_with = BWR
 			}
 		}
 		
 		bypass = {
-			RUS = {
+			BWR = {
 				OR = {
 					exists = no
 					has_war_with = USA
@@ -1880,7 +1880,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			RUS = { add_to_tech_sharing_group = USA_SOV_tech_group }
+			BWR = { add_to_tech_sharing_group = USA_SOV_tech_group }
 			add_to_tech_sharing_group = USA_SOV_tech_group
 		}	
 	}
@@ -1892,9 +1892,9 @@ focus = {
 		mutually_exclusive = { focus = USA_secure_china }
 		available = {
 			not = {
-				has_war_with = RUS
+				has_war_with = BWR
 			}
-			RUS = {
+			BWR = {
 				is_faction_leader = yes
 			}
 			is_in_faction = no
@@ -1913,7 +1913,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			RUS = {
+			BWR = {
 				country_event = generic.2
 			}
 		}
@@ -4736,7 +4736,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			RUS = {
+			BWR = {
 				add_opinion_modifier = { target = USA modifier = war_plan_white }
 			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_white show_effect_tooltip = yes show_modifiers = yes }
@@ -5658,7 +5658,7 @@ focus = {
 				is_in_faction_with = GER
 				is_in_faction_with = JAP
 				is_in_faction_with = ITA
-				is_in_faction_with = RUS
+				is_in_faction_with = BWR
 				is_in_faction_with = FRA
 				is_in_faction_with = ENG
 			}
