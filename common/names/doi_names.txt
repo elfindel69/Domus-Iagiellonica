@@ -1,4 +1,4 @@
-RUS = {
+BWR = {
 	male = {
 		names = { 
 			Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady 

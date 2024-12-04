@@ -1,9 +1,9 @@
 RUS_left_opposition_plan = {
-	name = "RUS left opposition plan"
+	name = "BWR left opposition plan"
 	desc = ""
 
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = {
@@ -126,11 +126,11 @@ RUS_left_opposition_plan = {
 }
 
 RUS_left_opposition_cooperative_plan = {
-	name = "RUS left opposition cooperative plan"
+	name = "BWR left opposition cooperative plan"
 	desc = ""
 
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = {
@@ -255,11 +255,11 @@ RUS_left_opposition_cooperative_plan = {
 
 
 RUS_right_opposition_plan = {
-	name = "RUS right opposition plan"
+	name = "BWR right opposition plan"
 	desc = ""
 
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = {
@@ -386,11 +386,11 @@ RUS_right_opposition_plan = {
 
 
 RUS_right_opposition_cooperative_plan = {
-	name = "RUS right opposition cooperative plan"
+	name = "BWR right opposition cooperative plan"
 	desc = ""
 
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = {
@@ -836,7 +836,7 @@ RUS_exiles_tsarist_plan = {
 	desc = "The White Exiles return to bring Russia onto the path to renewed Tsarism."
 
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = {
@@ -953,7 +953,7 @@ RUS_exiles_fascist_plan = {
 	desc = "The White Exiles return to bring Fascism to Russia."
 
 	allowed = {
-		original_tag = RUS
+		original_tag = BWR
 	}
 	enable = {
 		OR = {

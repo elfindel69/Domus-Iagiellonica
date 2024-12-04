@@ -1,11 +1,11 @@
 
 RUS_build_intel_network_in_MEX_strat = {
 	allowed = {
-		tag = RUS
+		tag = BWR
 	}
 	
 	enable = {
-		tag = RUS
+		tag = BWR
 		OR = {
 			AND = {
 				date > 1940.1.1
@@ -27,11 +27,11 @@ RUS_build_intel_network_in_MEX_strat = {
 
 RUS_raid_trotskys_villa_strat = {
 	allowed = {
-		tag = RUS
+		tag = BWR
 	}
 	
 	enable = {
-		tag = RUS
+		tag = BWR
 		has_completed_focus = RUS_behead_the_snake
 
 		OR = { #Do it once then go for murder, then you can try again
@@ -53,11 +53,11 @@ RUS_raid_trotskys_villa_strat = {
 
 RUS_murder_trotsky_strat = {
 	allowed = {
-		tag = RUS
+		tag = BWR
 	}
 	
 	enable = {
-		tag = RUS
+		tag = BWR
 		has_completed_focus = RUS_behead_the_snake
 
 		#Do it after raiding the villa

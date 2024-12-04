@@ -1,4 +1,4 @@
-﻿RUS = {
+﻿BWR = {
 	fleet_names_template = FLEET_NAME_RUS
 	submarine = {
 		prefix = ""

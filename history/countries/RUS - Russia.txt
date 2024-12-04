@@ -582,7 +582,7 @@ if = {
 		traits = { operative_natural_orator }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { RUS HUN }
+		nationalities = { BWR HUN }
 	}
 
 	create_operative_leader = {
@@ -591,7 +591,7 @@ if = {
 		traits = { operative_double_agent operative_infiltrator }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { RUS ENG }
+		nationalities = { BWR ENG }
 	}
 	create_operative_leader = {
 		name = "Richard Sorge"
@@ -599,7 +599,7 @@ if = {
 		traits = { operative_well_groomed }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { RUS GER }
+		nationalities = { BWR GER }
 	}
 }
 

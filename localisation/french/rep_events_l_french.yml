@@ -183,14 +183,14 @@
  RUS_royals_events.2.d:0 "Notre gouvernement a accepté d'accueillir la famille royale russe exilée. Il est de notre devoir de les accueillir et de les faire se sentir en sécurité dans notre pays."
  RUS_royals_events.2.a:0 "Elle est évidemment bienvenue"
  
- RUS_royals_news_events.1.t:0 "Bannissement de la famille royale [RUS.GetAdjFS]"
- RUS_royals_news_events.1.desc:0 "\n« Par mesure de clémence », l'ensemble de la famille royale [RUS.GetAdjFS] a été bannie hors du pays. Les porte-parole officiels du gouvernement n'ont fait aucun commentaire, non plus que les représentants de la famille elle-même.\n    Celle-ci est arrivée dans la journée [USA.GetAuEnANP] [USA.GetName], où elle a demandé l'asile – ce qui lui a été accordé."
+ RUS_royals_news_events.1.t:0 "Bannissement de la famille royale [BWR.GetAdjFS]"
+ RUS_royals_news_events.1.desc:0 "\n« Par mesure de clémence », l'ensemble de la famille royale [BWR.GetAdjFS] a été bannie hors du pays. Les porte-parole officiels du gouvernement n'ont fait aucun commentaire, non plus que les représentants de la famille elle-même.\n    Celle-ci est arrivée dans la journée [USA.GetAuEnANP] [USA.GetName], où elle a demandé l'asile – ce qui lui a été accordé."
  RUS_royals_news_events.1a:0 "Bon débarras !"
  RUS_royals_news_events.1.b:0 "Ainsi, tous peuvent constater\nla tyrannie des socialistes"
  RUS_royals_news_events.c:0 "C'est une magnifique victoire\ndans la lutte des classes"
  
- RUS_royals_news_events.2.t:0 "Disparition de la famille royale [RUS.GetAdjFS]"
- RUS_royals_news_events.2.desc:0 "\nUne nouvelle semaine vient de s'écouler depuis la dernière apparition publique d'un membre de la famille royale [RUS.GetAdjFS]. Les rumeurs ont commencé à circuler sur son sort le plus probable. Le gouvernement a quant à lui refusé de faire le moindre commentaire à ce propos, et a commencé à poursuivre les médias qui voudraient s'y intéresser.\n    Le silence du gouvernement est d'autant plus remarquable que certaines personnes restées anonymes mais prétendant avoir travaillé pour elle disent avoir vu « la famille royale être emmenée hors de Palais Royal par des hommes masqués », il y a de cela quelques semaines."
+ RUS_royals_news_events.2.t:0 "Disparition de la famille royale [BWR.GetAdjFS]"
+ RUS_royals_news_events.2.desc:0 "\nUne nouvelle semaine vient de s'écouler depuis la dernière apparition publique d'un membre de la famille royale [BWR.GetAdjFS]. Les rumeurs ont commencé à circuler sur son sort le plus probable. Le gouvernement a quant à lui refusé de faire le moindre commentaire à ce propos, et a commencé à poursuivre les médias qui voudraient s'y intéresser.\n    Le silence du gouvernement est d'autant plus remarquable que certaines personnes restées anonymes mais prétendant avoir travaillé pour elle disent avoir vu « la famille royale être emmenée hors de Palais Royal par des hommes masqués », il y a de cela quelques semaines."
  RUS_royals_news_events.2.a:0 "Nous devions le faire"
  RUS_royals_news_events.2.b:0 "Ces socialistes n'ont décidément\naucun respect pour la vie humaine !"
  RUS_royals_news_events.2.c:0 "Ils ont eu ce qu'ils méritaient"

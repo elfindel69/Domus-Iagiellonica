@@ -989,7 +989,7 @@ RUS_target_capital_is_on_unlocked_continent_uprisings = {
 	}
 }
 
-RUS_basic_pressure_government_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = RUS // FROM = Target
+RUS_basic_pressure_government_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = BWR // FROM = Target
 	country_exists = FROM
 	NOT = { has_war_with = FROM }
 	NOT = { FROM = { is_subject_of = ROOT } }
@@ -999,14 +999,14 @@ RUS_basic_pressure_government_triggers = { #Used in foreign politics targeted de
 	}
 }
 
-RUS_basic_promote_rallies_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = RUS // FROM = Target
+RUS_basic_promote_rallies_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = BWR // FROM = Target
 	country_exists = FROM
 	NOT = { has_war_with = FROM }
 	NOT = { FROM = { is_subject_of = ROOT } }
 	NOT = { has_government = FROM }
 }
 
-RUS_basic_ultimatum_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = RUS // FROM = Target
+RUS_basic_ultimatum_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = BWR // FROM = Target
 	country_exists = FROM
 	FROM = {
 		NOT = { has_war_with = ROOT }
@@ -1019,7 +1019,7 @@ RUS_basic_ultimatum_triggers = { #Used in foreign politics targeted decs - Expec
 	}
 }
 
-RUS_basic_fight_alongside_comrades_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = RUS // FROM = Target
+RUS_basic_fight_alongside_comrades_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = BWR // FROM = Target
 	country_exists = FROM
 	FROM = {
 		has_civil_war = yes
@@ -1097,22 +1097,22 @@ RUS_is_opposition_state = {
 		OR = {
 			AND = {
 				has_state_flag = RUS_left_opposition_state
-				RUS = { RUS_is_left_opposition = yes }
+				BWR = { RUS_is_left_opposition = yes }
 			}
 			AND = {
 				has_state_flag = RUS_right_opposition_state
-				RUS = { RUS_is_right_opposition = yes }
+				BWR = { RUS_is_right_opposition = yes }
 			}
 			AND = {
 				has_state_flag = RUS_exiles_state
-				RUS = { RUS_is_exiles = yes }
+				BWR = { RUS_is_exiles = yes }
 			}
 		}
 	}
 }
 
 RUS_is_display_state = {
-	is_owned_by = RUS
+	is_owned_by = BWR
 	IF = {
 		limit = { ROOT = { RUS_is_left_opposition = yes } }
 		OR = {
@@ -1156,25 +1156,25 @@ RUS_is_unaligned_state = {
 RUS_is_left_opposition = {
 	#custom_trigger_tooltip = {
 		#tooltip = RUS_is_left_opposition_tt
-		RUS = { has_completed_focus = RUS_the_left_opposition }
+		BWR = { has_completed_focus = RUS_the_left_opposition }
 	#}
 }
 
 RUS_advisor_is_aligned_left = {
 	RUS_is_left_opposition = yes 
 	has_completed_focus = RUS_gain_support_from_party_members
-	tag = RUS
+	tag = BWR
 }
 RUS_advisor_is_aligned_right = {
 	RUS_is_right_opposition = yes 
 	has_completed_focus = RUS_gain_support_from_party_members
-	tag = RUS
+	tag = BWR
 }
 RUS_advisor_is_aligned_centre = {
-	original_tag = RUS
-	NOT = { tag = RUS }
+	original_tag = BWR
+	NOT = { tag = BWR }
 	any_country = {
-		original_tag = RUS 
+		original_tag = BWR 
 		NOT = { has_completed_focus = RUS_gain_support_from_party_members } 
 	}
 }
@@ -1182,14 +1182,14 @@ RUS_advisor_is_aligned_centre = {
 RUS_is_right_opposition = {
 	#custom_trigger_tooltip = {
 		#tooltip = RUS_is_right_opposition_tt
-		RUS = { has_completed_focus = RUS_the_right_opposition }
+		BWR = { has_completed_focus = RUS_the_right_opposition }
 	#}
 }
 
 RUS_is_exiles = {
 	#custom_trigger_tooltip = {
 		#tooltip = RUS_is_exiles_tt
-		RUS = { has_completed_focus = RUS_beaten_but_not_defeated }
+		BWR = { has_completed_focus = RUS_beaten_but_not_defeated }
 	#}
 }
 
@@ -1220,7 +1220,7 @@ RUS_has_crackdown = {
 RUS_is_major_not_original_sov = {
 	is_major = yes
 	hidden_trigger = {
-		NOT = { original_tag = RUS }
+		NOT = { original_tag = BWR }
 	}
 }
 

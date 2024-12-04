@@ -2374,7 +2374,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group
-			RUS = { add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group }
+			BWR = { add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group }
 		}
 	}
 
@@ -2393,12 +2393,12 @@ focus_tree = {
 			factor = 80
 			modifier = {
 				factor = 0
-					RUS = { has_capitulated = yes }
+					BWR = { has_capitulated = yes }
 			}
 		}
 
 		available = {
-			NOT = { has_war_with = RUS }
+			NOT = { has_war_with = BWR }
 			any_other_country = {
 				is_major = yes
 				has_government = communism
@@ -2407,12 +2407,12 @@ focus_tree = {
 			is_in_faction = no
 			NOT = {
 				any_other_country = {
-					is_in_faction_with = RUS
+					is_in_faction_with = BWR
 					has_war_with = HUN	
 				}
 			}
 			is_subject = no
-			RUS = { is_faction_leader = yes }
+			BWR = { is_faction_leader = yes }
 			communism > 0.5
 		}
 
@@ -2428,17 +2428,17 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					RUS = {
+					BWR = {
 						has_government = communism
 						is_faction_leader = yes
 					}
 				}
-				RUS = {
+				BWR = {
 					country_event = generic.2
 				}
 				if = {
 					limit = {
-						RUS = {
+						BWR = {
 							NOT = {
 								has_completed_focus = SOV_great_purge
 							}
@@ -2516,15 +2516,15 @@ focus_tree = {
 		available = {
 			ROM = { 
 				exists = yes 
-				NOT = { is_in_faction_with = RUS }
-				NOT = { has_war_with = RUS }
+				NOT = { is_in_faction_with = BWR }
+				NOT = { has_war_with = BWR }
 				OR = {
 					owns_state = 76
 					owns_state = 78
 				}
 			}
-			NOT = { has_war_with = RUS }
-			RUS = { 
+			NOT = { has_war_with = BWR }
+			BWR = { 
 				is_faction_leader = yes 
 				exists = yes
 				is_subject = no
@@ -2540,7 +2540,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			RUS = { country_event = DOD_hungary.110 }
+			BWR = { country_event = DOD_hungary.110 }
 		}
 	}
 
@@ -2560,9 +2560,9 @@ focus_tree = {
 
 		available = {
 			CZE = { exists = yes }
-			NOT = { has_war_with = RUS }
-			CZE = { NOT = { is_in_faction_with = RUS } }
-			RUS = { is_faction_leader = yes }
+			NOT = { has_war_with = BWR }
+			CZE = { NOT = { is_in_faction_with = BWR } }
+			BWR = { is_faction_leader = yes }
 		}
 
 		bypass = {
@@ -2574,7 +2574,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			RUS = { country_event = DOD_hungary.120 }
+			BWR = { country_event = DOD_hungary.120 }
 		}
 	}
 

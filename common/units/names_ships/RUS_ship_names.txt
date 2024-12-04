@@ -3,7 +3,7 @@
 RUS_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -42,7 +42,7 @@ RUS_DD_HISTORICAL = {
 RUS_CL_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CL
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -71,7 +71,7 @@ RUS_CL_HISTORICAL = {
 RUS_CA_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CA
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -98,7 +98,7 @@ RUS_CA_HISTORICAL = {
 RUS_MINELAYERS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_MINELAYERS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -125,7 +125,7 @@ RUS_MINELAYERS_HISTORICAL = {
 RUS_BB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BB
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -151,7 +151,7 @@ RUS_BB_HISTORICAL = {
 RUS_BC_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BC
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -178,7 +178,7 @@ RUS_BC_HISTORICAL = {
 RUS_CV_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -203,7 +203,7 @@ RUS_CV_HISTORICAL = {
 RUS_SS_SHCHUKA = {
 	name = NAME_THEME_HISTORICAL_SHCHUKAS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
@@ -309,7 +309,7 @@ RUS_SS_SHCHUKA = {
 RUS_SS_STALINETS = {
 	name = NAME_THEME_HISTORICAL_STALINETS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -351,7 +351,7 @@ RUS_SS_STALINETS = {
 RUS_SS_LENINETS = {
 	name = NAME_THEME_HISTORICAL_LENINETS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -393,7 +393,7 @@ RUS_SS_LENINETS = {
 RUS_SS_CLASS_K = {
 	name = NAME_THEME_HISTORICAL_CLASS_K
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	type = ship
 	ship_types = { ship_hull_cruiser_submarine submarine }
@@ -437,7 +437,7 @@ RUS_SS_CLASS_K = {
 RUS_STATES = {
 	name = NAME_THEME_STATES
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -463,7 +463,7 @@ RUS_STATES = {
 RUS_CITIES = {
 	name = NAME_THEME_CITIES
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -488,7 +488,7 @@ RUS_CITIES = {
 RUS_LEADERS = {
 	name = NAME_THEME_LEADERS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		NOT = { 
@@ -511,7 +511,7 @@ RUS_LEADERS = {
 RUS_RIVERS = {
 	name = NAME_THEME_RIVERS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	type = ship
 
@@ -535,7 +535,7 @@ RUS_RIVERS = {
 RUS_DD_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_DD
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		OR = { 
@@ -576,7 +576,7 @@ RUS_DD_IMPERIAL = {
 RUS_DE_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_DE
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -606,7 +606,7 @@ RUS_DE_IMPERIAL = {
 RUS_CL_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CL
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -634,7 +634,7 @@ RUS_CL_IMPERIAL = {
 RUS_CA_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CA
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -662,7 +662,7 @@ RUS_CA_IMPERIAL = {
 RUS_MINELAYERS_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_MINELAYERS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -688,7 +688,7 @@ RUS_MINELAYERS_IMPERIAL = {
 RUS_MINESWEEPERS_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_MINESWEEPERS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -715,7 +715,7 @@ RUS_MINESWEEPERS_IMPERIAL = {
 RUS_BBBC_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CAPITAL
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -742,7 +742,7 @@ RUS_BBBC_IMPERIAL = {
 RUS_CV_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CARRIERS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -767,7 +767,7 @@ RUS_CV_IMPERIAL = {
 RUS_SS_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_SUBMARINES
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -795,7 +795,7 @@ RUS_SS_IMPERIAL = {
 RUS_IMPERIAL_CITIES = {
 	name = NAME_THEME_CITIES
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -818,7 +818,7 @@ RUS_IMPERIAL_CITIES = {
 RUS_IMPERIAL_GOVERNORATES = {
 	name = NAME_THEME_GOVERNORATES
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = { 
 		OR = { 
@@ -842,7 +842,7 @@ RUS_IMPERIAL_GOVERNORATES = {
 RUS_SAINTS = {
 	name = NAME_THEME_SAINTS
 
-	for_countries = { RUS }
+	for_countries = { BWR }
 
 	can_use = {
 		OR = { 

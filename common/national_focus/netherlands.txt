@@ -4631,10 +4631,10 @@ focus_tree = {
 	focus = {
 		id = HOL_affirm_loyalty_to_moscow
 		available = {
-			NOT = { has_war_with = RUS }
+			NOT = { has_war_with = BWR }
 		}
 		bypass = {
-			is_in_faction_with = RUS
+			is_in_faction_with = BWR
 			NOT = {
 				OR = {
 					focus_progress = {
@@ -4660,7 +4660,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			RUS = { country_event = { id = generic.2 hours = 6 } }
+			BWR = { country_event = { id = generic.2 hours = 6 } }
 			remove_ideas = HOL_aloof_neutrality
 		}
 	}
@@ -4755,9 +4755,9 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						RUS = { has_government = communism }
+						BWR = { has_government = communism }
 					}
-					RUS = {
+					BWR = {
 						add_ai_strategy = {
 							type = alliance
 							id = ROOT
@@ -4837,7 +4837,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { is_in_faction_with = RUS }
+					NOT = { is_in_faction_with = BWR }
 					NOT = { is_in_faction_with = FRA }
 				}
 				custom_effect_tooltip = HOL_for_the_common_good_tt
@@ -4845,7 +4845,7 @@ focus_tree = {
 			if = {
 				limit = {
 					is_in_faction_with = FRA
-					NOT = { is_in_faction_with = RUS }
+					NOT = { is_in_faction_with = BWR }
 				}
 				add_to_tech_sharing_group = HOL_fra_research
 				every_country = {
@@ -4857,7 +4857,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					is_in_faction_with = RUS
+					is_in_faction_with = BWR
 				}
 				add_to_tech_sharing_group = HOL_sov_research
 				every_country = {
@@ -4895,7 +4895,7 @@ focus_tree = {
 	focus = {
 		id = HOL_bastion_of_true_communism
 		available = {
-			NOT = { is_in_faction_with = RUS }
+			NOT = { is_in_faction_with = BWR }
 			NOT = { is_in_faction_with = FRA }
 		}
 		prerequisite = { focus = HOL_decolonization }
@@ -4915,7 +4915,7 @@ focus_tree = {
 			add_ideas = HOL_bastion_of_true_communism
 			remove_ideas = HOL_aloof_neutrality
 			hidden_effect = {
-				RUS = {
+				BWR = {
 					add_ai_strategy = {
 						type = alliance
 						id = ROOT
@@ -6016,7 +6016,7 @@ focus_tree = {
 			is_in_faction_with = ENG
 			is_in_faction_with = USA
 			has_war = yes
-			NOT = { has_war_with = RUS }
+			NOT = { has_war_with = BWR }
 			has_full_control_of_state = 335
 			has_full_control_of_state = 672
 		}

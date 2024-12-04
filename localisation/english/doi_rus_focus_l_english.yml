@@ -1,16 +1,16 @@
 ﻿l_english:
  GER_soviet_treaty:1 "Treaty with [GER.GetTheUSSRName]"
- GER_soviet_treaty_desc:1 "We can pursue a new research treaty with [RUS.GetNameDef] in order to develop, chiefly, better tanks. If they agree, we can reopen the tank school we closed down in Kama in 1933. [RUS.GetAdjective] cooperation will, of course, mean that they too will benefit from the innovations made..."
+ GER_soviet_treaty_desc:1 "We can pursue a new research treaty with [BWR.GetNameDef] in order to develop, chiefly, better tanks. If they agree, we can reopen the tank school we closed down in Kama in 1933. [BWR.GetAdjective] cooperation will, of course, mean that they too will benefit from the innovations made..."
  GER_mol_rib_pact:1 "[GER.GetMolotovRibbentropName]"
- GER_mol_rib_pact_desc:1 "A treaty of friendship and non-aggression with [GER.GetTheUSSRName] might turn the stomach, but it will allow their precious oil to keep flowing into Germany. The secret addendum will divide the territories of Romania, Poland, Lithuania, Latvia, Estonia and Finland into [GER.GetAdjective] and [RUS.GetAdjective] spheres of influence..."
- GER_mol_rib_pact_tt:1 "Enter into a §Ynon-aggression pact§! with §YSoviet Union§! and agree to §Ydivide Poland§! between [RUS.GetName] and Germany\n"
+ GER_mol_rib_pact_desc:1 "A treaty of friendship and non-aggression with [GER.GetTheUSSRName] might turn the stomach, but it will allow their precious oil to keep flowing into Germany. The secret addendum will divide the territories of Romania, Poland, Lithuania, Latvia, Estonia and Finland into [GER.GetAdjective] and [BWR.GetAdjective] spheres of influence..."
+ GER_mol_rib_pact_tt:1 "Enter into a §Ynon-aggression pact§! with §YSoviet Union§! and agree to §Ydivide Poland§! between [BWR.GetName] and Germany\n"
  SOV_MOLOTOV_RIBBENTROP_NAME_COMMUNIST:0 "Pacte Molotov-Ribbentrop"
  SOV_MOLOTOV_RIBBENTROP_NAME_EXILES:0 "Pacte de partition de la Pologne"
  GER_ussr_war_goal:1 "War with [GER.GetTheUSSRName]"
- GER_ussr_war_goal_desc:1 "We can focus our propaganda efforts on preparing the German people - and the world - for a righteous war on [RUS.GetNameDef]."
+ GER_ussr_war_goal_desc:1 "We can focus our propaganda efforts on preparing the German people - and the world - for a righteous war on [BWR.GetNameDef]."
  GER_bulwark_against_bolshevism:1 "[GER.GetBulwarkName]"
  GER_bulwark_against_bolshevism_desc:1 "Our nation stands as a shield against [GER.GetBulwarkBolshevismDesc], protecting the West from [GER.GetBulwarkCommunismDesc] influence. We must carry this mantle with pride, and prepare to use arms if necessary."
- GER_bulwark_against_bolshevism_tt:1 "§RThis National Spirit will be lost if in a faction with, or fighting a war on the same side of, [RUS.GetNameDef].§!\n"
+ GER_bulwark_against_bolshevism_tt:1 "§RThis National Spirit will be lost if in a faction with, or fighting a war on the same side of, [BWR.GetNameDef].§!\n"
  RUS_BULWARK_NAME_COMMUNIST:0 "Bulwark Against Bolshevism"
  RUS_BULWARK_NAME_FASCISM:0 "Fortress Against Fascism"
  RUS_BULWARK_NAME_NEUTRALITY:0 "Redoubt Against Russia"
@@ -26,9 +26,9 @@
  RUS_DANZIG_GUARANTEES_REDS_DESC_COMMUNIST:0 "of the Reds"
  RUS_DANZIG_GUARANTEES_REDS_DESC_NEUTRALITY:0 "from the East"
  GER_safeguard_the_baltic:0 "Safeguard the Baltic"
- GER_safeguard_the_baltic_desc:1 "The Baltics were a part of the Russian Empire until a few decades ago, and it stands to reason the [GER.GetRussiansDemonym] may once more try to annex them. We must prevent this, and offer our military support in case of [RUS.GetAdjective] invasion."
+ GER_safeguard_the_baltic_desc:1 "The Baltics were a part of the Russian Empire until a few decades ago, and it stands to reason the [GER.GetRussiansDemonym] may once more try to annex them. We must prevent this, and offer our military support in case of [BWR.GetAdjective] invasion."
  GER_tackle_the_communist_threat:1 "Tackle the [GER.GetTackleCommunistThreatName] Threat"
- GER_tackle_the_communist_threat_desc:1 "As long as [RUS.GetNameDef] exists, it will be a threat to us. Rather than waiting for them to strike, we shall take the initiative in our own hands."
+ GER_tackle_the_communist_threat_desc:1 "As long as [BWR.GetNameDef] exists, it will be a threat to us. Rather than waiting for them to strike, we shall take the initiative in our own hands."
  RUS_TACKLE_COMMUNIST_THREAT_NAME_COMMUNIST:0 "Communist"
  RUS_TACKLE_COMMUNIST_THREAT_NAME_EXILES:0 "Eastern"
  GER_the_great_red_menace:1 "The Great [GER.GetGreatRedMenaceName] Menace"
@@ -40,34 +40,34 @@
  RUS_DANUBIAN_MEMBERSHIP_DESC_COMMUNIST:0 "communism"
  RUS_DANUBIAN_MEMBERSHIP_DESC_EXILES:0 "eastern aggression"
  GER_danubian_expansion:0 "Danubian Expansion"
- GER_danubian_expansion_desc:1 "We must seek to expand our influence to those Balkan nations prone to [RUS.GetAdjective] aggression. We shall offer the remaining nations on the Danube membership and protection against the threat of [GER.GetDanubianMembershipDesc]."
+ GER_danubian_expansion_desc:1 "We must seek to expand our influence to those Balkan nations prone to [BWR.GetAdjective] aggression. We shall offer the remaining nations on the Danube membership and protection against the threat of [GER.GetDanubianMembershipDesc]."
  invite_non_fascist_communist_only_TT:1 "Requires potential member states to not be fascist or communist and not being in a faction already.\n"
  RUS_BALTIC_MEMBERSHIP_DESC_COMMUNIST:0 "communism"
- RUS_BALTIC_MEMBERSHIP_DESC_EXILES:0 "[RUS.GetAdjective] imperialism"
+ RUS_BALTIC_MEMBERSHIP_DESC_EXILES:0 "[BWR.GetAdjective] imperialism"
  RUS_FINNISH_MEMBERSHIP_DESC_COMMUNIST:0 "Reds"
  RUS_FINNISH_MEMBERSHIP_DESC_EXILES:0 "Russians"
  RUS_STRIKE_AT_THE_SOURCE_DESC_COMMUNIST:0 "communist influence"
  RUS_STRIKE_AT_THE_SOURCE_DESC_EXILES:0 "Russian imperialism"
 
- USA_unholy_alliance_tt:1 "Boosts opinion and trade opinion with [RUS.GetNameDef] or Germany if they are at war, siding with the defender."
+ USA_unholy_alliance_tt:1 "Boosts opinion and trade opinion with [BWR.GetNameDef] or Germany if they are at war, siding with the defender."
 
- ENG_embargo_ussr:1 "Embargo [RUS.GetNameDefCap]"
- ENG_embargo_ussr_desc:1 "[RUS.GetNameDefCap] is growing powerful and using British resources to fuel their military efforts. We should deprive them of access to our trade."
- ENG_war_with_ussr:1 "War with the [RUS.GetAdjective]s"
+ ENG_embargo_ussr:1 "Embargo [BWR.GetNameDefCap]"
+ ENG_embargo_ussr_desc:1 "[BWR.GetNameDefCap] is growing powerful and using British resources to fuel their military efforts. We should deprive them of access to our trade."
+ ENG_war_with_ussr:1 "War with the [BWR.GetAdjective]s"
 
- RAJ_indian_peoples_army_support:0 "[RUS.GetNameDefCap] will support their cause."
+ RAJ_indian_peoples_army_support:0 "[BWR.GetNameDefCap] will support their cause."
 
- LIT_soviet_mutual_assistance:1 "[RUS.GetAdjective] Mutual Assistance"
+ LIT_soviet_mutual_assistance:1 "[BWR.GetAdjective] Mutual Assistance"
 
- BALTIC_restore_workers_republic_desc:0 "During our struggle for independence, the Soviets aided the creation of a [Root.GetAdjective] Worker’s Republic. Although the republic failed, its leaders remain alive in both [Root.GetNameDef] and [RUS.GetNameDef], hence hope for the worker’s republic remains!"
+ BALTIC_restore_workers_republic_desc:0 "During our struggle for independence, the Soviets aided the creation of a [Root.GetAdjective] Worker’s Republic. Although the republic failed, its leaders remain alive in both [Root.GetNameDef] and [BWR.GetNameDef], hence hope for the worker’s republic remains!"
 
- BALTIC_direct_intervention_desc:0 "We have proven unable to reclaim the government alone and we must call upon our allies in [RUS.GetNameDef] to aid us in our struggle."
+ BALTIC_direct_intervention_desc:0 "We have proven unable to reclaim the government alone and we must call upon our allies in [BWR.GetNameDef] to aid us in our struggle."
 
- BALTIC_align_paramilitarists_desc:0 "There are many paramilitary groups throughout [Root.GetNameDef], most of which are devoted solely to the protection of [Root.GetAdjective] self-determination. While admirable, it would be preferred if these groups were to see us not as [RUS.GetAdjective] puppets, but as the logical continuation of the [Root.GetAdjective] state."
+ BALTIC_align_paramilitarists_desc:0 "There are many paramilitary groups throughout [Root.GetNameDef], most of which are devoted solely to the protection of [Root.GetAdjective] self-determination. While admirable, it would be preferred if these groups were to see us not as [BWR.GetAdjective] puppets, but as the logical continuation of the [Root.GetAdjective] state."
  BALTIC_influence_neighbours:0 "Influence the Neighbours"
 
  ger_sov_buddies_tooltip_2:0 "This will disband [Root.GetFactionName] and create the §YBerlin-Moscow§! faction.\n"
- ger_sov_buddies_tooltip:2 "§RIf the [RUS.GetAdjective]s accept our offer we will suffer some loss of Stability due to this change of policy. Needless to say, our fellow Fascists and the Democratic powers will also be upset by this turn of events.§!\n"
+ ger_sov_buddies_tooltip:2 "§RIf the [BWR.GetAdjective]s accept our offer we will suffer some loss of Stability due to this change of policy. Needless to say, our fellow Fascists and the Democratic powers will also be upset by this turn of events.§!\n"
  RUS_war_since_purge:0 "Has had a war since completing The Great Purge"
 
  RUS_THE_USSR_NAME_COMMUNIST:0 "the USSR"
@@ -704,7 +704,7 @@
  RUS_the_construction_of_communism_railways_tt:0 "Build a level §Y1§! railway from §YMoscow§! to the §Ycapital of every subject§! accessible by land."
  RUS_the_construction_of_communism_puppet_autonomy_tt:0 "Every subject country: \n   Add £autonomy_texticon §Y-100.00§!\n\n"
 
- RUS_reinforce_western_naval_bases_other_states_tt:0 "Will also add §Y2 Anti-Air§! and §Y2 Coastal Fort§! in §Y[111.GetName]§!, §Y[812.GetName]§!, §Y[808.GetName]§! or §Y[189.GetName]§! if [RUS.GetNameDef] has full control over any of those states."
+ RUS_reinforce_western_naval_bases_other_states_tt:0 "Will also add §Y2 Anti-Air§! and §Y2 Coastal Fort§! in §Y[111.GetName]§!, §Y[812.GetName]§!, §Y[808.GetName]§! or §Y[189.GetName]§! if [BWR.GetNameDef] has full control over any of those states."
  RUS_reinforce_western_naval_bases_radar_tt:0 "If §Y$radio_detection$§! technology has been researched: Adds §Y1 Radar Station§!\n"
  RUS_expand_shipbuilding_plants_tt:0 "Add §Y1 building slot§! and §Y1 Dockyard§! in every state in which naval bases have been reinforced by previous focuses."
 
@@ -728,7 +728,7 @@
 
  RUS_sinikiang_influence_refuse_tt:0 "We will be able to generate a wargoal against §Y[SIK.GetFlag] [SIK.GetNameDef]§! if we so desire.\n"
  RUS_sinkiang_decisions_available_tt:0 "Unlocks decisions to develop [SIK.GetAdjective]'s resources, infrastructure and military."
- RUS_recover_the_kuril_islands_decisions_tt:0 "\nOnce [RUS.GetNameDef] controls §Y[537.GetName]§! and §Y[555.GetName]§!, a decision will be available to peace out [JAP.GetNameDef] and retain those territories."
+ RUS_recover_the_kuril_islands_decisions_tt:0 "\nOnce [BWR.GetNameDef] controls §Y[537.GetName]§! and §Y[555.GetName]§!, a decision will be available to peace out [JAP.GetNameDef] and retain those territories."
 
 
  
