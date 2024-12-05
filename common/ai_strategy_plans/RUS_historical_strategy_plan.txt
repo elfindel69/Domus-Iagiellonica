@@ -33,31 +33,27 @@ RUS_historical_plan = {
 
 		#1936
 		RUS_heavy_industry #35
-		RUS_the_path_of_marxism_leninism #35
-		RUS_the_centre #35
+		
 		RUS_the_stalin_constitution # -> Dec 1936
-		RUS_the_zinovyevite_terrorist_center #35 -> Mid 1936
+		
 		RUS_infrastructure_effort_nsb #35
 		RUS_strengthen_the_mobilization_plan #35
 		RUS_restore_cossack_units #35 -> 1936/1939	
 		RUS_found_the_pcdi #35 -> Dec 1936
 
 		#1937
-		RUS_the_comintern #35
-		RUS_the_anti_soviet_trotskyist_center #35 -> Early 1937
-		RUS_addressing_internal_affairs #35
-		RUS_the_workers_dictatorship
+		
 		RUS_pc_of_mechanical_engineering #35 -> Aug 1937
 		RUS_transpolar_flights #35 -> 1937
-		RUS_the_military_conspiracy #35 -> Mid 1937
+		
 		RUS_finish_the_five_year_plan # -> Dec 1937
 
 		#1938
 		RUS_socialism_in_one_country #35
 		RUS_third_five_year_plan # -> 1938
-		RUS_the_bloc_of_rights_and_trotskyites #35 -> Early 1938
+		
 		RUS_the_threat_from_the_land_of_the_rising_sun #35
-		RUS_expand_the_agitprop #35
+		
 		RUS_national_specialists #35
 		RUS_eastern_development #35
 		RUS_expand_the_red_fleet #35
@@ -79,8 +75,7 @@ RUS_historical_plan = {
 		RUS_claims_on_poland
 		RUS_foster_flying_clubs
 		RUS_demand_eastern_poland # (IN CASE NO MOLOTOV-RIBENTROP)
-		RUS_claim_on_bessarabia # -> Jul 1940
-		RUS_behead_the_snake #35 -> May 1940 (raid)
+		
 		RUS_national_academies_of_sciences #35
 		
 		RUS_shift_to_armaments_production # (FYP) -> Do this ASAP after dealing with claims 
@@ -99,30 +94,29 @@ RUS_historical_plan = {
 		RUS_leningrad_polytechnical_institute
 		RUS_lessons_of_war #35
 		RUS_support_afghan_ideology #35
-		RUS_preemptive_invasion_of_iran #35 -> Aug 1941
+		
 		RUS_raskovas_aviation_group # -> 1942/43 (Oct 41 formation)
-		RUS_penal_battalions #35 -> 1942+
+		
 
 		#1943 -----------> -0.5y (Compensated by the ASAP stuff)
 		RUS_the_road_of_life #35
 		RUS_organization_of_the_partisans
-		RUS_positive_heroism
+		
 		RUS_stalins_cult_of_personality #35
-		RUS_revive_the_stakhanovite_movement
-		RUS_nkvd_primacy #35
+		
 
 		#1944
-		RUS_war_heroes
+		
 		RUS_swap_to_political_advisors
-		RUS_the_komsomol #35
+	
 		RUS_smersh
 		RUS_barrier_troops #35
 		RUS_development_aid_for_eastern_allies #35
-		RUS_patriarch_of_all_russia #35
+		
 		
 		#1945
 		RUS_war_measures_in_the_east #35
-		RUS_annex_tannu_tuva #35 -> Nov 1944
+		
 		RUS_soviet_atomic_bomb_project
 	}
 

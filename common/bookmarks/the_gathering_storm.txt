@@ -173,12 +173,10 @@ bookmarks = {
 			available = { has_dlc = "No Step Back" }
 			ideas = {
 				RUS_second_five_year_plan_fake_1936_ns
-				RUS_politicized_military
+				
 			}
 			focuses = {
-				RUS_behead_the_snake
-				RUS_the_supreme_soviet
-				RUS_reconvene_the_zemsky_sobor
+			
 			}	
 		}
 		"BWR"={
@@ -187,12 +185,12 @@ bookmarks = {
 			available = { NOT = { has_dlc = "No Step Back" } }
 			ideas = {
 				RUS_second_five_year_plan_fake_1936_ns
-				RUS_politicized_military
+			
 			}
 			focuses = {
-				RUS_behead_the_snake
+				
 				RUS_father_of_nations
-				RUS_the_supreme_soviet
+				
 			}	
 		}
 
