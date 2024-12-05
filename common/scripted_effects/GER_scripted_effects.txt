@@ -1,0 +1,807 @@
+
+#Important to put HIGHEST first
+GER_mefo_bills_level_up = {
+	if = {
+		limit = { has_idea = GER_mefo_bills_17 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_17
+			add_idea = GER_mefo_bills_18
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_16 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_16
+			add_idea = GER_mefo_bills_17
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_15 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_15
+			add_idea = GER_mefo_bills_16
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_14 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_14
+			add_idea = GER_mefo_bills_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_13 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_13
+			add_idea = GER_mefo_bills_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_12 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_12
+			add_idea = GER_mefo_bills_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_11 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_11
+			add_idea = GER_mefo_bills_12
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_10 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_10
+			add_idea = GER_mefo_bills_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_9 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_9
+			add_idea = GER_mefo_bills_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_8 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_8
+			add_idea = GER_mefo_bills_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_7 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_7
+			add_idea = GER_mefo_bills_8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_6 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_6
+			add_idea = GER_mefo_bills_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_5 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_5
+			add_idea = GER_mefo_bills_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_4 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_4
+			add_idea = GER_mefo_bills_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_3 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_3
+			add_idea = GER_mefo_bills_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_2 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_2
+			add_idea = GER_mefo_bills_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_1 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_1
+			add_idea = GER_mefo_bills_2
+		}
+	}
+}
+
+#Important to put HIGHEST first
+GER_remove_mefo_bills = { #TODO_Danne Remove this once the MEFO Bills have been converted to DM's
+	if = {
+		limit = { has_idea = GER_mefo_bills_1 }
+		remove_ideas = GER_mefo_bills_1
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_2 }
+		remove_ideas = GER_mefo_bills_2
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_3 }
+		remove_ideas = GER_mefo_bills_3
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_4 }
+		remove_ideas = GER_mefo_bills_4
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_5 }
+		remove_ideas = GER_mefo_bills_5
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_6 }
+		remove_ideas = GER_mefo_bills_6
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_7 }
+		remove_ideas = GER_mefo_bills_7
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_8 }
+		remove_ideas = GER_mefo_bills_8
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_9 }
+		remove_ideas = GER_mefo_bills_9
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_10 }
+		remove_ideas = GER_mefo_bills_10
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_11 }
+		remove_ideas = GER_mefo_bills_11
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_12 }
+		remove_ideas = GER_mefo_bills_12
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_13 }
+		remove_ideas = GER_mefo_bills_13
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_14 }
+		remove_ideas = GER_mefo_bills_14
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_15 }
+		remove_ideas = GER_mefo_bills_15
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_16 }
+		remove_ideas = GER_mefo_bills_16
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_17 }
+		remove_ideas = GER_mefo_bills_17
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_18 }
+		remove_ideas = GER_mefo_bills_18
+	}
+}
+
+give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		add_tech_bonus = {
+			name = med_armor_bonus
+			ahead_reduction = 2
+			category = cat_medium_armor
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1.0
+			uses = 1
+			category = armor
+		}
+	}
+	if = { #double if because history files don't like else and this effect is run in the Soviet history file
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		create_equipment_variant = {
+			name = "A-20"
+			type = medium_tank_chassis_1
+			parent_version = 0
+			allow_without_tech = no
+			modules = {
+				main_armament_slot = tank_small_cannon_2
+				turret_type_slot = tank_medium_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_diesel_engine
+				special_type_slot_1 = sloped_armor
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 8
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "GFX_SOV_basic_medium_tank_medium"
+		}
+		create_equipment_variant = {
+			name = "KV-1"
+			type = heavy_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon
+				turret_type_slot = tank_heavy_three_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_diesel_engine		
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 10
+				tank_nsb_armor_upgrade = 9
+			}
+			icon = "GFX_SOV_improved_heavy_tank_medium"
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+	}
+}
+
+MR_pact_transfer_state_effect = {
+	if = {
+		limit = {
+			96 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 96
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_other_country = {
+						is_in_faction_with = SOU
+						has_country_flag = BLT_soviets_said_yes_to_belarus_flag
+					}
+				}
+			}
+			SOU = { transfer_state = 96 }
+		}
+		else = {
+			random_other_country = {
+				limit = {
+					is_in_faction_with = SOU
+					OR = {
+						has_cosmetic_tag = LIT_belarus
+						has_cosmetic_tag = LAT_belarus
+						has_cosmetic_tag = EST_belarus
+						has_cosmetic_tag = BAL_UNIFIED
+					}
+				}
+				transfer_state = 96
+			}
+		}
+	}
+	if = {
+		limit = {
+			95 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 95
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_other_country = {
+						is_in_faction_with = SOU
+						has_country_flag = BLT_soviets_said_yes_to_belarus_flag
+					}
+				}
+			}
+			SOU = { transfer_state = 95 }
+		}
+		else = {
+			random_other_country = {
+				limit = {
+					is_in_faction_with = SOU
+					OR = {
+						has_cosmetic_tag = LIT_belarus
+						has_cosmetic_tag = LAT_belarus
+						has_cosmetic_tag = EST_belarus
+						has_cosmetic_tag = BAL_UNIFIED
+					}
+				}
+				transfer_state = 95
+			}
+		}
+	}
+	if = {
+		limit = {
+			94 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 94
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_other_country = {
+						is_in_faction_with = SOU
+						has_country_flag = BLT_soviets_said_yes_to_belarus_flag
+					}
+				}
+			}
+			SOU = { transfer_state = 94 }
+		}
+		else = {
+			random_other_country = {
+				limit = {
+					is_in_faction_with = SOU
+					OR = {
+						has_cosmetic_tag = LIT_belarus
+						has_cosmetic_tag = LAT_belarus
+						has_cosmetic_tag = EST_belarus
+						has_cosmetic_tag = BAL_UNIFIED
+					}
+				}
+				transfer_state = 94
+			}
+		}
+	}
+	if = {
+		limit = {
+			93 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 93
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 93 }
+	}
+	if = {
+		limit = {
+			91 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 91
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 91 }
+	}
+	if = {
+		limit = {
+			97 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 97
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_other_country = {
+						is_in_faction_with = SOU
+						has_country_flag = BLT_soviets_said_yes_to_belarus_flag
+					}
+				}
+			}
+			SOU = { transfer_state = 97 }
+		}
+		else = {
+			random_other_country = {
+				limit = {
+					is_in_faction_with = SOU
+					OR = {
+						has_cosmetic_tag = LIT_belarus
+						has_cosmetic_tag = LAT_belarus
+						has_cosmetic_tag = EST_belarus
+						has_cosmetic_tag = BAL_UNIFIED
+					}
+				}
+				transfer_state = 97
+				97 = {
+					add_core_of = PREV
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			89 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 89
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 89 }
+	}
+	if = {
+		limit = {
+			784 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 784
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = LIT_gets_vilnius
+					LIT = { is_in_faction_with = SOU }
+					LIT = { controls_state = 784 }
+				}
+				LIT = {
+					exists = yes
+					has_capitulated = no
+				}
+			}
+			LIT = { transfer_state = 784 }
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					any_other_country = {
+						is_in_faction_with = SOU
+						has_country_flag = BLT_soviets_said_yes_to_belarus_flag
+					}
+				}
+			}
+			SOU = { transfer_state = 784 }
+		}
+		else = {
+			random_other_country = {
+				limit = {
+					is_in_faction_with = SOU
+					OR = {
+						has_cosmetic_tag = LIT_belarus
+						has_cosmetic_tag = LAT_belarus
+						has_cosmetic_tag = EST_belarus
+						has_cosmetic_tag = BAL_UNIFIED
+					}
+				}
+				transfer_state = 784
+			}
+		}
+	}
+}
+
+MR_pact_transfer_faction_state_effect = {
+	if = {
+		limit = {
+			96 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 96
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 96 }
+	}
+	if = {
+		limit = {
+			95 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 95
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 95 }
+	}
+	if = {
+		limit = {
+			94 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 94
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 94 }
+	}
+	if = {
+		limit = {
+			93 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 93
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 93 }
+	}
+	if = {
+		limit = {
+			91 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 91
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 91 }
+	}
+	if = {
+		limit = {
+			97 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 97
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 97 }
+	}
+	if = {
+		limit = {
+			89 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 89
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 89 }
+	}
+	if = {
+		limit = {
+			784 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = { 
+						controls_state = 784
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = LIT_gets_vilnius
+					LIT = { controls_state = 784 }
+				}
+				LIT = {
+					exists = yes
+					has_capitulated = no
+				}
+			}
+			LIT = { transfer_state = 784 }
+		}
+		else = {
+			SOU = { transfer_state = 784 }
+		}
+	}
+}
+
+
+########################
+### SPECIAL PROJECTS ###
+########################
+
+
+
+##################
+### OPERATIVES ###
+##################
+
+GER_create_operative_nikolaus_ritter = { #Game Start
+	create_operative_leader = {
+		name = GER_nikolaus_ritter
+		GFX = GFX_portrait_nikolaus_ritter
+		traits = { operative_safe_cracker }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER }
+		gender = male
+	}
+}
+
+GER_create_operative_erich_gimpel = { #Game Start
+	create_operative_leader = {
+		name = GER_erich_gimpel
+		GFX = GFX_portrait_GER_erich_gimpel
+		traits = { operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER }
+		gender = male
+	}
+}
+
+GER_create_operative_fritz_duquesne = { #Game start
+	create_operative_leader = {
+		name = GER_fritz_duquesne
+		GFX = GFX_portrait_GER_fritz_joubert_duquesne
+		traits = { operative_commando operative_tough operative_escape_artist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER SAF HOL USA }
+		gender = male
+	}
+}
+
+GER_create_operative_hans_haupt = { # Reorganize Secret Services
+	create_operative_leader = {
+		name = GER_hans_haupt
+		GFX = GFX_portrait_GER_herbert_hans_haupt
+		traits = { operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER USA }
+		gender = male
+	}
+}
+
+GER_create_operative_otto_skorzeny = { #Anschluss
+	create_operative_leader = {
+		name = GER_otto_skorzeny
+		GFX = GFX_portrait_otto_skorenzy
+		traits = { operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER AUS }
+		gender = male
+	}
+}
+
+GER_create_operative_norman_stewart = { #Operation Sea Lion
+	create_operative_leader = {
+		name = GER_norman_stewart
+		GFX = GFX_portrait_GER_norman_baillie_stewart
+		traits = { operative_natural_orator operative_tough }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { ENG SCO }
+		gender = male
+	}
+}
+
+GER_create_operative_johannes_becker = { #Influence in South America
+	create_operative_leader = {
+		name = GER_johannes_becker
+		GFX = GFX_portrait_GER_johannes_sigfried_becker
+		traits = { operative_natural_orator operative_linguist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER AUS ARG BRA }
+		gender = male
+	}
+}
+
+GER_create_operative_eleysa_bazna = { #Absorb the Abwehr / Expand SS Security Duties
+	create_operative_leader = {
+		name = GER_eleysa_bazna
+		GFX = GFX_portrait_eleysa_bazna
+		traits = { operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER TUR KOS ALB }
+		gender = male
+	}
+}
+
+GER_create_operative_savitri_devi = { #Propaganda Master
+	create_operative_leader = {
+		name = GER_savitri_devi
+		GFX = GFX_portrait_GER_savitri_devi
+		traits = { operative_natural_orator operative_linguist operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GRE FRA RAJ }
+		gender = female
+	}
+}
+
+GER_create_operative_otto_von_bolschwing = { #Subversive Infiltrators
+	create_operative_leader = {
+		name = GER_otto_von_bolschwing
+		GFX = GFX_portrait_GER_otto_von_bolschwing
+		traits = { operative_natural_orator operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER PAL ROM }
+		gender = male
+	}
+}
+
+GER_create_operative_coco_chanel = { #Subversive Infiltrators + France occupied
+	create_operative_leader = {
+		name = GER_coco_chanel
+		GFX = GFX_portrait_GER_coco_chanel
+		traits = { operative_infiltrator operative_seducer }
+		bypass_recruitment = no
+		available_to_spy_master = no
+		nationalities = { FRA }
+		gender = female
+	}
+}
+
+
+
+
+
+
+		  ##################################
+#########################################################
+  ### #  # #  # ### ###       ##  ### ###   ##  #   ### 
+   #  ## # ## # #   #  #     #  #  #  #  # #  # #   #   
+   #  # ## # ## ##  ###      #     #  ###  #    #   ##  
+   #  #  # #  # #   #  #     #  #  #  #  # #  # #   #   
+  ### #  # #  # ### #  #      ##  ### #  #  ##  ### ### 
+#########################################################
+		  ##################################
