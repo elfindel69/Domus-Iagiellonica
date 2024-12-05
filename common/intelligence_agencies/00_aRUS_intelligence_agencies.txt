@@ -8,9 +8,9 @@ intelligence_agency = {
 	
 	picture = GFX_intelligence_agency_logo_rus_okhranka
 	names = { "Ohkrana" }
-	default = { tag = rus }
+	default = { tag = BWR }
 	available = { 
-		original_tag = rus
+		original_tag = BWR
 		OR = {
 			has_government = monarchist
 			is_ai = no
@@ -24,9 +24,9 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_rus
 	names = { "NKVD" }
 		
-	default = { tag = rus }
+	default = { tag = BWR }
 	available = { 
-		original_tag = rus
+		original_tag = BWR
 		OR = {
 			has_government = communism
 			is_ai = no
@@ -40,9 +40,9 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_rus_alternative
 	names = { "Federal Security Service" }
 		
-	default = { tag = rus }
+	default = { tag = BWR }
 	available = {
-		original_tag = rus		
+		original_tag = BWR		
 		OR = {
 			NOT = { has_government = communism }
 			is_ai = no
