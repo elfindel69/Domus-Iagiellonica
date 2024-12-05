@@ -3341,73 +3341,9 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = JUNO_brazil_events.201
-	title = JUNO_brazil_events.201.t
-	desc = JUNO_brazil_events.201.d
-	picture = GFX_report_event_election_vote
 
-	trigger = {
-		has_dlc = "Trial of Allegiance"
-		original_tag = BRA
-		# Testing Date		
-		#date > 1936.02.01
 
-		# Actual Date
-		date > 1938.07.01
 
-		has_government = democratic
-		has_completed_focus	= BRA_repeal_the_national_security_law
-		NOT = {
-			OR = {
-				has_completed_focus = BRA_romanticize_the_old_empire
-				has_completed_focus = BRA_tribunal_de_seguranca_nacional
-				has_completed_focus = BRA_launch_the_revolution
-			}
-		}
-	}
-
-	mean_time_to_happen = { days = 1 }
-
-	hidden = yes
-
-	fire_only_once = yes
-
-	immediate = {
-		country_event = {
-			id = JUNO_brazil_events.200
-			days = 1
-			#random_days = 5
-		}
-	}
-}
-
-country_event = {
-	id = JUNO_brazil_events.202
-	title = JUNO_brazil_events.202.t
-	desc = JUNO_brazil_events.202.d
-	picture = GFX_report_event_election_vote
-
-	mean_time_to_happen = { days = 1 }
-
-	hidden = yes
-
-	fire_only_once = no
-	is_triggered_only = yes
-
-	immediate = {
-		IF = {
-			limit = {
-				has_government = democratic
-				has_completed_focus = BRA_repeal_the_national_security_law
-			}
-			country_event = {
-				id = JUNO_brazil_events.200
-				days = 1
-			}
-		}
-	}
-}
 
 # Brazil taking dominate americas path - news
 news_event = {
