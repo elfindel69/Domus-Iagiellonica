@@ -23,32 +23,18 @@ RUS_left_opposition_plan = {
 		RUS_desperate_measures # 35
 		RUS_lessons_of_war # 35
 		RUS_an_adaptable_army
-		RUS_the_fourth_international
+		
 		RUS_shift_to_armaments_production # (FYP)
 		RUS_fourth_five_year_plan # (FYP)
-		RUS_the_vanguard_of_the_true_revolution # 35
-
-		# 1936  
-		RUS_the_path_of_marxism_leninism # 35
-		RUS_the_left_opposition #35
-		RUS_integrate_smirnovs_bloc
-		RUS_bring_old_trotskyists_back # 35 
-		RUS_committee_in_exile
-		RUS_left_eliminate_right # 35
+		
 		
 
 		#1937
-		RUS_military_support
-		RUS_approach_tukhachevsky 
-		RUS_sway_the_railway_workers # 35
-		RUS_funds_for_the_cause # 35 
-		RUS_organize_the_wreckers
-		RUS_left_opposition_coup # 35 
-		RUS_long_live_the_workers_government 
+		
 		
 
 		# 1938 
-		RUS_left_purges
+		
 		RUS_infrastructure_effort_nsb #35
 		RUS_heavy_industry #35
 		RUS_finish_the_five_year_plan
@@ -59,46 +45,35 @@ RUS_left_opposition_plan = {
 		# 1939
 		RUS_strengthen_the_mobilization_plan # 35
 		RUS_cohesion_first # 35
-		RUS_the_builder_of_the_red_army # If Trotsky
-		RUS_reigniting_the_revolutionary_spirit # if not Trotsky
-		RUS_depoliticize_the_military
-		RUS_addressing_internal_affairs # 35
-		RUS_expand_the_agitprop # 35
+		
 
 		# 1940 
-		RUS_system_decentralization
-		RUS_all_power_to_the_soviets
+	
 		RUS_rehabilitated_military
-		RUS_the_comintern # 35
+		
 		RUS_the_threat_from_the_land_of_the_rising_sun # 35
-		RUS_two_red_flags #35
-		RUS_the_permanent_revolution
+		
 
 		# 1941
 		RUS_anti_capitalist_policies
-		RUS_a_global_class_struggle
-		RUS_collectivist_propaganda
-		RUS_middle_east_diplomacy
-		RUS_support_afghan_ideology
+
+
 		
 	
 		# 1942
 		RUS_military_reorganization
-		RUS_regional_development
-		RUS_autonomous_soviet_republics
+	
 		RUS_smersh
-		RUS_barrier_troops # 35
+		
 		
 
 		# 1943
-		RUS_international_union_of_soviet_republics
-		RUS_carry_revolution_east
+		
 		RUS_the_glory_of_the_red_army
 		RUS_experts_in_camouflage
 
 		#1944
-		RUS_the_onslaught_on_colonialism
-		RUS_the_end_of_the_imperialist_era
+		
 	}
 
 	research = {
@@ -150,83 +125,54 @@ RUS_left_opposition_cooperative_plan = {
 		RUS_desperate_measures # 35
 		RUS_lessons_of_war # 35
 		RUS_an_adaptable_army
-		RUS_the_fourth_international
+		
 		RUS_shift_to_armaments_production # (FYP)
 		RUS_fourth_five_year_plan # (FYP)
-		RUS_the_vanguard_of_the_true_revolution # 35
 
-		# 1936  
-		RUS_the_path_of_marxism_leninism # 35
-		RUS_the_left_opposition #35
-		RUS_divert_attention_towards_military # 35
-		RUS_integrate_smirnovs_bloc
-		RUS_bring_old_trotskyists_back # 35 
-		RUS_gain_support_from_party_members
-		RUS_cooperation_against_stalin
 
 		#1937
-		RUS_committee_in_exile
-		RUS_align_the_zinovyevites
-		RUS_liberate_ryutin
-		RUS_approach_tukhachevsky  
-		RUS_sway_the_railway_workers # 35
-		RUS_funds_for_the_cause # 35 
-		RUS_left_opposition_coup # 35 
+	 
 		
 		
 
 		# 1938 
-		RUS_long_live_the_workers_government 
-		RUS_return_democracy_to_the_party
+		
+		
 		RUS_infrastructure_effort_nsb #35
 		RUS_heavy_industry #35
 		RUS_finish_the_five_year_plan
 		RUS_third_five_year_plan
-		RUS_national_specialists # 35
+		
 		
 
 		# 1939
 		RUS_strengthen_the_mobilization_plan # 35
 		RUS_cohesion_first # 35
-		RUS_the_builder_of_the_red_army # If Trotsky
-		RUS_reigniting_the_revolutionary_spirit # if not Trotsky
-		RUS_depoliticize_the_military
-		RUS_addressing_internal_affairs # 35
-		RUS_expand_the_agitprop # 35
+	
 
 		# 1940 
-		RUS_system_decentralization
-		RUS_all_power_to_the_soviets
+		
 		RUS_rehabilitated_military
-		RUS_strengthen_the_trade_unions
-		RUS_the_peoples_revolution
+	
 
 		# 1941
 		RUS_anti_capitalist_policies
-		RUS_the_supreme_soviet
-		RUS_the_comintern # 35
+
 		RUS_the_threat_from_the_land_of_the_rising_sun # 35
-		RUS_two_red_flags #35
-		RUS_the_permanent_revolution
+	
 		
 		# 1942
-		RUS_a_global_class_struggle
-		RUS_collectivist_propaganda
-		RUS_baltic_security #35
-		RUS_respect_baltic_self_determination # 35
-		RUS_military_reorganization
-		RUS_secure_leningrad
+		
 
 		# 1943
 		RUS_smersh
 		RUS_barrier_troops # 35
-		RUS_carry_revolution_east
+		
 		RUS_the_glory_of_the_red_army
 		RUS_experts_in_camouflage
 
 		#1944
-		RUS_the_onslaught_on_colonialism
-		RUS_the_end_of_the_imperialist_era
+	
 	}
 
 	research = {
@@ -279,52 +225,33 @@ RUS_right_opposition_plan = {
 		RUS_desperate_measures # 35
 		RUS_lessons_of_war # 35
 		RUS_an_adaptable_army
-		RUS_the_socialist_bulwark
+		
 		RUS_shift_to_armaments_production # (FYP)
 		RUS_fourth_five_year_plan # (FYP)
-		RUS_the_power_of_the_peasantry
+		
 
 		# 1936  
-		RUS_the_path_of_marxism_leninism # 35
-		RUS_the_right_opposition #35
-		RUS_the_need_for_policy_changes
-		RUS_reverse_the_collectivization_process 
-		RUS_covert_support_for_spanish_poum
+		
 		
 
 		#1937
-		RUS_eliminate_the_left # 35
-		RUS_infiltrate_the_nkvd
-		RUS_divert_attention_towards_military # 35
-		RUS_organize_uprisings_in_the_country
-		RUS_undermine_stalins_authority
 		
 
 		# 1938 
 		
-		RUS_clandestine_cells
-		RUS_the_plan_for_the_coup
-		RUS_dissent_in_the_party
-		RUS_coup_detat
+	
 		RUS_infrastructure_effort_nsb #35
 		RUS_heavy_industry #35
 		
 
 		# 1939
 		RUS_finish_the_five_year_plan
-		RUS_right_purges
-		RUS_curtailment_of_the_collective_farms
-		RUS_back_to_the_nep
-		RUS_planned_economy
+		
 
 		
 
 		# 1940 
-		RUS_paced_industrialization
-		RUS_the_trade_union_as_labor_organizer
-		RUS_a_sustainable_economy
-		RUS_a_new_theory_of_revolution # Has Bukharin
-		RUS_administrative_reforms # Not has Bukharin
+		
 		RUS_strengthen_the_mobilization_plan # 35
 
 		# 1941
@@ -337,26 +264,14 @@ RUS_right_opposition_plan = {
 		RUS_military_reorganization
 
 		# 1942 
-		RUS_incorporate_local_organizations
-		RUS_international_revolutionary_marxist_centre
-		RUS_the_comintern # 35
+	
 		RUS_policy_of_collective_security # 35
 		RUS_anti_fascist_policies
 		RUS_seek_a_defense_pact_with_the_allies # 35
 		
 
 		# 1943
-		RUS_for_the_common_good
-		RUS_victory_over_devastation
-		RUS_the_enemies_of_the_people
-		RUS_socialist_humanism
-		RUS_addressing_internal_affairs # 35
-
-		# 1944 
-		RUS_expand_the_agitprop # 35
-		RUS_the_komsomol # 35
-		RUS_the_enemies_of_the_people
-		RUS_proclaim_soviet_hegemony
+		
 	}
 
 	research = {
@@ -410,51 +325,31 @@ RUS_right_opposition_cooperative_plan = {
 		RUS_desperate_measures # 35
 		RUS_lessons_of_war # 35
 		RUS_an_adaptable_army
-		RUS_the_socialist_bulwark
+		
 		RUS_shift_to_armaments_production # (FYP)
 		RUS_fourth_five_year_plan # (FYP)
-		RUS_the_power_of_the_peasantry
+		
 
 		# 1936  
-		RUS_the_path_of_marxism_leninism # 35
-		RUS_the_right_opposition #35
-		RUS_the_need_for_policy_changes
-		RUS_divert_attention_towards_military # 35
-		RUS_gain_support_from_party_members
-		RUS_cooperation_against_stalin
+		
 		
 		#1937
-		RUS_align_the_zinovyevites
-		RUS_infiltrate_the_nkvd
-		RUS_liberate_ryutin
-		RUS_organize_uprisings_in_the_country
-		RUS_undermine_stalins_authority
+		
 
 		# 1938 
-		RUS_clandestine_cells
-		RUS_the_plan_for_the_coup
-		RUS_dissent_in_the_party
-		RUS_coup_detat
-		RUS_concessions_to_foreign_powers
+	
 		RUS_infrastructure_effort_nsb #35
 		RUS_heavy_industry #35
 		
 
 		# 1939
 		RUS_finish_the_five_year_plan
-		RUS_right_purges
-		RUS_curtailment_of_the_collective_farms
-		RUS_back_to_the_nep
-		RUS_planned_economy
+		
 
 		
 
 		# 1940 
-		RUS_paced_industrialization
-		RUS_the_trade_union_as_labor_organizer
-		RUS_a_sustainable_economy
-		RUS_a_new_theory_of_revolution # Has Bukharin
-		RUS_administrative_reforms # Not has Bukharin
+		
 		RUS_strengthen_the_mobilization_plan # 35
 
 		# 1941
@@ -467,28 +362,20 @@ RUS_right_opposition_cooperative_plan = {
 		RUS_military_reorganization
 
 		# 1942 
-		RUS_incorporate_local_organizations
 		
-		RUS_the_comintern # 35
 		RUS_policy_of_collective_security # 35
 		RUS_anti_fascist_policies
 		RUS_seek_a_defense_pact_with_the_allies # 35
 		
 
 		# 1943
-		RUS_strengthen_the_trade_unions
-		RUS_the_peoples_revolution
-		RUS_the_supreme_soviet
-		RUS_addressing_internal_affairs # 35
-		RUS_expand_the_agitprop # 35
-		RUS_the_komsomol # 35
+	
 
 		# 1944 
 		RUS_development_aid_for_eastern_allies
-		RUS_international_revolutionary_marxist_centre
+		
 		RUS_war_measures_in_the_east
-		RUS_the_enemies_of_the_people
-		RUS_proclaim_soviet_hegemony
+	
 	}
 
 	research = {
@@ -853,41 +740,19 @@ RUS_exiles_tsarist_plan = {
 
 	ai_national_focuses = {
 		# Civil War Prep
-		RUS_beaten_but_not_defeated # 35
-		RUS_unification_of_the_exiles # 35
-		RUS_national_unification #70
-		RUS_embrace_the_black_hundreds #35
-		RUS_the_true_tsars # 35
-		RUS_covert_operations #35
-		RUS_approach_semyonov #70
-		RUS_muster_the_old_guard #70
-		RUS_tolkachi #35
-		RUS_south_manchuria_railway #35
-		RUS_the_eyes_fear #35
+	
 
 		#Civil War
-		RUS_the_hands_do #35
-		RUS_sabotage_behind_enemy_lines #35
-		RUS_call_for_aid #35
-		RUS_aristocratic_investments #70
+		
 
 		#Take ASAP onCe Civil War has ended
-		RUS_consolidate_power #35
-		RUS_rebuild_the_nation #35
-		RUS_restore_the_glory_of_the_motherland #70
+		
 
 		#Take during Civil War until it ends, then take them after consolidation
-		RUS_article_124 #35
-		RUS_reopen_novodevichi #35
-		RUS_the_synod #70
+	
 
 		#Take Political Path
-		RUS_rebuild_the_savior_cathedral #70
-		RUS_reformalize_the_role_of_the_patriarchate #70
-		RUS_reconvene_the_zemsky_sobor #70
-		RUS_romanov_reconstruction #70
-		RUS_capital_of_the_tsars #70
-		RUS_the_triple_entente #70
+		
 
 		#Take during Civil War if it lasts long, but otherwise take it as soon as political path is established - until 1st tech slot
 		RUS_infrastructure_effort_nsb #35
@@ -901,8 +766,7 @@ RUS_exiles_tsarist_plan = {
 		RUS_the_ussr_academy_of_sciences #70
 
 		#Further down political path
-		RUS_westward_bound #70
-		RUS_secure_the_baltics #70
+		
 
 		#Second tech slot
 		RUS_found_the_pcdi #35
@@ -911,10 +775,7 @@ RUS_exiles_tsarist_plan = {
 		RUS_leningrad_polytechnical_institute #70
 
 		#More political path until next wargoals and big phat tanks
-		RUS_reinstitute_the_mestnichestvo #70
-		RUS_the_iron_wall_of_russian_resolve #70
-		RUS_church_candidates #70
-		RUS_secure_finland #70
+		
 
 		#More industry
 		RUS_reorganize_the_pc_of_heavy_industry #70
@@ -970,42 +831,19 @@ RUS_exiles_fascist_plan = {
 
 	ai_national_focuses = {
 		# Civil War Prep
-		RUS_beaten_but_not_defeated # 35
-		RUS_unification_of_the_exiles # 35
-		RUS_national_unification
-		RUS_embrace_the_black_hundreds
-		RUS_covert_operations
-		RUS_fascist_youth_union
-		RUS_approach_semyonov
-		RUS_womens_fascist_movement # 35
-		RUS_tolkachi
-		RUS_south_manchuria_railway
-		RUS_the_eyes_fear
+		
 
 		#Civil War
-		RUS_the_hands_do
-		RUS_sabotage_behind_enemy_lines
-		RUS_call_for_aid
-		RUS_aristocratic_investments
+		
 
 		#Take ASAP once Civil War has ended
-		RUS_consolidate_power
-		RUS_rebuild_the_nation
-		RUS_restore_the_glory_of_the_motherland
+
 
 		#Take during Civil War until it ends, then take them after consolidation
-		RUS_article_124
-		RUS_reopen_novodevichi
-		RUS_the_synod
+		
 
 		#Take Political Path
-		RUS_rebuild_the_savior_cathedral
-		RUS_reformalize_the_role_of_the_patriarchate
-		RUS_reconvene_the_zemsky_sobor
-		RUS_dismantle_the_zemsky_sobor
-		RUS_russian_corporate_state
-		RUS_pacify_the_rim
-		RUS_the_berlin_moscow_axis
+		
 
 		#Take during Civil War if it lasts long, but otherwise take it as soon as political path is established - until 1st tech slot
 		RUS_infrastructure_effort_nsb
@@ -1019,9 +857,7 @@ RUS_exiles_fascist_plan = {
 		RUS_the_ussr_academy_of_sciences
 
 		#First wargoals to get stuff started
-		RUS_westward_bound
-		RUS_secure_the_baltics
-
+	
 		#Second tech slot
 		RUS_found_the_pcdi
 		RUS_pc_of_mechanical_engineering
@@ -1029,12 +865,7 @@ RUS_exiles_fascist_plan = {
 		RUS_leningrad_polytechnical_institute
 
 		#More political path until next wargoals and preparations for far east shenanigans
-		RUS_the_declaration
-		RUS_return_of_the_rocor
-		RUS_church_candidates
-		RUS_secure_finland
-		RUS_rebuild_the_far_eastern_fleet
-		RUS_modernize_the_far_eastern_fleet
+		
 
 		#More industry
 		RUS_reorganize_the_pc_of_heavy_industry

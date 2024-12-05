@@ -108,13 +108,13 @@ bookmarks = {
 			history = RUS_BLITZKRIEG_DESC
 			ideology = monarchist
 			ideas = {
-				RUS_anti_soviet_military_thinking_banned_navy
+				
 				RUS_second_five_year_plan_fake_1939_ns
 			}
 			focuses = {
 				RUS_found_the_comecon
 				RUS_father_of_nations
-				RUS_patriarch_of_all_russia
+				
 			}
 		}
 
