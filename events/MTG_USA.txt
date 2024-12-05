@@ -702,10 +702,7 @@ country_event = {
 		name = mtg_usa_civil_war_fascists.21.a
 		USA = {
 			every_unit_leader = {
-				limit = {
-					has_unit_leader_flag = retired
-				}
-				retire = no
+				
 				set_nationality = CSA
 			}
 		}
