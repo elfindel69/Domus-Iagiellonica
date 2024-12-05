@@ -24,40 +24,7 @@ RUS_propaganda_poster_slot_available = {
 	}
 }
 
-RUS_paranoia_is_low_level = {
-	custom_trigger_tooltip = {
-		tooltip = RUS_paranoia_is_low_level_tt
-		check_variable = { RUS_paranoia = RUS_paranoia_lower_threshold compare = less_than }
-	}
-}
 
-RUS_paranoia_is_medium_level = {
-	custom_trigger_tooltip = {
-		tooltip = RUS_paranoia_is_medium_level_tt
-		AND = {
-			check_variable = { RUS_paranoia = RUS_paranoia_lower_threshold compare = greater_than_or_equals }
-			check_variable = { RUS_paranoia = RUS_paranoia_higher_threshold compare = less_than }
-		}
-	}
-}
-
-RUS_paranoia_is_high_level = {
-	custom_trigger_tooltip = {
-		tooltip = RUS_paranoia_is_high_level_tt
-		check_variable = { RUS_paranoia = RUS_paranoia_higher_threshold compare = greater_than_or_equals }
-	}
-}
-
-RUS_character_can_be_purged = {
-	NOT = { has_character_flag = RUS_safe_from_purge_flag }
-	NOT = { has_character_flag = RUS_exiled_flag }
-	NOT = { has_character_flag = RUS_character_purged_flag }
-}
-
-RUS_unit_leader_can_be_purged = { #Unused for now
-	NOT = { has_character_flag = RUS_safe_from_purge_flag }
-	NOT = { has_trait = trait_RUS_stalinist }
-}
 
 RUS_third_five_year_plan_available = {
 	custom_trigger_tooltip = {
@@ -864,130 +831,6 @@ RUS_is_threated_by_japan = {
 	}
 }
 
-RUS_paranoia_is_finishing_purge_focus = {
-	OR = {
-		AND = {
-			NOT = { has_completed_focus = RUS_the_zinovyevite_terrorist_center }
-			focus_progress = {
-				focus = RUS_the_zinovyevite_terrorist_center
-				progress > 0.5
-			}
-		}
-		AND = {
-			NOT = { has_completed_focus = RUS_the_anti_soviet_trotskyist_center }
-			focus_progress = {
-				focus = RUS_the_anti_soviet_trotskyist_center
-				progress > 0.5
-			}
-		}
-		AND = {
-			NOT = { has_completed_focus = RUS_the_military_conspiracy }
-			focus_progress = {
-				focus = RUS_the_military_conspiracy
-				progress > 0.5
-			}
-		}
-		AND = {
-			NOT = { has_completed_focus = RUS_the_bloc_of_rights_and_trotskyites }
-			focus_progress = {
-				focus = RUS_the_bloc_of_rights_and_trotskyites
-				progress > 0.5
-			}
-		}
-	}
-}
-
-RUS_is_going_historical_stalinist = { # Add/Change stuff here instead of doing it in 2243987238472854294 places, tack så mycket
-	has_completed_focus = RUS_the_centre	
-}
-
-RUS_target_capital_is_on_unlocked_continent_fifth_columnists = {
-	OR = {
-		AND = {
-			has_completed_focus = RUS_the_permanent_revolution
-			FROM = {
-				capital_scope = {
-					is_on_continent = europe
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = RUS_the_onslaught_on_colonialism
-			FROM = {
-				capital_scope = {
-					is_on_continent = africa
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = RUS_carry_revolution_east
-				FROM = {
-				capital_scope = {
-					OR = {
-						is_on_continent = asia
-						is_on_continent = middle_east
-					}
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = RUS_the_end_of_the_imperialist_era
-			FROM = {
-				capital_scope = {
-					OR = {
-						is_on_continent = north_america
-						is_on_continent = south_america
-						is_on_continent = australia
-					}
-				}
-			}
-		}
-	}
-}
-
-RUS_target_capital_is_on_unlocked_continent_uprisings = {
-	OR = {
-		AND = {
-			has_completed_focus = RUS_a_global_class_struggle
-			FROM = {
-				capital_scope = {
-					is_on_continent = europe
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = RUS_the_onslaught_on_colonialism
-			FROM = {
-				capital_scope = {
-					is_on_continent = africa
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = RUS_carry_revolution_east
-			FROM = {
-				capital_scope = {
-					OR = {
-						is_on_continent = asia
-						is_on_continent = middle_east
-					}
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = RUS_the_end_of_the_imperialist_era
-			FROM = {
-				capital_scope = {
-					OR = {
-						is_on_continent = north_america
-						is_on_continent = south_america
-						is_on_continent = oceania
-					}
-				}
-			}
-		}
-	}
-}
 
 RUS_basic_pressure_government_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = BWR // FROM = Target
 	country_exists = FROM
@@ -1091,131 +934,11 @@ RUS_display_civil_war_start_state = {
 }
 
 
-RUS_is_opposition_state = {
-	custom_trigger_tooltip = {
-		tooltip = RUS_is_opposition_state_tt
-		OR = {
-			AND = {
-				has_state_flag = RUS_left_opposition_state
-				BWR = { RUS_is_left_opposition = yes }
-			}
-			AND = {
-				has_state_flag = RUS_right_opposition_state
-				BWR = { RUS_is_right_opposition = yes }
-			}
-			AND = {
-				has_state_flag = RUS_exiles_state
-				BWR = { RUS_is_exiles = yes }
-			}
-		}
-	}
-}
 
-RUS_is_display_state = {
-	is_owned_by = BWR
-	IF = {
-		limit = { ROOT = { RUS_is_left_opposition = yes } }
-		OR = {
-			any_neighbor_state = { has_state_flag = RUS_left_opposition_state } # You can influence if you control a neighbor state
-			has_state_flag = RUS_left_opposition_state # To ensure that the first state is shown before selecting another one 
-			has_state_flag = RUS_stalinist_state # Show states that have had a crackdown as well 
-		}
-	}
-	ELSE_IF = {
-		limit = { ROOT = { RUS_is_right_opposition = yes } }
-		OR = {
-			any_neighbor_state = { has_state_flag = RUS_right_opposition_state }  # You can influence if you control a neighbor state
-			has_state_flag = RUS_right_opposition_state # To ensure that the first state is shown before selecting another one 
-			has_state_flag = RUS_stalinist_state # Show states that have had a crackdown as well 
-		}
-	}
-	ELSE_IF = {
-		limit = { ROOT = { RUS_is_exiles = yes } }
-		OR = {
-			any_neighbor_state = { has_state_flag = RUS_exiles_state }  # You can influence if you control a neighbor state
-			has_state_flag = RUS_exiles_state # To ensure that the first state is shown before selecting another one 
-			has_state_flag = RUS_stalinist_state # Show states that have had a crackdown as well 
-		}
-	}
-}
 
-RUS_is_unaligned_state = {
-	custom_trigger_tooltip = {
-		tooltip = RUS_is_unaligned_state_tt
-		NOT = {	has_state_flag = RUS_left_opposition_state }
-		NOT = { has_state_flag = RUS_right_opposition_state } 
-		NOT = { has_state_flag = RUS_stalinist_state } 
-		NOT = { has_state_flag = RUS_exiles_state } 
 
-		NOT = { has_state_flag = RUS_is_aligning_left }
-		NOT = { has_state_flag = RUS_is_aligning_right }
-		NOT = { has_state_flag = RUS_is_aligning_exiles }
-	}
-}
 
-RUS_is_left_opposition = {
-	#custom_trigger_tooltip = {
-		#tooltip = RUS_is_left_opposition_tt
-		BWR = { has_completed_focus = RUS_the_left_opposition }
-	#}
-}
 
-RUS_advisor_is_aligned_left = {
-	RUS_is_left_opposition = yes 
-	has_completed_focus = RUS_gain_support_from_party_members
-	tag = BWR
-}
-RUS_advisor_is_aligned_right = {
-	RUS_is_right_opposition = yes 
-	has_completed_focus = RUS_gain_support_from_party_members
-	tag = BWR
-}
-RUS_advisor_is_aligned_centre = {
-	original_tag = BWR
-	NOT = { tag = BWR }
-	any_country = {
-		original_tag = BWR 
-		NOT = { has_completed_focus = RUS_gain_support_from_party_members } 
-	}
-}
-
-RUS_is_right_opposition = {
-	#custom_trigger_tooltip = {
-		#tooltip = RUS_is_right_opposition_tt
-		BWR = { has_completed_focus = RUS_the_right_opposition }
-	#}
-}
-
-RUS_is_exiles = {
-	#custom_trigger_tooltip = {
-		#tooltip = RUS_is_exiles_tt
-		BWR = { has_completed_focus = RUS_beaten_but_not_defeated }
-	#}
-}
-
-RUS_is_opposition = {
-	custom_trigger_tooltip = {
-		tooltip = RUS_is_opposition_tt
-		OR = {
-			RUS_is_left_opposition = yes 
-			RUS_is_right_opposition = yes 
-			RUS_is_exiles = yes 
-		}
-	}
-}
-
-RUS_has_crackdown = {
-	custom_trigger_tooltip = {
-		tooltip = RUS_has_crackdown_tt
-		OR = {
-			has_active_mission = RUS_ukraine_crackdown_timer
-			has_active_mission = RUS_steppe_crackdown_timer
-			has_active_mission = RUS_northern_crackdown_timer
-			has_active_mission = RUS_siberian_crackdown_timer
-			has_active_mission = RUS_urals_crackdown_timer
-		}
-	}
-}
 
 RUS_is_major_not_original_sov = {
 	is_major = yes
@@ -1224,9 +947,7 @@ RUS_is_major_not_original_sov = {
 	}
 }
 
-RUS_is_stalinist = {
-	has_completed_focus = RUS_the_centre
-}
+
 
 RUS_we_want_to_send_ultimatums = {
 	OR = {

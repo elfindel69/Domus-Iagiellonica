@@ -14,7 +14,7 @@ characters = {
 		name =  "Michail II Romanov"
 		portraits = { 
 			civilian = {
-				large = "gfx/leaders/BWR/doi_portrait_m_mikhail_ii.dds"
+				large = "gfx/leaders/RUS/doi_portrait_m_mikhail_ii.dds"
 			}
 		}	
 		country_leader={

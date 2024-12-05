@@ -162,10 +162,7 @@ add_ideas = {
 														 
 															 
   
-		unlock_national_focus = POL_the_defence_of_poland
-		unlock_national_focus = POL_romanian_bridgehead_strategy
-		complete_national_focus = POL_hel_fortified_area
-		complete_national_focus = POL_silesia_fortified_area
+	
 
 		complete_national_focus = POL_air_base_expansion
 		complete_national_focus = POL_develop_polish_ship_building

@@ -16,7 +16,6 @@ if = {
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
 	add_ideas = MAN_low_legitimacy_5
-	recruit_character = MAN_songgotu_zhanshan
 }
 
 recruit_character = MAN_aisin_gioro_puyi

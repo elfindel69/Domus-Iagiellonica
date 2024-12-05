@@ -228,8 +228,8 @@ frloc_collabgov_sg_fem_vow_04 = {
 	AND = {
 		has_autonomy_state = autonomy_collaboration_government
 		OR = {
-			tag = ADU tag = ALB tag = ALG tag = ARG tag = ARM tag = AST tag = AUS tag = CAR tag = DDR tag = EGY tag = ERY tag = EST tag = ETH tag = GER tag = HRZ tag = ICE tag = INS tag = IRE tag = ITA tag = NIR tag = OCC tag = RAJ tag = SAF tag = SAU tag = SCO tag = SPA tag = SPB tag = SPC tag = SPD tag = SPR tag = UKR tag = USA tag = WGR #collabgov
-			original_tag = ADU original_tag = ALB original_tag = ALG original_tag = ARG original_tag = ARM original_tag = AST original_tag = AUS original_tag = CAR original_tag = DDR original_tag = EGY original_tag = ERY original_tag = EST original_tag = ETH original_tag = GER original_tag = HRZ original_tag = ICE original_tag = INS original_tag = IRE original_tag = ITA original_tag = NIR original_tag = OCC original_tag = RAJ original_tag = SAF original_tag = SAU original_tag = SCO original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD original_tag = SPR original_tag = UKR original_tag = USA original_tag = WGR #collabgov
+			tag = ADU tag = ALB tag = ALG tag = ARG tag = ARM tag = AST tag = AUS tag = CAR tag = DDR tag = EGY tag = EST tag = ETH tag = GER tag = HRZ tag = ICE tag = INS tag = IRE tag = ITA tag = NIR tag = OCC tag = RAJ tag = SAF tag = SAU tag = SCO tag = SPA tag = SPB tag = SPC tag = SPD tag = SPR tag = UKR tag = USA tag = WGR #collabgov
+			original_tag = ADU original_tag = ALB original_tag = ALG original_tag = ARG original_tag = ARM original_tag = AST original_tag = AUS original_tag = CAR original_tag = DDR original_tag = EGY  original_tag = EST original_tag = ETH original_tag = GER original_tag = HRZ original_tag = ICE original_tag = INS original_tag = IRE original_tag = ITA original_tag = NIR original_tag = OCC original_tag = RAJ original_tag = SAF original_tag = SAU original_tag = SCO original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD original_tag = SPR original_tag = UKR original_tag = USA original_tag = WGR #collabgov
 		}
 	}
 }
@@ -296,7 +296,6 @@ frloc_cosmtags_sg_masc_cons_dansle_01 = {
 		AND = { tag = CZE is_subject_of = GER has_government = fascism OR = { has_autonomy_state = autonomy_reichsprotectorate has_autonomy_state = autonomy_puppet } } # CZE_GER_fascism_autonomy_reichsprotectorate OR CZE_GER_fascism_autonomy_puppet
 		AND = { tag = POL is_subject_of = GER has_government = fascism OR = { has_autonomy_state = autonomy_reichsprotectorate has_autonomy_state = autonomy_puppet } } # POL_GER_fascism_autonomy_reichsprotectorate OR POL_GER_fascism_autonomy_puppet
 		AND = { tag = HUN has_cosmetic_tag = HUN_MONARCHY OR = { has_government = democratic has_government = fascism } } # HUN_MONARCHY_democratic OR HUN_MONARCHY_fascism
-		AND = { original_tag = GER has_cosmetic_tag = GER_provisional_gvt has_government = democratic } # GER_provisional_gvt_democratic
 		AND = { tag = MAN is_subject_of = JAP has_government = fascism has_autonomy_state = autonomy_colony } # MAN_JAP_fascism_autonomy_colony
 		AND = { has_cosmetic_tag = SCA_UNIFIED has_government = neutrality OR = { original_tag = NOR original_tag = SWE original_tag = DEN } } # SCA_UNIFIED_neutrality
 		AND = { has_cosmetic_tag = NDC_UNIFIED has_government = democratic OR = { original_tag = NOR original_tag = SWE original_tag = DEN original_tag = FIN } } # NDC_UNIFIED_democratic
@@ -326,7 +325,6 @@ frloc_cosmtags_sg_masc_cons_dansle_01 = {
 		AND = { OR = { tag = POR original_tag = POR } has_cosmetic_tag = KPB_kingdom_portugal_and_brazil has_government = neutrality } # KPB_kingdom_portugal_and_brazil_neutrality
 		AND = { OR = { tag = POR original_tag = POR } has_cosmetic_tag = KPB_kingdom_portugal_and_brazil has_government = fascism } # KPB_kingdom_portugal_and_brazil_fascism
 		AND = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD original_tag = SPR original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD } has_cosmetic_tag = SPR_anarchist_castille has_government = neutrality } # SPR_anarchist_castille_neutrality
-		AND = { OR = { tag = FRA original_tag = FRA } has_cosmetic_tag = FRANCO_SPAIN has_government = neutrality } # FRANCO_SPAIN_neutrality
 		AND = { OR = { tag = BUL original_tag = BUL } has_country_flag = BUL_tbe_flag OR = { has_government = fascism has_government = neutrality } } # TBE_third_bulgarian_empire_fascism OR TBE_third_bulgarian_empire_neutrality
 		AND = { OR = { tag = GRE original_tag = GRE } has_cosmetic_tag = GRE_neutrality } # GRE_neutrality
 		AND = { OR = { tag = GRE original_tag = GRE } has_cosmetic_tag = GRE_communism } # GRE_communism
@@ -388,14 +386,14 @@ frloc_cosmtags_sg_masc_vow_dansl_03 = {
 		AND = { original_tag = JAP has_cosmetic_tag = JAP_showa_restoration OR = { has_government = neutrality has_government = democratic } } # JAP_showa_restoration_neutrality OR JAP_showa_restoration_democratic
 		AND = { original_tag = ENG OR = { has_cosmetic_tag = ENG_imperial_federation_unified has_cosmetic_tag = ENG_imperial_federation_india_unified } has_government = fascism } # ENG_imperial_federation_unified_fascism OR ENG_imperial_federation_india_unified_fascism
 		AND = { has_cosmetic_tag = USA_REBEL has_government = fascism } # USA_REBEL_fascism
-		AND = { original_tag = FRA has_cosmetic_tag = FRA_THIRD_EMPIRE has_government = neutrality } # FRA_THIRD_EMPIRE_neutrality
+		
 		AND = { original_tag = FRA has_cosmetic_tag = FRA_VICHY OR = { has_government = fascism has_government = neutrality } } # FRA_VICHY_fascism OR FRA_VICHY_neutrality
 		AND = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD original_tag = SPR original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD } has_cosmetic_tag = SPA_spanish_empire has_government = fascism } # SPA_spanish_empire_fascism
 		AND = { OR = { tag = BRA original_tag = BRA } has_cosmetic_tag = EOB_empire_brazil_neutrality has_government = neutrality } # EOB_empire_brazil_neutrality
 		AND = { OR = { tag = HAW tag = TAH tag = GUM tag = FSM tag = SAM tag = SOL tag = NZL original_tag = HAW original_tag = TAH original_tag = GUM original_tag = FSM original_tag = SAM original_tag = SOL original_tag = NZL } has_cosmetic_tag = united_polynesia has_government = fascism } # united_polynesia_fascism
 		AND = { OR = { tag = CAT original_tag = CAT } has_cosmetic_tag = CAT_aragon has_government = fascism } # CAT_aragon_fascism
 		AND = { OR = { tag = POR original_tag = POR tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD original_tag = SPR original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD } has_cosmetic_tag = ESU_POR_unified has_government = fascism } # ESU_POR_unified_fascism
-		AND = { OR = { tag = FRA original_tag = FRA } has_cosmetic_tag = FRANCO_SPAIN has_government = fascism } # FRANCO_SPAIN_fascism
+		
 		AND = { OR = { tag = BOS original_tag = BOS } has_cosmetic_tag = BOS_without_HRZ has_government = fascism } # BOS_without_HRZ_fascism
 		AND = { has_cosmetic_tag = SER has_government = fascism } # SER_fascism
 		AND = { OR = { tag = GRE original_tag = GRE } has_cosmetic_tag = GRE_fascism } # GRE_fascism
@@ -437,7 +435,7 @@ frloc_cosmtags_sg_fem_cons_dansla_dela_05 = {
 		AND = { tag = CZE has_cosmetic_tag = CZE_ONLY has_government = communism } # CZE_ONLY_communism
 		AND = { OR = { tag = HUN tag = AUS tag = CZE } has_cosmetic_tag = HUN_EMPIRE has_government = democratic } # HUN_EMPIRE_democratic
 		AND = { tag = HUN has_cosmetic_tag = HUN_GREATER has_government = democratic } # HUN_GREATER_democratic
-		AND = { original_tag = GER has_cosmetic_tag = GER_provisional_gvt has_government = neutrality } # GER_provisional_gvt_neutrality
+		
 		AND = { has_cosmetic_tag = NDC_UNIFIED has_government = neutrality OR = { original_tag = NOR original_tag = SWE original_tag = DEN original_tag = FIN } } # NDC_UNIFIED_neutrality
 		AND = { has_cosmetic_tag = PLC_UNIFIED has_government = neutrality OR = { original_tag = POL original_tag = LIT } } # PLC_UNIFIED_neutrality
 		AND = { has_cosmetic_tag = PLC_UNIFIED has_government = democratic OR = { original_tag = POL original_tag = LIT } } # PLC_UNIFIED_democratic
@@ -475,7 +473,7 @@ frloc_cosmtags_sg_fem_cons_dansla_dela_05 = {
 		AND = { OR = { tag = ENG original_tag = ENG } has_cosmetic_tag = ENG_england has_government = fascism } # ENG_england_fascism
 		AND = { OR = { tag = SOV original_tag = SOV } has_cosmetic_tag = SOV_russia has_government = communism } # SOV_russia_communism
 		AND = { OR = { tag = HOL original_tag = HOL } has_cosmetic_tag = HOL_benelux_unified has_government = democratic } # HOL_benelux_unified_democratic
-		AND = { OR = { tag = FRA original_tag = FRA } has_cosmetic_tag = FRA_ORLEANS has_government = neutrality } # FRA_ORLEANS_neutrality
+		
 		AND = { OR = { tag = FRA original_tag = FRA } has_cosmetic_tag = FRA_FREE has_government = democratic } # FRA_FREE_democratic
 		AND = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD original_tag = SPR original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD } has_cosmetic_tag = SPR_anarchist_spain has_government = communism } # SPR_anarchist_spain_communism
 		AND = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD original_tag = SPR original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD } has_cosmetic_tag = SPR_republican_spain has_government = communism } # SPR_republican_spain_communism
@@ -484,10 +482,10 @@ frloc_cosmtags_sg_fem_cons_dansla_dela_05 = {
 		AND = { OR = { tag = HAW tag = TAH tag = GUM tag = FSM tag = SAM tag = SOL tag = NZL original_tag = HAW original_tag = TAH original_tag = GUM original_tag = FSM original_tag = SAM original_tag = SOL original_tag = NZL } has_cosmetic_tag = united_polynesia has_government = democratic } # united_polynesia_democratic
 		AND = { OR = { tag = POR original_tag = POR } has_cosmetic_tag = SPR_POR_anarchism has_government = neutrality } # SPR_POR_anarchism_neutrality
 		AND = { OR = { tag = CAT original_tag = CAT } has_cosmetic_tag = CAT_aragon OR = { has_government = democratic has_government = neutrality has_government = communism } } # CAT_aragon_democratic OR CAT_aragon_neutrality OR CAT_aragon_communism
-		AND = { OR = { tag = FRA original_tag = FRA } has_cosmetic_tag = FRANCO_SPAIN OR = { has_government = democratic has_government = communism } } # FRANCO_SPAIN_democratic OR FRANCO_SPAIN_communism
+		
 		AND = { OR = { tag = SPR original_tag = SPR } has_cosmetic_tag = SPR_castille OR = { has_government = communism has_government = fascism has_government = neutrality } } # SPR_castille_communism OR SPR_castille_fascism OR SPR_castille_neutrality
 		AND = { has_cosmetic_tag = dalmatia OR = { has_government = fascism has_government = democratic has_government = communism } } # dalmatia_fascism OR dalmatia_democratic OR dalmatia_communism
-		AND = { has_cosmetic_tag = transylvania OR = { has_government = fascism has_government = neutrality } } # transylvania_fascism OR transylvania_neutrality
+		
 		AND = { has_cosmetic_tag = SER OR = { has_government = democratic has_government = communism } } # SER_democratic OR SER_communism
 		AND = { OR = { tag = BOS original_tag = BOS } has_cosmetic_tag = BOS_without_HRZ has_government = communism } # BOS_without_HRZ_communism
 		AND = { OR = { tag = BUL original_tag = BUL } OR = { has_cosmetic_tag = BUL_fascism has_cosmetic_tag = BUL_communism } NOT = { has_cosmetic_tag = BUL_zveno_bulgaria } } # BUL_fascism OR BUL_communism
@@ -544,7 +542,7 @@ frloc_cosmtags_sg_fem_cons_en_de_06 = {
 		AND = { OR = { tag = SPR original_tag = SPR } has_cosmetic_tag = SPR_castille has_government = democratic } # SPR_castille_democratic
 		AND = { has_cosmetic_tag = dalmatia NOT = { OR = { has_government = fascism has_government = democratic has_government = communism } } } # dalmatia_neutrality OR dalmatia
 		AND = { OR = { tag = BOS original_tag = BOS } has_cosmetic_tag = BOS_without_HRZ NOT = { OR = { has_government = fascism has_government = communism } } } # BOS_without_HRZ_democratic OR BOS_without_HRZ_neutrality
-		AND = { has_cosmetic_tag = transylvania has_government = democratic } # transylvania_democratic
+
 		AND = { has_cosmetic_tag = vojvodina } # vojvodina
 		AND = { has_cosmetic_tag = SER has_government = neutrality } # SER_neutrality
 		AND = { OR = { tag = BUL original_tag = BUL } has_cosmetic_tag = BUL_neutrality NOT = { has_cosmetic_tag = BUL_zveno_bulgaria } } # BUL_neutrality
@@ -616,7 +614,7 @@ frloc_cosmtags_sg_fem_vow_dansl_del_10 = {
 		AND = { OR = { tag = POR original_tag = POR tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD original_tag = SPR original_tag = SPA original_tag = SPB original_tag = SPC original_tag = SPD } has_cosmetic_tag = ESU_POR_unified has_government = communism } # ESU_POR_unified_communism
 		AND = { OR = { tag = HAW tag = TAH tag = GUM tag = FSM tag = SAM tag = SOL tag = NZL original_tag = HAW original_tag = TAH original_tag = GUM original_tag = FSM original_tag = SAM original_tag = SOL original_tag = NZL } has_cosmetic_tag = united_polynesia has_government = communism } # united_polynesia_communism
 		AND = { OR = { tag = POR original_tag = POR } has_cosmetic_tag = KPB_kingdom_portugal_and_brazil has_government = communism } # KPB_kingdom_portugal_and_brazil_communism
-		AND = { has_cosmetic_tag = transylvania has_government = communism } # transylvania_communism
+		
 		AND = { OR = { tag = GRE original_tag = GRE } has_cosmetic_tag = GRE_byz_republic } # GRE_byz_republic_fascism OR GRE_byz_republic_communism OR GRE_byz_republic_democratic OR GRE_byz_republic_neutrality
 		AND = { OR = { tag = GRE original_tag = GRE } has_country_flag = GRE_dem_monarchy_flag has_government = fascism } # GRE_dem_monarchy_fascism
 		AND = { OR = { tag = GRE original_tag = GRE } has_cosmetic_tag = GRE_stalinist } # GRE_stalinist_communism OR GRE_stalinist_fascism OR GRE_stalinist_neutrality OR GRE_stalinist_democratic
