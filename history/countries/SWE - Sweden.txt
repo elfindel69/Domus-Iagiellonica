@@ -331,16 +331,6 @@ recruit_character = SWE_ernst_wigforss
 recruit_character = SWE_thorwald_bergquist
 recruit_character = SWE_osten_unden
 
-create_country_leader = {
-	name = "Gustaf V"
-	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "r56_portrait_SWE_Gustaf_V.dds"
-	expire = "1965.1.1"
-	ideology = paternalism
-	traits = {
-		#
-	}
-}
 
 
 
@@ -782,7 +772,7 @@ if = {
 	recruit_character = SWE_fallen_riksdag
 	recruit_character = SWE_rikard_persson
 	recruit_character = SWE_arne_beurling
-	recruit_character = SWE_king_gustaf_v
+	recruit_character = rep_SWE_king_gustaf_v
 	recruit_character = SWE_nils_flyg
 	recruit_character = SWE_birger_furugard
 	recruit_character = SWE_karl_kilbom

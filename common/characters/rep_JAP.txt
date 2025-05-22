@@ -1,5 +1,5 @@
 characters={
-	JAP_emperor_hirohito={
+	rep_JAP_emperor_hirohito={
 		name=JAP_emperor_hirohito
 		portraits={
 			civilian={
