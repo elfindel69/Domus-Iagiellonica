@@ -38,7 +38,7 @@ if = {
 
 set_research_slots = 3
 
-recruit_character = YUG_prince_paul
+recruit_character = rep_YUG_prince_paul
 recruit_character = YUG_milan_stojadinovic
 recruit_character = YUG_milan_grol
 recruit_character = YUG_josip_broz_tito
@@ -338,16 +338,7 @@ set_popularities = {
 }
 set_stability = 0.6
 
-create_country_leader = {
-	name = "Prince Paul"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
-	expire = "1965.1.1"
-	ideology = monarchism
-	traits = {
-		#
-	}
-}
+
 
 ### VARIANTS ###
 # 1936 Start #

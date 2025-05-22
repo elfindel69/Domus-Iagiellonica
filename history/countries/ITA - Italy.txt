@@ -728,7 +728,7 @@ set_popularities = {
 
 recruit_character = ITA_benito_mussolini
 recruit_character = ITA_grand_council
-recruit_character = ITA_vittorio_emanuele_iii
+recruit_character = rep_ITA_vittorio_emanuele_iii
 recruit_character = ITA_ferruccio_parri
 recruit_character = ITA_palmiro_togliatti
 recruit_character = ITA_rodolfo_graziani

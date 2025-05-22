@@ -1,5 +1,5 @@
 characters={
-	YUG_prince_paul={
+	rep_YUG_prince_paul={
 		name=YUG_prince_paul
 		portraits={
 			civilian={

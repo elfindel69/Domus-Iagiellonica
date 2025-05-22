@@ -1,7 +1,7 @@
 characters={
 
 
-	TUR_abdulmejid_ii = {
+	rep_TUR_abdulmejid_ii = {
 		name=TUR_abdulmejid_ii
 		portraits={
 			civilian={

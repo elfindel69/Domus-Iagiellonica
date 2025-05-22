@@ -1,5 +1,5 @@
 characters={
-	SWE_king_gustaf_v = {
+	rep_SWE_king_gustaf_v = {
 		name=SWE_king_gustaf_v
 		portraits={
 			civilian={

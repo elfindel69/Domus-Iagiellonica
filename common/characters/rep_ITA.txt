@@ -1,6 +1,6 @@
 characters={
 	
-	ITA_victor_emmanuel_iii={
+	rep_ITA_victor_emmanuel_iii={
 		name=ITA_victor_emmanuel_iii
 		portraits={
 			civilian={
