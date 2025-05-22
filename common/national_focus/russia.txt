@@ -2156,9 +2156,9 @@ focus_tree = {
 			add_to_variable = { RUS_soviet_airforce_air_night_penalty = -0.2 }
 			add_to_variable = { RUS_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.1 }
 			set_variable = { RUS_soviet_airforce_air_strategic_bomber_night_penalty = -0.1 }
-			custom_effect_tooltip = RUS_raskovas_aviation_group_ns_tt
+			custom_effect_tooltip = SOV_raskovas_aviation_group_ns_tt
 
-			custom_effect_tooltip = RUS_night_witches_nsb_tt
+			custom_effect_tooltip = SOV_night_witches_nsb_tt
 			hidden_effect = {
 				if = {
 					limit = {
@@ -2201,9 +2201,9 @@ focus_tree = {
 							NOT = { has_government = communism }
 						}
 						
-						load_oob = "RUS_night_witches_nsb_alt_bba"
+						load_oob = "BWR_night_witches_nsb_alt_bba"
 						else = {
-							load_oob = "RUS_night_witches_nsb_bba" #nested here because otherwise it is considered a nested else for the higher level if
+							load_oob = "BWR_night_witches_nsb_bba" #nested here because otherwise it is considered a nested else for the higher level if
 						}
 					}
 				}
@@ -2211,10 +2211,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_government = communism }
 					}
-					load_oob = "RUS_night_witches_nsb_alt"
+					load_oob = "BWR_night_witches_nsb_alt"
 				}
 				else = { #DEFAULT COMMUNISM
-					load_oob = "RUS_night_witches_nsb"
+					load_oob = "BWR_night_witches_nsb"
 				}
 			}
 		}
