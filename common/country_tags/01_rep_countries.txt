@@ -1,3 +1,2 @@
 
 BWR = "countries/Russia.txt"
-UBD = "countries/Baltics.txt"
