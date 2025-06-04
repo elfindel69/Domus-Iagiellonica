@@ -332,16 +332,6 @@ set_popularities = {
 give_guarantee = UKR
 
 
-set_autonomy = {
-target = UKR
-autonomous_state = autonomy_integrated_puppet
-}
-
-set_autonomy = {
-target = LIB
-autonomous_state = autonomy_integrated_puppet
-}
-
 
 
 1936.1.1 = { 
