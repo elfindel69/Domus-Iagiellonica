@@ -1,0 +1,160 @@
+namespace = POL_integrate_ukraine
+namespace = POL_integrate_ukraine_news
+
+country_event = {
+	id = POL_integrate_ukraine.1
+	title = POL_integrate_ukraine.1.t
+	desc = POL_integrate_ukraine.1.d
+	picture = GFX_report_event_pol_integrate_ukraine
+
+	is_triggered_only = yes
+
+	# Ok
+	option = {
+		name = POL_integrate_ukraine.1.a
+		
+		POL = { 
+			add_political_power = 50
+			set_autonomy = {
+				target = UKR
+				autonomy_state = autonomy_integrated_puppet
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = POL_integrate_ukraine_news.1
+				days = 1
+			}
+		}
+	}
+	
+	# No
+	option = {
+		name = POL_integrate_ukraine.1.b
+		POL = {
+			add_war_support = 10
+			create_wargoal = {
+				target = UKR
+				type = puppet_wargoal_focus
+			}
+			declare_war_on = {
+				target = UKR
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = POL_integrate_ukraine_news.2
+				days = 1
+			}
+		}
+	}
+	
+}
+
+news_event = {
+	id = POL_integrate_ukraine_news.1
+	title = POL_integrate_ukraine_news.1.t
+	desc = POL_integrate_ukraine_news.1.d
+	picture = GFX_report_event_pol_integrate_ukraine
+
+
+	is_triggered_only = yes
+
+	major = yes
+
+	# Ok
+	option = {
+		trigger = {
+			tag = POL
+		}
+		name = POL_integrate_ukraine_news.1.a
+	}
+	
+	# No
+	option = {
+		trigger = {
+			tag = UKR
+		}
+		name = POL_integrate_ukraine_news.1.b
+	}
+
+	option = {
+		trigger = {
+			is_in_faction_with = POL
+			NOT = {
+				tag = UKR
+			}
+		}
+		
+		name = POL_integrate_ukraine_news.1.c
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				is_in_faction_with = POL
+			}
+			NOT = {
+				tag = POL
+			}
+			NOT = {
+				tag = UKR
+			}
+		}
+		name = POL_integrate_ukraine_news.1.e
+	}
+}
+
+news_event = {
+	id = POL_integrate_ukraine_news.2
+	title = POL_integrate_ukraine_news.2.t
+	desc = POL_integrate_ukraine_news.2.d
+	picture = GFX_report_event_pol_integrate_ukraine
+
+
+	is_triggered_only = yes
+
+	major = yes
+
+	# Ok
+	option = {
+		trigger = {
+			tag = POL
+		}
+		name = POL_integrate_ukraine_news.2.a
+	}
+	
+	# No
+	option = {
+		trigger = {
+			tag = UKR
+		}
+		name = POL_integrate_ukraine_news.2.b
+	}
+
+	option = {
+		trigger = {
+			is_in_faction_with = POL
+			NOT = {
+				tag = UKR
+			}
+		}
+		
+		name = POL_integrate_ukraine_news.2.c
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				is_in_faction_with = POL
+			}
+			NOT = {
+				tag = POL
+			}
+			NOT = {
+				tag = UKR
+			}
+		}
+		name = POL_integrate_ukraine_news.2.e
+	}
+}

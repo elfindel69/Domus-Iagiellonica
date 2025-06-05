@@ -2,6 +2,91 @@ ideas = {
 
 country = {
 
+		POL_invest_in_research_idea = {
+			allowed = {
+				always = no
+				original_tag = POL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		POL_advanced_cryptography_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				decryption_power_factor = 0.05
+				encription_power_factor = 0.05
+			}
+		}
+
+		POL_focus_on_specialized_research = {
+			picture = GFX_idea_GER_wunderwaffen
+
+			allowed = {
+				original_tag = POL
+			}
+
+			ai_will_do = {
+				base = 5
+			}
+
+			modifier = {
+				special_project_speed_factor = 0.1
+				breakthrough_factor = 0.1
+			}	
+		}
+
+	POL_revive_economy_idea = {
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+
+		picture = man_five_year_plan_industry
+
+		modifier = {
+			production_speed_buildings_factor = 0.15
+			production_speed_infrastructure_factor = 0.15
+			consumer_goods_factor = -0.1
+		}
+	}
+	pro_neutrality_diplomacy = {
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		modifier = {
+			neutrality_drift = +0.1
+			neutrality_acceptance = 85
+		}
+
+		picture = generic_diplomacy_bonus
+
+		removal_cost = -1
+	}
+
 	POL_exiled_royal_family = {
 
 		allowed = {
