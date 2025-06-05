@@ -10,18 +10,9 @@
 
 opinion_modifiers = {
 	established_embassy = { value = 5 }
-	POL_FRA_join_intermarius_reject = {		
-		value = -30
-	}
+	
 
-	POL_ITA_join_intermarius_reject = {		
-		value = -30
-	}
-
-	POL_USA_join_intermarius_reject = {		
-		value = -30
-	}
-
+	
 	POL_join_germany_reject = {
 		value = -30
 	}
@@ -34,10 +25,9 @@ opinion_modifiers = {
 		value = -30
 	}
 
-	USA_join_FSL_reject = {
-		value = -30
+	POL_sway_ukraine = {
+		value = 25
 	}
-	
 	POL_treaty_with_romania = { value = 25 }
 	
 	POL_treaty_with_bulgaria = { value = 25 }
