@@ -22,7 +22,7 @@ focus_tree = {
 	############################
 
 	focus = {
-		id  = POL_revive_the_polish_economy
+		id = POL_revive_the_polish_economy
 		icon = GFX_focus_POL_the_four_year_plan
 		x = 2
 		y = 0
@@ -4247,7 +4247,7 @@ focus_tree = {
 			}
 		}
 		allow_branch = { has_dlc = "Man the Guns" }
-		x = 59
+		x = 65
 		y = 0
 		
 		

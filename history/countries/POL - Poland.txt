@@ -121,7 +121,6 @@ if = {
 		improved_light_battery = 1
 		basic_medium_battery = 1
 		basic_heavy_battery = 1
-		basic_secondary_battery = 1
 		basic_depth_charges = 1
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
@@ -141,16 +140,12 @@ add_ideas = {
 		limit = {
 			has_dlc = "Poland: United and Ready"
 		}
-		complete_national_focus = POL_central_region_strategy
-		complete_national_focus = POL_expansion_of_new_towns
-		complete_national_focus = POL_start_central_industrial_region
+		
 		complete_national_focus = POL_fill_the_railways_gaps
 
-		unlock_national_focus = POL_the_four_year_plan
 		complete_national_focus = POL_national_defence_fund
 		complete_national_focus = POL_warsaw_main_railway_station
-		complete_national_focus = POL_invest_in_the_old_polish_region
-		complete_national_focus = POL_additional_research_slot1
+		
 														
 															
 											   
