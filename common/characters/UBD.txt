@@ -502,10 +502,10 @@ characters={
 		name=EST_nikolay_g_karotamm
 		portraits={
 			army={
-				small = "GFX_idea_UBD_nikolai_karotamm"
+				small = "GFX_idea_EST_nikolai_karotamm"
 			}
 			civilian = {
-				large = "GFX_portrait_UBD_nikolai_karotamm" #Not ever used
+				large = "GFX_portrait_EST_nikolai_karotamm" #Not ever used
 			}
 		}
 		advisor={

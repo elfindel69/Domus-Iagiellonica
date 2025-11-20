@@ -1,0 +1,20 @@
+characters={
+	RAJ_lord_linlithgow={
+		name=RAJ_lord_linlithgow
+		portraits={
+			civilian={
+				large="gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=paternalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
