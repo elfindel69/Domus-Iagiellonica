@@ -1,7 +1,7 @@
 characters={
 
 	UBD_Wilhelm_I = {
-		name="King Wilhelm I"
+		name="King Wilhelm II"
 		portraits = {
 			civilian = {
 				large="gfx/leaders/UBD/generic1.dds"
@@ -27,11 +27,6 @@ characters={
 		}
 		country_leader={
 			ideology=oligarchism
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
-			ideology=paternalism
 			expire="1965.1.1.1"
 			id=-1
 		}

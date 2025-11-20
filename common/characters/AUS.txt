@@ -13,19 +13,7 @@ characters={
 			id=-1
 		}
 	}
-	AUS_leon_horenberger={
-		name="Leon Horenberger"
-		portraits={
-			civilian={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-			}
-		}
-		country_leader={
-			ideology=paternalism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+	
 	AUS_kurt_schuschnigg={
 		name=AUS_kurt_schuschnigg
 		portraits={

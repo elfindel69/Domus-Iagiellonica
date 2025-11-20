@@ -145,19 +145,12 @@ add_ideas = {
 
 		complete_national_focus = POL_national_defence_fund
 		complete_national_focus = POL_warsaw_main_railway_station
-		
-														
-															
-											   
+									   
 
 		unlock_national_focus = POL_prepare_for_the_next_war
 													
 		unlock_national_focus = POL_standardisation_of_equipment
 		unlock_national_focus = POL_modernising_the_cavalry
-														 
-															 
-  
-	
 
 		complete_national_focus = POL_air_base_expansion
 		complete_national_focus = POL_develop_polish_ship_building
