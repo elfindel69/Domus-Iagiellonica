@@ -63,12 +63,7 @@ characters = {
 				large="gfx/leaders/UKR/r56_portrait_UKR_Pavlo_Skoropadskyi.dds"
 			}
 		}
-		country_leader={
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	
+		
 		country_leader={
 			ideology=monarchism
 			traits={
@@ -88,7 +83,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = paternalism
+			ideology = oligarchism
 			traits = {
 				warrior_code
 			}
