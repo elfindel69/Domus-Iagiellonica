@@ -7,5 +7,8 @@ spriteTypes = {
             name= "GFX_Portrait_POL_Felicjan_Skladkowski"
             texturefile= "gfx/leaders/POL/Portrait_POL_N_Slawoj_Skladkowski.dds"
         }
-
+        spriteType= {
+            name= "GFX_Portrait_POL_Jan_V"
+            texturefile= "gfx/leaders/POL/Portrait_POL_M_Jan_V.dds"
+        }
 }

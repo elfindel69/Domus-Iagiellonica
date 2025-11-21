@@ -5,7 +5,8 @@ characters = {
 		name="Jan V Jagiełło"
 		portraits = {
 			civilian = {
-				large="gfx/leaders/POL/generic7.dds"
+				large="GFX_Portrait_POL_Jan_V"
+				small="GFX_idea_POL_jan_v"
 			}
 		}
 		country_leader = {
@@ -35,6 +36,7 @@ characters = {
 
 		advisor = {
 			slot = political_advisor
+			idea_token = GFX_idea_POL_felicjan_skladkowski
 			available = {
 				has_government = monarchist
 			}

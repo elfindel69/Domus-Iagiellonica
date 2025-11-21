@@ -343,12 +343,14 @@ give_guarantee = UKR
 
 add_ideas = {
 	POL_Synthetic_Rubber
+	POL_Polish_Cipher_Bureau_Focus0
 	POL_jan_v
 }
 
 
 recruit_character = POL_jan_v
 recruit_character = POL_felicjan_skladkowski
+recruit_character = POL_wincenty_witos
 recruit_character = POL_ignacy_moscicki
 recruit_character = POL_wladyslaw_sikorski
 recruit_character = POL_boleslaw_wieniawa_glugoszowski
@@ -356,7 +358,6 @@ recruit_character = rep_POL_wanda_wasilewska
 recruit_character = POL_wladyslaw_gomulka
 recruit_character = POL_maria_koszutska
 recruit_character = POL_stanislaw_mikolajczyk
-recruit_character = POL_wincenty_witos
 recruit_character = POL_wladyslaw_raczkiewicz
 recruit_character = POL_boleslaw_piasecki
 recruit_character = rep_POL_edward_rydzsmigly
