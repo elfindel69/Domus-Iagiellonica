@@ -6,4 +6,4 @@ tags={
 	"National Focuses"
 }
 name="Domus Iagiellonica"
-supported_version="1.16.*"
+supported_version="1.17.*"
