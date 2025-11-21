@@ -130,7 +130,7 @@ country = {
 	}
 
 	POL_jan_v= {
-		picture = stanislas_iii	
+		picture = GFX_idea_POL_jan_v	
 			
 		allowed = {
 			original_tag = POL
@@ -341,74 +341,74 @@ country = {
 	
 	POL_fascist_influence = {
 			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-			
-			modifier = {
-				monarchist_drift = -0.1
-				fascism_drift = +0.1
-				fascism_acceptance = 85
-				democratic_drift = -0.1
-				democratic_acceptance = -100
-				neutrality_drift = -0.1
-				communism_drift = -0.1
-			}
+		allowed = {
+			always = no
 		}
+
+		allowed_civil_war = {
+			has_government = fascism
+		}
+
+		removal_cost = -1
+
+		picture = generic_fascism_drift_bonus
 		
-		POL_communist_influence = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-			
-			modifier = {
-				monarchist_drift = -0.1
-				fascism_drift = -0.1
-				democratic_drift = -0.1
-				democratic_acceptance = -100
-				neutrality_drift = -0.1
-				communism_drift = +0.1
-				communism_acceptance = 85
-			}
+		modifier = {
+			monarchist_drift = -0.1
+			fascism_drift = +0.1
+			fascism_acceptance = 85
+			democratic_drift = -0.1
+			democratic_acceptance = -100
+			neutrality_drift = -0.1
+			communism_drift = -0.1
 		}
+	}
+	
+	POL_communist_influence = {
 		
-		POL_communist_science = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_research_bonus
-			
-			modifier = {
-				research_speed_factor = +0.2
-			}
+		
+		allowed = {
+			always = no
 		}
+
+		allowed_civil_war = {
+			has_government = communism
+		}
+
+		removal_cost = -1
+
+		picture = generic_communism_drift_bonus
+		
+		modifier = {
+			monarchist_drift = -0.1
+			fascism_drift = -0.1
+			democratic_drift = -0.1
+			democratic_acceptance = -100
+			neutrality_drift = -0.1
+			communism_drift = +0.1
+			communism_acceptance = 85
+		}
+	}
+	
+	POL_communist_science = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = communism
+		}
+
+		removal_cost = -1
+
+		picture = generic_research_bonus
+		
+		modifier = {
+			research_speed_factor = +0.2
+		}
+	}
 		
 	
 	
@@ -480,7 +480,7 @@ country = {
 		
 		picture = POL_Intelligence_Service0
 		
-		research_bonus = {
+		modifier = {
 			decryption_power_factor = 0.05
 		}
 	}
