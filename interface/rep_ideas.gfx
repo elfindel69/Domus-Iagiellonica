@@ -16,10 +16,7 @@ spriteTypes = {
 		name = "GFX_idea_stanislas_iii"
 		texturefile = "gfx/interface/ideas/idea_stanislas_iii.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_stanislas_iv"
-		texturefile = "gfx/interface/ideas/idea_stanislas_iv.dds"
-	}
+	
 	
 	spriteType = {
 		name = "GFX_idea_catvisor"
@@ -30,6 +27,15 @@ spriteTypes = {
 		name = "GFX_idea_dogvisor"
 		texturefile = "gfx/interface/ideas/idea_dogvisor.dds"
 	}
+	 spriteType= {
+            name= "GFX_idea_POL_felicjan_skladkowski"
+            texturefile= "gfx/interface/ideas/idea_POL_felicjan_skladkowski.dds"
+        }
+        spriteType= {
+            name= "GFX_idea_POL_wanda_wasilewska_rep"
+            texturefile= "gfx/interface/ideas/idea_POL_wanda_wasilewska_rep.dds"
+        }
+
 	
 	spriteType = {
 		name = "GFX_idea_generic_monarchist_booster_western_european_2d"
