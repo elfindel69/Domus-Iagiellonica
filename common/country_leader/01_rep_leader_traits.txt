@@ -215,4 +215,21 @@ leader_traits = {
 		monarchist_drift = 0.10
 	}
 
+	bureaucratic_powerhouse = {
+		political_power_gain = 0.10
+		stability_factor = 0.03
+		targeted_modifier = {
+			tag = POL
+			consumer_goods_factor = 0.02 # bureaucracy inefficiency
+		} 
+	}
+
+	conservative_leader = {
+		drift_defence_factor = 0.10
+		non_aligned_popularity = 0.05
+		democracy_drift = -0.03
+		communism_drift = -0.03
+		fascism_drift = -0.03
+	}
+
 }

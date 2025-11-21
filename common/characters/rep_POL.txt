@@ -16,6 +16,32 @@ characters = {
 		}
 	}
 	
+	POL_felicjan_skladkowski = {
+		name = "Felicjan Sławoj Składkowski"
+		portraits = {
+			civilian = {
+				large="GFX_Portrait_POL_Felicjan_Skladkowski"
+				small="GFX_idea_POL_felicjan_skladkowski"
+			}
+		}
+	
+		# Leader definition
+		country_leader = {
+			ideology = centrism
+			expire = "1957.10.1.1"
+			traits = { bureaucratic_powerhouse conservative_leader }
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			available = {
+				has_government = monarchist
+			}
+			traits = { seasoned_administrator }
+		}
+			
+	}
 
 	rep_POL_edward_rydzsmigly = {
 		name=POL_edward_rydz_smigly
@@ -60,11 +86,20 @@ characters = {
 rep_POL_wanda_wasilewska = {
 	name=POL_wanda_wasilewska
 	portraits = {
+		civilian = {
+			large="GFX_Portrait_POL_Wanda_Wasilewska"
+		}
 		army = {
-			small="GFX_idea_POL_wanda_wasilewska"
+			small="GFX_idea_POL_wanda_wasilewska_rep"
 		}
 	}
 	gender = female
+	country_leader = {
+		ideology=marxism
+		traits = { leftist_intellectual }
+		expire="1957.10.1.1"
+		id=-1
+	}
 	advisor = {
 		cost = 100
 		slot = political_advisor
@@ -73,6 +108,9 @@ rep_POL_wanda_wasilewska = {
 		
 		allowed = {
 			original_tag = POL
+			not = {
+				has_government = communism
+			}
 		}
 		traits = {
 			leftist_intellectual

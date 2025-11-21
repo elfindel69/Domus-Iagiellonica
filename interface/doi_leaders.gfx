@@ -1,0 +1,11 @@
+spriteTypes = {
+	 spriteType= {
+            name= "GFX_Portrait_POL_Wanda_Wasilewska"
+            texturefile= "gfx/leaders/POL/Portrait_POL_C_Wanda_Wasilewska.dds"
+        }
+        spriteType= {
+            name= "GFX_Portrait_POL_Felicjan_Skladkowski"
+            texturefile= "gfx/leaders/POL/Portrait_POL_N_Slawoj_Skladkowski.dds"
+        }
+
+}
