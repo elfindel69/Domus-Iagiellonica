@@ -10,7 +10,8 @@
  monarchism_desc:0 "An Autocratic Monarch rules with a select council and divine authority."
   
  GER_monarchist_party:0 "Haus Hohenzollern"
- POL_monarchist_party:0 "Rodzina Jagiellonów"
+ POL_monarchist_party:0 "Jagiellonowie"
+ POL_monarchist_party_long:0 "Rodzina Jagiellonów"
  ENG_monarchist_party:0 "House of Windsor"
  ITA_monarchist_party:0 "Casa di Savoia"
  JAP_monarchist_party:0 "Nihon Teikokukan"
@@ -247,3 +248,11 @@
  BWR_neutrality_party_long:0 "Russian Monarchist Party"
  BWR_monarchist_party:0 "Dom Romanovykh"
  
+ POL_neutrality_party:0 "OZN"
+ POL_neutrality_party_long:0 "Obóz Zjednoczenia Narodowego"
+ POL_democratic_party:0 "PSL \"Piast\""
+ POL_democratic_party_long:0 "Polskie Stronnictwo Ludowe \"Piast\""
+ POL_fascism_party:0 "ONR-Falanga"
+ POL_fascism_party_long:0 "Obóz Narodowo-Radykalny – Falanga"
+ POL_communism_party:0 "KPP"
+ POL_communism_party_long:0 "Komunistyczna Partia Polski"
