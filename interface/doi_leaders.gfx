@@ -11,4 +11,12 @@ spriteTypes = {
             name= "GFX_Portrait_POL_Jan_V"
             texturefile= "gfx/leaders/POL/Portrait_POL_M_Jan_V.dds"
         }
+        spriteType= {
+            name= "GFX_Portrait_POL_Wincenty_Witos"
+            texturefile= "gfx/leaders/POL/Portrait_POL_D_Wincenty_Witos.dds"
+        }
+        spriteType= {
+            name= "GFX_Portrait_POL_Boleslaw_Piasecki"
+            texturefile= "gfx/leaders/POL/Portrait_POL_F_Boleslaw_Piasecki.dds"
+        }
 }

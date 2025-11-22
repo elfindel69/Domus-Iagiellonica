@@ -83,6 +83,35 @@ characters = {
 		}
 	}
 
+	rep_POL_wincenty_witos = {
+		name=POL_wincenty_witos
+		portraits = {
+			civilian = {
+				large="GFX_Portrait_POL_Wincenty_Witos"
+			}
+		}
+		country_leader = {
+			ideology=socialism
+			traits = { morges_champion }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	rep_POL_boleslaw_piasecki = {
+		name=POL_boleslaw_piasecki
+		portraits = {
+			civilian = {
+				large="GFX_Portrait_POL_Boleslaw_Piasecki"
+			}
+		}
+		country_leader = {
+			ideology=falangism
+			expire="1965.1.1.1"
+			id=-1
+			traits = { unruly_falangist }
+		}
+	}
+
 ### POLITICAL ADVISORS ###
 	
 rep_POL_wanda_wasilewska = {
