@@ -309,12 +309,18 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 18
-	fascism = 15
-	communism = 2
-	monarchist = 10
-	neutrality = 55
+	democratic = 15
+	fascism = 10
+	communism = 5
+	monarchist = 20
+	neutrality = 50
 }
+
+set_party_name = { ideology = neutrality name = "OZN" long_name = "Obóz Zjednoczenia Narodowego" }
+set_party_name = { ideology = monarchist name = "Jagiellonowie" long_name = "Rodzina Jagiellonów" }
+set_party_name = { ideology = democratic name = "PSL \"Piast\"" long_name = "Polskie Stronnictwo Ludowe \"Piast\"" }
+set_party_name = { ideology = fascism    name = "ONR-Falanga"  long_name = "Obóz Narodowo-Radykalny – Falanga" }
+set_party_name = { ideology = communism  name = "KPP"          long_name = "Komunistyczna Partia Polski" }
 
 1939.1.1 = {
 	set_popularities = {

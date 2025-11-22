@@ -1,0 +1,56 @@
+defined_text = {
+	name = GetPLCNameStrongLithuania
+	text = {
+		trigger = {
+			ROOT = {
+				has_government = neutrality
+				has_cosmetic_tag = PLC_UNIFIED
+				has_country_flag = PLC_strong_lithuania
+			}
+		}
+		localization_key = PLC_UNIFIED_neutrality_strong_lithuania
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				has_government = democratic
+				has_cosmetic_tag = PLC_UNIFIED
+				has_country_flag = PLC_strong_lithuania
+			}
+		}
+		localization_key = PLC_UNIFIED_democratic_strong_lithuania
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				has_government = fascism
+				has_cosmetic_tag = PLC_UNIFIED
+				has_country_flag = PLC_strong_lithuania
+			}
+		}
+		localization_key = PLC_UNIFIED_fascism_strong_lithuania
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				has_government = communism
+				has_cosmetic_tag = PLC_UNIFIED
+				has_country_flag = PLC_strong_lithuania
+			}
+		}
+		localization_key = PLC_UNIFIED_communism_strong_lithuania
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				has_government = monarchist
+				has_cosmetic_tag = PLC_UNIFIED
+				has_country_flag = PLC_strong_lithuania
+			}
+		}
+		localization_key = PLC_UNIFIED_monarchist_strong_lithuania
+	}
+	text = {
+		localization_key = PLC_UNIFIED_default_strong_lithuania
+	}
+}
