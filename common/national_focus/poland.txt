@@ -1823,7 +1823,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_completed_focus = POL_clamp_down_on_danzig
+					
 					controls_state = 85
 				}
 				build_railway = {
@@ -3772,7 +3772,7 @@ focus_tree = {
 						has_government = neutrality
 						has_government = fascism
 					}
-					has_completed_focus = POL_complete_april_constitution
+					
 				}
 				effect_tooltip = {
 					retire_country_leader = yes
