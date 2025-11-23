@@ -48,6 +48,24 @@ if = {
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
+add_breakthrough_progress = {
+	specialization = specialization_land
+	value = 1.0
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_naval
+	value = 0.8
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_air
+	value = 0.3
+}
+
+set_grand_doctrine = new_mobile_warfare
+set_grand_doctrine = new_convoy_raiding
+set_grand_doctrine = new_battlefield_support
 
 # Starting tech
 set_technology = {
@@ -458,12 +476,91 @@ recruit_character = rep_GER_wilhelm_ii
 recruit_character = GER_victoria
 recruit_character = GER_august_von_mackensen
 recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
+
+#NEW PEOPLE WW
+recruit_character = GER_werner_von_blomberg
+recruit_character = GER_oswald_lutz
+recruit_character = GER_walther_nehring
+recruit_character = GER_hans_krebs
+recruit_character = GER_rolf_carls
+recruit_character = GER_helmuth_wilberg
+recruit_character = GER_josef_kammhuber
+recruit_character = GER_robert_knauss
+recruit_character = GER_alfred_becker
+recruit_character = GER_walter_dornberger
+recruit_character = GER_alfred_rosenberg
+recruit_character = GER_reinhard_heydrich
+recruit_character = GER_leni_riefenstahl
+recruit_character = GER_franz_seldte
+recruit_character = GER_hanns_kerrl
+recruit_character = GER_ludwig_erhard
+recruit_character = GER_paul_von_lettow_vorbeck # He is "new"
+recruit_character = GER_carl_friedrich_goerdeler
+recruit_character = GER_wilhelm_iv
+recruit_character = GER_eva_braun
+
+#SCIENTISTS
+recruit_character = GER_peter_adolf_thiessen
+recruit_character = GER_gustav_ludwig_hertz
+recruit_character = GER_eduard_grote
+recruit_character = GER_ferdinand_porsche 
+recruit_character = GER_erwin_aders
+recruit_character = GER_hermann_burkhardt
+recruit_character = GER_ulrich_gabler
+recruit_character = GER_hans_von_ohain
+recruit_character = GER_max_kramer
+recruit_character = GER_kurt_tank
+recruit_character = GER_hellmuth_walter
+recruit_character = GER_manfred_von_ardenne
+recruit_character = GER_konrad_zuse
+
+
 if = {
 	limit = {
-		has_dlc = "Waking the Tiger"
+		has_dlc = "Gotterdammerung"
 	}
-	recruit_character = GER_carl_friedrich_goerdeler
+	recruit_character = GER_jurgen_von_blumenthal
+	recruit_character = GER_hans_vogel
+	recruit_character = GER_adolf_friedrich_von_mecklenburg
+	recruit_character = GER_wilhelm_von_gayl
+	recruit_character = GER_andreas_hermes
+	recruit_character = GER_hans_luther
+	recruit_character = GER_hermann_erhardt
+	recruit_character = GER_dietrich_bonhoeffer
+	recruit_character = GER_oberste_heeresleitung_character
+	recruit_character = GER_franz_ritter_von_epp
+	recruit_character = GER_walter_ulbricht
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		recruit_character = GER_wilhelm_zaisser
+	}
+	recruit_character = GER_otto_ruhle
+	recruit_character = GER_hermann_duncker
+	recruit_character = GER_august_thalheimer
+	recruit_character = GER_heinrich_brandler
+	recruit_character = GER_bernhard_bastlein
+	recruit_character = GER_vincenz_muller
+	recruit_character = GER_hans_kahle
+	recruit_character = GER_hans_marchwitza
+	recruit_character = GER_arno_von_lenski
+	recruit_character = GER_otto_strasser
+	recruit_character = GER_otto_grotewohl
+
+	recruit_character = GER_henrich_focke #Heli Scientist
 }
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Gotterdammerung"
+			has_dlc = "No Step Back"
+		}
+	}
+	recruit_character = GER_karl_heinrich_emil_becker #Artillery Scientist
+}
+
 if = {
 	limit = {
 		has_dlc = "La Resistance"

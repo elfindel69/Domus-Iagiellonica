@@ -64,6 +64,24 @@ set_stability = 0.6
 set_war_support = 0.1
 add_command_power = 20
 
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+
+complete_special_project = {
+	project = sp:sp_air_radar
+	scientist = ENG_robert_watson_watt
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_naval
+	value = 0.6
+}
+add_breakthrough_progress = {
+	specialization = specialization_air
+	value = 0.5
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -461,9 +479,10 @@ add_to_faction = MAL
 #give_guarantee = CZE
 
 # Order matters - here Chamberlain becomes starting leader
+recruit_character = rep_ENG_edward_viii
 recruit_character = ENG_oswald_mosley
 recruit_character = ENG_stanley_baldwin
-recruit_character = ENG_winston_churchill
+recruit_character = rep_ENG_winston_churchill
 recruit_character = ENG_harry_pollitt
 recruit_character = ENG_alan_brooke
 recruit_character = ENG_bernard_montgomery
@@ -556,7 +575,17 @@ recruit_character = ENG_stewart_menzies
 recruit_character = ENG_maxwell_aitken
 recruit_character = ENG_thomas_moore
 
+recruit_character = ENG_john_cockcroft
+recruit_character = ENG_charles_goodeve
+recruit_character = ENG_nevil_shute
+recruit_character = ENG_robert_watson_watt
 
+if = {
+	limit = {
+		has_dlc = "Graveyard of Empires"
+	}
+	recruit_character = ENG_jack_churchill 
+}
 
 if = {
 	limit = {
