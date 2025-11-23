@@ -63,6 +63,10 @@ set_war_support = 0.5
 
 set_research_slots = 3
 
+
+set_grand_doctrine = mass_assault
+set_grand_doctrine = new_fleet_in_being
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
