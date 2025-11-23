@@ -2627,6 +2627,8 @@ focus_tree = {
 		
 		available = {
 			is_puppet = no
+			has_government = fascism
+			not = { has_completed_focus = GER_political_sphere  }
 		}
 		x = 25
 		y = 0
@@ -4426,7 +4428,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -13
+			x = 2
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -5722,6 +5724,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_rhineland
 		}
+		available = {
+			is_puppet = no
+			not = { 
+				has_completed_focus = GER_rhineland
+				has_government = fascism
+			}
+		}
 		cost = 1.00
 		x = 45
 		y = 0
@@ -5765,6 +5774,14 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_a_new_constitution focus = GER_relegalize_communism}
 		available = {
 			is_puppet = no
+			OR = {
+				has_government = monarchist
+				has_government = neutrality
+			}
+			NOR = {
+				has_completed_focus = GER_a_new_constitution
+				has_completed_focus = GER_relegalize_communism
+			}
 		}
 		allow_branch = {
 			if = {
@@ -7485,6 +7502,12 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_long_live_the_kaiserreich focus = GER_relegalize_communism}
 		available = {
 			is_puppet = no
+			democratic > 0.4
+			has_government = democratic
+			NOR = {
+				has_completed_focus = GER_long_live_the_kaiserreich
+				has_completed_focus = GER_relegalize_communism
+			}
 		}
 		allow_branch = {
 			if = {
@@ -8791,6 +8814,15 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = GER_long_live_the_kaiserreich focus = GER_a_new_constitution
+		}
+		available = {
+			is_puppet = no
+			communism > 0.4
+			has_government = communism
+			NOR = {
+				has_completed_focus = GER_long_live_the_kaiserreich
+				has_completed_focus = GER_a_new_constitution
+			}
 		}
 		allow_branch = {
 			if = {
