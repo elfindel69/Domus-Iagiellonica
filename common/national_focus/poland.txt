@@ -801,9 +801,9 @@ focus_tree = {
 				uses = 2
 				category = jet_technology
 			}
-			sp:sp_air_supersonic_jet = {
-				add_project_progress_ratio = 0.2
-			}
+			#sp:sp_air_supersonic_jet = {
+			#	add_project_progress_ratio = 0.2
+			#}
 		}
 	}
 
