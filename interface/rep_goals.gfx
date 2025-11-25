@@ -40,7 +40,14 @@ spriteTypes = {
 		name = "GFX_goal_FRA_camelots_du_roi"
 		texturefile = "gfx/interface/goals/r56_goal_FRA_camelots_du_roi.dds"
 	}
-	
+	SpriteType = {
+		name = "GFX_goal_align_to_russia"
+		texturefile = "gfx/interface/goals/align_to_russia.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_align_to_ukraine"
+		texturefile = "gfx/interface/goals/align_to_ukraine.dds"
+	}
 	SpriteType = { 
 		name = "monarchist"
 		texturefile = "gfx/interface/goals/ideologies/monarchist.dds"
