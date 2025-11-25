@@ -288,12 +288,7 @@ focus_tree = {
 
 		available = {
 			
-			762 = {
-				owns_or_subject_of = yes
-				controller = {
-					tag = PREV.OWNER
-				}
-			}
+			owns_state = 762
 		}
 
 		
@@ -364,6 +359,105 @@ focus_tree = {
 			
 		}
 	}
+
+	
+	
+	
+	focus = {
+		id = POL_warsaw_main_railway_station
+		icon = GFX_focus_POL_warsaw_main_station
+		prerequisite = { focus = POL_boost_central_region_industry }
+		x = -2
+		y = 1
+		relative_position_id = POL_boost_central_region_industry
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			add_to_variable = {
+				var = POL_investments_var
+				value = 1
+			}
+			random_state = {
+				limit = { has_state_flag = POL_warsaw_main_railway_station_1 }
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			add_to_variable = {
+				var = POL_investments_var
+				value = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+				}
+				if = {
+					limit = { ROOT = { controls_state = 88 } }
+					
+					build_railway = { #Warsaw to Krakow 
+						level = 2 
+						start_state = THIS
+						target_state = 88
+					}
+				}			
+				if = {
+					limit = { ROOT = { controls_state = 92 } }
+
+					build_railway = { #Warsaw to Lublin
+						level = 2 
+						start_state = THIS
+						target_state = 92
+					}
+				}
+				if = {
+					limit = { ROOT = { controls_state = 85 } }
+			
+					build_railway = { #Warsaw to Danzig 
+						level = 2 
+						start_state = THIS
+						target_state = 85
+					}
+				}	
+				if = {
+					limit = { ROOT = { controls_state = 784 } }
+
+					build_railway = { #Warsaw to Wilno
+						level = 2 
+						start_state = THIS
+						target_state = 784
+					}
+				}
+				set_state_flag = POL_warsaw_main_railway_station_1
+			}
+		}
+			#	Increase Infrastructure in Warsaw
+	}
+
 
 	focus = {
 		id = POL_fill_the_railways_gaps
@@ -476,103 +570,6 @@ focus_tree = {
 
 	
 	
-	
-	
-	focus = {
-		id = POL_warsaw_main_railway_station
-		icon = GFX_focus_POL_warsaw_main_station
-		prerequisite = { focus = POL_boost_central_region_industry }
-		x = -2
-		y = 1
-		relative_position_id = POL_boost_central_region_industry
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-			
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			add_to_variable = {
-				var = POL_investments_var
-				value = 1
-			}
-			random_state = {
-				limit = { has_state_flag = POL_warsaw_main_railway_station_1 }
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			add_to_variable = {
-				var = POL_investments_var
-				value = 1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 10 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-				}
-				if = {
-					limit = { ROOT = { controls_state = 88 } }
-					
-					build_railway = { #Warsaw to Krakow 
-						level = 2 
-						start_state = THIS
-						target_state = 88
-					}
-				}			
-				if = {
-					limit = { ROOT = { controls_state = 92 } }
-
-					build_railway = { #Warsaw to Lublin
-						level = 2 
-						start_state = THIS
-						target_state = 92
-					}
-				}
-				if = {
-					limit = { ROOT = { controls_state = 85 } }
-			
-					build_railway = { #Warsaw to Danzig 
-						level = 2 
-						start_state = THIS
-						target_state = 85
-					}
-				}	
-				if = {
-					limit = { ROOT = { controls_state = 784 } }
-
-					build_railway = { #Warsaw to Wilno
-						level = 2 
-						start_state = THIS
-						target_state = 784
-					}
-				}
-				set_state_flag = POL_warsaw_main_railway_station_1
-			}
-		}
-			#	Increase Infrastructure in Warsaw
-	}
-
 	focus = {
 		id = POL_invest_in_research_focus
 		icon = GFX_focus_research2
@@ -602,10 +599,9 @@ focus_tree = {
 		cost = 7
 		
 		available = {
-			if = {
-				limit = { amount_research_slots > 3 }
-				num_of_owned_factories > 75
-			}
+			
+			num_of_owned_factories > 75
+			
 		}
 		
 		completion_reward = {
@@ -2138,7 +2134,7 @@ focus_tree = {
 	
 	focus = {
 		id = POL_treaty_with_russia
-		icon = GFX_focus_chi_reach_out_to_france
+		icon = GGFX_goal_align_to_russia
 		prerequisite = { focus = POL_stay_in_the_entente  }
 		available = {
 			BWR = { has_government = monarchist }
@@ -2193,7 +2189,7 @@ focus_tree = {
 				days = 720
 			}
 			POL = {
-				create_faction_from_template = miedzymorze_faction
+				create_faction = miedzymorze_faction
 			}
 		}
 		
@@ -2201,7 +2197,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_rearch_out_to_romania
-		icon = GFX_focus_chi_reach_out_to_romania
+		icon = GFX_focus_invite_romania
 		prerequisite = { focus = POL_our_own_path }
 		available = {
 			ROM = { has_government = neutrality }
@@ -2248,7 +2244,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_rearch_out_to_bulgaria
-		icon = GFX_focus_chi_reach_out_to_romania
+		icon = GFX_focus_generic_befriend_bulgaria
 		prerequisite = { focus = POL_our_own_path }
 		available = {
 			BUL = { has_government = neutrality }
@@ -2295,7 +2291,7 @@ focus_tree = {
 	
 	focus = {
 		id = POL_sway_ukraine
-		icon = GFX_focus_chi_mission_to_ukraine
+		icon = GFX_goal_align_to_ukraine
 		prerequisite = { focus = POL_our_own_path focus = POL_stay_in_the_entente }
 		available = {
 			UKR = {exists = yes}
@@ -2845,7 +2841,6 @@ focus_tree = {
 		prerequisite = { focus = POL_a_new_government }
 		
 		available = {
-			NOT = {has_government = neutrality}
 			neutrality > 0.4
 		}
 
@@ -3611,8 +3606,7 @@ focus_tree = {
 	focus = {
 		id = POL_liberalism
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = POL_internationalism}
-		prerequisite = {focus = POL_defensive_focus }
+		prerequisite = { focus = POL_internationalism }
 		mutually_exclusive = { 
 		focus = POL_go_left
 		focus = POL_go_right
