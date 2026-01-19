@@ -2134,7 +2134,7 @@ focus_tree = {
 	
 	focus = {
 		id = POL_treaty_with_russia
-		icon = GGFX_goal_align_to_russia
+		icon = GFX_goal_align_to_russia
 		prerequisite = { focus = POL_stay_in_the_entente  }
 		available = {
 			BWR = { has_government = monarchist }
