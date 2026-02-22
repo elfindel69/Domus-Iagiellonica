@@ -289,17 +289,6 @@ set_stability = 0.75
 
 
 
-create_country_leader = {
-	name = "Wilhelmina"
-	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
-	picture = "gfx/leaders/HOL/r56_portrait_HOL_Wilhelmina.dds"
-	expire = "1965.1.1"
-	ideology = paternalism
-	traits = {
-		#
-	}
-	female = yes
-}
 
 
 
