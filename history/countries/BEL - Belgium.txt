@@ -310,7 +310,7 @@ IF = {
 	BEL_create_jozef_raskin_operative = yes
 }
 
-recruit_character = rep_BEL_king_leopold_iii
+recruit_character = rep_BEL_leopold_iii
 
 if = {
 	limit = { has_dlc = Gotterdammerung }
@@ -393,6 +393,9 @@ IF = {
 		target = COG
 		autonomous_state = autonomy_colony
 		freedom_level = 0.2
+	}
+	else = {
+		puppet = COG
 	}
 }
 

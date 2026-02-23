@@ -11,7 +11,7 @@ state = {
 
 	history = {
 
-		owner = HOL
+		owner = COG
 
 	
 		add_core_of = RWA
