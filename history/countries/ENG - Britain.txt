@@ -4,15 +4,35 @@ if = {
 	limit = {
 		NOT = {
 			has_dlc = "No Step Back"
+			has_dlc = "La Resistance"
 		}
 	}
 	set_oob = "ENG_1936"
 }
 if = {
 	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+		has_dlc = "La Resistance"
+	}
+	set_oob = "ENG_1936_LaR"
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "La Resistance"
+		}
 		has_dlc = "No Step Back"
 	}
 	set_oob = "ENG_1936_nsb"
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+		has_dlc = "No Step Back"
+	}
+	set_oob = "ENG_1936_nsb_LaR"
 }
 
 starting_train_buffer = 4
@@ -24,6 +44,15 @@ if = {
 	set_naval_oob = "ENG_1936_Naval"
 	else = {
 		set_naval_oob = "ENG_1936_Naval_Legacy"
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
 	}
 }
 
@@ -42,6 +71,7 @@ if = {
 			basic_medium_airframe = 1
 			basic_small_airframe = 1
 			air_torpedoe_1 = 1
+			bba_early_transport_plane = 1
 		}
 	else = {
 		set_air_oob = "ENG_1936_air_legacy"
@@ -52,11 +82,38 @@ if = {
 			naval_bomber1 = 1
 			early_bomber = 1
 			CAS1 = 1
+			early_transport_plane = 1
 		}
 	}
 }
 
-load_oob = "ENG_Motorized"
+IF = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	give_guarantee = BEL
+}
+
+IF = {
+	limit = {
+		has_dlc = "Graveyard of Empires"
+	}
+	give_guarantee = IRQ
+}
+
+IRQ = {
+	give_military_access = ENG
+	IF = {
+		limit = {
+			has_dlc = "No Compromise, No Surrender"
+		}
+		diplomatic_relation = { 
+			country = ENG
+			relation = OFFER_AIR_BASE_ACCESS 
+			active = yes
+		}
+	}
+}
 
 set_research_slots = 4
 
@@ -217,6 +274,11 @@ if = {
 		freedom_level = 0.35
 	}
 	set_autonomy = {
+		target = OMA
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
 		target = CAN
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
@@ -236,10 +298,48 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
+	set_autonomy = {
+		target = BRM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+	#set_autonomy = {
+	#	target = EGY
+	#	autonomous_state = autonomy_dominion
+	#	freedom_level = 0.2
+	#}
+	set_autonomy = {
+		target = PAL
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = JOR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = KUW
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+
 	else = {
 		puppet = MAL
 		puppet = RAJ
+		puppet = JOR
+		puppet = PAL
+		#puppet = EGY
+		puppet = KUW
+		puppet = OMA
 	}
+}
+
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
 }
 
 

@@ -20,8 +20,10 @@ starting_train_buffer = 2
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FRA_1936_naval_mtg"
+		set_war_support = 0.1
 	else = {
 		set_naval_oob = "FRA_1936_naval_legacy"
+		set_war_support = 0.15
 	}
 }
 
@@ -38,6 +40,8 @@ if = {
 			iw_small_airframe = 1
 			iw_medium_airframe = 1
 			iw_large_airframe = 1
+			air_torpedoe_1 = 1
+			bba_early_transport_plane = 1
 		}
 	else = {
 		set_air_oob = "FRA_1936_air_legacy"
@@ -49,9 +53,34 @@ if = {
 			early_bomber = 1
 			tactical_bomber1 = 1
 			CAS1 = 1
+			early_transport_plane = 1
 		}
 	}
 }
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SYR
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = LEB
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = SYR
+		puppet = LEB
+	}
+}
+
 
 set_research_slots = 4
 set_stability = 0.5
@@ -184,6 +213,12 @@ if = {
 	set_technology = {
 		armored_car1 = 1
 	}
+}
+if = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	give_guarantee = BEL
 }
 1939.1.1 = {
 
