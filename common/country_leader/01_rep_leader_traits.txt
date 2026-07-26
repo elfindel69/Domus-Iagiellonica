@@ -70,7 +70,15 @@ leader_traits = {
 	
 	monarchist_media_mogul = {
 		sprite = 13
-		random = no
+		random = noPOL_guardian_of_the_commonwealth = {
+	random = no
+
+	modifier = {
+		stability_factor = 0.10
+		political_power_gain = 0.05
+		resistance_target = -0.05
+	}
+}
 		monarchist_drift = 0.1
 		
 		ai_will_do = {
@@ -230,6 +238,43 @@ leader_traits = {
 		democracy_drift = -0.03
 		communism_drift = -0.03
 		fascism_drift = -0.03
+	}
+
+	POL_guardian_of_the_commonwealth = {
+		random = no
+		stability_factor = 0.10
+		political_power_gain = 0.05
+		resistance_target = -0.05
+	}
+
+	POL_technocratic_modernizer = {
+		random = no
+		political_power_gain = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		research_speed_factor = 0.02
+		stability_factor = -0.05
+	}
+	POL_national_radical = {
+		random = no
+		war_support_factor = 0.15
+		political_power_gain = 0.10
+		stability_factor = -0.05
+		resistance_target = 0.10
+	}
+
+	POL_socialist_federalist = {
+		random = no
+		political_power_gain = 0.05
+		recruitable_population_factor = 0.02
+		stability_factor = -0.05
+		
+	}
+
+	POL_agrarian_statesman = {
+		random = no
+		stability_factor = 0.10
+		political_power_gain = 0.05
+		recruitable_population_factor = 0.01
 	}
 
 }
