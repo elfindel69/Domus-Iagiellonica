@@ -73,8 +73,7 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	superior_firepower = 1
-	base_strike = 1
+	
 	motorised_infantry = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -155,7 +154,7 @@ if = {
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
+	
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
@@ -163,7 +162,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_airplane_launcher = 1
+	
 		basic_dp_light_battery = 1
 	}
 	add_ideas = MTG_naval_treaty_adherent
@@ -282,13 +281,7 @@ IF = {
 
 		#doctrines
 		#Air
-		air_superiority = 1
-		infrastructure_destruction = 1
-		naval_strike_tactics = 1
-
-		sup_delay = 1
-		submarine_operations_bs = 1
-		carrier_primacy = 1
+	
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -332,7 +325,7 @@ IF = {
 			improved_sonar = 1
 			improved_ship_torpedo_launcher = 1
 			improved_heavy_battery = 1
-			advanced_dp_light_battery = 3
+		
 		}
 		remove_ideas = MTG_naval_treaty_adherent
 		add_ideas = MTG_naval_treaty_adherent_reduced
@@ -442,13 +435,7 @@ recruit_character = USA_henry_stimson
 recruit_character = USA_victor_perlo
 recruit_character = USA_charles_coughlin
 recruit_character = USA_harry_white
-recruit_character = USA_native_american_council
-recruit_character = USA_leslie_skinner
-recruit_character = USA_edward_curtis_wells
-recruit_character = USA_william_francis_gibbs
-recruit_character = USA_andrew_mckee
-recruit_character = USA_john_walter_christie
-recruit_character = USA_vannevar_bush
+
 
 if = {
 	limit = { not = { has_dlc = "No Compromise, No Surrender" } }

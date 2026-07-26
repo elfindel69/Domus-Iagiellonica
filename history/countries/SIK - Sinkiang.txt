@@ -62,10 +62,8 @@ if = {
 	oob = "SIK_1939"
 	set_technology = {
 		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
+	
+	
 
 		#electronics
 		electronic_mechanical_engineering = 1

@@ -151,8 +151,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1
-	trench_warfare = 1
-	fleet_in_being = 1
+	
 	electronic_mechanical_engineering = 1
 	radio = 1
 	radio_detection = 1
@@ -219,7 +218,7 @@ if = {
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
+	
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
@@ -447,18 +446,7 @@ if = {
 
 		#doctrines
 		#Air
-		air_superiority = 1
-		home_defence = 1
-		naval_strike_tactics = 1
 
-			grand_battle_plan = 1
-
-		prepared_defense = 1
-		battlefleet_concentration = 1
-		subsidiary_carrier_role = 1
-		convoy_sailing = 1
-		convoy_escorts = 1
-		submarine_operations = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
