@@ -1,0 +1,548 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+POL_INF_01 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { POL_INF_01 }
+
+	fallback_name = "%d Dywizja Piechoty"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Dywizja Piechoty Legionów" }
+		2 = { "%d Dywizja Piechoty Legionów" }
+		3 = { "%d Dywizja Piechoty Legionów" }
+		4 = { "%d Dywizja Piechoty" }
+		5 = { "%d Dywizja Piechoty" }
+		6 = { "%d Dywizja Piechoty" }
+		7 = { "%d Dywizja Piechoty" }
+		8 = { "%d Dywizja Piechoty" }
+		9 = { "%d Dywizja Piechoty" }
+		10 = { "%d Dywizja Piechoty" }
+		11 = { "%d Karpacka Dywizja Piechoty" }
+		12 = { "%d Dywizja Piechoty" }
+		13 = { "%d Kresowa Dywizja Piechoty" }
+		14 = { "%d Wielkopolska Dywizja Piechoty" }
+		15 = { "%d Wielkopolska Dywizja Piechoty" }
+		16 = { "%d Pomorska Dywizja Piechoty" }
+		17 = { "%d Wielkopolska Dywizja Piechoty" }
+		18 = { "%d Dywizja Piechoty" }
+		19 = { "%d Dywizja Piechoty" }
+		20 = { "%d Dywizja Piechoty" }		
+		23 = { "%d Górnośląska Dywizja Piechoty" }		
+		24 = { "%d Dywizja Piechoty" }		
+		25 = { "%d Dywizja Piechoty" }		
+		26 = { "%d Dywizja Piechoty" }		
+		27 = { "%d Dywizja Piechoty" }		
+		28 = { "%d Dywizja Piechoty" }		
+		29 = { "%d Dywizja Piechoty" }		
+		30 = { "%d Poleska Dywizja Piechoty" }		
+		21 = { "%d Podhalańska Dywizja Piechoty" }		
+		22 = { "%d Karpacka Dywizja Piechoty" }		
+		31 = { "%d Wileńska Dywizja Piechoty" }		
+		32 = { "%d Nowogródzka Dywizja Piechoty" }		
+		34 = { "%d Litewska Dywizja Piechoty" }		
+		40 = { "%d Wołyńska Dywizja Piechoty" }		
+		42 = { "%d Podolska Dywizja Piechoty" }		
+		43 = { "%d Inflancka Dywizja Piechoty" }		
+		46 = { "%d Żmudzka Dywizja Piechoty" }		
+		47 = { "%d Białoruska Dywizja Piechoty" }		
+		48 = { "%d Małopolska Dywizja Piechoty" }		
+		49 = { "%d Lubelska Dywizja Piechoty" }		
+		51 = { "%d Mazurska Dywizja Piechoty" }		
+		52 = { "%d Kurlandzka Dywizja Piechoty" }		
+		53 = { "%d Ryska Dywizja Piechoty" }		
+		54 = { "%d Galicyjska Dywizja Piechoty" }		
+		76 = { "%d Grodzieńska Dywizja Piechoty" }		
+		77 = { "%d Kowieńska Dywizja Piechoty" }		
+		78 = { "%d Brzeska Dywizja Piechoty" }		
+		79 = { "%d Tarnopolska Dywizja Piechoty" }		
+		80 = { "%d Lwowska Dywizja Piechoty" }		
+		81 = { "%d Stanisławowska Dywizja Piechoty" }		
+		85 = { "%d Łódzka Dywizja Piechoty" }		
+		88 = { "%d Krakowska Dywizja Piechoty" }		
+		89 = { "%d Warszawska Dywizja Piechoty" }		
+		90 = { "%d Dywizja Piechoty" }
+	}
+}
+POL_INF_RESERVE_01 = 
+{
+	name = "Reserve Infantry Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { POL_INF_01 }
+
+	fallback_name = "%d Dywizja Piechoty Rezerwy"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{	
+		33 = { "%d Dywizja Piechoty Rezerwy" }		
+		35 = { "%d Dywizja Piechoty Rezerwy" }		
+		36 = { "%d Dywizja Piechoty Rezerwy" }		
+		38 = { "%d Dywizja Piechoty Rezerwy" }		
+		39 = { "%d Dywizja Piechoty Rezerwy" }		
+		41 = { "%d Dywizja Piechoty Rezerwy" }		
+		44 = { "%d Dywizja Piechoty Rezerwy" }		
+		45 = { "%d Dywizja Piechoty Rezerwy" }		
+		50 = { "%d Dywizja Piechoty Rezerwy" }		
+		55 = { "%d Dywizja Piechoty Rezerwy" }		
+		60 = { "%d Dywizja Piechoty Rezerwy" }		
+	}
+}
+
+POL_CAV_01 = 
+{
+	name = "Cavalry Brigade"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { POL_INF_01 }
+
+	fallback_name = "%d Brygada Kawalerii"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Krakowska Brygada Kawalerii" }
+		2 = { "Kresowa Brygada Kawalerii" }		
+		3 = { "Mazowiecka Brygada Kawalerii" }		
+		4 = { "Nowogródzka Brygada Kawalerii" }		
+		5 = { "Podlaska Brygada Kawalerii" }		
+		6 = { "Podolska Brygada Kawalerii" }		
+		7 = { "Pomorska Brygada Kawalerii" }		
+		8 = { "Suwalska Brygada Kawalerii" }		
+		9 = { "Wielkopolska Brygada Kawalerii" }		
+		10 = { "Wileńska Brygada Kawalerii" }		
+		11 = { "Wołyńska Brygada Kawalerii" }		
+		#fictional names fitting the theme
+		12 = { "Lwowska Brygada Kawalerii" }		
+		13 = { "Poleska Brygada Kawalerii" }		
+		14 = { "Łódzka Brygada Kawalerii" }		
+		15 = { "Lubelska Brygada Kawalerii" }		
+		16 = { "Kielecka Brygada Kawalerii" }		
+		17 = { "Górnośląska Brygada Kawalerii" }		
+		18 = { "Tarnopolska Brygada Kawalerii" }		
+		19 = { "Stanisławowska Brygada Kawalerii" }		
+	}
+}
+
+POL_CAV_DIVISION_01 = 
+{
+	name = "Cavalry Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	fallback_name = "%d Dywizja Kawalerii"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{	
+		1 = { "Krakowska Dywizja Kawalerii" }
+		2 = { "Kresowa Dywizja Kawalerii" }		
+		3 = { "Mazowiecka Dywizja Kawalerii" }		
+		4 = { "Nowogródzka Dywizja Kawalerii" }		
+		5 = { "Podlaska Dywizja Kawalerii" }		
+		6 = { "Podolska Dywizja Kawalerii" }		
+		7 = { "Pomorska Dywizja Kawalerii" }		
+		8 = { "Suwalska Dywizja Kawalerii" }		
+		9 = { "Wielkopolska Dywizja Kawalerii" }		
+		10 = { "Wileńska Dywizja Kawalerii" }		
+		11 = { "Wołyńska Dywizja Kawalerii" }		
+		#fictional names fitting the theme
+		12 = { "Lwowska Dywizja Kawalerii" }		
+		13 = { "Poleska Dywizja Kawalerii" }		
+		14 = { "Łódzka Dywizja Kawalerii" }		
+		15 = { "Lubelska Dywizja Kawalerii" }		
+		16 = { "Kielecka Dywizja Kawalerii" }		
+		17 = { "Górnośląska Dywizja Kawalerii" }		
+		18 = { "Tarnopolska Dywizja Kawalerii" }		
+		19 = { "Stanisławowska Dywizja Kawalerii" }	
+	}
+}
+
+
+POL_MOT_01 = 
+{
+	name = "Motorized Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	fallback_name = "%d Dywizja Motorowa"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		31 = { "%d Warszawska Dywizja Motorowa" }
+		10 = { "%d Dywizja Motorowa" }
+		1 = { "%d Dywizja Motorowa Legionów" }
+		2 = { "%d Dywizja Motorowa Legionów" }
+		3 = { "%d Dywizja Motorowa Legionów" }
+		4 = { "%d Dywizja Motorowa" }
+		5 = { "%d Dywizja Motorowa" }
+		6 = { "%d Dywizja Motorowa" }
+		7 = { "%d Dywizja Motorowa" }
+		8 = { "%d Dywizja Motorowa" }
+		9 = { "%d Dywizja Motorowa" }
+		11 = { "%d Karpacka Dywizja Motorowa" }
+		12 = { "%d Dywizja Motorowa" }
+		13 = { "%d Kresowa Dywizja Motorowa" }
+		14 = { "%d Wielkopolska Dywizja Motorowa" }
+		15 = { "%d Wielkopolska Dywizja Motorowa" }
+		16 = { "%d Pomorska Dywizja Motorowa" }
+		17 = { "%d Wielkopolska Dywizja Motorowa" }
+		18 = { "%d Dywizja Motorowa" }
+		19 = { "%d Dywizja Motorowa" }
+		20 = { "%d Dywizja Motorowa" }		
+		23 = { "%d Górnośląska Dywizja Motorowa" }		
+		24 = { "%d Dywizja Motorowa" }		
+		25 = { "%d Dywizja Motorowa" }		
+		26 = { "%d Dywizja Motorowa" }		
+		27 = { "%d Dywizja Motorowa" }		
+		28 = { "%d Dywizja Motorowa" }		
+		29 = { "%d Dywizja Motorowa" }		
+		30 = { "%d Poleska Dywizja Motorowa" }		
+	}
+}
+
+POL_MEC_01 = 
+{
+	name = "Mechanized Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	fallback_name = "%d Dywizja Zmechanizowana"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		31 = { "%d Warszawska Dywizja Zmechanizowana" }
+		10 = { "%d Dywizja Zmechanizowana" }
+		1 = { "%d Dywizja Zmechanizowana Legionów" }
+		2 = { "%d Dywizja Zmechanizowana Legionów" }
+		3 = { "%d Dywizja Zmechanizowana Legionów" }
+		4 = { "%d Dywizja Zmechanizowana" }
+		5 = { "%d Dywizja Zmechanizowana" }
+		6 = { "%d Dywizja Zmechanizowana" }
+		7 = { "%d Dywizja Zmechanizowana" }
+		8 = { "%d Dywizja Zmechanizowana" }
+		9 = { "%d Dywizja Zmechanizowana" }
+		11 = { "%d Karpacka Dywizja Zmechanizowana" }
+		12 = { "%d Dywizja Zmechanizowana" }
+		13 = { "%d Kresowa Dywizja Zmechanizowana" }
+		14 = { "%d Wielkopolska Dywizja Zmechanizowana" }
+		15 = { "%d Wielkopolska Dywizja Zmechanizowana" }
+		16 = { "%d Pomorska Dywizja Zmechanizowana" }
+		17 = { "%d Wielkopolska Dywizja Zmechanizowana" }
+		18 = { "%d Dywizja Zmechanizowana" }
+		19 = { "%d Dywizja Zmechanizowana" }
+		20 = { "%d Dywizja Zmechanizowana" }		
+		23 = { "%d Górnośląska Dywizja Zmechanizowana" }		
+		24 = { "%d Dywizja Zmechanizowana" }		
+		25 = { "%d Dywizja Zmechanizowana" }		
+		26 = { "%d Dywizja Zmechanizowana" }		
+		27 = { "%d Dywizja Zmechanizowana" }		
+		28 = { "%d Dywizja Zmechanizowana" }		
+		29 = { "%d Dywizja Zmechanizowana" }		
+		30 = { "%d Poleska Dywizja Zmechanizowana" }		
+	}
+}
+
+POL_ARM_01 = 
+{
+	name = "Armored Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { POL_INF_01 }
+
+	fallback_name = "%d Dywizja Pancerna"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Dywizja Pancerna" }
+		2 = { "%d Warszawska Dywizja Pancerna" }
+		3 = { "%d Wielkopolska Dywizja Pancerna" }
+		4 = { "%d Litewska Dywizja Pancerna" }
+		5 = { "%d Kresowa Dywizja Pancerna" }
+		6 = { "%d Lwowska Dywizja Pancerna" }
+		7 = { "%d Mazowiecka Dywizja Pancerna" }
+		8 = { "%d Pomorska Dywizja Pancerna" }
+		9 = { "%d Wołyńska Dywizja Pancerna" }
+		10 = { "%d Jagiellońska Dywizja Pancerna" }
+	}
+}
+
+POL_ARM_BRIGADE_01 = 
+{
+	name = "Armored Brigade"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d Brygada Pancerna"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Brygada Pancerna" }
+		2 = { "%d Brygada Pancerna" }
+		3 = { "%d Brygada Pancerna" }
+		4 = { "%d Brygada Pancerna" }
+		5 = { "%d Brygada Pancerna" }
+		6 = { "%d Brygada Pancerna" }
+	}
+}
+
+POL_PAR_01 = 
+{
+	name = "Airborne Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	fallback_name = "%d Dywizja Spadochronowa"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Warszawska Dywizja Spadochronowa" }
+		2 = { "%d Krakowska Dywizja Spadochronowa" }
+		3 = { "%d Wileńska Dywizja Spadochronowa" }
+		4 = { "%d Lwowska Dywizja Spadochronowa" }
+	}
+}
+
+POL_MAR_01 = 
+{
+	name = "Marine Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	fallback_name = "%d Dywizja Piechoty Morskiej"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Gdyńska Dywizja Piechoty Morskiej" }
+		2 = { "%d Gdańska Dywizja Piechoty Morskiej" }
+		3 = { "%d Kłajpedzka Dywizja Piechoty Morskiej" }
+		4 = { "%d Ryska Dywizja Piechoty Morskiej" }
+	}
+}
+
+POL_MNT_01 = 
+{
+	name = "Mountain Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	fallback_name = "%d Dywizja Piechoty Górskiej"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Podhalańska Dywizja Piechoty Górskiej" }
+		2 = { "%d Karpacka Dywizja Piechoty Górskiej" }
+		3 = { "%d Huculska Dywizja Piechoty Górskiej" }
+		4 = { "%d Beskidzka Dywizja Piechoty Górskiej" }
+		5 = { "%d Tatrzańska Dywizja Piechoty Górskiej" }
+		6 = { "%d Sudecka Dywizja Piechoty Górskiej" }
+		7 = { "%d Śląska Dywizja Piechoty Górskiej" }
+		8 = { "%d Bieszczadzka Dywizja Piechoty Górskiej" }
+	}
+}
+
+POL_COL_01 =
+{
+	name = "Colonial Brigade"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Brygada Kolonialna"
+
+	# Colonial formations raised in Kenya and Madagascar, and in the
+	# Liberian protectorate. The final entries cover joint overseas forces.
+	ordered =
+	{
+		1 = { "%d Kenijska Brygada Kolonialna" }
+		2 = { "%d Nairobijska Brygada Kolonialna" }
+		3 = { "%d Mombaska Brygada Kolonialna" }
+		4 = { "%d Madagaskarska Brygada Kolonialna" }
+		5 = { "%d Malgaska Brygada Kolonialna" }
+		6 = { "%d Tananarywska Brygada Kolonialna" }
+		7 = { "%d Liberyjska Brygada Protektoratu" }
+		8 = { "%d Monrovijska Brygada Protektoratu" }
+		9 = { "%d Wschodnioafrykańska Brygada Kolonialna" }
+		10 = { "%d Zamorska Brygada Kolonialna" }
+	}
+}
+
+POL_MONINF_01 =
+{
+	name = "Royal Guard Division"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Dywizja Gwardii Królewskiej"
+
+	ordered =
+	{
+		1 = { "%d Warszawska Dywizja Gwardii Królewskiej" }
+		2 = { "%d Wileńska Dywizja Gwardii Królewskiej" }
+		3 = { "%d Krakowska Dywizja Gwardii Królewskiej" }
+		4 = { "%d Litewska Dywizja Gwardii Królewskiej" }
+		5 = { "%d Ruska Dywizja Gwardii Królewskiej" }
+		6 = { "%d Inflancka Dywizja Gwardii Królewskiej" }
+		7 = { "%d Jagiellońska Dywizja Gwardii Królewskiej" }
+		8 = { "%d Koronna Dywizja Gwardii Królewskiej" }
+	}
+}
+
+POL_GAR_01 = 
+{
+	name = "Border Guard Brigade"
+
+	for_countries = { POL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { POL_INF_01 }
+
+	fallback_name = "%d Brygada KOP"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	
+		1 = { "%d Brygada Ochrony Pogranicza" }
+		2 = { "%d Brygada Ochrony Pogranicza" }
+		3 = { "%d Brygada Ochrony Pogranicza" }
+		4 = { "%d Brygada Ochrony Pogranicza" }
+		5 = { "%d Brygada Ochrony Pogranicza" }
+		6 = { "%d Brygada Ochrony Pogranicza" }
+		7 = { "Brygada KOP Modlin" }
+		8 = { "Brygada KOP Bydgoszcz" }
+		9 = { "Brygada KOP Poznań" }
+		10 = { "Brygada KOP Katowice" }
+		11 = { "Brygada KOP Sanok" }
+		12 = { "Brygada KOP Grodno" }	
+		13 = { "Brygada KOP Wilno" }	
+		14 = { "Brygada KOP Nowogródek" }
+		15 = { "Brygada KOP Polesie" }
+		16 = { "Brygada KOP Wołyń" }
+		17 = { "Brygada KOP Podole" }		
+	}
+}

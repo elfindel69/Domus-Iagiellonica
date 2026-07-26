@@ -1,34 +1,39 @@
-﻿##### Wojska Lotnicze i Obrony Powietrzne (CO: Zajec) #####
+﻿##### Wojska Lotnicze i Obrony Powietrznej #####
+# January 1936: permanent territorial and specialist commands
+
 air_wings = {
-	10 = { 																			# Warsaw
-		### Brygada Poscigowa (CO: Pawlikowski) ###
-		fighter_equipment_0 =  { owner = "POL" amount = 54 }						# III/1. Dywizjon Mysliwski -- P.11c
-								# IV/1. Dywizjon Mysliwski -- P.11c
+	10 = { # I Okręg Lotniczy – Warszawa
+		fighter_equipment_0 = { owner = "POL" amount = 48 }
+		fighter_equipment_0 = { owner = "POL" amount = 24 version_name = "PZL P.24" }
 	}
-	92 = { 																			# Lublin
-		### Brygada Bombowy (CO: Haller) ###
-		tac_bomber_equipment_1 =  { owner = "POL" amount = 36 }						# X-XV Dywizjon Bombowy -- P.37 Los
-		CAS_equipment_1 =  { owner = "POL" amount = 50 }							# II-VI Dywizjon Bombowy -- P.23 Karas
+
+	86 = { # III Okręg Lotniczy – Poznań
+		fighter_equipment_0 = { owner = "POL" amount = 36 version_name = "PZL P.24" }
 	}
-	85 = { 																			# Danzig
-		### Lotnictwo Armii Pomorze (CO: Stachon) ###
-		fighter_equipment_0 =  { owner = "POL" amount = 22 }						# III/4. Dywizjon Mysliwski -- P.11c
+
+	88 = { # IV Okręg Lotniczy – Kraków
+		fighter_equipment_0 = { owner = "POL" amount = 36 }
 	}
-	86 = { 																			# Poznan
-		### Lotnictwo Armii Poznan (CO: Kuzminski) ###
-		fighter_equipment_0 =  { owner = "POL" amount = 22 }						# III/3. Dywizjon Mysliwski -- P.11c
+
+	11 = { # II Okręg Lotniczy – Litwa / Kaunas
+		fighter_equipment_0 = { owner = "POL" amount = 36 version_name = "ANBO VIII" }
+		CAS_equipment_1 = { owner = "POL" amount = 12 version_name = "ANBO IV" }
 	}
-	87 = { 																			# Lodz
-		### Lotnictwo Armii Lodz (CO: Iwaszkiewscz) ###
-		fighter_equipment_0 =  { owner = "POL" amount = 22 }						# III/6. Dywizjon Mysliwski -- P.11c
+
+	92 = { # Dowództwo Lotnictwa Szturmowego – Lublin
+		CAS_equipment_1 = { owner = "POL" amount = 72 version_name = "PZL P.23 Karaś" }
 	}
-	88 = { 																			# Krakow
-		### Lotnictwo Armii Krakow (CO: Szylling) ###
-		fighter_equipment_0 =  { owner = "POL" amount = 22 }						# III/2. Dywizjon Mysliwski -- P.11c
+
+	85 = { # Dowództwo Lotnictwa Morskiego – Gdańsk
+		nav_bomber_equipment_1 = { owner = "POL" amount = 18 version_name = "Lublin R-XX" }
 	}
-	97 = { 																			# Bialystok
-		### Lotnictwo Armii Modlin (CO: Prauss) ###
-		fighter_equipment_0 =  { owner = "POL" amount = 22 }						# III/5. Dywizjon Mysliwski -- P.7
+
+	547 = { # Dowództwo Lotnictwa Kolonialnego – Nairobi
+		scout_plane_equipment_1 = { owner = "POL" amount = 12 version_name = "Lublin R-XIII" }
+	}
+
+	543 = { # Eskadra Madagaskarska
+		scout_plane_equipment_1 = { owner = "POL" amount = 12 version_name = "Lublin R-XIII" }
 	}
 }
 
@@ -40,9 +45,21 @@ instant_effect = {
 		equipment = {
 			type = fighter_equipment_0
 			creator = "POL"
+			version_name = "PZL P.24"
+		}
+		requested_factories = 2
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "POL"
+			version_name = "PZL P.23 Karaś"
 		}
 		requested_factories = 1
-		progress = 0.20
+		progress = 0.10
 		efficiency = 100
 	}
 }

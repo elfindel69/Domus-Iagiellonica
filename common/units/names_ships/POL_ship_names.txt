@@ -1,5 +1,20 @@
-﻿##### POLAND NAME LISTS #####
-### REGULAR DESTROYER NAMES###
+﻿##### POLAND-LITHUANIA SHIP NAME LISTS #####
+##### DOMUS IAGIELLONICA / DOI #####
+#
+# Naming doctrine:
+#   Destroyers       : weather and violent natural phenomena
+#   Submarines       : predators and birds of prey
+#   Light cruisers   : cities
+#   Heavy cruisers   : regions and historic lands
+#   Battlecruisers   : battles and military victories
+#   Battleships      : rulers, statesmen or ideological symbols
+#   Aircraft carriers: national and ideological symbols
+#
+# The historical 1936 monarchy is represented by neutrality, while the
+# alternative royal route may use the custom monarchist ideology.
+
+
+### DESTROYERS — WEATHER AND VIOLENT PHENOMENA ###
 POL_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
@@ -12,104 +27,35 @@ POL_DD_HISTORICAL = {
 	fallback_name = "Niszczyciel %d"
 
 	unique = {
-		"Grom" "Błyskawica" "Piorun" "Orkan" "Kujawiak" "Ślązak" "Pomorzanin" "Krakowiak" "Góral" "Mazur" "Kaszub" "Kurp" 
-		"Burza" "Wicher" "Garland" "Ouragan" "Warszawa" "Lwów" "Wilno" "Poznan" "Kraków" "Wisla" "Gdynia" "Gdansk"
-		"Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedenska" "Psków" "Raszyn" "Przemysl" "Chocim" "Kircholm" "Fuengirola"
-	}
-}
-
-### LIGHT CRUISER NAMES###
-POL_CL_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CL
-
-	for_countries = { POL }
-
-	type = ship
-	ship_types = { ship_hull_cruiser light_cruiser }
-	
-	prefix = "ORP "
-	fallback_name = "Lekki Krążownik %d"
-
-	unique = {
-		"Dragon" "Conrad" "Bałtyk" "Król Wladyslaw IV" "Lwów" "Wilno" "Poznan" "Kraków" "Wisla" "Gdynia" "Gdansk" "Warszawa"
-		"Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedenska" "Psków" "Raszyn" "Przemysl" "Chocim" "Kircholm" "Fuengirola"
-	}
-}
-
-### HEAVY CRUISER NAMES###
-POL_CA_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CA
-
-	for_countries = { POL }
-
-	type = ship
-	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
-	prefix = "ORP "
-	fallback_name = "Ciężki Krążownik %d"
-
-	unique = {
-		"Dragon" "Conrad" "Bałtyk" "Król Wladyslaw IV" "Lwów" "Wilno" "Poznan" "Kraków" "Wisla" "Gdynia" "Gdansk" "Warszawa"
-		"Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedenska" "Psków" "Raszyn" "Przemysl" "Chocim" "Kircholm" "Fuengirola"
+		"Grom"
+		"Błyskawica"
+		"Piorun"
+		"Burza"
+		"Wicher"
+		"Orkan"
+		"Huragan"
+		"Sztorm"
+		"Szkwał"
+		"Grad"
+		"Zamieć"
+		"Halny"
+		"Zorza"
+		"Nawałnica"
+		"Cyklon"
+		"Podmuch"
+		"Grzmot"
+		"Bora"
+		"Bryza"
+		"Fala"
+		"Wir"
+		"Mróz"
+		"Szron"
+		"Śnieżyca"
 	}
 }
 
 
-### BATTLESHIP NAMES ###
-POL_BB_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_BB
-
-	for_countries = { POL }
-
-	type = ship
-	ship_types = { ship_hull_heavy battleship }
-	
-	prefix = "ORP "
-	fallback_name = "Pancernik %d"
-	
-	unique = {
-		"Józef Pilsudski" "Król Wladyslaw IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Boleslaw Chrobry" "Jan Kazimierz" "Stanislaw Koniecpolski" 
-		"Stanislaw Zólkiewski" "Jan Zamoyski" "Stanislaw Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
-	}
-}
-
-### BATTLECRUISER NAMES ###
-POL_BC_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_BC
-
-	for_countries = { POL }
-
-	type = ship
-	ship_types = { ship_hull_heavy battle_cruiser }
-	
-	prefix = "ORP "
-	fallback_name = "Krążownik %d"
-	
-	unique = {
-		"Józef Pilsudski" "Król Wladyslaw IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Boleslaw Chrobry" "Jan Kazimierz" "Stanislaw Koniecpolski" 
-		"Stanislaw Zólkiewski" "Jan Zamoyski" "Stanislaw Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
-	}
-}
-
-### AIRCRAFT CARRIER NAMES ###
-POL_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { POL }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ORP "
-	fallback_name = "Lotniskowiec %d"
-	
-	unique = {
-		"Józef Pilsudski" "Król Wladyslaw IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Boleslaw Chrobry" "Jan Kazimierz" "Stanislaw Koniecpolski" 
-		"Stanislaw Zólkiewski" "Jan Zamoyski" "Stanislaw Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
-	}
-}
-
-### SUBMARINES ###
+### SUBMARINES — PREDATORS AND BIRDS OF PREY ###
 POL_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
@@ -117,64 +63,654 @@ POL_SS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
+
 	prefix = "ORP "
 	fallback_name = "Okręt Podwodny %d"
-	
+
 	unique = {
-		"Orzeł" "Sęp" "Sokól" "Dzik" "Jastrząb" "Rys" "Wilk" "Żbik" "Kondor" "Bielik" 
-		"Kaszub" "Mazur" "Krakowiak" "Ślązak" "Kujawiak" "Kurp" "Kujawiak" "Kujawiak" "Kujawiak" 
+		"Orzeł"
+		"Wilk"
+		"Sęp"
+		"Żbik"
+		"Sokół"
+		"Dzik"
+		"Jastrząb"
+		"Ryś"
+		"Kondor"
+		"Bielik"
+		"Rekin"
+		"Szczupak"
+		"Pantera"
+		"Tygrys"
+		"Lew"
+		"Niedźwiedź"
+		"Krogulec"
+		"Rybołów"
+		"Puchacz"
+		"Żarłacz"
+		"Lis"
+		"Kuna"
+		"Rosomak"
+		"Rybitwa"
 	}
 }
 
-### KINGS ###
-POL_THEME_KINGS = {
-	name = NAME_THEME_KINGS
+
+### LIGHT CRUISERS — CITIES OF THE COMMONWEALTH ###
+POL_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
 
 	for_countries = { POL }
 
-	can_use = { 
-		not = { has_government = communism }
-	}
-
 	type = ship
-	ship_types = { capital_ship ship_hull_heavy battleship battle_cruiser ship_hull_carrier carrier }
-	
+	ship_types = { ship_hull_cruiser light_cruiser }
+
 	prefix = "ORP "
+	fallback_name = "Lekki Krążownik %d"
 
 	unique = {
-		"Stefan Batory"
-		"Jan III Sobieski"
-		"Kazimierz Wielki"
-		"Bolesław Chrobry"
-		"Zygmunt III Waza"
-		"Władysław IV Waza"
-		"Władysław Jagiełło"
-		"Zygmunt I Stary"
-		"Władysław Łokietek"
-		"Kazimierz Jagielończyk"
-		"Zygmunt II August"
-		"Bolesław Śmiały"
+		"Warszawa"
+		"Kraków"
+		"Wilno"
+		"Lwów"
+		"Gdańsk"
+		"Ryga"
+		"Poznań"
+		"Gdynia"
+		"Lublin"
+		"Łódź"
+		"Grodno"
+		"Brześć"
+		"Mińsk"
+		"Kowno"
+		"Toruń"
+		"Szczecin"
+		"Wrocław"
+		"Katowice"
+		"Białystok"
+		"Tarnopol"
+		"Stanisławów"
+		"Równe"
+		"Pińsk"
+		"Kłajpeda"
 	}
 }
 
-### HISTORICAL FIGURES ###
+
+### HEAVY CRUISERS — REGIONS AND HISTORIC LANDS ###
+POL_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { POL }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+
+	prefix = "ORP "
+	fallback_name = "Ciężki Krążownik %d"
+
+	unique = {
+		"Mazowsze"
+		"Mazury"
+		"Litwa"
+		"Ruś"
+		"Śląsk"
+		"Pomorze"
+		"Prusy"
+		"Inflanty"
+		"Kujawy"
+		"Małopolska"
+		"Wielkopolska"
+		"Podlasie"
+		"Polesie"
+		"Wołyń"
+		"Podole"
+		"Żmudź"
+		"Kurlandia"
+		"Galicja"
+		"Wileńszczyzna"
+		"Podkarpacie"
+	}
+}
+
+
+### BATTLECRUISERS — GREAT BATTLES ###
+POL_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { POL }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+
+	prefix = "ORP "
+	fallback_name = "Krążownik Liniowy %d"
+
+	unique = {
+		"Grunwald"
+		"Orsza"
+		"Kircholm"
+		"Wiedeń"
+		"Chocim"
+		"Oliwa"
+		"Smoleńsk"
+		"Raszyn"
+		"Płowce"
+		"Komarów"
+		"Zadwórze"
+		"Kłuszyn"
+		"Beresteczko"
+		"Cecora"
+		"Połonka"
+		"Byczyna"
+		"Obertyn"
+		"Zbaraż"
+	}
+}
+
+
+### HISTORICAL BATTLESHIPS — JAGIELLONIAN SOVEREIGNS ###
+POL_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { POL }
+
+	can_use = {
+		OR = {
+			has_government = neutrality
+			has_government = monarchist
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+
+	prefix = "ORP "
+	fallback_name = "Pancernik %d"
+
+	unique = {
+		"Stefan I"
+		"Stefan II"
+		"Stefan III"
+		"Zygmunt III"
+		"Władysław IV"
+		"Jan II"
+		"Michał I"
+		"Michał II"
+		"Jan III"
+		"Jan IV"
+		"Michał III"
+		"Jan V"
+	}
+}
+
+
+### HISTORICAL AIRCRAFT CARRIERS — COMMONWEALTH SYMBOLS ###
+POL_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { POL }
+
+	can_use = {
+		OR = {
+			has_government = neutrality
+			has_government = monarchist
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+
+	prefix = "ORP "
+	fallback_name = "Lotniskowiec %d"
+
+	unique = {
+		"Rzeczpospolita"
+		"Jagiellonia"
+		"Unia Lubelska"
+		"Korona"
+		"Dom Jagielloński"
+		"Pax Jagiellonica"
+		"Bałtyk"
+		"Morze Wolności"
+		"Orzeł Biały"
+		"Pogoń"
+		"Wspólna Korona"
+		"Straż Bałtyku"
+	}
+}
+
+
+##### IDEOLOGICAL CAPITAL-SHIP THEMES #####
+
+### JAGIELLONIAN MONARCHY — DYNASTY AND CROWN ###
+POL_THEME_JAGIELLONIAN_KINGS = {
+	name = POL_NAME_THEME_JAGIELLONIAN_KINGS
+
+	for_countries = { POL }
+
+	can_use = {
+		OR = {
+			has_government = neutrality
+			has_government = monarchist
+		}
+	}
+
+	type = ship
+	ship_types = {
+		capital_ship
+		ship_hull_heavy
+		battleship
+		battle_cruiser
+	}
+
+	prefix = "ORP "
+
+	unique = {
+		"Stefan I"
+		"Stefan II"
+		"Stefan III"
+		"Zygmunt III"
+		"Władysław IV"
+		"Jan II"
+		"Michał I"
+		"Michał II"
+		"Jan III"
+		"Jan IV"
+		"Michał III"
+		"Jan V"
+		"Barbara Radziwiłł"
+		"Dom Jagielloński"
+		"Korona Jagiellonów"
+	}
+}
+
+POL_THEME_JAGIELLONIAN_CARRIERS = {
+	name = POL_NAME_THEME_JAGIELLONIAN_CARRIERS
+
+	for_countries = { POL }
+
+	can_use = {
+		OR = {
+			has_government = neutrality
+			has_government = monarchist
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+
+	prefix = "ORP "
+
+	unique = {
+		"Rzeczpospolita"
+		"Jagiellonia"
+		"Unia Lubelska"
+		"Korona"
+		"Pax Jagiellonica"
+		"Orzeł Biały"
+		"Pogoń"
+		"Bałtyk"
+		"Morze Wolności"
+		"Wspólna Korona"
+	}
+}
+
+
+### DEMOCRATIC REPUBLIC — CONSTITUTION AND COMMONWEALTH ###
+POL_THEME_DEMOCRATIC_CAPITALS = {
+	name = POL_NAME_THEME_DEMOCRATIC_CAPITALS
+
+	for_countries = { POL }
+
+	can_use = {
+		has_government = democratic
+	}
+
+	type = ship
+	ship_types = {
+		capital_ship
+		ship_hull_heavy
+		battleship
+		battle_cruiser
+		ship_hull_carrier
+		carrier
+	}
+
+	prefix = "ORP "
+
+	unique = {
+		"Konstytucja 3 Maja"
+		"Rzeczpospolita"
+		"Unia Lubelska"
+		"Sejm Wielki"
+		"Wolność"
+		"Niepodległość"
+		"Jedność"
+		"Zgoda Narodów"
+		"Obrona Republiki"
+		"Wspólnota"
+		"Suwerenność"
+		"Demokracja"
+		"Praworządność"
+		"Obywatel"
+		"Wolny Bałtyk"
+		"Federacja"
+	}
+}
+
+
+### NATIONALIST REGIME — POWER, VICTORY AND PIAST SYMBOLISM ###
+POL_THEME_NATIONALIST_CAPITALS = {
+	name = POL_NAME_THEME_NATIONALIST_CAPITALS
+
+	for_countries = { POL }
+
+	can_use = {
+		has_government = fascism
+	}
+
+	type = ship
+	ship_types = {
+		capital_ship
+		ship_hull_heavy
+		battleship
+		battle_cruiser
+		ship_hull_carrier
+		carrier
+	}
+
+	prefix = "ORP "
+
+	unique = {
+		"Wielka Polska"
+		"Żelazna Korona"
+		"Miecz Północy"
+		"Piast"
+		"Lech"
+		"Sarmacja"
+		"Straż Bałtyku"
+		"Potęga"
+		"Zwycięstwo"
+		"Chwała"
+		"Żelazny Orzeł"
+		"Grunwald"
+		"Kircholm"
+		"Wiedeń"
+		"Chocim"
+		"Orsza"
+	}
+}
+
+
+### COMMUNIST REGIME — REVOLUTION, LABOUR AND INTERNATIONALISM ###
+POL_THEME_COMMUNIST_CAPITALS = {
+	name = POL_NAME_THEME_COMMUNIST_CAPITALS
+
+	for_countries = { POL }
+
+	can_use = {
+		has_government = communism
+	}
+
+	type = ship
+	ship_types = {
+		capital_ship
+		ship_hull_heavy
+		battleship
+		battle_cruiser
+		ship_hull_carrier
+		carrier
+	}
+
+	prefix = "ORP "
+
+	unique = {
+		"Rewolucja"
+		"Proletariat"
+		"Lud Pracujący"
+		"Jedność Robotnicza"
+		"Czerwony Sztandar"
+		"Wolność Ludów"
+		"Republika Ludowa"
+		"Braterstwo"
+		"Wyzwolenie"
+		"Internacjonał"
+		"Nowy Świat"
+		"Zwycięstwo Ludu"
+		"Praca"
+		"Równość"
+		"Solidarność Robotnicza"
+		"Pokój Ludów"
+	}
+}
+
+
+##### OPTIONAL CLASS-SPECIFIC THEMES #####
+
+### WEATHER — DESTROYERS ###
+POL_THEME_WEATHER = {
+	name = NAME_THEME_WEATHER
+
+	for_countries = { POL }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	prefix = "ORP "
+
+	unique = {
+		"Burza"
+		"Błyskawica"
+		"Sztorm"
+		"Grad"
+		"Wicher"
+		"Piorun"
+		"Zorza"
+		"Huragan"
+		"Grom"
+		"Zamieć"
+		"Halny"
+		"Orkan"
+		"Szkwał"
+		"Nawałnica"
+		"Śnieżyca"
+		"Grzmot"
+	}
+}
+
+
+### PREDATORS — SUBMARINES ###
+POL_THEME_ANIMALS = {
+	name = NAME_THEME_ANIMALS
+
+	for_countries = { POL }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	prefix = "ORP "
+
+	unique = {
+		"Wilk"
+		"Orzeł"
+		"Rekin"
+		"Ryś"
+		"Żbik"
+		"Sęp"
+		"Sokół"
+		"Bielik"
+		"Tygrys"
+		"Lew"
+		"Pantera"
+		"Niedźwiedź"
+		"Dzik"
+		"Jastrząb"
+		"Kondor"
+		"Krogulec"
+		"Rosomak"
+		"Żarłacz"
+	}
+}
+
+
+### CITIES — LIGHT CRUISERS ###
+POL_THEME_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { POL }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	prefix = "ORP "
+
+	unique = {
+		"Warszawa"
+		"Kraków"
+		"Wilno"
+		"Lwów"
+		"Gdańsk"
+		"Ryga"
+		"Poznań"
+		"Gdynia"
+		"Lublin"
+		"Łódź"
+		"Grodno"
+		"Brześć"
+		"Mińsk"
+		"Kowno"
+		"Toruń"
+		"Szczecin"
+		"Wrocław"
+		"Katowice"
+		"Białystok"
+		"Tarnopol"
+	}
+}
+
+
+### REGIONS — HEAVY CRUISERS ###
+POL_THEME_REGIONS = {
+	name = NAME_THEME_REGIONS
+
+	for_countries = { POL }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+
+	prefix = "ORP "
+
+	unique = {
+		"Mazowsze"
+		"Mazury"
+		"Litwa"
+		"Ruś"
+		"Śląsk"
+		"Pomorze"
+		"Prusy"
+		"Inflanty"
+		"Kujawy"
+		"Małopolska"
+		"Wielkopolska"
+		"Podlasie"
+		"Polesie"
+		"Wołyń"
+		"Podole"
+		"Żmudź"
+		"Kurlandia"
+		"Galicja"
+	}
+}
+
+
+### BATTLES — BATTLECRUISERS ###
+POL_THEME_BATTLES = {
+	name = NAME_THEME_BATTLES
+
+	for_countries = { POL }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+
+	prefix = "ORP "
+
+	unique = {
+		"Grunwald"
+		"Orsza"
+		"Smoleńsk"
+		"Kircholm"
+		"Wiedeń"
+		"Chocim"
+		"Raszyn"
+		"Oliwa"
+		"Cedynia"
+		"Płowce"
+		"Komarów"
+		"Zadwórze"
+		"Kłuszyn"
+		"Beresteczko"
+		"Obertyn"
+		"Byczyna"
+	}
+}
+
+
+### RIVERS — SMALL ESCORTS AND COASTAL SHIPS ###
+POL_THEME_RIVERS = {
+	name = NAME_THEME_RIVERS
+
+	for_countries = { POL }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	prefix = "ORP "
+
+	unique = {
+		"Wisła"
+		"Bug"
+		"Narew"
+		"Warta"
+		"San"
+		"Noteć"
+		"Wieprz"
+		"Dniestr"
+		"Prypeć"
+		"Pilica"
+		"Wilia"
+		"Niemen"
+		"Dźwina"
+		"Odra"
+	}
+}
+
+
+### HISTORICAL FIGURES — NON-COMMUNIST CAPITAL SHIPS ###
 POL_THEME_HISTORICAL_FIGURES = {
 	name = NAME_THEME_HISTORICAL_FIGURES
 
 	for_countries = { POL }
 
-	can_use = { 
-		not = { has_government = communism }
+	can_use = {
+		NOT = {
+			has_government = communism
+		}
 	}
 
 	type = ship
-	ship_types = {capital_ship ship_hull_heavy battleship battle_cruiser ship_hull_carrier carrier }
-	
+	ship_types = {
+		capital_ship
+		ship_hull_heavy
+		battleship
+		battle_cruiser
+		ship_hull_carrier
+		carrier
+	}
+
 	prefix = "ORP "
 
 	unique = {
-		"Józef Piłsudzki"
 		"Tadeusz Kościuszko"
 		"Józef Poniatowski"
 		"Stanisław Żółkiewski"
@@ -183,7 +719,6 @@ POL_THEME_HISTORICAL_FIGURES = {
 		"Jan Karol Chodkiewicz"
 		"Stanisław Lanckoroński"
 		"Jan Henryk Dąbrowski"
-		"Mateusz Sierpinek"
 		"Arend Dickmann"
 		"Kazimierz Pułaski"
 		"Jan Heweliusz"
@@ -200,286 +735,43 @@ POL_THEME_HISTORICAL_FIGURES = {
 	}
 }
 
-### WEATHER ###
-POL_THEME_WEATHER = {
-	name = NAME_THEME_WEATHER
 
-	for_countries = { POL }
-
-	type = ship
-	
-	prefix = "ORP "
-
-	unique = {
-		"Burza"
-		"Błyskawica"
-		"Sztorm"
-		"Grad"
-		"Wicher"
-		"Piorun"
-		"Tornado"
-		"Zorza"
-		"Huragan"
-		"Grom"
-		"Zamieć"
-		"Halny"
-		"Orkan"
-		"Szkwał"
-	}
-}
-
-### RIVERS ###
-POL_THEME_RIVERS = {
-	name = NAME_THEME_RIVERS
-
-	for_countries = { POL }
-
-	type = ship
-	
-	prefix = "ORP "
-
-	unique = {
-		"Wisła"
-		"Bug"
-		"Narew"
-		"Warta"
-		"San"
-		"Noteć"
-		"Wieprz"
-		"Dniestr"
-		"Prypeć"
-		"Lida"
-		"Pilica"
-		"Wilia"
-	}
-}
-
-### ANIMALS ###
-POL_THEME_ANIMALS = {
-	name = NAME_THEME_ANIMALS
-
-	for_countries = { POL }
-
-	type = ship
-	
-	prefix = "ORP "
-
-	unique = {
-		"Wilk"
-		"Orzeł"
-		"Rekin"
-		"Gryf"
-		"Ryś"
-		"Szczupak"
-		"Czapla"
-		"Albatros"
-		"Mewa"
-		"Rybitwa"
-		"Kormoran"
-		"Żbik"
-		"Sęp"
-		"Czajka"
-		"Jaskółka"
-		"Żuraw"
-		"Sokół"
-		"Bielik"
-		"Tygrys"
-		"Lew"
-		"Pantera"
-		"Niedźwiedź"
-		"Dzik"
-		"Jastrząb"
-	}
-}
-
-### REGIONS ###
-POL_THEME_REGIONS = {
-	name = NAME_THEME_REGIONS
-
-	for_countries = { POL }
-
-	type = ship
-	
-	prefix = "ORP "
-
-	unique = {
-		"Mazowsze"
-		"Kujawy"
-		"Małopolska"
-		"Wielkopolska"
-		"Śląsk"
-		"Pomorze"
-		"Podlasie"
-		"Polesie"
-		"Świętokrzyskie"
-		"Wileńszczyzna"
-		"Podhale"
-		"Podkapracie"
-	}
-}
-
-### CITIES ###
-POL_THEME_CITIES = {
-	name = NAME_THEME_CITIES
-
-	for_countries = { POL }
-
-	type = ship
-	
-	prefix = "ORP "
-
-	unique = {
-		"Mazowsze"
-		"Kujawy"
-		"Małopolska"
-		"Wielkopolska"
-		"Śląsk"
-		"Pomorze"
-		"Podlasie"
-		"Polesie"
-		"Świętokrzyskie"
-		"Wileńszczyzna"
-		"Podhale"
-	}
-}
-
-### BATTLES ###
-POL_THEME_BATTLES = {
-	name = NAME_THEME_BATTLES
-
-	for_countries = { POL }
-
-	type = ship
-	
-	prefix = "ORP "
-
-	unique = {
-		"Grunwald"
-		"Orsza"
-		"Smoleńsk"
-		"Kircholm"
-		"Wiedeń"
-		"Chocim"
-		"Raszyn"
-		"Oliwa"
-		"Cedynia"
-		"Płowce"
-		"Komarów"
-	}
-}
-
-### SLAVIC_MYTHOLOGY ###
+### SLAVIC MYTHOLOGY — OPTIONAL ALL-SHIP THEME ###
 POL_THEME_SLAVIC_MYTHOLOGY = {
 	name = NAME_THEME_SLAVIC_MYTHOLOGY
 
 	for_countries = { POL }
 
 	type = ship
-	
+
 	prefix = "ORP "
 
 	unique = {
-		"Strzyga"
-		"Aitwar"
-		"Baba"
-		"Bannik"
-		"Bazyliszek"
-		"Bełt"
-		"Bezkost"
-		"Bieda"
-		"Bies"
-		"Błędny Ognik"
-		"Błotnik"
-		"Bobak"
-		"Buka"
-		"Bogunka"
-		"Borowy"
 		"Leszy"
-		"Brzegina"
-		"Buc"
-		"Bzionek"
-		"Chochlik"
-		"Chowaniec"
-		"Cicha"
-		"Cmentarna Baba"
-		"Czart"
-		"Boruta"
-		"Fugas"
-		"Hejdasz"
-		"Iskrzycki"
-		"Rokita"
-		"Dobrochoczy"
-		"Dola"
-		"Domowik"
-		"Dworowy"
-		"Dziad"
-		"Dziewiątko"
-		"Dziwożona"
-		"Fajerman"
-		"Gnieciuch"
-		"Gryf"
-		"Gumiennik"
-		"Homen"
-		"Jaroszek"
-		"Jędza"
-		"Julki"
-		"Kania"
-		"Klabaternik"
-		"Kłobuk"
-		"Kocmołuch"
-		"Krasnoludek"
-		"Król Wężów"
-		"Latawiec"
-		"Licho"
-		"Łapiduch"
-		"Newka"
-		"Mamuna"
-		"Maruda"
-		"Matoha"
-		"Miernik"
-		"Mlekowy Żmij"
-		"Morowa Dziewica"
-		"Mróz"
-		"Mrucek"
-		"Nocnica"
-		"Ognisty Koń"
-		"Paskudnik"
-		"Pieniężny Chłopczyk"
-		"Plonek"
-		"Płanetnik"
-		"Płonnik"
-		"Południca"
-		"Poroniec"
-		"Przyłożnik"
-		"Rodzanica"
-		"Rusałka"
-		"Rybi Król"
-		"Skarbnik"
-		"Skuła"
-		"Smęda"
-		"Smok"
-		"Spaleniec"
-		"Kręciek"
-		"Stradczę"
-		"Stukacz"
-		"Syrena"
-		"Szalińc"
-		"Szarlej"
-		"Szątopierz"
-		"Śmierć"
-		"Świetle"
-		"Tęsknica"
-		"Trusia"
-		"Utopiec"
-		"Wąpierz"
-		"Wielkolud"
-		"Wieszczy"
-		"Wietrzyca"
-		"Wilkołak"
-		"Wiła"
-		"Wisielec"
-		"Wodnik"
-		"Zmora"
 		"Żmij"
+		"Strzyga"
+		"Rusałka"
+		"Utopiec"
+		"Wodnik"
+		"Boruta"
+		"Rokita"
+		"Domowik"
+		"Dziwożona"
+		"Płanetnik"
+		"Południca"
+		"Chochlik"
+		"Bazyliszek"
+		"Bies"
+		"Czart"
+		"Zmora"
+		"Wilkołak"
+		"Wąpierz"
+		"Syrena"
+		"Smok"
+		"Borowy"
+		"Licho"
+		"Świetlik"
+		"Król Wężów"
+		"Ognisty Koń"
 	}
 }
