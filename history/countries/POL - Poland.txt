@@ -21,28 +21,8 @@ if = {
 		set_naval_oob = "POL_1936_naval_legacy"
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "POL_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			aa_cannon_1 = 1
-			iw_small_airframe = 1
-			basic_small_airframe = 1
-			engines_1 = 1
-			early_bombs = 1
-		}
-	else = {
-		set_air_oob = "POL_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
-		}
-	}
-}
-
 set_research_slots = 4
+
 add_breakthrough_progress = {
 	specialization = specialization_land
 	value = 0.8
@@ -50,47 +30,62 @@ add_breakthrough_progress = {
 
 add_breakthrough_progress = {
 	specialization = specialization_naval
-	value = 0.6
+	value = 0.4
 }
 
 add_breakthrough_progress = {
 	specialization = specialization_air
-	value = 0.3
+	value = 0.5
 }
 
 
-# Starting tech
+# Starting land technologies
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	tech_support = 1		
+
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	tech_trucks = 1
+
 	gw_artillery = 1
 	interwar_antiair = 1
-	basic_light_tank = 1
-	early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
-	tech_trucks = 1
+
+	basic_machine_tools = 1
+	construction1 = 1
+	dispersed_industry = 1
+
+	electronic_mechanical_engineering = 1
+	radio = 1
 }
 
+
+# Starting doctrine
 set_grand_doctrine = grand_battleplan
+
+
+# Tanks without No Step Back
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
+
 	set_technology = {
 		gwtank = 1
 		basic_light_tank = 1
 	}
 }
+
+
+# Tanks and railways with No Step Back
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
+
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
@@ -98,50 +93,88 @@ if = {
 	}
 }
 
+
+# Aircraft with By Blood Alone
 if = {
-	limit = { 
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+
+	set_air_oob = "POL_1936_air_bba"
+
+	set_technology = {
+		aa_lmg = 1
+		aa_cannon_1 = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		engines_1 = 1
+		early_bombs = 1
+		air_torpedoe_1 = 1
+		photo_reconnaisance = 1
+	}
+}
+
+
+# Aircraft without By Blood Alone
+else = {
+	set_air_oob = "POL_1936_air_legacy"
+
+	set_technology = {
+		early_fighter = 1
+		early_bomber = 1
+		CAS1 = 1
+		naval_bomber1 = 1
+		scout_plane1 = 1
+	}
+}
+
+
+# Navy without Man the Guns
+if = {
+	limit = {
 		NOT = { has_dlc = "Man the Guns" }
-	 }
+	}
+
 	set_technology = {
 		early_destroyer = 1
-		early_submarine = 1	
+		basic_destroyer = 1
+		early_submarine = 1
+		basic_submarine = 1
 		early_light_cruiser = 1
 		early_heavy_cruiser = 1
-		early_ship_hull_cruiser = 1
-		panzerschiffe = 1
-		pre_dreadnoughts = 1
+
 		transport = 1
 		basic_fire_control_system = 1
 	}
 }
+
+
+# Navy with Man the Guns
 if = {
-	limit = { 
+	limit = {
 		has_dlc = "Man the Guns"
 	}
+
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
+
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
+
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_ship_hull_heavy = 1
-		panzerschiffe = 1
-		pre_dreadnoughts = 1
+
+		basic_battery = 1
 		basic_light_battery = 1
-		improved_light_battery = 1
-		basic_heavy_battery = 1
+		basic_torpedo = 1
 		basic_depth_charges = 1
+
 		sonar = 1
-		basic_cruiser_armor_scheme = 1
-		mtg_transport = 1
 		fire_control_methods_1 = 1
+		basic_cruiser_armor_scheme = 1
+
+		mtg_transport = 1
 	}
 }
 
@@ -149,6 +182,9 @@ add_ideas = {
 		#laws
 		limited_conscription
 		partial_economic_mobilisation
+
+		POL_Synthetic_Rubber
+		POL_Polish_Cipher_Bureau_Focus0
 	}
 1939.1.1 = {
 	
@@ -323,12 +359,6 @@ set_popularities = {
     communism = 4
 }
 
-set_party_name = { ideology = neutrality name = "OZN" long_name = "Obóz Zjednoczenia Narodowego" }
-set_party_name = { ideology = monarchist name = "Jagiellonowie" long_name = "Rodzina Jagiellonów" }
-set_party_name = { ideology = democratic name = "PSL \"Piast\"" long_name = "Polskie Stronnictwo Ludowe \"Piast\"" }
-set_party_name = { ideology = fascism    name = "ONR-Falanga"  long_name = "Obóz Narodowo-Radykalny – Falanga" }
-set_party_name = { ideology = communism  name = "KPP"          long_name = "Komunistyczna Partia Polski" }
-
 1939.1.1 = {
 	set_popularities = {
 		democratic = 13
@@ -340,7 +370,21 @@ set_party_name = { ideology = communism  name = "KPP"          long_name = "Komu
 }
 
 give_guarantee = UKR
-
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = LIB
+		autonomous_state = autonomy_puppet
+	}
+	else = {
+		puppet = LIB
+	}
+}
 
 
 
@@ -352,12 +396,6 @@ give_guarantee = UKR
 1939.1.1 = { 
 	set_cosmetic_tag = PLC_UNIFIED 
 	set_global_flag = form_commonwealth_flag
-}
-
-add_ideas = {
-	POL_Synthetic_Rubber
-	POL_Polish_Cipher_Bureau_Focus0
-	POL_jan_v
 }
 
 
@@ -471,21 +509,78 @@ if = {
 			has_dlc = "By Blood Alone"
 		}
 	}
+
 	create_equipment_variant = {
 		name = "PZL P.24"
 		type = fighter_equipment_0
 		upgrades = {
 			plane_gun_upgrade = 3
-			plane_range_upgrade = 0  
+			plane_range_upgrade = 0
 			plane_engine_upgrade = 1
 			plane_reliability_upgrade = 3
 		}
 	}
+
+	create_equipment_variant = {
+		name = "PZL P.23 Karaś"
+		type = CAS_equipment_1
+		upgrades = {
+			plane_cas_upgrade = 1
+			plane_range_upgrade = 1
+			plane_engine_upgrade = 1
+			plane_reliability_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "ANBO IV"
+		type = CAS_equipment_1
+		upgrades = {
+			plane_cas_upgrade = 0
+			plane_range_upgrade = 2
+			plane_engine_upgrade = 1
+			plane_reliability_upgrade = 2
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "ANBO VIII"
+		type = fighter_equipment_0
+		upgrades = {
+			plane_gun_upgrade = 2
+			plane_range_upgrade = 1
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Lublin R-XX"
+		type = nav_bomber_equipment_1
+		upgrades = {
+			plane_range_upgrade = 1
+			plane_engine_upgrade = 0
+			plane_reliability_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Lublin R-XIII"
+		type = scout_plane_equipment_1
+		upgrades = {
+			plane_range_upgrade = 2
+			plane_engine_upgrade = 0
+			plane_reliability_upgrade = 2
+		}
+	}
 }
+
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"
 	}
+
 	create_equipment_variant = {
 		name = "PZL P.11"
 		type = small_plane_airframe_0
@@ -496,23 +591,66 @@ if = {
 		}
 		obsolete = yes
 	}
+
 	create_equipment_variant = {
 		name = "PZL P.24"
 		type = small_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = aircraft_cannon_1_2x
 			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_2_1x
+			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 		}
 	}
+
 	create_equipment_variant = {
-		name = "PZL P.23"
+		name = "PZL P.23 Karaś"
 		type = small_plane_cas_airframe_1
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = lmg_defense_turret
+		}
+	}
+
+	create_equipment_variant = {
+		name = "ANBO IV"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = recon_camera
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "ANBO VIII"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Lublin R-XX"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = floats
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Lublin R-XIII"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = recon_camera
 		}
 	}
 }
@@ -574,16 +712,14 @@ if = {
 		}
 		icon = "GFX_POL_improved_light_tank_medium"
 	}
-#	add_equipment_to_stockpile = {
-#		type = light_tank_chassis_0
-#		amount = 550
-#		variant_name = "TKS"
-#	}
 }
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+
 	create_equipment_variant = {
 		name = "Mazowsze Class"
 		type = light_cruiser_1
@@ -593,16 +729,15 @@ if = {
 			ship_reliability_upgrade = 2
 			ship_engine_upgrade = 2
 			ship_gun_upgrade = 2
-			ship_anti_air_upgrade = 2
+			ship_anti_air_upgrade = 1
 		}
-		obsolete = yes
 	}
-	# Heavy Cruisers #
+
 	create_equipment_variant = {
 		name = "Mazury Class"
 		type = heavy_cruiser_1
-		parent_version = 0
 		name_group = POL_CA_HISTORICAL
+		parent_version = 0
 		upgrades = {
 			ship_reliability_upgrade = 1
 			ship_engine_upgrade = 1
@@ -610,14 +745,93 @@ if = {
 			ship_gun_upgrade = 2
 		}
 	}
-	### Ship Variants ###
+
+	create_equipment_variant = {
+		name = "Wicher Class"
+		type = destroyer_1
+		name_group = POL_DD_HISTORICAL
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_torpedo_upgrade = 1
+			ship_anti_air_upgrade = 0
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Jaskółka Class"
+		type = destroyer_1
+		name_group = POL_DD_HISTORICAL
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 0
+			ship_torpedo_upgrade = 0
+			ship_anti_air_upgrade = 0
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Wilk Class"
+		type = submarine_1
+		name_group = POL_SS_HISTORICAL
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_torpedo_upgrade = 1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Grom Class"
+		type = destroyer_2
+		name_group = POL_DD_HISTORICAL
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_torpedo_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Orzeł Class"
+		type = submarine_2
+		name_group = POL_SS_HISTORICAL
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_torpedo_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Królewska Class"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 0
+			ship_engine_upgrade = 0
+			ship_armor_upgrade = 1
+			ship_gun_upgrade = 1
+		}
+		obsolete = yes
+	}
 }
 if = {
-	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	# Wilk-class coastal and minelaying submarines
 	create_equipment_variant = {
-		name = "Wilk Class"				
-		type = ship_hull_submarine_2
+		name = "Wilk Class"
+		type = ship_hull_submarine_1
 		name_group = POL_SS_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -626,9 +840,10 @@ if = {
 			rear_1_custom_slot = ship_mine_layer_sub
 		}
 	}
-	# Destroyers #
+
+	# Wicher-class destroyers
 	create_equipment_variant = {
-		name = "Wicher Class"				
+		name = "Wicher Class"
 		type = ship_hull_light_1
 		name_group = POL_DD_HISTORICAL
 		parent_version = 0
@@ -639,15 +854,69 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
+
 			mid_1_custom_slot = ship_mine_layer_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
+
+	# Jaskółka-class torpedo boats and colonial escorts
+	create_equipment_variant = {
+		name = "Jaskółka Class"
+		type = ship_hull_light_1
+		name_group = POL_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+
+	# Grom-class modern destroyers under construction in 1936
+	create_equipment_variant = {
+		name = "Grom Class"
+		type = ship_hull_light_2
+		name_group = POL_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+
+	# Orzeł-class ocean-going submarines under construction in 1936
+	create_equipment_variant = {
+		name = "Orzeł Class"
+		type = ship_hull_submarine_2
+		name_group = POL_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_sub_2
+		}
+	}
+
+	# Old capital ships retained for coastal defence
 	create_equipment_variant = {
 		name = "Królewska Class"
 		type = ship_hull_pre_dreadnought
-		parent_version = 0
 		name_group = POL_THEME_KINGS
+		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
@@ -656,43 +925,35 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
+
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
+		obsolete = yes
 	}
+
+	# Mazury-class heavy cruisers
 	create_equipment_variant = {
 		name = "Mazury Class"
-		type = heavy_cruiser_1
+		type = ship_hull_cruiser_1
 		name_group = POL_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			mid_1_custom_slot = ship_anti_air_1
-			mid_2_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_mine_layer_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+
+			mid_1_custom_slot = ship_medium_battery_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_torpedo_1
 		}
 	}
-	create_equipment_variant = {
-		name = "Królewska Class"
-		type = ship_hull_cruiser_panzerschiff
-		parent_version = 0
-		name_group = POL_THEME_KINGS
-		modules = {
-        	fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_battery_slot = ship_heavy_battery_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_airplane_launcher_1
-    	}
-	}
+
+	# Mazowsze-class light cruisers
 	create_equipment_variant = {
 		name = "Mazowsze Class"
 		type = ship_hull_cruiser_1
@@ -700,19 +961,18 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
+
 			mid_1_custom_slot = ship_light_medium_battery_1
 			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 	}
-
 }
-
 	
 
 
@@ -776,35 +1036,6 @@ if = {
 	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Orzel Class"				
-			type = ship_hull_submarine_2
-			name_group = POL_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = ship_torpedo_sub_2
-			}
-		}
-		# Destroyers #
-		create_equipment_variant = {
-			name = "Grom Class"					
-			type = ship_hull_light_2
-			name_group = POL_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_mine_layer_1
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-		}
 		create_equipment_variant = {
 			name = "Gryf Class"						# minelaying craft
 			type = ship_hull_light_2
