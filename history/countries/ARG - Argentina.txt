@@ -280,12 +280,7 @@ set_country_flag = monroe_doctrine
 		tech_engineers = 1
 
 		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
+
 
 
 		#electronics
@@ -319,7 +314,7 @@ set_country_flag = monroe_doctrine
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
 			basic_light_battery = 1
-			basic_medium_battery = 1
+			
 		}
 	}
 }
