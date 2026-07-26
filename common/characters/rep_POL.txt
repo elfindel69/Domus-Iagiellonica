@@ -10,11 +10,44 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=paternalism
-			traits = { imperial_connections }
+			ideology=monarchism
+			traits = { imperial_connections POL_guardian_of_the_commonwealth }
 			expire="1957.10.1.1"
 			id=-1
 		}
+	}
+
+	rep_POL_ignacy_moscicki = { 
+		name=POL_ignacy_moscicki 
+		portraits = { 
+			army={ 
+				small=GFX_portrait_POL_ignacy_moscicki_small 
+			} 
+			civilian = { 
+				large="GFX_portrait_POL_ignacy_moscicki" 
+			} 
+		} 
+		advisor={ 
+			slot = political_advisor 
+			idea_token = POL_ignacy_moscicki 
+			available = { 
+				NOT = {has_government = "neutrality" } 
+			}
+			allowed = { 
+				original_tag = POL 
+				OR = { 
+					has_dlc = "No Step Back" 
+					has_dlc = "Poland: United and Ready" 
+				} 
+			} 
+			traits = { captain_of_industry } 
+		} 
+		country_leader = { 
+			ideology=oligarchism 
+			traits = { POL_technocratic_modernizer }
+			expire="1965.1.1.1" 
+			id=-1 
+		} 
 	}
 	
 	POL_felicjan_skladkowski = {
@@ -38,7 +71,7 @@ characters = {
 			slot = political_advisor
 			idea_token = GFX_idea_POL_felicjan_skladkowski
 			available = {
-				has_government = monarchist
+				not = { has_government = neutrality }
 			}
 			traits = { seasoned_administrator }
 		}
@@ -75,11 +108,18 @@ characters = {
 		field_marshal = {
 			traits = { old_guard POL_sanation_right_leader thorough_planner politically_connected }
 			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
 			legacy_id=-1
+		}
+
+		country_leader = {
+			ideology = paternalism
+			traits = { }
+			expire = "1957.10.1.1"
+			id = -1
 		}
 	}
 
@@ -91,8 +131,8 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=socialism
-			traits = { morges_champion }
+			ideology=conservatism
+			traits = { POL_agrarian_statesman }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -108,9 +148,11 @@ characters = {
 			ideology=falangism
 			expire="1965.1.1.1"
 			id=-1
-			traits = { unruly_falangist }
+			traits = { POL_national_radical }
 		}
 	}
+
+
 
 ### POLITICAL ADVISORS ###
 	
@@ -119,15 +161,13 @@ characters = {
 		portraits = {
 			civilian = {
 				large="GFX_Portrait_POL_Wanda_Wasilewska"
-			}
-			army = {
 				small="GFX_idea_POL_wanda_wasilewska_rep"
 			}
 		}
 		gender = female
 		country_leader = {
 			ideology=marxism
-			traits = { leftist_intellectual }
+			traits = { POL_socialist_federalist }
 			expire="1957.10.1.1"
 			id=-1
 		}
@@ -135,7 +175,6 @@ characters = {
 			cost = 100
 			slot = political_advisor
 			idea_token = POL_wanda_wasilewska
-			ledger = army
 			
 			allowed = {
 				original_tag = POL
@@ -144,7 +183,7 @@ characters = {
 				}
 			}
 			traits = {
-				leftist_intellectual
+				communist_revolutionary
 			}
 		}
 	}
@@ -317,8 +356,8 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_zdzislaw_lubomirski
 			allowed = {
-					original_tag = POL
-				}
+				original_tag = POL
+			}
 			
 			traits = {
 				staunch_aristocrat 
@@ -328,7 +367,7 @@ characters = {
 				modifier = {
 					factor = 0.000
 					NOT = {
-						has_government = neutrality 
+						has_government = monarchist 
 					}
 				}
 			}
@@ -403,7 +442,7 @@ characters = {
 				modifier = {
 					factor = 0.000
 					NOT = {
-						has_government = neutrality 
+						has_government = monarchist 
 					}
 				}
 			}
