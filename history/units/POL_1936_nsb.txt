@@ -154,8 +154,8 @@ units = {
 	######## I Okręg Wojskowy – Warszawa ########
 	division = { name = "1 Dywizja Piechoty Legionów" location = 3544 division_template = "Dywizja Piechoty" start_experience_factor = 0.4 }
 	division = { name = "2 Dywizja Piechoty Legionów" location = 3544 division_template = "Dywizja Piechoty" start_experience_factor = 0.4 }
-	division = { name = "3 Dywizja Piechoty Legionów" location = 3529 division_template = "Dywizja Piechoty" start_experience_factor = 0.4 }
-	division = { name = "4 Dywizja Piechoty" location = 3529 division_template = "Dywizja Piechoty" start_experience_factor = 0.3 }
+	division = { name = "3 Dywizja Piechoty Legionów" location = 11216 division_template = "Dywizja Piechoty" start_experience_factor = 0.4 }
+	division = { name = "4 Dywizja Piechoty" location = 11216 division_template = "Dywizja Piechoty" start_experience_factor = 0.3 }
 	division = { name = "5 Dywizja Piechoty" location = 9508 division_template = "Dywizja Piechoty" start_experience_factor = 0.3 }
 
 	######## II Okręg Wojskowy – Wilno ########
@@ -243,11 +243,11 @@ units = {
 	division = { name = "Brygada KOP «Kurlandia»" location = 6296 division_template = "Brygada Ochrony Pogranicza" start_experience_factor = 0.2 start_equipment_factor = 0.6 }
 
 	######## Dowództwo Wojsk Kolonialnych ########
-	division = { name = "1 Kenijska Brygada Kolonialna" location = 11015 division_template = "Brygada Kolonialna" start_experience_factor = 0.3 start_equipment_factor = 0.7 }
-	division = { name = "2 Kenijska Brygada Kolonialna" location = 11015 division_template = "Brygada Kolonialna" start_experience_factor = 0.2 start_equipment_factor = 0.6 }
-	division = { name = "1 Malgaska Brygada Kolonialna" location = 6020 division_template = "Brygada Kolonialna" start_experience_factor = 0.3 start_equipment_factor = 0.7 }
-	division = { name = "2 Malgaska Brygada Kolonialna" location = 6020 division_template = "Brygada Kolonialna" start_experience_factor = 0.2 start_equipment_factor = 0.6 }
-	division = { name = "Liberyjska Brygada Protektoratu" location = 5079 division_template = "Brygada Kolonialna" start_experience_factor = 0.2 start_equipment_factor = 0.6 }
+	division = { name = "1 Kenijska Brygada Kolonialna" location = 5210 division_template = "Brygada Kolonialna" start_experience_factor = 0.3 start_equipment_factor = 0.7 }
+	division = { name = "2 Kenijska Brygada Kolonialna" location = 5210 division_template = "Brygada Kolonialna" start_experience_factor = 0.2 start_equipment_factor = 0.6 }
+	division = { name = "1 Malgaska Brygada Kolonialna" location = 11015 division_template = "Brygada Kolonialna" start_experience_factor = 0.3 start_equipment_factor = 0.7 }
+	division = { name = "2 Malgaska Brygada Kolonialna" location = 11015 division_template = "Brygada Kolonialna" start_experience_factor = 0.2 start_equipment_factor = 0.6 }
+	division = { name = "Liberyjska Brygada Protektoratu" location = 7959 division_template = "Brygada Kolonialna" start_experience_factor = 0.2 start_equipment_factor = 0.6 }
 
 	######## Obrona Wybrzeża ########
 	division = { name = "Nadbrzeżna Grupa Obrony" location = 362 division_template = "Brygada Ochrony Pogranicza" start_experience_factor = 0.3 start_equipment_factor = 0.7 }
