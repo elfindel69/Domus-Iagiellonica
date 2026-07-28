@@ -12,7 +12,7 @@
 
  POL_invest_in_research_focus:0 "Invest in Research"
  POL_invest_in_research_focus_desc:0 "We must invest in research to make our country more prosperous."
- POL_add_research_slot_focus0 "Add Research Slot"
+ POL_add_research_slot_focus:0 "Add Research Slot"
  POL_add_research_slot_focus_desc:0 "We must invest in research to make our country more prosperous."
  POL_research_radars_focus:0 "Research Radars"
  POL_research_radars_focus_desc:0 "The English developed a new technology named RADAR. We must invest in this research to make our country more secure."
