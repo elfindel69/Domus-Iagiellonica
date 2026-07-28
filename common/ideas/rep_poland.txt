@@ -1,51 +1,130 @@
 ideas = {
 
 country = {
+	POL_crown_and_sejm = {
+		picture = GFX_idea_POL_crown_and_sejm
+		allowed = {
+			always = no
+			original_tag = POL
+		}
+		modifier = {
+			stability_factor = 0.10
+			political_power_gain = -0.10
+			drift_defence_factor = 0.15
+		}
+	}
+	POL_commonwealth_of_nations = {
+		picture = GFX_idea_POL_commonwealth_of_nations
+		allowed = {
+			always = no
+			original_tag = POL
+		}
+		modifier = {
+			stability_factor = -0.05
+			recruitable_population_factor = -0.05
+			compliance_gain_add = 0.025
+			resistance_decay_on_our_occupied_states = 0.05
+		}
+	}
 
-		POL_invest_in_research_idea = {
-			allowed = {
-				always = no
-				original_tag = POL
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			modifier = {
-				research_speed_factor = 0.05
-			}
+	POL_two_commonwealth_economies = {
+		picture = GFX_idea_POL_two_commonwealth_economies
+		allowed = {
+			always = no
+			original_tag = POL
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+			production_efficiency_cap_factor = -0.05
+			production_speed_infrastructure_factor = -0.10
+		}
+	}
+
+	POL_victors_of_1918 = {
+		picture = GFX_idea_POL_victors_of_1918
+		allowed = {
+			always = no
+			original_tag = POL
+		}
+		modifier = {
+			war_support_factor = 0.10
+			max_planning_factor = 0.10
+			army_experience_gain_factor = -0.10
+			land_doctrine_cost_factor = 0.05
+		}
+	}
+
+	POL_three_seas_overstretch = {
+		picture = GFX_idea_POL_three_seas_overstretch
+		allowed = {	
+			always = no
+			original_tag = POL
+		}
+		modifier = {
+			supply_consumption_factor = 0.05
+			fuel_consumption_factor = 0.05
+			division_attrition_factor = 0.05
+			max_command_power_mult = 0.10
+		}
+	}
+
+	POL_polish_chemical_industry = {
+		picture = GFX_idea_POL_polish_chemical_industry
+		allowed = {
+			always = no
+			original_tag = POL
+		}	
+		modifier = {
+			production_speed_synthetic_refinery_factor = 0.10
+			fuel_gain_from_refineries = 0.05
+		}
+	}
+
+	POL_invest_in_research_idea = {
+		allowed = {
+			always = no
+			original_tag = POL
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			research_speed_factor = 0.05
+		}
+	}
+
+	POL_advanced_cryptography_idea = {
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			decryption_power_factor = 0.15
+			encryption_factor = 0.10
+			agency_upgrade_time = -0.10
+    	}
+	}
+
+	POL_focus_on_specialized_research = {
+		picture = GFX_idea_GER_wunderwaffen
+
+		allowed = {
+			original_tag = POL
 		}
 
-		POL_advanced_cryptography_idea = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			modifier = {
-				decryption_power_factor = 0.05
-				encription_power_factor = 0.05
-			}
+		ai_will_do = {
+			base = 5
 		}
 
-		POL_focus_on_specialized_research = {
-			picture = GFX_idea_GER_wunderwaffen
-
-			allowed = {
-				original_tag = POL
-			}
-
-			ai_will_do = {
-				base = 5
-			}
-
-			modifier = {
-				special_project_speed_factor = 0.1
-				breakthrough_factor = 0.1
-			}	
-		}
+		modifier = {
+			special_project_speed_factor = 0.1
+			breakthrough_factor = 0.1
+		}	
+	}
 
 	POL_revive_economy_idea = {
 		allowed = {
@@ -481,7 +560,8 @@ country = {
 		picture = POL_Intelligence_Service0
 		
 		modifier = {
-			decryption_power_factor = 0.05
+			decryption_power_factor = 0.10
+			encryption_factor = 0.05
 		}
 	}
 	

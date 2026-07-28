@@ -239,13 +239,13 @@
 
  ####################################################
  
- BWR_communism_party:0 "Russian Communist Party"
- BWR_democratic_party:0 "Trudoviks"
- BWR_democratic_party_long:0 "Trudoviks Party"
- BWR_fascism_party:0 "RFP"
- BWR_neutrality_party:0 "RMP"
- BWR_neutrality_party_long:0 "Russian Monarchist Party"
- BWR_monarchist_party:0 "Dom Romanovykh"
+ RUE_communism_party:0 "Russian Communist Party"
+ RUE_democratic_party:0 "Trudoviks"
+ RUE_democratic_party_long:0 "Trudoviks Party"
+ RUE_fascism_party:0 "RFP"
+ RUE_neutrality_party:0 "RMP"
+ RUE_neutrality_party_long:0 "Russian Monarchist Party"
+ RUE_monarchist_party:0 "Dom Romanovykh"
  
  POL_neutrality_party:0 "OZN"
  POL_neutrality_party_long:0 "Obóz Zjednoczenia Narodowego"

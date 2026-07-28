@@ -167,29 +167,29 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}			
 		}
-		"BWR"={
-			history = "RUS_GATHERING_STORM_DESC"
+		"RUE"={
+			history = "RUE_GATHERING_STORM_DESC"
 			ideology = monarchist
 			available = { has_dlc = "No Step Back" }
 			ideas = {
-				RUS_second_five_year_plan_fake_1936_ns
+				RUE_second_five_year_plan_fake_1936_ns
 				
 			}
 			focuses = {
 			
 			}	
 		}
-		"BWR"={
-			history = "RUS_GATHERING_STORM_DESC"
+		"RUE"={
+			history = "RUE_GATHERING_STORM_DESC"
 			ideology = monarchist
 			available = { NOT = { has_dlc = "No Step Back" } }
 			ideas = {
-				RUS_second_five_year_plan_fake_1936_ns
+				RUE_second_five_year_plan_fake_1936_ns
 			
 			}
 			focuses = {
 				
-				RUS_father_of_nations
+				RUE_father_of_nations
 				
 			}	
 		}

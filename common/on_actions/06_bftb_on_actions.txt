@@ -90,10 +90,10 @@ on_actions = {
 			if = {
 				limit = {
 					FROM.FROM = { state = 341 }
-					ROOT = { has_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
+					ROOT = { has_country_flag = BOSPHORUE_STRAIT_BLOCKED_FOR_COUNTRY }
 				}
-				GRE = { clr_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
-				SOV = { clr_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
+				GRE = { clr_country_flag = BOSPHORUE_STRAIT_BLOCKED_FOR_COUNTRY }
+				SOV = { clr_country_flag = BOSPHORUE_STRAIT_BLOCKED_FOR_COUNTRY }
 			}
 		}
 

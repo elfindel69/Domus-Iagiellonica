@@ -1,6 +1,6 @@
 technology_sharing_group = {
 
-	id = RUS_socialist_science_pool
+	id = RUE_socialist_science_pool
 	name = socialist_science_pool_name
 	desc = socialist_science_pool_desc
 	picture = GFX_technology_sharing_default
@@ -9,26 +9,26 @@ technology_sharing_group = {
 
     available = {
         is_in_faction_with = ENG
-        is_in_faction_with = BWR
+        is_in_faction_with = RUE
         ENG = { has_government = communism }
-        BWR = { has_government = communism }
+        RUE = { has_government = communism }
     }
 
 }
 
 technology_sharing_group = {
 
-	id = HOL_RUS_research
-	name = HOL_RUS_research_name
-	desc = HOL_RUS_research_desc
+	id = HOL_RUE_research
+	name = HOL_RUE_research_name
+	desc = HOL_RUE_research_desc
 	picture = GFX_technology_sharing_default
     
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        is_in_faction_with = BWR
+        is_in_faction_with = RUE
         is_in_faction_with = HOL
-        BWR = { has_government = communism }
+        RUE = { has_government = communism }
         HOL = { has_government = communism }
     }
 
@@ -44,8 +44,8 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        is_in_faction_with = BWR
-        BWR = { has_government = communism }
+        is_in_faction_with = RUE
+        RUE = { has_government = communism }
     }
 }
 
@@ -59,16 +59,16 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.15
 
     available = {
-        is_in_faction_with = BWR
+        is_in_faction_with = RUE
     }
 
 }
 
 technology_sharing_group = {
 
-	id = RUS_soviet_academies_of_sciences_joint_program
-	name = RUS_soviet_academies_of_sciences_joint_program_name
-	desc = RUS_soviet_academies_of_sciences_joint_program_desc
+	id = RUE_soviet_academies_of_sciences_joint_program
+	name = RUE_soviet_academies_of_sciences_joint_program_name
+	desc = RUE_soviet_academies_of_sciences_joint_program_desc
 	picture = GFX_technology_sharing_default
 
 	research_sharing_per_country_bonus = 0.15
@@ -77,17 +77,17 @@ technology_sharing_group = {
 
 	available = {
 		OR = {
-			original_tag = BWR
-			RUS_is_valid_academy_of_sciences_target = yes
+			original_tag = RUE
+			RUE_is_valid_academy_of_sciences_target = yes
 		}
 	}
 }
 
 technology_sharing_group = { #Alternative soviet Academy of Sciences for non commies
 
-	id = RUS_imperial_academies_of_sciences_joint_program
-	name = RUS_imperial_academies_of_sciences_joint_program_name
-	desc = RUS_imperial_academies_of_sciences_joint_program_desc
+	id = RUE_imperial_academies_of_sciences_joint_program
+	name = RUE_imperial_academies_of_sciences_joint_program_name
+	desc = RUE_imperial_academies_of_sciences_joint_program_desc
 	picture = GFX_technology_sharing_default
 
 	research_sharing_per_country_bonus = 0.15
@@ -96,42 +96,42 @@ technology_sharing_group = { #Alternative soviet Academy of Sciences for non com
 
 	available = {
 		OR = {
-			original_tag = BWR
-			RUS_is_valid_academy_of_sciences_target = yes
+			original_tag = RUE
+			RUE_is_valid_academy_of_sciences_target = yes
 		}
 	}
 }
 
 technology_sharing_group = {
 
-	id = RUS_comecon
-	name = RUS_comecon_name
-	desc = RUS_comecon_desc
+	id = RUE_comecon
+	name = RUE_comecon_name
+	desc = RUE_comecon_desc
 	picture = GFX_technology_sharing_default
 
 	research_sharing_per_country_bonus = 0.2
 
 	available = {
 		OR = {
-			original_tag = BWR
-			is_subject_of = BWR
+			original_tag = RUE
+			is_subject_of = RUE
 		}
 	}
 }
 
 technology_sharing_group = { #Non-commie version of the COMECON
 
-	id = RUS_common_economic_space
-	name = RUS_common_economic_space_name
-	desc = RUS_common_economic_space_desc
+	id = RUE_common_economic_space
+	name = RUE_common_economic_space_name
+	desc = RUE_common_economic_space_desc
 	picture = GFX_technology_sharing_default
 
 	research_sharing_per_country_bonus = 0.2
 
 	available = {
 		OR = {
-			original_tag = BWR
-			is_subject_of = BWR
+			original_tag = RUE
+			is_subject_of = RUE
 		}
 	}
 }

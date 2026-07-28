@@ -33,7 +33,7 @@
 #### SOVIET STATE MODIFIERS ####
 ####
 
-RUS_defend_moscow = { #STATE MODIFIER
+RUE_defend_moscow = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_SOV_defend_moscow
@@ -44,7 +44,7 @@ RUS_defend_moscow = { #STATE MODIFIER
 	supply_factor = 0.15
 }
 
-RUS_increased_metals_production = { #STATE MODIFIER
+RUE_increased_metals_production = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_increased_metal_production
@@ -55,7 +55,7 @@ RUS_increased_metals_production = { #STATE MODIFIER
 	state_resource_chromium = SOV_chromium_bonus
 }
 
-RUS_invaders_must_die = { #STATE MODIFIER
+RUE_invaders_must_die = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_SOV_invaders_must_die
@@ -68,7 +68,7 @@ RUS_invaders_must_die = { #STATE MODIFIER
 	disable_strategic_redeployment = 1
 }
 
-RUS_seraya_loshad_battery = { #STATE MODIFIER
+RUE_seraya_loshad_battery = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_SOV_armored_battery
@@ -80,7 +80,7 @@ RUS_seraya_loshad_battery = { #STATE MODIFIER
 	pocket_penalty = -0.15
 }
 
-RUS_krasnaya_gorka_battery = { #STATE MODIFIER
+RUE_krasnaya_gorka_battery = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_SOV_armored_battery
@@ -92,7 +92,7 @@ RUS_krasnaya_gorka_battery = { #STATE MODIFIER
 	pocket_penalty = -0.15
 }
 
-RUS_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
+RUE_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
 	enable = { always = yes }
 
 	icon = GFX_modifiers_SOV_armored_battery
@@ -104,7 +104,7 @@ RUS_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
 	pocket_penalty = -0.15
 }
 
-RUS_factory_worker_militias_raised = { #STATE MODIFIER
+RUE_factory_worker_militias_raised = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_SOV_factory_worker_militias
@@ -115,7 +115,7 @@ RUS_factory_worker_militias_raised = { #STATE MODIFIER
 	local_resources_factor = -0.5
 }
 
-RUS_civilian_labor_in_defense_mod = { #STATE MODIFIER
+RUE_civilian_labor_in_defense_mod = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_SOV_civilian_labor_in_defense
@@ -128,7 +128,7 @@ RUS_civilian_labor_in_defense_mod = { #STATE MODIFIER
 	local_resources_factor = -0.5
 }
 
-RUS_soviet_military_offensive = { #STATE MODIFIER
+RUE_soviet_military_offensive = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_generic_military_plans
@@ -137,7 +137,7 @@ RUS_soviet_military_offensive = { #STATE MODIFIER
 	army_attack_factor = 0.1
 }
 
-RUS_soviet_imports = { #STATE MODIFIER
+RUE_soviet_imports = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_increased_metal_production
@@ -151,7 +151,7 @@ RUS_soviet_imports = { #STATE MODIFIER
 ####
 #### SOVIET NATIONAL SPIRITS ####
 ####
-RUS_second_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
+RUE_second_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_SOV_second_five_year_plan
@@ -163,7 +163,7 @@ RUS_second_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
 	production_speed_industrial_complex_factor = SOV_fyp_production_speed_industrial_complex_factor #0.05
 }
 
-RUS_third_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT - Basic
+RUE_third_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT - Basic
 	enable = { always = yes }
 
 	icon = GFX_idea_SOV_third_five_year_plan
@@ -181,7 +181,7 @@ RUS_third_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT - Basic
 	local_resources_factor = SOV_fyp_local_resources_factor #0.10 -> Increase State Reserves
 }
 
-RUS_third_five_year_plan_civilian_dynamic_modifier = { #NATIONAL SPIRIT - Civilian
+RUE_third_five_year_plan_civilian_dynamic_modifier = { #NATIONAL SPIRIT - Civilian
 	enable = { always = yes }
 
 	icon = GFX_idea_SOV_third_five_year_plan_civilian
@@ -202,7 +202,7 @@ RUS_third_five_year_plan_civilian_dynamic_modifier = { #NATIONAL SPIRIT - Civili
 	production_oil_factor = SOV_fyp_production_oil_factor #0.05 -> Oil Production
 }
 
-RUS_third_five_year_plan_military_dynamic_modifier = { #NATIONAL SPIRIT - Military
+RUE_third_five_year_plan_military_dynamic_modifier = { #NATIONAL SPIRIT - Military
 	enable = { always = yes }
 
 	icon = GFX_idea_SOV_third_five_year_plan_military
@@ -226,7 +226,7 @@ RUS_third_five_year_plan_military_dynamic_modifier = { #NATIONAL SPIRIT - Milita
 	production_oil_factor = SOV_fyp_production_oil_factor #0.05 -> Oil Production
 }
 
-RUS_fourth_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
+RUE_fourth_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_SOV_fourth_five_year_plan
@@ -253,7 +253,7 @@ RUS_fourth_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
 
 #Second Five Year Plan does not need an alternative
 
-RUS_third_five_year_plan_dynamic_modifier_alt = { #NATIONAL SPIRIT - Basic
+RUE_third_five_year_plan_dynamic_modifier_alt = { #NATIONAL SPIRIT - Basic
 	enable = { always = yes }
 
 	icon = GFX_idea_SOV_third_five_year_plan
@@ -271,7 +271,7 @@ RUS_third_five_year_plan_dynamic_modifier_alt = { #NATIONAL SPIRIT - Basic
 	local_resources_factor = SOV_fyp_local_resources_factor #0.10 -> Increase State Reserves
 }
 
-RUS_third_five_year_plan_civilian_dynamic_modifier_alt = { #NATIONAL SPIRIT - Civilian
+RUE_third_five_year_plan_civilian_dynamic_modifier_alt = { #NATIONAL SPIRIT - Civilian
 	enable = { always = yes }
 
 	icon = GFX_idea_SOV_third_five_year_plan_civilian
@@ -292,7 +292,7 @@ RUS_third_five_year_plan_civilian_dynamic_modifier_alt = { #NATIONAL SPIRIT - Ci
 	production_oil_factor = SOV_fyp_production_oil_factor #0.05 -> Oil Production
 }
 
-RUS_third_five_year_plan_military_dynamic_modifier_alt = { #NATIONAL SPIRIT - Military
+RUE_third_five_year_plan_military_dynamic_modifier_alt = { #NATIONAL SPIRIT - Military
 	enable = { always = yes }
 
 	icon = GFX_idea_SOV_third_five_year_plan_military
@@ -316,7 +316,7 @@ RUS_third_five_year_plan_military_dynamic_modifier_alt = { #NATIONAL SPIRIT - Mi
 	production_oil_factor = SOV_fyp_production_oil_factor #0.05 -> Oil Production
 }
 
-RUS_fourth_five_year_plan_dynamic_modifier_alt = { #NATIONAL SPIRIT
+RUE_fourth_five_year_plan_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_SOV_fourth_five_year_plan
@@ -342,7 +342,7 @@ RUS_fourth_five_year_plan_dynamic_modifier_alt = { #NATIONAL SPIRIT
 }
 
 
-RUS_ussr_academy_of_sciences_dynamic_modifier = { #NATIONAL SPIRIT
+RUE_ussr_academy_of_sciences_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_research_bonus
@@ -350,7 +350,7 @@ RUS_ussr_academy_of_sciences_dynamic_modifier = { #NATIONAL SPIRIT
 	research_speed_factor = SOV_academy_of_sciences_research_speed_factor #0.01
 }
 
-RUS_ussr_academy_of_sciences_dynamic_modifier_alt = { #Alternative for non-commies (need this due to scripted loc not working here)
+RUE_ussr_academy_of_sciences_dynamic_modifier_alt = { #Alternative for non-commies (need this due to scripted loc not working here)
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_research_bonus
@@ -358,7 +358,7 @@ RUS_ussr_academy_of_sciences_dynamic_modifier_alt = { #Alternative for non-commi
 	research_speed_factor = SOV_academy_of_sciences_research_speed_factor #0.01
 }
 
-RUS_soviet_airforce_dynamic_modifier = { #NATIONAL SPIRIT
+RUE_soviet_airforce_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_air_research
@@ -384,7 +384,7 @@ RUS_soviet_airforce_dynamic_modifier = { #NATIONAL SPIRIT
 	air_nav_efficiency = SOV_soviet_airforce_air_nav_efficiency #0.1 -> Expand the Morskaya Aviatsiya
 }
 
-RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier = { #NATIONAL SPIRIT - Same version as the previous one, but with a custom tooltip to communicate aircraft production bonuses
+RUE_soviet_airforce_aircraft_production_focus_dynamic_modifier = { #NATIONAL SPIRIT - Same version as the previous one, but with a custom tooltip to communicate aircraft production bonuses
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_air_research
@@ -411,7 +411,7 @@ RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier = { #NATIONAL SPI
 	air_nav_efficiency = SOV_soviet_airforce_air_nav_efficiency #0.1 -> Expand the Morskaya Aviatsiya
 }
 
-RUS_soviet_airforce_dynamic_modifier_alt = { #NATIONAL SPIRIT
+RUE_soviet_airforce_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_air_research
@@ -437,7 +437,7 @@ RUS_soviet_airforce_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	air_nav_efficiency = SOV_soviet_airforce_air_nav_efficiency #0.1 -> Expand the Morskaya Aviatsiya
 }
 
-RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt = { #NATIONAL SPIRIT - Same version as the previous one, but with a custom tooltip to communicate aircraft production bonuses
+RUE_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt = { #NATIONAL SPIRIT - Same version as the previous one, but with a custom tooltip to communicate aircraft production bonuses
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_air_research
@@ -464,7 +464,7 @@ RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt = { #NATIONAL
 	air_nav_efficiency = SOV_soviet_airforce_air_nav_efficiency #0.1 -> Expand the Morskaya Aviatsiya
 }
 
-RUS_the_red_fleet_dynamic_modifier = { #NATIONAL SPIRIT
+RUE_the_red_fleet_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_navy_bonus
@@ -483,110 +483,7 @@ RUS_the_red_fleet_dynamic_modifier = { #NATIONAL SPIRIT
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
 
-RUS_the_red_fleet_surface_1_dynamic_modifier = { #NATIONAL SPIRIT
-	enable = { always = yes }
-
-	icon = GFX_idea_generic_navy_bonus
-
-	#INITIAL
-	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
-
-	custom_modifier_tooltip = SOV_the_red_fleet_surface_1_tt #The production bonus is handled via hidden NS, but it is communicated here
-
-	#FUTURE
-	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
-	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
-	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
-	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
-	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
-	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
-	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
-}
-
-RUS_the_red_fleet_surface_2_dynamic_modifier = { #NATIONAL SPIRIT
-	enable = { always = yes }
-
-	icon = GFX_idea_generic_navy_bonus
-
-	#INITIAL
-	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
-
-	custom_modifier_tooltip = SOV_the_red_fleet_surface_2_tt #The production bonus is handled via hidden NS, but it is communicated here
-
-	#FUTURE
-	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
-	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
-	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
-	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
-	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
-	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
-	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
-}
-
-RUS_the_red_fleet_submarine_1_dynamic_modifier = { #NATIONAL SPIRIT
-	enable = { always = yes }
-
-	icon = GFX_idea_generic_navy_bonus
-
-	#INITIAL
-	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
-
-	custom_modifier_tooltip = SOV_the_red_fleet_submarine_1_tt #The production bonus is handled via hidden NS, but it is communicated here
-
-	#FUTURE
-	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
-	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
-	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
-	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
-	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
-	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
-	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
-}
-
-RUS_the_red_fleet_submarine_2_dynamic_modifier = { #NATIONAL SPIRIT
-	enable = { always = yes }
-
-	icon = GFX_idea_generic_navy_bonus
-
-	#INITIAL
-	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
-
-	custom_modifier_tooltip = SOV_the_red_fleet_submarine_2_tt #The production bonus is handled via hidden NS, but it is communicated here
-
-	#FUTURE
-	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
-	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
-	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
-	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
-	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
-	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
-	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
-}
-
-RUS_the_red_fleet_dynamic_modifier_alt = { #NATIONAL SPIRIT
-	enable = { always = yes }
-
-	icon = GFX_idea_generic_navy_bonus
-
-	#INITIAL
-	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
-
-	#FUTURE
-	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
-	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
-	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
-	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
-	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
-	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
-	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
-}
-
-RUS_the_red_fleet_surface_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
+RUE_the_red_fleet_surface_1_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_navy_bonus
@@ -607,7 +504,7 @@ RUS_the_red_fleet_surface_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
 
-RUS_the_red_fleet_surface_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
+RUE_the_red_fleet_surface_2_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_navy_bonus
@@ -628,7 +525,7 @@ RUS_the_red_fleet_surface_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
 
-RUS_the_red_fleet_submarine_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
+RUE_the_red_fleet_submarine_1_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_navy_bonus
@@ -649,7 +546,7 @@ RUS_the_red_fleet_submarine_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
 
-RUS_the_red_fleet_submarine_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
+RUE_the_red_fleet_submarine_2_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_navy_bonus
@@ -670,7 +567,110 @@ RUS_the_red_fleet_submarine_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
 
-RUS_defense_industry_dynamic_modifier = { #NATIONAL SPIRIT
+RUE_the_red_fleet_dynamic_modifier_alt = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_navy_bonus
+
+	#INITIAL
+	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
+	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
+
+	#FUTURE
+	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
+	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
+	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
+	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
+	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
+	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
+}
+
+RUE_the_red_fleet_surface_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_navy_bonus
+
+	#INITIAL
+	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
+	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
+
+	custom_modifier_tooltip = SOV_the_red_fleet_surface_1_tt #The production bonus is handled via hidden NS, but it is communicated here
+
+	#FUTURE
+	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
+	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
+	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
+	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
+	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
+	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
+}
+
+RUE_the_red_fleet_surface_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_navy_bonus
+
+	#INITIAL
+	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
+	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
+
+	custom_modifier_tooltip = SOV_the_red_fleet_surface_2_tt #The production bonus is handled via hidden NS, but it is communicated here
+
+	#FUTURE
+	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
+	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
+	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
+	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
+	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
+	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
+}
+
+RUE_the_red_fleet_submarine_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_navy_bonus
+
+	#INITIAL
+	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
+	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
+
+	custom_modifier_tooltip = SOV_the_red_fleet_submarine_1_tt #The production bonus is handled via hidden NS, but it is communicated here
+
+	#FUTURE
+	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
+	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
+	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
+	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
+	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
+	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
+}
+
+RUE_the_red_fleet_submarine_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_navy_bonus
+
+	#INITIAL
+	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
+	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
+
+	custom_modifier_tooltip = SOV_the_red_fleet_submarine_2_tt #The production bonus is handled via hidden NS, but it is communicated here
+
+	#FUTURE
+	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
+	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
+	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
+	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
+	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
+	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
+}
+
+RUE_defense_industry_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_man_five_year_plan_tank
@@ -693,7 +693,7 @@ RUS_defense_industry_dynamic_modifier = { #NATIONAL SPIRIT
 	max_dig_in_factor = SOV_defense_industry_max_dig_in_factor #0.05 -> Military Engineering University
 }
 
-RUS_the_red_army_dynamic_modifier = { #NATIONAL SPIRIT
+RUE_the_red_army_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_communist_army
@@ -728,7 +728,7 @@ RUS_the_red_army_dynamic_modifier = { #NATIONAL SPIRIT
 	max_command_power_mult = SOV_the_red_army_max_command_power_mult #0.1 -> Depoliticize the Military
 }
 
-RUS_the_red_army_dynamic_modifier_alt = { #NATIONAL SPIRIT
+RUE_the_red_army_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
 	icon = GFX_idea_generic_manpower_bonus
@@ -763,7 +763,7 @@ RUS_the_red_army_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	max_command_power_mult = SOV_the_red_army_max_command_power_mult #0.1 -> Depoliticize the Military
 }
 
-RUS_the_politburo_good_dynamic_modifier = {
+RUE_the_politburo_good_dynamic_modifier = {
 	enable = { always = yes }
 
 	icon = GFX_idea_POL_ideology_drift_defence
@@ -784,7 +784,7 @@ RUS_the_politburo_good_dynamic_modifier = {
 	max_surrender_limit_offset = SOV_the_politburo_max_surrender_limit_offset #0.05 -> The Workers Dictatorship
 	max_command_power = SOV_the_politburo_max_command_power # 20 -> Organization, Centralization, Discipline
 	mobilization_speed = SOV_the_politburo_mobilization_speed # 0.1 -> Organization, Centralization, Discipline
-	operative_slot = RUS_the_politburo_operative_slot # 1 -> Behead the Snake
+	operative_slot = RUE_the_politburo_operative_slot # 1 -> Behead the Snake
 	political_advisor_cost_factor = SOV_the_politburo_political_advisor_cost_factor #-0.15 -> Freedom of Debate, Unity of Action
 	opinion_gain_monthly_same_ideology_factor = SOV_the_politburo_opinion_gain_monthly_same_ideology_factor #0.25 -> The Construction of Communism
 }
@@ -806,7 +806,7 @@ SOV_factionalism_modifier = {
 	custom_modifier_tooltip = SOV_factionalism_modifier_tt
 }
 
-RUS_opposition_popular_support = { 
+RUE_opposition_popular_support = { 
 	enable = { has_civil_war = yes }
 	icon = GFX_idea_FRA_scw_intervention_republicans_focus
 	
@@ -814,7 +814,7 @@ RUS_opposition_popular_support = {
 	custom_modifier_tooltip = SOV_opposition_popular_support_tt 
 }
 
-RUS_planned_economy_dynamic_modifier = { 
+RUE_planned_economy_dynamic_modifier = { 
 	enable = { always = yes }
 	icon = GFX_idea_eng_for_the_good_of_the_revolution
 	
@@ -827,7 +827,7 @@ RUS_planned_economy_dynamic_modifier = {
 	consumer_goods_factor = SOV_planned_economy_consumer_goods_factor #-2%-> Victory Over Devastation
 }
 
-RUS_capital_of_the_tsars = {
+RUE_capital_of_the_tsars = {
 	enable = { always = yes }
 	icon = GFX_modifiers_SOV_capital_of_the_tsars
 

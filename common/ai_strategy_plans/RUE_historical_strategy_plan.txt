@@ -1,0 +1,383 @@
+RUE_historical_plan = {
+	name = "RUE historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = RUE
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = RUE_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = RUE_AI_RANDOM_COMMUNIST_HISTORICAL
+			has_game_rule = {
+				rule = RUE_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		#Things to do ASAP
+		RUE_desperate_measures #35 (DO THIS ASAP)
+		RUE_fourth_five_year_plan # (FYP)
+		RUE_recover_the_kuril_islands #35 (As soon as AI has completed Prepare a War with Japan focus ~mid 1945)
+
+		#1936
+		RUE_heavy_industry #35
+		
+		RUE_the_stalin_constitution # -> Dec 1936
+		
+		RUE_infrastructure_effort_nsb #35
+		RUE_strengthen_the_mobilization_plan #35
+		RUE_restore_cossack_units #35 -> 1936/1939	
+		RUE_found_the_pcdi #35 -> Dec 1936
+
+		#1937
+		
+		RUE_pc_of_mechanical_engineering #35 -> Aug 1937
+		RUE_transpolar_flights #35 -> 1937
+		
+		RUE_finish_the_five_year_plan # -> Dec 1937
+
+		#1938
+		RUE_socialism_in_one_country #35
+		RUE_third_five_year_plan # -> 1938
+		
+		RUE_the_threat_from_the_land_of_the_rising_sun #35
+		
+		RUE_national_specialists #35
+		RUE_eastern_development #35
+		RUE_expand_the_red_fleet #35
+		RUE_pc_of_the_ussr_navy #35
+
+		#1939
+		RUE_support_the_kuomintang #35
+		RUE_develop_the_urals #35
+		RUE_the_ussr_academy_of_sciences
+		RUE_baltic_security #35 -> 1939
+		RUE_policy_of_individual_security # 35 -> May 1939
+		RUE_military_engineering_university #35
+		RUE_anti_capitalist_policies #35
+		RUE_claims_in_baltic # -> 1940
+		RUE_approach_germany #35 -> Feb 1940
+
+		#1940
+		RUE_secure_leningrad
+		RUE_claims_on_poland
+		RUE_foster_flying_clubs
+		RUE_demand_eastern_poland # (IN CASE NO MOLOTOV-RIBENTROP)
+		
+		RUE_national_academies_of_sciences #35
+		
+		RUE_shift_to_armaments_production # (FYP) -> Do this ASAP after dealing with claims 
+
+		#1941
+		RUE_move_industry_to_the_urals
+		RUE_rehabilitated_military
+		RUE_military_reorganization
+		RUE_the_defense_of_moscow #35
+		RUE_middle_east_diplomacy #35
+		RUE_women_in_aviation
+		RUE_pc_of_mortar_armament # -> Nov 1941
+		
+		#1942
+		RUE_the_means_to_wage_war
+		RUE_leningrad_polytechnical_institute
+		RUE_lessons_of_war #35
+		RUE_support_afghan_ideology #35
+		
+		RUE_raskovas_aviation_group # -> 1942/43 (Oct 41 formation)
+		
+
+		#1943 -----------> -0.5y (Compensated by the ASAP stuff)
+		RUE_the_road_of_life #35
+		RUE_organization_of_the_partisans
+		
+		RUE_stalins_cult_of_personality #35
+		
+
+		#1944
+		
+		RUE_swap_to_political_advisors
+	
+		RUE_smersh
+		RUE_barrier_troops #35
+		RUE_development_aid_for_eastern_allies #35
+		
+		
+		#1945
+		RUE_war_measures_in_the_east #35
+		
+		RUE_soviet_atomic_bomb_project
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		iron_lazar = 10
+		pc_for_foreign_affairs_molotov = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+##################
+### FOCUS KEYS ###
+##################
+#RUE_infrastructure_effort_nsb
+#RUE_heavy_industry
+#RUE_finish_the_five_year_plan
+#RUE_improve_railway_network
+#RUE_third_five_year_plan
+#RUE_reorganize_the_pc_of_heavy_industry
+#RUE_industrial_modernization
+#RUE_increase_state_reserves
+#RUE_shift_to_armaments_production
+#RUE_optimize_production_lines
+#RUE_steel_casting_industry
+#RUE_synthetic_rubber
+#RUE_oil_production
+#RUE_fourth_five_year_plan
+#RUE_found_the_comecon
+#RUE_the_common_economic_space_initiative
+#RUE_no_time_for_peace
+#RUE_national_specialists
+#RUE_foreign_experts
+#RUE_eastern_development
+#RUE_develop_the_urals
+#RUE_the_ussr_academy_of_sciences
+#RUE_national_academies_of_sciences
+#RUE_transformation_of_nature
+#RUE_transformation_of_nature_alt
+#RUE_transpolar_flights
+#RUE_expand_the_aircraft_industry
+#RUE_modernize_aircraft_facilities
+#RUE_merge_aircraft_plants
+#RUE_found_the_jet_institute
+#RUE_increase_aircraft_production
+#RUE_foster_flying_clubs
+#RUE_women_in_aviation
+#RUE_raskovas_aviation_group
+#RUE_intensify_pilot_training_program
+#RUE_expand_aviation_institutes
+#RUE_ground_support
+#RUE_long_range_aircraft
+#RUE_the_modern_war_in_the_skies
+#RUE_expand_the_red_fleet
+#RUE_reinforce_western_naval_bases
+#RUE_reinforce_northern_naval_bases
+#RUE_reinforce_southern_naval_bases
+#RUE_reinforce_eastern_naval_bases
+#RUE_expand_shipbuilding_plants
+#RUE_merge_naval_plants
+#RUE_pc_of_the_ussr_navy
+#RUE_surface_warfare
+#RUE_submarine_warfare
+#RUE_offensive_maritime_strategy
+#RUE_an_oceangoing_navy
+#RUE_mine_warfare
+#RUE_long_range_raiders
+#RUE_advanced_maneuvers
+#RUE_expand_the_morskaya_aviatsiya
+#RUE_naval_infantry
+#RUE_found_the_pcdi
+#RUE_pc_of_mechanical_engineering
+#RUE_superior_war_machines
+#RUE_the_means_to_wage_war
+#RUE_development_of_tankograd
+#RUE_pc_of_mortar_armament
+#RUE_soviet_artillery
+#RUE_merge_tank_and_materiel_plants
+#RUE_strengthen_the_mobilization_plan
+#RUE_military_engineering_university
+#RUE_leningrad_polytechnical_institute
+#RUE_soviet_atomic_bomb_project
+#RUE_move_industry_to_the_urals
+#RUE_the_road_of_life
+#RUE_improve_the_stalin_line
+#RUE_the_molotov_line
+#RUE_the_defense_of_moscow
+#RUE_impregnable_forts
+#RUE_protect_the_white_sea_baltic_canal
+#RUE_far_east_fortification
+#RUE_restore_cossack_units
+#RUE_cohesion_first
+#RUE_rehabilitated_military
+#RUE_military_reorganization
+#RUE_desperate_measures
+#RUE_an_adaptable_army
+#RUE_lessons_of_war
+#RUE_penal_battalions
+#RUE_organization_of_the_partisans
+#RUE_smersh
+#RUE_barrier_troops
+#RUE_experts_in_camouflage
+#RUE_keep_commissars_organization
+#RUE_swap_to_political_advisors
+#RUE_the_glory_of_the_red_army
+#RUE_the_path_of_marxism_leninism
+#RUE_the_centre
+#RUE_socialism_in_one_country
+#RUE_the_stalin_constitution
+#RUE_the_zinovyevite_terrorist_center
+#RUE_secure_the_administration
+#RUE_the_collectivization_process
+#RUE_the_anti_soviet_trotskyist_center
+#RUE_the_workers_dictatorship
+#RUE_organization_centralization_discipline
+#RUE_war_economy
+#RUE_the_military_conspiracy
+#RUE_the_bloc_of_rights_and_trotskyites
+#RUE_behead_the_snake
+#RUE_stalins_cult_of_personality
+#RUE_inheritor_of_the_mantle_of_lenin
+#RUE_brilliant_genius
+#RUE_the_faithful_servant_of_lenin
+#RUE_ban_excessive_hero_worship
+#RUE_leader_of_the_party_and_the_people
+#RUE_great_commander
+#RUE_architect_of_communism
+#RUE_father_of_nations
+#RUE_freedom_of_debate_unity_of_action
+#RUE_the_construction_of_communism
+#RUE_the_left_opposition
+#RUE_the_fourth_international
+#RUE_bring_old_trotskyists_back
+#RUE_organize_the_wreckers
+#RUE_integrate_smirnovs_bloc
+#RUE_left_eliminate_right
+#RUE_committee_in_exile
+#RUE_approach_tukhachevsky
+#RUE_approach_primakov
+#RUE_funds_for_the_cause
+#RUE_left_opposition_coup
+#RUE_the_vanguard_of_the_true_revolution
+#RUE_long_live_the_workers_government
+#RUE_left_purges
+#RUE_the_builder_of_the_red_army
+#RUE_reigniting_the_revolutionary_spirit
+#RUE_the_permanent_revolution
+#RUE_depoliticize_the_military
+#RUE_system_decentralization
+#RUE_strengthen_heavy_industry
+#RUE_a_global_class_struggle
+#RUE_all_power_to_the_soviets
+#RUE_the_onslaught_on_colonialism
+#RUE_carry_revolution_east
+#RUE_the_end_of_the_imperialist_era
+#RUE_the_right_opposition
+#RUE_the_need_for_policy_changes
+#RUE_reverse_the_collectivization_process
+#RUE_organize_uprisings_in_the_country
+#RUE_dissent_in_the_party
+#RUE_eliminate_the_left
+#RUE_concessions_to_foreign_powers
+#RUE_covert_support_for_spanish_poum
+#RUE_undermine_stalins_authority
+#RUE_clandestine_cells
+#RUE_the_plan_for_the_coup
+#RUE_the_socialist_bulwark
+#RUE_coup_detat
+#RUE_right_purges
+#RUE_the_power_of_the_peasantry
+#RUE_curtailment_of_the_collective_farms
+#RUE_administrative_reforms
+#RUE_a_new_theory_of_revolution
+#RUE_back_to_the_nep
+#RUE_planned_economy
+#RUE_paced_industrialization
+#RUE_the_trade_union_as_labor_organizer
+#RUE_incorporate_local_organizations
+#RUE_international_revolutionary_marxist_centre
+#RUE_a_sustainable_economy
+#RUE_the_enemies_of_the_people
+#RUE_proclaim_soviet_hegemony
+#RUE_military_support
+#RUE_divert_attention_towards_military
+#RUE_gain_support_from_party_members
+#RUE_infiltrate_the_nkvd
+#RUE_cooperation_against_stalin
+#RUE_align_the_zinovyevites
+#RUE_liberate_ryutin
+#RUE_return_democracy_to_the_party
+#RUE_strengthen_the_trade_unions
+#RUE_the_peoples_revolution
+#RUE_the_supreme_soviet
+#RUE_addressing_internal_affairs
+#RUE_nkvd_primacy
+#RUE_the_new_soviet_woman
+#RUE_expand_the_agitprop
+#RUE_positive_heroism
+#RUE_revive_the_stakhanovite_movement
+#RUE_war_heroes
+#RUE_collectivist_propaganda
+#RUE_socialist_emulation
+#RUE_socialist_realism
+#RUE_the_komsomol
+#RUE_patriarch_of_all_russia
+#RUE_the_comintern
+#RUE_development_aid_for_eastern_allies
+#RUE_war_measures_in_the_east
+#RUE_annex_tannu_tuva
+#RUE_fortify_mongolian_border
+#RUE_send_military_advisors_to_spain
+#RUE_policy_of_collective_security
+#RUE_anti_fascist_policies
+#RUE_seek_a_defense_pact_with_the_allies
+#RUE_the_khakimov_proposal
+#RUE_eradicate_western_fascism
+#RUE_policy_of_individual_security
+#RUE_approach_germany
+#RUE_liberation_of_the_european_proletariat
+#RUE_anti_capitalist_policies
+#RUE_recover_alaska
+#RUE_the_fight_for_the_pacific
+#RUE_baltic_security
+#RUE_respect_baltic_self_determination
+#RUE_claims_in_baltic
+#RUE_secure_leningrad
+#RUE_control_scandinavia
+#RUE_claims_on_poland
+#RUE_demand_eastern_poland
+#RUE_claim_on_bessarabia
+#RUE_demand_balkan_submission
+#RUE_seek_balkan_cooperation
+#RUE_middle_east_diplomacy
+#RUE_the_southern_thrust
+#RUE_support_afghan_ideology
+#RUE_preemptive_invasion_of_iran
+#RUE_the_threat_from_the_land_of_the_rising_sun
+#RUE_the_gobi_gambit
+#RUE_two_red_flags
+#RUE_support_the_kuomintang
+#RUE_intervention_in_china
+#RUE_prepare_a_war_with_japan
+#RUE_end_the_khalkhin_gol_conflict
+#RUE_recover_the_kuril_islands
+#RUE_reconcile_japan
+#RUE_spheres_of_influence_in_china
+#RUE_soviet_japanese_pact_against_usa_focus

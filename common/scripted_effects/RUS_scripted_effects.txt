@@ -13,8 +13,8 @@
 #### INDUSTRIAL STUFF ####
 ####
 
-RUS_replace_industrial_designer = {
-	custom_effect_tooltip = RUS_upgrade_industrial_designer_tt
+RUE_replace_industrial_designer = {
+	custom_effect_tooltip = RUE_upgrade_industrial_designer_tt
 	if = {
 		limit = {
 			has_idea = stalingrad_tractor_factory
@@ -26,11 +26,11 @@ RUS_replace_industrial_designer = {
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_soviet_railways
+			has_idea = RUE_soviet_railways
 		}
 		swap_ideas = {
-			remove_idea = RUS_soviet_railways
-			add_idea = RUS_soviet_railways_improved
+			remove_idea = RUE_soviet_railways
+			add_idea = RUE_soviet_railways_improved
 		}
 	}
 }
@@ -41,7 +41,7 @@ RUS_replace_industrial_designer = {
 #### FOREIGN POLITICS ####
 ####
 
-RUS_fortify_mongolian_border_effect = {
+RUE_fortify_mongolian_border_effect = {
 	330 = {
 		add_building_construction = { #ULAAN BAATAR
 			type = bunker
@@ -54,7 +54,7 @@ RUS_fortify_mongolian_border_effect = {
 		limit = {
 			761 = { #HULUNBUIR
 				controller = {
-					RUS_is_threated_by_japan = yes
+					RUE_is_threated_by_japan = yes
 				}
 			}
 		}
@@ -70,19 +70,19 @@ RUS_fortify_mongolian_border_effect = {
 				}
 			}
 		}
-		ROOT = { set_country_flag = RUS_mongolian_forts_1_flag }
+		ROOT = { set_country_flag = RUE_mongolian_forts_1_flag }
 	}
 	if = {
 		limit = {
 			612 = { #CHAHAR
 				controller = {
-					RUS_is_threated_by_japan = yes
+					RUE_is_threated_by_japan = yes
 				}
 			}
 		}
 		if = { #Do not repeat same province twice
 			limit = {
-				ROOT = { has_country_flag = RUS_mongolian_forts_1_flag }
+				ROOT = { has_country_flag = RUE_mongolian_forts_1_flag }
 			}
 			819 = {
 				add_building_construction = { #BORDER
@@ -121,20 +121,20 @@ RUS_fortify_mongolian_border_effect = {
 				}
 			}
 		}
-		ROOT = { clr_country_flag = RUS_mongolian_forts_1_flag }
-		ROOT = { set_country_flag = RUS_mongolian_forts_2_flag }
+		ROOT = { clr_country_flag = RUE_mongolian_forts_1_flag }
+		ROOT = { set_country_flag = RUE_mongolian_forts_2_flag }
 	}
 	if = {
 		limit = {
 			621 = { #SUIYUAN
 				controller = {
-					RUS_is_threated_by_japan = yes
+					RUE_is_threated_by_japan = yes
 				}
 			}
 		}
 		if = { #Do not repeat same province twice
 			limit = {
-				ROOT = { has_country_flag = RUS_mongolian_forts_2_flag }
+				ROOT = { has_country_flag = RUE_mongolian_forts_2_flag }
 			}
 			817 = {
 				add_building_construction = { #BORDER
@@ -166,20 +166,20 @@ RUS_fortify_mongolian_border_effect = {
 				}
 			}
 		}
-		ROOT = { clr_country_flag = RUS_mongolian_forts_2_flag }
-		ROOT = { set_country_flag = RUS_mongolian_forts_3_flag }
+		ROOT = { clr_country_flag = RUE_mongolian_forts_2_flag }
+		ROOT = { set_country_flag = RUE_mongolian_forts_3_flag }
 	}
 	if = {
 		limit = {
 			756 = { #JIUQUAN
 				controller = {
-					RUS_is_threated_by_japan = yes
+					RUE_is_threated_by_japan = yes
 				}
 			}
 		}
 		if = { #Do not repeat same province twice
 			limit = {
-				ROOT = { has_country_flag = RUS_mongolian_forts_3_flag }
+				ROOT = { has_country_flag = RUE_mongolian_forts_3_flag }
 			}
 			817 = {
 				add_building_construction = { #BORDER
@@ -209,20 +209,20 @@ RUS_fortify_mongolian_border_effect = {
 				}
 			}
 		}
-		ROOT = { clr_country_flag = RUS_mongolian_forts_3_flag }
-		ROOT = { set_country_flag = RUS_mongolian_forts_4_flag }
+		ROOT = { clr_country_flag = RUE_mongolian_forts_3_flag }
+		ROOT = { set_country_flag = RUE_mongolian_forts_4_flag }
 	}
 	if = {
 		limit = {
 			760 = { #DABANCHENG
 				controller = {
-					RUS_is_threated_by_japan = yes
+					RUE_is_threated_by_japan = yes
 				}
 			}
 		}
 		if = { #Do not repeat same province twice
 			limit = {
-				ROOT = { has_country_flag = RUS_mongolian_forts_4_flag }
+				ROOT = { has_country_flag = RUE_mongolian_forts_4_flag }
 			}
 			817 = {
 				add_building_construction = { #BORDER
@@ -260,20 +260,20 @@ RUS_fortify_mongolian_border_effect = {
 				}
 			}
 		}
-		ROOT = { clr_country_flag = RUS_mongolian_forts_4_flag }
-		ROOT = { set_country_flag = RUS_mongolian_forts_5_flag }
+		ROOT = { clr_country_flag = RUE_mongolian_forts_4_flag }
+		ROOT = { set_country_flag = RUE_mongolian_forts_5_flag }
 	}
 	if = {
 		limit = {
 			618 = { #DZUNGARIA
 				controller = {
-					RUS_is_threated_by_japan = yes
+					RUE_is_threated_by_japan = yes
 				}
 			}
 		}
 		if = { #Do not repeat same province twice
 			limit = {
-				ROOT = { has_country_flag = RUS_mongolian_forts_5_flag }
+				ROOT = { has_country_flag = RUE_mongolian_forts_5_flag }
 			}
 			818 = {
 				add_building_construction = { #BORDER
@@ -305,98 +305,98 @@ RUS_fortify_mongolian_border_effect = {
 				}
 			}
 		}
-		ROOT = { clr_country_flag = RUS_mongolian_forts_5_flag }
+		ROOT = { clr_country_flag = RUE_mongolian_forts_5_flag }
 	}
 }
 
-RUS_clear_targeted_relation_modifiers_effect = {
+RUE_clear_targeted_relation_modifiers_effect = {
 	#log = "Effect Called"
 	every_other_country = {
 		limit = {
 			capital_scope = { is_on_continent = europe }
-			BWR = {
+			RUE = {
 				has_relation_modifier = {
 					target = PREV
-					modifier = RUS_face_western_fascism_static
+					modifier = RUE_face_western_fascism_static
 				}
 			}
 		}
 		#log = "Removing shit in [THIS.GetName]"
-		BWR = {
+		RUE = {
 			remove_relation_modifier = {
 				target = PREV
-				modifier = RUS_face_western_fascism_static
+				modifier = RUE_face_western_fascism_static
 			}
 		}
 	}
 	#log = "------- SPACE -------"
 	GER = {
-		BWR = {
+		RUE = {
 			remove_relation_modifier = {
 				target = PREV
-				modifier = RUS_face_western_fascism_static
+				modifier = RUE_face_western_fascism_static
 			}
 			#log = "[GER.getname] is now clean"
 		}
 	}
 }
 
-RUS_clear_hidden_targeted_ns_effect = {
+RUE_clear_hidden_targeted_ns_effect = {
 	if = {
 		limit = {
-			has_idea = RUS_targeted_bonus_against_ENG
+			has_idea = RUE_targeted_bonus_against_ENG
 		}
-		add_ideas = RUS_targeted_bonus_against_ENG
+		add_ideas = RUE_targeted_bonus_against_ENG
 	}
 	if = {
 		limit = {
-			has_idea = RUS_targeted_bonus_against_FRA
+			has_idea = RUE_targeted_bonus_against_FRA
 		}
-		add_ideas = RUS_targeted_bonus_against_FRA
+		add_ideas = RUE_targeted_bonus_against_FRA
 	}
 	if = {
 		limit = {
-			has_idea = RUS_targeted_bonus_against_GER
+			has_idea = RUE_targeted_bonus_against_GER
 		}
-		add_ideas = RUS_targeted_bonus_against_GER
+		add_ideas = RUE_targeted_bonus_against_GER
 	}
 	if = {
 		limit = {
-			has_idea = RUS_targeted_bonus_against_ITA
+			has_idea = RUE_targeted_bonus_against_ITA
 		}
-		add_ideas = RUS_targeted_bonus_against_ITA
+		add_ideas = RUE_targeted_bonus_against_ITA
 	}
 	if = {
 		limit = {
-			has_idea = RUS_targeted_bonus_against_USA
+			has_idea = RUE_targeted_bonus_against_USA
 		}
-		add_ideas = RUS_targeted_bonus_against_USA
+		add_ideas = RUE_targeted_bonus_against_USA
 	}
 	if = {
 		limit = {
-			has_idea = RUS_targeted_bonus_against_JAP
+			has_idea = RUE_targeted_bonus_against_JAP
 		}
-		add_ideas = RUS_targeted_bonus_against_JAP
+		add_ideas = RUE_targeted_bonus_against_JAP
 	}
 }
 
-RUS_foreign_politics_decision_cost_reduction_effect = { #Add more diplomacy vars here to divide and round them
-	divide_variable = { RUS_pressure_country_government_cost = 2 }
-	divide_variable = { RUS_promote_ideology_rallies_cost = 2 }
-	divide_variable = { RUS_send_ultimatum_to_country_cost = 2 }
-	divide_variable = { RUS_send_infantry_equipment_cost = 2 }
-	divide_variable = { RUS_peace_deal_cost = 2 }
-	divide_variable = { RUS_sinkiang_proposal_cost = 2 }
+RUE_foreign_politics_decision_cost_reduction_effect = { #Add more diplomacy vars here to divide and round them
+	divide_variable = { RUE_pressure_country_government_cost = 2 }
+	divide_variable = { RUE_promote_ideology_rallies_cost = 2 }
+	divide_variable = { RUE_send_ultimatum_to_country_cost = 2 }
+	divide_variable = { RUE_send_infantry_equipment_cost = 2 }
+	divide_variable = { RUE_peace_deal_cost = 2 }
+	divide_variable = { RUE_sinkiang_proposal_cost = 2 }
 
-	round_variable = RUS_pressure_country_government_cost
-	round_variable = RUS_promote_ideology_rallies_cost
-	round_variable = RUS_send_ultimatum_to_country_cost
-	round_variable = RUS_send_infantry_equipment_cost
-	round_variable = RUS_peace_deal_cost
-	round_variable = RUS_sinkiang_proposal_cost
+	round_variable = RUE_pressure_country_government_cost
+	round_variable = RUE_promote_ideology_rallies_cost
+	round_variable = RUE_send_ultimatum_to_country_cost
+	round_variable = RUE_send_infantry_equipment_cost
+	round_variable = RUE_peace_deal_cost
+	round_variable = RUE_sinkiang_proposal_cost
 }
 
-RUS_approach_sinkiang_diplomacy_effect = {
+RUE_approach_sinkiang_diplomacy_effect = {
 	add_ai_strategy = {
 		type = befriend
 		id = SIK			
@@ -410,7 +410,7 @@ RUS_approach_sinkiang_diplomacy_effect = {
 	SIK = {
 		add_ai_strategy = {
 			type = befriend
-			id = BWR			
+			id = RUE			
 			value = 10
 		}
 		add_ai_strategy = {
@@ -456,122 +456,122 @@ RUS_approach_sinkiang_diplomacy_effect = {
 	}
 }
 
-RUS_set_appropriate_national_academy_of_sciences_flag_effect = {
+RUE_set_appropriate_national_academy_of_sciences_flag_effect = {
 	#log = "ROOT is [ROOT.GetName]"
 	#log = "FROM is [FROM.GetName]"
 	if = {
 		limit = {
 			FROM = { tag = BLR }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_BLR_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_BLR_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = UKR }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_UKR_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_UKR_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = KAZ }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_KAZ_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_KAZ_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = GEO }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_GEO_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_GEO_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = ARM }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_ARM_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_ARM_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = AZR }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_AZR_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_AZR_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = UZB }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_UZB_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_UZB_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = TMS }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_TMS_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_TMS_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = KYR }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_KYR_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_KYR_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = TAJ }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_TAJ_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_TAJ_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = TAN }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_TAN_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_TAN_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = DON }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_DON_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_DON_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = KUB }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_KUB_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_KUB_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = EST }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_EST_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_EST_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = LAT }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_LAT_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_LAT_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = LIT }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_LIT_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_LIT_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = POL }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_POL_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_POL_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = FIN }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_FIN_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_FIN_flag }
 	}
 	else_if = {
 		limit = {
 			FROM = { tag = MON }
 		}
-		ROOT = { set_country_flag = RUS_national_academy_of_sciences_built_MON_flag }
+		ROOT = { set_country_flag = RUE_national_academy_of_sciences_built_MON_flag }
 	}
 
 	# Add any new cosmetics/releasables here! (and also decisions for them) ((and also scripted triggers)) (((please just do not add any more cosmetics/releasables...)))
@@ -580,7 +580,7 @@ RUS_set_appropriate_national_academy_of_sciences_flag_effect = {
 
 
 
-RUS_clear_hostile_diplomacy_in_both_countries = { #It assumes you want to clear claims and wargoals against each other in both ROOT and FROM
+RUE_clear_hostile_diplomacy_in_both_countries = { #It assumes you want to clear claims and wargoals against each other in both ROOT and FROM
 	#First clear ROOT
 	if = {
 		limit = {
@@ -636,7 +636,7 @@ RUS_clear_hostile_diplomacy_in_both_countries = { #It assumes you want to clear 
 	}
 }
 
-RUS_clear_hostile_diplomacy_in_all_three_countries = { #It assumes you want to clear claims and wargoals against each other in ROOT, FROM and POL
+RUE_clear_hostile_diplomacy_in_all_three_countries = { #It assumes you want to clear claims and wargoals against each other in ROOT, FROM and POL
 	#First clear ROOT
 	if = {
 		limit = {
@@ -800,10 +800,10 @@ RUS_clear_hostile_diplomacy_in_all_three_countries = { #It assumes you want to c
 	}
 }
 
-RUS_apply_collective_ageement_on_mutual_assistance_effects_basic = {
-	RUS_clear_hostile_diplomacy_in_both_countries = yes #Clears wargoals and claims
+RUE_apply_collective_ageement_on_mutual_assistance_effects_basic = {
+	RUE_clear_hostile_diplomacy_in_both_countries = yes #Clears wargoals and claims
 
-	#FRA -> BWR
+	#FRA -> RUE
 	FROM = {
 		diplomatic_relation = {
 			country = ROOT
@@ -813,11 +813,11 @@ RUS_apply_collective_ageement_on_mutual_assistance_effects_basic = {
 		give_guarantee = ROOT
 		add_opinion_modifier = {
 			target = ROOT
-			modifier = RUS_policies_of_collective_security_opinion
+			modifier = RUE_policies_of_collective_security_opinion
 		}
 	}
 
-	#BWR -> FRA
+	#RUE -> FRA
 	diplomatic_relation = {
 		country = FROM
 		relation = non_aggression_pact
@@ -826,15 +826,15 @@ RUS_apply_collective_ageement_on_mutual_assistance_effects_basic = {
 	give_guarantee = FROM
 	add_opinion_modifier = {
 		target = FROM
-		modifier = RUS_policies_of_collective_security_opinion
+		modifier = RUE_policies_of_collective_security_opinion
 	}
 }
 
 
-RUS_apply_collective_ageement_on_mutual_assistance_effects_poland_included = {
-	RUS_clear_hostile_diplomacy_in_all_three_countries = yes #Clears wargoals and claims in all three countries
+RUE_apply_collective_ageement_on_mutual_assistance_effects_poland_included = {
+	RUE_clear_hostile_diplomacy_in_all_three_countries = yes #Clears wargoals and claims in all three countries
 
-	#BWR -> FRA
+	#RUE -> FRA
 	diplomatic_relation = {
 		country = FROM
 		relation = non_aggression_pact
@@ -843,10 +843,10 @@ RUS_apply_collective_ageement_on_mutual_assistance_effects_poland_included = {
 	give_guarantee = FROM
 	add_opinion_modifier = {
 		target = FROM
-		modifier = RUS_policies_of_collective_security_opinion
+		modifier = RUE_policies_of_collective_security_opinion
 	}
 
-	#BWR -> POL
+	#RUE -> POL
 	diplomatic_relation = {
 		country = POL
 		relation = non_aggression_pact
@@ -855,10 +855,10 @@ RUS_apply_collective_ageement_on_mutual_assistance_effects_poland_included = {
 	give_guarantee = POL
 	add_opinion_modifier = {
 		target = POL
-		modifier = RUS_policies_of_collective_security_opinion
+		modifier = RUE_policies_of_collective_security_opinion
 	}
 
-	#FRA -> BWR
+	#FRA -> RUE
 	FROM = {
 		diplomatic_relation = {
 			country = ROOT
@@ -868,7 +868,7 @@ RUS_apply_collective_ageement_on_mutual_assistance_effects_poland_included = {
 		give_guarantee = ROOT
 		add_opinion_modifier = {
 			target = ROOT
-			modifier = RUS_policies_of_collective_security_opinion
+			modifier = RUE_policies_of_collective_security_opinion
 		}
 	}
 
@@ -882,11 +882,11 @@ RUS_apply_collective_ageement_on_mutual_assistance_effects_poland_included = {
 		give_guarantee = POL
 		add_opinion_modifier = {
 			target = POL
-			modifier = RUS_policies_of_collective_security_opinion
+			modifier = RUE_policies_of_collective_security_opinion
 		}
 	}
 
-	#POL -> BWR
+	#POL -> RUE
 	POL = {
 		diplomatic_relation = {
 			country = ROOT
@@ -896,7 +896,7 @@ RUS_apply_collective_ageement_on_mutual_assistance_effects_poland_included = {
 		give_guarantee = ROOT
 		add_opinion_modifier = {
 			target = ROOT
-			modifier = RUS_policies_of_collective_security_opinion
+			modifier = RUE_policies_of_collective_security_opinion
 		}
 	}
 
@@ -910,34 +910,34 @@ RUS_apply_collective_ageement_on_mutual_assistance_effects_poland_included = {
 		give_guarantee = FROM
 		add_opinion_modifier = {
 			target = FROM
-			modifier = RUS_policies_of_collective_security_opinion
+			modifier = RUE_policies_of_collective_security_opinion
 		}
 	}
 }
 
-RUS_set_military_offensive_effect = {
-	set_country_flag = RUS_military_offensive_in_progress_flag
+RUE_set_military_offensive_effect = {
+	set_country_flag = RUE_military_offensive_in_progress_flag
 	for_each_scope_loop = {
-		array = RUS_military_offensive_states
+		array = RUE_military_offensive_states
 		add_dynamic_modifier = {
-			modifier = RUS_soviet_military_offensive
+			modifier = RUE_soviet_military_offensive
 			days = 90
-			scope = BWR
+			scope = RUE
 		}
 	}
 }
 
-RUS_clean_military_offensive_effect = {
-	clr_country_flag = RUS_military_offensive_in_progress_flag
+RUE_clean_military_offensive_effect = {
+	clr_country_flag = RUE_military_offensive_in_progress_flag
 	for_each_scope_loop = {
-		array = RUS_military_offensive_states
-		remove_dynamic_modifier = { modifier = RUS_soviet_military_offensive }
+		array = RUE_military_offensive_states
+		remove_dynamic_modifier = { modifier = RUE_soviet_military_offensive }
 	}
-	clear_array = RUS_military_offensive_states
-	clear_variable = RUS_offensive_main_objective
+	clear_array = RUE_military_offensive_states
+	clear_variable = RUE_offensive_main_objective
 }
 
-RUS_spawn_penal_divisions_effect = {
+RUE_spawn_penal_divisions_effect = {
 	hidden_effect = {
 		capital_scope = {
 			create_unit = {
@@ -946,16 +946,16 @@ RUS_spawn_penal_divisions_effect = {
 				count = 4
 			}
 		}
-		set_country_flag = RUS_penal_units_raised_flag
+		set_country_flag = RUE_penal_units_raised_flag
 	}
 }
 
-RUS_anglo_soviet_invasion_add_ai_strategies_effect = { #Soviet / Anglo-Soviet invasion of Iran
+RUE_anglo_soviet_invasion_add_ai_strategies_effect = { #Soviet / Anglo-Soviet invasion of Iran
 	if = {
 		limit = {
-			has_global_flag = RUS_agreed_anglo_soviet_invasion_of_iran_flag
+			has_global_flag = RUE_agreed_anglo_soviet_invasion_of_iran_flag
 		}
-		BWR = {
+		RUE = {
 			add_ai_strategy = {
 				type = befriend
 				id = ENG			
@@ -965,13 +965,13 @@ RUS_anglo_soviet_invasion_add_ai_strategies_effect = { #Soviet / Anglo-Soviet in
 		ENG = {
 			add_ai_strategy = {
 				type = befriend
-				id = BWR			
+				id = RUE			
 				value = 15
 			}
 		}
 	}
 	else = {
-		BWR = {
+		RUE = {
 			add_ai_strategy = {
 				type = befriend
 				id = ENG			
@@ -981,7 +981,7 @@ RUS_anglo_soviet_invasion_add_ai_strategies_effect = { #Soviet / Anglo-Soviet in
 		ENG = {
 			add_ai_strategy = {
 				type = befriend
-				id = BWR			
+				id = RUE			
 				value = -15
 			}
 		}
@@ -994,17 +994,17 @@ RUS_anglo_soviet_invasion_add_ai_strategies_effect = { #Soviet / Anglo-Soviet in
 		}
 		PER = {
 			add_timed_idea = {
-				idea = RUS_shocked_by_surprise_attack
-				days = var:BWR.RUS_operation_countenance_mission_days
+				idea = RUE_shocked_by_surprise_attack
+				days = var:RUE.RUE_operation_countenance_mission_days
 			}
 		}
 	}
 }
 
-RUS_failed_anglo_soviet_invasion_ai_strategies_effect = {
+RUE_failed_anglo_soviet_invasion_ai_strategies_effect = {
 	if = { #IF ENG is not involved, seek British aid
 		limit = {
-			NOT = { has_global_flag = RUS_agreed_anglo_soviet_invasion_of_iran_flag }
+			NOT = { has_global_flag = RUE_agreed_anglo_soviet_invasion_of_iran_flag }
 		}
 		if = {
 			limit = {
@@ -1012,7 +1012,7 @@ RUS_failed_anglo_soviet_invasion_ai_strategies_effect = {
 				NOT = { has_war_with = ENG }
 				ENG = {
 					is_faction_leader = yes
-					NOT = {	is_in_faction_with = BWR }
+					NOT = {	is_in_faction_with = RUE }
 				}
 			}
 			add_ai_strategy = {
@@ -1037,9 +1037,9 @@ RUS_failed_anglo_soviet_invasion_ai_strategies_effect = {
 				GER = {
 					is_faction_leader = yes
 					NOT = {
-						is_in_faction_with = BWR
+						is_in_faction_with = RUE
 						AND = {
-							has_global_flag = RUS_agreed_anglo_soviet_invasion_of_iran_flag
+							has_global_flag = RUE_agreed_anglo_soviet_invasion_of_iran_flag
 							is_in_faction_with = ENG
 						}
 					}
@@ -1065,9 +1065,9 @@ RUS_failed_anglo_soviet_invasion_ai_strategies_effect = {
 				ITA = {
 					is_faction_leader = yes
 					NOT = {
-						is_in_faction_with = BWR
+						is_in_faction_with = RUE
 						AND = {
-							has_global_flag = RUS_agreed_anglo_soviet_invasion_of_iran_flag
+							has_global_flag = RUE_agreed_anglo_soviet_invasion_of_iran_flag
 							is_in_faction_with = ENG
 						}
 					}
@@ -1093,9 +1093,9 @@ RUS_failed_anglo_soviet_invasion_ai_strategies_effect = {
 				JAP = {
 					is_faction_leader = yes
 					NOT = {
-						is_in_faction_with = BWR
+						is_in_faction_with = RUE
 						AND = {
-							has_global_flag = RUS_agreed_anglo_soviet_invasion_of_iran_flag
+							has_global_flag = RUE_agreed_anglo_soviet_invasion_of_iran_flag
 							is_in_faction_with = ENG
 						}
 					}
@@ -1121,9 +1121,9 @@ RUS_failed_anglo_soviet_invasion_ai_strategies_effect = {
 				FRA = {
 					is_faction_leader = yes
 					NOT = {
-						is_in_faction_with = BWR
+						is_in_faction_with = RUE
 						AND = {
-							has_global_flag = RUS_agreed_anglo_soviet_invasion_of_iran_flag
+							has_global_flag = RUE_agreed_anglo_soviet_invasion_of_iran_flag
 							is_in_faction_with = ENG
 						}
 					}
@@ -1149,9 +1149,9 @@ RUS_failed_anglo_soviet_invasion_ai_strategies_effect = {
 				USA = {
 					is_faction_leader = yes
 					NOT = {
-						is_in_faction_with = BWR
+						is_in_faction_with = RUE
 						AND = {
-							has_global_flag = RUS_agreed_anglo_soviet_invasion_of_iran_flag
+							has_global_flag = RUE_agreed_anglo_soviet_invasion_of_iran_flag
 							is_in_faction_with = ENG
 						}
 					}
@@ -1203,214 +1203,214 @@ RUS_failed_anglo_soviet_invasion_ai_strategies_effect = {
     #     #    #  #    #  #    #      #####
 
 #Why do I do this to myself?! D:
-RUS_upgrade_appropriate_tank_designer_1_effect = {
+RUE_upgrade_appropriate_tank_designer_1_effect = {
 	#MOROZOV
 	if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau
+			has_idea = RUE_morozov_design_bureau
 		}
-		set_country_flag = RUS_merge_tank_morozov_1_flag
+		set_country_flag = RUE_merge_tank_morozov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau
-			add_idea = RUS_morozov_design_bureau_1
+			remove_idea = RUE_morozov_design_bureau
+			add_idea = RUE_morozov_design_bureau_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau_2
+			has_idea = RUE_morozov_design_bureau_2
 		}
-		set_country_flag = RUS_merge_tank_morozov_1_flag
+		set_country_flag = RUE_merge_tank_morozov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau_2
-			add_idea = RUS_morozov_design_bureau_1_2
+			remove_idea = RUE_morozov_design_bureau_2
+			add_idea = RUE_morozov_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau_3
+			has_idea = RUE_morozov_design_bureau_3
 		}
-		set_country_flag = RUS_merge_tank_morozov_1_flag
+		set_country_flag = RUE_merge_tank_morozov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau_3
-			add_idea = RUS_morozov_design_bureau_1_3
+			remove_idea = RUE_morozov_design_bureau_3
+			add_idea = RUE_morozov_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau_2_3
+			has_idea = RUE_morozov_design_bureau_2_3
 		}
-		set_country_flag = RUS_merge_tank_morozov_1_flag
+		set_country_flag = RUE_merge_tank_morozov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau_2_3
-			add_idea = RUS_morozov_design_bureau_final
+			remove_idea = RUE_morozov_design_bureau_2_3
+			add_idea = RUE_morozov_design_bureau_final
 		}
 	}
 
 	#ASTROV
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau
+			has_idea = RUE_astrov_design_bureau
 		}
-		set_country_flag = RUS_merge_tank_astrov_1_flag
+		set_country_flag = RUE_merge_tank_astrov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau
-			add_idea = RUS_astrov_design_bureau_1
+			remove_idea = RUE_astrov_design_bureau
+			add_idea = RUE_astrov_design_bureau_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau_2
+			has_idea = RUE_astrov_design_bureau_2
 		}
-		set_country_flag = RUS_merge_tank_astrov_1_flag
+		set_country_flag = RUE_merge_tank_astrov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau_2
-			add_idea = RUS_astrov_design_bureau_1_2
+			remove_idea = RUE_astrov_design_bureau_2
+			add_idea = RUE_astrov_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau_3
+			has_idea = RUE_astrov_design_bureau_3
 		}
-		set_country_flag = RUS_merge_tank_astrov_1_flag
+		set_country_flag = RUE_merge_tank_astrov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau_3
-			add_idea = RUS_astrov_design_bureau_1_3
+			remove_idea = RUE_astrov_design_bureau_3
+			add_idea = RUE_astrov_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau_2_3
+			has_idea = RUE_astrov_design_bureau_2_3
 		}
-		set_country_flag = RUS_merge_tank_astrov_1_flag
+		set_country_flag = RUE_merge_tank_astrov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau_2_3
-			add_idea = RUS_astrov_design_bureau_final
+			remove_idea = RUE_astrov_design_bureau_2_3
+			add_idea = RUE_astrov_design_bureau_final
 		}
 	}
 
 	#OKMO
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo
+			has_idea = RUE_okmo
 		}
-		set_country_flag = RUS_merge_tank_okmo_1_flag
+		set_country_flag = RUE_merge_tank_okmo_1_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo
-			add_idea = RUS_okmo_1
+			remove_idea = RUE_okmo
+			add_idea = RUE_okmo_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo_2
+			has_idea = RUE_okmo_2
 		}
-		set_country_flag = RUS_merge_tank_okmo_1_flag
+		set_country_flag = RUE_merge_tank_okmo_1_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo_2
-			add_idea = RUS_okmo_1_2
+			remove_idea = RUE_okmo_2
+			add_idea = RUE_okmo_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo_3
+			has_idea = RUE_okmo_3
 		}
-		set_country_flag = RUS_merge_tank_okmo_1_flag
+		set_country_flag = RUE_merge_tank_okmo_1_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo_3
-			add_idea = RUS_okmo_1_3
+			remove_idea = RUE_okmo_3
+			add_idea = RUE_okmo_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo_2_3
+			has_idea = RUE_okmo_2_3
 		}
-		set_country_flag = RUS_merge_tank_okmo_1_flag
+		set_country_flag = RUE_merge_tank_okmo_1_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo_2_3
-			add_idea = RUS_okmo_final
+			remove_idea = RUE_okmo_2_3
+			add_idea = RUE_okmo_final
 		}
 	}
 
 	#mytishchy
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant
+			has_idea = RUE_mytishchy_machine_building_plant
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_1_flag
+		set_country_flag = RUE_merge_tank_mytishchy_1_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant
-			add_idea = RUS_mytishchy_machine_building_plant_1
+			remove_idea = RUE_mytishchy_machine_building_plant
+			add_idea = RUE_mytishchy_machine_building_plant_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant_2
+			has_idea = RUE_mytishchy_machine_building_plant_2
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_1_flag
+		set_country_flag = RUE_merge_tank_mytishchy_1_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant_2
-			add_idea = RUS_mytishchy_machine_building_plant_1_2
+			remove_idea = RUE_mytishchy_machine_building_plant_2
+			add_idea = RUE_mytishchy_machine_building_plant_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant_3
+			has_idea = RUE_mytishchy_machine_building_plant_3
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_1_flag
+		set_country_flag = RUE_merge_tank_mytishchy_1_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant_3
-			add_idea = RUS_mytishchy_machine_building_plant_1_3
+			remove_idea = RUE_mytishchy_machine_building_plant_3
+			add_idea = RUE_mytishchy_machine_building_plant_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant_2_3
+			has_idea = RUE_mytishchy_machine_building_plant_2_3
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_1_flag
+		set_country_flag = RUE_merge_tank_mytishchy_1_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant_2_3
-			add_idea = RUS_mytishchy_machine_building_plant_final
+			remove_idea = RUE_mytishchy_machine_building_plant_2_3
+			add_idea = RUE_mytishchy_machine_building_plant_final
 		}
 	}
 
 	#KIROV
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov
+			has_idea = RUE_kirov
 		}
-		set_country_flag = RUS_merge_tank_kirov_1_flag
+		set_country_flag = RUE_merge_tank_kirov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov
-			add_idea = RUS_kirov_1
+			remove_idea = RUE_kirov
+			add_idea = RUE_kirov_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov_2
+			has_idea = RUE_kirov_2
 		}
-		set_country_flag = RUS_merge_tank_kirov_1_flag
+		set_country_flag = RUE_merge_tank_kirov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov_2
-			add_idea = RUS_kirov_1_2
+			remove_idea = RUE_kirov_2
+			add_idea = RUE_kirov_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov_3
+			has_idea = RUE_kirov_3
 		}
-		set_country_flag = RUS_merge_tank_kirov_1_flag
+		set_country_flag = RUE_merge_tank_kirov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov_3
-			add_idea = RUS_kirov_1_3
+			remove_idea = RUE_kirov_3
+			add_idea = RUE_kirov_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov_2_3
+			has_idea = RUE_kirov_2_3
 		}
-		set_country_flag = RUS_merge_tank_kirov_1_flag
+		set_country_flag = RUE_merge_tank_kirov_1_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov_2_3
-			add_idea = RUS_kirov_final
+			remove_idea = RUE_kirov_2_3
+			add_idea = RUE_kirov_final
 		}
 	}
 }
@@ -1424,214 +1424,214 @@ RUS_upgrade_appropriate_tank_designer_1_effect = {
     #     #    #  #    #  #    #      #######
 
 
-RUS_upgrade_appropriate_tank_designer_2_effect = {
+RUE_upgrade_appropriate_tank_designer_2_effect = {
 	#MOROZOV
 	if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau
+			has_idea = RUE_morozov_design_bureau
 		}
-		set_country_flag = RUS_merge_tank_morozov_2_flag
+		set_country_flag = RUE_merge_tank_morozov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau
-			add_idea = RUS_morozov_design_bureau_2
+			remove_idea = RUE_morozov_design_bureau
+			add_idea = RUE_morozov_design_bureau_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau_1
+			has_idea = RUE_morozov_design_bureau_1
 		}
-		set_country_flag = RUS_merge_tank_morozov_2_flag
+		set_country_flag = RUE_merge_tank_morozov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau_1
-			add_idea = RUS_morozov_design_bureau_1_2
+			remove_idea = RUE_morozov_design_bureau_1
+			add_idea = RUE_morozov_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau_3
+			has_idea = RUE_morozov_design_bureau_3
 		}
-		set_country_flag = RUS_merge_tank_morozov_2_flag
+		set_country_flag = RUE_merge_tank_morozov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau_3
-			add_idea = RUS_morozov_design_bureau_2_3
+			remove_idea = RUE_morozov_design_bureau_3
+			add_idea = RUE_morozov_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau_1_3
+			has_idea = RUE_morozov_design_bureau_1_3
 		}
-		set_country_flag = RUS_merge_tank_morozov_2_flag
+		set_country_flag = RUE_merge_tank_morozov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau_1_3
-			add_idea = RUS_morozov_design_bureau_final
+			remove_idea = RUE_morozov_design_bureau_1_3
+			add_idea = RUE_morozov_design_bureau_final
 		}
 	}
 
 	#ASTROV
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau
+			has_idea = RUE_astrov_design_bureau
 		}
-		set_country_flag = RUS_merge_tank_astrov_2_flag
+		set_country_flag = RUE_merge_tank_astrov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau
-			add_idea = RUS_astrov_design_bureau_2
+			remove_idea = RUE_astrov_design_bureau
+			add_idea = RUE_astrov_design_bureau_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau_1
+			has_idea = RUE_astrov_design_bureau_1
 		}
-		set_country_flag = RUS_merge_tank_astrov_2_flag
+		set_country_flag = RUE_merge_tank_astrov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau_1
-			add_idea = RUS_astrov_design_bureau_1_2
+			remove_idea = RUE_astrov_design_bureau_1
+			add_idea = RUE_astrov_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau_3
+			has_idea = RUE_astrov_design_bureau_3
 		}
-		set_country_flag = RUS_merge_tank_astrov_2_flag
+		set_country_flag = RUE_merge_tank_astrov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau_3
-			add_idea = RUS_astrov_design_bureau_2_3
+			remove_idea = RUE_astrov_design_bureau_3
+			add_idea = RUE_astrov_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau_1_3
+			has_idea = RUE_astrov_design_bureau_1_3
 		}
-		set_country_flag = RUS_merge_tank_astrov_2_flag
+		set_country_flag = RUE_merge_tank_astrov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau_1_3
-			add_idea = RUS_astrov_design_bureau_final
+			remove_idea = RUE_astrov_design_bureau_1_3
+			add_idea = RUE_astrov_design_bureau_final
 		}
 	}
 
 	#OKMO
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo
+			has_idea = RUE_okmo
 		}
-		set_country_flag = RUS_merge_tank_okmo_2_flag
+		set_country_flag = RUE_merge_tank_okmo_2_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo
-			add_idea = RUS_okmo_2
+			remove_idea = RUE_okmo
+			add_idea = RUE_okmo_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo_1
+			has_idea = RUE_okmo_1
 		}
-		set_country_flag = RUS_merge_tank_okmo_2_flag
+		set_country_flag = RUE_merge_tank_okmo_2_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo_1
-			add_idea = RUS_okmo_1_2
+			remove_idea = RUE_okmo_1
+			add_idea = RUE_okmo_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo_3
+			has_idea = RUE_okmo_3
 		}
-		set_country_flag = RUS_merge_tank_okmo_2_flag
+		set_country_flag = RUE_merge_tank_okmo_2_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo_3
-			add_idea = RUS_okmo_2_3
+			remove_idea = RUE_okmo_3
+			add_idea = RUE_okmo_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo_1_3
+			has_idea = RUE_okmo_1_3
 		}
-		set_country_flag = RUS_merge_tank_okmo_2_flag
+		set_country_flag = RUE_merge_tank_okmo_2_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo_1_3
-			add_idea = RUS_okmo_final
+			remove_idea = RUE_okmo_1_3
+			add_idea = RUE_okmo_final
 		}
 	}
 
 	#mytishchy
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant
+			has_idea = RUE_mytishchy_machine_building_plant
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_2_flag
+		set_country_flag = RUE_merge_tank_mytishchy_2_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant
-			add_idea = RUS_mytishchy_machine_building_plant_2
+			remove_idea = RUE_mytishchy_machine_building_plant
+			add_idea = RUE_mytishchy_machine_building_plant_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant_1
+			has_idea = RUE_mytishchy_machine_building_plant_1
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_2_flag
+		set_country_flag = RUE_merge_tank_mytishchy_2_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant_1
-			add_idea = RUS_mytishchy_machine_building_plant_1_2
+			remove_idea = RUE_mytishchy_machine_building_plant_1
+			add_idea = RUE_mytishchy_machine_building_plant_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant_3
+			has_idea = RUE_mytishchy_machine_building_plant_3
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_2_flag
+		set_country_flag = RUE_merge_tank_mytishchy_2_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant_3
-			add_idea = RUS_mytishchy_machine_building_plant_2_3
+			remove_idea = RUE_mytishchy_machine_building_plant_3
+			add_idea = RUE_mytishchy_machine_building_plant_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant_1_3
+			has_idea = RUE_mytishchy_machine_building_plant_1_3
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_2_flag
+		set_country_flag = RUE_merge_tank_mytishchy_2_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant_1_3
-			add_idea = RUS_mytishchy_machine_building_plant_final
+			remove_idea = RUE_mytishchy_machine_building_plant_1_3
+			add_idea = RUE_mytishchy_machine_building_plant_final
 		}
 	}
 
 	#KIROV
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov
+			has_idea = RUE_kirov
 		}
-		set_country_flag = RUS_merge_tank_kirov_2_flag
+		set_country_flag = RUE_merge_tank_kirov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov
-			add_idea = RUS_kirov_2
+			remove_idea = RUE_kirov
+			add_idea = RUE_kirov_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov_1
+			has_idea = RUE_kirov_1
 		}
-		set_country_flag = RUS_merge_tank_kirov_2_flag
+		set_country_flag = RUE_merge_tank_kirov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov_1
-			add_idea = RUS_kirov_1_2
+			remove_idea = RUE_kirov_1
+			add_idea = RUE_kirov_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov_3
+			has_idea = RUE_kirov_3
 		}
-		set_country_flag = RUS_merge_tank_kirov_2_flag
+		set_country_flag = RUE_merge_tank_kirov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov_3
-			add_idea = RUS_kirov_2_3
+			remove_idea = RUE_kirov_3
+			add_idea = RUE_kirov_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov_1_3
+			has_idea = RUE_kirov_1_3
 		}
-		set_country_flag = RUS_merge_tank_kirov_2_flag
+		set_country_flag = RUE_merge_tank_kirov_2_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov_1_3
-			add_idea = RUS_kirov_final
+			remove_idea = RUE_kirov_1_3
+			add_idea = RUE_kirov_final
 		}
 	}
 }
@@ -1645,214 +1645,214 @@ RUS_upgrade_appropriate_tank_designer_2_effect = {
     #     #    #  #    #  #    #       #####
 
 
-RUS_upgrade_appropriate_tank_designer_3_effect = {
+RUE_upgrade_appropriate_tank_designer_3_effect = {
 	#MOROZOV
 	if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau
+			has_idea = RUE_morozov_design_bureau
 		}
-		set_country_flag = RUS_merge_tank_morozov_3_flag
+		set_country_flag = RUE_merge_tank_morozov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau
-			add_idea = RUS_morozov_design_bureau_3
+			remove_idea = RUE_morozov_design_bureau
+			add_idea = RUE_morozov_design_bureau_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau_1
+			has_idea = RUE_morozov_design_bureau_1
 		}
-		set_country_flag = RUS_merge_tank_morozov_3_flag
+		set_country_flag = RUE_merge_tank_morozov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau_1
-			add_idea = RUS_morozov_design_bureau_1_3
+			remove_idea = RUE_morozov_design_bureau_1
+			add_idea = RUE_morozov_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau_2
+			has_idea = RUE_morozov_design_bureau_2
 		}
-		set_country_flag = RUS_merge_tank_morozov_3_flag
+		set_country_flag = RUE_merge_tank_morozov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau_2
-			add_idea = RUS_morozov_design_bureau_2_3
+			remove_idea = RUE_morozov_design_bureau_2
+			add_idea = RUE_morozov_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_morozov_design_bureau_1_2
+			has_idea = RUE_morozov_design_bureau_1_2
 		}
-		set_country_flag = RUS_merge_tank_morozov_3_flag
+		set_country_flag = RUE_merge_tank_morozov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_morozov_design_bureau_1_2
-			add_idea = RUS_morozov_design_bureau_final
+			remove_idea = RUE_morozov_design_bureau_1_2
+			add_idea = RUE_morozov_design_bureau_final
 		}
 	}
 
 	#ASTROV
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau
+			has_idea = RUE_astrov_design_bureau
 		}
-		set_country_flag = RUS_merge_tank_astrov_3_flag
+		set_country_flag = RUE_merge_tank_astrov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau
-			add_idea = RUS_astrov_design_bureau_3
+			remove_idea = RUE_astrov_design_bureau
+			add_idea = RUE_astrov_design_bureau_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau_1
+			has_idea = RUE_astrov_design_bureau_1
 		}
-		set_country_flag = RUS_merge_tank_astrov_3_flag
+		set_country_flag = RUE_merge_tank_astrov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau_1
-			add_idea = RUS_astrov_design_bureau_1_3
+			remove_idea = RUE_astrov_design_bureau_1
+			add_idea = RUE_astrov_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau_2
+			has_idea = RUE_astrov_design_bureau_2
 		}
-		set_country_flag = RUS_merge_tank_astrov_3_flag
+		set_country_flag = RUE_merge_tank_astrov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau_2
-			add_idea = RUS_astrov_design_bureau_2_3
+			remove_idea = RUE_astrov_design_bureau_2
+			add_idea = RUE_astrov_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_astrov_design_bureau_1_2
+			has_idea = RUE_astrov_design_bureau_1_2
 		}
-		set_country_flag = RUS_merge_tank_astrov_3_flag
+		set_country_flag = RUE_merge_tank_astrov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_astrov_design_bureau_1_2
-			add_idea = RUS_astrov_design_bureau_final
+			remove_idea = RUE_astrov_design_bureau_1_2
+			add_idea = RUE_astrov_design_bureau_final
 		}
 	}
 
 	#OKMO
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo
+			has_idea = RUE_okmo
 		}
-		set_country_flag = RUS_merge_tank_okmo_3_flag
+		set_country_flag = RUE_merge_tank_okmo_3_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo
-			add_idea = RUS_okmo_3
+			remove_idea = RUE_okmo
+			add_idea = RUE_okmo_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo_1
+			has_idea = RUE_okmo_1
 		}
-		set_country_flag = RUS_merge_tank_okmo_3_flag
+		set_country_flag = RUE_merge_tank_okmo_3_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo_1
-			add_idea = RUS_okmo_1_3
+			remove_idea = RUE_okmo_1
+			add_idea = RUE_okmo_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo_2
+			has_idea = RUE_okmo_2
 		}
-		set_country_flag = RUS_merge_tank_okmo_3_flag
+		set_country_flag = RUE_merge_tank_okmo_3_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo_2
-			add_idea = RUS_okmo_2_3
+			remove_idea = RUE_okmo_2
+			add_idea = RUE_okmo_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_okmo_1_2
+			has_idea = RUE_okmo_1_2
 		}
-		set_country_flag = RUS_merge_tank_okmo_3_flag
+		set_country_flag = RUE_merge_tank_okmo_3_flag
 		swap_ideas = {
-			remove_idea = RUS_okmo_1_2
-			add_idea = RUS_okmo_final
+			remove_idea = RUE_okmo_1_2
+			add_idea = RUE_okmo_final
 		}
 	}
 
 	#mytishchy
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant
+			has_idea = RUE_mytishchy_machine_building_plant
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_3_flag
+		set_country_flag = RUE_merge_tank_mytishchy_3_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant
-			add_idea = RUS_mytishchy_machine_building_plant_3
+			remove_idea = RUE_mytishchy_machine_building_plant
+			add_idea = RUE_mytishchy_machine_building_plant_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant_1
+			has_idea = RUE_mytishchy_machine_building_plant_1
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_3_flag
+		set_country_flag = RUE_merge_tank_mytishchy_3_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant_1
-			add_idea = RUS_mytishchy_machine_building_plant_1_3
+			remove_idea = RUE_mytishchy_machine_building_plant_1
+			add_idea = RUE_mytishchy_machine_building_plant_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant_2
+			has_idea = RUE_mytishchy_machine_building_plant_2
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_3_flag
+		set_country_flag = RUE_merge_tank_mytishchy_3_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant_2
-			add_idea = RUS_mytishchy_machine_building_plant_2_3
+			remove_idea = RUE_mytishchy_machine_building_plant_2
+			add_idea = RUE_mytishchy_machine_building_plant_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mytishchy_machine_building_plant_1_2
+			has_idea = RUE_mytishchy_machine_building_plant_1_2
 		}
-		set_country_flag = RUS_merge_tank_mytishchy_3_flag
+		set_country_flag = RUE_merge_tank_mytishchy_3_flag
 		swap_ideas = {
-			remove_idea = RUS_mytishchy_machine_building_plant_1_2
-			add_idea = RUS_mytishchy_machine_building_plant_final
+			remove_idea = RUE_mytishchy_machine_building_plant_1_2
+			add_idea = RUE_mytishchy_machine_building_plant_final
 		}
 	}
 
 	#KIROV
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov
+			has_idea = RUE_kirov
 		}
-		set_country_flag = RUS_merge_tank_kirov_3_flag
+		set_country_flag = RUE_merge_tank_kirov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov
-			add_idea = RUS_kirov_3
+			remove_idea = RUE_kirov
+			add_idea = RUE_kirov_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov_1
+			has_idea = RUE_kirov_1
 		}
-		set_country_flag = RUS_merge_tank_kirov_3_flag
+		set_country_flag = RUE_merge_tank_kirov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov_1
-			add_idea = RUS_kirov_1_3
+			remove_idea = RUE_kirov_1
+			add_idea = RUE_kirov_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov_2
+			has_idea = RUE_kirov_2
 		}
-		set_country_flag = RUS_merge_tank_kirov_3_flag
+		set_country_flag = RUE_merge_tank_kirov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov_2
-			add_idea = RUS_kirov_2_3
+			remove_idea = RUE_kirov_2
+			add_idea = RUE_kirov_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_kirov_1_2
+			has_idea = RUE_kirov_1_2
 		}
-		set_country_flag = RUS_merge_tank_kirov_3_flag
+		set_country_flag = RUE_merge_tank_kirov_3_flag
 		swap_ideas = {
-			remove_idea = RUS_kirov_1_2
-			add_idea = RUS_kirov_final
+			remove_idea = RUE_kirov_1_2
+			add_idea = RUE_kirov_final
 		}
 	}
 }
@@ -1875,128 +1875,128 @@ RUS_upgrade_appropriate_tank_designer_3_effect = {
  #     #  #    #    ##    #    #  ######      #####      ######   #    #  ######    #    #   ####
 
 
-RUS_upgrade_appropriate_ship_designer_1_baltic_effect = {
+RUE_upgrade_appropriate_ship_designer_1_baltic_effect = {
 	#NEVSKOYE DESIGN BUREAU
 	if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau
+			has_idea = RUE_nevskoye_design_bureau
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau
-			add_idea = RUS_nevskoye_design_bureau_1
+			remove_idea = RUE_nevskoye_design_bureau
+			add_idea = RUE_nevskoye_design_bureau_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_2
+			has_idea = RUE_nevskoye_design_bureau_2
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_2
-			add_idea = RUS_nevskoye_design_bureau_1_2
+			remove_idea = RUE_nevskoye_design_bureau_2
+			add_idea = RUE_nevskoye_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_3
+			has_idea = RUE_nevskoye_design_bureau_3
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_3
-			add_idea = RUS_nevskoye_design_bureau_1_3
+			remove_idea = RUE_nevskoye_design_bureau_3
+			add_idea = RUE_nevskoye_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_4
+			has_idea = RUE_nevskoye_design_bureau_4
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_4
-			add_idea = RUS_nevskoye_design_bureau_1_4
+			remove_idea = RUE_nevskoye_design_bureau_4
+			add_idea = RUE_nevskoye_design_bureau_1_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_2_4
+			has_idea = RUE_nevskoye_design_bureau_2_4
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_2_4
-			add_idea = RUS_nevskoye_design_bureau_final_2
+			remove_idea = RUE_nevskoye_design_bureau_2_4
+			add_idea = RUE_nevskoye_design_bureau_final_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_3_4
+			has_idea = RUE_nevskoye_design_bureau_3_4
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_3_4
-			add_idea = RUS_nevskoye_design_bureau_final_3
+			remove_idea = RUE_nevskoye_design_bureau_3_4
+			add_idea = RUE_nevskoye_design_bureau_final_3
 		}
 	}
 
 	#RUBIN DESIGN BUREAU
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau
+			has_idea = RUE_rubin_design_bureau
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau
-			add_idea = RUS_rubin_design_bureau_1
+			remove_idea = RUE_rubin_design_bureau
+			add_idea = RUE_rubin_design_bureau_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_2
+			has_idea = RUE_rubin_design_bureau_2
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_2
-			add_idea = RUS_rubin_design_bureau_1_2
+			remove_idea = RUE_rubin_design_bureau_2
+			add_idea = RUE_rubin_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_3
+			has_idea = RUE_rubin_design_bureau_3
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_3
-			add_idea = RUS_rubin_design_bureau_1_3
+			remove_idea = RUE_rubin_design_bureau_3
+			add_idea = RUE_rubin_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_4
+			has_idea = RUE_rubin_design_bureau_4
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_4
-			add_idea = RUS_rubin_design_bureau_1_4
+			remove_idea = RUE_rubin_design_bureau_4
+			add_idea = RUE_rubin_design_bureau_1_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_2_4
+			has_idea = RUE_rubin_design_bureau_2_4
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_2_4
-			add_idea = RUS_rubin_design_bureau_final_2
+			remove_idea = RUE_rubin_design_bureau_2_4
+			add_idea = RUE_rubin_design_bureau_final_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_3_4
+			has_idea = RUE_rubin_design_bureau_3_4
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_3_4
-			add_idea = RUS_rubin_design_bureau_final_3
+			remove_idea = RUE_rubin_design_bureau_3_4
+			add_idea = RUE_rubin_design_bureau_final_3
 		}
 	}
 }
@@ -2010,88 +2010,88 @@ RUS_upgrade_appropriate_ship_designer_1_baltic_effect = {
  #     #  #    #    ##    #    #  ######      #######      ######   #    #  ######    #    #   ####
 
 
-RUS_upgrade_appropriate_ship_designer_2_baltic_effect = {
+RUE_upgrade_appropriate_ship_designer_2_baltic_effect = {
 	#NEVSKOYE DESIGN BUREAU
 	if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau
+			has_idea = RUE_nevskoye_design_bureau
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau
-			add_idea = RUS_nevskoye_design_bureau_2
+			remove_idea = RUE_nevskoye_design_bureau
+			add_idea = RUE_nevskoye_design_bureau_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_1
+			has_idea = RUE_nevskoye_design_bureau_1
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_1
-			add_idea = RUS_nevskoye_design_bureau_1_2
+			remove_idea = RUE_nevskoye_design_bureau_1
+			add_idea = RUE_nevskoye_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_4
+			has_idea = RUE_nevskoye_design_bureau_4
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_4
-			add_idea = RUS_nevskoye_design_bureau_2_4
+			remove_idea = RUE_nevskoye_design_bureau_4
+			add_idea = RUE_nevskoye_design_bureau_2_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_1_4
+			has_idea = RUE_nevskoye_design_bureau_1_4
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_1_4
-			add_idea = RUS_nevskoye_design_bureau_final_2
+			remove_idea = RUE_nevskoye_design_bureau_1_4
+			add_idea = RUE_nevskoye_design_bureau_final_2
 		}
 	}
 
 	#RUBIN DESIGN BUREAU
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau
+			has_idea = RUE_rubin_design_bureau
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau
-			add_idea = RUS_rubin_design_bureau_2
+			remove_idea = RUE_rubin_design_bureau
+			add_idea = RUE_rubin_design_bureau_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_1
+			has_idea = RUE_rubin_design_bureau_1
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_1
-			add_idea = RUS_rubin_design_bureau_1_2
+			remove_idea = RUE_rubin_design_bureau_1
+			add_idea = RUE_rubin_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_4
+			has_idea = RUE_rubin_design_bureau_4
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_4
-			add_idea = RUS_rubin_design_bureau_2_4
+			remove_idea = RUE_rubin_design_bureau_4
+			add_idea = RUE_rubin_design_bureau_2_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_1_4
+			has_idea = RUE_rubin_design_bureau_1_4
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_1_4
-			add_idea = RUS_rubin_design_bureau_final_2
+			remove_idea = RUE_rubin_design_bureau_1_4
+			add_idea = RUE_rubin_design_bureau_final_2
 		}
 	}
 }
@@ -2104,88 +2104,88 @@ RUS_upgrade_appropriate_ship_designer_2_baltic_effect = {
  #    ##  #    #   #  #   #    #  #           #     #      #     #  #    #  #         #    #  #    #
  #     #  #    #    ##    #    #  ######       #####       ######   #    #  ######    #    #   ####
 
-RUS_upgrade_appropriate_ship_designer_3_baltic_effect = {
+RUE_upgrade_appropriate_ship_designer_3_baltic_effect = {
 	#NEVSKOYE DESIGN BUREAU
 	if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau
+			has_idea = RUE_nevskoye_design_bureau
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau
-			add_idea = RUS_nevskoye_design_bureau_3
+			remove_idea = RUE_nevskoye_design_bureau
+			add_idea = RUE_nevskoye_design_bureau_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_1
+			has_idea = RUE_nevskoye_design_bureau_1
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_1
-			add_idea = RUS_nevskoye_design_bureau_1_3
+			remove_idea = RUE_nevskoye_design_bureau_1
+			add_idea = RUE_nevskoye_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_4
+			has_idea = RUE_nevskoye_design_bureau_4
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_4
-			add_idea = RUS_nevskoye_design_bureau_3_4
+			remove_idea = RUE_nevskoye_design_bureau_4
+			add_idea = RUE_nevskoye_design_bureau_3_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_1_4
+			has_idea = RUE_nevskoye_design_bureau_1_4
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_1_4
-			add_idea = RUS_nevskoye_design_bureau_final_3
+			remove_idea = RUE_nevskoye_design_bureau_1_4
+			add_idea = RUE_nevskoye_design_bureau_final_3
 		}
 	}
 
 	#RUBIN DESIGN BUREAU
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau
+			has_idea = RUE_rubin_design_bureau
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau
-			add_idea = RUS_rubin_design_bureau_3
+			remove_idea = RUE_rubin_design_bureau
+			add_idea = RUE_rubin_design_bureau_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_1
+			has_idea = RUE_rubin_design_bureau_1
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_1
-			add_idea = RUS_rubin_design_bureau_1_3
+			remove_idea = RUE_rubin_design_bureau_1
+			add_idea = RUE_rubin_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_4
+			has_idea = RUE_rubin_design_bureau_4
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_4
-			add_idea = RUS_rubin_design_bureau_3_4
+			remove_idea = RUE_rubin_design_bureau_4
+			add_idea = RUE_rubin_design_bureau_3_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_1_4
+			has_idea = RUE_rubin_design_bureau_1_4
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_1_4
-			add_idea = RUS_rubin_design_bureau_final_3
+			remove_idea = RUE_rubin_design_bureau_1_4
+			add_idea = RUE_rubin_design_bureau_final_3
 		}
 	}
 }
@@ -2199,128 +2199,128 @@ RUS_upgrade_appropriate_ship_designer_3_baltic_effect = {
  #     #  #    #    ##    #    #  ######           #       ######   #    #  ######    #    #   ####
 
 
-RUS_upgrade_appropriate_ship_designer_4_baltic_effect = {
+RUE_upgrade_appropriate_ship_designer_4_baltic_effect = {
 	#NEVSKOYE DESIGN BUREAU
 	if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau
+			has_idea = RUE_nevskoye_design_bureau
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau
-			add_idea = RUS_nevskoye_design_bureau_4
+			remove_idea = RUE_nevskoye_design_bureau
+			add_idea = RUE_nevskoye_design_bureau_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_1
+			has_idea = RUE_nevskoye_design_bureau_1
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_1
-			add_idea = RUS_nevskoye_design_bureau_1_4
+			remove_idea = RUE_nevskoye_design_bureau_1
+			add_idea = RUE_nevskoye_design_bureau_1_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_2
+			has_idea = RUE_nevskoye_design_bureau_2
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_2
-			add_idea = RUS_nevskoye_design_bureau_2_4
+			remove_idea = RUE_nevskoye_design_bureau_2
+			add_idea = RUE_nevskoye_design_bureau_2_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_3
+			has_idea = RUE_nevskoye_design_bureau_3
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_3
-			add_idea = RUS_nevskoye_design_bureau_3_4
+			remove_idea = RUE_nevskoye_design_bureau_3
+			add_idea = RUE_nevskoye_design_bureau_3_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_1_2
+			has_idea = RUE_nevskoye_design_bureau_1_2
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_1_2
-			add_idea = RUS_nevskoye_design_bureau_final_2
+			remove_idea = RUE_nevskoye_design_bureau_1_2
+			add_idea = RUE_nevskoye_design_bureau_final_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_nevskoye_design_bureau_1_3
+			has_idea = RUE_nevskoye_design_bureau_1_3
 		}
-		set_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_nevskoye_design_bureau_1_3
-			add_idea = RUS_nevskoye_design_bureau_final_3
+			remove_idea = RUE_nevskoye_design_bureau_1_3
+			add_idea = RUE_nevskoye_design_bureau_final_3
 		}
 	}
 
 	#RUBIN DESIGN BUREAU
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau
+			has_idea = RUE_rubin_design_bureau
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau
-			add_idea = RUS_rubin_design_bureau_4
+			remove_idea = RUE_rubin_design_bureau
+			add_idea = RUE_rubin_design_bureau_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_1
+			has_idea = RUE_rubin_design_bureau_1
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_1
-			add_idea = RUS_rubin_design_bureau_1_4
+			remove_idea = RUE_rubin_design_bureau_1
+			add_idea = RUE_rubin_design_bureau_1_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_2
+			has_idea = RUE_rubin_design_bureau_2
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_2
-			add_idea = RUS_rubin_design_bureau_2_4
+			remove_idea = RUE_rubin_design_bureau_2
+			add_idea = RUE_rubin_design_bureau_2_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_3
+			has_idea = RUE_rubin_design_bureau_3
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_3
-			add_idea = RUS_rubin_design_bureau_3_4
+			remove_idea = RUE_rubin_design_bureau_3
+			add_idea = RUE_rubin_design_bureau_3_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_1_2
+			has_idea = RUE_rubin_design_bureau_1_2
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_1_2
-			add_idea = RUS_rubin_design_bureau_final_2
+			remove_idea = RUE_rubin_design_bureau_1_2
+			add_idea = RUE_rubin_design_bureau_final_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_rubin_design_bureau_1_3
+			has_idea = RUE_rubin_design_bureau_1_3
 		}
-		set_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
+		set_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
 		swap_ideas = {
-			remove_idea = RUS_rubin_design_bureau_1_3
-			add_idea = RUS_rubin_design_bureau_final_3
+			remove_idea = RUE_rubin_design_bureau_1_3
+			add_idea = RUE_rubin_design_bureau_final_3
 		}
 	}
 }
@@ -2334,128 +2334,128 @@ RUS_upgrade_appropriate_ship_designer_4_baltic_effect = {
  #     #  #    #    ##    #    #  ######      #####      ######   ######  #    #   ####   #    #       #####   ######  #    #
 
 
-RUS_upgrade_appropriate_ship_designer_1_black_sea_effect = {
+RUE_upgrade_appropriate_ship_designer_1_black_sea_effect = {
 	#BLACK SEA SHIPYARD
 	if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard
+			has_idea = RUE_black_sea_shipyard
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard
-			add_idea = RUS_black_sea_shipyard_1
+			remove_idea = RUE_black_sea_shipyard
+			add_idea = RUE_black_sea_shipyard_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_2
+			has_idea = RUE_black_sea_shipyard_2
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_2
-			add_idea = RUS_black_sea_shipyard_1_2
+			remove_idea = RUE_black_sea_shipyard_2
+			add_idea = RUE_black_sea_shipyard_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_3
+			has_idea = RUE_black_sea_shipyard_3
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_3
-			add_idea = RUS_black_sea_shipyard_1_3
+			remove_idea = RUE_black_sea_shipyard_3
+			add_idea = RUE_black_sea_shipyard_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_4
+			has_idea = RUE_black_sea_shipyard_4
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_4
-			add_idea = RUS_black_sea_shipyard_1_4
+			remove_idea = RUE_black_sea_shipyard_4
+			add_idea = RUE_black_sea_shipyard_1_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_2_4
+			has_idea = RUE_black_sea_shipyard_2_4
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_2_4
-			add_idea = RUS_black_sea_shipyard_final_2
+			remove_idea = RUE_black_sea_shipyard_2_4
+			add_idea = RUE_black_sea_shipyard_final_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_3_4
+			has_idea = RUE_black_sea_shipyard_3_4
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_3_4
-			add_idea = RUS_black_sea_shipyard_final_3
+			remove_idea = RUE_black_sea_shipyard_3_4
+			add_idea = RUE_black_sea_shipyard_final_3
 		}
 	}
 
 	#SEVASTOPOL MARINE PLANT
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant
+			has_idea = RUE_sevastopol_marine_plant
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant
-			add_idea = RUS_sevastopol_marine_plant_1
+			remove_idea = RUE_sevastopol_marine_plant
+			add_idea = RUE_sevastopol_marine_plant_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_2
+			has_idea = RUE_sevastopol_marine_plant_2
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_2
-			add_idea = RUS_sevastopol_marine_plant_1_2
+			remove_idea = RUE_sevastopol_marine_plant_2
+			add_idea = RUE_sevastopol_marine_plant_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_3
+			has_idea = RUE_sevastopol_marine_plant_3
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_3
-			add_idea = RUS_sevastopol_marine_plant_1_3
+			remove_idea = RUE_sevastopol_marine_plant_3
+			add_idea = RUE_sevastopol_marine_plant_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_4
+			has_idea = RUE_sevastopol_marine_plant_4
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_4
-			add_idea = RUS_sevastopol_marine_plant_1_4
+			remove_idea = RUE_sevastopol_marine_plant_4
+			add_idea = RUE_sevastopol_marine_plant_1_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_2_4
+			has_idea = RUE_sevastopol_marine_plant_2_4
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_2_4
-			add_idea = RUS_sevastopol_marine_plant_final_2
+			remove_idea = RUE_sevastopol_marine_plant_2_4
+			add_idea = RUE_sevastopol_marine_plant_final_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_3_4
+			has_idea = RUE_sevastopol_marine_plant_3_4
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_3_4
-			add_idea = RUS_sevastopol_marine_plant_final_3
+			remove_idea = RUE_sevastopol_marine_plant_3_4
+			add_idea = RUE_sevastopol_marine_plant_final_3
 		}
 	}
 }
@@ -2469,88 +2469,88 @@ RUS_upgrade_appropriate_ship_designer_1_black_sea_effect = {
  #     #  #    #    ##    #    #  ######      #######      ######   ######  #    #   ####   #    #       #####   ######  #    #
 
 
-RUS_upgrade_appropriate_ship_designer_2_black_sea_effect = {
+RUE_upgrade_appropriate_ship_designer_2_black_sea_effect = {
 	#BLACK SEA SHIPYARD
 	if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard
+			has_idea = RUE_black_sea_shipyard
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard
-			add_idea = RUS_black_sea_shipyard_2
+			remove_idea = RUE_black_sea_shipyard
+			add_idea = RUE_black_sea_shipyard_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_1
+			has_idea = RUE_black_sea_shipyard_1
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_1
-			add_idea = RUS_black_sea_shipyard_1_2
+			remove_idea = RUE_black_sea_shipyard_1
+			add_idea = RUE_black_sea_shipyard_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_4
+			has_idea = RUE_black_sea_shipyard_4
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_4
-			add_idea = RUS_black_sea_shipyard_2_4
+			remove_idea = RUE_black_sea_shipyard_4
+			add_idea = RUE_black_sea_shipyard_2_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_1_4
+			has_idea = RUE_black_sea_shipyard_1_4
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_1_4
-			add_idea = RUS_black_sea_shipyard_final_2
+			remove_idea = RUE_black_sea_shipyard_1_4
+			add_idea = RUE_black_sea_shipyard_final_2
 		}
 	}
 
 	#SEVASTOPOL MARINE PLANT
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant
+			has_idea = RUE_sevastopol_marine_plant
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant
-			add_idea = RUS_sevastopol_marine_plant_2
+			remove_idea = RUE_sevastopol_marine_plant
+			add_idea = RUE_sevastopol_marine_plant_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_1
+			has_idea = RUE_sevastopol_marine_plant_1
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_1
-			add_idea = RUS_sevastopol_marine_plant_1_2
+			remove_idea = RUE_sevastopol_marine_plant_1
+			add_idea = RUE_sevastopol_marine_plant_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_4
+			has_idea = RUE_sevastopol_marine_plant_4
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_4
-			add_idea = RUS_sevastopol_marine_plant_2_4
+			remove_idea = RUE_sevastopol_marine_plant_4
+			add_idea = RUE_sevastopol_marine_plant_2_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_1_4
+			has_idea = RUE_sevastopol_marine_plant_1_4
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_1_4
-			add_idea = RUS_sevastopol_marine_plant_final_2
+			remove_idea = RUE_sevastopol_marine_plant_1_4
+			add_idea = RUE_sevastopol_marine_plant_final_2
 		}
 	}
 }
@@ -2564,88 +2564,88 @@ RUS_upgrade_appropriate_ship_designer_2_black_sea_effect = {
  #     #  #    #    ##    #    #  ######       #####       ######   ######  #    #   ####   #    #       #####   ######  #    #
 
 
-RUS_upgrade_appropriate_ship_designer_3_black_sea_effect = {
+RUE_upgrade_appropriate_ship_designer_3_black_sea_effect = {
 	#BLACK SEA SHIPYARD
 	if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard
+			has_idea = RUE_black_sea_shipyard
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard
-			add_idea = RUS_black_sea_shipyard_3
+			remove_idea = RUE_black_sea_shipyard
+			add_idea = RUE_black_sea_shipyard_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_1
+			has_idea = RUE_black_sea_shipyard_1
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_1
-			add_idea = RUS_black_sea_shipyard_1_3
+			remove_idea = RUE_black_sea_shipyard_1
+			add_idea = RUE_black_sea_shipyard_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_4
+			has_idea = RUE_black_sea_shipyard_4
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_4
-			add_idea = RUS_black_sea_shipyard_3_4
+			remove_idea = RUE_black_sea_shipyard_4
+			add_idea = RUE_black_sea_shipyard_3_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_1_4
+			has_idea = RUE_black_sea_shipyard_1_4
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_1_4
-			add_idea = RUS_black_sea_shipyard_final_3
+			remove_idea = RUE_black_sea_shipyard_1_4
+			add_idea = RUE_black_sea_shipyard_final_3
 		}
 	}
 
 	#SEVASTOPOL MARINE PLANT
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant
+			has_idea = RUE_sevastopol_marine_plant
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant
-			add_idea = RUS_sevastopol_marine_plant_3
+			remove_idea = RUE_sevastopol_marine_plant
+			add_idea = RUE_sevastopol_marine_plant_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_1
+			has_idea = RUE_sevastopol_marine_plant_1
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_1
-			add_idea = RUS_sevastopol_marine_plant_1_3
+			remove_idea = RUE_sevastopol_marine_plant_1
+			add_idea = RUE_sevastopol_marine_plant_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_4
+			has_idea = RUE_sevastopol_marine_plant_4
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_4
-			add_idea = RUS_sevastopol_marine_plant_3_4
+			remove_idea = RUE_sevastopol_marine_plant_4
+			add_idea = RUE_sevastopol_marine_plant_3_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_1_4
+			has_idea = RUE_sevastopol_marine_plant_1_4
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_1_4
-			add_idea = RUS_sevastopol_marine_plant_final_3
+			remove_idea = RUE_sevastopol_marine_plant_1_4
+			add_idea = RUE_sevastopol_marine_plant_final_3
 		}
 	}
 }
@@ -2659,128 +2659,128 @@ RUS_upgrade_appropriate_ship_designer_3_black_sea_effect = {
  #     #  #    #    ##    #    #  ######           #       ######   ######  #    #   ####   #    #       #####   ######  #    #
 
 
-RUS_upgrade_appropriate_ship_designer_4_black_sea_effect = {
+RUE_upgrade_appropriate_ship_designer_4_black_sea_effect = {
 	#BLACK SEA SHIPYARD
 	if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard
+			has_idea = RUE_black_sea_shipyard
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard
-			add_idea = RUS_black_sea_shipyard_4
+			remove_idea = RUE_black_sea_shipyard
+			add_idea = RUE_black_sea_shipyard_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_1
+			has_idea = RUE_black_sea_shipyard_1
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_1
-			add_idea = RUS_black_sea_shipyard_1_4
+			remove_idea = RUE_black_sea_shipyard_1
+			add_idea = RUE_black_sea_shipyard_1_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_2
+			has_idea = RUE_black_sea_shipyard_2
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_2
-			add_idea = RUS_black_sea_shipyard_2_4
+			remove_idea = RUE_black_sea_shipyard_2
+			add_idea = RUE_black_sea_shipyard_2_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_3
+			has_idea = RUE_black_sea_shipyard_3
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_3
-			add_idea = RUS_black_sea_shipyard_3_4
+			remove_idea = RUE_black_sea_shipyard_3
+			add_idea = RUE_black_sea_shipyard_3_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_1_2
+			has_idea = RUE_black_sea_shipyard_1_2
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_1_2
-			add_idea = RUS_black_sea_shipyard_final_2
+			remove_idea = RUE_black_sea_shipyard_1_2
+			add_idea = RUE_black_sea_shipyard_final_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_black_sea_shipyard_1_3
+			has_idea = RUE_black_sea_shipyard_1_3
 		}
-		set_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
+		set_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
 		swap_ideas = {
-			remove_idea = RUS_black_sea_shipyard_1_3
-			add_idea = RUS_black_sea_shipyard_final_3
+			remove_idea = RUE_black_sea_shipyard_1_3
+			add_idea = RUE_black_sea_shipyard_final_3
 		}
 	}
 
 	#SEVASTOPOL MARINE PLANT
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant
+			has_idea = RUE_sevastopol_marine_plant
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant
-			add_idea = RUS_sevastopol_marine_plant_4
+			remove_idea = RUE_sevastopol_marine_plant
+			add_idea = RUE_sevastopol_marine_plant_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_1
+			has_idea = RUE_sevastopol_marine_plant_1
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_1
-			add_idea = RUS_sevastopol_marine_plant_1_4
+			remove_idea = RUE_sevastopol_marine_plant_1
+			add_idea = RUE_sevastopol_marine_plant_1_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_2
+			has_idea = RUE_sevastopol_marine_plant_2
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_2
-			add_idea = RUS_sevastopol_marine_plant_2_4
+			remove_idea = RUE_sevastopol_marine_plant_2
+			add_idea = RUE_sevastopol_marine_plant_2_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_3
+			has_idea = RUE_sevastopol_marine_plant_3
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_3
-			add_idea = RUS_sevastopol_marine_plant_3_4
+			remove_idea = RUE_sevastopol_marine_plant_3
+			add_idea = RUE_sevastopol_marine_plant_3_4
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_1_2
+			has_idea = RUE_sevastopol_marine_plant_1_2
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_1_2
-			add_idea = RUS_sevastopol_marine_plant_final_2
+			remove_idea = RUE_sevastopol_marine_plant_1_2
+			add_idea = RUE_sevastopol_marine_plant_final_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_sevastopol_marine_plant_1_3
+			has_idea = RUE_sevastopol_marine_plant_1_3
 		}
-		set_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
+		set_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
 		swap_ideas = {
-			remove_idea = RUS_sevastopol_marine_plant_1_3
-			add_idea = RUS_sevastopol_marine_plant_final_3
+			remove_idea = RUE_sevastopol_marine_plant_1_3
+			add_idea = RUE_sevastopol_marine_plant_final_3
 		}
 	}
 }
@@ -2803,172 +2803,172 @@ RUS_upgrade_appropriate_ship_designer_4_black_sea_effect = {
  #     #  #  #    #   ####   #    #  #    #  #         #        #####
 
 
-RUS_upgrade_appropriate_aircraft_designer_1_effect = {
+RUE_upgrade_appropriate_aircraft_designer_1_effect = {
 	#MIG
 	if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau
+			has_idea = RUE_mig_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_mig_1_flag
+		set_country_flag = RUE_merge_aircraft_mig_1_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau
-			add_idea = RUS_mig_design_bureau_1
+			remove_idea = RUE_mig_design_bureau
+			add_idea = RUE_mig_design_bureau_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau_2
+			has_idea = RUE_mig_design_bureau_2
 		}
-		set_country_flag = RUS_merge_aircraft_mig_1_flag
+		set_country_flag = RUE_merge_aircraft_mig_1_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau_2
-			add_idea = RUS_mig_design_bureau_1_2
+			remove_idea = RUE_mig_design_bureau_2
+			add_idea = RUE_mig_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau_3
+			has_idea = RUE_mig_design_bureau_3
 		}
-		set_country_flag = RUS_merge_aircraft_mig_1_flag
+		set_country_flag = RUE_merge_aircraft_mig_1_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau_3
-			add_idea = RUS_mig_design_bureau_1_3
+			remove_idea = RUE_mig_design_bureau_3
+			add_idea = RUE_mig_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau_2_3
+			has_idea = RUE_mig_design_bureau_2_3
 		}
-		set_country_flag = RUS_merge_aircraft_mig_1_flag
+		set_country_flag = RUE_merge_aircraft_mig_1_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau_2_3
-			add_idea = RUS_mig_design_bureau_final
+			remove_idea = RUE_mig_design_bureau_2_3
+			add_idea = RUE_mig_design_bureau_final
 		}
 	}
 
 	#ILYUSHIN
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau
+			has_idea = RUE_ilyushin_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_1_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_1_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau
-			add_idea = RUS_ilyushin_design_bureau_1
+			remove_idea = RUE_ilyushin_design_bureau
+			add_idea = RUE_ilyushin_design_bureau_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau_2
+			has_idea = RUE_ilyushin_design_bureau_2
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_1_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_1_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau_2
-			add_idea = RUS_ilyushin_design_bureau_1_2
+			remove_idea = RUE_ilyushin_design_bureau_2
+			add_idea = RUE_ilyushin_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau_3
+			has_idea = RUE_ilyushin_design_bureau_3
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_1_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_1_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau_3
-			add_idea = RUS_ilyushin_design_bureau_1_3
+			remove_idea = RUE_ilyushin_design_bureau_3
+			add_idea = RUE_ilyushin_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau_2_3
+			has_idea = RUE_ilyushin_design_bureau_2_3
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_1_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_1_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau_2_3
-			add_idea = RUS_ilyushin_design_bureau_final
+			remove_idea = RUE_ilyushin_design_bureau_2_3
+			add_idea = RUE_ilyushin_design_bureau_final
 		}
 	}
 
 	#TUPOLEV
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau
+			has_idea = RUE_tupolev_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_1_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_1_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau
-			add_idea = RUS_tupolev_design_bureau_1
+			remove_idea = RUE_tupolev_design_bureau
+			add_idea = RUE_tupolev_design_bureau_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau_2
+			has_idea = RUE_tupolev_design_bureau_2
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_1_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_1_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau_2
-			add_idea = RUS_tupolev_design_bureau_1_2
+			remove_idea = RUE_tupolev_design_bureau_2
+			add_idea = RUE_tupolev_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau_3
+			has_idea = RUE_tupolev_design_bureau_3
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_1_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_1_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau_3
-			add_idea = RUS_tupolev_design_bureau_1_3
+			remove_idea = RUE_tupolev_design_bureau_3
+			add_idea = RUE_tupolev_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau_2_3
+			has_idea = RUE_tupolev_design_bureau_2_3
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_1_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_1_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau_2_3
-			add_idea = RUS_tupolev_design_bureau_final
+			remove_idea = RUE_tupolev_design_bureau_2_3
+			add_idea = RUE_tupolev_design_bureau_final
 		}
 	}
 
 	#YAKOVLEV
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau
+			has_idea = RUE_yakovlev_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_1_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_1_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau
-			add_idea = RUS_yakovlev_design_bureau_1
+			remove_idea = RUE_yakovlev_design_bureau
+			add_idea = RUE_yakovlev_design_bureau_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau_2
+			has_idea = RUE_yakovlev_design_bureau_2
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_1_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_1_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau_2
-			add_idea = RUS_yakovlev_design_bureau_1_2
+			remove_idea = RUE_yakovlev_design_bureau_2
+			add_idea = RUE_yakovlev_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau_3
+			has_idea = RUE_yakovlev_design_bureau_3
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_1_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_1_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau_3
-			add_idea = RUS_yakovlev_design_bureau_1_3
+			remove_idea = RUE_yakovlev_design_bureau_3
+			add_idea = RUE_yakovlev_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau_2_3
+			has_idea = RUE_yakovlev_design_bureau_2_3
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_1_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_1_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau_2_3
-			add_idea = RUS_yakovlev_design_bureau_final
+			remove_idea = RUE_yakovlev_design_bureau_2_3
+			add_idea = RUE_yakovlev_design_bureau_final
 		}
 	}
 }
@@ -2982,172 +2982,172 @@ RUS_upgrade_appropriate_aircraft_designer_1_effect = {
  #     #  #  #    #   ####   #    #  #    #  #         #        #######
 
 
-RUS_upgrade_appropriate_aircraft_designer_2_effect = {
+RUE_upgrade_appropriate_aircraft_designer_2_effect = {
 	#MIG
 	if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau
+			has_idea = RUE_mig_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_mig_2_flag
+		set_country_flag = RUE_merge_aircraft_mig_2_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau
-			add_idea = RUS_mig_design_bureau_2
+			remove_idea = RUE_mig_design_bureau
+			add_idea = RUE_mig_design_bureau_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau_1
+			has_idea = RUE_mig_design_bureau_1
 		}
-		set_country_flag = RUS_merge_aircraft_mig_2_flag
+		set_country_flag = RUE_merge_aircraft_mig_2_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau_1
-			add_idea = RUS_mig_design_bureau_1_2
+			remove_idea = RUE_mig_design_bureau_1
+			add_idea = RUE_mig_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau_3
+			has_idea = RUE_mig_design_bureau_3
 		}
-		set_country_flag = RUS_merge_aircraft_mig_2_flag
+		set_country_flag = RUE_merge_aircraft_mig_2_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau_3
-			add_idea = RUS_mig_design_bureau_2_3
+			remove_idea = RUE_mig_design_bureau_3
+			add_idea = RUE_mig_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau_1_3
+			has_idea = RUE_mig_design_bureau_1_3
 		}
-		set_country_flag = RUS_merge_aircraft_mig_2_flag
+		set_country_flag = RUE_merge_aircraft_mig_2_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau_1_3
-			add_idea = RUS_mig_design_bureau_final
+			remove_idea = RUE_mig_design_bureau_1_3
+			add_idea = RUE_mig_design_bureau_final
 		}
 	}
 
 	#ILYUSHIN
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau
+			has_idea = RUE_ilyushin_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_2_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_2_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau
-			add_idea = RUS_ilyushin_design_bureau_2
+			remove_idea = RUE_ilyushin_design_bureau
+			add_idea = RUE_ilyushin_design_bureau_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau_1
+			has_idea = RUE_ilyushin_design_bureau_1
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_2_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_2_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau_1
-			add_idea = RUS_ilyushin_design_bureau_1_2
+			remove_idea = RUE_ilyushin_design_bureau_1
+			add_idea = RUE_ilyushin_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau_3
+			has_idea = RUE_ilyushin_design_bureau_3
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_2_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_2_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau_3
-			add_idea = RUS_ilyushin_design_bureau_2_3
+			remove_idea = RUE_ilyushin_design_bureau_3
+			add_idea = RUE_ilyushin_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau_1_3
+			has_idea = RUE_ilyushin_design_bureau_1_3
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_2_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_2_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau_1_3
-			add_idea = RUS_ilyushin_design_bureau_final
+			remove_idea = RUE_ilyushin_design_bureau_1_3
+			add_idea = RUE_ilyushin_design_bureau_final
 		}
 	}
 
 	#TUPOLEV
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau
+			has_idea = RUE_tupolev_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_2_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_2_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau
-			add_idea = RUS_tupolev_design_bureau_2
+			remove_idea = RUE_tupolev_design_bureau
+			add_idea = RUE_tupolev_design_bureau_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau_1
+			has_idea = RUE_tupolev_design_bureau_1
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_2_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_2_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau_1
-			add_idea = RUS_tupolev_design_bureau_1_2
+			remove_idea = RUE_tupolev_design_bureau_1
+			add_idea = RUE_tupolev_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau_3
+			has_idea = RUE_tupolev_design_bureau_3
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_2_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_2_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau_3
-			add_idea = RUS_tupolev_design_bureau_2_3
+			remove_idea = RUE_tupolev_design_bureau_3
+			add_idea = RUE_tupolev_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau_1_3
+			has_idea = RUE_tupolev_design_bureau_1_3
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_2_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_2_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau_1_3
-			add_idea = RUS_tupolev_design_bureau_final
+			remove_idea = RUE_tupolev_design_bureau_1_3
+			add_idea = RUE_tupolev_design_bureau_final
 		}
 	}
 
 	#YAKOVLEV
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau
+			has_idea = RUE_yakovlev_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_2_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_2_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau
-			add_idea = RUS_yakovlev_design_bureau_2
+			remove_idea = RUE_yakovlev_design_bureau
+			add_idea = RUE_yakovlev_design_bureau_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau_1
+			has_idea = RUE_yakovlev_design_bureau_1
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_2_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_2_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau_1
-			add_idea = RUS_yakovlev_design_bureau_1_2
+			remove_idea = RUE_yakovlev_design_bureau_1
+			add_idea = RUE_yakovlev_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau_3
+			has_idea = RUE_yakovlev_design_bureau_3
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_2_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_2_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau_3
-			add_idea = RUS_yakovlev_design_bureau_2_3
+			remove_idea = RUE_yakovlev_design_bureau_3
+			add_idea = RUE_yakovlev_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau_1_3
+			has_idea = RUE_yakovlev_design_bureau_1_3
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_2_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_2_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau_1_3
-			add_idea = RUS_yakovlev_design_bureau_final
+			remove_idea = RUE_yakovlev_design_bureau_1_3
+			add_idea = RUE_yakovlev_design_bureau_final
 		}
 	}
 }
@@ -3161,172 +3161,172 @@ RUS_upgrade_appropriate_aircraft_designer_2_effect = {
  #     #  #  #    #   ####   #    #  #    #  #         #         #####
 
 
-RUS_upgrade_appropriate_aircraft_designer_3_effect = {
+RUE_upgrade_appropriate_aircraft_designer_3_effect = {
 	#MIG
 	if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau
+			has_idea = RUE_mig_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_mig_3_flag
+		set_country_flag = RUE_merge_aircraft_mig_3_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau
-			add_idea = RUS_mig_design_bureau_3
+			remove_idea = RUE_mig_design_bureau
+			add_idea = RUE_mig_design_bureau_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau_1
+			has_idea = RUE_mig_design_bureau_1
 		}
-		set_country_flag = RUS_merge_aircraft_mig_3_flag
+		set_country_flag = RUE_merge_aircraft_mig_3_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau_1
-			add_idea = RUS_mig_design_bureau_1_3
+			remove_idea = RUE_mig_design_bureau_1
+			add_idea = RUE_mig_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau_2
+			has_idea = RUE_mig_design_bureau_2
 		}
-		set_country_flag = RUS_merge_aircraft_mig_3_flag
+		set_country_flag = RUE_merge_aircraft_mig_3_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau_2
-			add_idea = RUS_mig_design_bureau_2_3
+			remove_idea = RUE_mig_design_bureau_2
+			add_idea = RUE_mig_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_mig_design_bureau_1_2
+			has_idea = RUE_mig_design_bureau_1_2
 		}
-		set_country_flag = RUS_merge_aircraft_mig_3_flag
+		set_country_flag = RUE_merge_aircraft_mig_3_flag
 		swap_ideas = {
-			remove_idea = RUS_mig_design_bureau_1_2
-			add_idea = RUS_mig_design_bureau_final
+			remove_idea = RUE_mig_design_bureau_1_2
+			add_idea = RUE_mig_design_bureau_final
 		}
 	}
 
 	#ILYUSHIN
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau
+			has_idea = RUE_ilyushin_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_3_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_3_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau
-			add_idea = RUS_ilyushin_design_bureau_3
+			remove_idea = RUE_ilyushin_design_bureau
+			add_idea = RUE_ilyushin_design_bureau_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau_1
+			has_idea = RUE_ilyushin_design_bureau_1
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_3_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_3_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau_1
-			add_idea = RUS_ilyushin_design_bureau_1_3
+			remove_idea = RUE_ilyushin_design_bureau_1
+			add_idea = RUE_ilyushin_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau_2
+			has_idea = RUE_ilyushin_design_bureau_2
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_3_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_3_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau_2
-			add_idea = RUS_ilyushin_design_bureau_2_3
+			remove_idea = RUE_ilyushin_design_bureau_2
+			add_idea = RUE_ilyushin_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_ilyushin_design_bureau_1_2
+			has_idea = RUE_ilyushin_design_bureau_1_2
 		}
-		set_country_flag = RUS_merge_aircraft_ilyushin_3_flag
+		set_country_flag = RUE_merge_aircraft_ilyushin_3_flag
 		swap_ideas = {
-			remove_idea = RUS_ilyushin_design_bureau_1_2
-			add_idea = RUS_ilyushin_design_bureau_final
+			remove_idea = RUE_ilyushin_design_bureau_1_2
+			add_idea = RUE_ilyushin_design_bureau_final
 		}
 	}
 
 	#TUPOLEV
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau
+			has_idea = RUE_tupolev_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_3_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_3_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau
-			add_idea = RUS_tupolev_design_bureau_3
+			remove_idea = RUE_tupolev_design_bureau
+			add_idea = RUE_tupolev_design_bureau_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau_1
+			has_idea = RUE_tupolev_design_bureau_1
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_3_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_3_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau_1
-			add_idea = RUS_tupolev_design_bureau_1_3
+			remove_idea = RUE_tupolev_design_bureau_1
+			add_idea = RUE_tupolev_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau_2
+			has_idea = RUE_tupolev_design_bureau_2
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_3_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_3_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau_2
-			add_idea = RUS_tupolev_design_bureau_2_3
+			remove_idea = RUE_tupolev_design_bureau_2
+			add_idea = RUE_tupolev_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tupolev_design_bureau_1_2
+			has_idea = RUE_tupolev_design_bureau_1_2
 		}
-		set_country_flag = RUS_merge_aircraft_tupolev_3_flag
+		set_country_flag = RUE_merge_aircraft_tupolev_3_flag
 		swap_ideas = {
-			remove_idea = RUS_tupolev_design_bureau_1_2
-			add_idea = RUS_tupolev_design_bureau_final
+			remove_idea = RUE_tupolev_design_bureau_1_2
+			add_idea = RUE_tupolev_design_bureau_final
 		}
 	}
 
 	#YAKOVLEV
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau
+			has_idea = RUE_yakovlev_design_bureau
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_3_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_3_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau
-			add_idea = RUS_yakovlev_design_bureau_3
+			remove_idea = RUE_yakovlev_design_bureau
+			add_idea = RUE_yakovlev_design_bureau_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau_1
+			has_idea = RUE_yakovlev_design_bureau_1
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_3_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_3_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau_1
-			add_idea = RUS_yakovlev_design_bureau_1_3
+			remove_idea = RUE_yakovlev_design_bureau_1
+			add_idea = RUE_yakovlev_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau_2
+			has_idea = RUE_yakovlev_design_bureau_2
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_3_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_3_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau_2
-			add_idea = RUS_yakovlev_design_bureau_2_3
+			remove_idea = RUE_yakovlev_design_bureau_2
+			add_idea = RUE_yakovlev_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_yakovlev_design_bureau_1_2
+			has_idea = RUE_yakovlev_design_bureau_1_2
 		}
-		set_country_flag = RUS_merge_aircraft_yakovlev_3_flag
+		set_country_flag = RUE_merge_aircraft_yakovlev_3_flag
 		swap_ideas = {
-			remove_idea = RUS_yakovlev_design_bureau_1_2
-			add_idea = RUS_yakovlev_design_bureau_final
+			remove_idea = RUE_yakovlev_design_bureau_1_2
+			add_idea = RUE_yakovlev_design_bureau_final
 		}
 	}
 }
@@ -3348,134 +3348,134 @@ RUS_upgrade_appropriate_aircraft_designer_3_effect = {
  #     #  #    #    #    #       #   #   #  #       #             #
  #     #  #    #    #    ######  #    #  #  ######  ######      #####
 
-RUS_upgrade_appropriate_materiel_designer_1_artillery_effect = {
+RUE_upgrade_appropriate_materiel_designer_1_artillery_effect = {
 	#GRABIN
 	if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau
+			has_idea = RUE_grabin_design_bureau
 		}
-		set_country_flag = RUS_merge_materiel_grabin_1_flag
+		set_country_flag = RUE_merge_materiel_grabin_1_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau
-			add_idea = RUS_grabin_design_bureau_1
+			remove_idea = RUE_grabin_design_bureau
+			add_idea = RUE_grabin_design_bureau_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau_2
+			has_idea = RUE_grabin_design_bureau_2
 		}
-		set_country_flag = RUS_merge_materiel_grabin_1_flag
+		set_country_flag = RUE_merge_materiel_grabin_1_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau_2
-			add_idea = RUS_grabin_design_bureau_1_2
+			remove_idea = RUE_grabin_design_bureau_2
+			add_idea = RUE_grabin_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau_3
+			has_idea = RUE_grabin_design_bureau_3
 		}
-		set_country_flag = RUS_merge_materiel_grabin_1_flag
+		set_country_flag = RUE_merge_materiel_grabin_1_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau_3
-			add_idea = RUS_grabin_design_bureau_1_3
+			remove_idea = RUE_grabin_design_bureau_3
+			add_idea = RUE_grabin_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau_2_3
+			has_idea = RUE_grabin_design_bureau_2_3
 		}
-		set_country_flag = RUS_merge_materiel_grabin_1_flag
+		set_country_flag = RUE_merge_materiel_grabin_1_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau_2_3
-			add_idea = RUS_grabin_design_bureau_final
+			remove_idea = RUE_grabin_design_bureau_2_3
+			add_idea = RUE_grabin_design_bureau_final
 		}
 	}
 }
 
-RUS_upgrade_appropriate_materiel_designer_1_infantry_effect = {
+RUE_upgrade_appropriate_materiel_designer_1_infantry_effect = {
 	#TULA
 	if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant
+			has_idea = RUE_tula_arms_plant
 		}
-		set_country_flag = RUS_merge_materiel_tula_1_flag
+		set_country_flag = RUE_merge_materiel_tula_1_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant
-			add_idea = RUS_tula_arms_plant_1
+			remove_idea = RUE_tula_arms_plant
+			add_idea = RUE_tula_arms_plant_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant_2
+			has_idea = RUE_tula_arms_plant_2
 		}
-		set_country_flag = RUS_merge_materiel_tula_1_flag
+		set_country_flag = RUE_merge_materiel_tula_1_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant_2
-			add_idea = RUS_tula_arms_plant_1_2
+			remove_idea = RUE_tula_arms_plant_2
+			add_idea = RUE_tula_arms_plant_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant_3
+			has_idea = RUE_tula_arms_plant_3
 		}
-		set_country_flag = RUS_merge_materiel_tula_1_flag
+		set_country_flag = RUE_merge_materiel_tula_1_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant_3
-			add_idea = RUS_tula_arms_plant_1_3
+			remove_idea = RUE_tula_arms_plant_3
+			add_idea = RUE_tula_arms_plant_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant_2_3
+			has_idea = RUE_tula_arms_plant_2_3
 		}
-		set_country_flag = RUS_merge_materiel_tula_1_flag
+		set_country_flag = RUE_merge_materiel_tula_1_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant_2_3
-			add_idea = RUS_tula_arms_plant_final
+			remove_idea = RUE_tula_arms_plant_2_3
+			add_idea = RUE_tula_arms_plant_final
 		}
 	}
 }
 
-RUS_upgrade_appropriate_materiel_designer_1_motorized_effect = {
+RUE_upgrade_appropriate_materiel_designer_1_motorized_effect = {
 	#GAZ
 	if = {
 		limit = {
-			has_idea = RUS_gaz
+			has_idea = RUE_gaz
 		}
-		set_country_flag = RUS_merge_materiel_gaz_1_flag
+		set_country_flag = RUE_merge_materiel_gaz_1_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz
-			add_idea = RUS_gaz_1
+			remove_idea = RUE_gaz
+			add_idea = RUE_gaz_1
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz_2
+			has_idea = RUE_gaz_2
 		}
-		set_country_flag = RUS_merge_materiel_gaz_1_flag
+		set_country_flag = RUE_merge_materiel_gaz_1_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz_2
-			add_idea = RUS_gaz_1_2
+			remove_idea = RUE_gaz_2
+			add_idea = RUE_gaz_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz_3
+			has_idea = RUE_gaz_3
 		}
-		set_country_flag = RUS_merge_materiel_gaz_1_flag
+		set_country_flag = RUE_merge_materiel_gaz_1_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz_3
-			add_idea = RUS_gaz_1_3
+			remove_idea = RUE_gaz_3
+			add_idea = RUE_gaz_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz_2_3
+			has_idea = RUE_gaz_2_3
 		}
-		set_country_flag = RUS_merge_materiel_gaz_1_flag
+		set_country_flag = RUE_merge_materiel_gaz_1_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz_2_3
-			add_idea = RUS_gaz_final
+			remove_idea = RUE_gaz_2_3
+			add_idea = RUE_gaz_final
 		}
 	}
 }
@@ -3489,130 +3489,130 @@ RUS_upgrade_appropriate_materiel_designer_1_motorized_effect = {
  #     #  #    #    #    ######  #    #  #  ######  ######      #######
 
 
-RUS_upgrade_appropriate_materiel_designer_2_effect = {
+RUE_upgrade_appropriate_materiel_designer_2_effect = {
 	#GRABIN
 	if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau
+			has_idea = RUE_grabin_design_bureau
 		}
-		set_country_flag = RUS_merge_materiel_grabin_2_flag
+		set_country_flag = RUE_merge_materiel_grabin_2_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau
-			add_idea = RUS_grabin_design_bureau_2
+			remove_idea = RUE_grabin_design_bureau
+			add_idea = RUE_grabin_design_bureau_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau_1
+			has_idea = RUE_grabin_design_bureau_1
 		}
-		set_country_flag = RUS_merge_materiel_grabin_2_flag
+		set_country_flag = RUE_merge_materiel_grabin_2_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau_1
-			add_idea = RUS_grabin_design_bureau_1_2
+			remove_idea = RUE_grabin_design_bureau_1
+			add_idea = RUE_grabin_design_bureau_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau_3
+			has_idea = RUE_grabin_design_bureau_3
 		}
-		set_country_flag = RUS_merge_materiel_grabin_2_flag
+		set_country_flag = RUE_merge_materiel_grabin_2_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau_3
-			add_idea = RUS_grabin_design_bureau_2_3
+			remove_idea = RUE_grabin_design_bureau_3
+			add_idea = RUE_grabin_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau_1_3
+			has_idea = RUE_grabin_design_bureau_1_3
 		}
-		set_country_flag = RUS_merge_materiel_grabin_2_flag
+		set_country_flag = RUE_merge_materiel_grabin_2_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau_1_3
-			add_idea = RUS_grabin_design_bureau_final
+			remove_idea = RUE_grabin_design_bureau_1_3
+			add_idea = RUE_grabin_design_bureau_final
 		}
 	}
 
 	#TULA
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant
+			has_idea = RUE_tula_arms_plant
 		}
-		set_country_flag = RUS_merge_materiel_tula_2_flag
+		set_country_flag = RUE_merge_materiel_tula_2_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant
-			add_idea = RUS_tula_arms_plant_2
+			remove_idea = RUE_tula_arms_plant
+			add_idea = RUE_tula_arms_plant_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant_1
+			has_idea = RUE_tula_arms_plant_1
 		}
-		set_country_flag = RUS_merge_materiel_tula_2_flag
+		set_country_flag = RUE_merge_materiel_tula_2_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant_1
-			add_idea = RUS_tula_arms_plant_1_2
+			remove_idea = RUE_tula_arms_plant_1
+			add_idea = RUE_tula_arms_plant_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant_3
+			has_idea = RUE_tula_arms_plant_3
 		}
-		set_country_flag = RUS_merge_materiel_tula_2_flag
+		set_country_flag = RUE_merge_materiel_tula_2_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant_3
-			add_idea = RUS_tula_arms_plant_2_3
+			remove_idea = RUE_tula_arms_plant_3
+			add_idea = RUE_tula_arms_plant_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant_1_3
+			has_idea = RUE_tula_arms_plant_1_3
 		}
-		set_country_flag = RUS_merge_materiel_tula_2_flag
+		set_country_flag = RUE_merge_materiel_tula_2_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant_1_3
-			add_idea = RUS_tula_arms_plant_final
+			remove_idea = RUE_tula_arms_plant_1_3
+			add_idea = RUE_tula_arms_plant_final
 		}
 	}
 
 	#GAZ
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz
+			has_idea = RUE_gaz
 		}
-		set_country_flag = RUS_merge_materiel_gaz_2_flag
+		set_country_flag = RUE_merge_materiel_gaz_2_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz
-			add_idea = RUS_gaz_2
+			remove_idea = RUE_gaz
+			add_idea = RUE_gaz_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz_1
+			has_idea = RUE_gaz_1
 		}
-		set_country_flag = RUS_merge_materiel_gaz_2_flag
+		set_country_flag = RUE_merge_materiel_gaz_2_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz_1
-			add_idea = RUS_gaz_1_2
+			remove_idea = RUE_gaz_1
+			add_idea = RUE_gaz_1_2
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz_3
+			has_idea = RUE_gaz_3
 		}
-		set_country_flag = RUS_merge_materiel_gaz_2_flag
+		set_country_flag = RUE_merge_materiel_gaz_2_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz_3
-			add_idea = RUS_gaz_2_3
+			remove_idea = RUE_gaz_3
+			add_idea = RUE_gaz_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz_1_3
+			has_idea = RUE_gaz_1_3
 		}
-		set_country_flag = RUS_merge_materiel_gaz_2_flag
+		set_country_flag = RUE_merge_materiel_gaz_2_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz_1_3
-			add_idea = RUS_gaz_final
+			remove_idea = RUE_gaz_1_3
+			add_idea = RUE_gaz_final
 		}
 	}
 }
@@ -3625,130 +3625,130 @@ RUS_upgrade_appropriate_materiel_designer_2_effect = {
  #     #  #    #    #    #       #   #   #  #       #           #     #
  #     #  #    #    #    ######  #    #  #  ######  ######       #####
 
-RUS_upgrade_appropriate_materiel_designer_3_effect = {
+RUE_upgrade_appropriate_materiel_designer_3_effect = {
 	#GRABIN
 	if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau
+			has_idea = RUE_grabin_design_bureau
 		}
-		set_country_flag = RUS_merge_materiel_grabin_3_flag
+		set_country_flag = RUE_merge_materiel_grabin_3_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau
-			add_idea = RUS_grabin_design_bureau_3
+			remove_idea = RUE_grabin_design_bureau
+			add_idea = RUE_grabin_design_bureau_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau_1
+			has_idea = RUE_grabin_design_bureau_1
 		}
-		set_country_flag = RUS_merge_materiel_grabin_3_flag
+		set_country_flag = RUE_merge_materiel_grabin_3_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau_1
-			add_idea = RUS_grabin_design_bureau_1_3
+			remove_idea = RUE_grabin_design_bureau_1
+			add_idea = RUE_grabin_design_bureau_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau_2
+			has_idea = RUE_grabin_design_bureau_2
 		}
-		set_country_flag = RUS_merge_materiel_grabin_3_flag
+		set_country_flag = RUE_merge_materiel_grabin_3_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau_2
-			add_idea = RUS_grabin_design_bureau_2_3
+			remove_idea = RUE_grabin_design_bureau_2
+			add_idea = RUE_grabin_design_bureau_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_grabin_design_bureau_1_2
+			has_idea = RUE_grabin_design_bureau_1_2
 		}
-		set_country_flag = RUS_merge_materiel_grabin_3_flag
+		set_country_flag = RUE_merge_materiel_grabin_3_flag
 		swap_ideas = {
-			remove_idea = RUS_grabin_design_bureau_1_2
-			add_idea = RUS_grabin_design_bureau_final
+			remove_idea = RUE_grabin_design_bureau_1_2
+			add_idea = RUE_grabin_design_bureau_final
 		}
 	}
 
 	#TULA
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant
+			has_idea = RUE_tula_arms_plant
 		}
-		set_country_flag = RUS_merge_materiel_tula_3_flag
+		set_country_flag = RUE_merge_materiel_tula_3_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant
-			add_idea = RUS_tula_arms_plant_3
+			remove_idea = RUE_tula_arms_plant
+			add_idea = RUE_tula_arms_plant_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant_1
+			has_idea = RUE_tula_arms_plant_1
 		}
-		set_country_flag = RUS_merge_materiel_tula_3_flag
+		set_country_flag = RUE_merge_materiel_tula_3_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant_1
-			add_idea = RUS_tula_arms_plant_1_3
+			remove_idea = RUE_tula_arms_plant_1
+			add_idea = RUE_tula_arms_plant_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant_2
+			has_idea = RUE_tula_arms_plant_2
 		}
-		set_country_flag = RUS_merge_materiel_tula_3_flag
+		set_country_flag = RUE_merge_materiel_tula_3_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant_2
-			add_idea = RUS_tula_arms_plant_2_3
+			remove_idea = RUE_tula_arms_plant_2
+			add_idea = RUE_tula_arms_plant_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_tula_arms_plant_1_2
+			has_idea = RUE_tula_arms_plant_1_2
 		}
-		set_country_flag = RUS_merge_materiel_tula_3_flag
+		set_country_flag = RUE_merge_materiel_tula_3_flag
 		swap_ideas = {
-			remove_idea = RUS_tula_arms_plant_1_2
-			add_idea = RUS_tula_arms_plant_final
+			remove_idea = RUE_tula_arms_plant_1_2
+			add_idea = RUE_tula_arms_plant_final
 		}
 	}
 
 	#GAZ
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz
+			has_idea = RUE_gaz
 		}
-		set_country_flag = RUS_merge_materiel_gaz_3_flag
+		set_country_flag = RUE_merge_materiel_gaz_3_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz
-			add_idea = RUS_gaz_3
+			remove_idea = RUE_gaz
+			add_idea = RUE_gaz_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz_1
+			has_idea = RUE_gaz_1
 		}
-		set_country_flag = RUS_merge_materiel_gaz_3_flag
+		set_country_flag = RUE_merge_materiel_gaz_3_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz_1
-			add_idea = RUS_gaz_1_3
+			remove_idea = RUE_gaz_1
+			add_idea = RUE_gaz_1_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz_2
+			has_idea = RUE_gaz_2
 		}
-		set_country_flag = RUS_merge_materiel_gaz_3_flag
+		set_country_flag = RUE_merge_materiel_gaz_3_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz_2
-			add_idea = RUS_gaz_2_3
+			remove_idea = RUE_gaz_2
+			add_idea = RUE_gaz_2_3
 		}
 	}
 	else_if = {
 		limit = {
-			has_idea = RUS_gaz_1_2
+			has_idea = RUE_gaz_1_2
 		}
-		set_country_flag = RUS_merge_materiel_gaz_3_flag
+		set_country_flag = RUE_merge_materiel_gaz_3_flag
 		swap_ideas = {
-			remove_idea = RUS_gaz_1_2
-			add_idea = RUS_gaz_final
+			remove_idea = RUE_gaz_1_2
+			add_idea = RUE_gaz_final
 		}
 	}
 }
@@ -3773,7 +3773,7 @@ RUS_upgrade_appropriate_materiel_designer_3_effect = {
 
 ###########################################################################################################################
 
-RUS_set_up_nkvd = {
+RUE_set_up_nkvd = {
 	random_owned_state = {
 		limit = { is_capital = yes }
 
@@ -3826,14 +3826,14 @@ RUS_set_up_nkvd = {
 		limit = {}
 		random_owned_controlled_state = {
 			create_unit = {
-				division = "division_template = \"NKVD Pogranichnaya Diviziya\" start_experience_factor = 0.2 start_equipment_factor = 1.0" owner = ROOT count = var:BWR.RUS_nkvd_divisions
+				division = "division_template = \"NKVD Pogranichnaya Diviziya\" start_experience_factor = 0.2 start_equipment_factor = 1.0" owner = ROOT count = var:RUE.RUE_nkvd_divisions
 			}
 
 		}
 	}
 }
 
-RUS_set_up_red_army = {
+RUE_set_up_red_army = {
 
 	delete_unit_template_and_units = {
 	    division_template = "Strelkovaya Diviziya"
@@ -3841,7 +3841,7 @@ RUS_set_up_red_army = {
 	}
 	division_template = {
 		name = "Strelkovaya Diviziya"
-		division_names_group = RUS_INF_01
+		division_names_group = RUE_INF_01
 
 		regiments = {
 			infantry = { x = 0 y = 0 }
@@ -3865,7 +3865,7 @@ RUS_set_up_red_army = {
 
 	division_template = {
 		name = "Motostrelkovaya Diviziya"
-		division_names_group = RUS_MOT_01
+		division_names_group = RUE_MOT_01
 		regiments = {
 			motorized = { x = 0 y = 0 }
 			motorized = { x = 0 y = 1 }
@@ -3881,7 +3881,7 @@ RUS_set_up_red_army = {
 	}
 	division_template = {
 		name = "Kavaleriyskaya Diviziya" 	# Cavalry Division
-		division_names_group = RUS_CAV_01
+		division_names_group = RUE_CAV_01
 
 		regiments = {
 			cavalry = { x = 0 y = 0 }
@@ -3890,7 +3890,7 @@ RUS_set_up_red_army = {
 			cavalry = { x = 1 y = 1 }
 		}
 	}
-	var:BWR.RUS_stalinist_civil_war_start_state = {
+	var:RUE.RUE_stalinist_civil_war_start_state = {
 
 		create_unit = {
 			division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.1 start_equipment_factor = 1.0" owner = PREV count = var:PREV.civil_war_army_size
@@ -3898,7 +3898,7 @@ RUS_set_up_red_army = {
 	}
 	random_owned_state = {
 		limit = {
-			NOT = { state = var:BWR.RUS_stalinist_civil_war_start_state  }
+			NOT = { state = var:RUE.RUE_stalinist_civil_war_start_state  }
 		}
 		create_unit = {
 			division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.1 start_equipment_factor = 1.0" owner = PREV count = var:PREV.civil_war_army_size
@@ -3906,8 +3906,8 @@ RUS_set_up_red_army = {
 	}
 	random_owned_state = {
 		limit = {
-			NOT = { state = var:BWR.RUS_stalinist_civil_war_start_state  }
-			any_neighbor_state = { state = var:BWR.RUS_stalinist_civil_war_start_state  }
+			NOT = { state = var:RUE.RUE_stalinist_civil_war_start_state  }
+			any_neighbor_state = { state = var:RUE.RUE_stalinist_civil_war_start_state  }
 		}
 		create_unit = {
 			division = "name = \"Moskva Proletarskaya Motostrelkovaya Diviziya\" division_template = \"Motostrelkovaya Diviziya\" start_experience_factor = 0.1 start_equipment_factor = 1.0" owner = PREV count = 1
@@ -3915,7 +3915,7 @@ RUS_set_up_red_army = {
 	}
 	random_owned_state = {
 		limit = {
-			any_neighbor_state = { state = var:BWR.RUS_stalinist_civil_war_start_state }
+			any_neighbor_state = { state = var:RUE.RUE_stalinist_civil_war_start_state }
 		}
 		create_unit = {
 			division = "name = \"Kavaleriyskaya Diviziya\" division_template = \"Kavaleriyskaya Diviziya\" start_experience_factor = 0.1 start_equipment_factor = 1.0" owner = PREV count = var:PREV.civil_war_army_size
@@ -3926,11 +3926,11 @@ RUS_set_up_red_army = {
 
 }
 
-RUS_set_up_left_opposition_militia = {
+RUE_set_up_left_opposition_militia = {
 	division_template = {
 	    name = "Trotskyist Workers' Militia"
 	    is_locked = yes
-	    division_names_group = RUS_INF_01
+	    division_names_group = RUE_INF_01
 	    priority = 0
 	    template_counter = 0
 	    regiments = {
@@ -3943,7 +3943,7 @@ RUS_set_up_left_opposition_militia = {
 	division_template = {
 	    name = "Trotskyist Peasant Militia"
 	    is_locked = yes
-	    division_names_group = RUS_INF_01
+	    division_names_group = RUE_INF_01
 	    priority = 0
 	    template_counter = 14
 	    regiments = {
@@ -3980,11 +3980,11 @@ RUS_set_up_left_opposition_militia = {
 	}
 }
 
-RUS_set_up_right_opposition_militia = {
+RUE_set_up_right_opposition_militia = {
 	division_template = {
 	    name = "Bukharinist Workers' Militia"
 	    is_locked = yes
-	    division_names_group = RUS_INF_01
+	    division_names_group = RUE_INF_01
 	    priority = 0
 	    template_counter = 0
 	    regiments = {
@@ -3997,7 +3997,7 @@ RUS_set_up_right_opposition_militia = {
 	division_template = {
 	    name = "Bukharinist Peasant Militia"
 	    is_locked = yes
-	    division_names_group = RUS_INF_01
+	    division_names_group = RUE_INF_01
 	    priority = 0
 	    template_counter = 14
 	    regiments = {
@@ -4036,24 +4036,24 @@ RUS_set_up_right_opposition_militia = {
 	}
 }
 
-RUS_set_up_extras_from_concessions = {
+RUE_set_up_extras_from_concessions = {
 	# Extra Troops from Japan?
 	IF = {
 		limit = {
-			has_country_flag = RUS_CSW_transfer_vladivostok_flag
+			has_country_flag = RUE_CSW_transfer_vladivostok_flag
 			any_country= {
-				original_tag = BWR
+				original_tag = RUE
 				owns_state = 408
 			}
 		}
-		RUS_set_up_japanese_troops = yes
+		RUE_set_up_japanese_troops = yes
 	}
 	# Equipment from Japan in return for North Sakhalin
 	IF = {
 		limit = {
-			has_country_flag = RUS_CSW_transfer_sakhalin_flag
+			has_country_flag = RUE_CSW_transfer_sakhalin_flag
 			any_country= {
-				original_tag = BWR
+				original_tag = RUE
 				owns_state = 655
 			}
 		}
@@ -4063,7 +4063,7 @@ RUS_set_up_extras_from_concessions = {
 	# Advisors from Germany
 	IF = {
 		limit = {
-			has_country_flag = RUS_CSW_german_advisors_flag
+			has_country_flag = RUE_CSW_german_advisors_flag
 		}
 		GER = {
 			country_event = {
@@ -4076,7 +4076,7 @@ RUS_set_up_extras_from_concessions = {
 	# Equipment from Germany
 	IF = { 
 		limit = { 
-			has_country_flag = RUS_CSW_baku_oil_flag 
+			has_country_flag = RUE_CSW_baku_oil_flag 
 		}
 		IF = {
 			limit = {
@@ -4098,7 +4098,7 @@ RUS_set_up_extras_from_concessions = {
 	# German Ukrainian Insurrection
 	IF = {
 		limit = {
-			has_country_flag = RUS_CSW_ukraine_germany_ready_flag
+			has_country_flag = RUE_CSW_ukraine_germany_ready_flag
 		}
 		country_event = {
 			id = NSB_soviet_civil_war_common.114
@@ -4108,7 +4108,7 @@ RUS_set_up_extras_from_concessions = {
 
 	# Adding weapons for trotsky
 	for_each_loop = {
-		array = BWR.many_weapons_array
+		array = RUE.many_weapons_array
 		value = weapons_country
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
@@ -4117,7 +4117,7 @@ RUS_set_up_extras_from_concessions = {
 		}
 	}
 	for_each_loop = {
-		array = BWR.few_weapons_array
+		array = RUE.few_weapons_array
 		value = weapons_country
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
@@ -4161,7 +4161,7 @@ RUS_set_up_extras_from_concessions = {
 
 ####### Change stuff based on ideology #######
 
-RUS_replace_stuff_based_on_ideology_effect = {
+RUE_replace_stuff_based_on_ideology_effect = {
 	### FIVE YEAR PLANS
 	if = {
 		limit = {
@@ -4169,61 +4169,61 @@ RUS_replace_stuff_based_on_ideology_effect = {
 		}
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_third_five_year_plan_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_third_five_year_plan_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_third_five_year_plan_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_third_five_year_plan_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_third_five_year_plan_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_third_five_year_plan_dynamic_modifier_alt }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_third_five_year_plan_civilian_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_third_five_year_plan_civilian_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_third_five_year_plan_civilian_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_third_five_year_plan_civilian_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_third_five_year_plan_civilian_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_third_five_year_plan_civilian_dynamic_modifier_alt }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_third_five_year_plan_military_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_third_five_year_plan_military_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_third_five_year_plan_military_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_third_five_year_plan_military_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_third_five_year_plan_military_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_third_five_year_plan_military_dynamic_modifier_alt }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_fourth_five_year_plan_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_fourth_five_year_plan_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_fourth_five_year_plan_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_fourth_five_year_plan_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_fourth_five_year_plan_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_fourth_five_year_plan_dynamic_modifier_alt }
 		}
 	}
 	else = {
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_third_five_year_plan_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_third_five_year_plan_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_third_five_year_plan_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_third_five_year_plan_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_third_five_year_plan_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_third_five_year_plan_dynamic_modifier }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_third_five_year_plan_civilian_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_third_five_year_plan_civilian_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_third_five_year_plan_civilian_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_third_five_year_plan_civilian_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_third_five_year_plan_civilian_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_third_five_year_plan_civilian_dynamic_modifier }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_third_five_year_plan_military_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_third_five_year_plan_military_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_third_five_year_plan_military_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_third_five_year_plan_military_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_third_five_year_plan_military_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_third_five_year_plan_military_dynamic_modifier }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_fourth_five_year_plan_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_fourth_five_year_plan_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_fourth_five_year_plan_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_fourth_five_year_plan_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_fourth_five_year_plan_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_fourth_five_year_plan_dynamic_modifier }
 		}
 	}
 
@@ -4234,56 +4234,56 @@ RUS_replace_stuff_based_on_ideology_effect = {
 		}
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_ussr_academy_of_sciences_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_ussr_academy_of_sciences_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_ussr_academy_of_sciences_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_ussr_academy_of_sciences_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_ussr_academy_of_sciences_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_ussr_academy_of_sciences_dynamic_modifier_alt }
 		}
 	}
 	else = { #IS COMMIE -> ADD REGULAR STUFF
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_ussr_academy_of_sciences_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_ussr_academy_of_sciences_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_ussr_academy_of_sciences_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_ussr_academy_of_sciences_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_ussr_academy_of_sciences_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_ussr_academy_of_sciences_dynamic_modifier }
 		}
 	}
 
-	### RUSIET AIRFORCE
+	### RUEIET AIRFORCE
 	if = { #IS NOT COMMIE -> ADD ALT STUFF
 		limit = {
 			NOT = { has_government = communism }
 		}
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_soviet_airforce_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_soviet_airforce_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_soviet_airforce_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_soviet_airforce_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_soviet_airforce_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_soviet_airforce_dynamic_modifier_alt }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_soviet_airforce_aircraft_production_focus_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_soviet_airforce_aircraft_production_focus_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
 		}
 	}
 	else = { #IS COMMIE -> ADD REGULAR STUFF
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_soviet_airforce_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_soviet_airforce_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_soviet_airforce_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_soviet_airforce_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_soviet_airforce_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_soviet_airforce_dynamic_modifier }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_soviet_airforce_aircraft_production_focus_dynamic_modifier }
 		}
 	}
 
@@ -4294,75 +4294,75 @@ RUS_replace_stuff_based_on_ideology_effect = {
 		}
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_dynamic_modifier_alt }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_1_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_1_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_1_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_1_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_1_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_1_dynamic_modifier_alt }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_2_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_2_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_2_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_2_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_2_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_2_dynamic_modifier_alt }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_1_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_1_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_1_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_1_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_1_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_1_dynamic_modifier_alt }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_2_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_2_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_2_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_2_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_2_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_2_dynamic_modifier_alt }
 		}
 	}
 	else = { #IS COMMIE -> ADD REGULAR STUFF
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_dynamic_modifier }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_1_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_1_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_1_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_1_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_1_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_1_dynamic_modifier }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_2_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_2_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_2_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_surface_2_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_2_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_surface_2_dynamic_modifier }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_1_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_1_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_1_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_1_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_1_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_1_dynamic_modifier }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_2_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_2_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_2_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_the_red_fleet_submarine_2_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_2_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_the_red_fleet_submarine_2_dynamic_modifier }
 		}
 	}
 
@@ -4373,19 +4373,19 @@ RUS_replace_stuff_based_on_ideology_effect = {
 		}
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_army_dynamic_modifier }
+				has_dynamic_modifier = { modifier = RUE_the_red_army_dynamic_modifier }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_army_dynamic_modifier }
-			add_dynamic_modifier = { modifier = RUS_the_red_army_dynamic_modifier_alt }
+			remove_dynamic_modifier = { modifier = RUE_the_red_army_dynamic_modifier }
+			add_dynamic_modifier = { modifier = RUE_the_red_army_dynamic_modifier_alt }
 		}
 	}
 	else = { #IS COMMIE -> ADD REGULAR STUFF
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = RUS_the_red_army_dynamic_modifier_alt }
+				has_dynamic_modifier = { modifier = RUE_the_red_army_dynamic_modifier_alt }
 			}
-			remove_dynamic_modifier = { modifier = RUS_the_red_army_dynamic_modifier_alt }
-			add_dynamic_modifier = { modifier = RUS_the_red_army_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = RUE_the_red_army_dynamic_modifier_alt }
+			add_dynamic_modifier = { modifier = RUE_the_red_army_dynamic_modifier }
 		}
 	}
 }
