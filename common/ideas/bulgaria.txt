@@ -1423,7 +1423,7 @@ ideas = {
 			removal_cost = -1
 
 			targeted_modifier = {
-				tag = BWR
+				tag = RUE
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}
@@ -1491,7 +1491,7 @@ ideas = {
 			}
 
 			targeted_modifier = {
-				tag = BWR
+				tag = RUE
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}
@@ -2160,7 +2160,7 @@ ideas = {
 					limit = {
 						NOT = { has_country_flag = BUL_contract_with_soviet_tank_designer_flag }
 					}
-					BWR = { #Scripted trigger for this generates confusing tt due to indentation
+					RUE = { #Scripted trigger for this generates confusing tt due to indentation
 						has_opinion = {
 							target = ROOT
 							value > 49
@@ -2170,9 +2170,9 @@ ideas = {
 				}
 				OR = {
 					is_subject = no
-					is_subject_of = BWR
+					is_subject_of = RUE
 				}
-				is_in_faction_with = BWR
+				is_in_faction_with = RUE
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
@@ -2426,7 +2426,7 @@ ideas = {
 					limit = {
 						NOT = { has_country_flag = BUL_contract_with_soviet_naval_designer_flag }
 					}
-					BWR = { #Scripted trigger for this generates confusing tt due to indentation
+					RUE = { #Scripted trigger for this generates confusing tt due to indentation
 						has_opinion = {
 							target = ROOT
 							value > 49
@@ -2434,10 +2434,10 @@ ideas = {
 						has_capitulated = no
 					}
 				}
-				NOT = { has_war_with = BWR }
+				NOT = { has_war_with = RUE }
 				OR = {
 					is_subject = no
-					is_subject_of = BWR
+					is_subject_of = RUE
 				}
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
@@ -2824,7 +2824,7 @@ ideas = {
 					limit = {
 						NOT = { has_country_flag = BUL_contract_with_soviet_aircraft_designer_flag }
 					}
-					BWR = { #Scripted trigger for this generates confusing tt due to indentation
+					RUE = { #Scripted trigger for this generates confusing tt due to indentation
 						has_opinion = {
 							target = ROOT
 							value > 49
@@ -2832,10 +2832,10 @@ ideas = {
 						has_capitulated = no
 					}
 				}
-				NOT = { has_war_with = BWR }
+				NOT = { has_war_with = RUE }
 				OR = {
 					is_subject = no
-					is_subject_of = BWR
+					is_subject_of = RUE
 				}
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
@@ -3172,7 +3172,7 @@ ideas = {
 					limit = {
 						NOT = { has_country_flag = BUL_contract_with_soviet_materiel_designer_flag }
 					}
-					BWR = { #Scripted trigger for this generates confusing tt due to indentation
+					RUE = { #Scripted trigger for this generates confusing tt due to indentation
 						has_opinion = {
 							target = ROOT
 							value > 49
@@ -3181,10 +3181,10 @@ ideas = {
 						
 					}
 				}
-				NOT = { has_war_with = BWR }
+				NOT = { has_war_with = RUE }
 				OR = {
 					is_subject = no
-					is_subject_of = BWR
+					is_subject_of = RUE
 				}
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
@@ -3652,7 +3652,7 @@ ideas = {
 					limit = {
 						NOT = { has_country_flag = BUL_contract_with_soviet_industrial_concern_flag }
 					}
-					BWR = { #Scripted trigger for this generates confusing tt due to indentation
+					RUE = { #Scripted trigger for this generates confusing tt due to indentation
 						has_opinion = {
 							target = ROOT
 							value > 49
@@ -3661,10 +3661,10 @@ ideas = {
 						
 					}
 				}
-				NOT = { has_war_with = BWR }
+				NOT = { has_war_with = RUE }
 				OR = {
 					is_subject = no
-					is_subject_of = BWR
+					is_subject_of = RUE
 				}
 				custom_trigger_tooltip = {
 					tooltip = BUL_foreign_industrial_concern_requirements_sov_tt
@@ -3863,7 +3863,7 @@ ideas = {
 			removal_cost = -1
 
 			targeted_modifier = {
-				tag = BWR
+				tag = RUE
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}

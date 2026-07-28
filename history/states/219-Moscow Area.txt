@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = BWR
+		owner = RUE
 		victory_points = {
 			6380 50 
 		}
@@ -32,7 +32,7 @@ state={
 				land_facility = 1 # Mytischi
 			}
 		}
-		add_core_of = BWR
+		add_core_of = RUE
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

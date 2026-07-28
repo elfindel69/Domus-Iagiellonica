@@ -1690,7 +1690,7 @@ on_actions = {
 			}
 		}
 
-		# FINNISH CONFEDERATED FINNO-RUSSIAN REPUBLICS
+		# FINNISH CONFEDERATED FINNO-RUESIAN REPUBLICS
 		effect = { #	ROOT is new controller, FROM is old controller, FROM.FROM is state ID.
 			if = {
 				limit = {
@@ -2619,7 +2619,7 @@ on_actions = {
 				}
 				drop_cosmetic_tag = yes
 			}
-			if = { #CONFEDERATED FINNO-RUSSIAN REPUBLICS cosmetic
+			if = { #CONFEDERATED FINNO-RUESIAN REPUBLICS cosmetic
 				limit = {
 					has_cosmetic_tag = FIN_confederated_finno_russian_republics
 					OR = {
@@ -3483,7 +3483,7 @@ on_actions = {
 				}
 
 				#### GOOD ####
-				#ANTI-FASCIST CRUSADE
+				#ANTI-FASCIST CRUEADE
 				if = {
 					limit = {
 						has_war = yes

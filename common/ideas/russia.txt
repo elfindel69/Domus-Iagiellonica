@@ -10,7 +10,7 @@ ideas = {
 
 
 	country= {
-		RUS_exiled_royal_family = {
+		RUE_exiled_royal_family = {
 
 			allowed = {
 				always = no
@@ -31,7 +31,7 @@ ideas = {
 			removal_cost = -1
 		}
 			
-		RUS_confiscated_royal_wealth = {
+		RUE_confiscated_royal_wealth = {
 	
 			allowed = {
 				always = no
@@ -53,7 +53,7 @@ ideas = {
 		}
 
 		
-		RUS_ideological_fanaticism = {
+		RUE_ideological_fanaticism = {
 			
 			
 			allowed = {
@@ -73,7 +73,7 @@ ideas = {
 			}
 		}
 
-		RUS_democracy = {
+		RUE_democracy = {
 			
 			
 			allowed = {
@@ -94,10 +94,10 @@ ideas = {
 			}
 		}
 		
-		RUS_militarism_focus = {
+		RUE_militarism_focus = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -115,10 +115,10 @@ ideas = {
 				resistance_damage_to_garrison = -0.1 
 			}
 		}
-		RUS_authoritarianism_focus = {
+		RUE_authoritarianism_focus = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -142,10 +142,10 @@ ideas = {
 				monarchist_drift = -0.1
 			}
 		}
-		RUS_internationalism_focus = {
+		RUE_internationalism_focus = {
 		
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -161,7 +161,7 @@ ideas = {
 				trade_opinion_factor = 0.2
 			}
 		}								
-		RUS_royal_guard = {
+		RUE_royal_guard = {
 
 			allowed = {
 				always = no
@@ -181,7 +181,7 @@ ideas = {
 			}
 		}
 	
-		RUS_royal_officer_corps = {
+		RUE_royal_officer_corps = {
 	
 			allowed = {
 				always = no
@@ -201,10 +201,10 @@ ideas = {
 				training_time_factor = -0.1
 			}
 		}
-		RUS_neutrality_government = {
+		RUE_neutrality_government = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -222,10 +222,10 @@ ideas = {
 			}
 		}
 	
-		RUS_fascist_government = {
+		RUE_fascist_government = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -243,10 +243,10 @@ ideas = {
 			}
 		}
 	
-		RUS_communist_government = {
+		RUE_communist_government = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -264,7 +264,7 @@ ideas = {
 			}
 		}
 	
-		RUS_fascist_influence = {
+		RUE_fascist_influence = {
 			
 			allowed = {
 				always = no
@@ -289,7 +289,7 @@ ideas = {
 			}
 		}
 		
-		RUS_communist_influence = {
+		RUE_communist_influence = {
 			
 			
 			allowed = {
@@ -315,7 +315,7 @@ ideas = {
 			}
 		}
 		
-		RUS_communist_science = {
+		RUE_communist_science = {
 			
 			
 			allowed = {
@@ -337,10 +337,10 @@ ideas = {
 		
 	
 	
-		RUS_monarchism_focus = {
+		RUE_monarchism_focus = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -365,10 +365,10 @@ ideas = {
 			}
 		}
 		
-		RUS_king_rules_focus = {
+		RUE_king_rules_focus = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -388,10 +388,10 @@ ideas = {
 			}
 		}
 
-		RUS_polish_deal = {
+		RUE_polish_deal = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -412,10 +412,10 @@ ideas = {
 			}
 		}
 
-		RUS_baltic_deal = {
+		RUE_baltic_deal = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -438,10 +438,10 @@ ideas = {
 			}
 		}
 
-		RUS_monarchist_science = {
+		RUE_monarchist_science = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -460,10 +460,10 @@ ideas = {
 			}
 		}
 
-		RUS_a_strong_army = {
+		RUE_a_strong_army = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -481,10 +481,10 @@ ideas = {
 				research_speed_factor = +0.2
 			}
 		}
-		RUS_army_doctrine = {
+		RUE_army_doctrine = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -503,10 +503,10 @@ ideas = {
 			}
 		}
 
-		RUS_government_doctrine = {
+		RUE_government_doctrine = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -527,10 +527,10 @@ ideas = {
 			}
 		}
 
-		RUS_approach_germany = {
+		RUE_approach_germany = {
 				
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -552,9 +552,9 @@ ideas = {
 				
 			}
 		}
-		RUS_approach_italy = {
+		RUE_approach_italy = {
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -573,9 +573,9 @@ ideas = {
 				
 			}
 		}
-		RUS_for_the_motherland = {
+		RUE_for_the_motherland = {
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 				always = no
 			}
 
@@ -592,8 +592,8 @@ ideas = {
 				democratic_drift = -0.1
 			}
 		}
-		RUS_second_five_year_plan_fake_1936_ns = { #Only used for 1936 bookmark (dynamic modifiers don't show up there)
-			name = RUS_second_five_year_plan_dynamic_modifier
+		RUE_second_five_year_plan_fake_1936_ns = { #Only used for 1936 bookmark (dynamic modifiers don't show up there)
+			name = RUE_second_five_year_plan_dynamic_modifier
 
 			removal_cost = -1
 
@@ -611,8 +611,8 @@ ideas = {
 			}
 		}
 
-		RUS_second_five_year_plan_fake_1939_ns = { #Only used for 1939 bookmark (dynamic modifiers don't show up there)
-			name = RUS_second_five_year_plan_dynamic_modifier
+		RUE_second_five_year_plan_fake_1939_ns = { #Only used for 1939 bookmark (dynamic modifiers don't show up there)
+			name = RUE_second_five_year_plan_dynamic_modifier
 
 			removal_cost = -1
 
@@ -652,7 +652,7 @@ ideas = {
 			}
 		}
 
-		RUS_molotov_ribbentrop_pact = {
+		RUE_molotov_ribbentrop_pact = {
 			removal_cost = -1
 
 			picture = soviet_german_friendship
@@ -672,7 +672,7 @@ ideas = {
 
 		
 
-		RUS_restoration_and_development_idea = { #Comes from focus
+		RUE_restoration_and_development_idea = { #Comes from focus
 			removal_cost = -1
 
 			allowed = {
@@ -680,7 +680,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			picture = generic_exploit_mines
@@ -692,7 +692,7 @@ ideas = {
 			}
 		}
 
-		RUS_no_time_for_peace_idea = { #Comes from focus
+		RUE_no_time_for_peace_idea = { #Comes from focus
 			removal_cost = -1
 
 			allowed = {
@@ -700,7 +700,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			picture = usa_magic
@@ -713,7 +713,7 @@ ideas = {
 			}
 		}
 
-		RUS_transformation_of_nature = { #Comes from focus
+		RUE_transformation_of_nature = { #Comes from focus
 			removal_cost = -1
 
 			allowed = {
@@ -721,7 +721,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			picture = SOV_transformation_of_nature
@@ -733,8 +733,8 @@ ideas = {
 			}
 		}
 
-		RUS_support_in_china_communism = {
-			name = RUS_support_in_china_generic
+		RUE_support_in_china_communism = {
+			name = RUE_support_in_china_generic
 
 			removal_cost = -1
 
@@ -743,15 +743,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			cancel = {
 				OR = {
-					has_war_with = BWR
+					has_war_with = RUE
 					AND = {
 						is_subject = yes
-						NOT = { is_subject_of = BWR }
+						NOT = { is_subject_of = RUE }
 					}
 				}
 			}
@@ -763,8 +763,8 @@ ideas = {
 			}
 		}
 
-		RUS_support_in_china_democratic = {
-			name = RUS_support_in_china_generic
+		RUE_support_in_china_democratic = {
+			name = RUE_support_in_china_generic
 
 			removal_cost = -1
 
@@ -773,15 +773,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			cancel = {
 				OR = {
-					has_war_with = BWR
+					has_war_with = RUE
 					AND = {
 						is_subject = yes
-						NOT = { is_subject_of = BWR }
+						NOT = { is_subject_of = RUE }
 					}
 				}
 			}
@@ -793,8 +793,8 @@ ideas = {
 			}
 		}
 
-		RUS_support_in_china_fascism = {
-			name = RUS_support_in_china_generic
+		RUE_support_in_china_fascism = {
+			name = RUE_support_in_china_generic
 
 			removal_cost = -1
 
@@ -803,15 +803,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			cancel = {
 				OR = {
-					has_war_with = BWR
+					has_war_with = RUE
 					AND = {
 						is_subject = yes
-						NOT = { is_subject_of = BWR }
+						NOT = { is_subject_of = RUE }
 					}
 				}
 			}
@@ -823,8 +823,8 @@ ideas = {
 			}
 		}
 
-		RUS_support_in_china_neutrality = {
-			name = RUS_support_in_china_generic
+		RUE_support_in_china_neutrality = {
+			name = RUE_support_in_china_generic
 
 			removal_cost = -1
 
@@ -833,15 +833,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			cancel = {
 				OR = {
-					has_war_with = BWR
+					has_war_with = RUE
 					AND = {
 						is_subject = yes
-						NOT = { is_subject_of = BWR }
+						NOT = { is_subject_of = RUE }
 					}
 				}
 			}
@@ -853,8 +853,8 @@ ideas = {
 			}
 		}
 
-		RUS_support_in_china_monarchist = {
-			name = RUS_support_in_china_generic
+		RUE_support_in_china_monarchist = {
+			name = RUE_support_in_china_generic
 
 			removal_cost = -1
 
@@ -863,15 +863,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			cancel = {
 				OR = {
-					has_war_with = BWR
+					has_war_with = RUE
 					AND = {
 						is_subject = yes
-						NOT = { is_subject_of = BWR }
+						NOT = { is_subject_of = RUE }
 					}
 				}
 			}
@@ -883,7 +883,7 @@ ideas = {
 			}
 		}
 
-		RUS_preparations_for_soviet_japanese_war = {
+		RUE_preparations_for_soviet_japanese_war = {
 			removal_cost = -1
 
 			allowed = {
@@ -891,7 +891,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			picture = CZE_planning_bonus
@@ -902,8 +902,8 @@ ideas = {
 			}
 		}
 
-		RUS_preparations_for_soviet_japanese_war_china = {
-			name = RUS_preparations_for_soviet_japanese_war
+		RUE_preparations_for_soviet_japanese_war_china = {
+			name = RUE_preparations_for_soviet_japanese_war
 
 			removal_cost = -1
 
@@ -919,7 +919,7 @@ ideas = {
 			}
 		}
 
-		RUS_soviet_japanese_reckoning = {
+		RUE_soviet_japanese_reckoning = {
 			removal_cost = -1
 
 			allowed = {
@@ -927,7 +927,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			picture = generic_japanese_conflict
@@ -939,8 +939,8 @@ ideas = {
 			}
 		}
 
-		RUS_soviet_japanese_reckoning_china = {
-			name = RUS_soviet_japanese_reckoning
+		RUE_soviet_japanese_reckoning_china = {
+			name = RUE_soviet_japanese_reckoning
 
 			removal_cost = -1
 
@@ -961,7 +961,7 @@ ideas = {
 			}
 		}
 
-		RUS_soviet_japanese_anti_usa_pact = {
+		RUE_soviet_japanese_anti_usa_pact = {
 			removal_cost = -1
 
 			allowed = {
@@ -969,7 +969,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			picture = generic_usa_conflict
@@ -980,8 +980,8 @@ ideas = {
 			}
 		}
 
-		RUS_defense_industry_artillery_bonus = {
-			name = RUS_soviet_artillery
+		RUE_defense_industry_artillery_bonus = {
+			name = RUE_soviet_artillery
 
 			picture = generic_artillery_regiments
 
@@ -992,7 +992,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = BWR #Every BWR has this
+				original_tag = RUE #Every RUE has this
 			}
 
 			equipment_bonus = {
@@ -1007,8 +1007,8 @@ ideas = {
 			}
 		}
 
-		RUS_the_road_of_life_ns = {
-			name = RUS_the_road_of_life
+		RUE_the_road_of_life_ns = {
+			name = RUE_the_road_of_life
 
 			picture = SOV_the_road_of_life
 
@@ -1019,7 +1019,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR #Main BWR
+				tag = RUE #Main RUE
 			}
 
 			modifier = {
@@ -1029,8 +1029,8 @@ ideas = {
 			}
 		}
 
-		RUS_desperate_measures_ns = {
-			name = RUS_desperate_measures
+		RUE_desperate_measures_ns = {
+			name = RUE_desperate_measures
 
 			picture = tfv_can_conscription_crisis
 
@@ -1041,7 +1041,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR #Main BWR
+				tag = RUE #Main RUE
 			}
 
 			modifier = {
@@ -1051,8 +1051,8 @@ ideas = {
 			}
 		}
 
-		RUS_smersh = {
-			name = RUS_smersh
+		RUE_smersh = {
+			name = RUE_smersh
 
 			picture = smersh
 
@@ -1068,8 +1068,8 @@ ideas = {
 			}
 		}
 
-		RUS_smersh_no_lar = {
-			name = RUS_smersh
+		RUE_smersh_no_lar = {
+			name = RUE_smersh
 
 			picture = smersh
 
@@ -1087,8 +1087,8 @@ ideas = {
 
 		
 
-		RUS_development_of_eastern_allies = {
-			name = RUS_development_aid_for_eastern_allies
+		RUE_development_of_eastern_allies = {
+			name = RUE_development_aid_for_eastern_allies
 
 			picture = tur_etatism
 
@@ -1104,12 +1104,12 @@ ideas = {
 
 			modifier = {
 				civilian_factory_use = 3
-				custom_modifier_tooltip = RUS_development_of_eastern_allies_tt
+				custom_modifier_tooltip = RUE_development_of_eastern_allies_tt
 			}
 		}
 
-		RUS_war_measures_allies = {
-			name = RUS_war_measures_in_the_east
+		RUE_war_measures_allies = {
+			name = RUE_war_measures_in_the_east
 
 			picture = ast_volunteer_defence_corps
 
@@ -1130,7 +1130,7 @@ ideas = {
 			}
 		}
 
-		RUS_military_advisors_in_spain = {
+		RUE_military_advisors_in_spain = {
 			picture = SPR_nationalist_remnants
 
 			removal_cost = -1
@@ -1148,7 +1148,7 @@ ideas = {
 			}
 		}
 
-		RUS_soviet_advisors_spr = {
+		RUE_soviet_advisors_spr = {
 			picture = saf_soviet_advisers
 
 			removal_cost = -1
@@ -1167,7 +1167,7 @@ ideas = {
 			}
 		}
 
-		RUS_face_western_fascism_ns = {
+		RUE_face_western_fascism_ns = {
 			picture = SPR_the_popular_front
 
 			removal_cost = -1
@@ -1181,18 +1181,18 @@ ideas = {
 			}
 
 			on_remove = {
-				RUS_clear_hidden_targeted_ns_effect = yes
+				RUE_clear_hidden_targeted_ns_effect = yes
 			}
 
 			modifier = {
-				custom_modifier_tooltip = RUS_face_western_fascism_ns_tt
+				custom_modifier_tooltip = RUE_face_western_fascism_ns_tt
 			}
 		}
 
 		
 		
 
-		RUS_soviet_atomic_bomb_project_ns = {
+		RUE_soviet_atomic_bomb_project_ns = {
 			picture = SOV_atomic_bomb_project
 
 			removal_cost = -1
@@ -1202,7 +1202,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			modifier = {
@@ -1210,7 +1210,7 @@ ideas = {
 			}
 		}
 
-		RUS_stolen_vital_nuclear_information = {
+		RUE_stolen_vital_nuclear_information = {
 			picture = SOV_scientist_defect
 
 			removal_cost = -1
@@ -1220,7 +1220,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			modifier = {
@@ -1228,7 +1228,7 @@ ideas = {
 			}
 		}
 
-		RUS_central_headquarters_of_the_partisan_movement = {
+		RUE_central_headquarters_of_the_partisan_movement = {
 			removal_cost = -1
 
 			picture = MEX_politicised_army
@@ -1238,7 +1238,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			modifier = {
@@ -1249,8 +1249,8 @@ ideas = {
 			}
 		}
 
-		RUS_central_headquarters_of_the_partisan_movement_no_lar = {
-			name = RUS_central_headquarters_of_the_partisan_movement
+		RUE_central_headquarters_of_the_partisan_movement_no_lar = {
+			name = RUE_central_headquarters_of_the_partisan_movement
 
 			removal_cost = -1
 
@@ -1261,7 +1261,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			modifier = {
@@ -1270,7 +1270,7 @@ ideas = {
 			}
 		}
 
-		RUS_national_academy_of_sciences_puppet = {
+		RUE_national_academy_of_sciences_puppet = {
 
 			picture = generic_research_bonus
 
@@ -1285,8 +1285,8 @@ ideas = {
 			}
 		}
 
-		RUS_national_academy_of_sciences_fake = { #Don't look at me I'm a fake (never really added just used for tooltip reasons)
-			name = RUS_ussr_academy_of_sciences_dynamic_modifier
+		RUE_national_academy_of_sciences_fake = { #Don't look at me I'm a fake (never really added just used for tooltip reasons)
+			name = RUE_ussr_academy_of_sciences_dynamic_modifier
 
 			removal_cost = -1
 
@@ -1299,8 +1299,8 @@ ideas = {
 			}
 		}
 
-		RUS_national_academy_of_sciences_alt_fake = { #Don't look at me I'm a fake (never really added just used for tooltip reasons)
-			name = RUS_ussr_academy_of_sciences_dynamic_modifier_alt
+		RUE_national_academy_of_sciences_alt_fake = { #Don't look at me I'm a fake (never really added just used for tooltip reasons)
+			name = RUE_ussr_academy_of_sciences_dynamic_modifier_alt
 
 			removal_cost = -1
 
@@ -1313,7 +1313,7 @@ ideas = {
 			}
 		}
 
-		RUS_comecon_sov_default = {
+		RUE_comecon_sov_default = {
 			picture = generic_flexible_foreign_policy
 
 			removal_cost = -1
@@ -1327,8 +1327,8 @@ ideas = {
 			}
 		}
 
-		RUS_comecon_sov_industrialization = {
-			name = RUS_comecon_sov_default
+		RUE_comecon_sov_industrialization = {
+			name = RUE_comecon_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1343,8 +1343,8 @@ ideas = {
 			}
 		}
 
-		RUS_comecon_sov_military = {
-			name = RUS_comecon_sov_default
+		RUE_comecon_sov_military = {
+			name = RUE_comecon_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1359,8 +1359,8 @@ ideas = {
 			}
 		}
 
-		RUS_comecon_puppet_default = {
-			name = RUS_comecon_sov_default
+		RUE_comecon_puppet_default = {
+			name = RUE_comecon_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1381,8 +1381,8 @@ ideas = {
 			}
 		}
 
-		RUS_comecon_puppet_industrialization = {
-			name = RUS_comecon_sov_default
+		RUE_comecon_puppet_industrialization = {
+			name = RUE_comecon_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1404,8 +1404,8 @@ ideas = {
 			}
 		}
 
-		RUS_comecon_puppet_military = {
-			name = RUS_comecon_sov_default
+		RUE_comecon_puppet_military = {
+			name = RUE_comecon_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1431,7 +1431,7 @@ ideas = {
 			}
 		}
 
-		RUS_common_economic_space_sov_default = {
+		RUE_common_economic_space_sov_default = {
 			picture = generic_flexible_foreign_policy
 
 			removal_cost = -1
@@ -1445,8 +1445,8 @@ ideas = {
 			}
 		}
 
-		RUS_common_economic_space_sov_industrialization = {
-			name = RUS_common_economic_space_sov_default
+		RUE_common_economic_space_sov_industrialization = {
+			name = RUE_common_economic_space_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1461,8 +1461,8 @@ ideas = {
 			}
 		}
 
-		RUS_common_economic_space_sov_military = {
-			name = RUS_common_economic_space_sov_default
+		RUE_common_economic_space_sov_military = {
+			name = RUE_common_economic_space_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1477,8 +1477,8 @@ ideas = {
 			}
 		}
 
-		RUS_common_economic_space_puppet_default = {
-			name = RUS_common_economic_space_sov_default
+		RUE_common_economic_space_puppet_default = {
+			name = RUE_common_economic_space_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1499,8 +1499,8 @@ ideas = {
 			}
 		}
 
-		RUS_common_economic_space_puppet_industrialization = {
-			name = RUS_common_economic_space_sov_default
+		RUE_common_economic_space_puppet_industrialization = {
+			name = RUE_common_economic_space_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1522,8 +1522,8 @@ ideas = {
 			}
 		}
 
-		RUS_common_economic_space_puppet_military = {
-			name = RUS_common_economic_space_sov_default
+		RUE_common_economic_space_puppet_military = {
+			name = RUE_common_economic_space_sov_default
 
 			picture = generic_flexible_foreign_policy
 
@@ -1549,7 +1549,7 @@ ideas = {
 			}
 		}
 
-		RUS_soviet_german_trade_agreement = {
+		RUE_soviet_german_trade_agreement = {
 			picture = can_wartime_prices_and_trade_board
 
 			removal_cost = -1
@@ -1559,16 +1559,16 @@ ideas = {
 			}
 
 			cancel = {
-				has_war_with = BWR
+				has_war_with = RUE
 			}
 
 			on_remove = {
 				var:SOV_capital_for_soviet_imports = { #This is where the German capital is stored and where Soviet Imports state modifier was added
 					if = {
 						limit = {
-							has_dynamic_modifier = { modifier = RUS_soviet_imports }
+							has_dynamic_modifier = { modifier = RUE_soviet_imports }
 						}
-						remove_dynamic_modifier = { modifier = RUS_soviet_imports }
+						remove_dynamic_modifier = { modifier = RUE_soviet_imports }
 					}
 				}
 			}
@@ -1578,7 +1578,7 @@ ideas = {
 			}
 		}
 
-		RUS_the_rush_for_berlin = {
+		RUE_the_rush_for_berlin = {
 
 			picture = SPR_anti_fascist_crusade
 
@@ -1589,7 +1589,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = BWR
+				tag = RUE
 			}
 
 			targeted_modifier = {
@@ -1605,7 +1605,7 @@ ideas = {
 			}
 		}
 
-		RUS_rehabilitated_military_ns = {
+		RUE_rehabilitated_military_ns = {
 			removal_cost = -1
 
 			allowed = {
@@ -1624,7 +1624,7 @@ ideas = {
 			}
 		}
 
-		RUS_military_reorganization_ns = {
+		RUE_military_reorganization_ns = {
 
 			picture = generic_army_problems
 
@@ -1642,12 +1642,12 @@ ideas = {
 				army_org_factor = -0.1
 				experience_gain_army_factor = -1
 				army_org_regain = -0.15
-				custom_modifier_tooltip = RUS_military_reorganization_ns_removal_tt
+				custom_modifier_tooltip = RUE_military_reorganization_ns_removal_tt
 			}
 		}
 
-		RUS_mine_warfare_ns = {
-			name = RUS_mine_warfare
+		RUE_mine_warfare_ns = {
+			name = RUE_mine_warfare
 
 			picture = SOV_mine_warfare
 
@@ -1669,7 +1669,7 @@ ideas = {
 			}
 		}
 
-		RUS_expanded_exploitation_of_gold_mines = { #NS for Sinkiang, when prospecting for resources in Dzungaria and granting resource rights to BWR
+		RUE_expanded_exploitation_of_gold_mines = { #NS for Sinkiang, when prospecting for resources in Dzungaria and granting resource rights to RUE
 
 			picture = SPR_seize_the_gold_reserves
 
@@ -1690,7 +1690,7 @@ ideas = {
 
 		
 
-		RUS_shocked_by_surprise_attack = {
+		RUE_shocked_by_surprise_attack = {
 
 			picture = chi_incompetent_officers
 
@@ -1714,11 +1714,11 @@ ideas = {
 
 			modifier = {
 				mobilization_speed = 0.5
-				custom_modifier_tooltip = RUS_shocked_by_surprise_attack_cant_join_factions_tt
+				custom_modifier_tooltip = RUE_shocked_by_surprise_attack_cant_join_factions_tt
 			}
 		}
 
-		RUS_soviet_commandos_poum = {
+		RUE_soviet_commandos_poum = {
 
 			picture = generic_communist_army
 
@@ -1736,7 +1736,7 @@ ideas = {
 			}
 		}
 
-		RUS_popular_speeches_poum = {
+		RUE_popular_speeches_poum = {
 
 			picture = SOV_ideology_drift_defence
 
@@ -1754,7 +1754,7 @@ ideas = {
 			}
 		}
 
-		RUS_agents_in_the_stalinist_command_poum = {
+		RUE_agents_in_the_stalinist_command_poum = {
 
 			picture = generic_spy_political
 
@@ -1786,7 +1786,7 @@ ideas = {
 
 
 	hidden_ideas = {
-		RUS_non_communism_aversion_ns = {
+		RUE_non_communism_aversion_ns = {
 			removal_cost = -1
 
 			allowed = {
@@ -1804,8 +1804,8 @@ ideas = {
 			}
 		}
 
-		RUS_national_specialists_ns = {
-			name = RUS_national_specialists
+		RUE_national_specialists_ns = {
+			name = RUE_national_specialists
 
 			removal_cost = -1
 
@@ -1814,7 +1814,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = BWR #Every BWR has this
+				original_tag = RUE #Every RUE has this
 			}
 
 			modifier = {
@@ -1822,8 +1822,8 @@ ideas = {
 			}
 		}
 
-		RUS_red_fleet_surface_bonus_1 = {
-			name = RUS_the_red_fleet_dynamic_modifier
+		RUE_red_fleet_surface_bonus_1 = {
+			name = RUE_the_red_fleet_dynamic_modifier
 
 			removal_cost = -1
 
@@ -1832,7 +1832,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = BWR #Every BWR has this
+				original_tag = RUE #Every RUE has this
 			}
 
 			equipment_bonus = {
@@ -1843,8 +1843,8 @@ ideas = {
 			}
 		}
 
-		RUS_red_fleet_surface_bonus_2 = {
-			name = RUS_the_red_fleet_dynamic_modifier
+		RUE_red_fleet_surface_bonus_2 = {
+			name = RUE_the_red_fleet_dynamic_modifier
 
 			removal_cost = -1
 
@@ -1853,7 +1853,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = BWR #Every BWR has this
+				original_tag = RUE #Every RUE has this
 			}
 
 			equipment_bonus = {
@@ -1868,8 +1868,8 @@ ideas = {
 			}
 		}
 
-		RUS_red_fleet_submarine_bonus_1 = {
-			name = RUS_the_red_fleet_dynamic_modifier
+		RUE_red_fleet_submarine_bonus_1 = {
+			name = RUE_the_red_fleet_dynamic_modifier
 
 			removal_cost = -1
 
@@ -1878,7 +1878,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = BWR #Every BWR has this
+				original_tag = RUE #Every RUE has this
 			}
 
 			equipment_bonus = {
@@ -1889,8 +1889,8 @@ ideas = {
 			}
 		}
 
-		RUS_red_fleet_submarine_bonus_2 = {
-			name = RUS_the_red_fleet_dynamic_modifier
+		RUE_red_fleet_submarine_bonus_2 = {
+			name = RUE_the_red_fleet_dynamic_modifier
 
 			removal_cost = -1
 
@@ -1899,7 +1899,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				original_tag = BWR #Every BWR has this
+				original_tag = RUE #Every RUE has this
 			}
 
 			equipment_bonus = {
@@ -1910,7 +1910,7 @@ ideas = {
 			}
 		}
 
-		RUS_targeted_bonus_against_ENG = {
+		RUE_targeted_bonus_against_ENG = {
 
 			removal_cost = -1
 
@@ -1929,7 +1929,7 @@ ideas = {
 			}
 		}
 
-		RUS_targeted_bonus_against_FRA = {
+		RUE_targeted_bonus_against_FRA = {
 
 			removal_cost = -1
 
@@ -1948,7 +1948,7 @@ ideas = {
 			}
 		}
 
-		RUS_targeted_bonus_against_GER = {
+		RUE_targeted_bonus_against_GER = {
 
 			removal_cost = -1
 
@@ -1967,7 +1967,7 @@ ideas = {
 			}
 		}
 
-		RUS_targeted_bonus_against_ITA = {
+		RUE_targeted_bonus_against_ITA = {
 
 			removal_cost = -1
 
@@ -1986,7 +1986,7 @@ ideas = {
 			}
 		}
 
-		RUS_targeted_bonus_against_USA = {
+		RUE_targeted_bonus_against_USA = {
 
 			removal_cost = -1
 
@@ -2005,7 +2005,7 @@ ideas = {
 			}
 		}
 
-		RUS_targeted_bonus_against_JAP = {
+		RUE_targeted_bonus_against_JAP = {
 
 			removal_cost = -1
 
@@ -2024,7 +2024,7 @@ ideas = {
 			}
 		}
 
-		RUS_increased_aircraft_production_ns_bonus = { #Used as a hidden idea to prevent overcrowding in the regular Soviet Aircraft ns tt
+		RUE_increased_aircraft_production_ns_bonus = { #Used as a hidden idea to prevent overcrowding in the regular Soviet Aircraft ns tt
 			removal_cost = -1
 
 			picture = generic_neutrality_drift_bonus
@@ -2104,7 +2104,7 @@ ideas = {
 			}
 		}
 
-		RUS_scientist_defect = {
+		RUE_scientist_defect = {
 
 			picture = generic_research_bonus
 
@@ -2152,14 +2152,14 @@ ideas = {
  #    #   ####   #    #   ####   ######   ####     ##
 
 
-		RUS_morozov_design_bureau = {
+		RUE_morozov_design_bureau = {
 			name = morozov_design_bureau
 
 			picture = morozov_design_bureau
 
 			allowed = {
 				OR = {
-					original_tag = BWR
+					original_tag = RUE
 					AND = {
 						OR = {
 							is_literally_china = yes
@@ -2172,9 +2172,9 @@ ideas = {
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_tank_morozov_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_morozov_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_morozov_3_flag }
+					NOT = { has_country_flag = RUE_merge_tank_morozov_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_morozov_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_morozov_3_flag }
 				}
 			}
 
@@ -2188,7 +2188,7 @@ ideas = {
 					}
 					has_completed_focus = CHI_hire_soviet_designer
 					NOT = {
-						has_war_with = BWR
+						has_war_with = RUE
 					}
 				}
 			}
@@ -2203,20 +2203,20 @@ ideas = {
 			}
 		}
 
-		RUS_morozov_design_bureau_1 = {
+		RUE_morozov_design_bureau_1 = {
 			name = morozov_design_bureau
 
 			picture = morozov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_morozov_1_flag
-					NOT = { has_country_flag = RUS_merge_tank_morozov_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_morozov_3_flag }
+					has_country_flag = RUE_merge_tank_morozov_1_flag
+					NOT = { has_country_flag = RUE_merge_tank_morozov_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_morozov_3_flag }
 				}
 			}
 
@@ -2233,20 +2233,20 @@ ideas = {
 			}
 		}
 
-		RUS_morozov_design_bureau_2 = {
+		RUE_morozov_design_bureau_2 = {
 			name = morozov_design_bureau
 
 			picture = morozov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_morozov_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_morozov_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_morozov_3_flag }
+					has_country_flag = RUE_merge_tank_morozov_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_morozov_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_morozov_3_flag }
 				}
 			}
 
@@ -2266,20 +2266,20 @@ ideas = {
 			}
 		}
 
-		RUS_morozov_design_bureau_3 = {
+		RUE_morozov_design_bureau_3 = {
 			name = morozov_design_bureau
 
 			picture = morozov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_morozov_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_morozov_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_morozov_2_flag }
+					has_country_flag = RUE_merge_tank_morozov_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_morozov_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_morozov_2_flag }
 				}
 			}
 
@@ -2296,20 +2296,20 @@ ideas = {
 			}
 		}
 
-		RUS_morozov_design_bureau_1_2 = {
+		RUE_morozov_design_bureau_1_2 = {
 			name = morozov_design_bureau
 
 			picture = morozov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_morozov_1_flag
-					has_country_flag = RUS_merge_tank_morozov_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_morozov_3_flag }
+					has_country_flag = RUE_merge_tank_morozov_1_flag
+					has_country_flag = RUE_merge_tank_morozov_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_morozov_3_flag }
 				}
 			}
 
@@ -2327,20 +2327,20 @@ ideas = {
 			}
 		}
 
-		RUS_morozov_design_bureau_1_3 = {
+		RUE_morozov_design_bureau_1_3 = {
 			name = morozov_design_bureau
 
 			picture = morozov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_morozov_1_flag
-					has_country_flag = RUS_merge_tank_morozov_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_morozov_2_flag }
+					has_country_flag = RUE_merge_tank_morozov_1_flag
+					has_country_flag = RUE_merge_tank_morozov_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_morozov_2_flag }
 				}
 			}
 
@@ -2358,20 +2358,20 @@ ideas = {
 			}
 		}
 
-		RUS_morozov_design_bureau_2_3 = {
+		RUE_morozov_design_bureau_2_3 = {
 			name = morozov_design_bureau
 
 			picture = morozov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_morozov_2_flag
-					has_country_flag = RUS_merge_tank_morozov_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_morozov_1_flag }
+					has_country_flag = RUE_merge_tank_morozov_2_flag
+					has_country_flag = RUE_merge_tank_morozov_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_morozov_1_flag }
 				}
 			}
 
@@ -2389,20 +2389,20 @@ ideas = {
 			}
 		}
 
-		RUS_morozov_design_bureau_final = {
+		RUE_morozov_design_bureau_final = {
 			name = morozov_design_bureau
 
 			picture = morozov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_morozov_1_flag
-					has_country_flag = RUS_merge_tank_morozov_2_flag
-					has_country_flag = RUS_merge_tank_morozov_3_flag
+					has_country_flag = RUE_merge_tank_morozov_1_flag
+					has_country_flag = RUE_merge_tank_morozov_2_flag
+					has_country_flag = RUE_merge_tank_morozov_3_flag
 				}
 			}
 
@@ -2430,20 +2430,20 @@ ideas = {
  #    #   ####     #    #    #   ####     ##
 
 
-		RUS_astrov_design_bureau = {
+		RUE_astrov_design_bureau = {
 			name = astrov_design_bureau
 
 			picture = astrov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_tank_astrov_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_astrov_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_astrov_3_flag }
+					NOT = { has_country_flag = RUE_merge_tank_astrov_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_astrov_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_astrov_3_flag }
 				}
 			}
 
@@ -2457,20 +2457,20 @@ ideas = {
 			}
 		}
 
-		RUS_astrov_design_bureau_1 = {
+		RUE_astrov_design_bureau_1 = {
 			name = astrov_design_bureau
 
 			picture = astrov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_astrov_1_flag
-					NOT = { has_country_flag = RUS_merge_tank_astrov_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_astrov_3_flag }
+					has_country_flag = RUE_merge_tank_astrov_1_flag
+					NOT = { has_country_flag = RUE_merge_tank_astrov_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_astrov_3_flag }
 				}
 			}
 
@@ -2487,20 +2487,20 @@ ideas = {
 			}
 		}
 
-		RUS_astrov_design_bureau_2 = {
+		RUE_astrov_design_bureau_2 = {
 			name = astrov_design_bureau
 
 			picture = astrov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_astrov_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_astrov_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_astrov_3_flag }
+					has_country_flag = RUE_merge_tank_astrov_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_astrov_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_astrov_3_flag }
 				}
 			}
 
@@ -2520,20 +2520,20 @@ ideas = {
 			}
 		}
 
-		RUS_astrov_design_bureau_3 = {
+		RUE_astrov_design_bureau_3 = {
 			name = astrov_design_bureau
 
 			picture = astrov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_astrov_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_astrov_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_astrov_2_flag }
+					has_country_flag = RUE_merge_tank_astrov_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_astrov_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_astrov_2_flag }
 				}
 			}
 
@@ -2550,20 +2550,20 @@ ideas = {
 			}
 		}
 
-		RUS_astrov_design_bureau_1_2 = {
+		RUE_astrov_design_bureau_1_2 = {
 			name = astrov_design_bureau
 
 			picture = astrov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_astrov_1_flag
-					has_country_flag = RUS_merge_tank_astrov_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_astrov_3_flag }
+					has_country_flag = RUE_merge_tank_astrov_1_flag
+					has_country_flag = RUE_merge_tank_astrov_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_astrov_3_flag }
 				}
 			}
 
@@ -2581,20 +2581,20 @@ ideas = {
 			}
 		}
 
-		RUS_astrov_design_bureau_1_3 = {
+		RUE_astrov_design_bureau_1_3 = {
 			name = astrov_design_bureau
 
 			picture = astrov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_astrov_1_flag
-					has_country_flag = RUS_merge_tank_astrov_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_astrov_2_flag }
+					has_country_flag = RUE_merge_tank_astrov_1_flag
+					has_country_flag = RUE_merge_tank_astrov_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_astrov_2_flag }
 				}
 			}
 
@@ -2612,20 +2612,20 @@ ideas = {
 			}
 		}
 
-		RUS_astrov_design_bureau_2_3 = {
+		RUE_astrov_design_bureau_2_3 = {
 			name = astrov_design_bureau
 
 			picture = astrov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_astrov_2_flag
-					has_country_flag = RUS_merge_tank_astrov_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_astrov_1_flag }
+					has_country_flag = RUE_merge_tank_astrov_2_flag
+					has_country_flag = RUE_merge_tank_astrov_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_astrov_1_flag }
 				}
 			}
 
@@ -2643,20 +2643,20 @@ ideas = {
 			}
 		}
 
-		RUS_astrov_design_bureau_final = {
+		RUE_astrov_design_bureau_final = {
 			name = astrov_design_bureau
 
 			picture = astrov_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_astrov_1_flag
-					has_country_flag = RUS_merge_tank_astrov_2_flag
-					has_country_flag = RUS_merge_tank_astrov_3_flag
+					has_country_flag = RUE_merge_tank_astrov_1_flag
+					has_country_flag = RUE_merge_tank_astrov_2_flag
+					has_country_flag = RUE_merge_tank_astrov_3_flag
 				}
 			}
 
@@ -2684,20 +2684,20 @@ ideas = {
   ####   #    #  #    #   ####
 
 
-		RUS_okmo = {
+		RUE_okmo = {
 			name = okmo
 
 			picture = okmo
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_tank_okmo_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_okmo_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_okmo_3_flag }
+					NOT = { has_country_flag = RUE_merge_tank_okmo_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_okmo_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_okmo_3_flag }
 				}
 			}
 
@@ -2711,20 +2711,20 @@ ideas = {
 			}
 		}
 
-		RUS_okmo_1 = {
+		RUE_okmo_1 = {
 			name = okmo
 
 			picture = okmo
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_okmo_1_flag
-					NOT = { has_country_flag = RUS_merge_tank_okmo_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_okmo_3_flag }
+					has_country_flag = RUE_merge_tank_okmo_1_flag
+					NOT = { has_country_flag = RUE_merge_tank_okmo_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_okmo_3_flag }
 				}
 			}
 
@@ -2741,20 +2741,20 @@ ideas = {
 			}
 		}
 
-		RUS_okmo_2 = {
+		RUE_okmo_2 = {
 			name = okmo
 
 			picture = okmo
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_okmo_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_okmo_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_okmo_3_flag }
+					has_country_flag = RUE_merge_tank_okmo_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_okmo_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_okmo_3_flag }
 				}
 			}
 
@@ -2774,20 +2774,20 @@ ideas = {
 			}
 		}
 
-		RUS_okmo_3 = {
+		RUE_okmo_3 = {
 			name = okmo
 
 			picture = okmo
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_okmo_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_okmo_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_okmo_2_flag }
+					has_country_flag = RUE_merge_tank_okmo_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_okmo_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_okmo_2_flag }
 				}
 			}
 
@@ -2804,20 +2804,20 @@ ideas = {
 			}
 		}
 
-		RUS_okmo_1_2 = {
+		RUE_okmo_1_2 = {
 			name = okmo
 
 			picture = okmo
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_okmo_1_flag
-					has_country_flag = RUS_merge_tank_okmo_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_okmo_3_flag }
+					has_country_flag = RUE_merge_tank_okmo_1_flag
+					has_country_flag = RUE_merge_tank_okmo_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_okmo_3_flag }
 				}
 			}
 
@@ -2835,20 +2835,20 @@ ideas = {
 			}
 		}
 
-		RUS_okmo_1_3 = {
+		RUE_okmo_1_3 = {
 			name = okmo
 
 			picture = okmo
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_okmo_1_flag
-					has_country_flag = RUS_merge_tank_okmo_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_okmo_2_flag }
+					has_country_flag = RUE_merge_tank_okmo_1_flag
+					has_country_flag = RUE_merge_tank_okmo_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_okmo_2_flag }
 				}
 			}
 
@@ -2866,20 +2866,20 @@ ideas = {
 			}
 		}
 
-		RUS_okmo_2_3 = {
+		RUE_okmo_2_3 = {
 			name = okmo
 
 			picture = okmo
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_okmo_2_flag
-					has_country_flag = RUS_merge_tank_okmo_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_okmo_1_flag }
+					has_country_flag = RUE_merge_tank_okmo_2_flag
+					has_country_flag = RUE_merge_tank_okmo_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_okmo_1_flag }
 				}
 			}
 
@@ -2897,20 +2897,20 @@ ideas = {
 			}
 		}
 
-		RUS_okmo_final = {
+		RUE_okmo_final = {
 			name = okmo
 
 			picture = okmo
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_okmo_1_flag
-					has_country_flag = RUS_merge_tank_okmo_2_flag
-					has_country_flag = RUS_merge_tank_okmo_3_flag
+					has_country_flag = RUE_merge_tank_okmo_1_flag
+					has_country_flag = RUE_merge_tank_okmo_2_flag
+					has_country_flag = RUE_merge_tank_okmo_3_flag
 				}
 			}
 
@@ -2938,19 +2938,19 @@ ideas = {
  #    #    #      #    #   ####   #    #   ####   #    #  #
 
 
-		RUS_mytishchy_machine_building_plant = {
+		RUE_mytishchy_machine_building_plant = {
 
 			picture = SOV_mytishchy_machine_building_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_3_flag }
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_3_flag }
 				}
 			}
 
@@ -2967,20 +2967,20 @@ ideas = {
 			}
 		}
 
-		RUS_mytishchy_machine_building_plant_1 = {
-			name = RUS_mytishchy_machine_building_plant
+		RUE_mytishchy_machine_building_plant_1 = {
+			name = RUE_mytishchy_machine_building_plant
 
 			picture = SOV_mytishchy_machine_building_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_mytishchy_1_flag
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_3_flag }
+					has_country_flag = RUE_merge_tank_mytishchy_1_flag
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_3_flag }
 				}
 			}
 
@@ -3003,20 +3003,20 @@ ideas = {
 			}
 		}
 
-		RUS_mytishchy_machine_building_plant_2 = {
-			name = RUS_mytishchy_machine_building_plant
+		RUE_mytishchy_machine_building_plant_2 = {
+			name = RUE_mytishchy_machine_building_plant
 
 			picture = SOV_mytishchy_machine_building_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_mytishchy_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_3_flag }
+					has_country_flag = RUE_merge_tank_mytishchy_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_3_flag }
 				}
 			}
 
@@ -3039,20 +3039,20 @@ ideas = {
 			}
 		}
 
-		RUS_mytishchy_machine_building_plant_3 = {
-			name = RUS_mytishchy_machine_building_plant
+		RUE_mytishchy_machine_building_plant_3 = {
+			name = RUE_mytishchy_machine_building_plant
 
 			picture = SOV_mytishchy_machine_building_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_mytishchy_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_2_flag }
+					has_country_flag = RUE_merge_tank_mytishchy_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_2_flag }
 				}
 			}
 
@@ -3075,20 +3075,20 @@ ideas = {
 			}
 		}
 
-		RUS_mytishchy_machine_building_plant_1_2 = {
-			name = RUS_mytishchy_machine_building_plant
+		RUE_mytishchy_machine_building_plant_1_2 = {
+			name = RUE_mytishchy_machine_building_plant
 
 			picture = SOV_mytishchy_machine_building_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_mytishchy_1_flag
-					has_country_flag = RUS_merge_tank_mytishchy_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_3_flag }
+					has_country_flag = RUE_merge_tank_mytishchy_1_flag
+					has_country_flag = RUE_merge_tank_mytishchy_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_3_flag }
 				}
 			}
 
@@ -3112,20 +3112,20 @@ ideas = {
 			}
 		}
 
-		RUS_mytishchy_machine_building_plant_1_3 = {
-			name = RUS_mytishchy_machine_building_plant
+		RUE_mytishchy_machine_building_plant_1_3 = {
+			name = RUE_mytishchy_machine_building_plant
 
 			picture = SOV_mytishchy_machine_building_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_mytishchy_1_flag
-					has_country_flag = RUS_merge_tank_mytishchy_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_2_flag }
+					has_country_flag = RUE_merge_tank_mytishchy_1_flag
+					has_country_flag = RUE_merge_tank_mytishchy_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_2_flag }
 				}
 			}
 
@@ -3149,20 +3149,20 @@ ideas = {
 			}
 		}
 
-		RUS_mytishchy_machine_building_plant_2_3 = {
-			name = RUS_mytishchy_machine_building_plant
+		RUE_mytishchy_machine_building_plant_2_3 = {
+			name = RUE_mytishchy_machine_building_plant
 
 			picture = SOV_mytishchy_machine_building_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_mytishchy_2_flag
-					has_country_flag = RUS_merge_tank_mytishchy_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_mytishchy_1_flag }
+					has_country_flag = RUE_merge_tank_mytishchy_2_flag
+					has_country_flag = RUE_merge_tank_mytishchy_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_mytishchy_1_flag }
 				}
 			}
 
@@ -3186,20 +3186,20 @@ ideas = {
 			}
 		}
 
-		RUS_mytishchy_machine_building_plant_final = {
-			name = RUS_mytishchy_machine_building_plant
+		RUE_mytishchy_machine_building_plant_final = {
+			name = RUE_mytishchy_machine_building_plant
 
 			picture = SOV_mytishchy_machine_building_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_mytishchy_1_flag
-					has_country_flag = RUS_merge_tank_mytishchy_2_flag
-					has_country_flag = RUS_merge_tank_mytishchy_3_flag
+					has_country_flag = RUE_merge_tank_mytishchy_1_flag
+					has_country_flag = RUE_merge_tank_mytishchy_2_flag
+					has_country_flag = RUE_merge_tank_mytishchy_3_flag
 				}
 			}
 
@@ -3234,19 +3234,19 @@ ideas = {
  #    #  #  #    #   ####     ##
 
 
-		RUS_kirov = {
+		RUE_kirov = {
 
 			picture = SOV_kirov
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_tank_kirov_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_kirov_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_kirov_3_flag }
+					NOT = { has_country_flag = RUE_merge_tank_kirov_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_kirov_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_kirov_3_flag }
 				}
 			}
 
@@ -3260,20 +3260,20 @@ ideas = {
 			}
 		}
 
-		RUS_kirov_1 = {
-			name = RUS_kirov
+		RUE_kirov_1 = {
+			name = RUE_kirov
 
 			picture = SOV_kirov
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_kirov_1_flag
-					NOT = { has_country_flag = RUS_merge_tank_kirov_2_flag }
-					NOT = { has_country_flag = RUS_merge_tank_kirov_3_flag }
+					has_country_flag = RUE_merge_tank_kirov_1_flag
+					NOT = { has_country_flag = RUE_merge_tank_kirov_2_flag }
+					NOT = { has_country_flag = RUE_merge_tank_kirov_3_flag }
 				}
 			}
 
@@ -3290,20 +3290,20 @@ ideas = {
 			}
 		}
 
-		RUS_kirov_2 = {
-			name = RUS_kirov
+		RUE_kirov_2 = {
+			name = RUE_kirov
 
 			picture = SOV_kirov
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_kirov_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_kirov_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_kirov_3_flag }
+					has_country_flag = RUE_merge_tank_kirov_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_kirov_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_kirov_3_flag }
 				}
 			}
 
@@ -3323,20 +3323,20 @@ ideas = {
 			}
 		}
 
-		RUS_kirov_3 = {
-			name = RUS_kirov
+		RUE_kirov_3 = {
+			name = RUE_kirov
 
 			picture = SOV_kirov
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_kirov_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_kirov_1_flag }
-					NOT = { has_country_flag = RUS_merge_tank_kirov_2_flag }
+					has_country_flag = RUE_merge_tank_kirov_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_kirov_1_flag }
+					NOT = { has_country_flag = RUE_merge_tank_kirov_2_flag }
 				}
 			}
 
@@ -3353,20 +3353,20 @@ ideas = {
 			}
 		}
 
-		RUS_kirov_1_2 = {
-			name = RUS_kirov
+		RUE_kirov_1_2 = {
+			name = RUE_kirov
 
 			picture = SOV_kirov
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_kirov_1_flag
-					has_country_flag = RUS_merge_tank_kirov_2_flag
-					NOT = { has_country_flag = RUS_merge_tank_kirov_3_flag }
+					has_country_flag = RUE_merge_tank_kirov_1_flag
+					has_country_flag = RUE_merge_tank_kirov_2_flag
+					NOT = { has_country_flag = RUE_merge_tank_kirov_3_flag }
 				}
 			}
 
@@ -3384,20 +3384,20 @@ ideas = {
 			}
 		}
 
-		RUS_kirov_1_3 = {
-			name = RUS_kirov
+		RUE_kirov_1_3 = {
+			name = RUE_kirov
 
 			picture = SOV_kirov
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_kirov_1_flag
-					has_country_flag = RUS_merge_tank_kirov_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_kirov_2_flag }
+					has_country_flag = RUE_merge_tank_kirov_1_flag
+					has_country_flag = RUE_merge_tank_kirov_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_kirov_2_flag }
 				}
 			}
 
@@ -3415,20 +3415,20 @@ ideas = {
 			}
 		}
 
-		RUS_kirov_2_3 = {
-			name = RUS_kirov
+		RUE_kirov_2_3 = {
+			name = RUE_kirov
 
 			picture = SOV_kirov
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_kirov_2_flag
-					has_country_flag = RUS_merge_tank_kirov_3_flag
-					NOT = { has_country_flag = RUS_merge_tank_kirov_1_flag }
+					has_country_flag = RUE_merge_tank_kirov_2_flag
+					has_country_flag = RUE_merge_tank_kirov_3_flag
+					NOT = { has_country_flag = RUE_merge_tank_kirov_1_flag }
 				}
 			}
 
@@ -3446,20 +3446,20 @@ ideas = {
 			}
 		}
 
-		RUS_kirov_final = {
-			name = RUS_kirov
+		RUE_kirov_final = {
+			name = RUE_kirov
 
 			picture = SOV_kirov
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_tank_kirov_1_flag
-					has_country_flag = RUS_merge_tank_kirov_2_flag
-					has_country_flag = RUS_merge_tank_kirov_3_flag
+					has_country_flag = RUE_merge_tank_kirov_1_flag
+					has_country_flag = RUE_merge_tank_kirov_2_flag
+					has_country_flag = RUE_merge_tank_kirov_3_flag
 				}
 			}
 
@@ -3495,21 +3495,21 @@ ideas = {
  #     #  ######    ##     ####   #    #   ####     #    ######
 
 
-		RUS_nevskoye_design_bureau = {
+		RUE_nevskoye_design_bureau = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag }
 				}
 			}
 
@@ -3524,21 +3524,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_1 = {
+		RUE_nevskoye_design_bureau_1 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag }
 				}
 			}
 
@@ -3559,21 +3559,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_2 = {
+		RUE_nevskoye_design_bureau_2 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag }
 				}
 			}
 
@@ -3594,21 +3594,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_3 = {
+		RUE_nevskoye_design_bureau_3 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag }
 				}
 			}
 
@@ -3629,21 +3629,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_4 = {
+		RUE_nevskoye_design_bureau_4 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag }
 				}
 			}
 
@@ -3660,21 +3660,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_1_2 = {
+		RUE_nevskoye_design_bureau_1_2 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag }
 				}
 			}
 
@@ -3698,21 +3698,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_1_3 = {
+		RUE_nevskoye_design_bureau_1_3 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag }
 				}
 			}
 
@@ -3736,21 +3736,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_1_4 = {
+		RUE_nevskoye_design_bureau_1_4 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag }
 				}
 			}
 
@@ -3773,21 +3773,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_2_4 = {
+		RUE_nevskoye_design_bureau_2_4 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag }
 				}
 			}
 
@@ -3810,21 +3810,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_3_4 = {
+		RUE_nevskoye_design_bureau_3_4 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag }
 				}
 			}
 
@@ -3847,21 +3847,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_final_2 = {
+		RUE_nevskoye_design_bureau_final_2 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag }
 				}
 			}
 
@@ -3887,21 +3887,21 @@ ideas = {
 			}
 		}
 
-		RUS_nevskoye_design_bureau_final_3 = {
+		RUE_nevskoye_design_bureau_final_3 = {
 			name = nevskoye_design_bureau
 
 			picture = nevskoye_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag
-					has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag }
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag
+					has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag }
 				}
 			}
 
@@ -3937,20 +3937,20 @@ ideas = {
  #     #   ####   #####   #  #    #
 
 
-		RUS_rubin_design_bureau = {
+		RUE_rubin_design_bureau = {
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag }
 				}
 			}
 
@@ -3964,21 +3964,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_1 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_1 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag }
 				}
 			}
 
@@ -3998,21 +3998,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_2 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_2 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag }
 				}
 			}
 
@@ -4032,21 +4032,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_3 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_3 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag }
 				}
 			}
 
@@ -4066,21 +4066,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_4 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_4 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag }
 				}
 			}
 
@@ -4096,21 +4096,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_1_2 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_1_2 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag }
 				}
 			}
 
@@ -4133,21 +4133,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_1_3 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_1_3 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag }
 				}
 			}
 
@@ -4170,21 +4170,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_1_4 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_1_4 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag }
 				}
 			}
 
@@ -4206,21 +4206,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_2_4 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_2_4 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag }
 				}
 			}
 
@@ -4242,21 +4242,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_3_4 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_3_4 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag }
 				}
 			}
 
@@ -4278,21 +4278,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_final_2 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_final_2 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag }
 				}
 			}
 
@@ -4317,21 +4317,21 @@ ideas = {
 			}
 		}
 
-		RUS_rubin_design_bureau_final_3 = {
-			name = RUS_rubin_design_bureau
+		RUE_rubin_design_bureau_final_3 = {
+			name = RUE_rubin_design_bureau
 
 			picture = SOV_rubin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag
-					has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag }
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag
+					has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag }
 				}
 			}
 
@@ -4366,20 +4366,20 @@ ideas = {
  ######   ######  #    #   ####   #    #       #####   ######  #    #       #####   #    #  #  #         #    #    #  #    #  #####
 
 
-		RUS_black_sea_shipyard = {
+		RUE_black_sea_shipyard = {
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag }
 				}
 			}
 
@@ -4393,21 +4393,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_1 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_1 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag }
 				}
 			}
 
@@ -4427,21 +4427,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_2 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_2 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag }
 				}
 			}
 
@@ -4461,21 +4461,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_3 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_3 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag }
 				}
 			}
 
@@ -4495,21 +4495,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_4 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_4 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag }
 				}
 			}
 
@@ -4525,21 +4525,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_1_2 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_1_2 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag }
 				}
 			}
 
@@ -4562,21 +4562,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_1_3 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_1_3 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag }
 				}
 			}
 
@@ -4596,21 +4596,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_1_4 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_1_4 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag }
 				}
 			}
 
@@ -4632,21 +4632,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_2_4 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_2_4 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag }
 				}
 			}
 
@@ -4668,21 +4668,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_3_4 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_3_4 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag }
 				}
 			}
 
@@ -4704,21 +4704,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_final_2 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_final_2 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag }
 				}
 			}
 
@@ -4743,21 +4743,21 @@ ideas = {
 			}
 		}
 
-		RUS_black_sea_shipyard_final_3 = {
-			name = RUS_black_sea_shipyard
+		RUE_black_sea_shipyard_final_3 = {
+			name = RUE_black_sea_shipyard
 
 			picture = SOV_black_sea_shipyard
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag
-					has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag }
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag
+					has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag }
 				}
 			}
 
@@ -4792,20 +4792,20 @@ ideas = {
   #####   ######    ##    #    #   ####     #     ####   #        ####   ######
 
 
-		RUS_sevastopol_marine_plant = {
+		RUE_sevastopol_marine_plant = {
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag }
 				}
 			}
 
@@ -4823,21 +4823,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_1 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_1 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag }
 				}
 			}
 
@@ -4861,21 +4861,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_2 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_2 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag }
 				}
 			}
 
@@ -4899,21 +4899,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_3 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_3 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag }
 				}
 			}
 
@@ -4937,21 +4937,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_4 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_4 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag }
 				}
 			}
 
@@ -4970,21 +4970,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_1_2 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_1_2 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag }
 				}
 			}
 
@@ -5011,21 +5011,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_1_3 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_1_3 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag }
 				}
 			}
 
@@ -5052,21 +5052,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_1_4 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_1_4 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag }
 				}
 			}
 
@@ -5091,21 +5091,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_2_4 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_2_4 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag }
 				}
 			}
 
@@ -5130,21 +5130,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_3_4 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_3_4 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag }
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag }
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag }
 				}
 			}
 
@@ -5169,21 +5169,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_final_2 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_final_2 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag }
 				}
 			}
 
@@ -5211,21 +5211,21 @@ ideas = {
 			}
 		}
 
-		RUS_sevastopol_marine_plant_final_3 = {
-			name = RUS_sevastopol_marine_plant
+		RUE_sevastopol_marine_plant_final_3 = {
+			name = RUE_sevastopol_marine_plant
 
 			picture = SOV_sevastopol_marine_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag
-					has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
-					NOT = { has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag }
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag
+					has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
+					NOT = { has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag }
 				}
 			}
 
@@ -5269,20 +5269,20 @@ ideas = {
  #     #  ###   #####
 
 
-		RUS_mig_design_bureau = {
+		RUE_mig_design_bureau = {
 			name = mig_design_bureau
 
 			picture = mig_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_2_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_3_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_2_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_3_flag }
 				}
 			}
 
@@ -5300,20 +5300,20 @@ ideas = {
 			}
 		}
 
-		RUS_mig_design_bureau_1 = {
+		RUE_mig_design_bureau_1 = {
 			name = mig_design_bureau
 
 			picture = mig_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_mig_1_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_2_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_3_flag }
+					has_country_flag = RUE_merge_aircraft_mig_1_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_2_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_3_flag }
 				}
 			}
 
@@ -5337,20 +5337,20 @@ ideas = {
 			}
 		}
 
-		RUS_mig_design_bureau_2 = {
+		RUE_mig_design_bureau_2 = {
 			name = mig_design_bureau
 
 			picture = mig_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_mig_2_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_3_flag }
+					has_country_flag = RUE_merge_aircraft_mig_2_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_3_flag }
 				}
 			}
 
@@ -5369,20 +5369,20 @@ ideas = {
 			}
 		}
 
-		RUS_mig_design_bureau_3 = {
+		RUE_mig_design_bureau_3 = {
 			name = mig_design_bureau
 
 			picture = mig_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_mig_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_2_flag }
+					has_country_flag = RUE_merge_aircraft_mig_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_2_flag }
 				}
 			}
 
@@ -5402,20 +5402,20 @@ ideas = {
 			}
 		}
 
-		RUS_mig_design_bureau_1_2 = {
+		RUE_mig_design_bureau_1_2 = {
 			name = mig_design_bureau
 
 			picture = mig_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_mig_1_flag
-					has_country_flag = RUS_merge_aircraft_mig_2_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_3_flag }
+					has_country_flag = RUE_merge_aircraft_mig_1_flag
+					has_country_flag = RUE_merge_aircraft_mig_2_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_3_flag }
 				}
 			}
 
@@ -5440,20 +5440,20 @@ ideas = {
 			}
 		}
 
-		RUS_mig_design_bureau_1_3 = {
+		RUE_mig_design_bureau_1_3 = {
 			name = mig_design_bureau
 
 			picture = mig_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_mig_1_flag
-					has_country_flag = RUS_merge_aircraft_mig_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_2_flag }
+					has_country_flag = RUE_merge_aircraft_mig_1_flag
+					has_country_flag = RUE_merge_aircraft_mig_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_2_flag }
 				}
 			}
 
@@ -5479,20 +5479,20 @@ ideas = {
 			}
 		}
 
-		RUS_mig_design_bureau_2_3 = {
+		RUE_mig_design_bureau_2_3 = {
 			name = mig_design_bureau
 
 			picture = mig_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_mig_2_flag
-					has_country_flag = RUS_merge_aircraft_mig_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_mig_1_flag }
+					has_country_flag = RUE_merge_aircraft_mig_2_flag
+					has_country_flag = RUE_merge_aircraft_mig_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_mig_1_flag }
 				}
 			}
 
@@ -5513,20 +5513,20 @@ ideas = {
 			}
 		}
 
-		RUS_mig_design_bureau_final = {
+		RUE_mig_design_bureau_final = {
 			name = mig_design_bureau
 
 			picture = mig_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_mig_1_flag
-					has_country_flag = RUS_merge_aircraft_mig_2_flag
-					has_country_flag = RUS_merge_aircraft_mig_3_flag
+					has_country_flag = RUE_merge_aircraft_mig_1_flag
+					has_country_flag = RUE_merge_aircraft_mig_2_flag
+					has_country_flag = RUE_merge_aircraft_mig_3_flag
 				}
 			}
 
@@ -5563,20 +5563,20 @@ ideas = {
  ###  ######    #     ####    ####    ####   #    #  #  #    #
 
 
-		RUS_ilyushin_design_bureau = {
+		RUE_ilyushin_design_bureau = {
 			name = ilyushin_design_bureau
 
 			picture = ilyushin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_2_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_3_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_2_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_3_flag }
 				}
 			}
 
@@ -5594,20 +5594,20 @@ ideas = {
 			}
 		}
 
-		RUS_ilyushin_design_bureau_1 = {
+		RUE_ilyushin_design_bureau_1 = {
 			name = ilyushin_design_bureau
 
 			picture = ilyushin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_ilyushin_1_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_2_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_3_flag }
+					has_country_flag = RUE_merge_aircraft_ilyushin_1_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_2_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_3_flag }
 				}
 			}
 
@@ -5631,20 +5631,20 @@ ideas = {
 			}
 		}
 
-		RUS_ilyushin_design_bureau_2 = {
+		RUE_ilyushin_design_bureau_2 = {
 			name = ilyushin_design_bureau
 
 			picture = ilyushin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_ilyushin_2_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_3_flag }
+					has_country_flag = RUE_merge_aircraft_ilyushin_2_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_3_flag }
 				}
 			}
 
@@ -5663,20 +5663,20 @@ ideas = {
 			}
 		}
 
-		RUS_ilyushin_design_bureau_3 = {
+		RUE_ilyushin_design_bureau_3 = {
 			name = ilyushin_design_bureau
 
 			picture = ilyushin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_ilyushin_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_2_flag }
+					has_country_flag = RUE_merge_aircraft_ilyushin_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_2_flag }
 				}
 			}
 
@@ -5696,20 +5696,20 @@ ideas = {
 			}
 		}
 
-		RUS_ilyushin_design_bureau_1_2 = {
+		RUE_ilyushin_design_bureau_1_2 = {
 			name = ilyushin_design_bureau
 
 			picture = ilyushin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_ilyushin_1_flag
-					has_country_flag = RUS_merge_aircraft_ilyushin_2_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_3_flag }
+					has_country_flag = RUE_merge_aircraft_ilyushin_1_flag
+					has_country_flag = RUE_merge_aircraft_ilyushin_2_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_3_flag }
 				}
 			}
 
@@ -5734,20 +5734,20 @@ ideas = {
 			}
 		}
 
-		RUS_ilyushin_design_bureau_1_3 = {
+		RUE_ilyushin_design_bureau_1_3 = {
 			name = ilyushin_design_bureau
 
 			picture = ilyushin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_ilyushin_1_flag
-					has_country_flag = RUS_merge_aircraft_ilyushin_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_2_flag }
+					has_country_flag = RUE_merge_aircraft_ilyushin_1_flag
+					has_country_flag = RUE_merge_aircraft_ilyushin_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_2_flag }
 				}
 			}
 
@@ -5773,20 +5773,20 @@ ideas = {
 			}
 		}
 
-		RUS_ilyushin_design_bureau_2_3 = {
+		RUE_ilyushin_design_bureau_2_3 = {
 			name = ilyushin_design_bureau
 
 			picture = ilyushin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_ilyushin_2_flag
-					has_country_flag = RUS_merge_aircraft_ilyushin_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_ilyushin_1_flag }
+					has_country_flag = RUE_merge_aircraft_ilyushin_2_flag
+					has_country_flag = RUE_merge_aircraft_ilyushin_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_ilyushin_1_flag }
 				}
 			}
 
@@ -5807,20 +5807,20 @@ ideas = {
 			}
 		}
 
-		RUS_ilyushin_design_bureau_final = {
+		RUE_ilyushin_design_bureau_final = {
 			name = ilyushin_design_bureau
 
 			picture = ilyushin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_ilyushin_1_flag
-					has_country_flag = RUS_merge_aircraft_ilyushin_2_flag
-					has_country_flag = RUS_merge_aircraft_ilyushin_3_flag
+					has_country_flag = RUE_merge_aircraft_ilyushin_1_flag
+					has_country_flag = RUE_merge_aircraft_ilyushin_2_flag
+					has_country_flag = RUE_merge_aircraft_ilyushin_3_flag
 				}
 			}
 
@@ -5858,20 +5858,20 @@ ideas = {
     #      ####    ####   #       ######  ######    ##
 
 
-		RUS_tupolev_design_bureau = {
+		RUE_tupolev_design_bureau = {
 			name = tupolev_design_bureau
 
 			picture = tupolev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_2_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_3_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_2_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_3_flag }
 				}
 			}
 
@@ -5889,20 +5889,20 @@ ideas = {
 			}
 		}
 
-		RUS_tupolev_design_bureau_1 = {
+		RUE_tupolev_design_bureau_1 = {
 			name = tupolev_design_bureau
 
 			picture = tupolev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_tupolev_1_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_2_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_3_flag }
+					has_country_flag = RUE_merge_aircraft_tupolev_1_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_2_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_3_flag }
 				}
 			}
 
@@ -5926,20 +5926,20 @@ ideas = {
 			}
 		}
 
-		RUS_tupolev_design_bureau_2 = {
+		RUE_tupolev_design_bureau_2 = {
 			name = tupolev_design_bureau
 
 			picture = tupolev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_tupolev_2_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_3_flag }
+					has_country_flag = RUE_merge_aircraft_tupolev_2_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_3_flag }
 				}
 			}
 
@@ -5958,20 +5958,20 @@ ideas = {
 			}
 		}
 
-		RUS_tupolev_design_bureau_3 = {
+		RUE_tupolev_design_bureau_3 = {
 			name = tupolev_design_bureau
 
 			picture = tupolev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_tupolev_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_2_flag }
+					has_country_flag = RUE_merge_aircraft_tupolev_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_2_flag }
 				}
 			}
 
@@ -5991,20 +5991,20 @@ ideas = {
 			}
 		}
 
-		RUS_tupolev_design_bureau_1_2 = {
+		RUE_tupolev_design_bureau_1_2 = {
 			name = tupolev_design_bureau
 
 			picture = tupolev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_tupolev_1_flag
-					has_country_flag = RUS_merge_aircraft_tupolev_2_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_3_flag }
+					has_country_flag = RUE_merge_aircraft_tupolev_1_flag
+					has_country_flag = RUE_merge_aircraft_tupolev_2_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_3_flag }
 				}
 			}
 
@@ -6029,20 +6029,20 @@ ideas = {
 			}
 		}
 
-		RUS_tupolev_design_bureau_1_3 = {
+		RUE_tupolev_design_bureau_1_3 = {
 			name = tupolev_design_bureau
 
 			picture = tupolev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_tupolev_1_flag
-					has_country_flag = RUS_merge_aircraft_tupolev_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_2_flag }
+					has_country_flag = RUE_merge_aircraft_tupolev_1_flag
+					has_country_flag = RUE_merge_aircraft_tupolev_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_2_flag }
 				}
 			}
 
@@ -6068,20 +6068,20 @@ ideas = {
 			}
 		}
 
-		RUS_tupolev_design_bureau_2_3 = {
+		RUE_tupolev_design_bureau_2_3 = {
 			name = tupolev_design_bureau
 
 			picture = tupolev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_tupolev_2_flag
-					has_country_flag = RUS_merge_aircraft_tupolev_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_tupolev_1_flag }
+					has_country_flag = RUE_merge_aircraft_tupolev_2_flag
+					has_country_flag = RUE_merge_aircraft_tupolev_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_tupolev_1_flag }
 				}
 			}
 
@@ -6102,20 +6102,20 @@ ideas = {
 			}
 		}
 
-		RUS_tupolev_design_bureau_final = {
+		RUE_tupolev_design_bureau_final = {
 			name = tupolev_design_bureau
 
 			picture = tupolev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_tupolev_1_flag
-					has_country_flag = RUS_merge_aircraft_tupolev_2_flag
-					has_country_flag = RUS_merge_aircraft_tupolev_3_flag
+					has_country_flag = RUE_merge_aircraft_tupolev_1_flag
+					has_country_flag = RUE_merge_aircraft_tupolev_2_flag
+					has_country_flag = RUE_merge_aircraft_tupolev_3_flag
 				}
 			}
 
@@ -6152,20 +6152,20 @@ ideas = {
     #     #    #  #    #   ####     ##    ######  ######    ##
 
 
-		RUS_yakovlev_design_bureau = {
+		RUE_yakovlev_design_bureau = {
 			name = yakovlev_design_bureau
 
 			picture = yakovlev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_2_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_3_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_2_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_3_flag }
 				}
 			}
 
@@ -6183,20 +6183,20 @@ ideas = {
 			}
 		}
 
-		RUS_yakovlev_design_bureau_1 = {
+		RUE_yakovlev_design_bureau_1 = {
 			name = yakovlev_design_bureau
 
 			picture = yakovlev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_yakovlev_1_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_2_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_3_flag }
+					has_country_flag = RUE_merge_aircraft_yakovlev_1_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_2_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_3_flag }
 				}
 			}
 
@@ -6220,20 +6220,20 @@ ideas = {
 			}
 		}
 
-		RUS_yakovlev_design_bureau_2 = {
+		RUE_yakovlev_design_bureau_2 = {
 			name = yakovlev_design_bureau
 
 			picture = yakovlev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_yakovlev_2_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_3_flag }
+					has_country_flag = RUE_merge_aircraft_yakovlev_2_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_3_flag }
 				}
 			}
 
@@ -6252,20 +6252,20 @@ ideas = {
 			}
 		}
 
-		RUS_yakovlev_design_bureau_3 = {
+		RUE_yakovlev_design_bureau_3 = {
 			name = yakovlev_design_bureau
 
 			picture = yakovlev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_yakovlev_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_1_flag }
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_2_flag }
+					has_country_flag = RUE_merge_aircraft_yakovlev_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_1_flag }
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_2_flag }
 				}
 			}
 
@@ -6285,20 +6285,20 @@ ideas = {
 			}
 		}
 
-		RUS_yakovlev_design_bureau_1_2 = {
+		RUE_yakovlev_design_bureau_1_2 = {
 			name = yakovlev_design_bureau
 
 			picture = yakovlev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_yakovlev_1_flag
-					has_country_flag = RUS_merge_aircraft_yakovlev_2_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_3_flag }
+					has_country_flag = RUE_merge_aircraft_yakovlev_1_flag
+					has_country_flag = RUE_merge_aircraft_yakovlev_2_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_3_flag }
 				}
 			}
 
@@ -6323,20 +6323,20 @@ ideas = {
 			}
 		}
 
-		RUS_yakovlev_design_bureau_1_3 = {
+		RUE_yakovlev_design_bureau_1_3 = {
 			name = yakovlev_design_bureau
 
 			picture = yakovlev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_yakovlev_1_flag
-					has_country_flag = RUS_merge_aircraft_yakovlev_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_2_flag }
+					has_country_flag = RUE_merge_aircraft_yakovlev_1_flag
+					has_country_flag = RUE_merge_aircraft_yakovlev_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_2_flag }
 				}
 			}
 
@@ -6362,20 +6362,20 @@ ideas = {
 			}
 		}
 
-		RUS_yakovlev_design_bureau_2_3 = {
+		RUE_yakovlev_design_bureau_2_3 = {
 			name = yakovlev_design_bureau
 
 			picture = yakovlev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_yakovlev_2_flag
-					has_country_flag = RUS_merge_aircraft_yakovlev_3_flag
-					NOT = { has_country_flag = RUS_merge_aircraft_yakovlev_1_flag }
+					has_country_flag = RUE_merge_aircraft_yakovlev_2_flag
+					has_country_flag = RUE_merge_aircraft_yakovlev_3_flag
+					NOT = { has_country_flag = RUE_merge_aircraft_yakovlev_1_flag }
 				}
 			}
 
@@ -6396,20 +6396,20 @@ ideas = {
 			}
 		}
 
-		RUS_yakovlev_design_bureau_final = {
+		RUE_yakovlev_design_bureau_final = {
 			name = yakovlev_design_bureau
 
 			picture = yakovlev_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_aircraft_yakovlev_1_flag
-					has_country_flag = RUS_merge_aircraft_yakovlev_2_flag
-					has_country_flag = RUS_merge_aircraft_yakovlev_3_flag
+					has_country_flag = RUE_merge_aircraft_yakovlev_1_flag
+					has_country_flag = RUE_merge_aircraft_yakovlev_2_flag
+					has_country_flag = RUE_merge_aircraft_yakovlev_3_flag
 				}
 			}
 
@@ -6452,20 +6452,20 @@ ideas = {
  #     #  #   #   #    #  #    #  #  #   ##
   #####   #    #  #    #  #####   #  #    #
 
-		RUS_grabin_design_bureau = {
+		RUE_grabin_design_bureau = {
 			name = grabin_design_bureau
 
 			picture = grabin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_1_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_2_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_3_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_1_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_2_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_3_flag }
 				}
 			}
 
@@ -6479,20 +6479,20 @@ ideas = {
 			}
 		}
 
-		RUS_grabin_design_bureau_1 = {
+		RUE_grabin_design_bureau_1 = {
 			name = grabin_design_bureau
 
 			picture = grabin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_grabin_1_flag
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_2_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_3_flag }
+					has_country_flag = RUE_merge_materiel_grabin_1_flag
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_2_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_3_flag }
 				}
 			}
 
@@ -6512,20 +6512,20 @@ ideas = {
 			}
 		}
 
-		RUS_grabin_design_bureau_2 = {
+		RUE_grabin_design_bureau_2 = {
 			name = grabin_design_bureau
 
 			picture = grabin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_grabin_2_flag
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_1_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_3_flag }
+					has_country_flag = RUE_merge_materiel_grabin_2_flag
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_1_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_3_flag }
 				}
 			}
 
@@ -6540,20 +6540,20 @@ ideas = {
 			}
 		}
 
-		RUS_grabin_design_bureau_3 = {
+		RUE_grabin_design_bureau_3 = {
 			name = grabin_design_bureau
 
 			picture = grabin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_grabin_3_flag
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_1_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_2_flag }
+					has_country_flag = RUE_merge_materiel_grabin_3_flag
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_1_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_2_flag }
 				}
 			}
 
@@ -6568,20 +6568,20 @@ ideas = {
 			}
 		}
 
-		RUS_grabin_design_bureau_1_2 = {
+		RUE_grabin_design_bureau_1_2 = {
 			name = grabin_design_bureau
 
 			picture = grabin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_grabin_1_flag
-					has_country_flag = RUS_merge_materiel_grabin_2_flag
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_3_flag }
+					has_country_flag = RUE_merge_materiel_grabin_1_flag
+					has_country_flag = RUE_merge_materiel_grabin_2_flag
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_3_flag }
 				}
 			}
 
@@ -6602,20 +6602,20 @@ ideas = {
 			}
 		}
 
-		RUS_grabin_design_bureau_1_3 = {
+		RUE_grabin_design_bureau_1_3 = {
 			name = grabin_design_bureau
 
 			picture = grabin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_grabin_1_flag
-					has_country_flag = RUS_merge_materiel_grabin_3_flag
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_2_flag }
+					has_country_flag = RUE_merge_materiel_grabin_1_flag
+					has_country_flag = RUE_merge_materiel_grabin_3_flag
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_2_flag }
 				}
 			}
 
@@ -6636,20 +6636,20 @@ ideas = {
 			}
 		}
 
-		RUS_grabin_design_bureau_2_3 = {
+		RUE_grabin_design_bureau_2_3 = {
 			name = grabin_design_bureau
 
 			picture = grabin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_grabin_2_flag
-					has_country_flag = RUS_merge_materiel_grabin_3_flag
-					NOT = { has_country_flag = RUS_merge_materiel_grabin_1_flag }
+					has_country_flag = RUE_merge_materiel_grabin_2_flag
+					has_country_flag = RUE_merge_materiel_grabin_3_flag
+					NOT = { has_country_flag = RUE_merge_materiel_grabin_1_flag }
 				}
 			}
 
@@ -6665,20 +6665,20 @@ ideas = {
 			}
 		}
 
-		RUS_grabin_design_bureau_final = {
+		RUE_grabin_design_bureau_final = {
 			name = grabin_design_bureau
 
 			picture = grabin_design_bureau
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_grabin_1_flag
-					has_country_flag = RUS_merge_materiel_grabin_2_flag
-					has_country_flag = RUS_merge_materiel_grabin_3_flag
+					has_country_flag = RUE_merge_materiel_grabin_1_flag
+					has_country_flag = RUE_merge_materiel_grabin_2_flag
+					has_country_flag = RUE_merge_materiel_grabin_3_flag
 				}
 			}
 
@@ -6710,20 +6710,20 @@ ideas = {
     #     #    #  #       #    #
     #      ####   ######  #    #
 
-		RUS_tula_arms_plant = {
+		RUE_tula_arms_plant = {
 			name = tula_arms_plant
 
 			picture = tula_arms_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_materiel_tula_1_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_tula_2_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_tula_3_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_tula_1_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_tula_2_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_tula_3_flag }
 				}
 			}
 
@@ -6737,20 +6737,20 @@ ideas = {
 			}
 		}
 
-		RUS_tula_arms_plant_1 = {
+		RUE_tula_arms_plant_1 = {
 			name = tula_arms_plant
 
 			picture = tula_arms_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_tula_1_flag
-					NOT = { has_country_flag = RUS_merge_materiel_tula_2_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_tula_3_flag }
+					has_country_flag = RUE_merge_materiel_tula_1_flag
+					NOT = { has_country_flag = RUE_merge_materiel_tula_2_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_tula_3_flag }
 				}
 			}
 
@@ -6770,20 +6770,20 @@ ideas = {
 			}
 		}
 
-		RUS_tula_arms_plant_2 = {
+		RUE_tula_arms_plant_2 = {
 			name = tula_arms_plant
 
 			picture = tula_arms_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_tula_2_flag
-					NOT = { has_country_flag = RUS_merge_materiel_tula_1_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_tula_3_flag }
+					has_country_flag = RUE_merge_materiel_tula_2_flag
+					NOT = { has_country_flag = RUE_merge_materiel_tula_1_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_tula_3_flag }
 				}
 			}
 
@@ -6798,20 +6798,20 @@ ideas = {
 			}
 		}
 
-		RUS_tula_arms_plant_3 = {
+		RUE_tula_arms_plant_3 = {
 			name = tula_arms_plant
 
 			picture = tula_arms_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_tula_3_flag
-					NOT = { has_country_flag = RUS_merge_materiel_tula_1_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_tula_2_flag }
+					has_country_flag = RUE_merge_materiel_tula_3_flag
+					NOT = { has_country_flag = RUE_merge_materiel_tula_1_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_tula_2_flag }
 				}
 			}
 
@@ -6826,20 +6826,20 @@ ideas = {
 			}
 		}
 
-		RUS_tula_arms_plant_1_2 = {
+		RUE_tula_arms_plant_1_2 = {
 			name = tula_arms_plant
 
 			picture = tula_arms_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_tula_1_flag
-					has_country_flag = RUS_merge_materiel_tula_2_flag
-					NOT = { has_country_flag = RUS_merge_materiel_tula_3_flag }
+					has_country_flag = RUE_merge_materiel_tula_1_flag
+					has_country_flag = RUE_merge_materiel_tula_2_flag
+					NOT = { has_country_flag = RUE_merge_materiel_tula_3_flag }
 				}
 			}
 
@@ -6860,20 +6860,20 @@ ideas = {
 			}
 		}
 
-		RUS_tula_arms_plant_1_3 = {
+		RUE_tula_arms_plant_1_3 = {
 			name = tula_arms_plant
 
 			picture = tula_arms_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_tula_1_flag
-					has_country_flag = RUS_merge_materiel_tula_3_flag
-					NOT = { has_country_flag = RUS_merge_materiel_tula_2_flag }
+					has_country_flag = RUE_merge_materiel_tula_1_flag
+					has_country_flag = RUE_merge_materiel_tula_3_flag
+					NOT = { has_country_flag = RUE_merge_materiel_tula_2_flag }
 				}
 			}
 
@@ -6894,20 +6894,20 @@ ideas = {
 			}
 		}
 
-		RUS_tula_arms_plant_2_3 = {
+		RUE_tula_arms_plant_2_3 = {
 			name = tula_arms_plant
 
 			picture = tula_arms_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_tula_2_flag
-					has_country_flag = RUS_merge_materiel_tula_3_flag
-					NOT = { has_country_flag = RUS_merge_materiel_tula_1_flag }
+					has_country_flag = RUE_merge_materiel_tula_2_flag
+					has_country_flag = RUE_merge_materiel_tula_3_flag
+					NOT = { has_country_flag = RUE_merge_materiel_tula_1_flag }
 				}
 			}
 
@@ -6923,20 +6923,20 @@ ideas = {
 			}
 		}
 
-		RUS_tula_arms_plant_final = {
+		RUE_tula_arms_plant_final = {
 			name = tula_arms_plant
 
 			picture = tula_arms_plant
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_tula_1_flag
-					has_country_flag = RUS_merge_materiel_tula_2_flag
-					has_country_flag = RUS_merge_materiel_tula_3_flag
+					has_country_flag = RUE_merge_materiel_tula_1_flag
+					has_country_flag = RUE_merge_materiel_tula_2_flag
+					has_country_flag = RUE_merge_materiel_tula_3_flag
 				}
 			}
 
@@ -6967,20 +6967,20 @@ ideas = {
  #     #  #     #   #
   #####   #     #  #######
 
-		RUS_gaz = {
+		RUE_gaz = {
 			name = gaz
 
 			picture = gaz
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_1_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_2_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_3_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_1_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_2_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_3_flag }
 				}
 			}
 
@@ -6995,20 +6995,20 @@ ideas = {
 			}
 		}
 
-		RUS_gaz_1 = {
+		RUE_gaz_1 = {
 			name = gaz
 
 			picture = gaz
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_gaz_1_flag
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_2_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_3_flag }
+					has_country_flag = RUE_merge_materiel_gaz_1_flag
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_2_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_3_flag }
 				}
 			}
 
@@ -7029,20 +7029,20 @@ ideas = {
 			}
 		}
 
-		RUS_gaz_2 = {
+		RUE_gaz_2 = {
 			name = gaz
 
 			picture = gaz
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_gaz_2_flag
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_1_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_3_flag }
+					has_country_flag = RUE_merge_materiel_gaz_2_flag
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_1_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_3_flag }
 				}
 			}
 
@@ -7058,20 +7058,20 @@ ideas = {
 			}
 		}
 
-		RUS_gaz_3 = {
+		RUE_gaz_3 = {
 			name = gaz
 
 			picture = gaz
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_gaz_3_flag
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_1_flag }
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_2_flag }
+					has_country_flag = RUE_merge_materiel_gaz_3_flag
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_1_flag }
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_2_flag }
 				}
 			}
 
@@ -7087,20 +7087,20 @@ ideas = {
 			}
 		}
 
-		RUS_gaz_1_2 = {
+		RUE_gaz_1_2 = {
 			name = gaz
 
 			picture = gaz
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_gaz_1_flag
-					has_country_flag = RUS_merge_materiel_gaz_2_flag
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_3_flag }
+					has_country_flag = RUE_merge_materiel_gaz_1_flag
+					has_country_flag = RUE_merge_materiel_gaz_2_flag
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_3_flag }
 				}
 			}
 
@@ -7123,20 +7123,20 @@ ideas = {
 		}
 
 
-		RUS_gaz_1_3 = {
+		RUE_gaz_1_3 = {
 			name = gaz
 
 			picture = gaz
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_gaz_1_flag
-					has_country_flag = RUS_merge_materiel_gaz_3_flag
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_2_flag }
+					has_country_flag = RUE_merge_materiel_gaz_1_flag
+					has_country_flag = RUE_merge_materiel_gaz_3_flag
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_2_flag }
 				}
 			}
 
@@ -7158,20 +7158,20 @@ ideas = {
 			}
 		}
 
-		RUS_gaz_2_3 = {
+		RUE_gaz_2_3 = {
 			name = gaz
 
 			picture = gaz
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_gaz_2_flag
-					has_country_flag = RUS_merge_materiel_gaz_3_flag
-					NOT = { has_country_flag = RUS_merge_materiel_gaz_1_flag }
+					has_country_flag = RUE_merge_materiel_gaz_2_flag
+					has_country_flag = RUE_merge_materiel_gaz_3_flag
+					NOT = { has_country_flag = RUE_merge_materiel_gaz_1_flag }
 				}
 			}
 
@@ -7188,20 +7188,20 @@ ideas = {
 			}
 		}
 
-		RUS_gaz_final = {
+		RUE_gaz_final = {
 			name = gaz
 
 			picture = gaz
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
 				hidden_trigger = {
-					has_country_flag = RUS_merge_materiel_gaz_1_flag
-					has_country_flag = RUS_merge_materiel_gaz_2_flag
-					has_country_flag = RUS_merge_materiel_gaz_3_flag
+					has_country_flag = RUE_merge_materiel_gaz_1_flag
+					has_country_flag = RUE_merge_materiel_gaz_2_flag
+					has_country_flag = RUE_merge_materiel_gaz_3_flag
 				}
 			}
 
@@ -7239,11 +7239,11 @@ ideas = {
 		stalingrad_tractor_factory = {
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
-				NOT = { has_completed_focus = RUS_national_specialists }
+				NOT = { has_completed_focus = RUE_national_specialists }
 			}
 
 			research_bonus = {
@@ -7253,7 +7253,7 @@ ideas = {
 			traits = { industrial_concern }
 
 			modifier = {
-				custom_modifier_tooltip = RUS_industrial_concern_upgrade_tt
+				custom_modifier_tooltip = RUE_industrial_concern_upgrade_tt
 			}
 		}
 
@@ -7263,11 +7263,11 @@ ideas = {
 			picture = stalingrad_tractor_factory
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
-				has_completed_focus = RUS_national_specialists
+				has_completed_focus = RUE_national_specialists
 			}
 
 			research_bonus = {
@@ -7294,11 +7294,11 @@ ideas = {
 		leningrad_politechnical_institute = {
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
-				NOT = { has_completed_focus = RUS_national_specialists }
+				NOT = { has_completed_focus = RUE_national_specialists }
 			}
 
 			research_bonus = {
@@ -7308,7 +7308,7 @@ ideas = {
 			traits = { electronics_concern }
 
 			modifier = {
-				custom_modifier_tooltip = RUS_industrial_concern_upgrade_tt
+				custom_modifier_tooltip = RUE_industrial_concern_upgrade_tt
 			}
 		}
 
@@ -7318,11 +7318,11 @@ ideas = {
 			picture = leningrad_politechnical_institute
 
 			allowed = {
-				original_tag = BWR
+				original_tag = RUE
 			}
 
 			visible = {
-				has_completed_focus = RUS_national_specialists
+				has_completed_focus = RUE_national_specialists
 			}
 
 			research_bonus = {
@@ -7346,21 +7346,21 @@ ideas = {
   #####    ####     ##    #  ######    #        #     #  #    #  #  ######  #    #  #    #    #     ####
 
 
-		RUS_soviet_railways = { #NSB
+		RUE_soviet_railways = { #NSB
 
 			picture = SOV_soviet_railways
 
 			allowed = {
-				original_TAG = BWR
+				original_TAG = RUE
 
 			}
 
 			visible = {
-				NOT = { has_completed_focus = RUS_national_specialists }
+				NOT = { has_completed_focus = RUE_national_specialists }
 			}
 
 			available = {
-				has_completed_focus = RUS_improve_railway_network
+				has_completed_focus = RUE_improve_railway_network
 			}
 
 			cost = 75
@@ -7372,26 +7372,26 @@ ideas = {
 			traits = { railway_company }
 
 			modifier = {
-				custom_modifier_tooltip = RUS_industrial_concern_upgrade_tt
+				custom_modifier_tooltip = RUE_industrial_concern_upgrade_tt
 			}
 		}
 
-		RUS_soviet_railways_improved = { #NSB
-			name = RUS_soviet_railways
+		RUE_soviet_railways_improved = { #NSB
+			name = RUE_soviet_railways
 
 			picture = SOV_soviet_railways
 
 			allowed = {
-				original_TAG = BWR
+				original_TAG = RUE
 
 			}
 
 			visible = {
-				has_completed_focus = RUS_national_specialists
+				has_completed_focus = RUE_national_specialists
 			}
 
 			available = {
-				has_completed_focus = RUS_improve_railway_network
+				has_completed_focus = RUE_improve_railway_network
 			}
 
 			cost = 75

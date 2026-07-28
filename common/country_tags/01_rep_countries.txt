@@ -1,2 +1,1 @@
-
-BWR = "countries/Russia.txt"
+RUE = "countries/Russia.txt"

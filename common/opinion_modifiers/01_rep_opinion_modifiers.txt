@@ -21,7 +21,7 @@ opinion_modifiers = {
 		value = -30
 	}
 	
-	POL_join_RUS_reject = {
+	POL_join_RUE_reject = {
 		value = -30
 	}
 
@@ -44,155 +44,155 @@ opinion_modifiers = {
 	usa_diplomacy_focus = {
 		value = 20
 	}
-	ROM_seek_alliance_RUS = { value = 25 }
-	HUN_RUS_betrayal = { value = -50 }
+	ROM_seek_alliance_RUE = { value = 25 }
+	HUN_RUE_betrayal = { value = -50 }
 
-	RUS_chose_NATO_neutrality = { 
+	RUE_chose_NATO_neutrality = { 
 		value = 30
 		decay = 1
 	}
 	
-	RUS_joined_NATO = { 
+	RUE_joined_NATO = { 
 		value = -30
 		decay = 1
 	}
 
-	RUS_FRA_join_comintern_reject = {		
+	RUE_FRA_join_comintern_reject = {		
 		value = -30
 	}
 
-	RUS_ultimatum_to_greece_thrace = {
+	RUE_ultimatum_to_greece_thrace = {
 		value = 25
 	}
 
-	RUS_pressured_our_government = {
+	RUE_pressured_our_government = {
 		value = -60
 		months = 12
 	}
 
-	RUS_stirring_the_masses = {
+	RUE_stirring_the_masses = {
 		value = -25
 		months = 12
 	}
 
-	RUS_supported_china_good = {
+	RUE_supported_china_good = {
 		value = 25
 	}
 
-	RUS_supported_china_bad = {
+	RUE_supported_china_bad = {
 		value = -25
 	}
 
-	RUS_supported_japan_good = {
+	RUE_supported_japan_good = {
 		value = 25
 	}
 
-	RUS_supported_japan_bad = {
+	RUE_supported_japan_bad = {
 		value = -25
 	}
 
-	RUS_cooperating_with_us = {
+	RUE_cooperating_with_us = {
 		value = 50
 	}
 
-	RUS_cooperating_with_other = {
+	RUE_cooperating_with_other = {
 		value = -50
 	}
 
-	RUS_sent_us_weapons = {
+	RUE_sent_us_weapons = {
 		value = 15
 		months = 12
 	}
 
-	RUS_soviet_japanese_pact_against_usa = {
+	RUE_soviet_japanese_pact_against_usa = {
 		value = 50
 		months = 24
 	}
 
-	RUS_refused_to_follow_our_guidelines = {
+	RUE_refused_to_follow_our_guidelines = {
 		value = -15
 		months = 12
 	}
 
-	RUS_anti_fascist_policies_good = {
+	RUE_anti_fascist_policies_good = {
 		value = 35
 	}
 
-	RUS_anti_fascist_policies_bad = {
+	RUE_anti_fascist_policies_bad = {
 		value = -50
 	}
 
-	RUS_anti_capitalist_policies_good = {
+	RUE_anti_capitalist_policies_good = {
 		value = 35
 	}
 
-	RUS_anti_capitalist_policies_bad = {
+	RUE_anti_capitalist_policies_bad = {
 		value = -50
 	}
 
-	RUS_cordial_relations_developed_by_soviet_diplomat = {
+	RUE_cordial_relations_developed_by_soviet_diplomat = {
 		value = 50
 	}
 
-	RUS_strengthened_relations_with_us = { 
+	RUE_strengthened_relations_with_us = { 
 		value = 35
 		months = 36
 	}
 
-	RUS_strengthened_relations_with_us_trade = { 
+	RUE_strengthened_relations_with_us_trade = { 
 		value = 35
 		months = 36
 	}
 
-	RUS_complied_with_our_demands = {
+	RUE_complied_with_our_demands = {
 		value = 25
 		months = 36
 	}
 
-	RUS_rejected_our_demands = {
+	RUE_rejected_our_demands = {
 		value = -25
 		months = 36
 	}
 
-	RUS_attempted_to_infiltrate_manhattan_project = {
+	RUE_attempted_to_infiltrate_manhattan_project = {
 		value = -75
 	}
 
-	RUS_attempted_to_infiltrate_our_atomic_program = {
+	RUE_attempted_to_infiltrate_our_atomic_program = {
 		value = -75
 	}
 
-	RUS_policies_of_collective_security_opinion = {
+	RUE_policies_of_collective_security_opinion = {
 		value = 50
 		months = 36
 	}
 
-	RUS_rejected_defensive_pact = {
+	RUE_rejected_defensive_pact = {
 		value = -50
 		months = 36
 	}
 
-	RUS_international_socialist_association = {
+	RUE_international_socialist_association = {
 		value = 40
 		months = 48
 	}
 
-	RUS_international_socialist_association_bad = {
+	RUE_international_socialist_association_bad = {
 		value = -40
 		months = 48
 	}
 
-	RUS_support_for_exiles = {
+	RUE_support_for_exiles = {
 		value = 50
 		months = 48
 	}
 
-	RUS_fourth_international_good = {
+	RUE_fourth_international_good = {
 		value = 50
 		months = 48
 	}
 
-	RUS_fourth_international_bad = {
+	RUE_fourth_international_bad = {
 		value = -50
 		months = 24
 	}

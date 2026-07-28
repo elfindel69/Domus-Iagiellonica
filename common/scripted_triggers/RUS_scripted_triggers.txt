@@ -13,51 +13,51 @@
 #	}
 # 
 
-RUS_propaganda_poster_slot_available = {
+RUE_propaganda_poster_slot_available = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_propaganda_poster_slot_available_tt
+		tooltip = RUE_propaganda_poster_slot_available_tt
 		OR = {
-			check_variable = { RUS_poster_left_icon_frame = RUS_propaganda_empty_slot_index }
-			check_variable = { RUS_poster_center_icon_frame = RUS_propaganda_empty_slot_index }
-			check_variable = { RUS_poster_right_icon_frame = RUS_propaganda_empty_slot_index }
+			check_variable = { RUE_poster_left_icon_frame = RUE_propaganda_empty_slot_index }
+			check_variable = { RUE_poster_center_icon_frame = RUE_propaganda_empty_slot_index }
+			check_variable = { RUE_poster_right_icon_frame = RUE_propaganda_empty_slot_index }
 		}
 	}
 }
 
 
 
-RUS_third_five_year_plan_available = {
+RUE_third_five_year_plan_available = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_third_five_year_plan_available_tt
-		NOT = { has_country_flag = RUS_third_five_year_plan_locked_flag }
+		tooltip = RUE_third_five_year_plan_available_tt
+		NOT = { has_country_flag = RUE_third_five_year_plan_locked_flag }
 	}
 }
 
-RUS_fourth_five_year_plan_available = {
+RUE_fourth_five_year_plan_available = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_fourth_five_year_plan_available_tt
-		has_country_flag = RUS_fourth_five_year_plan_available_flag
+		tooltip = RUE_fourth_five_year_plan_available_tt
+		has_country_flag = RUE_fourth_five_year_plan_available_flag
 	}
 }
 
-RUS_propaganda_victory_at_hand_available = { #Basically Great Patriotic War is ongoing
+RUE_propaganda_victory_at_hand_available = { #Basically Great Patriotic War is ongoing
 	custom_trigger_tooltip = {
-		tooltip = RUS_propaganda_victory_at_hand_available_tt
-		has_country_flag = RUS_third_five_year_plan_locked_flag
-		NOT = { has_country_flag = RUS_fourth_five_year_plan_available_flag }
+		tooltip = RUE_propaganda_victory_at_hand_available_tt
+		has_country_flag = RUE_third_five_year_plan_locked_flag
+		NOT = { has_country_flag = RUE_fourth_five_year_plan_available_flag }
 	}
 }
 
-RUS_is_valid_subject = {
+RUE_is_valid_subject = {
 	OR = {
 		is_subject = no
 		is_subject_of = ROOT
 	}
 }
 
-RUS_is_free_chinese_tag = {
+RUE_is_free_chinese_tag = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_is_free_chinese_tag_tt
+		tooltip = RUE_is_free_chinese_tag_tt
 		OR = {
 			original_tag = CHI
 			original_tag = PRC
@@ -73,7 +73,7 @@ RUS_is_free_chinese_tag = {
 	}
 }
 
-RUS_is_chinese_tag = {
+RUE_is_chinese_tag = {
 	OR = {
 		original_tag = CHI
 		original_tag = PRC
@@ -87,7 +87,7 @@ RUS_is_chinese_tag = {
 	}
 }
 
-RUS_is_soviet_republic_tag_strict = {
+RUE_is_soviet_republic_tag_strict = {
 	OR = {
 		tag = BLR
 		tag = UKR
@@ -134,7 +134,7 @@ RUS_is_soviet_republic_tag_strict = {
 	}
 }
 
-RUS_is_soviet_republic_tag_lax = {
+RUE_is_soviet_republic_tag_lax = {
 	OR = {
 		tag = BLR
 		tag = UKR
@@ -188,98 +188,98 @@ RUS_is_soviet_republic_tag_lax = {
 	}
 }
 
-RUS_is_valid_academy_of_sciences_target = {
+RUE_is_valid_academy_of_sciences_target = {
 	OR = {
 		AND = {
-			RUS_is_soviet_republic_tag_strict = yes
+			RUE_is_soviet_republic_tag_strict = yes
 			has_government = communism
 			is_in_faction_with = ROOT
 		}
 		AND = {
-			RUS_is_soviet_republic_tag_lax = yes
+			RUE_is_soviet_republic_tag_lax = yes
 			has_government = communism
 			is_subject_of = ROOT
 		}
 	}
 }
 
-RUS_has_already_built_national_academy_of_sciences = {
+RUE_has_already_built_national_academy_of_sciences = {
 	OR = {
 		AND = {
 			FROM = { tag = BLR }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_BLR_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_BLR_flag }
 		}
 		AND = {
 			FROM = { tag = UKR }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_UKR_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_UKR_flag }
 		}
 		AND = {
 			FROM = { tag = KAZ }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_KAZ_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_KAZ_flag }
 		}
 		AND = {
 			FROM = { tag = GEO }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_GEO_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_GEO_flag }
 		}
 		AND = {
 			FROM = { tag = ARM }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_ARM_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_ARM_flag }
 		}
 		AND = {
 			FROM = { tag = AZR }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_AZR_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_AZR_flag }
 		}
 		AND = {
 			FROM = { tag = UZB }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_UZB_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_UZB_flag }
 		}
 		AND = {
 			FROM = { tag = TMS }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_TMS_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_TMS_flag }
 		}
 		AND = {
 			FROM = { tag = KYR }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_KYR_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_KYR_flag }
 		}
 		AND = {
 			FROM = { tag = TAJ }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_TAJ_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_TAJ_flag }
 		}
 		AND = {
 			FROM = { tag = TAN }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_TAN_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_TAN_flag }
 		}
 		AND = {
 			FROM = { tag = DON }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_DON_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_DON_flag }
 		}
 		AND = {
 			FROM = { tag = KUB }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_KUB_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_KUB_flag }
 		}
 		AND = {
 			FROM = { tag = EST }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_EST_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_EST_flag }
 		}
 		AND = {
 			FROM = { tag = LAT }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_LAT_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_LAT_flag }
 		}
 		AND = {
 			FROM = { tag = LIT }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_LIT_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_LIT_flag }
 		}
 		AND = {
 			FROM = { tag = POL }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_POL_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_POL_flag }
 		}
 		AND = {
 			FROM = { tag = FIN }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_FIN_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_FIN_flag }
 		}
 		AND = {
 			FROM = { tag = MON }
-			ROOT = { has_country_flag = RUS_national_academy_of_sciences_built_MON_flag }
+			ROOT = { has_country_flag = RUE_national_academy_of_sciences_built_MON_flag }
 		}
 	}
 }
@@ -289,111 +289,111 @@ RUS_has_already_built_national_academy_of_sciences = {
 ### TANK DESIGNER ###
 #####################
 
-RUS_has_active_tank_designer_any = {
+RUE_has_active_tank_designer_any = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_has_active_tank_designer_any_tt
+		tooltip = RUE_has_active_tank_designer_any_tt
 		OR = {
-			RUS_has_active_tank_designer_morozov = yes
-			RUS_has_active_tank_designer_astrov = yes
-			RUS_has_active_tank_designer_okmo = yes
-			RUS_has_active_tank_designer_mytishchy = yes
-			RUS_has_active_tank_designer_kirov = yes
+			RUE_has_active_tank_designer_morozov = yes
+			RUE_has_active_tank_designer_astrov = yes
+			RUE_has_active_tank_designer_okmo = yes
+			RUE_has_active_tank_designer_mytishchy = yes
+			RUE_has_active_tank_designer_kirov = yes
 		}
 	}
 }
 
-RUS_has_active_tank_designer_morozov = {
+RUE_has_active_tank_designer_morozov = {
 	OR = {
-		has_idea = RUS_morozov_design_bureau
-		has_idea = RUS_morozov_design_bureau_1
-		has_idea = RUS_morozov_design_bureau_2
-		has_idea = RUS_morozov_design_bureau_3
-		has_idea = RUS_morozov_design_bureau_1_2
-		has_idea = RUS_morozov_design_bureau_1_3
-		has_idea = RUS_morozov_design_bureau_2_3
-		has_idea = RUS_morozov_design_bureau_final
+		has_idea = RUE_morozov_design_bureau
+		has_idea = RUE_morozov_design_bureau_1
+		has_idea = RUE_morozov_design_bureau_2
+		has_idea = RUE_morozov_design_bureau_3
+		has_idea = RUE_morozov_design_bureau_1_2
+		has_idea = RUE_morozov_design_bureau_1_3
+		has_idea = RUE_morozov_design_bureau_2_3
+		has_idea = RUE_morozov_design_bureau_final
 	}
 }
 
-RUS_has_active_tank_designer_astrov = {
+RUE_has_active_tank_designer_astrov = {
 	OR = {
-		has_idea = RUS_astrov_design_bureau
-		has_idea = RUS_astrov_design_bureau_1
-		has_idea = RUS_astrov_design_bureau_2
-		has_idea = RUS_astrov_design_bureau_3
-		has_idea = RUS_astrov_design_bureau_1_2
-		has_idea = RUS_astrov_design_bureau_1_3
-		has_idea = RUS_astrov_design_bureau_2_3
-		has_idea = RUS_astrov_design_bureau_final
+		has_idea = RUE_astrov_design_bureau
+		has_idea = RUE_astrov_design_bureau_1
+		has_idea = RUE_astrov_design_bureau_2
+		has_idea = RUE_astrov_design_bureau_3
+		has_idea = RUE_astrov_design_bureau_1_2
+		has_idea = RUE_astrov_design_bureau_1_3
+		has_idea = RUE_astrov_design_bureau_2_3
+		has_idea = RUE_astrov_design_bureau_final
 	}
 }
 
-RUS_has_active_tank_designer_okmo = {
+RUE_has_active_tank_designer_okmo = {
 	OR = {
-		has_idea = RUS_okmo
-		has_idea = RUS_okmo_1
-		has_idea = RUS_okmo_2
-		has_idea = RUS_okmo_3
-		has_idea = RUS_okmo_1_2
-		has_idea = RUS_okmo_1_3
-		has_idea = RUS_okmo_2_3
-		has_idea = RUS_okmo_final
+		has_idea = RUE_okmo
+		has_idea = RUE_okmo_1
+		has_idea = RUE_okmo_2
+		has_idea = RUE_okmo_3
+		has_idea = RUE_okmo_1_2
+		has_idea = RUE_okmo_1_3
+		has_idea = RUE_okmo_2_3
+		has_idea = RUE_okmo_final
 	}
 }
 
-RUS_has_active_tank_designer_mytishchy = {
+RUE_has_active_tank_designer_mytishchy = {
 	OR = {
-		has_idea = RUS_mytishchy_machine_building_plant
-		has_idea = RUS_mytishchy_machine_building_plant_1
-		has_idea = RUS_mytishchy_machine_building_plant_2
-		has_idea = RUS_mytishchy_machine_building_plant_3
-		has_idea = RUS_mytishchy_machine_building_plant_1_2
-		has_idea = RUS_mytishchy_machine_building_plant_1_3
-		has_idea = RUS_mytishchy_machine_building_plant_2_3
-		has_idea = RUS_mytishchy_machine_building_plant_final
+		has_idea = RUE_mytishchy_machine_building_plant
+		has_idea = RUE_mytishchy_machine_building_plant_1
+		has_idea = RUE_mytishchy_machine_building_plant_2
+		has_idea = RUE_mytishchy_machine_building_plant_3
+		has_idea = RUE_mytishchy_machine_building_plant_1_2
+		has_idea = RUE_mytishchy_machine_building_plant_1_3
+		has_idea = RUE_mytishchy_machine_building_plant_2_3
+		has_idea = RUE_mytishchy_machine_building_plant_final
 	}
 }
 
-RUS_has_active_tank_designer_kirov = {
+RUE_has_active_tank_designer_kirov = {
 	OR = {
-		has_idea = RUS_kirov
-		has_idea = RUS_kirov_1
-		has_idea = RUS_kirov_2
-		has_idea = RUS_kirov_3
-		has_idea = RUS_kirov_1_2
-		has_idea = RUS_kirov_1_3
-		has_idea = RUS_kirov_2_3
-		has_idea = RUS_kirov_final
+		has_idea = RUE_kirov
+		has_idea = RUE_kirov_1
+		has_idea = RUE_kirov_2
+		has_idea = RUE_kirov_3
+		has_idea = RUE_kirov_1_2
+		has_idea = RUE_kirov_1_3
+		has_idea = RUE_kirov_2_3
+		has_idea = RUE_kirov_final
 	}
 }
 
-RUS_has_tank_merged_1 = {
+RUE_has_tank_merged_1 = {
 	OR = {
-		has_country_flag = RUS_merge_tank_morozov_1_flag
-		has_country_flag = RUS_merge_tank_astrov_1_flag
-		has_country_flag = RUS_merge_tank_okmo_1_flag
-		has_country_flag = RUS_merge_tank_mytishchy_1_flag
-		has_country_flag = RUS_merge_tank_kirov_1_flag
+		has_country_flag = RUE_merge_tank_morozov_1_flag
+		has_country_flag = RUE_merge_tank_astrov_1_flag
+		has_country_flag = RUE_merge_tank_okmo_1_flag
+		has_country_flag = RUE_merge_tank_mytishchy_1_flag
+		has_country_flag = RUE_merge_tank_kirov_1_flag
 	}
 }
 
-RUS_has_tank_merged_2 = {
+RUE_has_tank_merged_2 = {
 	OR = {
-		has_country_flag = RUS_merge_tank_morozov_2_flag
-		has_country_flag = RUS_merge_tank_astrov_2_flag
-		has_country_flag = RUS_merge_tank_okmo_2_flag
-		has_country_flag = RUS_merge_tank_mytishchy_2_flag
-		has_country_flag = RUS_merge_tank_kirov_2_flag
+		has_country_flag = RUE_merge_tank_morozov_2_flag
+		has_country_flag = RUE_merge_tank_astrov_2_flag
+		has_country_flag = RUE_merge_tank_okmo_2_flag
+		has_country_flag = RUE_merge_tank_mytishchy_2_flag
+		has_country_flag = RUE_merge_tank_kirov_2_flag
 	}
 }
 
-RUS_has_tank_merged_3 = {
+RUE_has_tank_merged_3 = {
 	OR = {
-		has_country_flag = RUS_merge_tank_morozov_3_flag
-		has_country_flag = RUS_merge_tank_astrov_3_flag
-		has_country_flag = RUS_merge_tank_okmo_3_flag
-		has_country_flag = RUS_merge_tank_mytishchy_3_flag
-		has_country_flag = RUS_merge_tank_kirov_3_flag
+		has_country_flag = RUE_merge_tank_morozov_3_flag
+		has_country_flag = RUE_merge_tank_astrov_3_flag
+		has_country_flag = RUE_merge_tank_okmo_3_flag
+		has_country_flag = RUE_merge_tank_mytishchy_3_flag
+		has_country_flag = RUE_merge_tank_kirov_3_flag
 	}
 }
 
@@ -402,147 +402,147 @@ RUS_has_tank_merged_3 = {
 ### SHIP DESIGNER ###
 #####################
 
-RUS_has_active_ship_designer_any_baltic = {
+RUE_has_active_ship_designer_any_baltic = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_has_active_ship_designer_any_baltic_tt
+		tooltip = RUE_has_active_ship_designer_any_baltic_tt
 		OR = {
-			RUS_has_active_ship_designer_nevskoye = yes
-			RUS_has_active_ship_designer_rubin = yes
+			RUE_has_active_ship_designer_nevskoye = yes
+			RUE_has_active_ship_designer_rubin = yes
 		}
 	}
 }
 
-RUS_has_active_ship_designer_any_black_sea = {
+RUE_has_active_ship_designer_any_black_sea = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_has_active_ship_designer_any_black_sea_tt
+		tooltip = RUE_has_active_ship_designer_any_black_sea_tt
 		OR = {
-			RUS_has_active_ship_designer_black_sea_shipyard = yes
-			RUS_has_active_ship_designer_sevastopol_marine_plant = yes
+			RUE_has_active_ship_designer_black_sea_shipyard = yes
+			RUE_has_active_ship_designer_sevastopol_marine_plant = yes
 		}
 	}
 }
 
-RUS_has_active_ship_designer_nevskoye = {
+RUE_has_active_ship_designer_nevskoye = {
 	OR = {
-		has_idea = RUS_nevskoye_design_bureau
-		has_idea = RUS_nevskoye_design_bureau_1
-		has_idea = RUS_nevskoye_design_bureau_2
-		has_idea = RUS_nevskoye_design_bureau_3
-		has_idea = RUS_nevskoye_design_bureau_4
-		has_idea = RUS_nevskoye_design_bureau_1_2
-		has_idea = RUS_nevskoye_design_bureau_1_3
-		has_idea = RUS_nevskoye_design_bureau_1_4
-		has_idea = RUS_nevskoye_design_bureau_2_4
-		has_idea = RUS_nevskoye_design_bureau_3_4
-		has_idea = RUS_nevskoye_design_bureau_final_2
-		has_idea = RUS_nevskoye_design_bureau_final_3
+		has_idea = RUE_nevskoye_design_bureau
+		has_idea = RUE_nevskoye_design_bureau_1
+		has_idea = RUE_nevskoye_design_bureau_2
+		has_idea = RUE_nevskoye_design_bureau_3
+		has_idea = RUE_nevskoye_design_bureau_4
+		has_idea = RUE_nevskoye_design_bureau_1_2
+		has_idea = RUE_nevskoye_design_bureau_1_3
+		has_idea = RUE_nevskoye_design_bureau_1_4
+		has_idea = RUE_nevskoye_design_bureau_2_4
+		has_idea = RUE_nevskoye_design_bureau_3_4
+		has_idea = RUE_nevskoye_design_bureau_final_2
+		has_idea = RUE_nevskoye_design_bureau_final_3
 	}
 }
 
-RUS_has_active_ship_designer_rubin = {
+RUE_has_active_ship_designer_rubin = {
 	OR = {
-		has_idea = RUS_rubin_design_bureau
-		has_idea = RUS_rubin_design_bureau_1
-		has_idea = RUS_rubin_design_bureau_2
-		has_idea = RUS_rubin_design_bureau_3
-		has_idea = RUS_rubin_design_bureau_4
-		has_idea = RUS_rubin_design_bureau_1_2
-		has_idea = RUS_rubin_design_bureau_1_3
-		has_idea = RUS_rubin_design_bureau_1_4
-		has_idea = RUS_rubin_design_bureau_2_4
-		has_idea = RUS_rubin_design_bureau_3_4
-		has_idea = RUS_rubin_design_bureau_final_2
-		has_idea = RUS_rubin_design_bureau_final_3
+		has_idea = RUE_rubin_design_bureau
+		has_idea = RUE_rubin_design_bureau_1
+		has_idea = RUE_rubin_design_bureau_2
+		has_idea = RUE_rubin_design_bureau_3
+		has_idea = RUE_rubin_design_bureau_4
+		has_idea = RUE_rubin_design_bureau_1_2
+		has_idea = RUE_rubin_design_bureau_1_3
+		has_idea = RUE_rubin_design_bureau_1_4
+		has_idea = RUE_rubin_design_bureau_2_4
+		has_idea = RUE_rubin_design_bureau_3_4
+		has_idea = RUE_rubin_design_bureau_final_2
+		has_idea = RUE_rubin_design_bureau_final_3
 	}
 }
 
-RUS_has_active_ship_designer_black_sea_shipyard = {
+RUE_has_active_ship_designer_black_sea_shipyard = {
 	OR = {
-		has_idea = RUS_black_sea_shipyard
-		has_idea = RUS_black_sea_shipyard_1
-		has_idea = RUS_black_sea_shipyard_2
-		has_idea = RUS_black_sea_shipyard_3
-		has_idea = RUS_black_sea_shipyard_4
-		has_idea = RUS_black_sea_shipyard_1_2
-		has_idea = RUS_black_sea_shipyard_1_3
-		has_idea = RUS_black_sea_shipyard_1_4
-		has_idea = RUS_black_sea_shipyard_2_4
-		has_idea = RUS_black_sea_shipyard_3_4
-		has_idea = RUS_black_sea_shipyard_final_2
-		has_idea = RUS_black_sea_shipyard_final_3
+		has_idea = RUE_black_sea_shipyard
+		has_idea = RUE_black_sea_shipyard_1
+		has_idea = RUE_black_sea_shipyard_2
+		has_idea = RUE_black_sea_shipyard_3
+		has_idea = RUE_black_sea_shipyard_4
+		has_idea = RUE_black_sea_shipyard_1_2
+		has_idea = RUE_black_sea_shipyard_1_3
+		has_idea = RUE_black_sea_shipyard_1_4
+		has_idea = RUE_black_sea_shipyard_2_4
+		has_idea = RUE_black_sea_shipyard_3_4
+		has_idea = RUE_black_sea_shipyard_final_2
+		has_idea = RUE_black_sea_shipyard_final_3
 	}
 }
 
-RUS_has_active_ship_designer_sevastopol_marine_plant = {
+RUE_has_active_ship_designer_sevastopol_marine_plant = {
 	OR = {
-		has_idea = RUS_sevastopol_marine_plant
-		has_idea = RUS_sevastopol_marine_plant_1
-		has_idea = RUS_sevastopol_marine_plant_2
-		has_idea = RUS_sevastopol_marine_plant_3
-		has_idea = RUS_sevastopol_marine_plant_4
-		has_idea = RUS_sevastopol_marine_plant_1_2
-		has_idea = RUS_sevastopol_marine_plant_1_3
-		has_idea = RUS_sevastopol_marine_plant_1_4
-		has_idea = RUS_sevastopol_marine_plant_2_4
-		has_idea = RUS_sevastopol_marine_plant_3_4
-		has_idea = RUS_sevastopol_marine_plant_final_2
-		has_idea = RUS_sevastopol_marine_plant_final_3
+		has_idea = RUE_sevastopol_marine_plant
+		has_idea = RUE_sevastopol_marine_plant_1
+		has_idea = RUE_sevastopol_marine_plant_2
+		has_idea = RUE_sevastopol_marine_plant_3
+		has_idea = RUE_sevastopol_marine_plant_4
+		has_idea = RUE_sevastopol_marine_plant_1_2
+		has_idea = RUE_sevastopol_marine_plant_1_3
+		has_idea = RUE_sevastopol_marine_plant_1_4
+		has_idea = RUE_sevastopol_marine_plant_2_4
+		has_idea = RUE_sevastopol_marine_plant_3_4
+		has_idea = RUE_sevastopol_marine_plant_final_2
+		has_idea = RUE_sevastopol_marine_plant_final_3
 	}
 }
 
-RUS_has_ship_merged_1_baltic = {
+RUE_has_ship_merged_1_baltic = {
 	OR = {
-		has_country_flag = RUS_merge_ship_nevskoye_design_bureau_1_flag
-		has_country_flag = RUS_merge_ship_rubin_design_bureau_1_flag
+		has_country_flag = RUE_merge_ship_nevskoye_design_bureau_1_flag
+		has_country_flag = RUE_merge_ship_rubin_design_bureau_1_flag
 	}
 }
 
-RUS_has_ship_merged_2_baltic = {
+RUE_has_ship_merged_2_baltic = {
 	OR = {
-		has_country_flag = RUS_merge_ship_nevskoye_design_bureau_2_flag
-		has_country_flag = RUS_merge_ship_rubin_design_bureau_2_flag
+		has_country_flag = RUE_merge_ship_nevskoye_design_bureau_2_flag
+		has_country_flag = RUE_merge_ship_rubin_design_bureau_2_flag
 	}
 }
 
-RUS_has_ship_merged_3_baltic = {
+RUE_has_ship_merged_3_baltic = {
 	OR = {
-		has_country_flag = RUS_merge_ship_nevskoye_design_bureau_3_flag
-		has_country_flag = RUS_merge_ship_rubin_design_bureau_3_flag
+		has_country_flag = RUE_merge_ship_nevskoye_design_bureau_3_flag
+		has_country_flag = RUE_merge_ship_rubin_design_bureau_3_flag
 	}
 }
 
-RUS_has_ship_merged_4_baltic = {
+RUE_has_ship_merged_4_baltic = {
 	OR = {
-		has_country_flag = RUS_merge_ship_nevskoye_design_bureau_4_flag
-		has_country_flag = RUS_merge_ship_rubin_design_bureau_4_flag
+		has_country_flag = RUE_merge_ship_nevskoye_design_bureau_4_flag
+		has_country_flag = RUE_merge_ship_rubin_design_bureau_4_flag
 	}
 }
 
-RUS_has_ship_merged_1_black_sea = {
+RUE_has_ship_merged_1_black_sea = {
 	OR = {
-		has_country_flag = RUS_merge_ship_black_sea_shipyard_1_flag
-		has_country_flag = RUS_merge_ship_sevastopol_marine_plant_1_flag
+		has_country_flag = RUE_merge_ship_black_sea_shipyard_1_flag
+		has_country_flag = RUE_merge_ship_sevastopol_marine_plant_1_flag
 	}
 }
 
-RUS_has_ship_merged_2_black_sea = {
+RUE_has_ship_merged_2_black_sea = {
 	OR = {
-		has_country_flag = RUS_merge_ship_black_sea_shipyard_2_flag
-		has_country_flag = RUS_merge_ship_sevastopol_marine_plant_2_flag
+		has_country_flag = RUE_merge_ship_black_sea_shipyard_2_flag
+		has_country_flag = RUE_merge_ship_sevastopol_marine_plant_2_flag
 	}
 }
 
-RUS_has_ship_merged_3_black_sea = {
+RUE_has_ship_merged_3_black_sea = {
 	OR = {
-		has_country_flag = RUS_merge_ship_black_sea_shipyard_3_flag
-		has_country_flag = RUS_merge_ship_sevastopol_marine_plant_3_flag
+		has_country_flag = RUE_merge_ship_black_sea_shipyard_3_flag
+		has_country_flag = RUE_merge_ship_sevastopol_marine_plant_3_flag
 	}
 }
 
-RUS_has_ship_merged_4_black_sea = {
+RUE_has_ship_merged_4_black_sea = {
 	OR = {
-		has_country_flag = RUS_merge_ship_black_sea_shipyard_4_flag
-		has_country_flag = RUS_merge_ship_sevastopol_marine_plant_4_flag
+		has_country_flag = RUE_merge_ship_black_sea_shipyard_4_flag
+		has_country_flag = RUE_merge_ship_sevastopol_marine_plant_4_flag
 	}
 }
 
@@ -551,94 +551,94 @@ RUS_has_ship_merged_4_black_sea = {
 ### AIRCRAFT DESIGNER ###
 #########################
 
-RUS_has_active_aircraft_designer_any = {
+RUE_has_active_aircraft_designer_any = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_has_active_aircraft_designer_any_tt
+		tooltip = RUE_has_active_aircraft_designer_any_tt
 		OR = {
-			RUS_has_active_aircraft_designer_mig = yes
-			RUS_has_active_aircraft_designer_ilyushin = yes
-			RUS_has_active_aircraft_designer_tupolev = yes
-			RUS_has_active_aircraft_designer_yakovlev = yes
+			RUE_has_active_aircraft_designer_mig = yes
+			RUE_has_active_aircraft_designer_ilyushin = yes
+			RUE_has_active_aircraft_designer_tupolev = yes
+			RUE_has_active_aircraft_designer_yakovlev = yes
 		}
 	}
 }
 
-RUS_has_active_aircraft_designer_mig = {
+RUE_has_active_aircraft_designer_mig = {
 	OR = {
-		has_idea = RUS_mig_design_bureau
-		has_idea = RUS_mig_design_bureau_1
-		has_idea = RUS_mig_design_bureau_2
-		has_idea = RUS_mig_design_bureau_3
-		has_idea = RUS_mig_design_bureau_1_2
-		has_idea = RUS_mig_design_bureau_1_3
-		has_idea = RUS_mig_design_bureau_2_3
-		has_idea = RUS_mig_design_bureau_final
+		has_idea = RUE_mig_design_bureau
+		has_idea = RUE_mig_design_bureau_1
+		has_idea = RUE_mig_design_bureau_2
+		has_idea = RUE_mig_design_bureau_3
+		has_idea = RUE_mig_design_bureau_1_2
+		has_idea = RUE_mig_design_bureau_1_3
+		has_idea = RUE_mig_design_bureau_2_3
+		has_idea = RUE_mig_design_bureau_final
 	}
 }
 
-RUS_has_active_aircraft_designer_ilyushin = {
+RUE_has_active_aircraft_designer_ilyushin = {
 	OR = {
-		has_idea = RUS_ilyushin_design_bureau
-		has_idea = RUS_ilyushin_design_bureau_1
-		has_idea = RUS_ilyushin_design_bureau_2
-		has_idea = RUS_ilyushin_design_bureau_3
-		has_idea = RUS_ilyushin_design_bureau_1_2
-		has_idea = RUS_ilyushin_design_bureau_1_3
-		has_idea = RUS_ilyushin_design_bureau_2_3
-		has_idea = RUS_ilyushin_design_bureau_final
+		has_idea = RUE_ilyushin_design_bureau
+		has_idea = RUE_ilyushin_design_bureau_1
+		has_idea = RUE_ilyushin_design_bureau_2
+		has_idea = RUE_ilyushin_design_bureau_3
+		has_idea = RUE_ilyushin_design_bureau_1_2
+		has_idea = RUE_ilyushin_design_bureau_1_3
+		has_idea = RUE_ilyushin_design_bureau_2_3
+		has_idea = RUE_ilyushin_design_bureau_final
 	}
 }
 
-RUS_has_active_aircraft_designer_tupolev = {
+RUE_has_active_aircraft_designer_tupolev = {
 	OR = {
-		has_idea = RUS_tupolev_design_bureau
-		has_idea = RUS_tupolev_design_bureau_1
-		has_idea = RUS_tupolev_design_bureau_2
-		has_idea = RUS_tupolev_design_bureau_3
-		has_idea = RUS_tupolev_design_bureau_1_2
-		has_idea = RUS_tupolev_design_bureau_1_3
-		has_idea = RUS_tupolev_design_bureau_2_3
-		has_idea = RUS_tupolev_design_bureau_final
+		has_idea = RUE_tupolev_design_bureau
+		has_idea = RUE_tupolev_design_bureau_1
+		has_idea = RUE_tupolev_design_bureau_2
+		has_idea = RUE_tupolev_design_bureau_3
+		has_idea = RUE_tupolev_design_bureau_1_2
+		has_idea = RUE_tupolev_design_bureau_1_3
+		has_idea = RUE_tupolev_design_bureau_2_3
+		has_idea = RUE_tupolev_design_bureau_final
 	}
 }
 
-RUS_has_active_aircraft_designer_yakovlev = {
+RUE_has_active_aircraft_designer_yakovlev = {
 	OR = {
-		has_idea = RUS_yakovlev_design_bureau
-		has_idea = RUS_yakovlev_design_bureau_1
-		has_idea = RUS_yakovlev_design_bureau_2
-		has_idea = RUS_yakovlev_design_bureau_3
-		has_idea = RUS_yakovlev_design_bureau_1_2
-		has_idea = RUS_yakovlev_design_bureau_1_3
-		has_idea = RUS_yakovlev_design_bureau_2_3
-		has_idea = RUS_yakovlev_design_bureau_final
+		has_idea = RUE_yakovlev_design_bureau
+		has_idea = RUE_yakovlev_design_bureau_1
+		has_idea = RUE_yakovlev_design_bureau_2
+		has_idea = RUE_yakovlev_design_bureau_3
+		has_idea = RUE_yakovlev_design_bureau_1_2
+		has_idea = RUE_yakovlev_design_bureau_1_3
+		has_idea = RUE_yakovlev_design_bureau_2_3
+		has_idea = RUE_yakovlev_design_bureau_final
 	}
 }
 
-RUS_has_aircraft_merged_1 = {
+RUE_has_aircraft_merged_1 = {
 	OR = {
-		has_country_flag = RUS_merge_aircraft_mig_1_flag
-		has_country_flag = RUS_merge_aircraft_ilyushin_1_flag
-		has_country_flag = RUS_merge_aircraft_tupolev_1_flag
-		has_country_flag = RUS_merge_aircraft_yakovlev_1_flag
+		has_country_flag = RUE_merge_aircraft_mig_1_flag
+		has_country_flag = RUE_merge_aircraft_ilyushin_1_flag
+		has_country_flag = RUE_merge_aircraft_tupolev_1_flag
+		has_country_flag = RUE_merge_aircraft_yakovlev_1_flag
 	}
 }
 
-RUS_has_aircraft_merged_2 = {
+RUE_has_aircraft_merged_2 = {
 	OR = {
-		has_country_flag = RUS_merge_aircraft_mig_2_flag
-		has_country_flag = RUS_merge_aircraft_ilyushin_2_flag
-		has_country_flag = RUS_merge_aircraft_tupolev_2_flag
-		has_country_flag = RUS_merge_aircraft_yakovlev_2_flag
+		has_country_flag = RUE_merge_aircraft_mig_2_flag
+		has_country_flag = RUE_merge_aircraft_ilyushin_2_flag
+		has_country_flag = RUE_merge_aircraft_tupolev_2_flag
+		has_country_flag = RUE_merge_aircraft_yakovlev_2_flag
 	}
 }
 
-RUS_has_aircraft_merged_3 = {
+RUE_has_aircraft_merged_3 = {
 	OR = {
-		has_country_flag = RUS_merge_aircraft_mig_3_flag
-		has_country_flag = RUS_merge_aircraft_ilyushin_3_flag
-		has_country_flag = RUS_merge_aircraft_tupolev_3_flag
-		has_country_flag = RUS_merge_aircraft_yakovlev_3_flag
+		has_country_flag = RUE_merge_aircraft_mig_3_flag
+		has_country_flag = RUE_merge_aircraft_ilyushin_3_flag
+		has_country_flag = RUE_merge_aircraft_tupolev_3_flag
+		has_country_flag = RUE_merge_aircraft_yakovlev_3_flag
 	}
 }
 
@@ -647,100 +647,100 @@ RUS_has_aircraft_merged_3 = {
 ### MATERIEL DESIGNER ###
 #########################
 
-RUS_has_active_materiel_designer_any = {
+RUE_has_active_materiel_designer_any = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_has_active_materiel_designer_any_tt
+		tooltip = RUE_has_active_materiel_designer_any_tt
 		OR = {
-			RUS_has_active_materiel_designer_grabin = yes
-			RUS_has_active_materiel_designer_tula = yes
-			RUS_has_active_materiel_designer_gaz = yes
+			RUE_has_active_materiel_designer_grabin = yes
+			RUE_has_active_materiel_designer_tula = yes
+			RUE_has_active_materiel_designer_gaz = yes
 		}
 	}
 }
 
-RUS_has_active_materiel_designer_grabin = {
+RUE_has_active_materiel_designer_grabin = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_has_active_materiel_designer_grabin_tt
+		tooltip = RUE_has_active_materiel_designer_grabin_tt
 		OR = {
-			has_idea = RUS_grabin_design_bureau
-			has_idea = RUS_grabin_design_bureau_1
-			has_idea = RUS_grabin_design_bureau_2
-			has_idea = RUS_grabin_design_bureau_3
-			has_idea = RUS_grabin_design_bureau_1_2
-			has_idea = RUS_grabin_design_bureau_1_3
-			has_idea = RUS_grabin_design_bureau_2_3
-			has_idea = RUS_grabin_design_bureau_final
+			has_idea = RUE_grabin_design_bureau
+			has_idea = RUE_grabin_design_bureau_1
+			has_idea = RUE_grabin_design_bureau_2
+			has_idea = RUE_grabin_design_bureau_3
+			has_idea = RUE_grabin_design_bureau_1_2
+			has_idea = RUE_grabin_design_bureau_1_3
+			has_idea = RUE_grabin_design_bureau_2_3
+			has_idea = RUE_grabin_design_bureau_final
 		}
 	}
 }
 
-RUS_has_active_materiel_designer_tula = {
+RUE_has_active_materiel_designer_tula = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_has_active_materiel_designer_tula_tt
+		tooltip = RUE_has_active_materiel_designer_tula_tt
 		OR = {
-			has_idea = RUS_tula_arms_plant
-			has_idea = RUS_tula_arms_plant_1
-			has_idea = RUS_tula_arms_plant_2
-			has_idea = RUS_tula_arms_plant_3
-			has_idea = RUS_tula_arms_plant_1_2
-			has_idea = RUS_tula_arms_plant_1_3
-			has_idea = RUS_tula_arms_plant_2_3
-			has_idea = RUS_tula_arms_plant_final
+			has_idea = RUE_tula_arms_plant
+			has_idea = RUE_tula_arms_plant_1
+			has_idea = RUE_tula_arms_plant_2
+			has_idea = RUE_tula_arms_plant_3
+			has_idea = RUE_tula_arms_plant_1_2
+			has_idea = RUE_tula_arms_plant_1_3
+			has_idea = RUE_tula_arms_plant_2_3
+			has_idea = RUE_tula_arms_plant_final
 		}
 	}
 }
 
-RUS_has_active_materiel_designer_gaz = {
+RUE_has_active_materiel_designer_gaz = {
 	custom_trigger_tooltip = {
-		tooltip = RUS_has_active_materiel_designer_gaz_tt
+		tooltip = RUE_has_active_materiel_designer_gaz_tt
 		OR = {
-			has_idea = RUS_gaz
-			has_idea = RUS_gaz_1
-			has_idea = RUS_gaz_2
-			has_idea = RUS_gaz_3
-			has_idea = RUS_gaz_1_2
-			has_idea = RUS_gaz_1_3
-			has_idea = RUS_gaz_2_3
-			has_idea = RUS_gaz_final
+			has_idea = RUE_gaz
+			has_idea = RUE_gaz_1
+			has_idea = RUE_gaz_2
+			has_idea = RUE_gaz_3
+			has_idea = RUE_gaz_1_2
+			has_idea = RUE_gaz_1_3
+			has_idea = RUE_gaz_2_3
+			has_idea = RUE_gaz_final
 		}
 	}
 }
 
-RUS_has_materiel_merged_1_artillery = {
-	has_country_flag = RUS_merge_materiel_grabin_1_flag
+RUE_has_materiel_merged_1_artillery = {
+	has_country_flag = RUE_merge_materiel_grabin_1_flag
 }
 
-RUS_has_materiel_merged_1_infantry = {
-	has_country_flag = RUS_merge_materiel_tula_1_flag
+RUE_has_materiel_merged_1_infantry = {
+	has_country_flag = RUE_merge_materiel_tula_1_flag
 }
 
-RUS_has_materiel_merged_1_motorized = {
-	has_country_flag = RUS_merge_materiel_gaz_1_flag
+RUE_has_materiel_merged_1_motorized = {
+	has_country_flag = RUE_merge_materiel_gaz_1_flag
 }
 
-RUS_has_materiel_merged_2 = {
+RUE_has_materiel_merged_2 = {
 	OR = {
-		has_country_flag = RUS_merge_materiel_grabin_2_flag
-		has_country_flag = RUS_merge_materiel_tula_2_flag
-		has_country_flag = RUS_merge_materiel_gaz_2_flag
+		has_country_flag = RUE_merge_materiel_grabin_2_flag
+		has_country_flag = RUE_merge_materiel_tula_2_flag
+		has_country_flag = RUE_merge_materiel_gaz_2_flag
 	}
 }
 
-RUS_has_materiel_merged_3 = {
+RUE_has_materiel_merged_3 = {
 	OR = {
-		has_country_flag = RUS_merge_materiel_grabin_3_flag
-		has_country_flag = RUS_merge_materiel_tula_3_flag
-		has_country_flag = RUS_merge_materiel_gaz_3_flag
+		has_country_flag = RUE_merge_materiel_grabin_3_flag
+		has_country_flag = RUE_merge_materiel_tula_3_flag
+		has_country_flag = RUE_merge_materiel_gaz_3_flag
 	}
 }
 
-RUS_is_valid_collective_security_target = {
+RUE_is_valid_collective_security_target = {
 	has_capitulated = no
 	NOT = { has_government = fascism }
 	NOT = { has_war_with = ROOT }
 }
 
-RUS_is_military_offensive_main_objective = {
+RUE_is_military_offensive_main_objective = {
 	OR = {
 		#HISTORICAL NAME
 		state = 246 #RZHEV - Operation Mars
@@ -790,7 +790,7 @@ RUS_is_military_offensive_main_objective = {
 	}
 }
 
-RUS_is_industrial_relocation_destiny_state = {
+RUE_is_industrial_relocation_destiny_state = {
 	OR = {
 		state = 573 #Zlatoust
 		state = 653 #Sverdlovsk
@@ -802,7 +802,7 @@ RUS_is_industrial_relocation_destiny_state = {
 	}
 }
 
-RUS_is_industrial_relocation_destiny_fallback_state = {
+RUE_is_industrial_relocation_destiny_fallback_state = {
 	OR = {
 		#Central Asia + KAZAKHSTAN
 		state = 405 #Tashkent
@@ -822,7 +822,7 @@ RUS_is_industrial_relocation_destiny_fallback_state = {
 	}
 }
 
-RUS_is_threated_by_japan = {
+RUE_is_threated_by_japan = {
 	NOT = { is_in_faction_with = ROOT }
 	OR = {
 		tag = JAP
@@ -832,7 +832,7 @@ RUS_is_threated_by_japan = {
 }
 
 
-RUS_basic_pressure_government_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = BWR // FROM = Target
+RUE_basic_pressure_government_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = RUE // FROM = Target
 	country_exists = FROM
 	NOT = { has_war_with = FROM }
 	NOT = { FROM = { is_subject_of = ROOT } }
@@ -842,14 +842,14 @@ RUS_basic_pressure_government_triggers = { #Used in foreign politics targeted de
 	}
 }
 
-RUS_basic_promote_rallies_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = BWR // FROM = Target
+RUE_basic_promote_rallies_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = RUE // FROM = Target
 	country_exists = FROM
 	NOT = { has_war_with = FROM }
 	NOT = { FROM = { is_subject_of = ROOT } }
 	NOT = { has_government = FROM }
 }
 
-RUS_basic_ultimatum_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = BWR // FROM = Target
+RUE_basic_ultimatum_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = RUE // FROM = Target
 	country_exists = FROM
 	FROM = {
 		NOT = { has_war_with = ROOT }
@@ -858,11 +858,11 @@ RUS_basic_ultimatum_triggers = { #Used in foreign politics targeted decs - Expec
 		#	NOT = { is_in_faction_with = ROOT }
 		#	is_Subject_of = ROOT
 		#}
-		NOT = { has_country_flag = RUS_ultimatum_sent_flag }
+		NOT = { has_country_flag = RUE_ultimatum_sent_flag }
 	}
 }
 
-RUS_basic_fight_alongside_comrades_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = BWR // FROM = Target
+RUE_basic_fight_alongside_comrades_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = RUE // FROM = Target
 	country_exists = FROM
 	FROM = {
 		has_civil_war = yes
@@ -872,7 +872,7 @@ RUS_basic_fight_alongside_comrades_triggers = { #Used in foreign politics target
 }
 
 # Can I join the Comintern, plz? 
-RUS_comintern_joinable = {
+RUE_comintern_joinable = {
 	SOU = { 
 		hidden_trigger = { 
 			exists = yes
@@ -907,29 +907,29 @@ ANY_comintern_joinable = {
 
 ##########################################################################
 
-RUS_soviet_civil_war_not_started = {
+RUE_soviet_civil_war_not_started = {
 	custom_trigger_tooltip = { 
-		tooltip = RUS_soviet_civil_war_not_started_tt
-		NOT = { has_global_flag = RUS_soviet_civil_war } #Communist Civil War has started / is in progress 
-		NOT = { has_global_flag = RUS_soviet_civil_war_over } #Communist civil war has been completed
-		NOT = { has_country_flag = RUS_civil_war_triggered_flag } # Extra safety to ensure the war event hasn't been triggered (so war is "starting but but "started")
+		tooltip = RUE_soviet_civil_war_not_started_tt
+		NOT = { has_global_flag = RUE_soviet_civil_war } #Communist Civil War has started / is in progress 
+		NOT = { has_global_flag = RUE_soviet_civil_war_over } #Communist civil war has been completed
+		NOT = { has_country_flag = RUE_civil_war_triggered_flag } # Extra safety to ensure the war event hasn't been triggered (so war is "starting but but "started")
 	}
 }
 
-RUS_has_selected_hq = {
+RUE_has_selected_hq = {
 	custom_trigger_tooltip = { 
-		tooltip = RUS_has_selected_hq_tt
-		has_variable = RUS_civil_war_start_state
+		tooltip = RUE_has_selected_hq_tt
+		has_variable = RUE_civil_war_start_state
 	}
 }
 
-RUS_display_civil_war_start_state = {
-	NOT = { has_global_flag = RUS_soviet_civil_war }
-	NOT = { has_variable = RUS_civil_war_start_state } 
+RUE_display_civil_war_start_state = {
+	NOT = { has_global_flag = RUE_soviet_civil_war }
+	NOT = { has_variable = RUE_civil_war_start_state } 
 	# There can be only one
 	OR = {
-		FROM = { has_state_flag = RUS_hq_state_selected } # this is the selected state
-		NOT = { has_country_flag = RUS_hq_state_selected_country_flag } # no state selected yet
+		FROM = { has_state_flag = RUE_hq_state_selected } # this is the selected state
+		NOT = { has_country_flag = RUE_hq_state_selected_country_flag } # no state selected yet
 	}
 }
 
@@ -940,20 +940,20 @@ RUS_display_civil_war_start_state = {
 
 
 
-RUS_is_major_not_original_sov = {
+RUE_is_major_not_original_sov = {
 	is_major = yes
 	hidden_trigger = {
-		NOT = { original_tag = BWR }
+		NOT = { original_tag = RUE }
 	}
 }
 
 
 
-RUS_we_want_to_send_ultimatums = {
+RUE_we_want_to_send_ultimatums = {
 	OR = {
-		has_completed_focus = RUS_claims_in_baltic
+		has_completed_focus = RUE_claims_in_baltic
 		focus_progress = {
-			focus = RUS_claims_in_baltic
+			focus = RUE_claims_in_baltic
 			progress > 0.01
 		}
 	}
@@ -963,6 +963,6 @@ RUS_we_want_to_send_ultimatums = {
 			original_tag = LAT
 			original_tag = EST
 		}
-		NOT = { has_country_flag = RUS_ultimatum_sent_flag }
+		NOT = { has_country_flag = RUE_ultimatum_sent_flag }
 	}
 }

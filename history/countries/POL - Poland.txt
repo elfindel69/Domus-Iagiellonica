@@ -184,8 +184,11 @@ add_ideas = {
 		limited_conscription
 		partial_economic_mobilisation
 
-		POL_Synthetic_Rubber
+		POL_polish_chemical_industry
 		POL_Polish_Cipher_Bureau_Focus0
+		POL_crown_and_sejm
+		POL_commonwealth_of_nations
+		POL_three_seas_overstretch
 	}
 1939.1.1 = {
 	

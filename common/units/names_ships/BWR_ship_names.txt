@@ -1,9 +1,9 @@
 ﻿##### USSR NAME LISTS #####
 ### REGULAR DESTROYER NAMES###
-BWR_DD_HISTORICAL = {
+RUE_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -39,10 +39,10 @@ BWR_DD_HISTORICAL = {
 }
 
 ### LIGHT CRUISER NAMES###
-BWR_CL_HISTORICAL = {
+RUE_CL_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CL
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -68,10 +68,10 @@ BWR_CL_HISTORICAL = {
 }
 
 ### HEAVY CRUISER NAMES###
-BWR_CA_HISTORICAL = {
+RUE_CA_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CA
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -95,10 +95,10 @@ BWR_CA_HISTORICAL = {
 }
 
 ### MINELAYER NAMES###
-BWR_MINELAYERS_HISTORICAL = {
+RUE_MINELAYERS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_MINELAYERS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -122,10 +122,10 @@ BWR_MINELAYERS_HISTORICAL = {
 }
 
 ### BATTLESHIP NAMES ###
-BWR_BB_HISTORICAL = {
+RUE_BB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BB
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -148,10 +148,10 @@ BWR_BB_HISTORICAL = {
 }
 
 ### BATTLECRUISER NAMES ###
-BWR_BC_HISTORICAL = {
+RUE_BC_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BC
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -175,10 +175,10 @@ BWR_BC_HISTORICAL = {
 }
 
 ### AIRCRAFT CARRIER NAMES ###
-BWR_CV_HISTORICAL = {
+RUE_CV_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -200,10 +200,10 @@ BWR_CV_HISTORICAL = {
 }
 
 ### SUBMARINES ###
-BWR_SS_SHCHUKA = {
+RUE_SS_SHCHUKA = {
 	name = NAME_THEME_HISTORICAL_SHCHUKAS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
@@ -306,10 +306,10 @@ BWR_SS_SHCHUKA = {
 	}
 }
 
-BWR_SS_STALINETS = {
+RUE_SS_STALINETS = {
 	name = NAME_THEME_HISTORICAL_STALINETS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -348,10 +348,10 @@ BWR_SS_STALINETS = {
 	}
 }
 
-BWR_SS_LENINETS = {
+RUE_SS_LENINETS = {
 	name = NAME_THEME_HISTORICAL_LENINETS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -390,10 +390,10 @@ BWR_SS_LENINETS = {
 	}
 }
 
-BWR_SS_CLASS_K = {
+RUE_SS_CLASS_K = {
 	name = NAME_THEME_HISTORICAL_CLASS_K
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	type = ship
 	ship_types = { ship_hull_cruiser_submarine submarine }
@@ -433,11 +433,11 @@ BWR_SS_CLASS_K = {
 	}
 }
 
-### THEME: BWRIET REGIONS ###
-BWR_STATES = {
+### THEME: RUEIET REGIONS ###
+RUE_STATES = {
 	name = NAME_THEME_STATES
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -459,11 +459,11 @@ BWR_STATES = {
 	}
 }
 
-## THEME: BWRIET CITIES ###
-BWR_CITIES = {
+## THEME: RUEIET CITIES ###
+RUE_CITIES = {
 	name = NAME_THEME_CITIES
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -484,11 +484,11 @@ BWR_CITIES = {
 	}
 }
 
-## THEME: FAMOUS BWRIET LEADERS ###
-BWR_LEADERS = {
+## THEME: FAMOUS RUEIET LEADERS ###
+RUE_LEADERS = {
 	name = NAME_THEME_LEADERS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		NOT = { 
@@ -507,11 +507,11 @@ BWR_LEADERS = {
 	}
 }
 
-## THEME: BWRSIAN RIVERS ###
-BWR_RIVERS = {
+## THEME: RUESIAN RIVERS ###
+RUE_RIVERS = {
 	name = NAME_THEME_RIVERS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	type = ship
 
@@ -532,10 +532,10 @@ BWR_RIVERS = {
 ###########################
 
 ### REGULAR DESTROYER NAMES###
-BWR_DD_IMPERIAL = {
+RUE_DD_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_DD
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		OR = { 
@@ -573,10 +573,10 @@ BWR_DD_IMPERIAL = {
 }
 
 ### DESTROYER ESCORT NAMES###
-BWR_DE_IMPERIAL = {
+RUE_DE_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_DE
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -603,10 +603,10 @@ BWR_DE_IMPERIAL = {
 }
 
 ### CRUISER NAMES###
-BWR_CL_IMPERIAL = {
+RUE_CL_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CL
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -631,10 +631,10 @@ BWR_CL_IMPERIAL = {
 
 
 ### HEAVY CRUISER NAMES###
-BWR_CA_IMPERIAL = {
+RUE_CA_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CA
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -659,10 +659,10 @@ BWR_CA_IMPERIAL = {
 }
 
 ### MINELAYER NAMES###
-BWR_MINELAYERS_IMPERIAL = {
+RUE_MINELAYERS_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_MINELAYERS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -685,10 +685,10 @@ BWR_MINELAYERS_IMPERIAL = {
 }
 
 ### MINESWEEPER NAMES###
-BWR_MINESWEEPERS_IMPERIAL = {
+RUE_MINESWEEPERS_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_MINESWEEPERS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -712,10 +712,10 @@ BWR_MINESWEEPERS_IMPERIAL = {
 }
 
 ### CAPITAL SHIP NAMES ###
-BWR_BBBC_IMPERIAL = {
+RUE_BBBC_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CAPITAL
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -739,10 +739,10 @@ BWR_BBBC_IMPERIAL = {
 }
 
 ### AIRCRAFT CARRIER NAMES ###
-BWR_CV_IMPERIAL = {
+RUE_CV_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CARRIERS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -764,10 +764,10 @@ BWR_CV_IMPERIAL = {
 }
 
 ### SUBMARINES ###
-BWR_SS_IMPERIAL = {
+RUE_SS_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_SUBMARINES
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -791,11 +791,11 @@ BWR_SS_IMPERIAL = {
 	}
 }
 
-### THEME: IMPERIAL BWRSIAN CITIES ###
-BWR_IMPERIAL_CITIES = {
+### THEME: IMPERIAL RUESIAN CITIES ###
+RUE_IMPERIAL_CITIES = {
 	name = NAME_THEME_CITIES
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -814,11 +814,11 @@ BWR_IMPERIAL_CITIES = {
 	}
 }
 
-## THEME: IMPERIAL BWRSIAN GOVERNORATES ###
-BWR_IMPERIAL_GOVERNORATES = {
+## THEME: IMPERIAL RUESIAN GOVERNORATES ###
+RUE_IMPERIAL_GOVERNORATES = {
 	name = NAME_THEME_GOVERNORATES
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = { 
 		OR = { 
@@ -839,10 +839,10 @@ BWR_IMPERIAL_GOVERNORATES = {
 }
 
 ## THEME: ORTHODOX SAINTS ###
-BWR_SAINTS = {
+RUE_SAINTS = {
 	name = NAME_THEME_SAINTS
 
-	for_countries = { BWR }
+	for_countries = { RUE }
 
 	can_use = {
 		OR = { 

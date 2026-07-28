@@ -946,7 +946,7 @@ GER_is_RCO_state = {
 }
 
 # Reichskommissariat Nordamerika Zone 
-GER_is_RUS_state = {
+GER_is_RUE_state = {
 	OR = {
 		state = 359
 		state = 360

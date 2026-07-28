@@ -17,138 +17,138 @@ set_party_name = {
 }
 
 #COUNTRY LEADERS
-recruit_character = BWR_tsar_michail_II
-recruit_character = BWR_tsar_vsevolod_ivanovich
-recruit_character = BWR_iosif_stalin
-recruit_character = BWR_supreme_soviet #This is a fake character! Proper country leader role is added via focus
+recruit_character = RUE_tsar_michail_II
+recruit_character = RUE_tsar_vsevolod_ivanovich
+recruit_character = RUE_iosif_stalin
+recruit_character = RUE_supreme_soviet #This is a fake character! Proper country leader role is added via focus
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	recruit_character = BWR_provisional_government # United Exiles
+	recruit_character = RUE_provisional_government # United Exiles
 	set_country_flag = vlasov_owner_flag
 }
 
 #POLITICAL ADVISORS
-recruit_character = BWR_mikhail_kalinin
-recruit_character = BWR_nikita_khrushchyov
-recruit_character = BWR_nikolay_voznesensky
-recruit_character = BWR_lazar_kaganovich
-recruit_character = BWR_vsevolod_merkulov
-recruit_character = BWR_vyacheslav_molotov
+recruit_character = RUE_mikhail_kalinin
+recruit_character = RUE_nikita_khrushchyov
+recruit_character = RUE_nikolay_voznesensky
+recruit_character = RUE_lazar_kaganovich
+recruit_character = RUE_vsevolod_merkulov
+recruit_character = RUE_vyacheslav_molotov
 
-recruit_character = BWR_lev_trotsky
-recruit_character = BWR_ivan_smirnov
-recruit_character = BWR_ivar_smilga
-recruit_character = BWR_karl_radek
-recruit_character = BWR_yevgeny_preobrazhensky
-recruit_character = BWR_aleksandr_shlyapnikov
-recruit_character = BWR_nikolay_bukharin
-recruit_character = BWR_aleksey_rykov
-recruit_character = BWR_mikhail_tomsky
-recruit_character = BWR_grigory_sokolnikov
-recruit_character = BWR_grigory_zinovyev
-recruit_character = BWR_lev_kamenev
-recruit_character = BWR_martemyan_ryutin
-recruit_character = BWR_patriarch_sergy
-recruit_character = BWR_aleksandr_kerensky
-recruit_character = BWR_konstantin_rodzayevsky
+recruit_character = RUE_lev_trotsky
+recruit_character = RUE_ivan_smirnov
+recruit_character = RUE_ivar_smilga
+recruit_character = RUE_karl_radek
+recruit_character = RUE_yevgeny_preobrazhensky
+recruit_character = RUE_aleksandr_shlyapnikov
+recruit_character = RUE_nikolay_bukharin
+recruit_character = RUE_aleksey_rykov
+recruit_character = RUE_mikhail_tomsky
+recruit_character = RUE_grigory_sokolnikov
+recruit_character = RUE_grigory_zinovyev
+recruit_character = RUE_lev_kamenev
+recruit_character = RUE_martemyan_ryutin
+recruit_character = RUE_patriarch_sergy
+recruit_character = RUE_aleksandr_kerensky
+recruit_character = RUE_konstantin_rodzayevsky
 
 
-recruit_character = BWR_aleksandr_vasilevsky
-recruit_character = BWR_aleksandr_golovanov
-recruit_character = BWR_aleksandr_gorbatov
-recruit_character = BWR_aleksandr_yegorov
-recruit_character = BWR_andrey_grechko
-recruit_character = BWR_andrey_vlasov
-recruit_character = BWR_andrey_yeryomenko
-recruit_character = BWR_arseny_golovko
-recruit_character = BWR_boris_shaposhnikov
-recruit_character = BWR_dmitry_lelyushenko
-recruit_character = BWR_filipp_golikov
-recruit_character = BWR_filipp_oktyabrsky
+recruit_character = RUE_aleksandr_vasilevsky
+recruit_character = RUE_aleksandr_golovanov
+recruit_character = RUE_aleksandr_gorbatov
+recruit_character = RUE_aleksandr_yegorov
+recruit_character = RUE_andrey_grechko
+recruit_character = RUE_andrey_vlasov
+recruit_character = RUE_andrey_yeryomenko
+recruit_character = RUE_arseny_golovko
+recruit_character = RUE_boris_shaposhnikov
+recruit_character = RUE_dmitry_lelyushenko
+recruit_character = RUE_filipp_golikov
+recruit_character = RUE_filipp_oktyabrsky
 
-recruit_character = BWR_georgy_zakharov
-recruit_character = BWR_georgy_zhukov
-recruit_character = BWR_gordey_levchenko
-recruit_character = BWR_grigory_kulik
-recruit_character = BWR_igor_kurchatov
-recruit_character = BWR_issa_pliyev
-recruit_character = BWR_ivan_chernyakhovsky
-recruit_character = BWR_ivan_fedyuninsky
-recruit_character = BWR_ivan_konev
-recruit_character = BWR_ivan_yumashev
-recruit_character = BWR_kirill_meretskov
-recruit_character = BWR_kirill_moskalenko
-recruit_character = BWR_kliment_voroshilov
-recruit_character = BWR_konstantin_rokossovsky
-recruit_character = BWR_konstantin_vershinin
-recruit_character = BWR_kuzma_galitsky
-recruit_character = BWR_leonid_govorov
-recruit_character = BWR_maksim_purkayev
-recruit_character = BWR_markian_popov
-recruit_character = BWR_maks_reyter
-recruit_character = BWR_mikhail_frinovsky
+recruit_character = RUE_georgy_zakharov
+recruit_character = RUE_georgy_zhukov
+recruit_character = RUE_gordey_levchenko
+recruit_character = RUE_grigory_kulik
+recruit_character = RUE_igor_kurchatov
+recruit_character = RUE_issa_pliyev
+recruit_character = RUE_ivan_chernyakhovsky
+recruit_character = RUE_ivan_fedyuninsky
+recruit_character = RUE_ivan_konev
+recruit_character = RUE_ivan_yumashev
+recruit_character = RUE_kirill_meretskov
+recruit_character = RUE_kirill_moskalenko
+recruit_character = RUE_kliment_voroshilov
+recruit_character = RUE_konstantin_rokossovsky
+recruit_character = RUE_konstantin_vershinin
+recruit_character = RUE_kuzma_galitsky
+recruit_character = RUE_leonid_govorov
+recruit_character = RUE_maksim_purkayev
+recruit_character = RUE_markian_popov
+recruit_character = RUE_maks_reyter
+recruit_character = RUE_mikhail_frinovsky
 
-recruit_character = BWR_mikhail_tukhachevsky
-recruit_character = BWR_nikandr_chibisov
+recruit_character = RUE_mikhail_tukhachevsky
+recruit_character = RUE_nikandr_chibisov
 
-recruit_character = BWR_nikolay_berzarin
-recruit_character = BWR_nikolay_vatutin
+recruit_character = RUE_nikolay_berzarin
+recruit_character = RUE_nikolay_vatutin
 
-recruit_character = BWR_nikolay_kuznetsov
+recruit_character = RUE_nikolay_kuznetsov
 
-recruit_character = BWR_pavel_rychagov
-recruit_character = BWR_pavel_zhigarev
-recruit_character = BWR_pyotr_smirnov
-recruit_character = BWR_rodion_malinovsky
-recruit_character = BWR_semyon_budyonny
-recruit_character = BWR_semyon_timoshenko
-recruit_character = BWR_sergey_khudyakov
-recruit_character = BWR_sergey_korolyov
-recruit_character = BWR_sergey_rudenko
-recruit_character = BWR_sergey_gorshkov
-recruit_character = BWR_stepan_krasovsky
-recruit_character = BWR_vasily_blyukher
-recruit_character = BWR_vasily_chuykov
-recruit_character = BWR_vasily_kuznetsov
-recruit_character = BWR_vladimir_kasatonov
-recruit_character = BWR_vladimir_tributs
+recruit_character = RUE_pavel_rychagov
+recruit_character = RUE_pavel_zhigarev
+recruit_character = RUE_pyotr_smirnov
+recruit_character = RUE_rodion_malinovsky
+recruit_character = RUE_semyon_budyonny
+recruit_character = RUE_semyon_timoshenko
+recruit_character = RUE_sergey_khudyakov
+recruit_character = RUE_sergey_korolyov
+recruit_character = RUE_sergey_rudenko
+recruit_character = RUE_sergey_gorshkov
+recruit_character = RUE_stepan_krasovsky
+recruit_character = RUE_vasily_blyukher
+recruit_character = RUE_vasily_chuykov
+recruit_character = RUE_vasily_kuznetsov
+recruit_character = RUE_vladimir_kasatonov
+recruit_character = RUE_vladimir_tributs
 
-recruit_character = BWR_yakov_cherevichenko
-recruit_character = BWR_yakov_smushkevich
+recruit_character = RUE_yakov_cherevichenko
+recruit_character = RUE_yakov_smushkevich
 
-recruit_character = BWR_vitaly_primakov
+recruit_character = RUE_vitaly_primakov
 #Not available at game start
-recruit_character = BWR_vasily_korzh
-recruit_character = BWR_sidor_kovpak
-recruit_character = BWR_lev_dovator
-recruit_character = BWR_pavel_rybalko
+recruit_character = RUE_vasily_korzh
+recruit_character = RUE_sidor_kovpak
+recruit_character = RUE_lev_dovator
+recruit_character = RUE_pavel_rybalko
 
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	recruit_character = BWR_anastasy_vonsyatsky
-	# recruit_character = BWR_grigory_semyonov # starts as an advisor to Puyi
-	recruit_character = BWR_metropolitan_anastasy
-	recruit_character = BWR_metropolitan_nikolay
-	recruit_character = BWR_nikolay_ustryalov
-	recruit_character = BWR_aleksandr_kazembek
-	recruit_character = BWR_metropolitan_aleksy
-	recruit_character = BWR_metropolitan_meletius
-	recruit_character = BWR_aleksandr_prokofyev_seversky
-	recruit_character = BWR_vyacheslav_tkachyov
-	recruit_character = BWR_yan_nagursky
-	recruit_character = BWR_vasily_yanchenko
-	recruit_character = BWR_tsar_vladimir_kirillovich
+	recruit_character = RUE_anastasy_vonsyatsky
+	# recruit_character = RUE_grigory_semyonov # starts as an advisor to Puyi
+	recruit_character = RUE_metropolitan_anastasy
+	recruit_character = RUE_metropolitan_nikolay
+	recruit_character = RUE_nikolay_ustryalov
+	recruit_character = RUE_aleksandr_kazembek
+	recruit_character = RUE_metropolitan_aleksy
+	recruit_character = RUE_metropolitan_meletius
+	recruit_character = RUE_aleksandr_prokofyev_seversky
+	recruit_character = RUE_vyacheslav_tkachyov
+	recruit_character = RUE_yan_nagursky
+	recruit_character = RUE_vasily_yanchenko
+	recruit_character = RUE_tsar_vladimir_kirillovich
 
-	recruit_character = BWR_pyotr_krasnov
-	recruit_character = BWR_konstantin_nechayev
-	recruit_character = BWR_aleksandr_rodzyanko
-	recruit_character = BWR_vladimir_kosmin
-	recruit_character = BWR_andrey_shkuro
-	recruit_character = BWR_anton_denikin
+	recruit_character = RUE_pyotr_krasnov
+	recruit_character = RUE_konstantin_nechayev
+	recruit_character = RUE_aleksandr_rodzyanko
+	recruit_character = RUE_vladimir_kosmin
+	recruit_character = RUE_andrey_shkuro
+	recruit_character = RUE_anton_denikin
 }
 
 
@@ -172,24 +172,24 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "BWR_1936"
+	set_oob = "RUE_1936"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "BWR_1936_nsb"
+	set_oob = "RUE_1936_nsb"
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "BWR_1936_naval_mtg"
+		set_naval_oob = "RUE_1936_naval_mtg"
 	else = {
-		set_naval_oob = "BWR_1936_naval_legacy"
+		set_naval_oob = "RUE_1936_naval_legacy"
 	}
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "BWR_1936_air_bba"
+		set_air_oob = "RUE_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
 			aa_lmg = 1
@@ -204,7 +204,7 @@ if = {
 			aircraft_construction = 1
 		}
 	else = {
-		set_air_oob = "BWR_1936_air_legacy"
+		set_air_oob = "RUE_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			fighter1 = 1
@@ -390,12 +390,12 @@ add_ideas = {
 
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "BWR_1939_air_bba"
+			set_air_oob = "RUE_1939_air_bba"
 			set_technology = {
 				basic_large_airframe = 1
 			}
 		else = {
-			set_air_oob = "BWR_1939_air_legacy"
+			set_air_oob = "RUE_1939_air_legacy"
 			set_technology = {
 				CAS1 = 1
 				tactical_bomber1 = 1
@@ -445,9 +445,9 @@ add_ideas = {
 	
 	if = {
 		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "BWR_1939_naval_mtg"
+			set_naval_oob = "RUE_1939_naval_mtg"
 		else = {
-			set_naval_oob = "BWR_1939_naval_legacy"
+			set_naval_oob = "RUE_1939_naval_legacy"
 		}
 	}
 
@@ -492,7 +492,7 @@ add_ideas = {
 			basic_heavy_tank = 1    # Should be available in 1936 (T-35)
 			basic_medium_tank = 1 # Should be available in 1936 (T-28)
 		}
-		set_oob = "BWR_1939"
+		set_oob = "RUE_1939"
 	}
 	if = {
 		limit = {
@@ -503,7 +503,7 @@ add_ideas = {
 			basic_heavy_tank_chassis = 1
 			basic_medium_tank_chassis = 1 
 		}
-		#set_oob = "BWR_1939_nsb"
+		#set_oob = "RUE_1939_nsb"
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
@@ -553,7 +553,7 @@ if = {
 		traits = { operative_natural_orator }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { BWR HUN }
+		nationalities = { RUE HUN }
 	}
 
 	create_operative_leader = {
@@ -562,7 +562,7 @@ if = {
 		traits = { operative_double_agent operative_infiltrator }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { BWR ENG }
+		nationalities = { RUE ENG }
 	}
 	create_operative_leader = {
 		name = "Richard Sorge"
@@ -570,7 +570,7 @@ if = {
 		traits = { operative_well_groomed }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { BWR GER }
+		nationalities = { RUE GER }
 	}
 }
 
@@ -796,7 +796,7 @@ if = {
 	create_equipment_variant = {			
 		name = "AG Class"
 		type = ship_hull_submarine_1
-		name_group = BWR_SS_SHCHUKA
+		name_group = RUE_SS_SHCHUKA
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
@@ -808,7 +808,7 @@ if = {
 	create_equipment_variant = {
 		name = "Series I Debakrist"			# represents Debakrist, B class, L-55 sub
 		type = ship_hull_submarine_1
-		name_group = BWR_SS_SHCHUKA
+		name_group = RUE_SS_SHCHUKA
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
@@ -820,7 +820,7 @@ if = {
 	create_equipment_variant = {
 		name = "Series II Leninets"				# represents Leninets series II, XI
 		type = ship_hull_submarine_2
-		name_group = BWR_SS_LENINETS
+		name_group = RUE_SS_LENINETS
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
@@ -831,7 +831,7 @@ if = {
 	create_equipment_variant = {
 		name = "Series V Shchuka"				# represents Shchuka series III, V, V-bis, V-bis-2
 		type = ship_hull_submarine_1
-		name_group = BWR_SS_SHCHUKA
+		name_group = RUE_SS_SHCHUKA
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
@@ -843,7 +843,7 @@ if = {
 	create_equipment_variant = {
 		name = "Series IX Srednyaya"				# 'Stalinets', series IX, IX-bis, IX-bis-2 and P-class
 		type = ship_hull_submarine_2
-		name_group = BWR_SS_STALINETS
+		name_group = RUE_SS_STALINETS
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
@@ -854,7 +854,7 @@ if = {
 	create_equipment_variant = {
 		name = "Series X Shchuka"				
 		type = ship_hull_submarine_1
-		name_group = BWR_SS_SHCHUKA
+		name_group = RUE_SS_SHCHUKA
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
@@ -866,7 +866,7 @@ if = {
 	create_equipment_variant = {
 		name = "Orfey Class"						# represents Yakov Sverdlov, Frunze, and Orfey classes
 		type = ship_hull_light_1
-		name_group = BWR_DD_HISTORICAL
+		name_group = RUE_DD_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -883,7 +883,7 @@ if = {
 	create_equipment_variant = {
 		name = "Fidonisi Class"						# represents Fidonisi and Izyaslav classes
 		type = ship_hull_light_1
-		name_group = BWR_DD_HISTORICAL
+		name_group = RUE_DD_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -900,7 +900,7 @@ if = {
 	create_equipment_variant = {
 		name = "Leningrad & Minsk Class"				
 		type = ship_hull_light_2
-		name_group = BWR_DD_HISTORICAL
+		name_group = RUE_DD_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
@@ -916,7 +916,7 @@ if = {
 	create_equipment_variant = {
 		name = "Bug Class"					# minelayer
 		type = ship_hull_light_1
-		name_group = BWR_MINELAYERS_HISTORICAL
+		name_group = RUE_MINELAYERS_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -933,7 +933,7 @@ if = {
 	create_equipment_variant = {
 		name = "Komintern Class"
 		type = ship_hull_cruiser_1
-		name_group = BWR_MINELAYERS_HISTORICAL
+		name_group = RUE_MINELAYERS_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -950,7 +950,7 @@ if = {
 	create_equipment_variant = {
 		name = "Chervona Ukraina Class"
 		type = ship_hull_cruiser_1
-		name_group = BWR_CL_HISTORICAL
+		name_group = RUE_CL_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -966,7 +966,7 @@ if = {
 	create_equipment_variant = {
 		name = "Marti Class"
 		type = ship_hull_cruiser_1				# minelayer
-		name_group = BWR_MINELAYERS_HISTORICAL
+		name_group = RUE_MINELAYERS_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -983,7 +983,7 @@ if = {
 		create_equipment_variant = {
 			name = "Kirov Class"
 			type = ship_hull_cruiser_2
-			name_group = BWR_CA_HISTORICAL
+			name_group = RUE_CA_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_1
@@ -1001,7 +1001,7 @@ if = {
 	create_equipment_variant = {
 		name = "Marat Class"					
 		type = ship_hull_heavy_1
-		name_group = BWR_BB_HISTORICAL
+		name_group = RUE_BB_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
@@ -1099,7 +1099,7 @@ if = {
 		create_equipment_variant = {
 			name = "Series XIII Leninets"				
 			type = ship_hull_submarine_2
-			name_group = BWR_SS_LENINETS
+			name_group = RUE_SS_LENINETS
 			parent_version = 0
 			modules = {
 				fixed_ship_torpedo_slot = ship_torpedo_sub_2
@@ -1110,7 +1110,7 @@ if = {
 		create_equipment_variant = {
 			name = "Series XIV K-Class"				
 			type = ship_hull_submarine_3
-			name_group = BWR_SS_SHCHUKA
+			name_group = RUE_SS_SHCHUKA
 			parent_version = 0
 			modules = {
 				fixed_ship_torpedo_slot = ship_torpedo_sub_2
@@ -1124,7 +1124,7 @@ if = {
 		create_equipment_variant = {
 			name = "Gnevnyy Class"				
 			type = ship_hull_light_2
-			name_group = BWR_DD_HISTORICAL
+			name_group = RUE_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_2
@@ -1141,7 +1141,7 @@ if = {
 		create_equipment_variant = {
 			name = "Soobrazitelnyi Class"				
 			type = ship_hull_light_3
-			name_group = BWR_DD_HISTORICAL
+			name_group = RUE_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_2
@@ -1157,7 +1157,7 @@ if = {
 		create_equipment_variant = {
 			name = "Tashkent Class"				
 			type = ship_hull_light_3
-			name_group = BWR_DD_HISTORICAL
+			name_group = RUE_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_2

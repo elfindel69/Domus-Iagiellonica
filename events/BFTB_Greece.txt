@@ -2944,13 +2944,13 @@ country_event = {
 		name = bftb_greece.29.a
 		add_war_support = 0.05
 		hidden_effect = { 
-			SOV = { set_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
-			GRE = { set_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
+			SOV = { set_country_flag = BOSPHORUE_STRAIT_BLOCKED_FOR_COUNTRY }
+			GRE = { set_country_flag = BOSPHORUE_STRAIT_BLOCKED_FOR_COUNTRY }
 			every_country = { 
 				limit = { 
 					is_in_faction_with = SOV
 				}
-				set_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY
+				set_country_flag = BOSPHORUE_STRAIT_BLOCKED_FOR_COUNTRY
 			}
 		}
 	}
@@ -3015,8 +3015,8 @@ country_event = {
 		797 = { set_demilitarized_zone = yes }
 		341 = { set_demilitarized_zone = yes }
 		340 = { set_demilitarized_zone = yes }
-		SOV = { clr_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
-		GRE = { clr_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
+		SOV = { clr_country_flag = BOSPHORUE_STRAIT_BLOCKED_FOR_COUNTRY }
+		GRE = { clr_country_flag = BOSPHORUE_STRAIT_BLOCKED_FOR_COUNTRY }
 		hidden_effect = { 
 			set_global_flag = GRE_turkey_surrenders
 			GRE = { 

@@ -10,7 +10,7 @@ state = {
 	state_category = town
 
 	history={
-		owner = BWR
+		owner = RUE
 		victory_points = {
 			957 15
 		}
@@ -24,7 +24,7 @@ state = {
 				naval_supply_hub = 1
 			}
 		}
-		add_core_of = BWR
+		add_core_of = RUE
 		add_core_of = FER
 		add_core_of = VLA
 	}
