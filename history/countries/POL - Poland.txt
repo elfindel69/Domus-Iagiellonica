@@ -189,6 +189,7 @@ add_ideas = {
 		POL_crown_and_sejm
 		POL_commonwealth_of_nations
 		POL_three_seas_overstretch
+		POL_victors_of_1918
 	}
 1939.1.1 = {
 	
