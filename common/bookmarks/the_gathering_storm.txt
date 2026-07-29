@@ -85,7 +85,8 @@ bookmarks = {
 			ideology = monarchist
 			ideas = {
 				POL_Polish_Cipher_Bureau_Focus0
-				POL_Synthetic_Rubber
+				POL_commonwealth_of_nations
+				POL_victors_of_1918
 			}
 			focuses = {
 				
