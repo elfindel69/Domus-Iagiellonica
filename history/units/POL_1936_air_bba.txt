@@ -25,7 +25,7 @@ air_wings = {
 	}
 
 	85 = { # Dowództwo Lotnictwa Morskiego – Gdańsk
-		small_plane_airframe_0 = { owner = "POL" amount = 18 version_name = "Lublin R-XX" }
+		small_plane_naval_bomber_airframe_0 = { owner = "POL" amount = 18 version_name = "Lublin R-XX" }
 	}
 
 	547 = { # Dowództwo Lotnictwa Kolonialnego – Nairobi
