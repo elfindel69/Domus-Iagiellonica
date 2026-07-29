@@ -13,6 +13,37 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/r56_idea_POL_company_SEPEWE.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_POL_crown_and_sejm"
+		texturefile = "gfx/interface/ideas/POL_crown_and_sejm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_commonwealth_of_nations"
+		texturefile = "gfx/interface/ideas/POL_commonwealth_of_nations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_two_commonwealth_economies"
+		texturefile = "gfx/interface/ideas/POL_two_commonwealth_economies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_victors_of_1918"
+		texturefile = "gfx/interface/ideas/POL_victors_of_1918.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_three_seas_overstretch"
+		texturefile = "gfx/interface/ideas/POL_three_seas_overstretch.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_polish_chemical_industry"
+		texturefile = "gfx/interface/ideas/POL_polish_chemical_industry.dds"
+	}
+
+
 	
 	spriteType = {
 		name = "GFX_idea_catvisor"
