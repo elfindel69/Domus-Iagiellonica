@@ -20,11 +20,117 @@ focus_tree = {
 	############################
 	#### INDUSTRIAL SECTION ####
 	############################
+	focus = {
+		id = POL_the_commonwealth_in_1936
+		icon = GFX_focus_POL_the_commonwealth_in_1936
+		x = 6
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+			add_command_power = 10
 
+			set_country_flag = POL_has_reviewed_the_state_of_the_commonwealth
+
+			custom_effect_tooltip = POL_the_commonwealth_in_1936_tt
+		}
+	}
+
+	focus = {
+		id = POL_the_crown_and_the_sejm_focus
+		icon = GFX_focus_POL_the_crown_and_the_sejm
+		prerequisite = { focus = POL_the_commonwealth_in_1936 }
+		x = -3
+		y = 1
+		relative_position_id = POL_the_commonwealth_in_1936
+		cost = 5
+
+		completion_reward = {
+			
+			add_political_power = 50
+
+			add_timed_idea = {
+				idea = POL_constitutional_consultations
+				days = 180
+			}
+
+			set_country_flag = POL_crown_and_sejm_reviewed
+
+			custom_effect_tooltip = POL_the_crown_and_the_sejm_tt
+		}
+		
+	}
+
+	focus = {
+		id = POL_review_the_federal_compact
+		icon = GFX_focus_POL_review_the_federal_compact
+		prerequisite = { focus = POL_the_commonwealth_in_1936 }
+		x = -1
+		y = 1
+		relative_position_id = POL_the_commonwealth_in_1936
+		cost = 5
+
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.025
+
+			add_timed_idea = {
+				idea = POL_federal_review
+				days = 180
+			}
+
+			set_country_flag = POL_federal_compact_reviewed
+
+			custom_effect_tooltip = POL_review_the_federal_compact_tt
+		}
+	}
+
+	focus = {
+		id = POL_the_question_of_government
+		icon = GFX_focus_POL_the_question_of_government
+		prerequisite = { focus = POL_the_crown_and_the_sejm_focus focus = POL_review_the_federal_compact }
+		x = 1
+		y = 1
+		relative_position_id = POL_the_crown_and_the_sejm_focus
+		cost = 5
+
+		completion_reward = {
+			add_political_power = 75
+
+			if = {
+				limit = {
+					has_idea = POL_constitutional_consultations
+				}
+				remove_ideas = POL_constitutional_consultations
+			}
+
+			if = {
+				limit = {
+					has_idea = POL_federal_review
+				}
+				remove_ideas = POL_federal_review
+			}
+
+			add_ideas = POL_government_in_deadlock
+			set_country_flag = POL_question_of_government_opened
+
+			country_event = {
+				id = poland_rework.1
+				days = 1
+			}
+		}
+	}
 	focus = {
 		id = POL_revive_the_polish_economy
 		icon = GFX_focus_POL_the_four_year_plan
-		x = 2
+		x = 12
 		y = 0
 		cost = 5
 
@@ -574,7 +680,7 @@ focus_tree = {
 		id = POL_invest_in_research_focus
 		icon = GFX_focus_research2
 		
-		x = 10
+		x = 20
 		y = 0
 		cost = 5
 		
@@ -869,7 +975,7 @@ focus_tree = {
 		id = POL_prepare_for_the_next_war
 		icon = GFX_goal_generic_build_tank
 		
-		x = 17
+		x = 27
 		y = 0
 		cost = 5
 
@@ -1501,7 +1607,7 @@ focus_tree = {
 	focus = {
 		id = POL_develop_polish_ship_building
 		icon = GFX_focus_POL_develop_polish_shipbuilding
-		x = 26
+		x = 36
 		y = 0
 		cost = 10
 
@@ -2062,7 +2168,7 @@ focus_tree = {
 		id = POL_reform_of_the_diplomacy
 		icon = GFX_focus_generic_treaty
 		
-		x = 38
+		x = 48
 		y = 0
 		cost = 5
 
@@ -2652,7 +2758,7 @@ focus_tree = {
 		id = POL_strengthen_the_polish_state
 		icon = GFX_goal_generic_demand_territory
 		
-		x = 52
+		x = 62
 		y = 0
 		cost = 10
 
@@ -3734,7 +3840,7 @@ focus_tree = {
 			}
 		}
 		allow_branch = { has_dlc = "Man the Guns" }
-		x = 65
+		x = 75
 		y = 0
 		
 		

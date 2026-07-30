@@ -79,6 +79,91 @@ country = {
 			fuel_gain_from_refineries = 0.05
 		}
 	}
+	POL_constitutional_consultations = {
+		picture = GFX_idea_POL_crown_and_sejm
+
+		allowed = {
+			original_tag = POL
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			political_power_gain = -0.05
+			stability_factor = 0.05
+		}
+	}
+	POL_federal_review = {
+    	picture = GFX_idea_POL_commonwealth_of_nations
+
+		allowed = {
+			original_tag = POL
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			political_power_gain = -0.05
+			compliance_gain_add = 0.01
+		}
+	}
+
+	POL_government_in_deadlock = {
+		picture = GFX_idea_POL_crown_and_sejm
+
+		allowed = {
+			original_tag = POL
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			political_power_gain = -0.10
+			stability_factor = -0.05
+		}
+	}
+
+	POL_cabinet_of_compromise = {
+		picture = GFX_idea_POL_crown_and_sejm
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = 0.03
+			political_power_gain = -0.05
+			ideology_drift_defense = 0.05
+		}
+	}
+
+	POL_skladkowski_cabinet = {
+		picture = GFX_idea_POL_ozn
+		removal_cost = -1
+
+		modifier = {
+			political_power_gain = 0.10
+			stability_factor = -0.02
+			war_support_factor = 0.03
+		}
+	}
+	POL_witos_cabinet = {
+		picture = GFX_idea_POL_witos
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = 0.05
+			political_power_gain = -0.05
+			democratic_drift = 0.02
+		}
+	}
+	POL_government_of_the_crown = {
+		picture = GFX_idea_POL_royal_government
+		removal_cost = -1
+
+		modifier = {
+			political_power_gain = 0.15
+			stability_factor = -0.03
+			command_power_gain_mult = 0.05
+		}
+	}
 
 	POL_invest_in_research_idea = {
 		allowed = {
