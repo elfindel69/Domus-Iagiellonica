@@ -1,0 +1,36 @@
+POL_conclude_government_crisis = {
+    remove_ideas = POL_government_in_deadlock
+    remove_ideas = POL_constitutional_consultations
+    remove_ideas = POL_federal_review
+
+    if = {
+        limit = {
+            has_idea = POL_cabinet_of_compromise
+        }
+        remove_ideas = POL_cabinet_of_compromise
+    }
+
+    if = {
+        limit = {
+            has_idea = POL_skladkowski_cabinet
+        }
+        remove_ideas = POL_skladkowski_cabinet
+    }
+
+    if = {
+        limit = {
+            has_idea = POL_witos_cabinet
+        }
+        remove_ideas = POL_witos_cabinet
+    }
+
+    if = {
+        limit = {
+            has_idea = POL_government_of_the_crown
+        }
+        remove_ideas = POL_government_of_the_crown
+    }
+
+    set_country_flag = POL_government_question_resolved
+    clr_country_flag = POL_final_government_deliberations
+}
