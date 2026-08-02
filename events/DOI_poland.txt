@@ -692,7 +692,7 @@ country_event = {
     }
 
     option = {
-        name = poland_rework.4.d
+        name = poland_rework.4.e
 
         trigger = {
             POL_democrats_can_form_government = yes
@@ -739,7 +739,7 @@ country_event = {
     }
 
     option = {
-        name = poland_rework.4.e
+        name = poland_rework.4.f
 
         trigger = {
             POL_nationalists_can_form_government = yes
@@ -782,7 +782,7 @@ country_event = {
     }
 
     option = {
-        name = poland_rework.4.f
+        name = poland_rework.4.g
 
         trigger = {
             POL_socialists_can_form_government = yes
