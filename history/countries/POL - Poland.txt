@@ -404,8 +404,8 @@ if = {
 
 
 recruit_character = POL_jan_v
-recruit_character = rep_POL_ignacy_moscicki 
 recruit_character = POL_felicjan_skladkowski
+recruit_character = rep_POL_ignacy_moscicki 
 recruit_character = rep_POL_wincenty_witos
 recruit_character = rep_POL_boleslaw_piasecki
 recruit_character = POL_wladyslaw_sikorski
