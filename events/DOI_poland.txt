@@ -1,0 +1,826 @@
+add_namespace = poland_rework
+
+country_event = {
+    id = poland_rework.1
+    title = poland_rework.1.t
+    desc = poland_rework.1.d
+    picture = GFX_report_event_polish_parliament
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = POL_government_crisis_begun
+    }
+
+    option = {
+        name = poland_rework.1.a
+        ai_chance = {
+            base = 60
+        }
+
+        add_to_variable = {
+            POL_constitutionalist_influence = 2
+        }
+
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.03
+        }
+
+        add_political_power = -25
+        add_stability = 0.02
+
+        add_timed_idea = {
+            idea = POL_cabinet_of_compromise
+            days = 120
+        }
+
+        set_country_flag = POL_compromise_cabinet_appointed
+        custom_effect_tooltip = POL_constitutionalists_gain_support_tt
+
+		country_event = {
+    		id = poland_rework.2
+    		days = 1
+		}
+    }
+
+    option = {
+        name = poland_rework.1.b
+        ai_chance = {
+            base = 15
+        }
+
+        add_to_variable = {
+            POL_ozn_influence = 2
+        }
+
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+        add_political_power = 25
+        add_stability = -0.01
+
+        add_timed_idea = {
+            idea = POL_skladkowski_cabinet
+            days = 120
+        }
+
+        set_country_flag = POL_skladkowski_appointed
+        custom_effect_tooltip = POL_ozn_gains_support_tt
+
+		country_event = {
+    		id = poland_rework.2
+    		days = 1
+		}
+    }
+
+    option = {
+        name = poland_rework.1.c
+        ai_chance = {
+            base = 15
+        }
+
+        add_to_variable = {
+            POL_democratic_influence = 2
+        }
+
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.05
+        }
+
+        add_political_power = -10
+        add_stability = 0.03
+
+        add_timed_idea = {
+            idea = POL_witos_cabinet
+            days = 120
+        }
+
+        set_country_flag = POL_witos_appointed
+        custom_effect_tooltip = POL_democrats_gain_support_tt
+
+		country_event = {
+    		id = poland_rework.2
+    		days = 1
+		}
+    }
+
+    option = {
+        name = poland_rework.1.e
+        ai_chance = {
+            base = 10
+        }
+
+        add_to_variable = {
+            POL_royalist_influence = 2
+        }
+
+        add_popularity = {
+            ideology = monarchist
+            popularity = 0.04
+        }
+
+        add_political_power = 35
+        add_stability = -0.025
+
+        add_timed_idea = {
+            idea = POL_government_of_the_crown
+            days = 120
+        }
+
+        set_country_flag = POL_royal_cabinet_appointed
+        custom_effect_tooltip = POL_royalists_gain_support_tt
+
+		country_event = {
+    		id = poland_rework.2
+    		days = 1
+		}
+    }
+}
+
+country_event = {
+    id = poland_rework.2
+    title = poland_rework.2.t
+
+    desc = {
+        trigger = {
+            has_country_flag = POL_compromise_cabinet_appointed
+        }
+        text = poland_rework.2.compromise_desc
+    }
+
+    desc = {
+        trigger = {
+            has_country_flag = POL_skladkowski_appointed
+        }
+        text = poland_rework.2.ozn_desc
+    }
+
+    desc = {
+        trigger = {
+            has_country_flag = POL_witos_appointed
+        }
+        text = poland_rework.2.witos_desc
+    }
+
+    desc = {
+        trigger = {
+            has_country_flag = POL_royal_cabinet_appointed
+        }
+        text = poland_rework.2.royal_desc
+    }
+
+    picture = GFX_report_event_polish_parliament
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = POL_government_faces_the_sejm
+    }
+
+    option = {
+        name = poland_rework.2.a
+
+        ai_chance = {
+            base = 55
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_compromise_cabinet_appointed
+            }
+        }
+
+        add_to_variable = {
+            POL_constitutionalist_influence = 1
+        }
+        add_to_variable = {
+            POL_democratic_influence = 1
+        }
+
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.02
+        }
+
+        add_political_power = -25
+        add_stability = 0.025
+
+        set_country_flag = POL_parliamentary_compromise
+        custom_effect_tooltip = POL_parliamentary_compromise_tt
+		country_event = {
+			id = poland_rework.3
+			days = 1
+		}
+    }
+
+    option = {
+        name = poland_rework.2.b
+
+        ai_chance = {
+            base = 20
+            modifier = {
+                factor = 2
+                has_country_flag = POL_royal_cabinet_appointed
+            }
+        }
+
+        add_to_variable = {
+            POL_royalist_influence = 2
+        }
+
+        add_popularity = {
+            ideology = monarchist
+            popularity = 0.02
+        }
+
+        add_political_power = 25
+        add_stability = -0.015
+
+        set_country_flag = POL_crown_arbitrated_the_crisis
+        custom_effect_tooltip = POL_crown_arbitration_tt
+		country_event = {
+			id = poland_rework.3
+			days = 1
+		}
+    }
+
+    option = {
+        name = poland_rework.2.c
+
+        ai_chance = {
+            base = 20
+            modifier = {
+                factor = 2
+                has_country_flag = POL_skladkowski_appointed
+            }
+        }
+
+        add_to_variable = {
+            POL_ozn_influence = 2
+        }
+
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.03
+        }
+
+        add_political_power = 35
+        add_stability = -0.02
+
+        set_country_flag = POL_government_bypassed_the_sejm
+        custom_effect_tooltip = POL_bypass_the_sejm_tt
+		country_event = {
+			id = poland_rework.3
+			days = 1
+		}
+    }
+
+    option = {
+        name = poland_rework.2.e
+        ai_chance = {
+            base = 15
+        }
+
+        # Opens a second, shorter event. Keeping this event at four options
+        # prevents the HOI4 event window from clipping the last buttons.
+        country_event = {
+            id = poland_rework.20
+            hours = 1
+        }
+    }
+}
+
+# Opposition response to the parliamentary deadlock. This submenu preserves
+# the democratic, nationalist and socialist routes without overflowing .2.
+country_event = {
+    id = poland_rework.20
+    title = poland_rework.20.t
+    desc = poland_rework.20.d
+    picture = GFX_report_event_polish_parliament
+    is_triggered_only = yes
+
+    option = {
+        name = poland_rework.20.a
+        ai_chance = { base = 70 }
+
+        add_to_variable = { POL_democratic_influence = 2 }
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.04
+        }
+        add_political_power = -40
+        add_stability = 0.01
+        set_country_flag = POL_early_elections_promised
+        custom_effect_tooltip = POL_early_elections_tt
+
+        country_event = { id = poland_rework.3 days = 1}
+    }
+
+    option = {
+        name = poland_rework.20.b
+        ai_chance = {
+            base = 15
+            modifier = { factor = 0 has_stability > 0.65 }
+            modifier = { factor = 2 has_stability < 0.50 }
+        }
+
+        add_to_variable = { POL_nationalist_influence = 2 }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.06
+        }
+        add_stability = -0.03
+        add_war_support = 0.02
+        set_country_flag = POL_nationalists_exploit_deadlock
+        custom_effect_tooltip = POL_nationalists_exploit_crisis_tt
+
+        country_event = { id = poland_rework.3 days = 1}
+    }
+
+    option = {
+        name = poland_rework.20.c
+        ai_chance = {
+            base = 15
+            modifier = { factor = 0 has_stability > 0.65 }
+            modifier = { factor = 2 has_stability < 0.50 }
+        }
+
+        add_to_variable = { POL_socialist_influence = 2 }
+        add_popularity = {
+            ideology = communism
+            popularity = 0.10
+        }
+        add_stability = -0.03
+        add_political_power = -15
+        set_country_flag = POL_socialists_exploit_deadlock
+        custom_effect_tooltip = POL_socialists_exploit_crisis_tt
+
+        country_event = { id = poland_rework.3 days = 1}
+    }
+}
+
+country_event = {
+    id = poland_rework.3
+    title = poland_rework.3.t
+    desc = poland_rework.3.d
+    picture = GFX_report_event_polish_parliament
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = POL_federal_commission_has_reported
+    }
+
+    option = {
+        name = poland_rework.3.a
+
+        ai_chance = {
+            base = 25
+
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_witos_appointed
+            }
+
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_parliamentary_compromise
+            }
+        }
+
+        add_to_variable = {
+            POL_constitutionalist_influence = 1
+        }
+
+        add_to_variable = {
+            POL_democratic_influence = 1
+        }
+
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.03
+        }
+
+        add_political_power = -25
+        add_stability = 0.02
+
+        set_country_flag = POL_federalist_settlement
+        custom_effect_tooltip = POL_federalist_settlement_tt
+
+        country_event = {
+            id = poland_rework.4
+            days = 1
+        }
+    }
+
+    option = {
+        name = poland_rework.3.b
+
+        ai_chance = {
+            base = 50
+
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_compromise_cabinet_appointed
+            }
+
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_parliamentary_compromise
+            }
+        }
+
+        add_to_variable = {
+            POL_constitutionalist_influence = 2
+        }
+
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.03
+        }
+
+        add_political_power = 10
+        add_stability = 0.015
+
+        set_country_flag = POL_balanced_settlement
+        custom_effect_tooltip = POL_balanced_settlement_tt
+
+        country_event = {
+            id = poland_rework.4
+            days = 1
+        }
+    }
+
+    option = {
+        name = poland_rework.3.c
+
+        ai_chance = {
+            base = 20
+
+            modifier = {
+                factor = 2
+                has_country_flag = POL_skladkowski_appointed
+            }
+
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_royal_cabinet_appointed
+            }
+
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_government_bypassed_the_sejm
+            }
+        }
+
+        add_to_variable = {
+            POL_royalist_influence = 1
+        }
+
+        add_to_variable = {
+            POL_ozn_influence = 1
+        }
+
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.03
+        }
+
+        add_political_power = 25
+        add_stability = -0.015
+
+        set_country_flag = POL_centralist_settlement
+        custom_effect_tooltip = POL_centralist_settlement_tt
+
+        country_event = {
+            id = poland_rework.4
+            days = 1
+        }
+    }
+
+    option = {
+        name = poland_rework.3.e
+        ai_chance = {
+            base = 10
+            modifier = { factor = 3 has_country_flag = POL_nationalists_exploit_deadlock }
+            modifier = { factor = 3 has_country_flag = POL_socialists_exploit_deadlock }
+        }
+        country_event = { id = poland_rework.30 hours = 1 }
+    }
+}
+
+# Radical alternatives to the Federal Commission's constitutional proposals.
+country_event = {
+    id = poland_rework.30
+    title = poland_rework.30.t
+    desc = poland_rework.30.d
+    picture = GFX_report_event_polish_parliament
+    is_triggered_only = yes
+
+    option = {
+        name = poland_rework.30.a
+        ai_chance = {
+            base = 50
+            modifier = { factor = 3 has_country_flag = POL_nationalists_exploit_deadlock }
+            modifier = { factor = 0.25 has_country_flag = POL_witos_appointed }
+        }
+        add_to_variable = { POL_nationalist_influence = 2 }
+        add_popularity = { ideology = fascism popularity = 0.10 }
+        add_stability = -0.04
+        add_war_support = 0.03
+        set_country_flag = POL_national_supremacy_settlement
+        custom_effect_tooltip = POL_national_supremacy_settlement_tt
+        country_event = { id = poland_rework.4 days = 1}
+    }
+
+    option = {
+        name = poland_rework.30.b
+        ai_chance = {
+            base = 50
+            modifier = { factor = 3 has_country_flag = POL_socialists_exploit_deadlock }
+            modifier = { factor = 0.25 has_country_flag = POL_royal_cabinet_appointed }
+        }
+        add_to_variable = { POL_socialist_influence = 2 }
+        add_popularity = { ideology = communism popularity = 0.10 }
+        add_political_power = -15
+        add_stability = -0.04
+        set_country_flag = POL_socialist_federal_settlement
+        custom_effect_tooltip = POL_socialist_federal_settlement_tt
+        country_event = { id = poland_rework.4 days = 1}
+    }
+}
+
+country_event = {
+    id = poland_rework.4
+    title = poland_rework.4.t
+    desc = poland_rework.4.d
+    picture = GFX_report_event_polish_king
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = POL_final_government_deliberations
+    }
+
+    option = {
+        name = poland_rework.4.a
+
+        trigger = {
+            POL_constitutionalists_can_form_government = yes
+        }
+
+        ai_chance = {
+            base = 100
+
+            modifier = {
+                factor = 2
+                has_country_flag = POL_compromise_cabinet_appointed
+            }
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_balanced_settlement
+            }
+        }
+
+        set_country_flag = POL_constitutionalists_formed_government
+        set_country_flag = POL_constitutional_balance_preserved
+
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+        add_stability = 0.05
+        add_political_power = 50
+
+        custom_effect_tooltip = POL_constitutionalist_government_tt
+
+        hidden_effect = {
+            POL_conclude_government_crisis = yes
+        }
+    }
+
+    option = {
+        name = poland_rework.4.b
+
+        trigger = {
+            POL_royalists_can_form_government = yes
+        }
+
+        ai_chance = {
+            base = 20
+
+            modifier = {
+                factor = 3
+                has_country_flag = POL_royal_cabinet_appointed
+            }
+            modifier = {
+                factor = 2
+                has_country_flag = POL_crown_arbitrated_the_crisis
+            }
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_centralist_settlement
+            }
+        }
+
+        set_country_flag = POL_royalists_formed_government
+        set_country_flag = POL_royal_prerogative_asserted
+
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+        add_political_power = 100
+        add_stability = -0.025
+        add_war_support = 0.03
+
+        custom_effect_tooltip = POL_royalist_government_tt
+
+        hidden_effect = {
+            POL_conclude_government_crisis = yes
+        }
+    }
+
+    option = {
+        name = poland_rework.4.c
+
+        trigger = {
+            POL_ozn_can_form_government = yes
+        }
+
+        ai_chance = {
+            base = 20
+
+            modifier = {
+                factor = 3
+                has_country_flag = POL_skladkowski_appointed
+            }
+            modifier = {
+                factor = 2
+                has_country_flag = POL_government_bypassed_the_sejm
+            }
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_centralist_settlement
+            }
+        }
+
+        set_country_flag = POL_ozn_formed_government
+        set_country_flag = POL_authoritarian_government_established
+
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.08
+        }
+
+        set_politics = {
+            ruling_party = neutrality
+            elections_allowed = yes
+        }
+        add_political_power = 75
+        add_stability = 0.01
+        add_war_support = 0.05
+
+        custom_effect_tooltip = POL_ozn_government_tt
+
+        hidden_effect = {
+            POL_conclude_government_crisis = yes
+        }
+    }
+
+    option = {
+        name = poland_rework.4.d
+
+        trigger = {
+            POL_democrats_can_form_government = yes
+        }
+
+        ai_chance = {
+            base = 20
+
+            modifier = {
+                factor = 3
+                has_country_flag = POL_witos_appointed
+            }
+            modifier = {
+                factor = 2
+                has_country_flag = POL_early_elections_promised
+            }
+            modifier = {
+                factor = 1.5
+                has_country_flag = POL_federalist_settlement
+            }
+        }
+
+        set_country_flag = POL_democrats_formed_government
+        set_country_flag = POL_parliamentary_government_established
+
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = yes
+        }
+
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.08
+        }
+
+        add_stability = 0.05
+        add_political_power = 25
+
+        custom_effect_tooltip = POL_democratic_government_tt
+
+        hidden_effect = {
+            POL_conclude_government_crisis = yes
+        }
+    }
+
+    option = {
+        name = poland_rework.4.e
+
+        trigger = {
+            POL_nationalists_can_form_government = yes
+        }
+
+        ai_chance = {
+            base = 5
+
+            modifier = {
+                factor = 3
+                has_country_flag = POL_nationalists_exploit_deadlock
+            }
+            modifier = {
+                factor = 3
+                has_country_flag = POL_national_supremacy_settlement
+            }
+        }
+
+        set_country_flag = POL_nationalists_formed_government
+        set_country_flag = POL_jan_v_sidelined
+
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+        }
+
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.10
+        }
+
+        add_stability = -0.05
+        add_war_support = 0.10
+
+        custom_effect_tooltip = POL_nationalist_government_tt
+
+        hidden_effect = {
+            POL_conclude_government_crisis = yes
+        }
+    }
+
+    option = {
+        name = poland_rework.4.f
+
+        trigger = {
+            POL_socialists_can_form_government = yes
+        }
+
+        ai_chance = {
+            base = 5
+
+            modifier = {
+                factor = 3
+                has_country_flag = POL_socialists_exploit_deadlock
+            }
+            modifier = {
+                factor = 3
+                has_country_flag = POL_socialist_federal_settlement
+            }
+        }
+
+        set_country_flag = POL_socialists_formed_government
+        set_country_flag = POL_monarchy_challenged
+
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+
+        add_popularity = {
+            ideology = communism
+            popularity = 0.10
+        }
+
+        add_stability = -0.05
+        add_political_power = -25
+
+        custom_effect_tooltip = POL_socialist_government_tt
+
+        hidden_effect = {
+            POL_conclude_government_crisis = yes
+        }
+    }
+}
