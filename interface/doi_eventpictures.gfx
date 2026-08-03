@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_report_event_polish_government_resigns
+		textureFile = "gfx/event_pictures/report_event_polish_government_resigns.dds"
+	}
+	spriteType = {
+		name = GFX_report_event_polish_sejm_crisis
+		textureFile = "gfx/event_pictures/report_event_polish_sejm_crisis.dds"
+	}
+	spriteType = {
+		name = GFX_report_event_polish_opposition
+		textureFile = "gfx/event_pictures/report_event_polish_opposition.dds"
+	}
+	spriteType = {
+		name = GFX_report_event_polish_federal_commission
+		textureFile = "gfx/event_pictures/report_event_polish_federal_commission.dds"
+	}
+	spriteType = {
+		name = GFX_report_event_polish_rival_visions
+		textureFile = "gfx/event_pictures/report_event_polish_rival_visions.dds"
+	}
+	spriteType = {
+		name = GFX_report_event_polish_king
+		textureFile = "gfx/event_pictures/report_event_polish_king.dds"
+	}
+}
