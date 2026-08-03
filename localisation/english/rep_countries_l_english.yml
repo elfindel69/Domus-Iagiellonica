@@ -736,3 +736,15 @@
  UBD_neutrality:0 "United Baltic Duchy"
  UBD_monarchist:0 "United Baltic Duchy"
  UBD_ADJ:0 "Baltic"
+
+ PLC_UNIFIED_fascism:0 "Falangist State of Poland-Lithuania"
+ PLC_UNIFIED_democratic:0 "Republic of the Three Nations"
+ PLC_UNIFIED_communism:0 "Socialist Commonwealth"
+ PLC_UNIFIED_neutrality:0 "Polish-Lithuanian Commonwealth"
+ PLC_UNIFIED_monarchist:0 "Kingdom of Poland-Lithuania"
+
+ PLC_UNIFIED_fascism_DEF:0 "the Falangist State of Poland-Lithuania"
+ PLC_UNIFIED_democratic_DEF:0 "the Republic of the Three Nations"
+ PLC_UNIFIED_communism_DEF:0 "the Socialist Commonwealth of Poland, Lithuania and Ruthenia"
+ PLC_UNIFIED_neutrality_DEF:0 "the Polish-Lithuanian Commonwealth"
+ PLC_UNIFIED_monarchist_DEF:0 "the Kingdom of Poland-Lithuania"
