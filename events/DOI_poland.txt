@@ -675,7 +675,7 @@ country_event = {
             ideology = neutrality
             popularity = 0.08
         }
-
+        POL = {set_cosmetic_tag = PLC_UNIFIED}
         set_politics = {
             ruling_party = neutrality
             elections_allowed = yes
@@ -727,7 +727,7 @@ country_event = {
             ideology = democratic
             popularity = 0.08
         }
-
+        POL = {set_cosmetic_tag = PLC_UNIFIED}
         add_stability = 0.05
         add_political_power = 25
 
@@ -771,6 +771,8 @@ country_event = {
             popularity = 0.10
         }
 
+        POL = {set_cosmetic_tag = PLC_UNIFIED}
+
         add_stability = -0.05
         add_war_support = 0.10
 
@@ -808,6 +810,8 @@ country_event = {
             ruling_party = communism
             elections_allowed = no
         }
+
+        POL = {set_cosmetic_tag = PLC_UNIFIED}
 
         add_popularity = {
             ideology = communism

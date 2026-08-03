@@ -392,9 +392,9 @@ if = {
 
 
 
-1936.1.1 = { 
-	set_cosmetic_tag = PLC_UNIFIED
-	set_global_flag = form_commonwealth_flag
+1936.1.1 = {
+    set_cosmetic_tag = PLC_UNIFIED
+    set_country_flag = POL_is_unified_commonwealth
 }
 
 1939.1.1 = { 
