@@ -4,7 +4,7 @@ country_event = {
     id = poland_rework.1
     title = poland_rework.1.t
     desc = poland_rework.1.d
-    picture = GFX_report_event_polish_parliament
+    picture = GFX_report_event_polish_government_resigns
 
     is_triggered_only = yes
 
@@ -173,7 +173,7 @@ country_event = {
         text = poland_rework.2.royal_desc
     }
 
-    picture = GFX_report_event_polish_parliament
+    picture = GFX_report_event_polish_sejm_crisis
     is_triggered_only = yes
 
     immediate = {
@@ -297,7 +297,7 @@ country_event = {
     id = poland_rework.20
     title = poland_rework.20.t
     desc = poland_rework.20.d
-    picture = GFX_report_event_polish_parliament
+    picture = GFX_report_event_polish_opposition
     is_triggered_only = yes
 
     option = {
@@ -364,7 +364,7 @@ country_event = {
     id = poland_rework.3
     title = poland_rework.3.t
     desc = poland_rework.3.d
-    picture = GFX_report_event_polish_parliament
+    picture = GFX_report_event_polish_federal_commission
 
     is_triggered_only = yes
 
@@ -515,7 +515,7 @@ country_event = {
     id = poland_rework.30
     title = poland_rework.30.t
     desc = poland_rework.30.d
-    picture = GFX_report_event_polish_parliament
+    picture = GFX_report_event_polish_rival_visions
     is_triggered_only = yes
 
     option = {
