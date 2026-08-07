@@ -629,13 +629,18 @@ country_event = {
         set_country_flag = POL_royal_prerogative_asserted
 
         add_popularity = {
-            ideology = neutrality
+            ideology = monarchist
             popularity = 0.05
         }
 
         add_political_power = 100
         add_stability = -0.025
         add_war_support = 0.03
+
+        set_politics = {
+            ruling_party = monarchist
+            elections_allowed = yes
+        }       
 
         custom_effect_tooltip = POL_royalist_government_tt
 

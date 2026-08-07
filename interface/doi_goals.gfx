@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_POL_the_commonwealth_in_1936
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_commonwealth_in_1936.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_the_crown_and_the_sejm
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_crown_and_the_sejm.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_review_the_federal_compact
+		texturefile = "gfx/interface/goals/GFX_focus_POL_review_the_federal_compact.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_the_question_of_government
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_question_of_government.dds"
+	}
+
+}

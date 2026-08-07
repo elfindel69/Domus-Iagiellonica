@@ -1,15 +1,15 @@
 ﻿l_english:
  POL_the_commonwealth_in_1936:0 "The Commonwealth in 1936"
- POL_the_commonwealth_in_1936_desc:0 "Victorious in the Great War and guardian of the eastern settlement, the Polish-Lithuanian Commonwealth enters 1936 as one of Europe's foremost powers. Yet beneath the prestige of 1918 lie an uneasy constitutional balance, profound regional inequalities and growing doubts about the future of the Jagiellonian state. Before we can face the storms gathering beyond our borders, we must first take stock of the Commonwealth itself."
- POL_the_commonwealth_in_1936_tt:0 "Begins a national review of the Commonwealth's political and federal institutions."
+ POL_the_commonwealth_in_1936_desc:0 "Victorious in the Great War, the Polish-Lithuanian Commonwealth enters 1936 as a major European power. Yet constitutional tensions, regional inequalities and doubts about the future of the Jagiellonian state endure beneath its prestige. Before confronting the gathering storms abroad, we must assess the condition of the Commonwealth."
+ POL_the_commonwealth_in_1936_tt:0 "Begin a review of the Commonwealth's political and federal institutions."
  POL_the_crown_and_the_sejm_focus:0 "The Crown and the Sejm"
- POL_the_crown_and_the_sejm_focus_desc:0 "King Jan V has occupied the Jagiellonian throne since 1910, reigning through war, victory and economic crisis. The Constitution of May Third divides authority between the Crown, the government and the Sejm, but decades of precedent have blurred the limits of each institution. Royal ministers demand decisive leadership, while parliamentary leaders warn that emergency powers must not become permanent. The balance that once strengthened the Commonwealth is becoming increasingly difficult to preserve."
- POL_the_crown_and_the_sejm_tt:0 "The future political paths will determine whether power rests with the Crown, the Sejm or an authoritarian government."
+ POL_the_crown_and_the_sejm_focus_desc:0 "King Jan V has reigned through war, victory and economic crisis. Yet the division of authority between the Crown, the government and the Sejm has grown increasingly unclear. Royal ministers demand decisive leadership, while parliamentary leaders oppose any lasting expansion of the King's powers."
+ POL_the_crown_and_the_sejm_tt:0 "Review the balance of power between the Crown, the Sejm and the government."
  POL_review_the_federal_compact:0 "Review the Federal Compact"
- POL_review_the_federal_compact_desc:0 "The Commonwealth is more than Poland and Lithuania. Ruthenians, Ukrainians, Belarusians, Germans and numerous smaller communities all live beneath the Jagiellonian Crown. The federal settlement has preserved this vast state, but representation, language rights, taxation and military obligations remain fiercely contested. We must determine whether the old compact can be renewed—or whether the survival of the Commonwealth now demands greater central authority."
- POL_review_the_federal_compact_tt:0 "The future political paths will allow us to renew the federation, preserve the existing settlement or centralise the Commonwealth."
+ POL_review_the_federal_compact_desc:0 "The Commonwealth unites many nations beneath the Jagiellonian Crown, but representation, language rights, taxation and military obligations remain disputed. We must decide whether to renew the federal compact, preserve the existing settlement or strengthen central authority."
+ POL_review_the_federal_compact_tt:0 "Review the political organisation of the Commonwealth and its constituent nations."
  POL_the_question_of_government:0 "The Question of Government"
- POL_the_question_of_government_desc:0 "The institutional reviews have exposed divisions that can no longer be concealed behind the prestige of the Crown. Constitutionalists call for renewed cooperation between Jan V and the Sejm. Royalists demand the restoration of the royal prerogative. The OZN promises order above party politics, while democrats, national radicals and socialists each offer their own vision of the Commonwealth. The time for postponement has ended. Poland-Lithuania must decide how it wishes to be governed."
+ POL_the_question_of_government_desc:0 "The institutional reviews have exposed divisions that can no longer be ignored. Constitutionalists, royalists, the OZN, democrats, national radicals and socialists each offer a different future for the Commonwealth. The time for compromise is ending: Poland-Lithuania must decide how it will be governed."
  
 
  POL_constitutional_consultations:0 "Constitutional Consultations"
