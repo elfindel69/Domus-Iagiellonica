@@ -1,0 +1,16 @@
+characters={
+	AUS_otto_von_habsburg={
+		name="Otto von Habsburg"
+		portraits={
+			civilian={
+				large="gfx/leaders/Monarchs/Portrait_EYE_Austria_Otto_I.tga"
+			}
+		}
+		country_leader={
+			ideology = paternalism
+			traits = {constitutional_monarch}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

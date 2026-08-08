@@ -165,6 +165,195 @@ country = {
 		}
 	}
 
+	POL_royal_prerogative = {
+			picture = GFX_idea_POL_royal_government
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = -0.03
+				command_power_gain_mult = 0.05
+				ideology_drift_defense = 0.10
+			}
+		}
+
+		POL_royal_ministry = {
+			picture = GFX_idea_POL_royal_government
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = -0.01
+				command_power_gain_mult = 0.10
+			}
+		}
+
+		POL_reorganised_privy_council = {
+			picture = GFX_idea_generic_political_reform
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_advisor_cost_factor = -0.15
+				stability_factor = 0.025
+			}
+		}
+
+		POL_crown_above_the_parties = {
+			picture = GFX_idea_POL_royal_government
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				ideology_drift_defense = 0.20
+				political_power_gain = 0.05
+			}
+		}
+
+		POL_royal_commissioners_federal = {
+			picture = GFX_idea_generic_government
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.02
+				resistance_growth_on_our_occupied_states = -0.05
+			}
+		}
+
+		POL_royal_commissioners_balanced = {
+			picture = GFX_idea_generic_government
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.04
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		POL_royal_commissioners_central = {
+			picture = GFX_idea_generic_government
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.03
+				compliance_growth_on_our_occupied_states = 0.05
+			}
+		}
+
+		POL_royal_commissioners_national = {
+			picture = GFX_idea_generic_government
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				war_support_factor = 0.05
+				resistance_growth_on_our_occupied_states = 0.05
+			}
+		}
+
+		POL_royal_officer_corps = {
+			picture = GFX_idea_generic_army_staff
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				command_power_gain_mult = 0.10
+				army_leader_cost_factor = -0.15
+				army_org_factor = 0.03
+			}
+		}
+
+		POL_federal_crown = {
+			picture = GFX_idea_POL_commonwealth_crown
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.05
+				resistance_growth_on_our_occupied_states = -0.10
+			}
+		}
+
+		POL_commonwealth_crown = {
+			picture = GFX_idea_POL_commonwealth_crown
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.05
+				ideology_drift_defense = 0.10
+			}
+		}
+
+		POL_unitary_crown = {
+			picture = GFX_idea_POL_commonwealth_crown
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+				command_power_gain_mult = 0.05
+			}
+		}
+
+		POL_polish_crown = {
+			picture = GFX_idea_POL_commonwealth_crown
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				political_power_gain = 0.10
+				stability_factor = -0.03
+			}
+		}
+
+		POL_reformed_royal_constitution = {
+			picture = GFX_idea_generic_constitutional_monarchy
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				political_advisor_cost_factor = -0.05
+			}
+		}
+
+		POL_authority_of_the_crown = {
+			picture = GFX_idea_POL_royal_government
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.05
+				command_power_gain_mult = 0.10
+			}
+		}
+
+		POL_jagiellonian_compromise = {
+			picture = GFX_idea_generic_constitutional_monarchy
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				ideology_drift_defense = 0.15
+				justify_war_goal_time = 0.10
+			}
+		}
+
+		POL_jagiellonian_state = {
+			picture = GFX_idea_POL_royal_government
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.20
+				war_support_factor = 0.10
+				command_power_gain_mult = 0.15
+				stability_factor = 0.05
+			}
+		}
+
 	POL_invest_in_research_idea = {
 		allowed = {
 			always = no

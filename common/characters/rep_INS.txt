@@ -1,0 +1,18 @@
+characters={
+	INS_sultan_hamengkubuwono_ix={
+		name="Sultan Hamengkubuwono IX"
+		portraits={
+			civilian={
+				large="gfx/leaders/Monarchs/Portrait_Indonesia_Hamengbukuwono_IX.tga"
+			}
+		}
+		country_leader={
+			ideology=absolutism
+			traits = {
+			}
+			expire="1981.1.1.1"
+			id=-1
+		}
+	}
+	
+}

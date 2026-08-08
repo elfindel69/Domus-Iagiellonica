@@ -127,6 +127,256 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = POL_assert_the_royal_prerogative
+		icon = GFX_focus_POL_assert_the_royal_prerogative
+		prerequisite = { focus = POL_the_question_of_government }
+		#mutually_exclusive = { focus = POL_preserve_the_constitutional_balance }
+		x = -1
+		y = 1
+		relative_position_id = POL_the_question_of_government
+		cost = 5
+		
+		available = { has_country_flag = POL_royalists_formed_government }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.025
+			add_war_support = 0.025
+			add_ideas = POL_royal_prerogative
+			set_politics = { ruling_party = monarchist elections_allowed = yes }
+			set_country_flag = POL_royal_prerogative_confirmed
+		}
+	}
+
+	focus = {
+		id = POL_summon_a_royal_ministry
+		icon = GFX_focus_POL_summon_a_royal_ministry
+		prerequisite = { focus = POL_assert_the_royal_prerogative }
+		x = 0
+		y = 1
+		relative_position_id = POL_assert_the_royal_prerogative
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+			swap_ideas = { remove_idea = POL_royal_prerogative add_idea = POL_royal_ministry }
+			set_country_flag = POL_royal_ministry_established
+		}
+	}
+
+	focus = {
+		id = POL_reorganise_the_privy_council
+		icon = GFX_focus_POL_reorganise_the_privy_council
+		prerequisite = { focus = POL_summon_a_royal_ministry }
+		x = -1
+		y = 1
+		relative_position_id = POL_summon_a_royal_ministry
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+			add_ideas = POL_reorganised_privy_council
+			set_country_flag = POL_privy_council_reorganised
+		}
+	}
+
+	focus = {
+		id = POL_the_crown_above_the_parties
+		icon = GFX_focus_POL_the_crown_above_the_parties
+		prerequisite = { focus = POL_summon_a_royal_ministry }
+		x = 1
+		y = 1
+		relative_position_id = POL_summon_a_royal_ministry
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = { ideology = monarchist popularity = 0.05 }
+			add_ideas = POL_crown_above_the_parties
+			set_country_flag = POL_crown_above_parties
+		}
+	}
+
+	focus = {
+		id = POL_royal_commissioners
+		icon = GFX_focus_POL_royal_commissioners
+		prerequisite = { focus = POL_reorganise_the_privy_council }
+		x = 0
+		y = 1
+		relative_position_id = POL_reorganise_the_privy_council
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 25
+			if = {
+				limit = { has_country_flag = POL_federalist_settlement }
+				add_ideas = POL_royal_commissioners_federal
+				add_stability = -0.01
+			}
+			else_if = {
+				limit = { has_country_flag = POL_balanced_settlement }
+				add_ideas = POL_royal_commissioners_balanced
+				add_stability = 0.025
+			}
+			else_if = {
+				limit = { has_country_flag = POL_centralist_settlement }
+				add_ideas = POL_royal_commissioners_central
+				add_stability = 0.05
+			}
+			else_if = {
+				limit = { has_country_flag = POL_national_supremacy_settlement }
+				add_ideas = POL_royal_commissioners_national
+				add_war_support = 0.025
+			}
+			set_country_flag = POL_royal_commissioners_appointed
+		}
+	}
+
+	focus = {
+		id = POL_a_loyal_officer_corps
+		icon = GFX_focus_POL_a_loyal_officer_corps
+		prerequisite = { focus = POL_the_crown_above_the_parties }
+		x = 0
+		y = 1
+		relative_position_id = POL_the_crown_above_the_parties
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 25
+			add_ideas = POL_royal_officer_corps
+			set_country_flag = POL_officer_corps_loyal_to_crown
+		}
+	}
+
+	focus = {
+		id = POL_one_king_many_nations
+		icon = GFX_focus_POL_one_king_many_nations
+		prerequisite = { focus = POL_royal_commissioners focus = POL_a_loyal_officer_corps }
+		x = 1
+		y = 1
+		relative_position_id = POL_royal_commissioners
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = { has_country_flag = POL_federalist_settlement }
+				add_ideas = POL_federal_crown
+			}
+			else_if = {
+				limit = { has_country_flag = POL_balanced_settlement }
+				add_ideas = POL_commonwealth_crown
+			}
+			else_if = {
+				limit = { has_country_flag = POL_centralist_settlement }
+				add_ideas = POL_unitary_crown
+			}
+			else_if = {
+				limit = { has_country_flag = POL_national_supremacy_settlement }
+				add_ideas = POL_polish_crown
+			}
+			set_country_flag = POL_dynastic_union_reaffirmed
+		}
+	}
+
+	focus = {
+		id = POL_a_reformed_royal_constitution
+		icon = GFX_focus_POL_a_reformed_royal_constitution
+		prerequisite = { focus = POL_one_king_many_nations }
+		mutually_exclusive = { focus = POL_all_authority_flows_from_the_crown }
+		x = -1
+		y = 1
+		relative_position_id = POL_one_king_many_nations
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = {
+			factor = 10
+			modifier = { factor = 1.5 has_country_flag = POL_federalist_settlement }
+			modifier = { factor = 1.5 has_country_flag = POL_balanced_settlement }
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			set_politics = { ruling_party = monarchist elections_allowed = yes }
+			add_ideas = POL_reformed_royal_constitution
+			set_country_flag = POL_royal_constitution_reformed
+		}
+	}
+
+	focus = {
+		id = POL_all_authority_flows_from_the_crown
+		icon = GFX_focus_POL_all_authority_flows_from_the_crown
+		prerequisite = { focus = POL_one_king_many_nations }
+		mutually_exclusive = { focus = POL_a_reformed_royal_constitution }
+		x = 1
+		y = 1
+		relative_position_id = POL_one_king_many_nations
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = {
+			factor = 8
+			modifier = { factor = 1.5 has_country_flag = POL_centralist_settlement }
+			modifier = { factor = 1.5 has_country_flag = POL_national_supremacy_settlement }
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.025
+			add_war_support = 0.05
+			set_politics = { ruling_party = monarchist elections_allowed = no }
+			add_ideas = POL_authority_of_the_crown
+			set_country_flag = POL_royal_authoritarian_regime
+		}
+	}
+
+	focus = {
+		id = POL_the_jagiellonian_compromise
+		icon = GFX_focus_POL_the_jagiellonian_compromise
+		prerequisite = { focus = POL_a_reformed_royal_constitution }
+		x = 0
+		y = 1
+		relative_position_id = POL_a_reformed_royal_constitution
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			swap_ideas = { remove_idea = POL_reformed_royal_constitution add_idea = POL_jagiellonian_compromise }
+			set_country_flag = POL_jagiellonian_compromise_achieved
+		}
+	}
+
+	focus = {
+		id = POL_the_jagiellonian_state
+		icon = GFX_focus_POL_the_jagiellonian_state
+		prerequisite = { focus = POL_all_authority_flows_from_the_crown }
+		x = 0
+		y = 1
+		relative_position_id = POL_all_authority_flows_from_the_crown
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			swap_ideas = { remove_idea = POL_authority_of_the_crown add_idea = POL_jagiellonian_state }
+			set_country_flag = POL_jagiellonian_state_established
+		}
+	}
+
 	focus = {
 		id = POL_revive_the_polish_economy
 		icon = GFX_focus_POL_the_four_year_plan

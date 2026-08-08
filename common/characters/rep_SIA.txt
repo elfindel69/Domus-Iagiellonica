@@ -1,0 +1,16 @@
+characters={
+	SIA_rama_viii={
+		name="King Rama VIII"
+		portraits={
+			civilian={
+				large="gfx/leaders/Monarchs/Portrait_SIA_Rama_VIII.tga"
+			}
+		}
+		country_leader={
+			ideology=absolutism
+			traits={ inexperienced_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
