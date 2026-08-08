@@ -1,14 +1,15 @@
 characters={
-	USA_peter_hall={
-		name="Peter Hall"
+	USA_john_i={
+		name="John I"
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Generic_land_1.dds"
+				large="gfx/leaders/USA/generic10.dds"
 			}
 		}
 		country_leader={
-			ideology=monarchism
-			expire="1965.1.1.1"
+			ideology=paternalism
+			traits={ imperial_connections }
+			expire="1950.1.1.1"
 			id=-1
 		}
 	}
