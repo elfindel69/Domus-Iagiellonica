@@ -3,6 +3,10 @@ state={
 	id=227
 	name="STATE_227"
 	manpower = 3767336
+
+	resources = {
+		coal = 82 # initial distribution
+	}
 	
 	state_category = city
 
@@ -14,7 +18,7 @@ state={
 		victory_points = {
 			6474 10
 		}
-		add_core_of = RUS
+		add_core_of = RUE
 		add_core_of = UKR
 	}
 

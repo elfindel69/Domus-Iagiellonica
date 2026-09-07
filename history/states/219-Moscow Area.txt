@@ -7,10 +7,11 @@ state={
 	state_category = megalopolis
 	resources={
 		steel=16 # was: 28
+		coal = 16 # initial distribution
 	}
 
 	history={
-		owner = RUS
+		owner = RUE
 		victory_points = {
 			6380 50 
 		}
@@ -19,8 +20,19 @@ state={
 			arms_factory = 7
 			industrial_complex = 3
 			air_base = 10
+			6380 = {
+                landmark_kremlin = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "Gotterdammerung"
+                    }
+                }
+            }
+			3391 = {
+				land_facility = 1 # Mytischi
+			}
 		}
-		add_core_of = RUS
+		add_core_of = RUE
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

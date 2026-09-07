@@ -11,11 +11,11 @@ state={
 	}
 
 	history={
-		owner = RUS
+		owner = RUE
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = RUS
+		add_core_of = RUE
 		victory_points = {
 			11351 1
 		}

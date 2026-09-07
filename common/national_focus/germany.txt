@@ -2317,14 +2317,14 @@ focus_tree = {
 		}
 		#cancel = { 
 		#	OR = {
-		#		has_war_with = RUS
-		#		NOT = { country_exists = RUS }
+		#		has_war_with = RUE
+		#		NOT = { country_exists = RUE }
 		#	} 
 		#}
 		bypass = { 
 			OR = {
-				has_war_with = RUS
-				NOT = { country_exists = RUS }
+				has_war_with = RUE
+				NOT = { country_exists = RUE }
 				has_completed_focus = GER_bulwark_against_bolshevism
 				has_completed_focus = GER_the_great_red_menace
 			}
@@ -2338,7 +2338,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			RUS = {
+			RUE = {
 				country_event = { id = germany.75 days = 1 }
 				custom_effect_tooltip = needs_approval
 			}
@@ -2390,9 +2390,9 @@ focus_tree = {
 			if = {
 				limit = {
 					has_opinion_modifier = sov_ger_treaty
-					NOT = { has_war_with = RUS }
+					NOT = { has_war_with = RUE }
 				}
-				RUS = {
+				RUE = {
 					country_event = { id = germany.78 days = 1 }
 				}
 			}
@@ -2501,17 +2501,17 @@ focus_tree = {
 			is_puppet = no
 			has_government = fascism
 			has_army_manpower = { size > 849999 } #ca 90 div
-			RUS = {
+			RUE = {
 				NOT = { has_war_with = GER }
-				country_exists = RUS
+				country_exists = RUE
 			}
 			NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
 			NOT = { has_completed_focus = GER_the_great_red_menace }
 		}
 		cancel = {
 			OR = {
-				has_war_with = RUS
-				NOT = { country_exists = RUS }
+				has_war_with = RUE
+				NOT = { country_exists = RUE }
 			}
 		}
 		cancel_if_invalid = no
@@ -2528,7 +2528,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			# REVISIT Rework event series to fit new design or retain old design
-			RUS = {
+			RUE = {
 				country_event = { id = germany.11 days = 1 }
 				custom_effect_tooltip = GER_mol_rib_pact_tt
 				custom_effect_tooltip = needs_approval
@@ -2545,18 +2545,18 @@ focus_tree = {
 			is_puppet = no
 			has_government = fascism
 			has_war = no
-			RUS = {
+			RUE = {
 				has_war = no
 				NOT = { has_war_with = GER }
 				is_puppet = no
 			}
 		}
 		bypass = {
-			RUS = {
+			RUE = {
 				is_in_faction_with = GER
 			}
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_mol_rib_pact
 		cost = 10
@@ -2582,7 +2582,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = ger_sov_buddies_tooltip
 			add_ideas = soviet_german_friendship
-			RUS = {
+			RUE = {
 				add_opinion_modifier = { target = GER modifier = ger_sov_alliance_focus }
 				add_ideas = soviet_german_friendship
 				country_event = germany.89
@@ -2605,11 +2605,11 @@ focus_tree = {
 					}
 				}
 			}
-			NOT = { has_war_with = RUS }
+			NOT = { has_war_with = RUE }
 			country_exists = TUR
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_soviet_ally
 		cost = 10
 		ai_will_do = {
@@ -2627,6 +2627,8 @@ focus_tree = {
 		
 		available = {
 			is_puppet = no
+			has_government = fascism
+			not = { has_completed_focus = GER_political_sphere  }
 		}
 		x = 25
 		y = 0
@@ -2642,11 +2644,6 @@ focus_tree = {
 				}
 				NOT = {
 					has_completed_focus = GER_political_sphere
-					OR = {
-						has_completed_focus = GER_long_live_the_kaiserreich
-						has_completed_focus = GER_a_new_constitution
-						has_completed_focus = GER_relegalize_communism
-					}
 				}
 			}
 		}
@@ -2793,19 +2790,19 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			NOT = { has_government = communism }
-			NOT = { is_in_faction_with = RUS }
+			NOT = { is_in_faction_with = RUE }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			RUS = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+			RUE = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 			add_named_threat = { threat = 2 name = GER_anti_comitern_pact }
 			every_other_country = {
 				limit = {
 					NOT = { tag = GER }
 					NOT = { has_war_with = GER }
-					NOT = { is_in_faction_with = RUS }
+					NOT = { is_in_faction_with = RUE }
 					is_subject = no
 					OR = {
 						capital_scope = {
@@ -2819,7 +2816,7 @@ focus_tree = {
 					OR = {
 						has_government = fascism 
 						AND = {
-							is_neighbor_of = RUS
+							is_neighbor_of = RUE
 							NOT = { has_government = communism }
 						}
 					}
@@ -2847,9 +2844,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				RUS = { remove_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+				RUE = { remove_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 			}
-			RUS = { add_opinion_modifier = { target = ROOT modifier = worse_pact_against_us } }
+			RUE = { add_opinion_modifier = { target = ROOT modifier = worse_pact_against_us } }
 			custom_effect_tooltip = GER_anti_soviet_pact_tt_3
 			custom_effect_tooltip = GER_anti_soviet_pact_tt
 			custom_effect_tooltip = GER_anti_soviet_pact_tt_2
@@ -2876,10 +2873,10 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = GER_anti_comitern_pact }
 		mutually_exclusive = { focus = GER_soviet_ally }
-		will_lead_to_war_with = RUS
+		will_lead_to_war_with = RUE
 
 		cancel = {
-			NOT = { country_exists = RUS }
+			NOT = { country_exists = RUE }
 		}
 		x = 1
 		y = 4
@@ -2893,7 +2890,7 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			has_war_with = RUS
+			has_war_with = RUE
 		}
 		ai_will_do = {
 			factor = 10
@@ -2910,7 +2907,7 @@ focus_tree = {
 				factor = 0 #AI should not pick this focus if it does not share a border with the Soviets
 				NOT = { 
 					any_home_area_neighbor_country = {
-						tag = RUS
+						tag = RUE
 					}
 				}
 			}
@@ -2923,7 +2920,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = RUS
+				target = RUE
 			}
 		}
 	}
@@ -4420,8 +4417,8 @@ focus_tree = {
 		x = 37
 		y = 1
 		offset = {
-			x = -15
-			y = -1
+			x = -13
+			y = 0
 			trigger = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -4431,8 +4428,8 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -13
-			y = -1
+			x = 2
+			y = 0
 			trigger = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -5727,8 +5724,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_rhineland
 		}
+		available = {
+			is_puppet = no
+			not = { 
+				has_completed_focus = GER_rhineland
+				has_government = fascism
+			}
+		}
 		cost = 1.00
-		x = 42
+		x = 45
 		y = 0
 		offset = {
 			x = -10
@@ -5770,6 +5774,14 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_a_new_constitution focus = GER_relegalize_communism}
 		available = {
 			is_puppet = no
+			OR = {
+				has_government = monarchist
+				has_government = neutrality
+			}
+			NOR = {
+				has_completed_focus = GER_a_new_constitution
+				has_completed_focus = GER_relegalize_communism
+			}
 		}
 		allow_branch = {
 			if = {
@@ -5780,11 +5792,13 @@ focus_tree = {
 					}
 				}
 				NOT = {
+					has_completed_focus = GER_rhineland
 					OR={
 						has_completed_focus = GER_a_new_constitution
 						has_completed_focus = GER_relegalize_communism
 					}	
 				}
+				
 			}
 		}
 		x = 5
@@ -5801,7 +5815,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -11
+			x = 3
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -5844,6 +5858,7 @@ focus_tree = {
 				}
 				NOT = {
 					OR={
+						has_completed_focus = GER_rhineland
 						has_completed_focus = GER_relegalize_communism
 					}	
 				}
@@ -5974,7 +5989,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GER_bulwark_against_bolshevism
 			custom_effect_tooltip = GER_bulwark_against_bolshevism_tt
-			RUS = { 
+			RUE = { 
 				add_opinion_modifier = { target = GER modifier = embargo } 
 			}
 		}
@@ -6431,11 +6446,11 @@ focus_tree = {
 			has_war_with = USA
 			OR = {
 				AND = {
-					has_war_with = RUS
-					RUS = { has_capitulated = yes }
+					has_war_with = RUE
+					RUE = { has_capitulated = yes }
 				}
-				RUS = { exists = no }
-				RUS = { is_puppet = yes }
+				RUE = { exists = no }
+				RUE = { is_puppet = yes }
 			}
 			NOT = {
 				any_country = {
@@ -7320,19 +7335,19 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			NOT = { has_government = communism }
-			NOT = { is_in_faction_with = RUS }
+			NOT = { is_in_faction_with = RUE }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			RUS = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+			RUE = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 			add_named_threat = { threat = 2 name = GER_anti_comintern_pact_unaligned }
 			every_other_country = {
 				limit = {
 					NOT = { tag = GER }
 					NOT = { has_war_with = GER }
-					NOT = { is_in_faction_with = RUS }
+					NOT = { is_in_faction_with = RUE }
 					is_subject = no
 					OR = {
 						capital_scope = {
@@ -7342,7 +7357,7 @@ focus_tree = {
 							capital_scope = {
 									is_on_continent = asia
 							}
-							is_neighbor_of = RUS
+							is_neighbor_of = RUE
 						}
 						num_of_factories > 30
 					}
@@ -7352,7 +7367,7 @@ focus_tree = {
 							has_government = monarchist
 						}
 						AND = {
-							is_neighbor_of = RUS
+							is_neighbor_of = RUE
 							NOT = { has_government = communism }
 						}
 					}
@@ -7379,10 +7394,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				RUS = { remove_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+				RUE = { remove_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 				add_ideas = anti_soviet_pact
 			}
-			RUS = { add_opinion_modifier = { target = ROOT modifier = worse_pact_against_us } }
+			RUE = { add_opinion_modifier = { target = ROOT modifier = worse_pact_against_us } }
 			custom_effect_tooltip = GER_anti_soviet_pact_tt_3
 			custom_effect_tooltip = GER_anti_soviet_pact_tt
 			custom_effect_tooltip = GER_anti_soviet_pact_tt_2
@@ -7408,15 +7423,15 @@ focus_tree = {
 		prerequisite = { focus = GER_anti_soviet_pact_unaligned focus = GER_carte_blanche_for_alsace_and_french_colonies }
 		available = {
 			is_puppet = no
-			RUS = {
+			RUE = {
 				has_government = communism
 				has_war = yes
 			}
-			NOT = { is_in_faction_with = RUS }
+			NOT = { is_in_faction_with = RUE }
 		}
 		bypass = {
-			has_war_with = RUS
-			NOT = { country_exists = RUS }
+			has_war_with = RUE
+			NOT = { country_exists = RUE }
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -7436,7 +7451,7 @@ focus_tree = {
 			}
 			create_wargoal = {
 				type = annex_everything
-				target = RUS
+				target = RUE
 			}
 		}
 	}
@@ -7487,6 +7502,12 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_long_live_the_kaiserreich focus = GER_relegalize_communism}
 		available = {
 			is_puppet = no
+			democratic > 0.4
+			has_government = democratic
+			NOR = {
+				has_completed_focus = GER_long_live_the_kaiserreich
+				has_completed_focus = GER_relegalize_communism
+			}
 		}
 		allow_branch = {
 			if = {
@@ -7500,7 +7521,8 @@ focus_tree = {
 					OR={
 						has_completed_focus = GER_long_live_the_kaiserreich
 						has_completed_focus = GER_relegalize_communism
-					}	
+					}
+					has_completed_focus = GER_rhineland	
 				}
 			}
 		}
@@ -7509,7 +7531,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_political_sphere
 		offset = {
-			x = -13
+			x = -15
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -7567,7 +7589,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			has_war = no
-			RUS = { has_government = communism }
+			RUE = { has_government = communism }
 			has_added_tension_amount < 15
 		}
 		cancel_if_invalid = yes
@@ -7581,7 +7603,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_named_threat = { threat = 10 name = GER_the_great_red_menace }
-			RUS = { country_event = { id = wtt_germany.19 days = 1 } }
+			RUE = { country_event = { id = wtt_germany.19 days = 1 } }
 			hidden_effect = { news_event = { id = wtt_news.21 hours = 6 } }
 			every_other_country = {
 				limit = {
@@ -7614,7 +7636,7 @@ focus_tree = {
 					value = -200
 				}
 			}
-			RUS = { 
+			RUE = { 
 				add_opinion_modifier = { target = GER modifier = embargo } 
 			}
 		}
@@ -7658,7 +7680,7 @@ focus_tree = {
 				}
 				remove_ideas = neutrality_idea
 			}
-			RUS = { country_event = { id = wtt_germany.20 days = 1 } }
+			RUE = { country_event = { id = wtt_germany.20 days = 1 } }
 			hidden_effect = {
 				news_event = { id = wtt_news.22 hours = 6 }
 				if = {
@@ -7684,7 +7706,7 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						RUS = { has_government = communism }
+						RUE = { has_government = communism }
 					}
 					random_other_country = {
 						limit = {
@@ -7693,12 +7715,12 @@ focus_tree = {
 						}
 						add_ai_strategy = {
 							type = befriend
-							id = "RUS"			
+							id = "RUE"			
 							value = 200
 						}
 						add_ai_strategy = {
 							type = alliance
-							id = "RUS"			
+							id = "RUE"			
 							value = 200
 						}
 					}
@@ -7726,7 +7748,7 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						RUS = { has_government = fascism } #futureproofing
+						RUE = { has_government = fascism } #futureproofing
 					}
 					random_other_country = {
 						limit = {
@@ -7735,12 +7757,12 @@ focus_tree = {
 						}
 						add_ai_strategy = {
 							type = befriend
-							id = "RUS"			
+							id = "RUE"			
 							value = 200
 						}
 						add_ai_strategy = {
 							type = alliance
-							id = "RUS"			
+							id = "RUE"			
 							value = 200
 						}
 					}
@@ -8319,7 +8341,7 @@ focus_tree = {
 			NOT = { has_war_with = EST }
 			NOT = { has_war_with = LAT }
 			NOT = { has_war_with = LIT }
-			RUS = {
+			RUE = {
 				OR = {
 					NOT = { has_war_with = EST }
 					NOT = { has_war_with = LAT }
@@ -8331,25 +8353,25 @@ focus_tree = {
 			EST = {
 				OR = {
 					is_in_faction_with = ROOT
-					is_in_faction_with = RUS
+					is_in_faction_with = RUE
 					exists = no
-					has_war_with = RUS
+					has_war_with = RUE
 				}
 			}
 			LAT = {
 				OR = {
 					is_in_faction_with = ROOT
-					is_in_faction_with = RUS
+					is_in_faction_with = RUE
 					exists = no
-					has_war_with = RUS
+					has_war_with = RUE
 				}
 			}
 			LIT = {
 				OR = {
 					is_in_faction_with = ROOT
-					is_in_faction_with = RUS
+					is_in_faction_with = RUE
 					exists = no
-					has_war_with = RUS
+					has_war_with = RUE
 				}
 			}
 		}
@@ -8419,7 +8441,7 @@ focus_tree = {
 					}	
 				}
 			}
-			RUS = { country_event = { id = wtt_germany.21 } }
+			RUE = { country_event = { id = wtt_germany.21 } }
 			POL = {
 				add_ai_strategy = {
 					type = alliance
@@ -8444,13 +8466,13 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			NOT = { has_war_with = POL }
-			RUS = { NOT = { has_war_with = POL } }
+			RUE = { NOT = { has_war_with = POL } }
 		}
 		bypass = {
 			OR = {
 				is_in_faction_with = POL
 				NOT = { country_exists = POL }
-				RUS = { 
+				RUE = { 
 					OR = {
 						is_in_faction_with = POL
 						has_war_with = POL
@@ -8488,7 +8510,7 @@ focus_tree = {
 					}	
 				}
 			}
-			RUS = { country_event = { id = wtt_germany.22 } }
+			RUE = { country_event = { id = wtt_germany.22 } }
 			EST = {
 				add_ai_strategy = {
 					type = alliance
@@ -8527,13 +8549,13 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			NOT = { has_war_with = FIN }
-			RUS = { NOT = { has_war_with = FIN } }
+			RUE = { NOT = { has_war_with = FIN } }
 		}
 		bypass = {
 			OR = {
 				is_in_faction_with = FIN
 				NOT = { country_exists = FIN }
-				RUS = { 
+				RUE = { 
 					OR = { 
 						is_in_faction_with = FIN
 						has_war_with = FIN
@@ -8571,7 +8593,7 @@ focus_tree = {
 					}	
 				}
 			}
-			RUS = { country_event = { id = wtt_germany.23 } }
+			RUE = { country_event = { id = wtt_germany.23 } }
 			EST = {
 				add_ai_strategy = {
 					type = alliance
@@ -8611,15 +8633,15 @@ focus_tree = {
 		prerequisite = { focus = GER_finnish_membership }
 		available = {
 			is_puppet = no
-			RUS = {
+			RUE = {
 				has_government = communism
 			}
-			NOT = { is_in_faction_with = RUS }
+			NOT = { is_in_faction_with = RUE }
 		}
 		bypass = {
 			OR = {
-				has_war_with = RUS
-				NOT = { country_exists = RUS }
+				has_war_with = RUE
+				NOT = { country_exists = RUE }
 			}
 		}
 		cancel_if_invalid = yes
@@ -8634,7 +8656,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = topple_government
-				target = RUS
+				target = RUE
 			}
 			if = {
 				limit = {
@@ -8793,6 +8815,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_long_live_the_kaiserreich focus = GER_a_new_constitution
 		}
+		available = {
+			is_puppet = no
+			communism > 0.4
+			has_government = communism
+			NOR = {
+				has_completed_focus = GER_long_live_the_kaiserreich
+				has_completed_focus = GER_a_new_constitution
+			}
+		}
 		allow_branch = {
 			if = {
 				limit = {
@@ -8814,7 +8845,7 @@ focus_tree = {
 		x = 22
 		y = 1
 		offset = {
-			x = -52
+			x = -22
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -8884,7 +8915,7 @@ focus_tree = {
 		}
 		available = {
 			is_puppet = no
-			RUS = {
+			RUE = {
 				NOT = {
 						has_war_with = GER
 					}
@@ -8901,7 +8932,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = ger_sov_buddies_tooltip
 			add_ideas = soviet_german_friendship
-			RUS = {
+			RUE = {
 				add_opinion_modifier = {
 						target = GER
 						modifier = ger_sov_alliance_focus

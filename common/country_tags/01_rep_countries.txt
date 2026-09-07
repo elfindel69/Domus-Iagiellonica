@@ -1,3 +1,1 @@
-
-RUS = "countries/Russia.txt"
-UBD = "countries/Baltics.txt"
+RUE = "countries/Russia.txt"

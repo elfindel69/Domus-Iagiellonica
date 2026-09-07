@@ -11,8 +11,8 @@
  POL_monarchism_focus:0 "Long live the king!"
  POL_king_rules_focus:0 "King's direct control"
  
- RUS_liberty_ethos_focus:0 "Rise of liberty"
- RUS_neutrality_idea:0 "Neutral foreign policy"
+ RUE_liberty_ethos_focus:0 "Rise of liberty"
+ RUE_neutrality_idea:0 "Neutral foreign policy"
  
  UKR_liberty_ethos_focus:0 "Rise of liberty"
  UKR_neutrality_idea:0 "Neutral foreign policy"
@@ -57,6 +57,24 @@
  
  POL_exiled_royal_family:0 "Polish Royal Family Exiled"
  POL_confiscated_royal_wealth:0 "Confiscated Royal Wealth"
+
+ POL_crown_and_sejm:0 "The Crown and the Sejm"
+ POL_crown_and_sejm_desc:0 "The authority of the Crown is balanced by the ancient prerogatives of the Sejm. This compromise has preserved the stability of the Commonwealth, but competing interests, parliamentary traditions, and royal influence often make decisive action difficult."
+
+ POL_commonwealth_of_nations:0 "A Commonwealth of Nations"
+ POL_commonwealth_of_nations_desc:0 "Poles, Lithuanians, Ruthenians, Belarusians, Ukrainians, Germans, Jews, and many other peoples live beneath the banner of the Commonwealth. This diversity is one of our greatest strengths, but maintaining unity among so many nations remains a constant political challenge."
+
+ POL_two_commonwealth_economies:0 "The Commonwealth's Two Economies"
+ POL_two_commonwealth_economies_desc:0 "The industrial centres of Warsaw, Silesia, Gdańsk, and the Baltic stand in stark contrast to the predominantly rural eastern territories. Poor infrastructure and uneven development prevent the Commonwealth from realising its full economic potential."
+
+ POL_victors_of_1918:0 "Victors of 1918"
+ POL_victors_of_1918_desc:0 "The victories of the Great War and the Grand Eastern Offensive secured the Commonwealth's place among the great powers. Yet the prestige of past triumphs has encouraged many officers to believe that the doctrines of 1918 will suffice in the next war."
+
+ POL_three_seas_overstretch:0 "Overstretched Across Three Seas"
+ POL_three_seas_overstretch_desc:0 "From the Baltic coastline to the Carpathians and the distant territories of Africa, the Commonwealth must defend widely scattered frontiers and lines of communication. Our ambitions span three seas, but our armed forces cannot yet protect them all with equal strength."
+
+ POL_polish_chemical_industry:0 "The Polish Chemical Industry"
+ POL_polish_chemical_industry_desc:0 "Poland possesses a well-established chemical sector supported by experienced scientists, modern factories, and extensive research into synthetic materials. Further investment could reduce the Commonwealth's dependence on imported fuel and rubber."
  
  GER_exiled_royal_family:0 "Geman Royal Family Exiled"
  GER_confiscated_royal_wealth:0 "Confiscated Royal Wealth"

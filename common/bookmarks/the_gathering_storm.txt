@@ -85,10 +85,11 @@ bookmarks = {
 			ideology = monarchist
 			ideas = {
 				POL_Polish_Cipher_Bureau_Focus0
-				POL_Synthetic_Rubber
+				POL_commonwealth_of_nations
+				POL_victors_of_1918
 			}
 			focuses = {
-				POL_treaty_with_romania
+				
 				POL_draw_closer_to_britain
 				POL_seek_accommodation_with_germany
 			}
@@ -167,32 +168,30 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}			
 		}
-		"RUS"={
-			history = "RUS_GATHERING_STORM_DESC"
+		"RUE"={
+			history = "RUE_GATHERING_STORM_DESC"
 			ideology = monarchist
 			available = { has_dlc = "No Step Back" }
 			ideas = {
-				RUS_second_five_year_plan_fake_1936_ns
-				RUS_politicized_military
+				RUE_second_five_year_plan_fake_1936_ns
+				
 			}
 			focuses = {
-				RUS_behead_the_snake
-				RUS_the_supreme_soviet
-				RUS_reconvene_the_zemsky_sobor
+			
 			}	
 		}
-		"RUS"={
-			history = "RUS_GATHERING_STORM_DESC"
+		"RUE"={
+			history = "RUE_GATHERING_STORM_DESC"
 			ideology = monarchist
 			available = { NOT = { has_dlc = "No Step Back" } }
 			ideas = {
-				RUS_second_five_year_plan_fake_1936_ns
-				RUS_politicized_military
+				RUE_second_five_year_plan_fake_1936_ns
+			
 			}
 			focuses = {
-				RUS_behead_the_snake
-				RUS_father_of_nations
-				RUS_the_supreme_soviet
+				
+				RUE_father_of_nations
+				
 			}	
 		}
 

@@ -39,11 +39,11 @@
  HUN_GREATER_monarchist:0 "Kingdom of Greater Hungary"
  HUN_GREATER_monarchist_DEF:0 "the Kingdom of Greater Hungary"
  HUN_GREATER_democratic:0 "Hungarian Federal Republic"
- HUN_GREATER_communist:0 "Hungarian Democratic Republic"
+ HUN_GREATER_communism:0 "Hungarian Democratic Republic"
  HUN_GREATER_neutrality:0 "Greater Hungary"
  HUN_GREATER_fascism:0 "Empire of Greater Hungary"
  HUN_GREATER_democratic_DEF:0 "The Hungarian Federal Republic"
- HUN_GREATER_communist_DEF:0 "The Hungarian Democratic Republic"
+ HUN_GREATER_communism_DEF:0 "The Hungarian Democratic Republic"
  HUN_GREATER_neutrality_DEF:0 "Greater Hungary"
  HUN_GREATER_fascism_DEF:0 "The Empire of Greater Hungary"
  HUN_MONARCHY_monarchist:0 "Kingdom of Hungary"
@@ -67,8 +67,8 @@
  PLC_UNIFIED_fascism_DEF:0 "the Polish-Lithuanian Empire"
  PLC_UNIFIED_democratic_DEF:0 "the Polish-Lithuanian Federation"
  PLC_UNIFIED_communism_DEF:1 "The Polish-Lithuanian Socialist Republic"
- PLC_UNIFIED_neutrality:0 "Republic of Two Nations"
- PLC_UNIFIED_neutrality_DEF:0 "the Republic of Two Nations"
+ PLC_UNIFIED_neutrality:0 "Polish-Lithuanian Commonwealth"
+ PLC_UNIFIED_neutrality_DEF:0 "the Polish-Lithuanian Commonwealth"
  PLC_UNIFIED_monarchist:0 "Kingdom of Poland-Lithuania"
  PLC_UNIFIED_monarchist_DEF:0 "the Kingdom of Poland-Lithuania"
  
@@ -345,3 +345,10 @@
  idel_ural_monarchist_DEF:0 "the Idel-Ural Kingdom"
  
   #####################################
+ PLC_UNIFIED_neutrality_strong_lithuania:0 "Commonwealth of Poland and Lithuania"
+ PLC_UNIFIED_democratic_strong_lithuania:0 "Federal Union of Poland and Lithuania"
+ PLC_UNIFIED_fascism_strong_lithuania:0 "Polish-Lithuanian Empire of Two Crowns"
+ PLC_UNIFIED_communism_strong_lithuania:0 "Socialist Republic of Poland and Lithuania"
+ PLC_UNIFIED_monarchist_strong_lithuania:0 "Dual Crown of Poland and Lithuania"
+
+ PLC_UNIFIED_default_strong_lithuania:0 "Polish-Lithuanian Dual State"

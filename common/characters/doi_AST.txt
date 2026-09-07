@@ -1,0 +1,19 @@
+characters={
+
+	AST_prince_henry={
+		name="Prince Henry"
+		portraits={
+			civilian={
+				large="gfx/leaders/AST/r56_portrait_AST_Prince_Henry.dds"
+			}
+		}
+		country_leader={
+			ideology=paternalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	
+	#Illusive Gentleman auto-generated
+}

@@ -11,7 +11,7 @@
  UBD_a_nation_and_a_king_desc:0 "The Nation and the King are one and the same."
  UBD_a_strong_hand:0 "A Strong Hand"
  UBD_a_strong_hand_desc:0 "We need a strong hand to rule the country."
- UBD_internationalism_focus :0 "Internationalism"
+ UBD_internationalism_focus:0 "Internationalism"
  UBD_internationalism_focus_desc:0 "We should focus on internationalism."
  UBD_royal_guard:0 "Royal Guard"
  UBD_royal_guard_desc:0 "The Royal Guard is the only way to ensure the safety of the royal family."
@@ -24,11 +24,11 @@
  UBD_fascist_influence:0 "Fascist Influence"
  UBD_fascist_influence_desc:0 "We must seek support from our fascist brothers"
  UBD_fascist_government:0 "Fascist Government"
- UBD_fascist_govermnent_desc:0 "we will build a new government based on the principles of fascism."
+ UBD_fascist_government_desc:0 "we will build a new government based on the principles of fascism."
  UBD_communist_government:0 "Communist Government"
  UBD_communist_government_desc:0 "we will build a new government based on the principles of communism."
- UBD_approach_germany :0 "Approach Germany"
- UBD_approach_italy :0 "Approach Italy"
+ UBD_approach_germany:0 "Approach Germany"
+ UBD_approach_italy:0 "Approach Italy"
  UBD_for_the_motherland:0 "For the Motherland"
 
 

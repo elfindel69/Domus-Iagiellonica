@@ -5,7 +5,7 @@
 
 
 
-RUS_soviet_chinese_relations = {
+RUE_soviet_chinese_relations = {
 	valid_relation_trigger = {
 		FROM = {
 			NOT = { has_war_with = ROOT }
@@ -18,7 +18,7 @@ RUS_soviet_chinese_relations = {
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 }
 
-RUS_face_western_fascism_static = {
+RUE_face_western_fascism_static = {
 	valid_relation_trigger = {
 		FROM = {
 			has_war_with = ROOT
@@ -29,7 +29,7 @@ RUS_face_western_fascism_static = {
 	defense_bonus_against = 0.1
 }
 
-RUS_for_the_common_good_relation = { #For Right Oppo allies
+RUE_for_the_common_good_relation = { #For Right Oppo allies
 	valid_relation_trigger = {
 		FROM = {
 			NOT = { has_war_with = ROOT }

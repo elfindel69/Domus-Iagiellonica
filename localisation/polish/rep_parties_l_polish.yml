@@ -237,14 +237,14 @@
  
   ####################################################
  
- RUS_communism_party:0 "Rosyjska Partia Komunistyczna"
- RUS_democratic_party:0 "Trudowiki"
- RUS_democratic_party_long:0 "Partia Trudowików"
- RUS_fascism_party:0 "RPF"
- RUS_neutrality_party:0 "RPM (N)"
- RUS_neutrality_party_long:0 "Rosyjska Partia Monarchistów"
- RUS_monarchist_party:0 "PMR (M)"
- RUS_monarchist_party_long:0 "Dom Romanovykh"
+ RUE_communism_party:0 "Rosyjska Partia Komunistyczna"
+ RUE_democratic_party:0 "Trudowiki"
+ RUE_democratic_party_long:0 "Partia Trudowików"
+ RUE_fascism_party:0 "RPF"
+ RUE_neutrality_party:0 "RPM (N)"
+ RUE_neutrality_party_long:0 "Rosyjska Partia Monarchistów"
+ RUE_monarchist_party:0 "PMR (M)"
+ RUE_monarchist_party_long:0 "Dom Romanovykh"
 
  FSL_communism_party:0 "PSL"
  FSL_communism_party_long:0 "Partia Socialistyczna Luizjany"

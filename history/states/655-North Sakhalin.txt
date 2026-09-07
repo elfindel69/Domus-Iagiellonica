@@ -3,11 +3,17 @@ state = {
 	id = 655
 	name = "STATE_655"
 	manpower = 94759
+
+	resources = {
+		oil = 4
+		coal = 4 # These are part of hte Soviet oil and coal concessions of North Sakhalin to Japan
+		chromium = 1
+	}
 	
 	state_category = pastoral
 	history = {
-		owner = RUS
-		add_core_of = RUS
+		owner = RUE
+		add_core_of = RUE
 		add_core_of = FER
 		add_claim_by = JAP
 		buildings = {

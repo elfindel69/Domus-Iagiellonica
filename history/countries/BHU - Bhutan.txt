@@ -31,9 +31,7 @@ set_stability = 0.8
 		tech_mountaineers = 1
 
 		#doctrines
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
+		
 
 		#electronics
 		electronic_mechanical_engineering = 1

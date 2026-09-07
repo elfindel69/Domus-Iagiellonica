@@ -12,14 +12,38 @@ spriteTypes = {
 		name = "GFX_idea_SEPEWE"
 		texturefile = "gfx/interface/ideas/r56_idea_POL_company_SEPEWE.dds"
 	}
+
 	spriteType = {
-		name = "GFX_idea_stanislas_iii"
-		texturefile = "gfx/interface/ideas/idea_stanislas_iii.dds"
+		name = "GFX_idea_POL_crown_and_sejm"
+		texturefile = "gfx/interface/ideas/POL_crown_and_sejm.dds"
 	}
+
 	spriteType = {
-		name = "GFX_idea_stanislas_iv"
-		texturefile = "gfx/interface/ideas/idea_stanislas_iv.dds"
+		name = "GFX_idea_POL_commonwealth_of_nations"
+		texturefile = "gfx/interface/ideas/POL_commonwealth_of_nations.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_POL_two_commonwealth_economies"
+		texturefile = "gfx/interface/ideas/POL_two_commonwealth_economies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_victors_of_1918"
+		texturefile = "gfx/interface/ideas/POL_victors_of_1918.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_three_seas_overstretch"
+		texturefile = "gfx/interface/ideas/POL_three_seas_overstretch.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_polish_chemical_industry"
+		texturefile = "gfx/interface/ideas/POL_polish_chemical_industry.dds"
+	}
+
+
 	
 	spriteType = {
 		name = "GFX_idea_catvisor"
@@ -29,6 +53,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_dogvisor"
 		texturefile = "gfx/interface/ideas/idea_dogvisor.dds"
+	}
+	 spriteType= {
+		name= "GFX_idea_POL_felicjan_skladkowski"
+		texturefile= "gfx/interface/ideas/idea_POL_felicjan_skladkowski.dds"
+	}
+	spriteType= {
+		name= "GFX_idea_POL_wanda_wasilewska_rep"
+		texturefile= "gfx/interface/ideas/idea_POL_wanda_wasilewska_rep.dds"
+	}
+	spriteType= {
+		name= "GFX_idea_POL_jan_v"
+		texturefile= "gfx/interface/ideas/idea_jan_v.dds"
 	}
 	
 	spriteType = {
