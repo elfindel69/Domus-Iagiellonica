@@ -20,3 +20,53 @@ spriteTypes = {
 	}
 
 }
+
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_POL_one_king_many_nations
+		texturefile = "gfx/interface/goals/GFX_focus_POL_one_king_many_nations.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_a_reformed_royal_constitution
+		texturefile = "gfx/interface/goals/GFX_focus_POL_a_reformed_royal_constitution.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_all_authority_flows_from_the_crown
+		texturefile = "gfx/interface/goals/GFX_focus_POL_all_authority_flows_from_the_crown.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_the_jagiellonian_compromise
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_jagiellonian_compromise.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_the_jagiellonian_state
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_jagiellonian_state.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_POL_assert_the_royal_prerogative
+		texturefile = "gfx/interface/goals/GFX_focus_POL_assert_the_royal_prerogative.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_summon_a_royal_ministry
+		texturefile = "gfx/interface/goals/GFX_focus_POL_summon_a_royal_ministry.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_reorganise_the_privy_council
+		texturefile = "gfx/interface/goals/GFX_focus_POL_reorganise_the_privy_council.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_the_crown_above_the_parties
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_crown_above_the_parties.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_royal_commissioners
+		texturefile = "gfx/interface/goals/GFX_focus_POL_royal_commissioners.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_a_loyal_officer_corps
+		texturefile = "gfx/interface/goals/GFX_focus_POL_a_loyal_officer_corps.dds"
+	}
+}
