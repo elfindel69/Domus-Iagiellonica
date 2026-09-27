@@ -109,4 +109,9 @@ spriteTypes = {
 		name = "GFX_idea_POL_royal_prerogative"
 		texturefile = "gfx/interface/ideas/POL_royal_prerogative.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_POL_jan_v_constitutional_monarch"
+		texturefile = "gfx/interface/ideas/POL_jan_v_constitutional_monarch.dds"
+	}
 }

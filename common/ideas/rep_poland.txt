@@ -165,6 +165,82 @@ country = {
 		}
 	}
 
+	# Constitutional neutrality government: Jan V remains monarch while the
+	# civilian cabinet is represented by Mościcki on the politics screen.
+	POL_constitutional_government = {
+		picture = GFX_idea_POL_crown_and_sejm
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.02
+			political_power_gain = -0.02
+		}
+	}
+
+	POL_jan_v_constitutional_monarch = {
+		picture = GFX_idea_POL_jan_v_constitutional_monarch
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.04
+			ideology_drift_defense = 0.05
+		}
+	}
+
+	POL_government_of_national_defence_idea = {
+		picture = GFX_idea_POL_victors_of_1918
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			war_support_factor = 0.03
+			command_power_gain_mult = 0.03
+		}
+	}
+
+	POL_commonwealth_of_nations_renewed = {
+		picture = GFX_idea_POL_commonwealth_of_nations
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			stability_factor = -0.02
+			recruitable_population_factor = -0.02
+			compliance_gain_add = 0.025
+			resistance_decay_on_our_occupied_states = 0.05
+		}
+	}
+
+	POL_commonwealth_of_equals = {
+		picture = GFX_idea_POL_commonwealth_of_nations
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.03
+			compliance_gain_add = 0.03
+			resistance_decay_on_our_occupied_states = 0.08
+		}
+	}
+
+	POL_jan_v_guardian_of_the_commonwealth = {
+		picture = GFX_idea_POL_jan_v_constitutional_monarch
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.06
+			ideology_drift_defense = 0.10
+			political_power_gain = 0.03
+		}
+	}
+
+	POL_jagiellonian_consensus_idea = {
+		picture = GFX_idea_POL_jagiellonian_compromise
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.04
+			political_power_gain = 0.05
+		}
+	}
+
 	POL_royal_prerogative = {
 		picture = GFX_idea_POL_royal_prerogative
 		allowed = { original_tag = POL }

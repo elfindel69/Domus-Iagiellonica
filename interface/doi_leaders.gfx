@@ -19,4 +19,8 @@ spriteTypes = {
             name= "GFX_Portrait_POL_Boleslaw_Piasecki"
             texturefile= "gfx/leaders/POL/Portrait_POL_F_Boleslaw_Piasecki.dds"
         }
+        spriteType= {
+            name= "GFX_Portrait_POL_Ignacy_Moscicki"
+            texturefile= "gfx/leaders/POL/Portrait_POL_N_Ignacy_Moscicki.dds"
+        }
 }

@@ -48,7 +48,7 @@ focus_tree = {
 		id = POL_the_crown_and_the_sejm_focus
 		icon = GFX_focus_POL_the_crown_and_the_sejm
 		prerequisite = { focus = POL_the_commonwealth_in_1936 }
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = POL_the_commonwealth_in_1936
 		cost = 5
@@ -73,7 +73,7 @@ focus_tree = {
 		id = POL_review_the_federal_compact
 		icon = GFX_focus_POL_review_the_federal_compact
 		prerequisite = { focus = POL_the_commonwealth_in_1936 }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = POL_the_commonwealth_in_1936
 		cost = 5
@@ -130,15 +130,178 @@ focus_tree = {
 	}
 
 	focus = {
+		id = POL_preserve_the_constitutional_balance
+		icon = GFX_focus_POL_the_crown_and_the_sejm
+		prerequisite = { focus = POL_the_question_of_government }
+		mutually_exclusive = { focus = POL_assert_the_royal_prerogative }
+		x = -1
+		y = 1
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = POL_preserve_the_constitutional_balance
+			}
+		}
+		relative_position_id = POL_the_question_of_government
+		cost = 5
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = { has_completed_focus = POL_assert_the_royal_prerogative }
+			}
+		}
+		available = { has_country_flag = POL_constitutionalists_formed_government has_government = neutrality }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+			add_ideas = POL_constitutional_government
+			set_country_flag = POL_constitutional_government_confirmed
+		}
+	}
+
+	focus = {
+		id = POL_a_king_above_parties
+		icon = GFX_focus_POL_the_crown_above_the_parties
+		prerequisite = { focus = POL_preserve_the_constitutional_balance }
+		x = 0
+		y = 1
+		relative_position_id = POL_preserve_the_constitutional_balance
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.025
+			add_popularity = { ideology = neutrality popularity = 0.02 }
+			add_ideas = POL_jan_v_constitutional_monarch
+			set_country_flag = POL_jan_v_constitutional_arbiter
+		}
+	}
+
+	focus = {
+		id = POL_government_of_national_defence
+		icon = GFX_focus_POL_the_question_of_government
+		prerequisite = { focus = POL_a_king_above_parties }
+		x = 0
+		y = 1
+		relative_position_id = POL_a_king_above_parties
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.025
+			add_command_power = 15
+			add_ideas = POL_government_of_national_defence_idea
+			set_country_flag = POL_national_defence_cabinet_formed
+		}
+	}
+
+	focus = {
+		id = POL_renew_the_federal_compact
+		icon = GFX_focus_POL_review_the_federal_compact
+		prerequisite = { focus = POL_government_of_national_defence }
+		x = 0
+		y = 1
+		relative_position_id = POL_government_of_national_defence
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.025
+			# Both federalist and balanced commission reports can be renewed.
+			if = {
+				limit = { has_idea = POL_commonwealth_of_nations }
+				swap_ideas = { remove_idea = POL_commonwealth_of_nations add_idea = POL_commonwealth_of_nations_renewed }
+			}
+			else = { add_ideas = POL_commonwealth_of_nations_renewed }
+			set_country_flag = POL_federal_compact_renewed
+		}
+	}
+
+	focus = {
+		id = POL_a_commonwealth_of_equals
+		icon = GFX_focus_POL_one_king_many_nations
+		prerequisite = { focus = POL_renew_the_federal_compact }
+		x = 0
+		y = 1
+		relative_position_id = POL_renew_the_federal_compact
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.025
+			swap_ideas = { remove_idea = POL_commonwealth_of_nations_renewed add_idea = POL_commonwealth_of_equals }
+			set_country_flag = POL_equal_nations_compact
+		}
+	}
+
+	focus = {
+		id = POL_the_jagiellonian_consensus
+		icon = GFX_focus_POL_the_jagiellonian_compromise
+		prerequisite = { focus = POL_a_commonwealth_of_equals }
+		x = 0
+		y = 1
+		relative_position_id = POL_a_commonwealth_of_equals
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			swap_ideas = { remove_idea = POL_jan_v_constitutional_monarch add_idea = POL_jan_v_guardian_of_the_commonwealth }
+			if = { limit = { has_idea = POL_constitutional_government } remove_ideas = POL_constitutional_government }
+			add_ideas = POL_jagiellonian_consensus_idea
+			set_country_flag = POL_jagiellonian_consensus_achieved
+		}
+	}
+
+	focus = {
 		id = POL_assert_the_royal_prerogative
 		icon = GFX_focus_POL_assert_the_royal_prerogative
 		prerequisite = { focus = POL_the_question_of_government }
-		#mutually_exclusive = { focus = POL_preserve_the_constitutional_balance }
-		x = -1
+		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance }
+		x = -4
 		y = 1
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = POL_assert_the_royal_prerogative
+			}
+		}
 		relative_position_id = POL_the_question_of_government
 		cost = 5
-		
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = { has_completed_focus = POL_preserve_the_constitutional_balance }
+			}
+		}
 		available = { has_country_flag = POL_royalists_formed_government }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		ai_will_do = { factor = 10 }

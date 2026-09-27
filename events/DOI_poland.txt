@@ -586,6 +586,14 @@ country_event = {
         set_country_flag = POL_constitutionalists_formed_government
         set_country_flag = POL_constitutional_balance_preserved
 
+        # Jan V remains head of state; the cabinet governs under neutrality.
+        set_politics = {
+            ruling_party = neutrality
+            elections_allowed = yes
+        }
+
+        promote_character = rep_POL_ignacy_moscicki
+
         add_popularity = {
             ideology = neutrality
             popularity = 0.05
