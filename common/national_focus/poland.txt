@@ -134,10 +134,10 @@ focus_tree = {
 		icon = GFX_focus_POL_the_crown_and_the_sejm
 		prerequisite = { focus = POL_the_question_of_government }
 		mutually_exclusive = { focus = POL_assert_the_royal_prerogative }
-		x = -1
+		x = -3
 		y = 1
 		offset = {
-			x = 1
+			x = 3
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -275,10 +275,10 @@ focus_tree = {
 		icon = GFX_focus_POL_assert_the_royal_prerogative
 		prerequisite = { focus = POL_the_question_of_government }
 		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance }
-		x = -4
+		x = -6
 		y = 1
 		offset = {
-			x = 4
+			x = 6
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -544,7 +544,7 @@ focus_tree = {
 	focus = {
 		id = POL_revive_the_polish_economy
 		icon = GFX_focus_POL_the_four_year_plan
-		x = 12
+		x = 17
 		y = 0
 		cost = 5
 
@@ -1094,7 +1094,7 @@ focus_tree = {
 		id = POL_invest_in_research_focus
 		icon = GFX_focus_research2
 		
-		x = 20
+		x = 24
 		y = 0
 		cost = 5
 		
@@ -1389,7 +1389,7 @@ focus_tree = {
 		id = POL_prepare_for_the_next_war
 		icon = GFX_goal_generic_build_tank
 		
-		x = 27
+		x = 31
 		y = 0
 		cost = 5
 
@@ -2021,7 +2021,7 @@ focus_tree = {
 	focus = {
 		id = POL_develop_polish_ship_building
 		icon = GFX_focus_POL_develop_polish_shipbuilding
-		x = 36
+		x = 41
 		y = 0
 		cost = 10
 
@@ -2582,7 +2582,7 @@ focus_tree = {
 		id = POL_reform_of_the_diplomacy
 		icon = GFX_focus_generic_treaty
 		
-		x = 48
+		x = 54
 		y = 0
 		cost = 5
 
@@ -3172,7 +3172,7 @@ focus_tree = {
 		id = POL_strengthen_the_polish_state
 		icon = GFX_goal_generic_demand_territory
 		
-		x = 62
+		x = 68
 		y = 0
 		cost = 10
 
@@ -4254,7 +4254,7 @@ focus_tree = {
 			}
 		}
 		allow_branch = { has_dlc = "Man the Guns" }
-		x = 75
+		x = 80
 		y = 0
 		
 		
