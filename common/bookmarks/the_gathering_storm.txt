@@ -89,9 +89,9 @@ bookmarks = {
 				POL_victors_of_1918
 			}
 			focuses = {
-				
-				POL_draw_closer_to_britain
-				POL_seek_accommodation_with_germany
+				POL_the_commonwealth_in_1936
+				POL_the_crown_and_the_sejm_focus
+				POL_review_the_federal_compact
 			}
 		}
 		"GER"={
