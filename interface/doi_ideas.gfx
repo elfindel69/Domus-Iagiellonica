@@ -1,0 +1,112 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_POL_royal_ministry"
+		texturefile = "gfx/interface/ideas/POL_royal_ministry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_reorganised_privy_council"
+		texturefile = "gfx/interface/ideas/POL_reorganised_privy_council.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_crown_above_the_parties"
+		texturefile = "gfx/interface/ideas/POL_crown_above_the_parties.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_royal_commissioners_federal"
+		texturefile = "gfx/interface/ideas/POL_royal_commissioners_federal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_royal_commissioners_balanced"
+		texturefile = "gfx/interface/ideas/POL_royal_commissioners_balanced.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_royal_commissioners_central"
+		texturefile = "gfx/interface/ideas/POL_royal_commissioners_central.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_royal_commissioners_national"
+		texturefile = "gfx/interface/ideas/POL_royal_commissioners_national.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_royal_officer_corps"
+		texturefile = "gfx/interface/ideas/POL_royal_officer_corps.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_federal_crown"
+		texturefile = "gfx/interface/ideas/POL_federal_crown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_commonwealth_crown"
+		texturefile = "gfx/interface/ideas/POL_commonwealth_crown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_unitary_crown"
+		texturefile = "gfx/interface/ideas/POL_unitary_crown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_polish_crown"
+		texturefile = "gfx/interface/ideas/POL_polish_crown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_reformed_royal_constitution"
+		texturefile = "gfx/interface/ideas/POL_reformed_royal_constitution.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_authority_of_the_crown"
+		texturefile = "gfx/interface/ideas/POL_authority_of_the_crown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_jagiellonian_compromise"
+		texturefile = "gfx/interface/ideas/POL_jagiellonian_compromise.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_jagiellonian_state"
+		texturefile = "gfx/interface/ideas/POL_jagiellonian_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_government_in_deadlock"
+		texturefile = "gfx/interface/ideas/POL_government_in_deadlock.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_cabinet_of_compromise"
+		texturefile = "gfx/interface/ideas/POL_cabinet_of_compromise.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_skladkowski_cabinet"
+		texturefile = "gfx/interface/ideas/POL_skladkowski_cabinet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_witos_cabinet"
+		texturefile = "gfx/interface/ideas/POL_witos_cabinet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_government_of_the_crown"
+		texturefile = "gfx/interface/ideas/POL_government_of_the_crown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_royal_prerogative"
+		texturefile = "gfx/interface/ideas/POL_royal_prerogative.dds"
+	}
+}

@@ -109,7 +109,7 @@ country = {
 	}
 
 	POL_government_in_deadlock = {
-		picture = GFX_idea_POL_crown_and_sejm
+		picture = GFX_idea_POL_government_in_deadlock
 
 		allowed = {
 			original_tag = POL
@@ -124,7 +124,7 @@ country = {
 	}
 
 	POL_cabinet_of_compromise = {
-		picture = GFX_idea_POL_crown_and_sejm
+		picture = GFX_idea_POL_cabinet_of_compromise
 		removal_cost = -1
 
 		modifier = {
@@ -135,7 +135,7 @@ country = {
 	}
 
 	POL_skladkowski_cabinet = {
-		picture = GFX_idea_POL_ozn
+		picture = GFX_idea_POL_skladkowski_cabinet
 		removal_cost = -1
 
 		modifier = {
@@ -145,7 +145,7 @@ country = {
 		}
 	}
 	POL_witos_cabinet = {
-		picture = GFX_idea_POL_witos
+		picture = GFX_idea_POL_witos_cabinet
 		removal_cost = -1
 
 		modifier = {
@@ -155,7 +155,7 @@ country = {
 		}
 	}
 	POL_government_of_the_crown = {
-		picture = GFX_idea_POL_royal_government
+		picture = GFX_idea_POL_government_of_the_crown
 		removal_cost = -1
 
 		modifier = {
@@ -166,7 +166,7 @@ country = {
 	}
 
 	POL_royal_prerogative = {
-		picture = GFX_idea_POL_royal_government
+		picture = GFX_idea_POL_royal_prerogative
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -178,7 +178,7 @@ country = {
 	}
 
 	POL_royal_ministry = {
-		picture = GFX_idea_POL_royal_government
+		picture = GFX_idea_POL_royal_ministry
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -189,7 +189,7 @@ country = {
 	}
 
 	POL_reorganised_privy_council = {
-		picture = GFX_idea_generic_political_reform
+		picture = GFX_idea_POL_reorganised_privy_council
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -199,7 +199,7 @@ country = {
 	}
 
 	POL_crown_above_the_parties = {
-		picture = GFX_idea_POL_royal_government
+		picture = GFX_idea_POL_crown_above_the_parties
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -210,7 +210,7 @@ country = {
 	}
 
 	POL_royal_commissioners_federal = {
-		picture = GFX_idea_generic_government
+		picture = GFX_idea_POL_royal_commissioners_federal
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -221,7 +221,7 @@ country = {
 	}
 
 	POL_royal_commissioners_balanced = {
-		picture = GFX_idea_generic_government
+		picture = GFX_idea_POL_royal_commissioners_balanced
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -232,7 +232,7 @@ country = {
 	}
 
 	POL_royal_commissioners_central = {
-		picture = GFX_idea_generic_government
+		picture = GFX_idea_POL_royal_commissioners_central
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -243,7 +243,7 @@ country = {
 	}
 
 	POL_royal_commissioners_national = {
-		picture = GFX_idea_generic_government
+		picture = GFX_idea_POL_royal_commissioners_national
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -254,7 +254,7 @@ country = {
 	}
 
 	POL_royal_officer_corps = {
-		picture = GFX_idea_generic_army_staff
+		picture = GFX_idea_POL_royal_officer_corps
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -265,7 +265,7 @@ country = {
 	}
 
 	POL_federal_crown = {
-		picture = GFX_idea_POL_commonwealth_crown
+		picture = GFX_idea_POL_federal_crown
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -287,7 +287,7 @@ country = {
 	}
 
 	POL_unitary_crown = {
-		picture = GFX_idea_POL_commonwealth_crown
+		picture = GFX_idea_POL_unitary_crown
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -298,7 +298,7 @@ country = {
 	}
 
 	POL_polish_crown = {
-		picture = GFX_idea_POL_commonwealth_crown
+		picture = GFX_idea_POL_polish_crown
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -309,7 +309,7 @@ country = {
 	}
 
 	POL_reformed_royal_constitution = {
-		picture = GFX_idea_generic_constitutional_monarchy
+		picture = GFX_idea_POL_reformed_royal_constitution
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -320,7 +320,7 @@ country = {
 	}
 
 	POL_authority_of_the_crown = {
-		picture = GFX_idea_POL_royal_government
+		picture = GFX_idea_POL_authority_of_the_crown
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -331,7 +331,7 @@ country = {
 	}
 
 	POL_jagiellonian_compromise = {
-		picture = GFX_idea_generic_constitutional_monarchy
+		picture = GFX_idea_POL_jagiellonian_compromise
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -343,7 +343,7 @@ country = {
 	}
 
 	POL_jagiellonian_state = {
-		picture = GFX_idea_POL_royal_government
+		picture = GFX_idea_POL_jagiellonian_state
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
