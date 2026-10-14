@@ -200,4 +200,34 @@ spriteTypes = {
 		name = "GFX_idea_POL_state_above_parties"
 		texturefile = "gfx/interface/ideas/POL_state_above_parties.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_POL_psl_coalition"
+		texturefile = "gfx/interface/ideas/POL_psl_coalition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_witos_parliamentary_government"
+		texturefile = "gfx/interface/ideas/POL_witos_parliamentary_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_sejm_supremacy"
+		texturefile = "gfx/interface/ideas/POL_sejm_supremacy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_guaranteed_federal_rights"
+		texturefile = "gfx/interface/ideas/POL_guaranteed_federal_rights.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_commonwealth_of_citizens"
+		texturefile = "gfx/interface/ideas/POL_commonwealth_of_citizens.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_jan_v_parliamentary_monarch"
+		texturefile = "gfx/interface/ideas/POL_jan_v_parliamentary_monarch.dds"
+	}
 }

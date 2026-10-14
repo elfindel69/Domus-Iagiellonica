@@ -1,0 +1,31 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_POL_reopen_the_national_debate
+		texturefile = "gfx/interface/goals/GFX_focus_POL_reopen_the_national_debate.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_witos_forms_a_government
+		texturefile = "gfx/interface/goals/GFX_focus_POL_witos_forms_a_government.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_restore_parliamentary_supremacy
+		texturefile = "gfx/interface/goals/GFX_focus_POL_restore_parliamentary_supremacy.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_guarantee_federal_rights
+		texturefile = "gfx/interface/goals/GFX_focus_POL_guarantee_federal_rights.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_a_commonwealth_of_citizens
+		texturefile = "gfx/interface/goals/GFX_focus_POL_a_commonwealth_of_citizens.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_the_parliamentary_monarchy
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_parliamentary_monarchy.dds"
+	}
+}

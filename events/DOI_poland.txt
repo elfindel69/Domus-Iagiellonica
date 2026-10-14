@@ -733,6 +733,8 @@ country_event = {
         set_country_flag = POL_democrats_formed_government
         set_country_flag = POL_parliamentary_government_established
 
+        promote_character = rep_POL_wincenty_witos
+
         set_politics = {
             ruling_party = democratic
             elections_allowed = yes
