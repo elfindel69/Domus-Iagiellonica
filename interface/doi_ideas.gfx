@@ -180,4 +180,24 @@ spriteTypes = {
 		name = "GFX_idea_POL_federal_review"
 		texturefile = "gfx/interface/ideas/POL_federal_review.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_POL_ozn_executive"
+		texturefile = "gfx/interface/ideas/POL_ozn_executive.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_ozn_centralised_administration"
+		texturefile = "gfx/interface/ideas/POL_ozn_centralised_administration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_ozn_general_staff"
+		texturefile = "gfx/interface/ideas/POL_ozn_general_staff.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_state_above_parties"
+		texturefile = "gfx/interface/ideas/POL_state_above_parties.dds"
+	}
 }
