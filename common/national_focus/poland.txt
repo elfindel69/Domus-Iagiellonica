@@ -533,7 +533,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_empower_the_ozn
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_POL_empower_the_ozn
 		allow_branch = {
 			if = {
 				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
@@ -569,7 +569,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_a_government_of_order
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_POL_a_government_of_order
 		prerequisite = { focus = POL_empower_the_ozn }
 		x = 0
 		y = 1
@@ -587,7 +587,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_curtail_the_sejm
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_POL_curtail_the_sejm
 		prerequisite = { focus = POL_a_government_of_order }
 		x = 0
 		y = 1
@@ -606,7 +606,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_one_state_one_administration
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_focus_POL_one_state_one_administration
 		prerequisite = { focus = POL_curtail_the_sejm }
 		x = 0
 		y = 1
@@ -627,7 +627,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_the_commonwealth_general_staff
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_focus_POL_the_commonwealth_general_staff
 		prerequisite = { focus = POL_one_state_one_administration }
 		x = 0
 		y = 1
@@ -645,7 +645,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_the_state_above_parties
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_focus_POL_the_state_above_parties
 		prerequisite = { focus = POL_the_commonwealth_general_staff }
 		x = 0
 		y = 1
