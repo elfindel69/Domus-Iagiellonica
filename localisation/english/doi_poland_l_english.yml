@@ -105,6 +105,8 @@
  POL_jagiellonian_state:0 "The Jagiellonian State"
  POL_jagiellonian_state_desc:0 "The monarchy provides the state with a single source of authority, command and political direction."
 
+ 
+
  poland_rework.1.t:0 "The Government Resigns"
  poland_rework.1.d:0 "After weeks of constitutional debate, the government has admitted that it can no longer command sufficient authority and has presented its resignation to King Jan V.\n\nModerates call for another cabinet of compromise. The Camp of National Unity supports Felicjan Sławoj Składkowski, while the parliamentary opposition rallies behind Wincenty Witos. At Court, royal advisers argue that the failure of party government justifies a ministry responsible directly to the King.\n\nJan V must now decide who will lead the Commonwealth through the crisis."
  poland_rework.1.a:0 "Entrust the moderates with a cabinet of compromise"

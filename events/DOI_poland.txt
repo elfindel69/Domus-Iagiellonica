@@ -606,7 +606,6 @@ country_event = {
 
         hidden_effect = {
             POL_conclude_government_crisis = yes
-            mark_focus_tree_layout_dirty = yes
         }
     }
 
@@ -655,7 +654,6 @@ country_event = {
 
         hidden_effect = {
             POL_conclude_government_crisis = yes
-            mark_focus_tree_layout_dirty = yes
         }
     }
 
@@ -703,7 +701,6 @@ country_event = {
 
         hidden_effect = {
             POL_conclude_government_crisis = yes
-            mark_focus_tree_layout_dirty = yes
         }
     }
 
@@ -751,7 +748,6 @@ country_event = {
 
         hidden_effect = {
             POL_conclude_government_crisis = yes
-            mark_focus_tree_layout_dirty = yes
         }
     }
 
@@ -797,7 +793,6 @@ country_event = {
 
         hidden_effect = {
             POL_conclude_government_crisis = yes
-            mark_focus_tree_layout_dirty = yes
         }
     }
 
@@ -843,7 +838,6 @@ country_event = {
 
         hidden_effect = {
             POL_conclude_government_crisis = yes
-            mark_focus_tree_layout_dirty = yes
         }
     }
 }

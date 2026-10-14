@@ -1,3 +1,10 @@
 {
-    "hoi4ModUtilities.modFile": "/home/elfindel69/pdx/Hearts of Iron IV/mod/domus_iagiellonica/descriptor.mod"
+    "hoi4ModUtilities.modFile": "/home/elfindel69/pdx/Hearts of Iron IV/mod/domus_iagiellonica/descriptor.mod",
+    "files.associations": {
+        "*.txt": "paradox-ck3",
+        "**/gfx/**/*.asset": "paradox-ck3",
+        "*.gui": "paradox-gui",
+        "*.mod": "paradox-mod",
+        "**/localization/**/*.yml": "paradox-loc"
+    }
 }

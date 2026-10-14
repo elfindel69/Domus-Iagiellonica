@@ -48,7 +48,7 @@ focus_tree = {
 		id = POL_the_crown_and_the_sejm_focus
 		icon = GFX_focus_POL_the_crown_and_the_sejm
 		prerequisite = { focus = POL_the_commonwealth_in_1936 }
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = POL_the_commonwealth_in_1936
 		cost = 5
@@ -73,7 +73,7 @@ focus_tree = {
 		id = POL_review_the_federal_compact
 		icon = GFX_focus_POL_review_the_federal_compact
 		prerequisite = { focus = POL_the_commonwealth_in_1936 }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = POL_the_commonwealth_in_1936
 		cost = 5
@@ -134,25 +134,10 @@ focus_tree = {
 		icon = GFX_focus_POL_the_crown_and_the_sejm
 		prerequisite = { focus = POL_the_question_of_government }
 		mutually_exclusive = { focus = POL_assert_the_royal_prerogative }
-		x = -3
+		x = 2
 		y = 1
-		offset = {
-			x = 3
-			y = 0
-			trigger = {
-				has_country_flag = POL_government_question_resolved
-				has_country_flag = POL_constitutionalists_formed_government
-			}
-		}
 		relative_position_id = POL_the_question_of_government
 		cost = 5
-		allow_branch = {
-			OR = {
-				NOT = { has_country_flag = POL_government_question_resolved }
-				has_country_flag = POL_constitutionalists_formed_government
-				has_completed_focus = POL_preserve_the_constitutional_balance
-			}
-		}
 		available = { has_country_flag = POL_constitutionalists_formed_government has_government = neutrality }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		ai_will_do = { factor = 10 }
@@ -268,26 +253,11 @@ focus_tree = {
 		icon = GFX_focus_POL_assert_the_royal_prerogative
 		prerequisite = { focus = POL_the_question_of_government }
 		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance }
-		x = -6
+		x = -1
 		y = 1
-		offset = {
-			x = 6
-			y = 0
-			trigger = {
-				has_country_flag = POL_government_question_resolved
-				has_country_flag = POL_royalists_formed_government
-			}
-		}
 		relative_position_id = POL_the_question_of_government
 		cost = 5
-
-		allow_branch = {
-			OR = {
-				NOT = { has_country_flag = POL_government_question_resolved }
-				has_country_flag = POL_royalists_formed_government
-				has_completed_focus = POL_assert_the_royal_prerogative
-			}
-		}
+		
 		available = { has_country_flag = POL_royalists_formed_government }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		ai_will_do = { factor = 10 }
@@ -530,7 +500,7 @@ focus_tree = {
 	focus = {
 		id = POL_revive_the_polish_economy
 		icon = GFX_focus_POL_the_four_year_plan
-		x = 17
+		x = 12
 		y = 0
 		cost = 5
 
@@ -1080,7 +1050,7 @@ focus_tree = {
 		id = POL_invest_in_research_focus
 		icon = GFX_focus_research2
 		
-		x = 24
+		x = 20
 		y = 0
 		cost = 5
 		
@@ -1375,7 +1345,7 @@ focus_tree = {
 		id = POL_prepare_for_the_next_war
 		icon = GFX_goal_generic_build_tank
 		
-		x = 31
+		x = 27
 		y = 0
 		cost = 5
 
@@ -2007,7 +1977,7 @@ focus_tree = {
 	focus = {
 		id = POL_develop_polish_ship_building
 		icon = GFX_focus_POL_develop_polish_shipbuilding
-		x = 41
+		x = 36
 		y = 0
 		cost = 10
 
@@ -2568,7 +2538,7 @@ focus_tree = {
 		id = POL_reform_of_the_diplomacy
 		icon = GFX_focus_generic_treaty
 		
-		x = 54
+		x = 48
 		y = 0
 		cost = 5
 
@@ -3158,7 +3128,7 @@ focus_tree = {
 		id = POL_strengthen_the_polish_state
 		icon = GFX_goal_generic_demand_territory
 		
-		x = 68
+		x = 62
 		y = 0
 		cost = 10
 
@@ -4240,7 +4210,7 @@ focus_tree = {
 			}
 		}
 		allow_branch = { has_dlc = "Man the Guns" }
-		x = 80
+		x = 75
 		y = 0
 		
 		
