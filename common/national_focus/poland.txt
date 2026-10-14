@@ -662,6 +662,138 @@ focus_tree = {
 	}
 
 	focus = {
+		id = POL_reopen_the_national_debate
+		icon = GFX_focus_POL_reopen_the_national_debate
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_democrats_formed_government
+				}
+			}
+		}
+		prerequisite = { focus = POL_the_question_of_government }
+		x = 4
+		y = 1
+		relative_position_id = POL_the_question_of_government
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE }
+				has_country_flag = POL_democrats_formed_government
+			}
+		}
+		cost = 5
+		available = { has_country_flag = POL_democrats_formed_government has_government = democratic }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_ideas = POL_psl_coalition
+			set_country_flag = POL_psl_debate_reopened
+		}
+	}
+
+	focus = {
+		id = POL_witos_forms_a_government
+		icon = GFX_focus_POL_witos_forms_a_government
+		prerequisite = { focus = POL_reopen_the_national_debate }
+		x = 0
+		y = 1
+		relative_position_id = POL_reopen_the_national_debate
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			swap_ideas = { remove_idea = POL_psl_coalition add_idea = POL_witos_parliamentary_government }
+			set_country_flag = POL_witos_government_confirmed
+		}
+	}
+
+	focus = {
+		id = POL_restore_parliamentary_supremacy
+		icon = GFX_focus_POL_restore_parliamentary_supremacy
+		prerequisite = { focus = POL_witos_forms_a_government }
+		x = 0
+		y = 1
+		relative_position_id = POL_witos_forms_a_government
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 75
+			if = {
+				limit = { has_idea = POL_crown_and_sejm }
+				swap_ideas = { remove_idea = POL_crown_and_sejm add_idea = POL_sejm_supremacy }
+			}
+			else = { add_ideas = POL_sejm_supremacy }
+			set_country_flag = POL_sejm_supremacy_restored
+		}
+	}
+
+	focus = {
+		id = POL_guarantee_federal_rights
+		icon = GFX_focus_POL_guarantee_federal_rights
+		prerequisite = { focus = POL_restore_parliamentary_supremacy }
+		x = 0
+		y = 1
+		relative_position_id = POL_restore_parliamentary_supremacy
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = { has_idea = POL_commonwealth_of_nations }
+				swap_ideas = { remove_idea = POL_commonwealth_of_nations add_idea = POL_guaranteed_federal_rights }
+			}
+			else = { add_ideas = POL_guaranteed_federal_rights }
+			set_country_flag = POL_federal_rights_guaranteed
+		}
+	}
+
+	focus = {
+		id = POL_a_commonwealth_of_citizens
+		icon = GFX_focus_POL_a_commonwealth_of_citizens
+		prerequisite = { focus = POL_guarantee_federal_rights }
+		x = 0
+		y = 1
+		relative_position_id = POL_guarantee_federal_rights
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.04
+			add_popularity = { ideology = democratic popularity = 0.04 }
+			swap_ideas = { remove_idea = POL_guaranteed_federal_rights add_idea = POL_commonwealth_of_citizens }
+			set_country_flag = POL_citizenship_reformed
+		}
+	}
+
+	focus = {
+		id = POL_the_parliamentary_monarchy
+		icon = GFX_focus_POL_the_parliamentary_monarchy
+		prerequisite = { focus = POL_a_commonwealth_of_citizens }
+		x = 0
+		y = 1
+		relative_position_id = POL_a_commonwealth_of_citizens
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.04
+			add_ideas = POL_jan_v_parliamentary_monarch
+			set_country_flag = POL_parliamentary_monarchy_established
+		}
+	}
+
+	focus = {
 		id = POL_revive_the_polish_economy
 		icon = GFX_focus_POL_the_four_year_plan
 		x = 12
@@ -4282,10 +4414,7 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
-				OR = {
-					NOT = { has_country_flag = POL_government_question_resolved }
-					has_country_flag = POL_democrats_formed_government
-				}
+				NOT = { has_country_flag = POL_government_question_resolved }
 			}
 		}
 		prerequisite = { focus = POL_internationalism }
