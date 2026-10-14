@@ -795,6 +795,181 @@ focus_tree = {
 	}
 
 	focus = {
+		id = POL_the_national_radicals
+		icon = GFX_focus_POL_the_national_radicals
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_nationalists_formed_government
+				}
+			}
+		}
+		prerequisite = { focus = POL_the_question_of_government }
+		x = 6
+		y = 1
+		relative_position_id = POL_the_question_of_government
+		offset = {
+			x = -6
+			y = 0
+			trigger = {
+				has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE }
+				has_country_flag = POL_nationalists_formed_government
+			}
+		}
+		cost = 5
+		available = { has_country_flag = POL_nationalists_formed_government has_government = fascism }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			add_ideas = POL_onr_radicals
+			set_country_flag = POL_onr_mobilised
+		}
+	}
+
+	focus = {
+		id = POL_piaseckis_movement
+		icon = GFX_focus_POL_piaseckis_movement
+		prerequisite = { focus = POL_the_national_radicals }
+		x = 0
+		y = 1
+		relative_position_id = POL_the_national_radicals
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.03
+			swap_ideas = { remove_idea = POL_onr_radicals add_idea = POL_piasecki_movement_idea }
+			set_country_flag = POL_piasecki_leads_onr
+		}
+	}
+
+	focus = {
+		id = POL_break_the_federal_opposition
+		icon = GFX_focus_POL_break_the_federal_opposition
+		prerequisite = { focus = POL_piaseckis_movement }
+		x = 0
+		y = 1
+		relative_position_id = POL_piaseckis_movement
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.04
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			set_country_flag = POL_federal_opposition_broken
+		}
+	}
+
+	focus = {
+		id = POL_one_nation_one_state
+		icon = GFX_focus_POL_one_nation_one_state
+		prerequisite = { focus = POL_break_the_federal_opposition }
+		x = 0
+		y = 1
+		relative_position_id = POL_break_the_federal_opposition
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = { has_idea = POL_commonwealth_of_nations }
+				swap_ideas = { remove_idea = POL_commonwealth_of_nations add_idea = POL_one_nation_state }
+			}
+			else = { add_ideas = POL_one_nation_state }
+			set_country_flag = POL_national_unitary_state_established
+		}
+	}
+
+	focus = {
+		id = POL_subordinate_the_crown
+		icon = GFX_focus_POL_subordinate_the_crown
+		prerequisite = { focus = POL_one_nation_one_state }
+		x = 0
+		y = 1
+		relative_position_id = POL_one_nation_one_state
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.03
+			if = { limit = { has_idea = POL_crown_and_sejm } remove_ideas = POL_crown_and_sejm }
+			set_country_flag = POL_crown_subordinated_to_onr
+		}
+	}
+
+	focus = {
+		id = POL_the_national_commonwealth
+		icon = GFX_focus_POL_the_national_commonwealth
+		prerequisite = { focus = POL_subordinate_the_crown }
+		x = 0
+		y = 1
+		relative_position_id = POL_subordinate_the_crown
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.04
+			add_ideas = POL_national_commonwealth_idea
+			set_country_flag = POL_onr_national_commonwealth
+		}
+	}
+
+	focus = {
+		id = POL_a_captive_crown
+		icon = GFX_focus_POL_a_captive_crown
+		prerequisite = { focus = POL_the_national_commonwealth }
+		mutually_exclusive = { focus = POL_the_nationalist_coup }
+		x = -1
+		y = 1
+		relative_position_id = POL_the_national_commonwealth
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.06
+			add_ideas = POL_jan_v_captive_crown
+			set_cosmetic_tag = PLC_ONR_CROWN
+			set_country_flag = POL_jan_v_captive_monarch
+		}
+	}
+
+	focus = {
+		id = POL_the_nationalist_coup
+		icon = GFX_focus_POL_the_nationalist_coup
+		prerequisite = { focus = POL_the_national_commonwealth }
+		mutually_exclusive = { focus = POL_a_captive_crown }
+		x = 1
+		y = 1
+		relative_position_id = POL_the_national_commonwealth
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.05
+			add_war_support = 0.06
+			if = { limit = { has_idea = POL_jan_v } remove_ideas = POL_jan_v }
+			if = { limit = { has_idea = POL_jan_v_constitutional_monarch } remove_ideas = POL_jan_v_constitutional_monarch }
+			if = { limit = { has_idea = POL_jan_v_guardian_of_the_commonwealth } remove_ideas = POL_jan_v_guardian_of_the_commonwealth }
+			if = { limit = { has_idea = POL_jan_v_parliamentary_monarch } remove_ideas = POL_jan_v_parliamentary_monarch }
+			retire_character = POL_jan_v
+			add_ideas = POL_monarchy_abolished
+			set_cosmetic_tag = PLC_ONR_STATE
+			set_country_flag = POL_jagiellonian_monarchy_deposed
+		}
+	}
+
+	focus = {
 		id = POL_revive_the_polish_economy
 		icon = GFX_focus_POL_the_four_year_plan
 		x = 12
@@ -3987,10 +4162,7 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
-				OR = {
-					NOT = { has_country_flag = POL_government_question_resolved }
-					has_country_flag = POL_nationalists_formed_government
-				}
+				NOT = { has_country_flag = POL_government_question_resolved }
 			}
 		}
 		prerequisite = { focus = POL_internationalism }

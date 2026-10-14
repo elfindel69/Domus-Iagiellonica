@@ -541,6 +541,71 @@ country = {
 		}
 	}
 
+	POL_onr_radicals = {
+		picture = GFX_idea_POL_onr_radicals
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			fascism_drift = 0.03
+			political_power_gain = 0.05
+			stability_factor = -0.04
+		}
+	}
+
+	POL_piasecki_movement_idea = {
+		picture = GFX_idea_POL_piasecki_movement_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			fascism_drift = 0.03
+			political_power_gain = 0.08
+			war_support_factor = 0.04
+		}
+	}
+
+	POL_one_nation_state = {
+		picture = GFX_idea_POL_one_nation_state
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			political_power_gain = 0.08
+			stability_factor = 0.02
+			resistance_growth_on_our_occupied_states = 0.10
+		}
+	}
+
+	POL_national_commonwealth_idea = {
+		picture = GFX_idea_POL_national_commonwealth_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			war_support_factor = 0.08
+			command_power_gain_mult = 0.05
+			ideology_drift_defense = 0.05
+		}
+	}
+
+	POL_jan_v_captive_crown = {
+		picture = GFX_idea_POL_jan_v_captive_crown
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.06
+			political_power_gain = -0.02
+		}
+	}
+
+	POL_monarchy_abolished = {
+		picture = GFX_idea_POL_monarchy_abolished
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			political_power_gain = 0.10
+			war_support_factor = 0.04
+			stability_factor = -0.03
+		}
+	}
+
 	POL_invest_in_research_idea = {
 		allowed = {
 			always = no

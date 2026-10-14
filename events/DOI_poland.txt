@@ -778,6 +778,8 @@ country_event = {
         set_country_flag = POL_nationalists_formed_government
         set_country_flag = POL_jan_v_sidelined
 
+        promote_character = rep_POL_boleslaw_piasecki
+
         set_politics = {
             ruling_party = fascism
             elections_allowed = no
