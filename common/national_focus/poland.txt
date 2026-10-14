@@ -142,7 +142,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		mutually_exclusive = { focus = POL_assert_the_royal_prerogative focus = POL_empower_the_ozn focus = POL_reopen_the_national_debate  }
+		mutually_exclusive = { focus = POL_assert_the_royal_prerogative focus = POL_empower_the_ozn focus = POL_reopen_the_national_debate focus= POL_the_national_radicals   }
 		x = -3
 		y = 1
 		relative_position_id = POL_the_question_of_government
@@ -278,7 +278,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus = POL_reopen_the_national_debate }
+		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus = POL_reopen_the_national_debate focus= POL_the_national_radicals }
 		x = -6
 		y = 1
 		relative_position_id = POL_the_question_of_government
@@ -544,7 +544,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance focus = POL_assert_the_royal_prerogative focus = POL_reopen_the_national_debate }
+		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance focus = POL_assert_the_royal_prerogative focus = POL_reopen_the_national_debate focus= POL_the_national_radicals  }
 		x = -1
 		y = 1
 		relative_position_id = POL_the_question_of_government
@@ -675,7 +675,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		mutually_exclusive = {focus = POL_assert_the_royal_prerogative focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn}
+		mutually_exclusive = {focus = POL_assert_the_royal_prerogative focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus= POL_the_national_radicals  }
 		x = 1
 		y = 1
 		relative_position_id = POL_the_question_of_government
@@ -808,11 +808,12 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		x = 6
+		mutually_exclusive = {focus = POL_assert_the_royal_prerogative focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus= POL_reopen_the_national_debate  }
+		x = 4
 		y = 1
 		relative_position_id = POL_the_question_of_government
 		offset = {
-			x = -6
+			x = -4
 			y = 0
 			trigger = {
 				has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE }
