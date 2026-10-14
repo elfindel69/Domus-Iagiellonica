@@ -170,4 +170,14 @@ spriteTypes = {
 		name = "GFX_idea_POL_jan_v_guardian_of_the_commonwealth"
 		texturefile = "gfx/interface/ideas/POL_jan_v_guardian_of_the_commonwealth.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_POL_constitutional_consultations"
+		texturefile = "gfx/interface/ideas/POL_constitutional_consultations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_federal_review"
+		texturefile = "gfx/interface/ideas/POL_federal_review.dds"
+	}
 }

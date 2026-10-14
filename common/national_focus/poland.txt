@@ -132,6 +132,15 @@ focus_tree = {
 	focus = {
 		id = POL_preserve_the_constitutional_balance
 		icon = GFX_focus_POL_the_crown_and_the_sejm
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_constitutionalists_formed_government
+				}
+			}
+		}
 		prerequisite = { focus = POL_the_question_of_government }
 		mutually_exclusive = { focus = POL_assert_the_royal_prerogative }
 		x = 2
@@ -251,6 +260,15 @@ focus_tree = {
 	focus = {
 		id = POL_assert_the_royal_prerogative
 		icon = GFX_focus_POL_assert_the_royal_prerogative
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_royalists_formed_government
+				}
+			}
+		}
 		prerequisite = { focus = POL_the_question_of_government }
 		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance }
 		x = -1
@@ -3262,6 +3280,15 @@ focus_tree = {
 	focus = {
 		id = POL_authoritarianism
 		icon = GFX_goal_molotov_ribbentrop_pact
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_ozn_formed_government
+				}
+			}
+		}
 		prerequisite = { focus = POL_poland_first }
 		mutually_exclusive = { 
 		focus= POL_monarchism
@@ -3432,6 +3459,15 @@ focus_tree = {
 	focus = {
 		id = POL_monarchism
 		icon = GFX_focus_hun_elect_a_king
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_royalists_formed_government
+				}
+			}
+		}
 		prerequisite = { focus = POL_poland_first }
 		mutually_exclusive = { 
 		focus = POL_authoritarianism
@@ -3672,6 +3708,15 @@ focus_tree = {
 	focus = {
 		id = POL_go_right
 		icon = GFX_goal_support_fascism
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_nationalists_formed_government
+				}
+			}
+		}
 		prerequisite = { focus = POL_internationalism }
 		mutually_exclusive = { focus = POL_go_left focus = POL_liberalism}
 
@@ -3913,6 +3958,15 @@ focus_tree = {
 	focus = {
 		id = POL_go_left
 		icon = GFX_goal_support_communism
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_socialists_formed_government
+				}
+			}
+		}
 		prerequisite = { focus = POL_internationalism}
 		
 		mutually_exclusive = { focus = POL_go_right focus = POL_liberalism}
@@ -4082,6 +4136,15 @@ focus_tree = {
 	focus = {
 		id = POL_liberalism
 		icon = GFX_goal_support_democracy
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_democrats_formed_government
+				}
+			}
+		}
 		prerequisite = { focus = POL_internationalism }
 		mutually_exclusive = { 
 		focus = POL_go_left

@@ -80,7 +80,7 @@ country = {
 		}
 	}
 	POL_constitutional_consultations = {
-		picture = GFX_idea_POL_crown_and_sejm
+		picture = GFX_idea_POL_constitutional_consultations
 
 		allowed = {
 			original_tag = POL
@@ -94,7 +94,7 @@ country = {
 		}
 	}
 	POL_federal_review = {
-    	picture = GFX_idea_POL_commonwealth_of_nations
+		picture = GFX_idea_POL_federal_review
 
 		allowed = {
 			original_tag = POL
