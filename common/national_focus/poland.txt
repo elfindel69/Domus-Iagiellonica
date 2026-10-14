@@ -532,6 +532,136 @@ focus_tree = {
 	}
 
 	focus = {
+		id = POL_empower_the_ozn
+		icon = GFX_goal_generic_political_pressure
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_ozn_formed_government
+				}
+			}
+		}
+		prerequisite = { focus = POL_the_question_of_government }
+		x = 2
+		y = 1
+		relative_position_id = POL_the_question_of_government
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE }
+				has_country_flag = POL_ozn_formed_government
+			}
+		}
+		cost = 5
+		available = { has_country_flag = POL_ozn_formed_government has_government = neutrality }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = neutrality popularity = 0.03 }
+			add_ideas = POL_ozn_executive
+			set_country_flag = POL_ozn_empowered
+		}
+	}
+
+	focus = {
+		id = POL_a_government_of_order
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = POL_empower_the_ozn }
+		x = 0
+		y = 1
+		relative_position_id = POL_empower_the_ozn
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			add_war_support = 0.02
+			set_country_flag = POL_ozn_order_restored
+		}
+	}
+
+	focus = {
+		id = POL_curtail_the_sejm
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = POL_a_government_of_order }
+		x = 0
+		y = 1
+		relative_position_id = POL_a_government_of_order
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.03
+			if = { limit = { has_idea = POL_crown_and_sejm } remove_ideas = POL_crown_and_sejm }
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+			set_country_flag = POL_sejm_curtailment_enacted
+		}
+	}
+
+	focus = {
+		id = POL_one_state_one_administration
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = POL_curtail_the_sejm }
+		x = 0
+		y = 1
+		relative_position_id = POL_curtail_the_sejm
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = { has_idea = POL_commonwealth_of_nations }
+				swap_ideas = { remove_idea = POL_commonwealth_of_nations add_idea = POL_ozn_centralised_administration }
+			}
+			else = { add_ideas = POL_ozn_centralised_administration }
+			set_country_flag = POL_ozn_administration_unified
+		}
+	}
+
+	focus = {
+		id = POL_the_commonwealth_general_staff
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = POL_one_state_one_administration }
+		x = 0
+		y = 1
+		relative_position_id = POL_one_state_one_administration
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 20
+			add_ideas = POL_ozn_general_staff
+			set_country_flag = POL_ozn_general_staff_formed
+		}
+	}
+
+	focus = {
+		id = POL_the_state_above_parties
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = POL_the_commonwealth_general_staff }
+		x = 0
+		y = 1
+		relative_position_id = POL_the_commonwealth_general_staff
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.04
+			swap_ideas = { remove_idea = POL_ozn_executive add_idea = POL_state_above_parties }
+			set_country_flag = POL_ozn_state_above_parties_established
+		}
+	}
+
+	focus = {
 		id = POL_revive_the_polish_economy
 		icon = GFX_focus_POL_the_four_year_plan
 		x = 12
@@ -3299,10 +3429,7 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
-				OR = {
-					NOT = { has_country_flag = POL_government_question_resolved }
-					has_country_flag = POL_ozn_formed_government
-				}
+				NOT = { has_country_flag = POL_government_question_resolved }
 			}
 		}
 		prerequisite = { focus = POL_poland_first }
