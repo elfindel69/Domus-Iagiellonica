@@ -168,7 +168,7 @@ country = {
 	# Constitutional neutrality government: Jan V remains monarch while the
 	# civilian cabinet is represented by Mościcki on the politics screen.
 	POL_constitutional_government = {
-		picture = GFX_idea_POL_crown_and_sejm
+		picture = GFX_idea_POL_constitutional_government
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -188,7 +188,7 @@ country = {
 	}
 
 	POL_government_of_national_defence_idea = {
-		picture = GFX_idea_POL_victors_of_1918
+		picture = GFX_idea_POL_government_of_national_defence_idea
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -198,7 +198,7 @@ country = {
 	}
 
 	POL_commonwealth_of_nations_renewed = {
-		picture = GFX_idea_POL_commonwealth_of_nations
+		picture = GFX_idea_POL_commonwealth_of_nations_renewed
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -210,7 +210,7 @@ country = {
 	}
 
 	POL_commonwealth_of_equals = {
-		picture = GFX_idea_POL_commonwealth_of_nations
+		picture = GFX_idea_POL_commonwealth_of_equals
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
@@ -221,7 +221,7 @@ country = {
 	}
 
 	POL_jan_v_guardian_of_the_commonwealth = {
-		picture = GFX_idea_POL_jan_v_constitutional_monarch
+		picture = GFX_idea_POL_jan_v_guardian_of_the_commonwealth
 		allowed = { original_tag = POL }
 		removal_cost = -1
 		modifier = {
