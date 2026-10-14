@@ -145,4 +145,29 @@ spriteTypes = {
 		name = "GFX_idea_POL_jan_v_constitutional_monarch"
 		texturefile = "gfx/interface/ideas/POL_jan_v_constitutional_monarch.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_POL_constitutional_government"
+		texturefile = "gfx/interface/ideas/POL_constitutional_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_government_of_national_defence_idea"
+		texturefile = "gfx/interface/ideas/POL_government_of_national_defence_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_commonwealth_of_nations_renewed"
+		texturefile = "gfx/interface/ideas/POL_commonwealth_of_nations_renewed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_commonwealth_of_equals"
+		texturefile = "gfx/interface/ideas/POL_commonwealth_of_equals.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_jan_v_guardian_of_the_commonwealth"
+		texturefile = "gfx/interface/ideas/POL_jan_v_guardian_of_the_commonwealth.dds"
+	}
 }
