@@ -1,0 +1,41 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_POL_the_national_radicals
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_national_radicals.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_piaseckis_movement
+		texturefile = "gfx/interface/goals/GFX_focus_POL_piaseckis_movement.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_break_the_federal_opposition
+		texturefile = "gfx/interface/goals/GFX_focus_POL_break_the_federal_opposition.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_one_nation_one_state
+		texturefile = "gfx/interface/goals/GFX_focus_POL_one_nation_one_state.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_subordinate_the_crown
+		texturefile = "gfx/interface/goals/GFX_focus_POL_subordinate_the_crown.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_the_national_commonwealth
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_national_commonwealth.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_a_captive_crown
+		texturefile = "gfx/interface/goals/GFX_focus_POL_a_captive_crown.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_the_nationalist_coup
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_nationalist_coup.dds"
+	}
+}

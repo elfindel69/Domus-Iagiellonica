@@ -230,4 +230,34 @@ spriteTypes = {
 		name = "GFX_idea_POL_jan_v_parliamentary_monarch"
 		texturefile = "gfx/interface/ideas/POL_jan_v_parliamentary_monarch.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_POL_onr_radicals"
+		texturefile = "gfx/interface/ideas/POL_onr_radicals.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_piasecki_movement_idea"
+		texturefile = "gfx/interface/ideas/POL_piasecki_movement_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_one_nation_state"
+		texturefile = "gfx/interface/ideas/POL_one_nation_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_national_commonwealth_idea"
+		texturefile = "gfx/interface/ideas/POL_national_commonwealth_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_jan_v_captive_crown"
+		texturefile = "gfx/interface/ideas/POL_jan_v_captive_crown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_monarchy_abolished"
+		texturefile = "gfx/interface/ideas/POL_monarchy_abolished.dds"
+	}
 }
