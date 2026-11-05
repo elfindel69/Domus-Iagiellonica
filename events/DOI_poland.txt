@@ -825,6 +825,8 @@ country_event = {
         set_country_flag = POL_socialists_formed_government
         set_country_flag = POL_monarchy_challenged
 
+        promote_character = rep_POL_wanda_wasilewska
+
         set_politics = {
             ruling_party = communism
             elections_allowed = no

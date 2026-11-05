@@ -142,7 +142,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		mutually_exclusive = { focus = POL_assert_the_royal_prerogative focus = POL_empower_the_ozn focus = POL_reopen_the_national_debate focus= POL_the_national_radicals   }
+		mutually_exclusive = { focus = POL_assert_the_royal_prerogative focus = POL_empower_the_ozn focus = POL_reopen_the_national_debate focus= POL_the_national_radicals   focus = POL_the_workers_opposition }
 		x = -3
 		y = 1
 		relative_position_id = POL_the_question_of_government
@@ -278,7 +278,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus = POL_reopen_the_national_debate focus= POL_the_national_radicals }
+		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus = POL_reopen_the_national_debate focus= POL_the_national_radicals focus = POL_the_workers_opposition }
 		x = -6
 		y = 1
 		relative_position_id = POL_the_question_of_government
@@ -544,7 +544,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance focus = POL_assert_the_royal_prerogative focus = POL_reopen_the_national_debate focus= POL_the_national_radicals  }
+		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance focus = POL_assert_the_royal_prerogative focus = POL_reopen_the_national_debate focus= POL_the_national_radicals  focus = POL_the_workers_opposition }
 		x = -1
 		y = 1
 		relative_position_id = POL_the_question_of_government
@@ -675,7 +675,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		mutually_exclusive = {focus = POL_assert_the_royal_prerogative focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus= POL_the_national_radicals  }
+		mutually_exclusive = {focus = POL_assert_the_royal_prerogative focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus= POL_the_national_radicals  focus = POL_the_workers_opposition }
 		x = 1
 		y = 1
 		relative_position_id = POL_the_question_of_government
@@ -808,7 +808,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = POL_the_question_of_government }
-		mutually_exclusive = {focus = POL_assert_the_royal_prerogative focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus= POL_reopen_the_national_debate  }
+		mutually_exclusive = {focus = POL_assert_the_royal_prerogative focus = POL_preserve_the_constitutional_balance focus = POL_empower_the_ozn focus= POL_reopen_the_national_debate  focus = POL_the_workers_opposition }
 		x = 4
 		y = 1
 		relative_position_id = POL_the_question_of_government
@@ -968,6 +968,165 @@ focus_tree = {
 			add_ideas = POL_monarchy_abolished
 			set_cosmetic_tag = PLC_ONR_STATE
 			set_country_flag = POL_jagiellonian_monarchy_deposed
+		}
+	}
+
+	focus = {
+		id = POL_the_workers_opposition
+		icon = GFX_focus_POL_the_workers_opposition
+		allow_branch = {
+			if = {
+				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
+				OR = {
+					NOT = { has_country_flag = POL_government_question_resolved }
+					has_country_flag = POL_socialists_formed_government
+				}
+			}
+		}
+		prerequisite = { focus = POL_the_question_of_government }
+		mutually_exclusive = { focus = POL_preserve_the_constitutional_balance focus = POL_assert_the_royal_prerogative focus = POL_empower_the_ozn focus = POL_reopen_the_national_debate focus = POL_the_national_radicals }
+		x = 6
+		y = 1
+		relative_position_id = POL_the_question_of_government
+		offset = {
+			x = -6
+			y = 0
+			trigger = {
+				has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE }
+				has_country_flag = POL_socialists_formed_government
+			}
+		}
+		cost = 5
+		available = { has_country_flag = POL_socialists_formed_government has_government = communism }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = communism popularity = 0.03 }
+			add_ideas = POL_workers_opposition_idea
+			set_country_flag = POL_workers_opposition_mobilised
+		}
+	}
+
+	focus = {
+		id = POL_wasilewskas_manifesto
+		icon = GFX_focus_POL_wasilewskas_manifesto
+		prerequisite = { focus = POL_the_workers_opposition }
+		x = 0
+		y = 1
+		relative_position_id = POL_the_workers_opposition
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.03
+			swap_ideas = { remove_idea = POL_workers_opposition_idea add_idea = POL_wasilewska_manifesto_idea }
+			set_country_flag = POL_wasilewska_manifesto_issued
+		}
+	}
+
+	focus = {
+		id = POL_general_strike
+		icon = GFX_focus_POL_general_strike
+		prerequisite = { focus = POL_wasilewskas_manifesto }
+		x = 0
+		y = 1
+		relative_position_id = POL_wasilewskas_manifesto
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.05
+			add_timed_idea = { idea = POL_general_strike_idea days = 120 }
+			set_country_flag = POL_general_strike_declared
+		}
+	}
+
+	focus = {
+		id = POL_proclaim_the_socialist_commonwealth
+		icon = GFX_focus_POL_proclaim_the_socialist_commonwealth
+		prerequisite = { focus = POL_general_strike }
+		x = 0
+		y = 1
+		relative_position_id = POL_general_strike
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 75
+			if = { limit = { has_idea = POL_general_strike_idea } remove_ideas = POL_general_strike_idea }
+			if = { limit = { has_idea = POL_crown_and_sejm } remove_ideas = POL_crown_and_sejm }
+			swap_ideas = { remove_idea = POL_wasilewska_manifesto_idea add_idea = POL_socialist_commonwealth_idea }
+			set_politics = { ruling_party = communism elections_allowed = no }
+			set_country_flag = POL_socialist_commonwealth_proclaimed
+		}
+	}
+
+	focus = {
+		id = POL_the_fate_of_the_jagiellons
+		icon = GFX_focus_POL_the_fate_of_the_jagiellons
+		prerequisite = { focus = POL_proclaim_the_socialist_commonwealth }
+		bypass = { has_country_flag = POL_fate_of_jagiellons_decided }
+		x = 0
+		y = 1
+		relative_position_id = POL_proclaim_the_socialist_commonwealth
+		cost = 5
+		available = { has_government = communism }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 60
+			country_event = { id = POL_royals_events.1 }
+		}
+	}
+
+	focus = {
+		id = POL_union_of_socialist_republics
+		icon = GFX_focus_POL_union_of_socialist_republics
+		prerequisite = { focus = POL_the_fate_of_the_jagiellons }
+		mutually_exclusive = { focus = POL_centralise_the_revolution }
+		x = -1
+		y = 1
+		relative_position_id = POL_the_fate_of_the_jagiellons
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.04
+			add_popularity = { ideology = communism popularity = 0.03 }
+			if = {
+				limit = { has_idea = POL_commonwealth_of_nations }
+				swap_ideas = { remove_idea = POL_commonwealth_of_nations add_idea = POL_socialist_federal_union }
+			}
+			else = { add_ideas = POL_socialist_federal_union }
+			set_cosmetic_tag = PLC_SOCIALIST_UNION
+			set_country_flag = POL_socialist_federation_established
+		}
+	}
+
+	focus = {
+		id = POL_centralise_the_revolution
+		icon = GFX_focus_POL_centralise_the_revolution
+		prerequisite = { focus = POL_the_fate_of_the_jagiellons }
+		mutually_exclusive = { focus = POL_union_of_socialist_republics }
+		x = 1
+		y = 1
+		relative_position_id = POL_the_fate_of_the_jagiellons
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.03
+			if = {
+				limit = { has_idea = POL_commonwealth_of_nations }
+				swap_ideas = { remove_idea = POL_commonwealth_of_nations add_idea = POL_revolutionary_centralism }
+			}
+			else = { add_ideas = POL_revolutionary_centralism }
+			set_cosmetic_tag = PLC_SOCIALIST_STATE
+			set_country_flag = POL_socialist_central_state_established
 		}
 	}
 
@@ -4411,10 +4570,7 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = { has_game_rule = { rule = obsolete_focus_branches_visibility option = HIDE } }
-				OR = {
-					NOT = { has_country_flag = POL_government_question_resolved }
-					has_country_flag = POL_socialists_formed_government
-				}
+				NOT = { has_country_flag = POL_government_question_resolved }
 			}
 		}
 		prerequisite = { focus = POL_internationalism}
@@ -4520,6 +4676,7 @@ focus_tree = {
 		prerequisite = { focus = POL_workers_state }
 		available = {
 			has_government = communism
+			NOT = { has_country_flag = POL_fate_of_jagiellons_decided }
 		}
 		icon = GFX_focus_rom_abdicate
 		x = 0
