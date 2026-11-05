@@ -1,0 +1,36 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_POL_the_workers_opposition
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_workers_opposition.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_wasilewskas_manifesto
+		texturefile = "gfx/interface/goals/GFX_focus_POL_wasilewskas_manifesto.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_general_strike
+		texturefile = "gfx/interface/goals/GFX_focus_POL_general_strike.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_proclaim_the_socialist_commonwealth
+		texturefile = "gfx/interface/goals/GFX_focus_POL_proclaim_the_socialist_commonwealth.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_the_fate_of_the_jagiellons
+		texturefile = "gfx/interface/goals/GFX_focus_POL_the_fate_of_the_jagiellons.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_union_of_socialist_republics
+		texturefile = "gfx/interface/goals/GFX_focus_POL_union_of_socialist_republics.dds"
+	}
+
+	spriteType = {
+		name = GFX_focus_POL_centralise_the_revolution
+		texturefile = "gfx/interface/goals/GFX_focus_POL_centralise_the_revolution.dds"
+	}
+}

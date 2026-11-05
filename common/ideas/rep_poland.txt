@@ -606,6 +606,73 @@ country = {
 		}
 	}
 
+	POL_workers_opposition_idea = {
+		picture = GFX_idea_POL_workers_opposition_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			communism_drift = 0.03
+			political_power_gain = -0.03
+			stability_factor = -0.02
+		}
+	}
+
+	POL_wasilewska_manifesto_idea = {
+		picture = GFX_idea_POL_wasilewska_manifesto_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			communism_drift = 0.04
+			war_support_factor = 0.03
+			stability_factor = -0.02
+		}
+	}
+
+	POL_general_strike_idea = {
+		picture = GFX_idea_POL_general_strike_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			political_power_gain = -0.10
+			stability_factor = -0.08
+			production_speed_buildings_factor = -0.05
+		}
+	}
+
+	POL_socialist_commonwealth_idea = {
+		picture = GFX_idea_POL_socialist_commonwealth_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.03
+			political_power_gain = 0.05
+			communism_drift = 0.02
+		}
+	}
+
+	POL_socialist_federal_union = {
+		picture = GFX_idea_POL_socialist_federal_union
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.04
+			recruitable_population_factor = 0.01
+			compliance_gain_add = 0.04
+			resistance_decay_on_our_occupied_states = 0.08
+		}
+	}
+
+	POL_revolutionary_centralism = {
+		picture = GFX_idea_POL_revolutionary_centralism
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			political_power_gain = 0.10
+			production_speed_infrastructure_factor = 0.05
+			resistance_growth_on_our_occupied_states = 0.08
+		}
+	}
+
 	POL_invest_in_research_idea = {
 		allowed = {
 			always = no

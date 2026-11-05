@@ -260,4 +260,34 @@ spriteTypes = {
 		name = "GFX_idea_POL_monarchy_abolished"
 		texturefile = "gfx/interface/ideas/POL_monarchy_abolished.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_POL_workers_opposition_idea"
+		texturefile = "gfx/interface/ideas/POL_workers_opposition_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_wasilewska_manifesto_idea"
+		texturefile = "gfx/interface/ideas/POL_wasilewska_manifesto_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_general_strike_idea"
+		texturefile = "gfx/interface/ideas/POL_general_strike_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_socialist_commonwealth_idea"
+		texturefile = "gfx/interface/ideas/POL_socialist_commonwealth_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_socialist_federal_union"
+		texturefile = "gfx/interface/ideas/POL_socialist_federal_union.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_revolutionary_centralism"
+		texturefile = "gfx/interface/ideas/POL_revolutionary_centralism.dds"
+	}
 }

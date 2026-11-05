@@ -16,6 +16,8 @@ country_event = {
 			factor = 75
 		}
 		add_timed_idea = { idea = POL_confiscated_royal_wealth days = 365 }
+		POL_end_jagiellonian_rule = yes
+		set_country_flag = POL_royal_family_exiled
 		
 		FRA = {
 			country_event = { id = POL_royals_events.2 }
@@ -32,6 +34,8 @@ country_event = {
 			factor = 25
 		}
 		add_timed_idea = { idea = POL_confiscated_royal_wealth days = 365 }
+		POL_end_jagiellonian_rule = yes
+		set_country_flag = POL_royal_family_condemned
 		add_stability = -0.1
 		
 		hidden_effect = { news_event = { id = POL_royals_news_events.2 days = 1 } }
