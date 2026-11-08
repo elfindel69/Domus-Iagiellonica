@@ -1,0 +1,50 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_POL_a_commonwealth_divided_by_development
+		texturefile = "gfx/interface/goals/GFX_focus_POL_a_commonwealth_divided_by_development.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_develop_the_eastern_commonwealth
+		texturefile = "gfx/interface/goals/GFX_focus_POL_develop_the_eastern_commonwealth.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_develop_gdansk_and_prussia
+		texturefile = "gfx/interface/goals/GFX_focus_POL_develop_gdansk_and_prussia.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_lithuanian_and_belarusian_infrastructure
+		texturefile = "gfx/interface/goals/GFX_focus_POL_lithuanian_and_belarusian_infrastructure.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_invest_in_ukrainian_borderlands
+		texturefile = "gfx/interface/goals/GFX_focus_POL_invest_in_ukrainian_borderlands.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_integrate_the_commonwealth_market
+		texturefile = "gfx/interface/goals/GFX_focus_POL_integrate_the_commonwealth_market.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_expand_the_chemical_sector
+		texturefile = "gfx/interface/goals/GFX_focus_POL_expand_the_chemical_sector.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_synthetic_independence
+		texturefile = "gfx/interface/goals/GFX_focus_POL_synthetic_independence.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_state_fuel_reserves
+		texturefile = "gfx/interface/goals/GFX_focus_POL_state_fuel_reserves.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_integrated_commonwealth_economy
+		texturefile = "gfx/interface/goals/GFX_focus_POL_integrated_commonwealth_economy.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_arsenal_of_eastern_europe
+		texturefile = "gfx/interface/goals/GFX_focus_POL_arsenal_of_eastern_europe.dds"
+	}
+	spriteType = {
+		name = GFX_focus_POL_planned_federal_development
+		texturefile = "gfx/interface/goals/GFX_focus_POL_planned_federal_development.dds"
+	}
+}

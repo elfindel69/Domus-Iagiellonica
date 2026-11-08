@@ -673,6 +673,80 @@ country = {
 		}
 	}
 
+	POL_commonwealth_market_links = {
+		picture = GFX_idea_POL_commonwealth_market_links
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			production_efficiency_cap_factor = 0.03
+			production_speed_infrastructure_factor = 0.05
+		}
+	}
+
+	POL_integrated_commonwealth_economy_idea = {
+		picture = GFX_idea_POL_integrated_commonwealth_economy_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			consumer_goods_factor = -0.02
+			production_efficiency_cap_factor = 0.08
+			production_speed_infrastructure_factor = 0.10
+		}
+	}
+
+	POL_arsenal_of_eastern_europe_idea = {
+		picture = GFX_idea_POL_arsenal_of_eastern_europe_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			production_speed_arms_factory_factor = 0.12
+			industrial_capacity_factory = 0.05
+			consumer_goods_factor = 0.02
+		}
+	}
+
+	POL_planned_federal_development_idea = {
+		picture = GFX_idea_POL_planned_federal_development_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			production_speed_industrial_complex_factor = 0.10
+			production_speed_infrastructure_factor = 0.15
+			political_power_gain = -0.05
+		}
+	}
+
+	POL_expanded_chemical_sector = {
+		picture = GFX_idea_POL_expanded_chemical_sector
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			production_speed_synthetic_refinery_factor = 0.15
+			fuel_gain_from_refineries = 0.08
+		}
+	}
+
+	POL_synthetic_independence_idea = {
+		picture = GFX_idea_POL_synthetic_independence_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			production_speed_synthetic_refinery_factor = 0.20
+			fuel_gain_from_refineries = 0.15
+		}
+	}
+
+	POL_state_fuel_reserves_idea = {
+		picture = GFX_idea_POL_state_fuel_reserves_idea
+		allowed = { original_tag = POL }
+		removal_cost = -1
+		modifier = {
+			production_speed_synthetic_refinery_factor = 0.20
+			fuel_gain_from_refineries = 0.18
+			fuel_gain_factor_from_states = 0.05
+		}
+	}
+
 	POL_invest_in_research_idea = {
 		allowed = {
 			always = no

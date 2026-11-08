@@ -290,4 +290,39 @@ spriteTypes = {
 		name = "GFX_idea_POL_revolutionary_centralism"
 		texturefile = "gfx/interface/ideas/POL_revolutionary_centralism.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_POL_commonwealth_market_links"
+		texturefile = "gfx/interface/ideas/POL_commonwealth_market_links.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_integrated_commonwealth_economy_idea"
+		texturefile = "gfx/interface/ideas/POL_integrated_commonwealth_economy_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_arsenal_of_eastern_europe_idea"
+		texturefile = "gfx/interface/ideas/POL_arsenal_of_eastern_europe_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_planned_federal_development_idea"
+		texturefile = "gfx/interface/ideas/POL_planned_federal_development_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_expanded_chemical_sector"
+		texturefile = "gfx/interface/ideas/POL_expanded_chemical_sector.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_synthetic_independence_idea"
+		texturefile = "gfx/interface/ideas/POL_synthetic_independence_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_state_fuel_reserves_idea"
+		texturefile = "gfx/interface/ideas/POL_state_fuel_reserves_idea.dds"
+	}
+
 }
