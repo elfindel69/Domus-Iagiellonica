@@ -1,7 +1,7 @@
 characters={
 
-	UBD_Wilhelm_I = {
-		name="King Wilhelm II"
+	UBD_karl_I_gero = {
+		name="Karl I Gero"
 		portraits = {
 			civilian = {
 				large="gfx/leaders/UBD/generic1.dds"
@@ -11,6 +11,39 @@ characters={
 			ideology=paternalism
 			traits = { inexperienced_monarch  }
 			expire="1957.10.1.1"
+			id=-1
+		}
+	}
+
+	UBD_karlis_ulmanis={
+		name=LAT_karlis_ulmanis
+		portraits={
+			civilian={
+				large="GFX_Portrait_latvia_karlis_ulmanis"
+			}
+			army={
+				small="GFX_idea_LAT_karlis_ulmanis"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UBD_karlis_ulmanis
+			allowed = {
+				original_tag = UBD
+				has_dlc = "No Step Back"
+			}
+			
+			traits = {
+				authoritarian_demagogue
+			}
+			ai_will_do = {
+				factor = 10.000
+			}
+		}
+
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
 			id=-1
 		}
 	}

@@ -180,7 +180,7 @@ add_ideas = {
 		set_technology = {
 			basic_light_tank = 1
 		}
-		set_oob = "POL_1939"
+		set_oob = "UBD_1939"
 	}
 	if = {
 		limit = {
@@ -191,7 +191,7 @@ add_ideas = {
 		set_technology = {
 			basic_light_tank_chassis = 1
 		}
-		set_oob = "POL_1939_nsb"
+		set_oob = "UBD_1939_nsb"
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
@@ -235,7 +235,8 @@ set_popularities = {
 	}
 }
 
-recruit_character = UBD_Wilhelm_I
+recruit_character = UBD_karl_I_gero
+recruit_character = UBD_karlis_ulmanis
 recruit_character = UBD_konstantin_pats
 recruit_character = UBD_artur_sirk
 recruit_character = UBD_johannes_kabin
