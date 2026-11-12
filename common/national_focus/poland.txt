@@ -1133,7 +1133,7 @@ focus_tree = {
 	focus = {
 		id = POL_revive_the_polish_economy
 		icon = GFX_focus_POL_the_four_year_plan
-		x = 14
+		x = 20
 		y = 0
 		cost = 5
 
@@ -1470,7 +1470,7 @@ focus_tree = {
 		id = POL_warsaw_main_railway_station
 		icon = GFX_focus_POL_warsaw_main_station
 		prerequisite = { focus = POL_boost_central_region_industry }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = POL_boost_central_region_industry
 		cost = 10
@@ -1985,7 +1985,7 @@ focus_tree = {
 		id = POL_invest_in_research_focus
 		icon = GFX_focus_research2
 		
-		x = 22
+		x = 32
 		y = 0
 		cost = 5
 		
@@ -2280,7 +2280,7 @@ focus_tree = {
 		id = POL_prepare_for_the_next_war
 		icon = GFX_goal_generic_build_tank
 		
-		x = 30
+		x = 40
 		y = 0
 		cost = 5
 
@@ -2912,7 +2912,7 @@ focus_tree = {
 	focus = {
 		id = POL_develop_polish_ship_building
 		icon = GFX_focus_POL_develop_polish_shipbuilding
-		x = 40
+		x =50
 		y = 0
 		cost = 10
 
@@ -3473,7 +3473,7 @@ focus_tree = {
 		id = POL_reform_of_the_diplomacy
 		icon = GFX_focus_generic_treaty
 		
-		x = 52
+		x = 62
 		y = 0
 		cost = 5
 
@@ -4080,7 +4080,7 @@ focus_tree = {
 			}
 		}
 		allow_branch = { has_dlc = "Man the Guns" }
-		x = 65
+		x = 75
 		y = 0
 		
 		
